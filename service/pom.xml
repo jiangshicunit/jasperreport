@@ -3,8 +3,8 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<parent>
-		<groupId>com.haomostudio.SpringMVCProjectTemplate</groupId>
-		<artifactId>SpringMVCProjectTemplate</artifactId>
+		<groupId>com.haomostudio.jrs</groupId>
+		<artifactId>jrs</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 
@@ -21,14 +21,14 @@
 
 	<dependencies>
 		<dependency>
-			<groupId>com.haomostudio.SpringMVCProjectTemplate</groupId>
+			<groupId>com.haomostudio.jrs</groupId>
 			<artifactId>dao</artifactId>
-			<version>${SpringMVCProjectTemplate.dao.version}</version>
+			<version>${jrs.dao.version}</version>
 		</dependency>
 		<dependency>
-			<groupId>com.haomostudio.SpringMVCProjectTemplate</groupId>
+			<groupId>com.haomostudio.jrs</groupId>
 			<artifactId>domain</artifactId>
-			<version>${SpringMVCProjectTemplate.dao.version}</version>
+			<version>${jrs.dao.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>com.sap</groupId>

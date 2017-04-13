@@ -16,10 +16,10 @@
     </modules>
 
     <properties>
-        <SpringMVCProjectTemplate.web.version>0.0.1-SNAPSHOT</SpringMVCProjectTemplate.web.version>
-        <SpringMVCProjectTemplate.service.version>0.0.1-SNAPSHOT</SpringMVCProjectTemplate.service.version>
-        <SpringMVCProjectTemplate.dao.version>0.0.1-SNAPSHOT</SpringMVCProjectTemplate.dao.version>
-        <SpringMVCProjectTemplate.domain.version>0.0.1-SNAPSHOT</SpringMVCProjectTemplate.domain.version>
+        <jrs.web.version>0.0.1-SNAPSHOT</jrs.web.version>
+        <jrs.service.version>0.0.1-SNAPSHOT</jrs.service.version>
+        <jrs.dao.version>0.0.1-SNAPSHOT</jrs.dao.version>
+        <jrs.domain.version>0.0.1-SNAPSHOT</jrs.domain.version>
         <spring.version>4.1.4.RELEASE</spring.version>
         <spring-data-jpa.version>1.9.1.RELEASE</spring-data-jpa.version>
         <jackson.version>2.5.0</jackson.version>
@@ -448,7 +448,7 @@
                     <artifactId>maven-war-plugin</artifactId>
                     <version>2.4</version>
                     <configuration>
-                        <warName>SpringMVCProjectTemplate</warName>
+                        <warName>jrs</warName>
                         <webXml>src/main/resources/webapp/WEB-INF/web.xml</webXml>
                     </configuration>
                 </plugin>
