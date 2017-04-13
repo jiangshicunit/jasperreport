@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 基础设施层与服务层 -->
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:context="http://www.springframework.org/schema/context" xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:jpa="http://www.springframework.org/schema/data/jpa"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<!-- 引入数据源配置 -->
+	<import resource="datasource-config.xml" />
+	<import resource="crm-redis-config.xml" />
+
+	<!-- 扫描spring组件 -->
+    <context:annotation-config />
+	<context:component-scan base-package="com.haomostudio" />
+
+	<!--
+		class:  指定用来创建 sqlSession的工厂
+		dataSource:  使用的数据源
+	-->
+	<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+		<property name="dataSource" ref="crmDataSource" />
+        <property name="mapperLocations">
+            <list>
+                <value>classpath*:mybatis/**/*Mapper.xml</value>
+            </list>
+        </property>
+        <property name="configLocation" value="classpath:spring/sql-map-config.xml"/>
+	</bean>
+
+
+    <bean id="crmSqlSessionTemplate" class="org.mybatis.spring.SqlSessionTemplate"> <!--scope="prototype"-->
+        <constructor-arg ref="sqlSessionFactory" />
+    </bean>
+
+	<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+		<property name="basePackage" value="com.haomostudio.*.dao" />
+		<property name="sqlSessionFactoryBeanName" value="sqlSessionFactory" />
+	</bean>
+
+	<!-- JDBC事务管理 -->
+	<bean id="transactionManager"
+		class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+		<property name="dataSource" ref="crmDataSource" />
+	</bean>
+
+	<!-- 注解实现事务 -->
+	<tx:annotation-driven transaction-manager="transactionManager" />
+
+	<bean id="objectMapper" class="com.fasterxml.jackson.databind.ObjectMapper"/>
+</beans>

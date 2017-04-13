@@ -1,0 +1,31 @@
+# Java
+*.class
+
+# Eclipse
+.classpath
+.project
+.settings/
+
+# Intellij
+.idea/
+*.iml
+*.iws
+
+# Mac
+.DS_Store
+
+# Maven
+log/
+out/
+target/
+
+# svn
+.svn/
+
+scandir/
+rebel.xml
+
+#lilei environment
+dep2.sh
+
+crm-web/src/main/filters/dev.properties

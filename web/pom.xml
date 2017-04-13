@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>com.haomostudio.SpringMVCProjectTemplate</groupId>
+		<artifactId>SpringMVCProjectTemplate</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>
+
+	<artifactId>web</artifactId>
+	<packaging>war</packaging>
+
+	<name>web</name>
+	<url>http://maven.apache.org</url>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>com.haomostudio.SpringMVCProjectTemplate</groupId>
+			<artifactId>service</artifactId>
+			<version>${SpringMVCProjectTemplate.service.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.haomostudio.SpringMVCProjectTemplate</groupId>
+			<artifactId>dao</artifactId>
+			<version>${SpringMVCProjectTemplate.dao.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.haomostudio.SpringMVCProjectTemplate</groupId>
+			<artifactId>domain</artifactId>
+			<version>${SpringMVCProjectTemplate.domain.version}</version>
+		</dependency>
+	</dependencies>
+
+	<profiles>
+		<!-- 开发环境 -->
+		<profile>
+			<id>dev</id>
+			<activation>
+				<activeByDefault>true</activeByDefault>
+			</activation>
+			<properties>
+				<profiles.active>dev</profiles.active>
+			</properties>
+			<build>
+				<filters>
+					<filter>${basedir}/src/main/filters/dev.properties</filter>
+				</filters>
+			</build>
+		</profile>
+		<!-- 测试环境 -->
+		<profile>
+			<id>test</id>
+			<properties>
+				<profiles.active>test</profiles.active>
+			</properties>
+			<build>
+				<filters>
+					<filter>${basedir}/src/main/filters/test.properties</filter>
+				</filters>
+			</build>
+		</profile>
+		<!-- 仿真环境 -->
+		<profile>
+			<id>simu</id>
+			<properties>
+				<profiles.active>simu</profiles.active>
+			</properties>
+			<build>
+				<filters>
+					<filter>${basedir}/src/main/filters/simu.properties</filter>
+				</filters>
+			</build>
+		</profile>
+		<!-- 生产环境 -->
+		<profile>
+			<id>prd</id>
+			<properties>
+				<profiles.active>prd</profiles.active>
+			</properties>
+			<build>
+				<filters>
+					<filter>${basedir}/src/main/filters/prd.properties</filter>
+				</filters>
+			</build>
+		</profile>
+	</profiles>
+
+	<build>
+		<finalName>web</finalName>
+		<resources>
+			<resource>
+				<directory>${basedir}/src/main/resources</directory>
+				<filtering>true</filtering>
+			</resource>
+		</resources>
+	</build>
+
+</project>
