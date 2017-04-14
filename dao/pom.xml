@@ -3,8 +3,8 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<parent>
-		<groupId>com.haomostudio.jrs</groupId>
-		<artifactId>jrs</artifactId>
+		<groupId>com.haomostudio.jasperreport</groupId>
+		<artifactId>jasperreport</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 
@@ -21,7 +21,7 @@
 
 	<dependencies>
 		<dependency>
-			<groupId>com.haomostudio.jrs</groupId>
+			<groupId>com.haomostudio.jasperreport</groupId>
 			<artifactId>domain</artifactId>
 			<version>${jrs.domain.version}</version>
 		</dependency>

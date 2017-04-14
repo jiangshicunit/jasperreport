@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.1.1.final using JasperReports Library version 6.1.1  -->
+<!-- 2017-04-13T21:16:29 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="cancerMan3section-4" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="9dd562f3-b132-4ba4-b6e9-9e78913c39e6">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<columnHeader>
+		<band height="103">
+			<ellipse>
+				<reportElement x="20" y="30" width="8" height="8" forecolor="#F0F0F0" backcolor="#F2F2F2" uuid="2a3a7a66-e1b7-4d94-bbd9-007670646993">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+			</ellipse>
+			<textField>
+				<reportElement x="40" y="27" width="41" height="21" uuid="758b4229-9fa1-4a7e-a518-7ab336081a76">
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
+				<textFieldExpression><![CDATA["低风险"]]></textFieldExpression>
+			</textField>
+			<ellipse>
+				<reportElement x="90" y="30" width="8" height="8" forecolor="#F0F0F0" backcolor="#6A9DFC" uuid="501815f4-87f1-4097-9232-1b254d339597">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
+			</ellipse>
+			<textField>
+				<reportElement x="110" y="27" width="50" height="21" uuid="73d56610-8af8-4253-9101-98fc2f60afa2">
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
+				<textFieldExpression><![CDATA["一般风险"]]></textFieldExpression>
+			</textField>
+			<ellipse>
+				<reportElement x="170" y="30" width="8" height="8" forecolor="#F0F0F0" backcolor="#4C29FF" uuid="c975bbf9-ef8a-42a8-8829-e9f4f0b49998">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
+			</ellipse>
+			<textField>
+				<reportElement x="190" y="27" width="50" height="21" uuid="dd089573-6912-47a5-8889-7176ede46dfc">
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
+				<textFieldExpression><![CDATA["中等风险"]]></textFieldExpression>
+			</textField>
+			<ellipse>
+				<reportElement x="250" y="30" width="8" height="8" forecolor="#F0F0F0" backcolor="#F2FF9E" uuid="73bc32a5-09ba-43c9-8b3d-a1f9902c616d">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+			</ellipse>
+			<textField>
+				<reportElement x="270" y="27" width="50" height="21" uuid="658d2693-b455-452a-af2f-1138430f5d43">
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
+				<textFieldExpression><![CDATA["高等风险"]]></textFieldExpression>
+			</textField>
+			<ellipse>
+				<reportElement x="330" y="30" width="8" height="8" forecolor="#F0F0F0" backcolor="#FFAB2E" uuid="5fcd9b22-bd11-4c43-8981-f3a178985146">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
+			</ellipse>
+			<textField>
+				<reportElement x="350" y="27" width="50" height="21" uuid="9fd62917-0977-4883-85eb-ccabfbbd26af">
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
+				<textFieldExpression><![CDATA["较高风险"]]></textFieldExpression>
+			</textField>
+			<ellipse>
+				<reportElement x="410" y="30" width="8" height="8" forecolor="#F0F0F0" backcolor="#FF0400" uuid="2fa9a66c-114a-4d1d-b3a7-2fb016d4829f">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
+			</ellipse>
+			<textField>
+				<reportElement x="430" y="27" width="50" height="21" uuid="69559669-f8e6-452e-9b7a-5220a71b0144">
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
+				<textFieldExpression><![CDATA["极高风险"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="20" y="80" width="91" height="21" uuid="faf1305b-a1d3-42e4-8fea-6d35817a5813"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA["指标名称"]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="10" y="102" width="521" height="1" uuid="1adefd81-5d25-4a89-ae37-83dd6abb67ff"/>
+			</line>
+			<textField>
+				<reportElement x="160" y="80" width="121" height="21" uuid="bfbec7af-0043-4e4b-9f50-095684f894e2"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA["指标英文名称(English)"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="330" y="80" width="111" height="21" uuid="7e103348-07f9-4375-b8ca-a77eccbdea2b"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA["风险等级"]]></textFieldExpression>
+			</textField>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="123" splitType="Stretch">
+			<textField>
+				<reportElement x="10" y="0" width="131" height="28" uuid="c1b818b6-bd02-4715-8981-834b51340ac8"/>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA["  肺癌"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="141" y="0" width="170" height="28" uuid="755e40d1-e377-4d6b-a9e6-86d91e833af6"/>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA["Lung cancer"]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

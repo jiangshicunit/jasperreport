@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.1.1.final using JasperReports Library version 6.1.1  -->
+<!-- 2017-04-13T13:48:35 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="cancerMan5Dsection2" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="7299435f-d8cd-4a27-b67f-b81ef722d877">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<detail>
+		<band height="802" splitType="Stretch">
+			<staticText>
+				<reportElement x="20" y="30" width="171" height="41" forecolor="#B4995E" uuid="b9ecc971-e307-4636-ab88-e007c81a5180"/>
+				<textElement>
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[总结以及建议]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="20" y="80" width="491" height="180" uuid="1f869ad1-ac71-4678-a60c-abe05f5d07ea"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[您对您身体的主诉： 健康解析和治疗放方案
+
+您的综合患癌风险评估为：中等风险
+
+因为：
+1、肿瘤标志物筛查异常说明
+2、机体抗癌功能评估异常说明
+3、癌症遗传信息风险评估异常说明
+4、MicroRNA癌症监察异常说明
+5、评估问卷异常值说明]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="20" y="290" width="171" height="41" forecolor="#B4995E" uuid="1cfa1a76-0d88-4396-82d2-25050aa7ad73"/>
+				<textElement verticalAlignment="Middle">
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[生活建议]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="20" y="340" width="150" height="30" forecolor="#B4995E" uuid="b34cc563-7cd2-44a4-bbad-6d5d79d59b50"/>
+				<textElement verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[饮食习惯]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="20" y="380" width="511" height="60" uuid="88ab8e4a-3f17-4dc3-8367-0c38b24136f7"/>
+				<text><![CDATA[1、改善用水条件，减少饮用水中硝酸盐和亚硝酸盐的含量，建议每天饮用8-10杯
+白开水（约2升），可促进新陈代谢，减少疾病发生。
+2、控制碘摄入量在安全范围内，科学地食用碘盐，沿海地区着重掌握碘盐的食用方法
+，避免碘的过度摄入。]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="20" y="450" width="150" height="30" forecolor="#B4995E" uuid="013ad497-ddb2-445c-9b98-789d68e3a12a"/>
+				<textElement verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[生活习惯]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="20" y="490" width="511" height="40" uuid="3b69a5c9-892f-4389-bd53-4c8449e9e3f6"/>
+				<text><![CDATA[1、吸烟者建议戒烟，不吸烟者应避免被动吸烟。
+2、戒烟，或逐步减少每日吸烟量；如不吸烟应尽量避免二手烟的危害。]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="20" y="540" width="171" height="41" forecolor="#B4995E" uuid="e978f2ee-da7a-4890-a52a-9de660f8d98e"/>
+				<textElement verticalAlignment="Middle">
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[个性化调理方案]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="20" y="590" width="150" height="30" forecolor="#B4995E" uuid="71c13f28-baa7-4107-a804-786df1b32601"/>
+				<textElement verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[功能医学： 全年营养素调理]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="20" y="630" width="471" height="61" uuid="bc6a21e2-7a4a-4b86-b668-7d219e458efb"/>
+				<text><![CDATA[意义： 平衡机体免疫：身体有潜在慢性炎症，需要通过抑制体内炎性因子，平衡免疫系统，
+调节肝脏解毒功能：提高其自身解毒能力，减少炎性因子以及毒素在体内堆积的程度
+维持卵巢功能：调节女性荷尔蒙代谢，保护卵巢、子宫等功能，减少或缓解围绝经期的
+症状]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="20" y="700" width="150" height="30" forecolor="#B4995E" uuid="584fd764-0848-463f-a522-64daa7905b07"/>
+				<textElement verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[全年私人医生个性化健康提升]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="20" y="740" width="521" height="21" uuid="51be26f8-96d4-49e2-8934-ae37547bd361"/>
+				<text><![CDATA[意义：  全年私人医生医疗咨询，协助您解决亚健康及各种常见病、慢性病问题。]]></text>
+			</staticText>
+		</band>
+	</detail>
+</jasperReport>

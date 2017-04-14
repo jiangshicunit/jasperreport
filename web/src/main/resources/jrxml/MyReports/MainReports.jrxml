@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.1.1.final using JasperReports Library version 6.1.1  -->
+<!-- 2017-04-13T12:53:40 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="MainReports" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="7af829ba-70f9-44e8-9e72-989c5137fedc">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<pageHeader>
+		<band height="160" splitType="Stretch">
+			<image>
+				<reportElement x="0" y="12" width="565" height="148" uuid="1e39e2a9-f7ba-4aa4-939d-ad930426791b"/>
+				<imageExpression><![CDATA["D:/SWSoftwareGather/jaspersoft/MyReports/yd_pageHeader.jpg"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="300" y="100" width="114" height="22" uuid="6c9f3f1f-9ded-4ef0-9432-d49815ea85ee"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[客户编码：VIP-576 ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="440" y="99" width="112" height="25" uuid="c93a1bbd-e4de-4e73-9e48-e6a5d5284565"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[生日：1969-10-26 M]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<pageFooter>
+		<band height="54" splitType="Stretch">
+			<staticText>
+				<reportElement x="10" y="20" width="320" height="21" forecolor="#FF0400" uuid="2e1936a6-e58b-462c-a189-fe6bfaedd2a8"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[机密文档：所有信息只有您的专属医生和健康管家有权调阅]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+</jasperReport>
