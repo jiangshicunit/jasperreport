@@ -8,6 +8,16 @@
     <listener>
         <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
     </listener>
+
+    <listener>
+        <listener-class>
+            org.springframework.web.util.WebAppRootListener
+        </listener-class>
+    </listener>
+    <context-param>
+        <param-name>webAppRootKey</param-name>
+        <param-value>search.root</param-value>
+    </context-param>
     <!--<listener>-->
         <!--<listener-class>com.github.miemiedev.mybatis.paginator.CleanupMybatisPaginatorListener</listener-class>-->
     <!--</listener>-->
