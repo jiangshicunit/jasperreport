@@ -38,7 +38,8 @@ public class ReportController {
         filePath = filePath.substring(0, filePath.lastIndexOf("/"));
 
         //获取jrxml并编译
-        InputStream inputStream = new FileInputStream(filePath + "/src/main/resources/jrxml/MyReports/MainReports.jrxml");
+//        InputStream inputStream = new FileInputStream(filePath + "/src/main/resources/jrxml/MyReports/MainReports.jrxml");
+        InputStream inputStream = new FileInputStream("/Users/liuranran/work/testjson.jrxml");
         JasperDesign jasperDesign = JRXmlLoader.load(inputStream);
         JasperReport jasperReport = JasperCompileManager.compileReport(jasperDesign);
 

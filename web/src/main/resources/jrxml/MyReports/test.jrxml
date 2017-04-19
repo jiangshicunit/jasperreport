@@ -8,6 +8,8 @@ http://jasperreports.sourceforge.net/xsd/jasperreport.xsd"
 			  name="jasper_report_template" language="groovy" pageWidth="595"
 			  pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20"
 			  topMargin="20" bottomMargin="20">
+	<parameter name="title1" class="java.lang.String" />
+	<parameter name="title2" class="java.lang.String" />
 
 	<queryString>
 		<![CDATA[]]>
@@ -18,6 +20,7 @@ http://jasperreports.sourceforge.net/xsd/jasperreport.xsd"
 	<field name="name" class="java.lang.String">
 		<fieldDescription><![CDATA[name]]></fieldDescription>
 	</field>
+
 	<columnHeader>
 		<band height="23">
 			<staticText>
@@ -29,22 +32,26 @@ http://jasperreports.sourceforge.net/xsd/jasperreport.xsd"
 				<textElement />
 				<text><![CDATA[]]> </text>
 			</staticText>
-			<staticText>
+			<textField>
 				<reportElement x="414" y="3" width="121" height="15" />
 				<textElement textAlignment="Center"
 							 verticalAlignment="Middle">
 					<font isBold="true" />
 				</textElement>
-				<text><![CDATA[Country]]></text>
-			</staticText>
-			<staticText>
+				<textFieldExpression class="java.lang.String">
+					<![CDATA[$P{title2}]]>
+				</textFieldExpression>
+			</textField>
+			<textField>
 				<reportElement x="0" y="3" width="136" height="15" />
 				<textElement textAlignment="Center"
 							 verticalAlignment="Middle">
 					<font isBold="true" />
 				</textElement>
-				<text><![CDATA[Name]]></text>
-			</staticText>
+				<textFieldExpression class="java.lang.String">
+					<![CDATA[$P{title1}]]>
+				</textFieldExpression>
+			</textField>
 		</band>
 	</columnHeader>
 	<detail>

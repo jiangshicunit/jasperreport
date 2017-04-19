@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
+<!-- 2017-04-18T13:22:46 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="IndicatorRiskLevel" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="531b6e0c-bc14-45db-b749-f5e05dc44813">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<style name="Table_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table 1_TH" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table 1_CH" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table 1_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<subDataset name="Empty Dataset1" uuid="be13fc3b-f499-4a62-b471-d385c7ea82ed"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="280" splitType="Stretch">
+			<ellipse>
+				<reportElement x="60" y="20" width="14" height="14" forecolor="#FFFFFF" backcolor="#F7F2F2" uuid="01254b54-571a-4988-b081-686e5c785243"/>
+			</ellipse>
+			<ellipse>
+				<reportElement x="280" y="20" width="14" height="14" forecolor="#FFFFFF" backcolor="#FAF743" uuid="a8376e91-9e3f-4dc5-9ec2-0cc22aa4ad14"/>
+			</ellipse>
+			<ellipse>
+				<reportElement x="200" y="21" width="14" height="14" forecolor="#FFFFFF" backcolor="#2B48BD" uuid="5720761e-c382-44e5-9297-b7c63a1cf315"/>
+			</ellipse>
+			<ellipse>
+				<reportElement x="350" y="20" width="14" height="14" forecolor="#FFFFFF" backcolor="#ED9D34" uuid="927e08bf-decc-4116-b9d1-b3bc09888b49"/>
+			</ellipse>
+			<ellipse>
+				<reportElement x="130" y="20" width="14" height="14" forecolor="#FFFFFF" backcolor="#57BCEB" uuid="4f5b816a-3d0a-46f1-a982-c1dc8d464d7d"/>
+			</ellipse>
+			<ellipse>
+				<reportElement x="430" y="22" width="14" height="14" forecolor="#FFFFFF" backcolor="#F2120F" uuid="f1a32fb2-3d83-413f-a249-fd05a49f3bee"/>
+			</ellipse>
+			<staticText>
+				<reportElement x="80" y="17" width="40" height="20" uuid="da743a4a-2c5e-49da-bf08-f08be24d8d40"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[低风险]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="150" y="18" width="50" height="20" uuid="e65d777d-2874-4bdd-97bd-411a3d0f372e"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[一般风险]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="220" y="21" width="55" height="16" uuid="e91f8f1c-dad5-4193-a54a-370cf3ea2529"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[中等风险]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="300" y="20" width="40" height="17" uuid="a7896e15-148e-4a40-ae08-425445b0776e"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[高风险]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="370" y="19" width="50" height="17" uuid="e65b3674-b803-4148-b9ee-51b3ff136174"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[较高风险]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="450" y="19" width="50" height="17" uuid="58fbec92-f506-4384-b557-5f4a28dde614"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[极高风险]]></text>
+			</staticText>
+			<componentElement>
+				<reportElement x="60" y="80" width="300" height="70" uuid="828ccc43-ab81-48bf-91ed-698b1b5dc2a1">
+					<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.VerticalRowLayout"/>
+					<property name="com.jaspersoft.studio.table.style.table_header" value="Table 1_TH"/>
+					<property name="com.jaspersoft.studio.table.style.column_header" value="Table 1_CH"/>
+					<property name="com.jaspersoft.studio.table.style.detail" value="Table 1_TD"/>
+				</reportElement>
+				<jr:table xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd">
+					<datasetRun subDataset="Empty Dataset1" uuid="747f0036-3d30-4c25-aa9d-c467c3743116">
+						<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+					</datasetRun>
+					<jr:column width="70" uuid="c9714297-4332-431b-a716-60d18a21aa86">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column1"/>
+						<jr:tableHeader style="Table 1_TH" height="30" rowSpan="1">
+							<box>
+								<topPen lineWidth="0.0"/>
+								<leftPen lineWidth="0.0"/>
+								<bottomPen lineWidth="0.0"/>
+								<rightPen lineWidth="0.0"/>
+							</box>
+							<staticText>
+								<reportElement x="0" y="0" width="70" height="30" uuid="89e85364-0cca-492d-8147-296d7aff9794"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font size="12"/>
+								</textElement>
+								<text><![CDATA[指标名称]]></text>
+							</staticText>
+						</jr:tableHeader>
+						<jr:columnHeader style="Table 1_CH" height="2" rowSpan="1">
+							<box>
+								<topPen lineWidth="0.0"/>
+								<leftPen lineWidth="0.0"/>
+								<bottomPen lineWidth="0.0"/>
+								<rightPen lineWidth="0.0"/>
+							</box>
+						</jr:columnHeader>
+						<jr:detailCell style="Table 1_TD" height="30">
+							<box>
+								<topPen lineWidth="2.0"/>
+								<leftPen lineWidth="0.0"/>
+							</box>
+							<staticText>
+								<reportElement x="0" y="0" width="70" height="30" uuid="3adaea61-df2d-434f-a7d7-d03531b3a087"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font size="12"/>
+								</textElement>
+								<text><![CDATA[肺癌]]></text>
+							</staticText>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="150" uuid="8d3162c5-e0df-4f29-a633-fb75d1c6dc6c">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column2"/>
+						<jr:tableHeader style="Table 1_TH" height="30" rowSpan="1">
+							<box>
+								<topPen lineWidth="0.0"/>
+								<leftPen lineWidth="0.0"/>
+								<bottomPen lineWidth="0.0"/>
+								<rightPen lineWidth="0.0"/>
+							</box>
+							<staticText>
+								<reportElement x="0" y="0" width="150" height="30" uuid="28b53faf-c1a9-4de4-ba43-2b2ce84aa050"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font size="12"/>
+								</textElement>
+								<text><![CDATA[指标英文名称（English）]]></text>
+							</staticText>
+						</jr:tableHeader>
+						<jr:columnHeader style="Table 1_CH" height="2" rowSpan="1">
+							<box>
+								<topPen lineWidth="0.0"/>
+								<leftPen lineWidth="0.0"/>
+								<bottomPen lineWidth="0.0"/>
+								<rightPen lineWidth="0.0"/>
+							</box>
+						</jr:columnHeader>
+						<jr:detailCell style="Table 1_TD" height="30">
+							<box>
+								<topPen lineWidth="2.0"/>
+							</box>
+							<staticText>
+								<reportElement x="0" y="0" width="150" height="30" uuid="29145650-8de8-4267-b704-8ed022522298"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font size="12"/>
+								</textElement>
+								<text><![CDATA[Lung cacer]]></text>
+							</staticText>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="80" uuid="b8de127d-decc-4c19-bc4c-9e8a8a8c5364">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column3"/>
+						<jr:tableHeader style="Table 1_TH" height="30" rowSpan="1">
+							<box>
+								<topPen lineWidth="0.0"/>
+								<leftPen lineWidth="0.0"/>
+								<bottomPen lineWidth="0.0"/>
+								<rightPen lineWidth="0.0"/>
+							</box>
+							<staticText>
+								<reportElement x="0" y="0" width="80" height="30" uuid="8fcf0d47-e176-4140-89b0-7e024d43be56"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font size="12"/>
+								</textElement>
+								<text><![CDATA[风险等级]]></text>
+							</staticText>
+						</jr:tableHeader>
+						<jr:columnHeader style="Table 1_CH" height="2" rowSpan="1">
+							<box>
+								<topPen lineWidth="0.0"/>
+								<leftPen lineWidth="0.0"/>
+								<bottomPen lineWidth="0.0"/>
+								<rightPen lineWidth="0.0"/>
+							</box>
+						</jr:columnHeader>
+						<jr:detailCell style="Table 1_TD" height="30">
+							<box>
+								<topPen lineWidth="2.0"/>
+								<rightPen lineWidth="0.0"/>
+							</box>
+							<staticText>
+								<reportElement x="0" y="0" width="80" height="30" uuid="0d629ccb-c793-4d8c-85ca-5db7adc80a62"/>
+								<text><![CDATA[]]></text>
+							</staticText>
+						</jr:detailCell>
+					</jr:column>
+				</jr:table>
+			</componentElement>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

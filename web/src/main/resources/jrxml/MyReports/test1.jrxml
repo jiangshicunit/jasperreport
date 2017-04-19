@@ -1,6 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Created with Jaspersoft Studio version 6.1.1.final using JasperReports Library version 6.1.1  -->
-<!-- 2017-04-13T12:53:36 -->
 <!DOCTYPE jasperReport PUBLIC "//JasperReports//DTD Report Design//EN"
 		"http://jasperreports.sourceforge.net/dtds/jasperreport.dtd">
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports"
@@ -10,6 +8,7 @@ http://jasperreports.sourceforge.net/xsd/jasperreport.xsd"
 			  name="jasper_report_template" language="groovy" pageWidth="595"
 			  pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20"
 			  topMargin="20" bottomMargin="20">
+
 	<queryString>
 		<![CDATA[]]>
 	</queryString>
@@ -28,43 +27,91 @@ http://jasperreports.sourceforge.net/xsd/jasperreport.xsd"
 	<field name="name4" class="java.lang.String">
 		<fieldDescription><![CDATA[name4]]></fieldDescription>
 	</field>
-	<background>
-		<band splitType="Stretch"/>
-	</background>
 	<columnHeader>
-		<band height="61" splitType="Stretch"/>
+		<band height="23">
+			<staticText>
+				<reportElement mode="Opaque" x="0" y="3" width="535"
+							   height="15" backcolor="#70A9A9" />
+				<box>
+					<bottomPen lineWidth="1.0" lineColor="#CCCCCC" />
+				</box>
+				<textElement />
+				<text><![CDATA[]]> </text>
+			</staticText>
+			<staticText>
+				<reportElement x="414" y="3" width="121" height="15" />
+				<textElement textAlignment="Center"
+							 verticalAlignment="Middle">
+					<font isBold="true" />
+				</textElement>
+				<text><![CDATA[name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="3" width="136" height="15" />
+				<textElement textAlignment="Center"
+							 verticalAlignment="Middle">
+					<font isBold="true" />
+				</textElement>
+				<text><![CDATA[name1]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="414" y="3" width="121" height="15" />
+				<textElement textAlignment="Center"
+							 verticalAlignment="Middle">
+					<font isBold="true" />
+				</textElement>
+				<text><![CDATA[name2]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="3" width="136" height="15" />
+				<textElement textAlignment="Center"
+							 verticalAlignment="Middle">
+					<font isBold="true" />
+				</textElement>
+				<text><![CDATA[name3]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="414" y="3" width="121" height="15" />
+				<textElement textAlignment="Center"
+							 verticalAlignment="Middle">
+					<font isBold="true" />
+				</textElement>
+				<text><![CDATA[name4]]></text>
+			</staticText>
+		</band>
 	</columnHeader>
 	<detail>
-		<band height="223" splitType="Stretch">
-			<textField>
+		<band height="16">
+
+			<staticText>
 				<reportElement x="30" y="39" width="100" height="21" uuid="ed1c030f-3508-43a7-8c4e-366559e50cb1"/>
 				<textElement verticalAlignment="Middle">
 					<font size="8"/>
 				</textElement>
 
-				<textFieldExpression class="java.lang.String">
+				<text >
 					<![CDATA[$F{name}]]>
-				</textFieldExpression>
-			</textField>
-			<textField>
+				</text>
+			</staticText>
+			<staticText>
 				<reportElement x="140" y="40" width="90" height="21" uuid="3be6b34b-67a8-447c-b3e8-54507f503cc6"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font size="8"/>
 				</textElement>
-				<textFieldExpression class="java.lang.String">
+				<text >
 					<![CDATA[$F{name1}]]>
-				</textFieldExpression>
-			</textField>
-			<textField>
+				</text>
+			</staticText>
+			<staticText>
 				<reportElement x="230" y="40" width="151" height="21" uuid="316f1a60-e1d7-44e8-a2ce-ee1d077c33b3"/>
 				<textElement verticalAlignment="Middle">
 					<font size="8"/>
 				</textElement>
-				<textFieldExpression class="java.lang.String">
+				<text >
 					<![CDATA[$F{name2}]]>
-				</textFieldExpression>
-			</textField>
-			<textField>
+				</text>
+			</staticText>
+			<staticText>
 				<reportElement x="380" y="40" width="31" height="21" uuid="8e2e13ef-9acc-4a9e-8c05-dd6d1ddee852"/>
 				<box>
 					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
@@ -73,9 +120,9 @@ http://jasperreports.sourceforge.net/xsd/jasperreport.xsd"
 					<rightPen lineWidth="1.0" lineStyle="Dashed" lineColor="#000000"/>
 				</box>
 				<textElement textAlignment="Center" verticalAlignment="Middle"/>
-				<textFieldExpression><![CDATA[-]]></textFieldExpression>
-			</textField>
-			<textField>
+				<text><![CDATA[-]]></text>
+			</staticText>
+			<staticText>
 				<reportElement x="411" y="39" width="31" height="21" uuid="4f39ae56-65b0-4efa-947c-079c07fc4210"/>
 				<box>
 					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
@@ -84,9 +131,9 @@ http://jasperreports.sourceforge.net/xsd/jasperreport.xsd"
 					<rightPen lineWidth="1.0" lineStyle="Dashed" lineColor="#000000"/>
 				</box>
 				<textElement textAlignment="Center" verticalAlignment="Middle"/>
-				<textFieldExpression><![CDATA[-]]></textFieldExpression>
-			</textField>
-			<textField>
+				<text><![CDATA[-]]></text>
+			</staticText>
+			<staticText>
 				<reportElement x="442" y="39" width="48" height="21" uuid="e05cb7b1-38fd-49e1-860d-8df1ea3e93e5"/>
 				<box>
 					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
@@ -97,19 +144,19 @@ http://jasperreports.sourceforge.net/xsd/jasperreport.xsd"
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font size="8"/>
 				</textElement>
-				<textFieldExpression class="java.lang.String">
+				<text >
 					<![CDATA[$F{name3}]]>
-				</textFieldExpression>
-			</textField>
-			<textField>
+				</text>
+			</staticText>
+			<staticText>
 				<reportElement x="500" y="39" width="51" height="21" uuid="a595153c-3510-4c23-9ac9-7838e140c9f1"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font size="8"/>
 				</textElement>
-				<textFieldExpression class="java.lang.String">
+				<text >
 					<![CDATA[$F{name4}]]>
-				</textFieldExpression>
-			</textField>
+				</text>
+			</staticText>
 		</band>
 	</detail>
 </jasperReport>
