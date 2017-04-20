@@ -106,16 +106,16 @@ http://jasperreports.sourceforge.net/xsd/jasperreport.xsd"
 					<rightPen lineStyle="Dashed"/>
 				</box>
 				<textElement textAlignment="Right"/>
-				<textFieldExpression><![CDATA[""]]></textFieldExpression>
+				<textFieldExpression><![CDATA[""]]>
+
+				</textFieldExpression>
+
 			</textField>
 
-			<ellipse>
-				<reportElement x="119" y="13" width="8" height="8" backcolor="red" uuid="4e5f2389-9a02-40c5-9c4c-41d6f9bb449c">
-					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
-					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
-					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
-				</reportElement>
-			</ellipse>
+			<image>
+				<reportElement x="119" y="13" width="8" height="8" uuid="55dcc22b-f18e-4adc-8f76-b74383fa4516"/>
+				<imageExpression><![CDATA["/Users/liuranran/work/jasperreportserver/web/src/main/resources/jrxml/MyReports/"+($F{country}.equals("0")?"green":($F{country}.equals("1")?"hese":($F{country}.equals("2")?"red":"yellow")))+".png"]]></imageExpression>
+			</image>
 
 			<textField>
 				<reportElement x="150" y="0" width="50" height="30" uuid="77617f2d-8e8e-4c3d-8f94-40bd0854bf5b"/>
