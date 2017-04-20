@@ -202,7 +202,7 @@ public class SaperReportController {
         filePath = filePath.substring(0, filePath.lastIndexOf("/"));
 
         //get *.jrxml
-        JasperDesign jDesign = JRXmlLoader.load(new File("/Users/liuranran/work/jasperreportserver/web/src/main/resources/jrxml/MyReports/mainreport.jrxml"));
+        JasperDesign jDesign = JRXmlLoader.load(new File("/Users/liuranran/work/jasperreportserver/web/src/main/resources/jrxml/MyReports/AllergyAnalysis.jrxml"));
         JasperDesign jDesign2 = JRXmlLoader.load(new File("/Users/liuranran/work/jasperreportserver/web/src/main/resources/jrxml/MyReports/AllergyAnalysisTable.jrxml"));
 
         //get *.jasper
@@ -222,15 +222,15 @@ public class SaperReportController {
         List data = new ArrayList();
 
         List<DataBean> list1 = getDataBeanList();
-//        List<DataBean> list2 = getDataBeanList();
+        List<DataBean> list2 = getDataBeanList();
 //        List<DataBean> list3 = getDataBeanList();
 //
         JRBeanCollectionDataSource ds1 = new JRBeanCollectionDataSource(list1);
-//        JRBeanCollectionDataSource ds2 = new JRBeanCollectionDataSource(list2);
+        JRBeanCollectionDataSource ds2 = new JRBeanCollectionDataSource(list2);
 //        JRBeanCollectionDataSource ds3 = new JRBeanCollectionDataSource(list3);
 //
         data.add(new Country(1 , "China" ,  ds1));
-//        data.add(new Country(2 , "USA" , ds2));
+        data.add(new Country(2 , "USA" , ds2));
 //        data.add(new Country(3 , "UK" , ds3));
 
         Map map = new HashMap();
