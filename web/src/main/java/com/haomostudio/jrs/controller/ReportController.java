@@ -40,7 +40,7 @@ public class ReportController {
         filePath = filePath.substring(0, filePath.lastIndexOf("/"));
         filePath = filePath.substring(0, filePath.lastIndexOf("/"));
         filePath = filePath.substring(0, filePath.lastIndexOf("/"));
-
+        
         //获取jrxml
         InputStream inputStream = new FileInputStream(filePath + "/src/main/resources/jrxml/MyReports/MainReports.jrxml");
         JasperDesign jasperDesign = JRXmlLoader.load(inputStream);
