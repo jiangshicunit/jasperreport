@@ -2,10 +2,14 @@ package com.haomostudio.jrs.controller;
 
 import net.sf.jasperreports.engine.*;
 import net.sf.jasperreports.engine.data.JRBeanCollectionDataSource;
-import net.sf.jasperreports.engine.design.JasperDesign;
+import net.sf.jasperreports.engine.design.*;
+import net.sf.jasperreports.engine.export.JRXmlExporter;
+import net.sf.jasperreports.engine.export.JRXmlExporterContext;
+import net.sf.jasperreports.engine.util.JRXmlWriteHelper;
 import net.sf.jasperreports.engine.util.LocalJasperReportsContext;
 import net.sf.jasperreports.engine.util.SimpleFileResolver;
 import net.sf.jasperreports.engine.xml.JRXmlLoader;
+import net.sf.jasperreports.engine.xml.JRXmlWriter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -37,10 +41,33 @@ public class ReportController {
         filePath = filePath.substring(0, filePath.lastIndexOf("/"));
         filePath = filePath.substring(0, filePath.lastIndexOf("/"));
 
-        //获取jrxml并编译
+        //获取jrxml
         InputStream inputStream = new FileInputStream(filePath + "/src/main/resources/jrxml/MyReports/MainReports.jrxml");
         JasperDesign jasperDesign = JRXmlLoader.load(inputStream);
+
+        //在main里添加subreport
+        InputStream inputStreamSub = new FileInputStream(filePath + "/src/main/resources/jrxml/MyReports/subreport_A4.jrxml");
+        JasperDesign subJasperDesign = JRXmlLoader.load(inputStreamSub);
+        JRDesignBand jrDesignBand = new JRDesignBand();
+        JRDesignSubreport jrDesignSubreport = new JRDesignSubreport(subJasperDesign);
+
+        //设置connectionExpression
+        JRDesignExpression connectExp = new JRDesignExpression("$P{REPORT_CONNECTION}");
+        jrDesignSubreport.setConnectionExpression(connectExp);
+
+        //设置subreportExpression
+        JasperCompileManager.compileReportToFile(subJasperDesign, filePath + "/src/main/resources/jrxml/MyReports/subreport_A4.jasper");//编译到本地
+        JRDesignExpression subreportExp = new JRDesignExpression("\"subreport_A4.jasper\"");//添加subreportExpression
+        jrDesignSubreport.setExpression(subreportExp);
+
+        jrDesignBand.addElement(jrDesignSubreport);
+        ((JRDesignSection)jasperDesign.getDetailSection()).addBand(jrDesignBand);
+
+        //编译
         JasperReport jasperReport = JasperCompileManager.compileReport(jasperDesign);
+
+        //输出jrxml，测试用
+//        JRXmlWriter.writeReport(jasperReport, filePath + "/src/main/resources/jrxml/MyReports/MainReports_gks.jrxml", "UTF-8");
 
         //设置参数
         Map<String,Object> params = new HashMap<>();
