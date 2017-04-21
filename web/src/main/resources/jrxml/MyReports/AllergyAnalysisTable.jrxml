@@ -8,6 +8,7 @@ http://jasperreports.sourceforge.net/xsd/jasperreport.xsd"
 			  name="jasper_report_template" language="groovy" pageWidth="595"
 			  pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20"
 			  topMargin="20" bottomMargin="20">
+	<style name="myStyle" isDefault="true" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
 	<style name="Table_TH" mode="Opaque" backcolor="#F0F8FF">
 		<box>
 			<topPen lineWidth="0.5" lineColor="#000000"/>
@@ -105,7 +106,7 @@ http://jasperreports.sourceforge.net/xsd/jasperreport.xsd"
 
 			<image>
 				<reportElement x="119" y="13" width="8" height="8" uuid="55dcc22b-f18e-4adc-8f76-b74383fa4516"/>
-				<imageExpression><![CDATA["/Users/liuranran/work/jasperreportserver/web/src/main/resources/jrxml/MyReports/"+($F{country}.equals("0")?"green":($F{country}.equals("1")?"hese":($F{country}.equals("2")?"red":"yellow")))+".png"]]></imageExpression>
+				<imageExpression><![CDATA["/Users/liuranran/work/jasperreportserver/web/src/main/resources/jrxml/MyReports/"+($F{country}.equals("0")?"green":($F{country}.equals("1")?"yellow":($F{country}.equals("2")?"hese":"red")))+".png"]]></imageExpression>
 			</image>
 
 			<textField>

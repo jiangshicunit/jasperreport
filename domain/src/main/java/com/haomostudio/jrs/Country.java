@@ -1,6 +1,6 @@
 package com.haomostudio.jrs;
 
-import java.util.List;
+import java.util.Map;
 
 import net.sf.jasperreports.engine.data.JRBeanCollectionDataSource;
 
