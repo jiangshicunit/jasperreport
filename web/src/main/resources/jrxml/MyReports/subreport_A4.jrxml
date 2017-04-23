@@ -6,6 +6,9 @@
 	<queryString>
 		<![CDATA[]]>
 	</queryString>
+	<field name="name" class="java.lang.String">
+		<fieldDescription><![CDATA[name]]></fieldDescription>
+	</field>
 	<background>
 		<band splitType="Stretch"/>
 	</background>
@@ -40,13 +43,14 @@
 	</summary>
 	<noData>
 		<band height="57">
-			<staticText>
+			<textField>
 				<reportElement stretchType="RelativeToBandHeight" x="227" y="20" width="173" height="30" uuid="05c09472-b566-4eac-89fb-9cadff2d2fc8"/>
-				<textElement textAlignment="Center">
-					<font size="20"/>
-				</textElement>
-				<text><![CDATA[hello subreport]]></text>
-			</staticText>
+				<textElement textAlignment="Center"
+							 verticalAlignment="Middle" />
+				<textFieldExpression class="java.lang.String">
+					<![CDATA[$F{name}]]>
+				</textFieldExpression>
+			</textField>
 		</band>
 	</noData>
 </jasperReport>
