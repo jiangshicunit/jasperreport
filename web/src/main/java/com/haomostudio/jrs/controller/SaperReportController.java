@@ -269,41 +269,41 @@ public class SaperReportController {
 
         ArrayList<DataBean> dataBeanList = new ArrayList();
 
-        dataBeanList.add(new DataBean("牛奶", "0"));
-        dataBeanList.add(new DataBean("羊奶", "0"));
-        dataBeanList.add(new DataBean("切达奶酪", "0"));
-        dataBeanList.add(new DataBean("酸奶", "1"));
-        dataBeanList.add(new DataBean("蛋白", "0"));
-        dataBeanList.add(new DataBean("蛋黄", "1"));
+        dataBeanList.add(new DataBean("牛奶", "0","奶蛋类","15/2/18"));
+        dataBeanList.add(new DataBean("羊奶", "0","奶蛋类","15/2/18"));
+        dataBeanList.add(new DataBean("切达奶酪", "0","奶蛋类","15/2/18"));
+        dataBeanList.add(new DataBean("酸奶", "1","奶蛋类","15/2/18"));
+        dataBeanList.add(new DataBean("蛋白", "0","奶蛋类","15/2/18"));
+        dataBeanList.add(new DataBean("蛋黄", "1","奶蛋类","15/2/18"));
         lists.add(dataBeanList);
 
         dataBeanList = new ArrayList();
-        dataBeanList.add(new DataBean("辣椒", "0"));
-        dataBeanList.add(new DataBean("酵母", "0"));
-        dataBeanList.add(new DataBean("胡椒", "0"));
-        dataBeanList.add(new DataBean("咖啡", "0"));
-        dataBeanList.add(new DataBean("茶", "0"));
-        dataBeanList.add(new DataBean("香草", "1"));
-        dataBeanList.add(new DataBean("蜂蜜", "2"));
-        dataBeanList.add(new DataBean("生姜", "3"));
+        dataBeanList.add(new DataBean("辣椒", "0","其他类","15/2/18"));
+        dataBeanList.add(new DataBean("酵母", "0","其他类","15/2/18"));
+        dataBeanList.add(new DataBean("胡椒", "0","其他类","15/2/18"));
+        dataBeanList.add(new DataBean("咖啡", "0","其他类","15/2/18"));
+        dataBeanList.add(new DataBean("茶", "0","其他类","15/2/18"));
+        dataBeanList.add(new DataBean("香草", "1","其他类","15/2/18"));
+        dataBeanList.add(new DataBean("蜂蜜", "2","其他类","15/2/18"));
+        dataBeanList.add(new DataBean("生姜", "3","其他类","15/2/18"));
         lists.add(dataBeanList);
 
         dataBeanList = new ArrayList();
-        dataBeanList.add(new DataBean("芦笋", "0"));
-        dataBeanList.add(new DataBean("蘑菇", "0"));
-        dataBeanList.add(new DataBean("番茄", "0"));
-        dataBeanList.add(new DataBean("芋头", "2"));
-        dataBeanList.add(new DataBean("四季豆", "0"));
-        dataBeanList.add(new DataBean("菠菜", "1"));
+        dataBeanList.add(new DataBean("芦笋", "0","其他类","15/2/18"));
+        dataBeanList.add(new DataBean("蘑菇", "0","其他类","15/2/18"));
+        dataBeanList.add(new DataBean("番茄", "0","其他类","15/2/18"));
+        dataBeanList.add(new DataBean("芋头", "2","其他类","15/2/18"));
+        dataBeanList.add(new DataBean("四季豆", "0","其他类","15/2/18"));
+        dataBeanList.add(new DataBean("菠菜", "1","其他类","15/2/18"));
         lists.add(dataBeanList);
 
         dataBeanList = new ArrayList();
-        dataBeanList.add(new DataBean("芦笋", "0"));
-        dataBeanList.add(new DataBean("蘑菇", "0"));
-        dataBeanList.add(new DataBean("番茄", "0"));
-        dataBeanList.add(new DataBean("芋头", "2"));
-        dataBeanList.add(new DataBean("四季豆", "0"));
-        dataBeanList.add(new DataBean("菠菜", "1"));
+        dataBeanList.add(new DataBean("芦笋", "0","其他类","15/2/18"));
+        dataBeanList.add(new DataBean("蘑菇", "0","其他类","15/2/18"));
+        dataBeanList.add(new DataBean("番茄", "0","其他类","15/2/18"));
+        dataBeanList.add(new DataBean("芋头", "2","其他类","15/2/18"));
+        dataBeanList.add(new DataBean("四季豆", "0","其他类","15/2/18"));
+        dataBeanList.add(new DataBean("菠菜", "1","其他类","15/2/18"));
         lists.add(dataBeanList);
         return lists;
     }
@@ -368,6 +368,8 @@ public class SaperReportController {
                                     dataBean = new DataBean();
                                     dataBean.setName(items.get(i));
                                     dataBean.setCountry(values.get(i)+"");
+                                    dataBean.setTitle(((Map<String,Object>)smap.get("data")).get("title").toString());
+                                    dataBean.setDate(((Map<String,Object>)smap.get("data")).get("date").toString());
                                     dataBeanList.add(dataBean);
                                 }
                             }
