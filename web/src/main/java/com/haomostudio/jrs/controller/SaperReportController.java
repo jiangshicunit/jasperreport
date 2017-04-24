@@ -13,10 +13,7 @@ import net.sf.jasperreports.engine.util.SimpleFileResolver;
 import net.sf.jasperreports.engine.xml.JRXmlLoader;
 import org.springframework.stereotype.Controller;
 import org.springframework.util.StringUtils;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -313,7 +310,8 @@ public class SaperReportController {
             method = { RequestMethod.GET, RequestMethod.POST },
             produces = "application/json;charset=UTF-8")
     @ResponseBody
-    public void groupVoid5(HttpServletResponse response,HttpServletRequest request) throws JRException, IOException  {
+    public void groupVoid5(HttpServletResponse response,HttpServletRequest request,
+                           @RequestParam(value = "json") String json) throws JRException, IOException  {
 
         String  realPath = request.getSession().getServletContext().getRealPath("");
 
@@ -329,7 +327,7 @@ public class SaperReportController {
         //MainReports 主表中的数据
         List<MainReports> mainList = new ArrayList<>();
         MainReport mainReport = new MainReport();
-        Object subReports = JsonUtil.mainReport(JsonUtil.json,mainReport);
+        Object subReports = JsonUtil.mainReport(json,mainReport);
         Map map = new HashMap();
         map.put("name",mainReport.getCustomerID());
         map.put("birth",mainReport.getCustomerBirthDate());
@@ -405,7 +403,16 @@ public class SaperReportController {
         exportManager.exportToPdfStream(jasperPrint, outStream);
     }
 
+    @RequestMapping(value = "/testjson",
+            method = { RequestMethod.GET, RequestMethod.POST },
+            produces = "application/json;charset=UTF-8")
+    @ResponseBody
+    public void groupVoid7(HttpServletResponse response,HttpServletRequest request,
+                           @RequestParam(value = "json") String json) throws JRException, IOException  {
+        JSONObject jsonObject = JSON.parseObject(json);
+        System.out.println(jsonObject.get("title"));
 
+    }
 }
 
 
