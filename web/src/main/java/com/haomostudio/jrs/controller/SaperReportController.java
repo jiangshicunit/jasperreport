@@ -11,6 +11,7 @@ import net.sf.jasperreports.engine.design.JasperDesign;
 import net.sf.jasperreports.engine.util.LocalJasperReportsContext;
 import net.sf.jasperreports.engine.util.SimpleFileResolver;
 import net.sf.jasperreports.engine.xml.JRXmlLoader;
+import org.apache.commons.collections.map.HashedMap;
 import org.springframework.stereotype.Controller;
 import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.*;
@@ -306,15 +307,22 @@ public class SaperReportController {
     }
 
 
-    @RequestMapping(value = "/testMain",
-            method = { RequestMethod.GET, RequestMethod.POST },
+    @RequestMapping(value = "/generatepdf",
+            method = {  RequestMethod.POST },
             produces = "application/json;charset=UTF-8")
     @ResponseBody
-    public void groupVoid5(HttpServletResponse response,HttpServletRequest request,
-                           @RequestParam(value = "json") String json) throws JRException, IOException  {
+    public Object groupVoid5(HttpServletResponse response,HttpServletRequest request,
+                           @RequestParam(value = "json") String json,
+                             @RequestParam(value = "pdfName",required = false) String pdfName
+    ) throws JRException, IOException  {
 
         String  realPath = request.getSession().getServletContext().getRealPath("");
-
+        Map<String,Object> resultMap =  new HashMap();
+        if (StringUtils.isEmpty(pdfName)){
+            pdfName = String.valueOf( System.currentTimeMillis() )+".pdf";
+        }else if (!pdfName.contains(".pdf")){
+            pdfName = pdfName+".pdf";
+        }
 
         File reportsDir = new File(realPath + "/jrxml/MyReports/");
         LocalJasperReportsContext ctx = new LocalJasperReportsContext(DefaultJasperReportsContext.getInstance());
@@ -324,83 +332,97 @@ public class SaperReportController {
         JasperFillManager fillManager = JasperFillManager.getInstance(ctx);
         JasperExportManager exportManager = JasperExportManager.getInstance(ctx);
 
-        //MainReports 主表中的数据
-        List<MainReports> mainList = new ArrayList<>();
-        MainReport mainReport = new MainReport();
-        Object subReports = JsonUtil.mainReport(json,mainReport);
-        Map map = new HashMap();
-        map.put("name",mainReport.getCustomerID());
-        map.put("birth",mainReport.getCustomerBirthDate());
-        map.put(JRParameter.REPORT_FILE_RESOLVER, new SimpleFileResolver(reportsDir));
-        JasperDesign jDesignMain = JRXmlLoader.load(new File(realPath+"/jrxml/MyReports/MainReports.jrxml"));
-        JasperReport jReportMain = JasperCompileManager.compileReport(jDesignMain);
-        //jasper数据
-        JasperDesign jDesign = null;
-        JasperReport jReport = null;
-        //循环子列表
-        if (!StringUtils.isEmpty( subReports )){
-            JSONArray array = JSON.parseArray(subReports.toString());
-            for (Object subObject : array) {
-                Map<String,Object> submap = (Map<String, Object>) subObject;
-                System.out.println("map:"+submap.get("subReportName"));
-                System.out.println("data"+((Map<String,Object>)submap.get("data")).get("title"));
-                if (!StringUtils.isEmpty(submap.get("subReports"))){
+        try {
+            //MainReports 主表中的数据
+            List<MainReports> mainList = new ArrayList<>();
+            MainReport mainReport = new MainReport();
+            Object subReports = JsonUtil.mainReport(json,mainReport);
+            Map map = new HashMap();
+            map.put("name",mainReport.getCustomerID());
+            map.put("birth",mainReport.getCustomerBirthDate());
+            map.put(JRParameter.REPORT_FILE_RESOLVER, new SimpleFileResolver(reportsDir));
+            JasperDesign jDesignMain = JRXmlLoader.load(new File(realPath+"/jrxml/MyReports/MainReports.jrxml"));
+            JasperReport jReportMain = JasperCompileManager.compileReport(jDesignMain);
+            //jasper数据
+            JasperDesign jDesign = null;
+            JasperReport jReport = null;
+            //循环子列表
+            if (!StringUtils.isEmpty( subReports )){
+                JSONArray array = JSON.parseArray(subReports.toString());
+                for (Object subObject : array) {
+                    Map<String,Object> submap = (Map<String, Object>) subObject;
+                    System.out.println("map:"+submap.get("subReportName"));
+                    System.out.println("data"+((Map<String,Object>)submap.get("data")).get("title"));
+                    if (!StringUtils.isEmpty(submap.get("subReports"))){
 //                    System.out.println(map.get("subReports").toString());
-                    if (submap!=null && submap.get("subReportName").equals("AllergyAnalysis")){
-                        List<Country> data = new ArrayList();
-                        jDesign =  JRXmlLoader.load(new File(realPath+"/jrxml/MyReports/AllergyAnalysis.jrxml"));
-                        jReport = JasperCompileManager.compileReport(jDesign);
+                        if (submap!=null && submap.get("subReportName").equals("AllergyAnalysis")){
+                            List<Country> data = new ArrayList();
+                            jDesign =  JRXmlLoader.load(new File(realPath+"/jrxml/MyReports/AllergyAnalysis.jrxml"));
+                            jReport = JasperCompileManager.compileReport(jDesign);
 
-                        JasperDesign jDesign2 = JRXmlLoader.load(new File(realPath+"/jrxml/MyReports/AllergyAnalysisTable.jrxml"));
-                        JasperReport jReport2 = JasperCompileManager.compileReport(jDesign2);
-                        List<Map<String,Object>> slist = (List<Map<String, Object>>) submap.get("subReports");
-                        for (Map<String,Object> smap :slist){
-                            List<DataBean> dataBeanList = new ArrayList();
-                            if(smap!=null && smap.get("subReportName").equals("AllergyAnalysisTable")){
+                            JasperDesign jDesign2 = JRXmlLoader.load(new File(realPath+"/jrxml/MyReports/AllergyAnalysisTable.jrxml"));
+                            JasperReport jReport2 = JasperCompileManager.compileReport(jDesign2);
+                            List<Map<String,Object>> slist = (List<Map<String, Object>>) submap.get("subReports");
+                            for (Map<String,Object> smap :slist){
+                                List<DataBean> dataBeanList = new ArrayList();
+                                if(smap!=null && smap.get("subReportName").equals("AllergyAnalysisTable")){
 
-                                List<String> items =  (smap.get("data"))==null?new ArrayList<>():(List<String>)((Map<String,Object>)smap.get("data")).get("items");
-                                List<Integer> values = (smap.get("data"))==null?new ArrayList<>():(List<Integer>) ((Map<String,Object>)smap.get("data")).get("values");
-                                dataBeanList = new ArrayList();
-                                DataBean dataBean = new DataBean();
-                                for (int i = 0;i < items.size();i++){
-                                    dataBean = new DataBean();
-                                    dataBean.setName(items.get(i));
-                                    dataBean.setCountry(values.get(i)+"");
-                                    dataBean.setTitle(((Map<String,Object>)smap.get("data")).get("title").toString());
-                                    dataBean.setDate(((Map<String,Object>)smap.get("data")).get("date").toString());
-                                    dataBeanList.add(dataBean);
+                                    List<String> items =  (smap.get("data"))==null?new ArrayList<>():(List<String>)((Map<String,Object>)smap.get("data")).get("items");
+                                    List<Integer> values = (smap.get("data"))==null?new ArrayList<>():(List<Integer>) ((Map<String,Object>)smap.get("data")).get("values");
+                                    dataBeanList = new ArrayList();
+                                    DataBean dataBean = new DataBean();
+                                    for (int i = 0;i < items.size();i++){
+                                        dataBean = new DataBean();
+                                        dataBean.setName(items.get(i));
+                                        dataBean.setCountry(values.get(i)+"");
+                                        dataBean.setTitle(((Map<String,Object>)smap.get("data")).get("title").toString());
+                                        dataBean.setDate(((Map<String,Object>)smap.get("data")).get("date").toString());
+                                        dataBeanList.add(dataBean);
+                                    }
                                 }
-                            }
-                            JRBeanCollectionDataSource ds1 = new JRBeanCollectionDataSource(dataBeanList);
-                            data.add(new Country(1,((Map<String,Object>)submap.get("data")).get("title").toString(),ds1));
+                                JRBeanCollectionDataSource ds1 = new JRBeanCollectionDataSource(dataBeanList);
+                                data.add(new Country(1,((Map<String,Object>)submap.get("data")).get("title").toString(),ds1));
 
+                            }
+
+                            mainList.add(new MainReports(jReport,jReport2,new JRBeanCollectionDataSource(data)));
                         }
 
-                        mainList.add(new MainReports(jReport,jReport2,new JRBeanCollectionDataSource(data)));
-                    }
+                    }else {
+                        if (submap!=null && submap.get("subReportName").equals("SectionHeader")){
+                            jDesign = JRXmlLoader.load(new File(realPath+"/jrxml/MyReports/SectionHeader.jrxml"));
+                            jReport = JasperCompileManager.compileReport(jDesign);
+                            JSONObject allergyObject = JSONObject.parseObject(submap.get("data").toString());
+                            String title = allergyObject.get("title")==null?"":allergyObject.get("title").toString();
+                            String subTitle = allergyObject.get("subTitle")==null?"":allergyObject.get("subTitle").toString();
+                            mainList.add(new MainReports(jReport, jReport ,
+                                    new JRBeanCollectionDataSource(Arrays.asList(new SectionHeader(title,subTitle)))));
 
-                }else {
-                    if (submap!=null && submap.get("subReportName").equals("SectionHeader")){
-                        jDesign = JRXmlLoader.load(new File(realPath+"/jrxml/MyReports/SectionHeader.jrxml"));
-                        jReport = JasperCompileManager.compileReport(jDesign);
-                        JSONObject allergyObject = JSONObject.parseObject(submap.get("data").toString());
-                        String title = allergyObject.get("title")==null?"":allergyObject.get("title").toString();
-                        String subTitle = allergyObject.get("subTitle")==null?"":allergyObject.get("subTitle").toString();
-                        mainList.add(new MainReports(jReport, jReport ,
-                                new JRBeanCollectionDataSource(Arrays.asList(new SectionHeader(title,subTitle)))));
-
+                        }
                     }
                 }
             }
-        }
-        JasperPrint jasperPrint = fillManager.fillReport(jReportMain, map, new JRBeanCollectionDataSource(mainList));
+            JasperPrint jasperPrint = fillManager.fillReport(jReportMain, map, new JRBeanCollectionDataSource(mainList));
 
-        //export with pdf
-        //返回输出流
-        final OutputStream outStream = response.getOutputStream();
-        String fileName = "test.pdf";
-        response.addHeader("Content-Disposition", "filename=" + fileName);
-        exportManager.exportToPdfStream(jasperPrint, outStream);
+            //export with pdf
+            //返回输出流
+//        final OutputStream outStream = response.getOutputStream();
+//        String fileName = "test.pdf";
+//        response.addHeader("Content-Disposition", "filename=" + fileName);
+            FileOutputStream outs =new FileOutputStream(realPath+"/pdf/"+pdfName);
+            exportManager.exportToPdfStream(jasperPrint, outs);
+            //给前台返回信息
+            resultMap.put("status",200);
+            resultMap.put("pdfName",pdfName);
+            resultMap.put("fileFolderPath",realPath+"pdf");
+            return resultMap;
+        }catch (Exception e){
+            e.printStackTrace();
+            resultMap.put("status",404);
+            resultMap.put("userMessage","cannot find those templates");
+            resultMap.put("templateNames","");
+            return resultMap;
+        }
     }
 
     @RequestMapping(value = "/testjson",
