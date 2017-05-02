@@ -103,6 +103,7 @@ public class JsonUtil {
     }
 
     public static Object  mainReport(String json,MainReport mainReport){
+        System.out.println(json);
         JSONObject object    = JSONObject.parseObject(json);
         Object reportName    = object.get("reportName");
         Object data          = object.get("data");

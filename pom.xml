@@ -80,6 +80,12 @@
                 <enabled>false</enabled>
             </snapshots>
         </repository>
+        <repository>
+            <id>osssonatype</id>
+            <name>OSS Sonatype</name>
+            <url>https://repo1.maven.org/maven2/</url>
+            <layout>default</layout>
+        </repository>
     </repositories>
     <pluginRepositories>
         <pluginRepository>
@@ -408,8 +414,13 @@
         <dependency>
             <groupId>net.sf.jasperreports</groupId>
             <artifactId>jasperreports</artifactId>
-            <version>6.0.0</version>
+            <version>6.0.3</version>
         </dependency>
+        <!--<dependency>-->
+            <!--<groupId>net.sf.jasperreports</groupId>-->
+            <!--<artifactId>jasperreports</artifactId>-->
+            <!--<version>6.0.4</version>-->
+        <!--</dependency>-->
         <dependency>
             <groupId>com.itextpdf</groupId>
             <artifactId>itextpdf</artifactId>
@@ -425,10 +436,35 @@
             <artifactId>itext-asian</artifactId>
             <version>5.2.0</version>
         </dependency>
+        <dependency>
+            <groupId>htmlcomponent</groupId>
+            <artifactId>htmlcomponent</artifactId>
+            <version>1.0</version>
+        </dependency>
         <!--<dependency>-->
-            <!--<groupId>htmlcomponent</groupId>-->
-            <!--<artifactId>htmlcomponent</artifactId>-->
-            <!--<version>1.0</version>-->
+            <!--<groupId>com.jaspersoft.studio.components</groupId>-->
+            <!--<artifactId>customvisualization</artifactId>-->
+            <!--<version>6.3.1</version>-->
+        <!--</dependency>-->
+        <!--<dependency>-->
+            <!--<groupId>com.jaspersoft.studio</groupId>-->
+            <!--<artifactId>components</artifactId>-->
+            <!--<version>6.3.1</version>-->
+        <!--</dependency>-->
+        <!--<dependency>-->
+            <!--<groupId>customvisualization</groupId>-->
+            <!--<artifactId>customvisualization</artifactId>-->
+            <!--<version>6.1.0</version>-->
+        <!--</dependency>-->
+        <!--<dependency>-->
+            <!--<groupId>compiler</groupId>-->
+            <!--<artifactId>compiler</artifactId>-->
+            <!--<version>1.1.1</version>-->
+        <!--</dependency>-->
+        <!--<dependency>-->
+            <!--<groupId>js</groupId>-->
+            <!--<artifactId>js</artifactId>-->
+            <!--<version>1.1.1</version>-->
         <!--</dependency>-->
     </dependencies>
 

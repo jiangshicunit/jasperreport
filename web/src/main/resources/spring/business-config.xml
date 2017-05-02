@@ -50,4 +50,14 @@
 	<tx:annotation-driven transaction-manager="transactionManager" />
 
 	<bean id="objectMapper" class="com.fasterxml.jackson.databind.ObjectMapper"/>
+
+	<bean id="propertyConfigurer" class="com.haomostudio.jrs.common.PropertyConfigurer">
+		<property name="ignoreUnresolvablePlaceholders" value="true"/>
+		<property name="ignoreResourceNotFound" value="true"/>
+		<property name="locations">
+			<list>
+				<value>classpath:filePath.properties</value>
+			</list>
+		</property>
+	</bean>
 </beans>
