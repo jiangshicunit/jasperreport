@@ -53,7 +53,7 @@ public class SaperReportController {
 //        InputStream inputStream = new FileInputStream(filePath + "/src/main/resources/jrxml/MyReports/MainReports.jrxml");
 //        InputStream inputStream = new FileInputStream(filePath + "/webapps/jrs/WEB-INF/classes/jrxml/MyReports/test.jrxml");
 
-        InputStream inputStream = new FileInputStream(realPath+"/jrxml/MyReports/FoodFamilyAndPossilableSource.jrxml");
+        InputStream inputStream = new FileInputStream(realPath+"/jrxml/MyReports/LaboratotyTestTable.jrxml");
         JasperDesign jasperDesign = JRXmlLoader.load(inputStream);
         JasperReport jasperReport = JasperCompileManager.compileReport(jasperDesign);
 
@@ -71,16 +71,33 @@ public class SaperReportController {
         JasperExportManager exportManager = JasperExportManager.getInstance(ctx);
 
         //
-//        List<DataBean> dataList = getDataBeanList();
+        List<List<DataBean>> dataList = getDataBeanList();
+        List<Country> data = new ArrayList();
+        JasperDesign jasperDesign1 = JRXmlLoader.load(new FileInputStream(realPath+"/jrxml/MyReports/AllergyAnalysisTable1.jrxml"));
+        JasperReport jasperReport1 = JasperCompileManager.compileReport(jasperDesign1);
+        JasperDesign jasperDesign2 = JRXmlLoader.load(new FileInputStream(realPath+"/jrxml/MyReports/AllergyAnalysisTable2.jrxml"));
+        JasperReport jasperReport2 = JasperCompileManager.compileReport(jasperDesign2);
+        JasperDesign jasperDesign3 = JRXmlLoader.load(new FileInputStream(realPath+"/jrxml/MyReports/AllergyAnalysisTable.jrxml"));
+        JasperReport jasperReport3 = JasperCompileManager.compileReport(jasperDesign3);
+        List<County1> county1List = new ArrayList<>();
+        List<County1> county2List = new ArrayList<>();
+        for (int i = 0;i<dataList.size();i=i+2){
+            JRBeanCollectionDataSource ds1 = new JRBeanCollectionDataSource(dataList.get(i));
+            JRBeanCollectionDataSource ds2 = null;
+            if (i+1<dataList.size()){
+                ds2 = new JRBeanCollectionDataSource(dataList.get(i+1));
+            }
+            county1List.add(new County1(ds1,jasperReport3));
+            county2List.add(new County1(ds2,jasperReport3));
+        }
+        data.add(new Country(1,"过敏",new JRBeanCollectionDataSource(county1List),
+                new JRBeanCollectionDataSource(county2List),jasperReport1,jasperReport2));
 //        List<SuggestionReport> dataList = getDataBeanList();
 
         //获取JasperPrint
 //        JasperPrint jasperPrint = fillManager.fill(jasperReport, params, new JREmptyDataSource());
         JasperPrint jasperPrint = fillManager.fillReport(jasperReport,params, new JRBeanCollectionDataSource(
-                Arrays.asList(""
-//                        new SuggestionReport("糖尿病","<p>A.饮食均衡，<b>尽量包含各种新鲜食物</b>（越少人工处理越好），" +
-//                                "饮食内需包括绿色蔬菜、<br/>黄红色蔬菜、淀粉类蔬菜、水果、蛋白质、谷类及豆类。</p><center>")
-                )));
+                data));
         //返回输出流
         final OutputStream outStream = response.getOutputStream();
         String fileName = "test.pdf";
@@ -238,7 +255,7 @@ public class SaperReportController {
         List<List<DataBean>> list1 = getDataBeanList();
         for (List<DataBean> list2: list1) {
             JRBeanCollectionDataSource ds1 = new JRBeanCollectionDataSource(list2);
-            data.add(new Country(1,"过敏",ds1,ds1));
+           // data.add(new Country(1,"过敏",ds1,ds1));
         }
 //        List<DataBean> list2 = getDataBeanList1();
 //        List<DataBean> list3 = getDataBeanList2();
@@ -356,6 +373,7 @@ public class SaperReportController {
             pdfName = pdfName+".pdf";
         }
         System.out.println("测试："+pdfName);
+        FileOutputStream outs = null;
         File reportsDir = new File(xml_save_path);
         LocalJasperReportsContext ctx = new LocalJasperReportsContext(DefaultJasperReportsContext.getInstance());
         ctx.setClassLoader(getClass().getClassLoader());
@@ -370,8 +388,8 @@ public class SaperReportController {
             MainReport mainReport = new MainReport();
             Object subReports = JsonUtil.mainReport(json,mainReport);
             Map map = new HashMap();
-            map.put("name",mainReport.getCustomerID());
-            map.put("birth",mainReport.getCustomerBirthDate());
+            map.put("name",mainReport.getCustomerID()==null?"":mainReport.getCustomerID());
+            map.put("birth",mainReport.getCustomerBirthDate()==null?"":mainReport.getCustomerBirthDate());
             map.put(JRParameter.REPORT_FILE_RESOLVER, new SimpleFileResolver(reportsDir));
             JasperDesign jDesignMain = JRXmlLoader.load(new File(xml_save_path+"/MainReports.jrxml"));
             JasperReport jReportMain = JasperCompileManager.compileReport(jDesignMain);
@@ -417,17 +435,80 @@ public class SaperReportController {
                                 }
                                 sunBeanList.add(dataBeanList);
                             }
+//                            for (int i = 0;i<sunBeanList.size();i=i+2){
+//                                JRBeanCollectionDataSource ds1 = new JRBeanCollectionDataSource(sunBeanList.get(i));
+//                                JRBeanCollectionDataSource ds2 = null;
+//                                if (i+1<sunBeanList.size()){
+//                                    ds2 = new JRBeanCollectionDataSource(sunBeanList.get(i+1));
+//                                }
+//                               // data.add(new Country(1,((Map<String,Object>)submap.get("data")).get("title").toString(),ds1,ds2));
+//                            }
+                            JasperDesign jasperDesign1 = JRXmlLoader.load(new FileInputStream(xml_save_path+"/AllergyAnalysisTable1.jrxml"));
+                            JasperReport jasperReport1 = JasperCompileManager.compileReport(jasperDesign1);
+                            JasperDesign jasperDesign2 = JRXmlLoader.load(new FileInputStream(xml_save_path+"/AllergyAnalysisTable2.jrxml"));
+                            JasperReport jasperReport2 = JasperCompileManager.compileReport(jasperDesign2);
+                            JasperDesign jasperDesign3 = JRXmlLoader.load(new FileInputStream(xml_save_path+"/AllergyAnalysisTable.jrxml"));
+                            JasperReport jasperReport3 = JasperCompileManager.compileReport(jasperDesign3);
+                            List<County1> county1List = new ArrayList<>();
+                            List<County1> county2List = new ArrayList<>();
                             for (int i = 0;i<sunBeanList.size();i=i+2){
                                 JRBeanCollectionDataSource ds1 = new JRBeanCollectionDataSource(sunBeanList.get(i));
                                 JRBeanCollectionDataSource ds2 = null;
                                 if (i+1<sunBeanList.size()){
                                     ds2 = new JRBeanCollectionDataSource(sunBeanList.get(i+1));
                                 }
-                                data.add(new Country(1,((Map<String,Object>)submap.get("data")).get("title").toString(),ds1,ds2));
+                                county1List.add(new County1(ds1,jasperReport3));
+                                county2List.add(new County1(ds2,jasperReport3));
                             }
-
+                            data.add(new Country(1,((Map<String,Object>)submap.get("data")).get("title").toString(),new JRBeanCollectionDataSource(county1List),
+                                    new JRBeanCollectionDataSource(county2List),jasperReport1,jasperReport2));
 
                             mainList.add(new MainReports(jReport,jReport2,new JRBeanCollectionDataSource(data)));
+                        }else if (submap!=null && !StringUtils.isEmpty(submap.get("subReportName"))&& submap.get("subReportName").equals("LaboratoryTest")){
+                            List<LaboratoryTest> laboratoryTests = new ArrayList<>();
+                            List<LaboratoryTest> laboratoryTests1 = new ArrayList<>();
+                            JasperDesign labJasperDesign = JRXmlLoader.load(new FileInputStream(xml_save_path+"/LaboratotyTestTable.jrxml"));
+                            JasperReport labjasperReport = JasperCompileManager.compileReport(labJasperDesign);
+                            JasperDesign jasperDesign1 = JRXmlLoader.load(xml_save_path+"/LaboratoryTest.jrxml");
+                            JasperReport jasperReport1 = JasperCompileManager.compileReport(jasperDesign1);
+
+                            JasperDesign jasperDesign2 = JRXmlLoader.load(xml_save_path+"/LaboratoryTest1.jrxml");
+                            JasperReport jasperReport2 = JasperCompileManager.compileReport(jasperDesign2);
+                            if (!StringUtils.isEmpty(submap.get("subReports"))){
+                                JSONArray array1 = JSON.parseArray(submap.get("subReports").toString());
+                                for (Object  subReport : array1) {
+                                    List<LaboratoryTestTable> labList = new ArrayList<>();
+                                    Map<String,Object> map1 = (Map<String, Object>) subReport;
+                                    if (StringUtils.isEmpty(map1.get("subReportName"))){
+                                        continue;
+                                    }
+                                    if (!StringUtils.isEmpty(map1.get("data"))){
+                                        JSONObject dataJson = JSON.parseObject(map1.get("data").toString());
+                                        String title = dataJson.get("title")==null?"":dataJson.get("title").toString();
+                                        String date = dataJson.get("date")==null?"":dataJson.get("date").toString();
+                                        if (!StringUtils.isEmpty( dataJson.get("values"))){
+                                            JSONArray value = JSON.parseArray(dataJson.get("values").toString() );
+                                            for (Object objec : value){
+                                                Map<String,Object> data = (Map<String, Object>) objec;
+                                                String name = data.get("name")==null?"":data.get("name").toString();
+                                                String ename = data.get("ChineseName")==null?"":data.get("ChineseName").toString();
+                                                double value1 = data.get("testValue")==null?0: Double.valueOf( data.get("testValue").toString() );
+                                                double max = data.get("MaxReferValue")==null?0: Double.valueOf(  data.get("MaxReferValue").toString() );
+                                                String unit = data.get("unit")==null?"":data.get("unit").toString();
+                                                double min =  data.get("MinReferValue")==null?0: Double.valueOf( data.get("MinReferValue").toString());
+
+                                                labList.add(new LaboratoryTestTable(title,date,name,ename,max,min,value1,unit));
+                                            }
+                                            laboratoryTests1.add(new LaboratoryTest(new JRBeanCollectionDataSource(labList
+                                                    ),labjasperReport));
+                                        }
+                                    }
+
+                                }
+                                laboratoryTests.add(new LaboratoryTest(new JRBeanCollectionDataSource(laboratoryTests1),jasperReport2));
+                            }
+                            mainList.add(new MainReports(jasperReport1, jasperReport1 ,
+                                    new JRBeanCollectionDataSource(laboratoryTests)));
                         }
 
                     }else {
@@ -515,7 +596,7 @@ public class SaperReportController {
 //        final OutputStream outStream = response.getOutputStream();
 //        String fileName = "test.pdf";
 //        response.addHeader("Content-Disposition", "filename=" + fileName);
-            FileOutputStream outs =new FileOutputStream(pdf_export_path+"/"+pdfName);
+            outs =new FileOutputStream(pdf_export_path+"/"+pdfName);
             exportManager.exportToPdfStream(jasperPrint, outs);
             //给前台返回信息
             resultMap.put("status",200);
@@ -527,6 +608,8 @@ public class SaperReportController {
             resultMap.put("status",400);
             resultMap.put("error",e.getMessage());
             return resultMap;
+        }finally {
+            outs.close();
         }
     }
 
@@ -610,7 +693,7 @@ public class SaperReportController {
                                 }
                             }
                             JRBeanCollectionDataSource ds1 = new JRBeanCollectionDataSource(dataBeanList);
-                            data.add(new Country(1,((Map<String,Object>)submap.get("data")).get("title").toString(),ds1,ds1));
+                          //  data.add(new Country(1,((Map<String,Object>)submap.get("data")).get("title").toString(),ds1,ds1));
 
                         }
 
@@ -728,7 +811,7 @@ public class SaperReportController {
                                 if (i+1<sunBeanList.size()){
                                     ds2 = new JRBeanCollectionDataSource(sunBeanList.get(i+1));
                                 }
-                                data.add(new Country(1,((Map<String,Object>)submap.get("data")).get("title").toString(),ds1,ds2));
+                               // data.add(new Country(1,((Map<String,Object>)submap.get("data")).get("title").toString(),ds1,ds2));
                             }
 
 
@@ -889,7 +972,7 @@ public class SaperReportController {
                                     }
                                 }
                                 JRBeanCollectionDataSource ds1 = new JRBeanCollectionDataSource(dataBeanList);
-                                data.add(new Country(1,((Map<String,Object>)submap.get("data")).get("title").toString(),ds1,ds1));
+                               // data.add(new Country(1,((Map<String,Object>)submap.get("data")).get("title").toString(),ds1,ds1));
 
                             }
 
@@ -1063,7 +1146,7 @@ public class SaperReportController {
                                     }
                                 }
                                 JRBeanCollectionDataSource ds1 = new JRBeanCollectionDataSource(dataBeanList);
-                                data.add(new Country(1,((Map<String,Object>)submap.get("data")).get("title").toString(),ds1,ds1));
+                               // data.add(new Country(1,((Map<String,Object>)submap.get("data")).get("title").toString(),ds1,ds1));
 
                             }
 
@@ -1231,7 +1314,7 @@ public class SaperReportController {
                                     }
                                 }
                                 JRBeanCollectionDataSource ds1 = new JRBeanCollectionDataSource(dataBeanList);
-                                data.add(new Country(1,((Map<String,Object>)submap.get("data")).get("title").toString(),ds1,ds1));
+                               // data.add(new Country(1,((Map<String,Object>)submap.get("data")).get("title").toString(),ds1,ds1));
 
                             }
 

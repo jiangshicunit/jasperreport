@@ -416,6 +416,31 @@
             <artifactId>jasperreports</artifactId>
             <version>6.0.3</version>
         </dependency>
+        <dependency>
+            <groupId>org.apache.velocity</groupId>
+            <artifactId>velocity</artifactId>
+            <version>1.7</version>
+        </dependency>
+        <dependency>
+            <groupId>jasperreports.chart.customizers</groupId>
+            <artifactId>customizers</artifactId>
+            <version>6.3.1</version>
+        </dependency>
+        <dependency>
+            <groupId>jasperreports.chart.themes</groupId>
+            <artifactId>themes</artifactId>
+            <version>6.3.1</version>
+        </dependency>
+        <dependency>
+            <groupId>jasperreports.functions</groupId>
+            <artifactId>functions</artifactId>
+            <version>6.3.1</version>
+        </dependency>
+        <dependency>
+            <groupId>jasperreports.fonts</groupId>
+            <artifactId>fonts</artifactId>
+            <version>6.3.1</version>
+        </dependency>
         <!--<dependency>-->
             <!--<groupId>net.sf.jasperreports</groupId>-->
             <!--<artifactId>jasperreports</artifactId>-->
@@ -451,11 +476,11 @@
             <!--<artifactId>components</artifactId>-->
             <!--<version>6.3.1</version>-->
         <!--</dependency>-->
-        <!--<dependency>-->
-            <!--<groupId>customvisualization</groupId>-->
-            <!--<artifactId>customvisualization</artifactId>-->
-            <!--<version>6.1.0</version>-->
-        <!--</dependency>-->
+        <dependency>
+            <groupId>customvisualization</groupId>
+            <artifactId>customvisualization</artifactId>
+            <version>6.1.0</version>
+        </dependency>
         <!--<dependency>-->
             <!--<groupId>compiler</groupId>-->
             <!--<artifactId>compiler</artifactId>-->
@@ -466,6 +491,18 @@
             <!--<artifactId>js</artifactId>-->
             <!--<version>1.1.1</version>-->
         <!--</dependency>-->
+        <dependency>
+            <groupId>org.apache.xmlgraphics</groupId>
+            <artifactId>batik-bridge</artifactId>
+            <version>1.8</version>
+            <scope>compile</scope>
+            <optional>true</optional>
+        </dependency>
+        <dependency>
+            <groupId>batik</groupId>
+            <artifactId>batik-bridge</artifactId>
+            <version>1.6-1</version>
+        </dependency>
     </dependencies>
 
     <build>

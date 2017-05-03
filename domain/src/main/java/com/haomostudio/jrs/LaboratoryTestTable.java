@@ -5,20 +5,40 @@ package com.haomostudio.jrs;
  */
 public class LaboratoryTestTable {
 
+    private String title;
+    private String date;
     private String name;
-    private String ChineseName;
-    private String testValue;
-    private String MaxReferValue;
-    private String MinReferValue;
+    private String ename;
+    private double min;
+    private double max;
+    private double value;
     private String unit;
 
-    public LaboratoryTestTable(String name, String chineseName, String testValue, String maxReferValue,String minReferValue, String unit) {
+    public LaboratoryTestTable(String title, String date, String name, String ename, double max, double min,double value, String unit) {
+        this.title = title;
+        this.date = date;
         this.name = name;
-        this.ChineseName = chineseName;
-        this.testValue = testValue;
-        this.MaxReferValue = maxReferValue;
+        this.ename = ename;
+        this.max = max;
+        this.value = value;
         this.unit = unit;
-        this.MinReferValue = minReferValue;
+        this.min = min ;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public String getDate() {
+        return date;
+    }
+
+    public void setDate(String date) {
+        this.date = date;
     }
 
     public String getName() {
@@ -29,28 +49,28 @@ public class LaboratoryTestTable {
         this.name = name;
     }
 
-    public String getChineseName() {
-        return ChineseName;
+    public String getEname() {
+        return ename;
     }
 
-    public void setChineseName(String chineseName) {
-        ChineseName = chineseName;
+    public void setEname(String ename) {
+        this.ename = ename;
     }
 
-    public String getTestValue() {
-        return testValue;
+    public double getMax() {
+        return max;
     }
 
-    public void setTestValue(String testValue) {
-        this.testValue = testValue;
+    public void setMax(double max) {
+        this.max = max;
     }
 
-    public String getMaxReferValue() {
-        return MaxReferValue;
+    public double getValue() {
+        return value;
     }
 
-    public void setMaxReferValue(String maxReferValue) {
-        MaxReferValue = maxReferValue;
+    public void setValue(double value) {
+        this.value = value;
     }
 
     public String getUnit() {
@@ -61,11 +81,11 @@ public class LaboratoryTestTable {
         this.unit = unit;
     }
 
-    public String getMinReferValue() {
-        return MinReferValue;
+    public double getMin() {
+        return min;
     }
 
-    public void setMinReferValue(String minReferValue) {
-        MinReferValue = minReferValue;
+    public void setMin(double min) {
+        this.min = min;
     }
 }

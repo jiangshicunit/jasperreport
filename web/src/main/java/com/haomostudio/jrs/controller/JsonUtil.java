@@ -107,20 +107,23 @@ public class JsonUtil {
         JSONObject object    = JSONObject.parseObject(json);
         Object reportName    = object.get("reportName");
         Object data          = object.get("data");
-        JSONObject dataObject    = JSONObject.parseObject(data.toString());
-        Object customerID = dataObject.get("customerID");
-        Object customerBirthDate = dataObject.get("customerBirthDate");
+        if (!StringUtils.isEmpty(data)){
+            JSONObject dataObject    = JSONObject.parseObject(data.toString());
+            Object customerID = dataObject.get("customerID");
+            Object customerBirthDate = dataObject.get("customerBirthDate");
+
+            System.out.println(reportName+":"+customerID+"&"+ customerBirthDate);
+            if (!StringUtils.isEmpty( reportName) ){
+                mainReport.setReportName(reportName.toString()) ;
+            }
+            if (!StringUtils.isEmpty( customerID) ){
+                mainReport.setCustomerID(customerID.toString());
+            }
+            if (!StringUtils.isEmpty( customerBirthDate) ){
+                mainReport.setCustomerBirthDate(customerBirthDate.toString());
+            }
+        }
         Object subReports    = object.get("subReports");
-        System.out.println(reportName+":"+customerID+"&"+ customerBirthDate);
-        if (!StringUtils.isEmpty( reportName) ){
-            mainReport.setReportName(reportName.toString()) ;
-        }
-        if (!StringUtils.isEmpty( customerID) ){
-            mainReport.setCustomerID(customerID.toString());
-        }
-        if (!StringUtils.isEmpty( customerBirthDate) ){
-            mainReport.setCustomerBirthDate(customerBirthDate.toString());
-        }
         return subReports;
     }
 
