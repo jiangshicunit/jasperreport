@@ -11,10 +11,10 @@ public class LaboratoryTestTable {
     private String ename;
     private double min;
     private double max;
-    private double value;
+    private String value;
     private String unit;
 
-    public LaboratoryTestTable(String title, String date, String name, String ename, double max, double min,double value, String unit) {
+    public LaboratoryTestTable(String title, String date, String name, String ename, double max, double min,String value, String unit) {
         this.title = title;
         this.date = date;
         this.name = name;
@@ -65,11 +65,11 @@ public class LaboratoryTestTable {
         this.max = max;
     }
 
-    public double getValue() {
+    public String getValue() {
         return value;
     }
 
-    public void setValue(double value) {
+    public void setValue(String value) {
         this.value = value;
     }
 

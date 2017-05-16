@@ -4,17 +4,26 @@ import net.sf.jasperreports.engine.JasperReport;
 import net.sf.jasperreports.engine.data.JRBeanCollectionDataSource;
 
 /**
- * Created by shidaizhoukan on 2017/4/19.
+ * Created by guanpb on 2017/5/16.
  */
-public class DiseaseGeneticRiskTable {
+public class EvaluationReport {
 
+    private String title;
     private JRBeanCollectionDataSource ds;
-
     private JasperReport subReport;
 
-    public DiseaseGeneticRiskTable(JRBeanCollectionDataSource ds, JasperReport subReport) {
+    public EvaluationReport(String title, JRBeanCollectionDataSource ds, JasperReport subReport) {
+        this.title = title;
         this.ds = ds;
         this.subReport = subReport;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
     }
 
     public JRBeanCollectionDataSource getDs() {
