@@ -9,8 +9,10 @@ import com.haomostudio.jrs.common.PropertyConfigurer;
 import net.sf.jasperreports.engine.*;
 import net.sf.jasperreports.engine.data.JRBeanCollectionDataSource;
 import net.sf.jasperreports.engine.design.JasperDesign;
+import net.sf.jasperreports.engine.export.*;
 import net.sf.jasperreports.engine.export.ooxml.JRDocxExporter;
 import net.sf.jasperreports.engine.export.ooxml.JRXlsxExporter;
+import net.sf.jasperreports.engine.query.JsonQueryExecuterFactory;
 import net.sf.jasperreports.engine.util.LocalJasperReportsContext;
 import net.sf.jasperreports.engine.util.SimpleFileResolver;
 import net.sf.jasperreports.engine.xml.JRXmlLoader;
@@ -18,6 +20,8 @@ import net.sf.jasperreports.export.ExporterInput;
 import net.sf.jasperreports.export.OutputStreamExporterOutput;
 import net.sf.jasperreports.export.SimpleExporterInput;
 import net.sf.jasperreports.export.SimpleOutputStreamExporterOutput;
+import net.sf.jasperreports.j2ee.servlets.ImageServlet;
+import net.sf.jasperreports.view.JasperViewer;
 import org.apache.commons.collections.map.HashedMap;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -284,26 +288,26 @@ public class SaperReportController {
 //                        new DiseaseGeneticRiskTable("糖尿病3","糖尿病详情5","心脏病",5)
 //                ))));
 
-        JasperDesign jDesignde = JRXmlLoader.load(new File(realPath+"/jrxml/MyReports/EvaluationDetail.jrxml"));
+        JasperDesign jDesignde = JRXmlLoader.load(new File(realPath+"/jrxml/MyReports/AbnormalMeasurementValueTable.jrxml"));
 
 //        //get *.jasper
         JasperReport jReportde = JasperCompileManager.compileReport(jDesignde);
 
-        JasperDesign jDesignde1 = JRXmlLoader.load(new File(realPath+"/jrxml/MyReports/EvaluationReport.jrxml"));
+        JasperDesign jDesignde1 = JRXmlLoader.load(new File(realPath+"/jrxml/MyReports/AbnormalMeasurementValueEvaluation.jrxml"));
 
 //        //get *.jasper
         JasperReport jReportde1 = JasperCompileManager.compileReport(jDesignde1);
-                mainList.add(new MainReports(jReportde1,jReportde1,new JRBeanCollectionDataSource(
-                        Arrays.asList(new EvaluationReport( "以下是您的男性荷尔蒙健康评估报告",
-                                new JRBeanCollectionDataSource(
-                Arrays.asList(new EvaluationDetail("脑下垂体荷尔蒙","黄体刺激素(LH)","由脑下垂体分泌，并受下视丘所释放的GnRH控制，能刺激睪丸Leydig细胞制造并分泌睪固酮。组织细胞及循环血液若有充足的睪固酮量，则会对脑下垂体产生负回馈(negative--feed-back)作用，不再分泌LH刺激睪丸。反之，如果组织细胞及循环血液若有不足的睪固酮量，则会分泌更多的LH刺激睪丸产生睪固酮。"),
-                        new EvaluationDetail("脑下垂体荷尔蒙","滤泡刺激素(FSH)","由脑下垂体分泌，并受下视丘所释放的GnRH 控制，能刺激睪丸Sertoli 细胞制造精子。"),
-        new EvaluationDetail("脑下垂体荷尔蒙","黄体刺激素(LH)","由脑下垂体分泌，并受下视丘所释放的GnRH控制，能刺激睪丸Leydig细胞制造并分泌睪固酮。组织细胞及循环血液若有充足的睪固酮量，则会对脑下垂体产生负回馈(negative--feed-back)作用，不再分泌LH刺激睪丸。反之，如果组织细胞及循环血液若有不足的睪固酮量，则会分泌更多的LH刺激睪丸产生睪固酮。"),
-        new EvaluationDetail("脑下垂体荷尔蒙","黄体刺激素(LH)","由脑下垂体分泌，并受下视丘所释放的GnRH控制，能刺激睪丸Leydig细胞制造并分泌睪固酮。组织细胞及循环血液若有充足的睪固酮量，则会对脑下垂体产生负回馈(negative--feed-back)作用，不再分泌LH刺激睪丸。反之，如果组织细胞及循环血液若有不足的睪固酮量，则会分泌更多的LH刺激睪丸产生睪固酮。")
-
-                )),jReportde
-
-                        )) ) ));
+//                mainList.add(new MainReports(jReportde,jReportde,new JRBeanCollectionDataSource(
+//                        Arrays.asList(
+//                                new AbnormalMeasurementValueTable("肿瘤标志物筛查","人绒毛膜促性腺激素","4","3.00",
+//                        "5.00","上","MIU/ML","false","true"),
+//                                new AbnormalMeasurementValueTable("","血清α-L-岩藻糖苷酶","4","3.00",
+//                                        "5.00","上","MIU/ML","false","true"),
+//                                new AbnormalMeasurementValueTable("","血清α-L-岩藻糖苷酶","4","3.00",
+//                                        "5.00","上","MIU/ML","false","true"),
+//                                new AbnormalMeasurementValueTable("","血清α-L-岩藻糖苷酶","4","3.00",
+//                                        "5.00","上","MIU/ML","false","false")
+//                                ) ) ));
 //        JasperDesign jDesignde = JRXmlLoader.load(new File(realPath+"/jrxml/MyReports/DiseaseGeneticRiskTable-sub.jrxml"));
 //
 ////        //get *.jasper
@@ -312,15 +316,46 @@ public class SaperReportController {
 //
 ////        //get *.jasper
 //        JasperReport jReportde1 = JasperCompileManager.compileReport(jDesignde1);
-//        mainList.add(new MainReports(jReportde1,jReportde1,new JRBeanCollectionDataSource(
-//                Arrays.asList( new DiseaseGeneticRiskTable( new JRBeanCollectionDataSource(
-//                        Arrays.asList(new DiseaseGeneticRiskTableSub("肺癌","2"),
-//                                new DiseaseGeneticRiskTableSub("食道癌","3"),
-//                                new DiseaseGeneticRiskTableSub("肺癌","1"),
-//                                new DiseaseGeneticRiskTableSub("食道癌","2")
-//                        )
-//                ) , jReportde)
-//                ) )));
+        mainList.add(new MainReports(jReportde1,jReportde1,new JRBeanCollectionDataSource(
+                Arrays.asList( new AbnormalMeasurementValueEvaluation( new JRBeanCollectionDataSource(
+                        Arrays.asList(
+                                new AbnormalMeasurementValueTable("肿瘤标志物筛查","人绒毛膜促性腺激素","4","3.00",
+                                        "5.00","上","MIU/ML","false","true"),
+                                new AbnormalMeasurementValueTable("","血清α-L-岩藻糖苷酶","4","3.00",
+                                        "5.00","上","MIU/ML","false","true"),
+                                new AbnormalMeasurementValueTable("","血清α-L-岩藻糖苷酶","4","3.00",
+                                        "5.00","上","MIU/ML","false","true"),
+                                new AbnormalMeasurementValueTable("","血清α-L-岩藻糖苷酶","4","3.00",
+                                        "5.00","上","MIU/ML","false","false")
+                        )
+                ) , jReportde),
+                        new AbnormalMeasurementValueEvaluation( new JRBeanCollectionDataSource(
+                                Arrays.asList(
+                                        new AbnormalMeasurementValueTable("肿瘤标志物筛查","人绒毛膜促性腺激素","4","3.00",
+                                                "5.00","上","MIU/ML","true","true"),
+                                        new AbnormalMeasurementValueTable("","血清α-L-岩藻糖苷酶","4","3.00",
+                                                "5.00","上","MIU/ML","false","true"),
+                                        new AbnormalMeasurementValueTable("","血清α-L-岩藻糖苷酶","4","3.00",
+                                                "5.00","上","MIU/ML","false","true"),
+                                        new AbnormalMeasurementValueTable("","血清α-L-岩藻糖苷酶","4","3.00",
+                                                "5.00","上","MIU/ML","false","false")
+                                )
+                        ) , jReportde),
+                        new AbnormalMeasurementValueEvaluation( new JRBeanCollectionDataSource(
+                                Arrays.asList(
+                                        new AbnormalMeasurementValueTable("肿瘤标志物筛查","人绒毛膜促性腺激素","4","3.00",
+                                                "5.00","上","MIU/ML","true","true"),
+                                        new AbnormalMeasurementValueTable("","血清α-L-岩藻糖苷酶","4","3.00",
+                                                "5.00","上","MIU/ML","false","true"),
+                                        new AbnormalMeasurementValueTable("","血清α-L-岩藻糖苷酶","4","3.00",
+                                                "5.00","上","MIU/ML","false","true"),
+                                        new AbnormalMeasurementValueTable("","血清α-L-岩藻糖苷酶","4","3.00",
+                                                "5.00","上","MIU/ML","false","false")
+                                )
+                        ) , jReportde)
+                )
+
+                )));
 
 
         Map map = new HashMap();
@@ -389,8 +424,8 @@ public class SaperReportController {
             produces = "application/json;charset=UTF-8")
     @ResponseBody
     public Object groupVoid5(HttpServletResponse response,HttpServletRequest request,
-//                           @RequestBody String json,
-                             @RequestParam(value = "json",required = false) String json,
+                           @RequestBody String json,
+//                             @RequestParam(value = "json",required = false) String json,
                              @RequestParam(value = "pdfName",required = false) String pdfName
     ) throws JRException, IOException  {
 
@@ -445,7 +480,7 @@ public class SaperReportController {
                     //开始循环如果存在子模板
                     if (!StringUtils.isEmpty(submap.get("subReports"))){
 //                    System.out.println(map.get("subReports").toString());
-                        if (submap!=null && submap.get("subReportName").equals("AllergyAnalysis")){
+                        if (submap!=null && submap.get("subReportName").toString().trim().equals("AllergyAnalysis")){
                             List<Country> data = new ArrayList();
                             jDesign =  JRXmlLoader.load(new File(xml_save_path+"/AllergyAnalysis.jrxml"));
                             jReport = JasperCompileManager.compileReport(jDesign);
@@ -457,7 +492,7 @@ public class SaperReportController {
                             List<List<DataBean>>  sunBeanList = new ArrayList<>();
                             for (Map<String,Object> smap :slist){
                                 List<DataBean> dataBeanList = new ArrayList();
-                                if(smap!=null && smap.get("subReportName").equals("AllergyAnalysisTable")){
+                                if(smap!=null && smap.get("subReportName").toString().trim().equals("AllergyAnalysisTable")){
 
                                     List<String> items =  (smap.get("data"))==null?new ArrayList<>():(List<String>)((Map<String,Object>)smap.get("data")).get("items");
                                     List<Integer> values = (smap.get("data"))==null?new ArrayList<>():(List<Integer>) ((Map<String,Object>)smap.get("data")).get("values");
@@ -503,7 +538,7 @@ public class SaperReportController {
                                     new JRBeanCollectionDataSource(county2List),jasperReport1,jasperReport2));
 
                             mainList.add(new MainReports(jReport,jReport2,new JRBeanCollectionDataSource(data)));
-                        }else if (submap!=null && !StringUtils.isEmpty(submap.get("subReportName"))&& submap.get("subReportName").equals("LaboratoryTest")){
+                        }else if (submap!=null && !StringUtils.isEmpty(submap.get("subReportName"))&& submap.get("subReportName").toString().trim().equals("LaboratoryTest")){
                             List<LaboratoryTest> laboratoryTests = new ArrayList<>();
                             List<LaboratoryTest> laboratoryTests1 = new ArrayList<>();
                             JasperDesign labJasperDesign = JRXmlLoader.load(new FileInputStream(xml_save_path+"/LaboratotyTestTable.jrxml"));
@@ -548,7 +583,7 @@ public class SaperReportController {
                             }
                             mainList.add(new MainReports(jasperReport1, jasperReport1 ,
                                     new JRBeanCollectionDataSource(laboratoryTests)));
-                        }else if (submap!=null && !StringUtils.isEmpty(submap.get("subReportName"))&& submap.get("subReportName").equals("EvaluationReport")){
+                        }else if (submap!=null && !StringUtils.isEmpty(submap.get("subReportName"))&& submap.get("subReportName").toString().trim().equals("EvaluationReport")){
                             //主模板
                             jDesign = JRXmlLoader.load(new File(xml_save_path+"/EvaluationReport.jrxml"));
                             jReport = JasperCompileManager.compileReport(jDesign);
@@ -570,7 +605,7 @@ public class SaperReportController {
                                     detailList = new ArrayList<>();
                                     Map<String,Object> detailMap = (Map<String, Object>) detailObject;
                                     if (!StringUtils.isEmpty( detailMap.get("subReportName") ) &&
-                                            detailMap.get("subReportName").toString().equals("EvaluationDetail") ){
+                                            detailMap.get("subReportName").toString().trim().equals("EvaluationDetail") ){
                                         
                                         if (!StringUtils.isEmpty( detailMap.get("data") ) ){
                                             JSONObject dataObject = JSONObject.parseObject( detailMap.get("data").toString() );
@@ -598,7 +633,7 @@ public class SaperReportController {
                         }
 
                     }else {
-                        if (submap!=null && submap.get("subReportName").equals("SectionHeader")){
+                        if (submap!=null && submap.get("subReportName").toString().trim().equals("SectionHeader")){
                             jDesign = JRXmlLoader.load(new File(xml_save_path+"/SectionHeader.jrxml"));
                             jReport = JasperCompileManager.compileReport(jDesign);
                             JSONObject allergyObject = JSONObject.parseObject(submap.get("data").toString());
@@ -607,7 +642,7 @@ public class SaperReportController {
                             mainList.add(new MainReports(jReport, jReport ,
                                     new JRBeanCollectionDataSource(Arrays.asList(new SectionHeader(title,subTitle)))));
 
-                        }else if (submap!=null && submap.get("subReportName").equals("DiseaseGeneticRiskTable")){
+                        }else if (submap!=null && submap.get("subReportName").toString().trim().equals("DiseaseGeneticRiskTable")){
                             jDesign = JRXmlLoader.load(new File(xml_save_path+"/DiseaseGeneticRiskTable.jrxml"));
                             jReport = JasperCompileManager.compileReport(jDesign);
                             JasperDesign jDesigndeSub = JRXmlLoader.load(new File(realPath+"/jrxml/MyReports/DiseaseGeneticRiskTable-sub.jrxml"));
@@ -648,7 +683,7 @@ public class SaperReportController {
                                                     jReportdeSub )
                                                 )
                                     )));
-                        }else if (submap!=null && (submap.get("subReportName").equals("SuggestionReport")
+                        }else if (submap!=null && (submap.get("subReportName").toString().trim().equals("SuggestionReport")
                                         || submap.get("subReportName").equals("ExamSuggestionReport") )){
                             jDesign = JRXmlLoader.load(new File(xml_save_path+"/SuggestionReport.jrxml"));
                             jReport = JasperCompileManager.compileReport(jDesign);
@@ -659,18 +694,18 @@ public class SaperReportController {
                                     new JRBeanCollectionDataSource(Arrays.asList(new SuggestionReport(title,text)))));
 
                         } else if (submap!=null && submap.get("subReportName")!=null
-                                && ( submap.get("subReportName").equals("BodyAntiCancerCellAbilityEvaluation") || submap.get("subReportName").equals("FoodFamilyAndPossilableSource")
-                                     || submap.get("subReportName").equals("microRNACancerObservation") || submap.get("subReportName").equals("NutritionAndToxicityElementalAnalysis")
-                                     || submap.get("subReportName").equals("HypothalamicPituitaryOvarianEndocrineRegulation") || submap.get("subReportName").equals("HarvardCancerRiskEvaluation")
-                                     || submap.get("subReportName").equals("BodyAntiCancerCellAbilityEvaluation") || submap.get("subReportName").equals("BodyCancerMarkerScreen")
-                                     || submap.get("subReportName").equals("CancerInheritanceRiskEvaluation") || submap.get("subReportName").equals("FoodAllergySourceAnalysis")
-                                     || submap.get("subReportName").equals("AdrenalStressAnalysisReport")||submap.get("subReportName").equals("LowerVisionPituitaryTesticularEndocrineRegulation")
+                                && ( submap.get("subReportName").toString().trim().equals("BodyAntiCancerCellAbilityEvaluation") || submap.get("subReportName").toString().trim().equals("FoodFamilyAndPossilableSource")
+                                     || submap.get("subReportName").toString().trim().equals("microRNACancerObservation") || submap.get("subReportName").toString().trim().equals("NutritionAndToxicityElementalAnalysis")
+                                     || submap.get("subReportName").toString().trim().equals("HypothalamicPituitaryOvarianEndocrineRegulation") || submap.get("subReportName").toString().trim().equals("HarvardCancerRiskEvaluation")
+                                     || submap.get("subReportName").toString().trim().equals("BodyAntiCancerCellAbilityEvaluation") || submap.get("subReportName").toString().trim().equals("BodyCancerMarkerScreen")
+                                     || submap.get("subReportName").toString().trim().equals("CancerInheritanceRiskEvaluation") || submap.get("subReportName").toString().trim().equals("FoodAllergySourceAnalysis")
+                                     || submap.get("subReportName").toString().trim().equals("AdrenalStressAnalysisReport")||submap.get("subReportName").toString().trim().equals("LowerVisionPituitaryTesticularEndocrineRegulation")
                         )){
                             jDesign = JRXmlLoader.load(new File(xml_save_path+"/"+submap.get("subReportName")+".jrxml"));
                             jReport = JasperCompileManager.compileReport(jDesign);
                             mainList.add(new MainReports(jReport, jReport ,
                                     new JRBeanCollectionDataSource(Arrays.asList(""))));
-                        }else if (submap!=null && (submap.get("subReportName").equals("IndicatorRiskLevel") )){
+                        }else if (submap!=null && (submap.get("subReportName").toString().trim().equals("IndicatorRiskLevel") )){
                             jDesign = JRXmlLoader.load(new File(xml_save_path+"/IndicatorRiskLevel.jrxml"));
                             jReport = JasperCompileManager.compileReport(jDesign);
                             JSONArray levelArray = JSONArray.parseArray(submap.get("data").toString());
@@ -1184,340 +1219,18 @@ public class SaperReportController {
         }
     }
 
-    @RequestMapping(value = "/doc",
+
+    @RequestMapping(value = "/jcSys",
             method = {  RequestMethod.GET },
             produces = "application/json;charset=UTF-8")
     @ResponseBody
-    public void groupVoidDoc(HttpServletResponse response,HttpServletRequest request,
-                             @RequestParam(value = "json") String json,
-                             @RequestParam(value = "pdfName",required = false) String pdfName
+    public void groupVoid17(HttpServletResponse response,HttpServletRequest request
     ) throws JRException, IOException  {
-
-        String  realPath = request.getSession().getServletContext().getRealPath("");
-        List<String> otherList = new ArrayList<>();
-        Map<String,Object> resultMap =  new HashMap();
-        if (StringUtils.isEmpty(pdfName)){
-            pdfName = String.valueOf( System.currentTimeMillis() )+".docx";
-        }else if (!pdfName.contains(".docx")){
-            pdfName = pdfName+".docx";
-        }
-
-        File reportsDir = new File(realPath + "/jrxml/MyReports/");
-        LocalJasperReportsContext ctx = new LocalJasperReportsContext(DefaultJasperReportsContext.getInstance());
-        ctx.setClassLoader(getClass().getClassLoader());
-        ctx.setFileResolver(new SimpleFileResolver(reportsDir));//注意，设置JasperReport的相对路径，很重要
-        JRDataSource jrDataSource = new JRBeanCollectionDataSource(null);
-        JasperFillManager fillManager = JasperFillManager.getInstance(ctx);
-        JasperExportManager exportManager = JasperExportManager.getInstance(ctx);
-
-        try {
-            //MainReports 主表中的数据
-            List<MainReports> mainList = new ArrayList<>();
-            MainReport mainReport = new MainReport();
-            Object subReports = JsonUtil.mainReport(json,mainReport);
-            Map map = new HashMap();
-            map.put("name",mainReport.getCustomerID());
-            map.put("birth",mainReport.getCustomerBirthDate());
-            map.put(JRParameter.REPORT_FILE_RESOLVER, new SimpleFileResolver(reportsDir));
-            JasperDesign jDesignMain = JRXmlLoader.load(new File(realPath+"/jrxml/MyReports/MainReports.jrxml"));
-            JasperReport jReportMain = JasperCompileManager.compileReport(jDesignMain);
-            //jasper数据
-            JasperDesign jDesign = null;
-            JasperReport jReport = null;
-            //循环子列表
-            if (!StringUtils.isEmpty( subReports )){
-                JSONArray array = JSON.parseArray(subReports.toString());
-                for (Object subObject : array) {
-                    Map<String,Object> submap = (Map<String, Object>) subObject;
-//                    System.out.println("map:"+submap.get("subReportName"));
-//                    System.out.println("data"+((Map<String,Object>)submap.get("data")).get("title"));
-                    //开始循环如果存在子模板
-                    if (!StringUtils.isEmpty(submap.get("subReports"))){
-//                    System.out.println(map.get("subReports").toString());
-                        if (submap!=null && submap.get("subReportName").equals("AllergyAnalysis")){
-                            List<Country> data = new ArrayList();
-                            jDesign =  JRXmlLoader.load(new File(realPath+"/jrxml/MyReports/AllergyAnalysis.jrxml"));
-                            jReport = JasperCompileManager.compileReport(jDesign);
-
-                            JasperDesign jDesign2 = JRXmlLoader.load(new File(realPath+"/jrxml/MyReports/AllergyAnalysisTable.jrxml"));
-                            JasperReport jReport2 = JasperCompileManager.compileReport(jDesign2);
-                            List<Map<String,Object>> slist = (List<Map<String, Object>>) submap.get("subReports");
-                            for (Map<String,Object> smap :slist){
-                                List<DataBean> dataBeanList = new ArrayList();
-                                if(smap!=null && smap.get("subReportName").equals("AllergyAnalysisTable")){
-
-                                    List<String> items =  (smap.get("data"))==null?new ArrayList<>():(List<String>)((Map<String,Object>)smap.get("data")).get("items");
-                                    List<Integer> values = (smap.get("data"))==null?new ArrayList<>():(List<Integer>) ((Map<String,Object>)smap.get("data")).get("values");
-                                    dataBeanList = new ArrayList();
-                                    DataBean dataBean = new DataBean();
-                                    for (int i = 0;i < items.size();i++){
-                                        dataBean = new DataBean();
-                                        dataBean.setName(items.get(i));
-                                        dataBean.setCountry(values.get(i)+"");
-                                        dataBean.setTitle(((Map<String,Object>)smap.get("data")).get("title").toString());
-                                        dataBean.setDate(((Map<String,Object>)smap.get("data")).get("date").toString());
-                                        dataBeanList.add(dataBean);
-                                    }
-                                }
-                                JRBeanCollectionDataSource ds1 = new JRBeanCollectionDataSource(dataBeanList);
-                               // data.add(new Country(1,((Map<String,Object>)submap.get("data")).get("title").toString(),ds1,ds1));
-
-                            }
-
-                            mainList.add(new MainReports(jReport,jReport2,new JRBeanCollectionDataSource(data)));
-                        }
-
-                    }else {
-                        if (submap!=null && submap.get("subReportName").equals("SectionHeader")){
-                            jDesign = JRXmlLoader.load(new File(realPath+"/jrxml/MyReports/SectionHeader.jrxml"));
-                            jReport = JasperCompileManager.compileReport(jDesign);
-                            JSONObject allergyObject = JSONObject.parseObject(submap.get("data").toString());
-                            String title = allergyObject.get("title")==null?"":allergyObject.get("title").toString();
-                            String subTitle = allergyObject.get("subTitle")==null?"":allergyObject.get("subTitle").toString();
-                            mainList.add(new MainReports(jReport, jReport ,
-                                    new JRBeanCollectionDataSource(Arrays.asList(new SectionHeader(title,subTitle)))));
-
-                        }else if (submap!=null && submap.get("subReportName").equals("DiseaseGeneticRiskTable")){
-                            jDesign = JRXmlLoader.load(new File(realPath+"/jrxml/MyReports/DiseaseGeneticRiskTable.jrxml"));
-                            jReport = JasperCompileManager.compileReport(jDesign);
-                            String name = "";
-                            String fx = "";
-                            List<String> itemList = new ArrayList<>();
-                            List<Integer> valueList = new ArrayList<>();
-                            List<DiseaseGeneticRiskTable> disList = new ArrayList<>();
-                            if (!StringUtils.isEmpty(submap.get("column0"))){
-                                JSONObject allergyObject = JSONObject.parseObject(submap.get("column0").toString());
-                                name = StringUtils.isEmpty(allergyObject.get("name"))?"":allergyObject.get("name").toString();
-                                if(!StringUtils.isEmpty(allergyObject.get("values"))){
-                                    JSONArray diseaseArray = JSON.parseArray(allergyObject.get("values").toString());
-                                    for (Object object : diseaseArray){
-                                        itemList.add( StringUtils.isEmpty(object)?"":object.toString() );
-                                    }
-                                }
-                            }
-                            if (!StringUtils.isEmpty(submap.get("column1"))){
-                                JSONObject allergyObject = JSONObject.parseObject(submap.get("column1").toString());
-                                fx = StringUtils.isEmpty(allergyObject.get("name"))?"":allergyObject.get("name").toString();
-                                if(!StringUtils.isEmpty(allergyObject.get("values"))){
-                                    JSONArray diseaseArray = JSON.parseArray(allergyObject.get("values").toString());
-                                    for (Object object : diseaseArray){
-                                        valueList.add( StringUtils.isEmpty(object)?0: (Integer) object);
-                                    }
-                                }
-                            }
-                            for (int i = 0;i < itemList.size(); i++){
-//                                DiseaseGeneticRiskTable table = new DiseaseGeneticRiskTable(name,fx,itemList.get(i),valueList.get(i));
-//                                disList.add(table);
-                            }
-                            mainList.add(new MainReports(jReport, jReport ,
-                                    new JRBeanCollectionDataSource(disList)));
-                        }else if (submap!=null && submap.get("subReportName")!=null
-                                && ( submap.get("subReportName").equals("BodyAntiCancerCellAbilityEvaluation") || submap.get("subReportName").equals("FoodFamilyAndPossilableSource")
-                                || submap.get("subReportName").equals("microRNACancerObservation") || submap.get("subReportName").equals("NutritionAndToxicityElementalAnalysis")
-                                || submap.get("subReportName").equals("HypothalamicPituitaryOvarianEndocrineRegulation") || submap.get("subReportName").equals("HarvardCancerRiskEvaluation")
-                                || submap.get("subReportName").equals("BodyAntiCancerCellAbilityEvaluation") || submap.get("subReportName").equals("BodyCancerMarkerScreen")
-                                || submap.get("subReportName").equals("CancerInheritanceRiskEvaluation") || submap.get("subReportName").equals("FoodAllergySourceAnalysis")
-                        )){
-                            jDesign = JRXmlLoader.load(new File(realPath+"/jrxml/MyReports/"+submap.get("subReportName")+".jrxml"));
-                            jReport = JasperCompileManager.compileReport(jDesign);
-                            mainList.add(new MainReports(jReport, jReport ,
-                                    new JRBeanCollectionDataSource(Arrays.asList(""))));
-                        }else if (submap!=null && submap.get("subReportName")!=null){
-                            otherList.add(submap.get("subReportName").toString());
-                        }
-
-                    }
-                }
-            }
-            JasperPrint jasperPrint = fillManager.fillReport(jReportMain, map, new JRBeanCollectionDataSource(mainList));
-
-            JRDocxExporter exporter=new JRDocxExporter();
-            //设置输入项
-            ExporterInput exporterInput = new SimpleExporterInput(jasperPrint);
-            exporter.setExporterInput(exporterInput);
-
-            //设置输出项
-//            OutputStreamExporterOutput exporterOutput = new SimpleOutputStreamExporterOutput(pdfName);
-            OutputStreamExporterOutput exporterOutput = new SimpleOutputStreamExporterOutput(
-                    response.getOutputStream());
-            exporter.setExporterOutput(exporterOutput);
-            response.setContentType("application/vnd.ms-excel");
-            response.setHeader("Content-disposition", "attachment; filename="+pdfName);
-
-
-            exporter.exportReport();
-        }catch (Exception e){
-            e.printStackTrace();
-        }
+        System.out.println("测试成功");
+        response.sendRedirect("http://qas.hitevision.com/frontend/#/dashboard/home");
     }
 
 
-    @RequestMapping(value = "/excel",
-            method = {  RequestMethod.GET },
-            produces = "application/json;charset=UTF-8")
-    @ResponseBody
-    public void groupVoidExcel(HttpServletResponse response,HttpServletRequest request,
-                             @RequestParam(value = "json") String json,
-                             @RequestParam(value = "pdfName",required = false) String pdfName
-    ) throws JRException, IOException  {
-
-        String  realPath = request.getSession().getServletContext().getRealPath("");
-        List<String> otherList = new ArrayList<>();
-        Map<String,Object> resultMap =  new HashMap();
-        if (StringUtils.isEmpty(pdfName)){
-            pdfName = String.valueOf( System.currentTimeMillis() )+".xlsx";
-        }else if (!pdfName.contains(".xlsx")){
-            pdfName = pdfName+".xlsx";
-        }
-
-        File reportsDir = new File(realPath + "/jrxml/MyReports/");
-        LocalJasperReportsContext ctx = new LocalJasperReportsContext(DefaultJasperReportsContext.getInstance());
-        ctx.setClassLoader(getClass().getClassLoader());
-        ctx.setFileResolver(new SimpleFileResolver(reportsDir));//注意，设置JasperReport的相对路径，很重要
-        JRDataSource jrDataSource = new JRBeanCollectionDataSource(null);
-        JasperFillManager fillManager = JasperFillManager.getInstance(ctx);
-        JasperExportManager exportManager = JasperExportManager.getInstance(ctx);
-
-        try {
-            //MainReports 主表中的数据
-            List<MainReports> mainList = new ArrayList<>();
-            MainReport mainReport = new MainReport();
-            Object subReports = JsonUtil.mainReport(json,mainReport);
-            Map map = new HashMap();
-            map.put("name",mainReport.getCustomerID());
-            map.put("birth",mainReport.getCustomerBirthDate());
-            map.put(JRParameter.REPORT_FILE_RESOLVER, new SimpleFileResolver(reportsDir));
-            JasperDesign jDesignMain = JRXmlLoader.load(new File(realPath+"/jrxml/MyReports/MainReports.jrxml"));
-            JasperReport jReportMain = JasperCompileManager.compileReport(jDesignMain);
-            //jasper数据
-            JasperDesign jDesign = null;
-            JasperReport jReport = null;
-            //循环子列表
-            if (!StringUtils.isEmpty( subReports )){
-                JSONArray array = JSON.parseArray(subReports.toString());
-                for (Object subObject : array) {
-                    Map<String,Object> submap = (Map<String, Object>) subObject;
-//                    System.out.println("map:"+submap.get("subReportName"));
-//                    System.out.println("data"+((Map<String,Object>)submap.get("data")).get("title"));
-                    //开始循环如果存在子模板
-                    if (!StringUtils.isEmpty(submap.get("subReports"))){
-//                    System.out.println(map.get("subReports").toString());
-                        if (submap!=null && submap.get("subReportName").equals("AllergyAnalysis")){
-                            List<Country> data = new ArrayList();
-                            jDesign =  JRXmlLoader.load(new File(realPath+"/jrxml/MyReports/AllergyAnalysis.jrxml"));
-                            jReport = JasperCompileManager.compileReport(jDesign);
-
-                            JasperDesign jDesign2 = JRXmlLoader.load(new File(realPath+"/jrxml/MyReports/AllergyAnalysisTable.jrxml"));
-                            JasperReport jReport2 = JasperCompileManager.compileReport(jDesign2);
-                            List<Map<String,Object>> slist = (List<Map<String, Object>>) submap.get("subReports");
-                            for (Map<String,Object> smap :slist){
-                                List<DataBean> dataBeanList = new ArrayList();
-                                if(smap!=null && smap.get("subReportName").equals("AllergyAnalysisTable")){
-
-                                    List<String> items =  (smap.get("data"))==null?new ArrayList<>():(List<String>)((Map<String,Object>)smap.get("data")).get("items");
-                                    List<Integer> values = (smap.get("data"))==null?new ArrayList<>():(List<Integer>) ((Map<String,Object>)smap.get("data")).get("values");
-                                    dataBeanList = new ArrayList();
-                                    DataBean dataBean = new DataBean();
-                                    for (int i = 0;i < items.size();i++){
-                                        dataBean = new DataBean();
-                                        dataBean.setName(items.get(i));
-                                        dataBean.setCountry(values.get(i)+"");
-                                        dataBean.setTitle(((Map<String,Object>)smap.get("data")).get("title").toString());
-                                        dataBean.setDate(((Map<String,Object>)smap.get("data")).get("date").toString());
-                                        dataBeanList.add(dataBean);
-                                    }
-                                }
-                                JRBeanCollectionDataSource ds1 = new JRBeanCollectionDataSource(dataBeanList);
-                               // data.add(new Country(1,((Map<String,Object>)submap.get("data")).get("title").toString(),ds1,ds1));
-
-                            }
-
-                            mainList.add(new MainReports(jReport,jReport2,new JRBeanCollectionDataSource(data)));
-                        }
-
-                    }else {
-                        if (submap!=null && submap.get("subReportName").equals("SectionHeader")){
-                            jDesign = JRXmlLoader.load(new File(realPath+"/jrxml/MyReports/SectionHeader.jrxml"));
-                            jReport = JasperCompileManager.compileReport(jDesign);
-                            JSONObject allergyObject = JSONObject.parseObject(submap.get("data").toString());
-                            String title = allergyObject.get("title")==null?"":allergyObject.get("title").toString();
-                            String subTitle = allergyObject.get("subTitle")==null?"":allergyObject.get("subTitle").toString();
-                            mainList.add(new MainReports(jReport, jReport ,
-                                    new JRBeanCollectionDataSource(Arrays.asList(new SectionHeader(title,subTitle)))));
-
-                        }else if (submap!=null && submap.get("subReportName").equals("DiseaseGeneticRiskTable")){
-                            jDesign = JRXmlLoader.load(new File(realPath+"/jrxml/MyReports/DiseaseGeneticRiskTable.jrxml"));
-                            jReport = JasperCompileManager.compileReport(jDesign);
-                            String name = "";
-                            String fx = "";
-                            List<String> itemList = new ArrayList<>();
-                            List<Integer> valueList = new ArrayList<>();
-                            List<DiseaseGeneticRiskTable> disList = new ArrayList<>();
-                            if (!StringUtils.isEmpty(submap.get("column0"))){
-                                JSONObject allergyObject = JSONObject.parseObject(submap.get("column0").toString());
-                                name = StringUtils.isEmpty(allergyObject.get("name"))?"":allergyObject.get("name").toString();
-                                if(!StringUtils.isEmpty(allergyObject.get("values"))){
-                                    JSONArray diseaseArray = JSON.parseArray(allergyObject.get("values").toString());
-                                    for (Object object : diseaseArray){
-                                        itemList.add( StringUtils.isEmpty(object)?"":object.toString() );
-                                    }
-                                }
-                            }
-                            if (!StringUtils.isEmpty(submap.get("column1"))){
-                                JSONObject allergyObject = JSONObject.parseObject(submap.get("column1").toString());
-                                fx = StringUtils.isEmpty(allergyObject.get("name"))?"":allergyObject.get("name").toString();
-                                if(!StringUtils.isEmpty(allergyObject.get("values"))){
-                                    JSONArray diseaseArray = JSON.parseArray(allergyObject.get("values").toString());
-                                    for (Object object : diseaseArray){
-                                        valueList.add( StringUtils.isEmpty(object)?0: (Integer) object);
-                                    }
-                                }
-                            }
-                            for (int i = 0;i < itemList.size(); i++){
-//                                DiseaseGeneticRiskTable table = new DiseaseGeneticRiskTable(name,fx,itemList.get(i),valueList.get(i));
-//                                disList.add(table);
-                            }
-                            mainList.add(new MainReports(jReport, jReport ,
-                                    new JRBeanCollectionDataSource(disList)));
-                        }else if (submap!=null && submap.get("subReportName")!=null
-                                && ( submap.get("subReportName").equals("BodyAntiCancerCellAbilityEvaluation") || submap.get("subReportName").equals("FoodFamilyAndPossilableSource")
-                                || submap.get("subReportName").equals("microRNACancerObservation") || submap.get("subReportName").equals("NutritionAndToxicityElementalAnalysis")
-                                || submap.get("subReportName").equals("HypothalamicPituitaryOvarianEndocrineRegulation") || submap.get("subReportName").equals("HarvardCancerRiskEvaluation")
-                                || submap.get("subReportName").equals("BodyAntiCancerCellAbilityEvaluation") || submap.get("subReportName").equals("BodyCancerMarkerScreen")
-                                || submap.get("subReportName").equals("CancerInheritanceRiskEvaluation") || submap.get("subReportName").equals("FoodAllergySourceAnalysis")
-                        )){
-                            jDesign = JRXmlLoader.load(new File(realPath+"/jrxml/MyReports/"+submap.get("subReportName")+".jrxml"));
-                            jReport = JasperCompileManager.compileReport(jDesign);
-                            mainList.add(new MainReports(jReport, jReport ,
-                                    new JRBeanCollectionDataSource(Arrays.asList(""))));
-                        }else if (submap!=null && submap.get("subReportName")!=null){
-                            otherList.add(submap.get("subReportName").toString());
-                        }
-
-                    }
-                }
-            }
-            JasperPrint jasperPrint = fillManager.fillReport(jReportMain, map, new JRBeanCollectionDataSource(mainList));
-
-            JRXlsxExporter exporter = new JRXlsxExporter();
-            //设置输入项
-            ExporterInput exporterInput = new SimpleExporterInput(jasperPrint);
-            exporter.setExporterInput(exporterInput);
-
-            //设置输出项
-//            OutputStreamExporterOutput exporterOutput = new SimpleOutputStreamExporterOutput(pdfName);
-            OutputStreamExporterOutput exporterOutput = new SimpleOutputStreamExporterOutput(
-                    response.getOutputStream());
-            exporter.setExporterOutput(exporterOutput);
-            response.setContentType("application/vnd.ms-excel");
-            response.setHeader("Content-disposition", "attachment; filename="+pdfName);
-
-
-            exporter.exportReport();
-        }catch (Exception e){
-            e.printStackTrace();
-        }
-    }
 }
 
 
