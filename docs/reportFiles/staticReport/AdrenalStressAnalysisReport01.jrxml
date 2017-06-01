@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
+<!-- 2017-06-01T16:13:31 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="AdrenalStressAnalysisReport01" pageWidth="595" pageHeight="662" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="0" bottomMargin="0" uuid="271f1782-90c3-4689-9ccf-8cfaf19e32fa">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="New Data Adapter "/>
+	<property name="com.jaspersoft.studio.unit." value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.topMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.bottomMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.leftMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.rightMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnSpacing" value="pixel"/>
+	<style name="myStyle" isDefault="true" fontName="微软雅黑" isBold="true" pdfFontName="MSYH.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<detail>
+		<band height="580" splitType="Stretch">
+			<staticText>
+				<reportElement x="10" y="0" width="530" height="90" uuid="5d96d265-f95b-4121-87b2-1f7ee8ae6ed9"/>
+				<textElement rotation="None" markup="none">
+					<font size="12" isBold="false"/>
+					<paragraph lineSpacing="1_1_2" lineSpacingSize="1.0" spacingBefore="0"/>
+				</textElement>
+				<text><![CDATA[压力一直是人生命中不可避免的一部分。无论是正面还是负面，压力即是身体对生理、精神、 心理或情感的反应。人体可藉由释放肾上腺素（神经传导物质）和皮脂醇(cortisol)应付偶发 性压力，此两者可帮助您轻松的处理眼前的问题。当压力解除了，肾上腺素会迅速恢复到正 常水平。然而，除非在压力解除后获得充足的休息，否则皮质醇会持续维持高水平。
+
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="110" width="530" height="120" uuid="0a38420e-9774-4bfa-9c43-08e1e3989a93"/>
+				<textElement rotation="None" markup="none">
+					<font size="12" isBold="false"/>
+					<paragraph lineSpacing="1_1_2" lineSpacingSize="1.0" spacingBefore="0"/>
+				</textElement>
+				<text><![CDATA[不幸的是，慢性压力已成为当今社会普遍现象。对很多人来说，长期承受压力并不意外。对 自我要求越来越高、家庭与生活压力、事业压力等，人们必须面临永无止境的“待办事项”列 表的轰炸。即使我们尽力完成工作与任务，但国际乱象、高失业率、经济和个人金融问题等 等永远存在于我们生活的环境中，对我们造成微妙而深刻的影响。当慢性压力不断威胁着我们，肾上腺皮质醇水平持续升高，心理、情绪、和身体健康的问题就会接踵而至。]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="250" width="530" height="330" uuid="4d31ce2b-b573-4758-8b81-18d3eab06d2a"/>
+				<textElement>
+					<font size="12" isBold="false"/>
+					<paragraph lineSpacing="1_1_2"/>
+				</textElement>
+				<text><![CDATA[如果压力无法得到适当的释放，疾病将是不可避免的。许多情绪和身体健康状况都与压力 有关，包括：体重增加、抑郁、焦虑、心脏病、中风、高血压、和免疫系统失调等。压力 也会影响我们的皮肤（皮疹、荨麻疹、和皮炎）、胃肠系统（胃食道逆流、消化性溃疡、 肠躁症、溃疡性结肠炎）、加速神经退化性疾病的产生。不仅仅压力会累积，目前的健
+康状况也会恶化，越来越多的研究显示，压力是许多慢性疾病的源头。 
+肾上腺皮脂压力分析可评估身体下视丘、脑下垂体、肾上腺皮质轴（HPA-axis）中枢神经 内分泌系统，即中医所指任、督两脉之阴阳平衡系统；可作为身体处理焦虑、沮丧、恐惧、 慢性疲劳症、肥胖、性无能、不孕、经前症候群、更年期、骨质疏松症、神经性厌食症、 睡眠不稳、糖尿病、心血管疾病等现代人疾病的指标。
+肾上腺(adrenal gland)位于两颗肾脏的顶端，含有两个不同的区域：皮质(cortex) 
+和髓质（medulla）。肾上腺皮质包括三个主要区域：外层球状区（zona glomerulosa）， 负责分泌矿物皮质固醇类（mineralocorticoids），主要是醛固酮（aldosterone）和脱 
+氧皮质酮（deoxycorticosterone）；中间为束状区（zona fasciculate）负责分泌糖皮 
+质固醇类（glucocorticoide），主要有皮质醇（cortisol）及少量的皮质酮 （corticosterone）;与内层网状区（zona reticularis）负责分泌性激素， 如脱氢表雄酮]]></text>
+			</staticText>
+		</band>
+	</detail>
+</jasperReport>

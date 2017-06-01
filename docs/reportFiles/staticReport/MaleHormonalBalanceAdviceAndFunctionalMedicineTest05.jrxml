@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
+<!-- 2017-06-01T16:22:23 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="AdrenalStressAnalysisReport01" pageWidth="595" pageHeight="662" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="0" bottomMargin="0" uuid="271f1782-90c3-4689-9ccf-8cfaf19e32fa">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="New Data Adapter "/>
+	<property name="com.jaspersoft.studio.unit." value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.topMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.bottomMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.leftMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.rightMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnSpacing" value="pixel"/>
+	<style name="myStyle" isDefault="true" fontName="微软雅黑" isBold="true" pdfFontName="MSYH.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<detail>
+		<band height="41" splitType="Stretch">
+			<staticText>
+				<reportElement x="30" y="0" width="530" height="40" uuid="5d96d265-f95b-4121-87b2-1f7ee8ae6ed9"/>
+				<textElement rotation="None" markup="none">
+					<font size="12" isBold="false"/>
+					<paragraph lineSpacing="1_1_2" lineSpacingSize="1.0" spacingBefore="0"/>
+				</textElement>
+				<text><![CDATA[茶胺酸(theanine)、5-色氨酸(5-HTP)、贯叶连翘(St. John’s Wort)、银杏(ginkgo biloba) 等，对于因更年期荷尔蒙产生的情绪压力变化，具有稳定、舒缓效果。]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="-1" y="0" width="31" height="30" uuid="a71cd2a7-7435-40c6-ae73-d1d66a832257"/>
+				<textElement textAlignment="Right" rotation="None" markup="none">
+					<font size="12" isBold="false"/>
+					<paragraph lineSpacing="1_1_2" lineSpacingSize="1.0" spacingBefore="0"/>
+				</textElement>
+				<text><![CDATA[5、]]></text>
+			</staticText>
+		</band>
+	</detail>
+</jasperReport>

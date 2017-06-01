@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
+<!-- 2017-06-01T16:13:31 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="AdrenalStressAnalysisReport02" pageWidth="595" pageHeight="662" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="0" bottomMargin="0" uuid="271f1782-90c3-4689-9ccf-8cfaf19e32fa">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="New Data Adapter "/>
+	<property name="com.jaspersoft.studio.unit." value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.topMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.bottomMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.leftMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.rightMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnSpacing" value="pixel"/>
+	<style name="myStyle" isDefault="true" fontName="微软雅黑" isBold="true" pdfFontName="MSYH.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<detail>
+		<band height="400" splitType="Stretch">
+			<staticText>
+				<reportElement x="10" y="0" width="260" height="330" uuid="5d96d265-f95b-4121-87b2-1f7ee8ae6ed9"/>
+				<textElement rotation="None" markup="none">
+					<font size="12" isBold="false"/>
+					<paragraph lineSpacing="1_1_2" lineSpacingSize="1.0" spacingBefore="0"/>
+				</textElement>
+				<text><![CDATA[（dehydroepiandrosterone,DHEA）、雄烯二
+酮（androstenodione）及少量雌激素等。肾上
+腺皮质利用胆固醇合成固醇类荷尔蒙(steroid)。
+部分细胞属于下视丘- 脑下垂体- 肾上腺轴
+（hypothalamic-pituitary-adrenal axis）是皮
+质醇（cortisol）合成的来源。其他皮质细胞可
+制造男性荷尔蒙（如：睪固酮），分泌醛固酮
+调节身体中水及电解质浓度的平衡。肾上腺皮
+质是由脑下垂体、下视丘和肾素-血管张力系统
+（renin-angiotensin system）分泌的神
+经内分泌荷尔蒙所控制。肾上腺髓质，顾名
+思义，是肾上腺的核心部分，被皮质包围。髓
+质体内的嗜铬染色细胞（chromaffin cells）是
+身体中儿茶酚胺类肾上腺素（epinephrine）和
+正肾上腺素（norepinephrine）的主要来源。]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="330" width="530" height="70" uuid="0a38420e-9774-4bfa-9c43-08e1e3989a93"/>
+				<textElement rotation="None" markup="none">
+					<font size="12" isBold="false"/>
+					<paragraph lineSpacing="1_1_2" lineSpacingSize="1.0" spacingBefore="0"/>
+				</textElement>
+				<text><![CDATA[这些水溶性荷尔蒙由胺基酸酪氨酸衍生而来，是交感神经触发的战斗或逃跑(fight-flight 
+-freeze)的一部分。肾上腺髓质可被视为交感神经的神经结，没有明显的神经突触，而是直接 分泌到血液中。它也是与肾上腺素腺素和正肾上腺素关系密切的儿茶酚胺类多巴胺的主要来源。]]></text>
+			</staticText>
+			<image>
+				<reportElement x="280" y="0" width="270" height="330" uuid="b037af92-3348-4ecb-bca3-1b541255fb2e"/>
+				<imageExpression><![CDATA["images/ydxs.jpg"]]></imageExpression>
+			</image>
+		</band>
+	</detail>
+</jasperReport>
