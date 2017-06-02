@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
-<!-- 2017-06-01T16:43:02 -->
+<!-- 2017-06-02T17:59:09 -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="AbnormalMeasurementValueTable" pageWidth="595" pageHeight="662" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="0" bottomMargin="0" uuid="731b81b3-1c28-4d35-9f62-3bf2ee4334ce">
 	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
 	<property name="com.jaspersoft.studio.unit." value="pixel"/>
@@ -117,8 +117,9 @@
 					<text><![CDATA[对应机体病变]]></text>
 				</staticText>
 				<line>
-					<reportElement key="" x="97" y="96" width="423" height="1" uuid="b1ee536c-2bac-4166-b49c-5d59891251c8">
+					<reportElement key="" x="97" y="95" width="423" height="1" uuid="b1ee536c-2bac-4166-b49c-5d59891251c8">
 						<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
 						<printWhenExpression><![CDATA[$F{isBottomShow}.equals( "true" )]]></printWhenExpression>
 					</reportElement>
 					<graphicElement>
@@ -126,8 +127,10 @@
 					</graphicElement>
 				</line>
 				<line>
-					<reportElement key="" x="0" y="0" width="520" height="2" uuid="c7ce18e5-930c-44b8-a2ca-37bdad0fd6e4">
+					<reportElement key="" x="0" y="0" width="520" height="1" uuid="c7ce18e5-930c-44b8-a2ca-37bdad0fd6e4">
 						<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 						<printWhenExpression><![CDATA[$F{isTopShow}.equals( "true" )]]></printWhenExpression>
 					</reportElement>
 					<graphicElement>
