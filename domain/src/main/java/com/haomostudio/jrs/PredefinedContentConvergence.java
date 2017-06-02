@@ -6,13 +6,13 @@ import net.sf.jasperreports.engine.data.JRBeanCollectionDataSource;
 /**
  * Created by guanpb on 2017/5/16.
  */
-public class EvaluationReport {
+public class PredefinedContentConvergence {
 
     private String title;
     private JRBeanCollectionDataSource ds;
     private JasperReport subReport;
 
-    public EvaluationReport(String title, JRBeanCollectionDataSource ds, JasperReport subReport) {
+    public PredefinedContentConvergence(String title, JRBeanCollectionDataSource ds, JasperReport subReport) {
         this.title = title;
         this.ds = ds;
         this.subReport = subReport;

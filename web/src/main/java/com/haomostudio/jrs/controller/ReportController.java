@@ -11,15 +11,12 @@ import net.sf.jasperreports.engine.design.*;
 import net.sf.jasperreports.engine.export.JRHtmlExporter;
 import net.sf.jasperreports.engine.export.JRHtmlExporterParameter;
 import net.sf.jasperreports.engine.export.JRXmlExporter;
-import net.sf.jasperreports.engine.export.JRXmlExporterContext;
 import net.sf.jasperreports.engine.export.ooxml.JRDocxExporter;
 import net.sf.jasperreports.engine.export.ooxml.JRXlsxExporter;
 import net.sf.jasperreports.engine.query.JsonQueryExecuterFactory;
-import net.sf.jasperreports.engine.util.JRXmlWriteHelper;
 import net.sf.jasperreports.engine.util.LocalJasperReportsContext;
 import net.sf.jasperreports.engine.util.SimpleFileResolver;
 import net.sf.jasperreports.engine.xml.JRXmlLoader;
-import net.sf.jasperreports.engine.xml.JRXmlWriter;
 import net.sf.jasperreports.export.ExporterInput;
 import net.sf.jasperreports.export.OutputStreamExporterOutput;
 import net.sf.jasperreports.export.SimpleExporterInput;
@@ -497,7 +494,7 @@ public class ReportController {
 //        //get *.jasper
         JasperReport jReportde1 = JasperCompileManager.compileReport(jDesignde1);
         mainList.add(new MainReports(jReportde1,jReportde1,new JRBeanCollectionDataSource(
-                Arrays.asList(new EvaluationReport( "以下是您的男性荷尔蒙健康评估报告",
+                Arrays.asList(new PredefinedContentConvergence( "以下是您的男性荷尔蒙健康评估报告",
                         new JRBeanCollectionDataSource(
                                 Arrays.asList(new EvaluationDetail("脑下垂体荷尔蒙","黄体刺激素(LH)","由脑下垂体分泌，并受下视丘所释放的GnRH控制，能刺激睪丸Leydig细胞制造并分泌睪固酮。组织细胞及循环血液若有充足的睪固酮量，则会对脑下垂体产生负回馈(negative--feed-back)作用，不再分泌LH刺激睪丸。反之，如果组织细胞及循环血液若有不足的睪固酮量，则会分泌更多的LH刺激睪丸产生睪固酮。"),
                                         new EvaluationDetail("脑下垂体荷尔蒙","滤泡刺激素(FSH)","由脑下垂体分泌，并受下视丘所释放的GnRH 控制，能刺激睪丸Sertoli 细胞制造精子。"),
