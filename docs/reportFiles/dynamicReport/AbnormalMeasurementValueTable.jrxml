@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
-<!-- 2017-06-02T17:59:09 -->
+<!-- 2017-06-04T22:21:31 -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="AbnormalMeasurementValueTable" pageWidth="595" pageHeight="662" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="0" bottomMargin="0" uuid="731b81b3-1c28-4d35-9f62-3bf2ee4334ce">
 	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
 	<property name="com.jaspersoft.studio.unit." value="pixel"/>
@@ -12,8 +12,9 @@
 	<property name="com.jaspersoft.studio.unit.rightMargin" value="pixel"/>
 	<property name="com.jaspersoft.studio.unit.columnWidth" value="pixel"/>
 	<property name="com.jaspersoft.studio.unit.columnSpacing" value="pixel"/>
-	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="mysql"/>
-	<style name="myStyle" isDefault="true" fontName="微软雅黑" isBold="true" pdfFontName="MSYH.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<style name="myStyle" isDefault="true" fontName="微软雅黑" pdfFontName="MSYH.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+	<parameter name="title" class="java.lang.String"/>
 	<queryString>
 		<![CDATA[select * from amvt]]>
 	</queryString>
@@ -59,16 +60,6 @@
 						<font size="12" isBold="false"/>
 					</textElement>
 					<textFieldExpression><![CDATA[$F{value}]]></textFieldExpression>
-				</textField>
-				<textField>
-					<reportElement x="235" y="22" width="60" height="30" uuid="c5458dc7-3393-4bcf-926a-3cc6bf857d72">
-						<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
-						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
-					</reportElement>
-					<textElement textAlignment="Center">
-						<font size="12" isBold="false"/>
-					</textElement>
-					<textFieldExpression><![CDATA[$F{status}]]></textFieldExpression>
 				</textField>
 				<textField>
 					<reportElement x="292" y="22" width="92" height="30" uuid="714a2e5f-e5ba-4e5a-87f0-ffd1f9eb1bd3">
@@ -137,6 +128,10 @@
 						<pen lineStyle="Dashed" lineColor="#BE995E"/>
 					</graphicElement>
 				</line>
+				<image>
+					<reportElement x="250" y="24" width="26" height="17" uuid="6ceeba4d-d62c-4b2a-a059-db5a02219be0"/>
+					<imageExpression><![CDATA["WechatIMG35.jpeg"]]></imageExpression>
+				</image>
 			</frame>
 		</band>
 	</detail>
