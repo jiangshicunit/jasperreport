@@ -6,11 +6,11 @@ import net.sf.jasperreports.engine.data.JRBeanCollectionDataSource;
 /**
  * Created by shidaizhoukan on 2017/5/3.
  */
-public class County1 {
+public class AllergyAnalysis1 {
     private JRBeanCollectionDataSource cityDs;
     private JasperReport subReportObject;
 
-    public County1(JRBeanCollectionDataSource cityDs, JasperReport subReportObject) {
+    public AllergyAnalysis1(JRBeanCollectionDataSource cityDs, JasperReport subReportObject) {
         this.cityDs = cityDs;
         this.subReportObject = subReportObject;
     }

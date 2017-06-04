@@ -8,10 +8,12 @@ import net.sf.jasperreports.engine.data.JRBeanCollectionDataSource;
  */
 public class AbnormalMeasurementValueEvaluation {
 
+    private String title;
     private JRBeanCollectionDataSource dataBase;
     private JasperReport subreport;
 
-    public AbnormalMeasurementValueEvaluation(JRBeanCollectionDataSource dataBase, JasperReport subreport) {
+    public AbnormalMeasurementValueEvaluation(String title,JRBeanCollectionDataSource dataBase, JasperReport subreport) {
+        this.title = title;
         this.dataBase = dataBase;
         this.subreport = subreport;
     }
@@ -30,5 +32,13 @@ public class AbnormalMeasurementValueEvaluation {
 
     public void setSubreport(JasperReport subreport) {
         this.subreport = subreport;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
     }
 }
