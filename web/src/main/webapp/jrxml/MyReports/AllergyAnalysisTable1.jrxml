@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.1.1.final using JasperReports Library version 6.1.1  -->
+<!-- 2017-05-03T00:12:48 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="AllergyAnalysisTable1" pageWidth="295" pageHeight="662" columnWidth="255" leftMargin="20" rightMargin="20" topMargin="0" bottomMargin="0" uuid="34643ed1-a172-4625-9439-2faafc57d2d6">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="testStuden"/>
+	<property name="com.jaspersoft.studio.unit." value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.topMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.bottomMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.leftMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.rightMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnSpacing" value="pixel"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="cityDs" class="net.sf.jasperreports.engine.data.JRBeanCollectionDataSource"/>
+	<field name="subReportObject" class="net.sf.jasperreports.engine.JasperReport" />
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<detail>
+		<band height="78" splitType="Stretch">
+			<subreport>
+				<reportElement x="-20" y="0" width="200" height="60" uuid="7a795201-5f95-4649-ba7f-5d6d15a40b63"/>
+				<dataSourceExpression><![CDATA[$F{cityDs}]]></dataSourceExpression>
+				<subreportExpression><![CDATA[$F{subReportObject}]]></subreportExpression>
+			</subreport>
+		</band>
+	</detail>
+</jasperReport>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
+<!-- 2017-05-09T11:41:55 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="BodyAntiCancerCellAbilityEvaluation" pageWidth="595" pageHeight="610" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="0" uuid="2bf27f6f-56e5-45d0-ac8e-4d9a5a556278">
+	<property name="com.jaspersoft.studio.unit." value="pixel"/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="New Data Adapter (2)"/>
+	<style name="myStyle" isDefault="true" fontName="微软雅黑"  pdfFontName="MSYH.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<detail>
+		<band height="590" splitType="Stretch">
+			<staticText>
+				<reportElement x="83" y="2" width="397" height="30" forecolor="#CDA95A" uuid="7550b7bd-1af3-4a27-a4ce-ed95dcef45d9"/>
+				<textElement textAlignment="Center">
+					<font size="20" isBold="false"/>
+				</textElement>
+				<text><![CDATA[机体抗癌细胞能力评估]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="30" y="50" width="530" height="110" forecolor="#000000" uuid="4a393a33-7dc2-4382-a5a1-adcb06fdc227"/>
+				<textElement textAlignment="Left">
+					<font size="12" isBold="false"/>
+					<paragraph lineSpacing="1_1_2"/>
+				</textElement>
+				<text><![CDATA[       我们的身体中的细胞每天都会有一定比例的细胞发生突变，平均会产生6000-10000个癌细
+胞。免疫系统作为人体的“监察官”，会随时监视突变和衰老细胞，并及时把他们清除掉。我们体
+内每天都会发生癌细胞与免疫细胞之间的战争，可想而知，如果我们的免疫功能出现缺陷，癌细
+胞就会赢得这场战争，加上某些不良的生活习惯催生体内本来癌症基因的表达。身体就会被癌
+症击垮。]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="30" y="170" width="530" height="50" forecolor="#000000" uuid="b2ca366c-52a3-4c05-a20e-f5dc94e23449"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="12" isBold="false"/>
+					<paragraph lineSpacing="1_1_2"/>
+				</textElement>
+				<text><![CDATA[       不幸的是，我们的免疫功能是随着年龄而逐渐下降的，这也就能解释为什么癌症的发病率随
+着年龄而升高。]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="30" y="230" width="530" height="50" forecolor="#000000" uuid="b4969e96-682e-4d9e-b6a4-364647dd7615"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="12" isBold="false"/>
+					<paragraph lineSpacing="1_1_2"/>
+				</textElement>
+				<text><![CDATA[       我们特地选择了在免疫功能中对癌细胞有独特杀伤和清楚作用的指标，来分析您当下的机体
+抗癌能力。]]></text>
+			</staticText>
+			<image>
+				<reportElement x="190" y="280" width="220" height="260" uuid="570706e9-209b-49cc-bc5c-b43130519c9c"/>
+				<imageExpression><![CDATA["./tijiaizheng.jpg"]]></imageExpression>
+			</image>
+		</band>
+	</detail>
+</jasperReport>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
+<!-- 2017-05-09T11:56:01 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="LowerVisionPituitaryTesticularEndocrineRegulation1" pageWidth="595" pageHeight="610" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="0" uuid="3fe6421d-a9cb-4bba-9bab-38b0086266d9">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="New Data Adapter (2)"/>
+	<property name="com.jaspersoft.studio.unit." value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.topMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.bottomMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.leftMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.rightMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnSpacing" value="pixel"/>
+	<style name="myStyle" isDefault="true" fontName="微软雅黑"  pdfFontName="MSYH.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<detail>
+		<band height="590" splitType="Stretch">
+			<staticText>
+				<reportElement x="81" y="440" width="359" height="30" forecolor="#CDA95A" uuid="834374ae-92f5-48a1-87a8-49c9a0a1019d"/>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font size="18" isBold="false"/>
+				</textElement>
+				<text><![CDATA[男性荷尔蒙健康评估]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="50" y="480" width="470" height="110" forecolor="#000000" uuid="461c7555-7c89-4047-be91-8faf1ec2d66f"/>
+				<textElement textAlignment="Left">
+					<font size="12" isBold="false"/>
+					<paragraph lineSpacing="1_1_2"/>
+				</textElement>
+				<text><![CDATA[全面评估下视丘/脑下垂体/睪丸调节轴(中医所指的脑/肾/天癸/冲任脉调节轴)内分泌阴阳
+平衡系统。测量脑下垂体荷尔蒙、雄激素、雌激素、黄体酮。这些荷尔蒙的分泌量与平
+衡关系与男性之活力、生育能力、心血管健康、认知与情绪、秃发、前列腺健康等皆息息
+相关。藉由这些分析可更精确的帮助面临健康挑战的男性们，回复荷尔蒙平衡、重振男性
+雄风和抗老化。]]></text>
+			</staticText>
+			<image>
+				<reportElement x="100" y="40" width="400" height="400" uuid="a78831d9-8ba4-462d-9d56-a65206a3e41c"/>
+				<imageExpression><![CDATA["./xiashiti.jpg"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="81" y="2" width="349" height="30" forecolor="#CDA95A" uuid="1a7db314-e66b-4d91-b735-98458ec99be2"/>
+				<textElement textAlignment="Center">
+					<font size="20" isBold="false"/>
+				</textElement>
+				<text><![CDATA[下视体-脑下垂体-睪丸内分泌调节]]></text>
+			</staticText>
+		</band>
+	</detail>
+</jasperReport>

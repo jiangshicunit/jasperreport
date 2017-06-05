@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
+<!-- 2017-05-09T11:51:56 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="HarvardCancerRiskEvaluation1" pageWidth="595" pageHeight="610" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="0" uuid="ca853643-3c7e-4614-aa6d-ee4b3c021670">
+	<property name="com.jaspersoft.studio.unit." value="pixel"/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="New Data Adapter (2)"/>
+	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.topMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.bottomMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.leftMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.rightMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnSpacing" value="pixel"/>
+	<style name="myStyle" isDefault="true" fontName="微软雅黑"  pdfFontName="MSYH.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<detail>
+		<band height="590" splitType="Stretch">
+			<staticText>
+				<reportElement x="79" y="1" width="401" height="30" forecolor="#CDA95A" uuid="4e393f6b-9467-4794-9506-31efd48b158b"/>
+				<textElement textAlignment="Center">
+					<font size="20" isBold="false"/>
+				</textElement>
+				<text><![CDATA[哈佛癌症风险评估]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="67" y="50" width="409" height="20" uuid="861ebc08-f6bf-4ae2-aa94-779d2e0c8638"/>
+				<textElement>
+					<font size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[90%-95%的癌症与不良生活方式有关。]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="40" y="80" width="500" height="70" uuid="419227ae-650e-4dda-91c1-ddcdd15bc27d"/>
+				<textElement>
+					<font size="12" isBold="false"/>
+					<paragraph lineSpacing="1_1_2"/>
+				</textElement>
+				<text><![CDATA[       现代医学的发展已经揭露，癌症是多因素，多阶段，多基因相互作用的结果。纵观我国癌
+谱发病情况来看，排前十位的癌症，包括肺癌、肝癌、胃癌、乳腺癌、食管癌、胰腺癌等等，
+都是和生活方式密切相关的。]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="40" y="160" width="510" height="90" uuid="2dc61582-8a13-4ae5-bc68-11bb844674c3"/>
+				<textElement>
+					<font size="12" isBold="false"/>
+					<paragraph lineSpacing="1_1_2"/>
+				</textElement>
+				<text><![CDATA[       您或许很少有机会能够完整的回顾你自己的生活习惯，因为那对你来说已经习以为常。通
+过与您的沟通，我将您的个人饮食和运动情况，家族史以及生活环境，嵌入到哈佛医学院及公
+共卫生学院提出的Harvard Cancer Index（哈佛癌症指数）量表。通过量表的计算，可以从您生
+活方式的维度评估您个体癌症患病的风险级。]]></text>
+			</staticText>
+			<image>
+				<reportElement x="140" y="260" width="290" height="270" uuid="9552eea5-4115-49e7-9bbc-6a6d72ef07df"/>
+				<imageExpression><![CDATA["images/hafuaizheng.jpg"]]></imageExpression>
+			</image>
+		</band>
+	</detail>
+</jasperReport>

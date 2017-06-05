@@ -28,10 +28,4 @@ rebel.xml
 #lilei environment
 dep2.sh
 
-#jrxml
-MyReports/
-.jrxml
-.jpg
-.png
-
 crm-web/src/main/filters/dev.properties

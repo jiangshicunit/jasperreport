@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
+<!-- 2017-05-03T23:48:31 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="LaboratoryTest1" pageWidth="595" pageHeight="662" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="0" bottomMargin="0" uuid="e1ca4f4e-202e-4b4f-8e4f-d3ba7b068057">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="mysql"/>
+	<property name="com.jaspersoft.studio.unit." value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.topMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.bottomMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.leftMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.rightMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnSpacing" value="pixel"/>
+	<style name="myStyle" isDefault="true" fontName="微软雅黑"  pdfFontName="MSYH.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="data" class="net.sf.jasperreports.engine.data.JRBeanCollectionDataSource"/>
+	<field name="subReport" class="net.sf.jasperreports.engine.JasperReport" />
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<detail>
+		<band height="71" splitType="Stretch">
+			<subreport>
+				<reportElement x="-20" y="6" width="224" height="65" uuid="1dcf89cb-7ac4-47c2-904a-fe883eb3f1b7"/>
+				<dataSourceExpression><![CDATA[$F{data}]]></dataSourceExpression>
+				<subreportExpression><![CDATA[$F{subReport}]]></subreportExpression>
+			</subreport>
+		</band>
+	</detail>
+	<lastPageFooter>
+		<band height="50">
+			<image>
+				<reportElement x="0" y="10" width="14" height="14" uuid="2dbbe52c-cab0-4922-ae14-367d2cb7f3a2">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<imageExpression><![CDATA["./red.jpg"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="96" y="10" width="14" height="14" uuid="6c7340dc-77fd-415c-ac18-f2dde5861256"/>
+				<imageExpression><![CDATA["./orong.jpg"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="46" y="10" width="14" height="14" uuid="74c73c7f-3ddb-4c79-ba4e-b7ac438ff5d0">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<imageExpression><![CDATA["./blue.jpg"]]></imageExpression>
+			</image>
+			<textField>
+				<reportElement x="14" y="7" width="41" height="21" uuid="ebfd7116-16e5-4849-8f5c-48139ca2cafc"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font isBold="false"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<textFieldExpression><![CDATA["异常"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="60" y="7" width="41" height="21" uuid="d337db8a-52f2-4585-816e-6cef779dd5eb"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font isBold="false"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<textFieldExpression><![CDATA["正常"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="110" y="7" width="140" height="21" uuid="43699d4c-03d2-4bdb-9e8b-a0a0fb17dc25"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font isBold="false"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<textFieldExpression><![CDATA["正常，临床上需积极介入改善"]]></textFieldExpression>
+			</textField>
+		</band>
+	</lastPageFooter>
+</jasperReport>
