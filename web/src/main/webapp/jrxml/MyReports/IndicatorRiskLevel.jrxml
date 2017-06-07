@@ -24,17 +24,13 @@
 		<band splitType="Stretch"/>
 	</background>
 	<title>
-		<band height="50">
+		<band height="82">
 			<image>
-				<reportElement x="90" y="20" width="300" height="30"  uuid="fe6d09f4-632f-44f4-a43c-b319877e60b7"/>
+				<reportElement x="90" y="20" width="300" height="30" uuid="fe6d09f4-632f-44f4-a43c-b319877e60b7"/>
 				<imageExpression><![CDATA["./yd_firstShow1.jpg"]]></imageExpression>
 			</image>
-		</band>
-	</title>
-	<columnHeader>
-		<band height="31" splitType="Stretch">
 			<staticText>
-				<reportElement x="90" y="15" width="115" height="16" uuid="38e1b0f5-11d9-44fe-8917-c7cc26ccd21b"/>
+				<reportElement x="90" y="66" width="115" height="16" uuid="0257e47b-0ec2-4bc3-9143-713ad8a86b00"/>
 				<box>
 					<bottomPen lineWidth="2.0"/>
 				</box>
@@ -45,7 +41,7 @@
 				<text><![CDATA[指标名称]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="205" y="15" width="145" height="16" uuid="9a8557af-e6be-4282-9196-6a71e3c08894">
+				<reportElement x="205" y="66" width="145" height="16" uuid="fc08c36f-b2a6-4077-9d2a-59f2e11f42fa">
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
 				</reportElement>
@@ -58,7 +54,7 @@
 				<text><![CDATA[指标英文名称(English)]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="350" y="15" width="100" height="16" uuid="f91c2f6b-b3ef-4be0-94b5-6a678e200450">
+				<reportElement x="350" y="66" width="100" height="16" uuid="a8ad48af-bfee-40fb-9709-6adcebc7d28a">
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
 				</reportElement>
@@ -71,7 +67,7 @@
 				<text><![CDATA[风险等级]]></text>
 			</staticText>
 		</band>
-	</columnHeader>
+	</title>
 	<detail>
 		<band height="21" splitType="Stretch">
 			<textField>

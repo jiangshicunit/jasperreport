@@ -24,7 +24,7 @@
 	<background>
 		<band splitType="Stretch"/>
 	</background>
-	<columnHeader>
+	<title>
 		<band height="19" splitType="Stretch">
 			<textField>
 				<reportElement x="60" y="0" width="163" height="18" uuid="0c08e76a-0664-442f-9a22-2a00d14e704c">
@@ -58,7 +58,7 @@
 				<textFieldExpression><![CDATA[$F{riskTitle}]]></textFieldExpression>
 			</textField>
 		</band>
-	</columnHeader>
+	</title>
 	<detail>
 		<band height="20" splitType="Stretch">
 			<textField>
