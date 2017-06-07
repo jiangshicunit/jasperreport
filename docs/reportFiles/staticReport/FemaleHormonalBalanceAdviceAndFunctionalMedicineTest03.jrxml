@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
-<!-- 2017-06-01T18:35:47 -->
+<!-- 2017-06-07T17:58:13 -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="AdrenalStressAnalysisReport01" pageWidth="595" pageHeight="662" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="0" bottomMargin="0" uuid="271f1782-90c3-4689-9ccf-8cfaf19e32fa">
-	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="New Data Adapter "/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
 	<property name="com.jaspersoft.studio.unit." value="pixel"/>
 	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
 	<property name="com.jaspersoft.studio.unit.pageWidth" value="pixel"/>
@@ -22,14 +22,12 @@
 	<detail>
 		<band height="70" splitType="Stretch">
 			<staticText>
-				<reportElement x="30" y="0" width="530" height="70" uuid="5d96d265-f95b-4121-87b2-1f7ee8ae6ed9"/>
+				<reportElement x="30" y="0" width="515" height="70" uuid="5d96d265-f95b-4121-87b2-1f7ee8ae6ed9"/>
 				<textElement rotation="None" markup="none">
 					<font size="12" isBold="false"/>
 					<paragraph lineSpacing="1_1_2" lineSpacingSize="1.0" spacingBefore="0"/>
 				</textElement>
-				<text><![CDATA[胆碱(choline)、维生素B2、维生素B6、甲基维生素B12(methylcobalamin)、亚 
-叶酸钙(calcium folinate)、三甲基甘胺酸(trimethylglycine)能加速排除荷尔蒙代谢
-中间产物，避免代谢毒素残留。降低同半胱胺酸(homocysteine)，保护心血管。]]></text>
+				<text><![CDATA[胆碱(choline)、维生素B2、维生素B6、甲基维生素B12(methylcobalamin)、亚 叶酸钙(calcium folinate)、三甲基甘胺酸(trimethylglycine)能加速排除荷尔蒙代谢中间产物，避免代谢毒素残留。降低同半胱胺酸(homocysteine)，保护心血管。]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="0" y="0" width="30" height="30" uuid="a71cd2a7-7435-40c6-ae73-d1d66a832257"/>

@@ -21,13 +21,70 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.*;
 import java.util.*;
 
+
+
+import net.sf.jasperreports.engine.JRAbstractExporter;
+import net.sf.jasperreports.engine.JRException;
+import net.sf.jasperreports.engine.JRExporterParameter;
+import net.sf.jasperreports.engine.JasperFillManager;
+import net.sf.jasperreports.engine.JasperPrint;
+import net.sf.jasperreports.engine.export.JRPdfExporter;
+import net.sf.jasperreports.engine.export.JRPdfExporterParameter;
+
 @Controller
 public class SaperReportController {
 
     @Autowired
     PropertyConfigurer propertyConfigurer;
 
+    @RequestMapping(value = "/yd",
+            method = {RequestMethod.POST},
+            produces = "application/json;carset=UTF-8")
+    @ResponseBody
+    public Object testStatic(HttpServletResponse response,HttpServletRequest request,
+                             @RequestParam(value = "name1",required = false)String name,
+                             @RequestParam(value = "path",required = false)String path){
+        Map<String,Object> resultMap = new HashMap<String,Object>();
+        String  realPath = request.getSession().getServletContext().getRealPath("");
+        //创建文件夹
+        File reportsDir = new File(realPath);
+        LocalJasperReportsContext ctx = new LocalJasperReportsContext(DefaultJasperReportsContext.getInstance());
+        ctx.setClassLoader(getClass().getClassLoader());
+        ctx.setFileResolver(new SimpleFileResolver(reportsDir));//注意，设置JasperReport的相对路径，很重要
+        JRDataSource jrDataSource = new JRBeanCollectionDataSource(null);
+        JasperFillManager fillManager = JasperFillManager.getInstance(ctx);
+        JasperExportManager exportManager = JasperExportManager.getInstance(ctx);
+        resultMap.put("名称：",name);
+        resultMap.put("路径：",path);
+        resultMap.put("服务器相对路径",realPath);
+        Map parameters=new HashMap();
+        ByteArrayOutputStream outPut=new ByteArrayOutputStream();
+        FileOutputStream outputStream=null;
+        String reportModelFile=realPath+"/jrxml/MyReports/test1.jasper";
+        File outPdfFile =  new File(realPath+"ydpdf/");
+        if(!outPdfFile.exists()){
+            outPdfFile.mkdirs();
+        }
+        try {
 
+            JasperPrint jasperPrint=fillManager.fillReport(reportModelFile,
+                    parameters,new JREmptyDataSource());
+            FileOutputStream outs = new FileOutputStream(realPath+"ydpdf/"+name+".pdf");
+            exportManager.exportToPdfStream(jasperPrint, outs);
+        } catch (JRException e) {
+            e.printStackTrace();
+        }catch (Exception e) {
+            e.printStackTrace();
+        }finally{
+            try {
+                outPut.flush();
+                outPut.close();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+        return resultMap;
+    }
 
     @RequestMapping(value = "/generatepdf",
             method = {  RequestMethod.POST },
@@ -88,6 +145,7 @@ public class SaperReportController {
 //                    System.out.println("map:"+submap.get("subReportName"));
 //                    System.out.println("data"+((Map<String,Object>)submap.get("data")).get("title"));
                     //开始循环如果存在子模板
+
                     if (!StringUtils.isEmpty(submap.get("subReports"))){
 //                    System.out.println(map.get("subReports").toString());
                         if (submap!=null && submap.get("subReportName").toString().trim().equals("AllergyAnalysis")){
@@ -128,9 +186,15 @@ public class SaperReportController {
                             jReport = JasperCompileManager.compileReport(jDesign);
                             mainList.add(new MainReports(jReport, jReport ,
                                     new JRBeanCollectionDataSource(Arrays.asList(""))));
-                        }else if (submap!=null && (submap.get("subReportName").toString().trim().equals("IndicatorRiskLevel") )){
+                        }else if (submap!=null && (submap.get("subReportName").toString().trim().equals("IndicatorRiskLevel"))){
                             IndicatorRiskLevel(xml_save_path,submap,mainList);
 
+                        }else if (submap!=null && (submap.get("subReportName").toString().trim().equals("BasicInformation"))){
+                            basicInformation(xml_save_path,submap,mainList);
+                        }else if(submap!=null && (submap.get("subReportName").toString().trim().equals("HealthExpectation"))){
+                            healthExpectation(xml_save_path,submap,mainList);
+                        }else if(submap!=null && (submap.get("subReportName").toString().trim().equals("PersonalPastHistory"))){
+                            personalPastHistory(xml_save_path,submap,mainList);
                         }else if (submap!=null && submap.get("subReportName")!=null){
                             otherList.add(submap.get("subReportName").toString());
                         }
@@ -565,8 +629,45 @@ public class SaperReportController {
 
     }
 
+    private  void  basicInformation(String xml_save_path,Map<String,Object> submap,List<MainReports> mainList) throws JRException, FileNotFoundException {
+        JasperDesign jDesign = JRXmlLoader.load(new File(xml_save_path+"/BasicInformation.jrxml"));
+        JasperReport jReport = JasperCompileManager.compileReport(jDesign);
+        JSONObject allergyObject = JSONObject.parseObject(submap.get("data").toString());
+        BasicInformation basicInformation = new BasicInformation();
+        if (allergyObject != null){
+            InitUtil.init(basicInformation,allergyObject);
+        }
+
+        mainList.add(new MainReports(jReport, jReport ,
+                new JRBeanCollectionDataSource(Arrays.asList(basicInformation))));
 
 
+    }
+    private  void  healthExpectation(String xml_save_path,Map<String,Object> submap,List<MainReports> mainList) throws JRException, FileNotFoundException {
+        JasperDesign jDesign = JRXmlLoader.load(new File(xml_save_path+"/HealthExpectation.jrxml"));
+        JasperReport jReport = JasperCompileManager.compileReport(jDesign);
+        JSONObject allergyObject = JSONObject.parseObject(submap.get("data").toString());
+        HealthExpectation healthExpectation = new HealthExpectation();
+        if(allergyObject != null){
+            InitUtil.init(healthExpectation,allergyObject);
+        }
+        mainList.add(new MainReports(jReport, jReport ,
+                new JRBeanCollectionDataSource(Arrays.asList(healthExpectation))));
+
+    }
+    private  void  personalPastHistory(String xml_save_path,Map<String,Object> submap,List<MainReports> mainList) throws JRException, FileNotFoundException {
+        JasperDesign jDesign = JRXmlLoader.load(new File(xml_save_path+"/PersonalPastHistory.jrxml"));
+        JasperReport jReport = JasperCompileManager.compileReport(jDesign);
+        JSONObject allergyObject = JSONObject.parseObject(submap.get("data").toString());
+        PersonalPastHistory personalPastHistory = new PersonalPastHistory();
+        if(allergyObject != null){
+            InitUtil.init(personalPastHistory,allergyObject);
+
+        }
+        mainList.add(new MainReports(jReport, jReport ,
+                new JRBeanCollectionDataSource(Arrays.asList(personalPastHistory))));
+
+    }
 }
 
 

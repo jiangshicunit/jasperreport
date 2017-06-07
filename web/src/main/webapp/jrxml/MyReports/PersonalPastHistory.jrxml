@@ -1,0 +1,2211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
+<!-- 2017-06-07T14:58:06 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="PersonalPastHistory1" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="0" bottomMargin="0" uuid="ed6315c1-74d1-499f-bbd5-2d2a738cb0a8">
+	<property name="com.jaspersoft.studio.unit." value="pixel"/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="New Data Adapter (2)"/>
+	<style name="myStyle" isDefault="true" fontName="微软雅黑" pdfFontName="MSYH.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="isTnb1" class="java.lang.String"/>
+	<field name="tnb1Description" class="java.lang.String"/>
+	<field name="isTnb2" class="java.lang.String"/>
+	<field name="tnb2Description" class="java.lang.String"/>
+	<field name="isGxyb" class="java.lang.String"/>
+	<field name="gxybDescription" class="java.lang.String"/>
+	<field name="isXzyc" class="java.lang.String"/>
+	<field name="xzycDescription" class="java.lang.String"/>
+	<field name="isGxb" class="java.lang.String"/>
+	<field name="gxbDescription" class="java.lang.String"/>
+	<field name="isNzz" class="java.lang.String"/>
+	<field name="nzzDescription" class="java.lang.String"/>
+	<field name="isMxbybjbs" class="java.lang.String"/>
+	<field name="mxbybjbsDescription" class="java.lang.String"/>
+	<field name="isMxhxjbs" class="java.lang.String"/>
+	<field name="mxhxjbsDescription" class="java.lang.String"/>
+	<field name="isFlxsgy" class="java.lang.String"/>
+	<field name="flxsgyDescription" class="java.lang.String"/>
+	<field name="isMxwy" class="java.lang.String"/>
+	<field name="mxwyType" class="java.lang.String"/>
+	<field name="isWky" class="java.lang.String"/>
+	<field name="wkyDescription" class="java.lang.String"/>
+	<field name="isSezcky" class="java.lang.String"/>
+	<field name="sezckyDescription" class="java.lang.String"/>
+	<field name="isMxygy" class="java.lang.String"/>
+	<field name="mxygyDescription" class="java.lang.String"/>
+	<field name="isYgkyyx" class="java.lang.String"/>
+	<field name="ygkyyxDescription" class="java.lang.String"/>
+	<field name="isMxbxgy" class="java.lang.String"/>
+	<field name="mxbxgyDescription" class="java.lang.String"/>
+	<field name="isGyh" class="java.lang.String"/>
+	<field name="gyhDescription" class="java.lang.String"/>
+	<field name="isZfg" class="java.lang.String"/>
+	<field name="zfgType" class="java.lang.String"/>
+	<field name="isDjsz" class="java.lang.String"/>
+	<field name="djszType" class="java.lang.String"/>
+	<field name="isDnzcs" class="java.lang.String"/>
+	<field name="dnzcsDescription" class="java.lang.String"/>
+	<field name="isMxyxy" class="java.lang.String"/>
+	<field name="mxyxyDescription" class="java.lang.String"/>
+	<field name="isMxjcy" class="java.lang.String"/>
+	<field name="mxjcyDescription" class="java.lang.String"/>
+	<field name="isCxr" class="java.lang.String"/>
+	<field name="cxrType" class="java.lang.String"/>
+	<field name="isOtherJbs" class="java.lang.String"/>
+	<field name="otherJbsDescription" class="java.lang.String"/>
+	<field name="isCancer" class="java.lang.String"/>
+	<field name="cancerDescription" class="java.lang.String"/>
+	<field name="isOtherDisease" class="java.lang.String"/>
+	<field name="otherDiseaseDescription" class="java.lang.String"/>
+	<field name="isSurgery" class="java.lang.String"/>
+	<field name="surgeryDescription" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="19">
+			<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+			<staticText>
+				<reportElement x="34" y="0" width="100" height="19" forecolor="#CDA95A" uuid="ab548c83-3c5a-4ddb-84db-12229d86eaf7"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[个人既往病史]]></text>
+			</staticText>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="25">
+			<staticText>
+				<reportElement mode="Opaque" x="34" y="0" width="148" height="25" backcolor="#F7DE94" uuid="1b85de1e-57b2-4ae2-9c4a-55af6ecfe9ea">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="2.0" lineColor="#CECECE"/>
+					<topPen lineWidth="2.0" lineColor="#8C735A"/>
+					<leftPen lineWidth="2.0" lineColor="#8C735A"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font size="9"/>
+					<paragraph spacingBefore="7"/>
+				</textElement>
+				<text><![CDATA[疾病名称 ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="182" y="0" width="73" height="25" backcolor="#F7DE94" uuid="3503ebb2-3f3c-4864-a69a-06f85478a89b">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="2.0" lineColor="#8C735A"/>
+					<leftPen lineWidth="1.0" lineColor="#CECCEC"/>
+					<bottomPen lineWidth="1.0" lineColor="#CECCEC"/>
+					<rightPen lineWidth="1.0" lineColor="#CECCEC"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font size="9"/>
+					<paragraph spacingBefore="7"/>
+				</textElement>
+				<text><![CDATA[ 是否患病 ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="255" y="0" width="267" height="25" backcolor="#F7DE94" uuid="188046c2-a877-4768-aaa5-624b133bbc13">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="2.0" lineColor="#8C735A"/>
+					<leftPen lineWidth="1.0" lineColor="#CECECE"/>
+					<bottomPen lineWidth="1.0" lineColor="#CECECE"/>
+					<rightPen lineWidth="2.0" lineColor="#8C735A"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Top">
+					<font size="9"/>
+					<paragraph lineSpacing="Single" leftIndent="6" rightIndent="0" spacingBefore="7"/>
+				</textElement>
+				<text><![CDATA[病史描述]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="25" splitType="Stretch">
+			<staticText>
+				<reportElement stretchType="RelativeToBandHeight" mode="Opaque" x="34" y="0" width="148" height="25" backcolor="#F7DE94" uuid="5676206b-8b72-4cd6-84d4-8ec666dc01ad">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineColor="#CECECE"/>
+					<leftPen lineWidth="2.0" lineColor="#8C735A"/>
+					<bottomPen lineWidth="1.0" lineColor="#CECECE"/>
+					<rightPen lineWidth="1.0" lineColor="#CECECE"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font size="9"/>
+					<paragraph spacingBefore="7"/>
+				</textElement>
+				<text><![CDATA[I型糖尿病]]></text>
+			</staticText>
+			<staticText>
+				<reportElement stretchType="RelativeToBandHeight" x="182" y="0" width="73" height="25" uuid="24fb9d65-45a1-45e7-a4b4-31a99a0c71ae">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineColor="#CECECE"/>
+					<leftPen lineWidth="1.0" lineColor="#CECECE"/>
+					<bottomPen lineWidth="1.0" lineColor="#CECECE"/>
+					<rightPen lineWidth="1.0" lineColor="#CECECE"/>
+				</box>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<image>
+				<reportElement x="191" y="6" width="15" height="12" uuid="172b10d3-f51f-459f-bd24-0b64d151b83e"/>
+				<imageExpression><![CDATA["./images/tu1.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="206" y="5" width="12" height="14" uuid="06eae1e7-e27c-4ee1-9b2d-e62052f2652a"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[否]]></text>
+			</staticText>
+			<image>
+				<reportElement x="220" y="6" width="15" height="12" uuid="5309ed9e-f9de-4964-84ef-6f14b262dd9a"/>
+				<imageExpression><![CDATA["./images/tu1.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="235" y="5" width="12" height="14" uuid="a1f30225-ae2d-4ab8-8823-68ad6a79e880"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[是]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="255" y="0" width="267" height="25" uuid="e35f5c05-b7e8-42c3-a49d-0f6b838c54f6">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineColor="#CECECE"/>
+					<leftPen lineWidth="1.0" lineColor="#CECECE"/>
+					<bottomPen lineWidth="1.0" lineColor="#CECECE"/>
+					<rightPen lineWidth="2.0" lineColor="#8C735A"/>
+				</box>
+				<textElement textAlignment="Left">
+					<font size="9"/>
+					<paragraph leftIndent="6"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tnb1Description}]]></textFieldExpression>
+			</textField>
+		</band>
+		<band height="25">
+			<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+			<staticText>
+				<reportElement stretchType="RelativeToBandHeight" mode="Opaque" x="34" y="0" width="148" height="25" backcolor="#F7DE94" uuid="a04d2375-3f86-4640-91ab-e9d145e6b9df">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineColor="#CECECE"/>
+					<leftPen lineWidth="2.0" lineColor="#8C735A"/>
+					<bottomPen lineWidth="1.0" lineColor="#CECECE"/>
+					<rightPen lineWidth="1.0" lineColor="#CECECE"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font size="9"/>
+					<paragraph spacingBefore="7"/>
+				</textElement>
+				<text><![CDATA[II型糖尿病]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="255" y="0" width="267" height="25" uuid="fbdc0e0b-7ca5-4ada-aafd-40002f1908ab">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineColor="#CECECE"/>
+					<leftPen lineWidth="1.0" lineColor="#CECECE"/>
+					<bottomPen lineWidth="1.0" lineColor="#CECECE"/>
+					<rightPen lineWidth="2.0" lineColor="#8C735A"/>
+				</box>
+				<textElement>
+					<font size="9"/>
+					<paragraph leftIndent="6"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tnb2Description}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement stretchType="RelativeToBandHeight" x="182" y="0" width="73" height="25" uuid="18e39e25-f51b-4841-8392-3a0a28027d66">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineColor="#CECECE"/>
+					<leftPen lineWidth="1.0" lineColor="#CECECE"/>
+					<bottomPen lineWidth="1.0" lineColor="#CECECE"/>
+					<rightPen lineWidth="1.0" lineColor="#CECECE"/>
+				</box>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="206" y="5" width="12" height="14" uuid="948905e3-a412-4ed6-b439-93bf69e070fc"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[否]]></text>
+			</staticText>
+			<image>
+				<reportElement x="191" y="6" width="15" height="12" uuid="2fcfba1b-821a-4702-916b-e805fd0e0c6b"/>
+				<imageExpression><![CDATA["./images/tu1.png"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="220" y="6" width="15" height="12" uuid="6180d7b7-c284-47c0-9d80-b56c7f088ec8"/>
+				<imageExpression><![CDATA["./images/tu1.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="235" y="5" width="12" height="14" uuid="5fa1c258-8a3c-4d75-a42c-b4813a8a8c54"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[是]]></text>
+			</staticText>
+		</band>
+		<band height="25">
+			<staticText>
+				<reportElement stretchType="RelativeToBandHeight" mode="Opaque" x="34" y="0" width="148" height="25" backcolor="#F7DE94" uuid="60b5af6e-9575-4203-a0a7-9f4a99561933">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineColor="#CECECE"/>
+					<leftPen lineWidth="2.0" lineColor="#8C735A"/>
+					<bottomPen lineWidth="1.0" lineColor="#CECECE"/>
+					<rightPen lineWidth="1.0" lineColor="#CECECE"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font size="9"/>
+					<paragraph spacingBefore="7"/>
+				</textElement>
+				<text><![CDATA[高血压病]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="255" y="0" width="267" height="25" uuid="6c18f118-4076-411d-ac00-78020d5d6ec7">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineColor="#CECECE"/>
+					<leftPen lineWidth="1.0" lineColor="#CECECE"/>
+					<bottomPen lineWidth="1.0" lineColor="#CECECE"/>
+					<rightPen lineWidth="2.0" lineColor="#8C735A"/>
+				</box>
+				<textElement>
+					<font size="9"/>
+					<paragraph leftIndent="6"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{gxybDescription}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement stretchType="RelativeToBandHeight" x="182" y="0" width="73" height="25" uuid="52a42d8c-11dc-42dd-90d5-a10660f8e687">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineColor="#CECECE"/>
+					<leftPen lineWidth="1.0" lineColor="#CECECE"/>
+					<bottomPen lineWidth="1.0" lineColor="#CECECE"/>
+					<rightPen lineWidth="1.0" lineColor="#CECECE"/>
+				</box>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<image>
+				<reportElement x="191" y="6" width="15" height="12" uuid="03ce60cc-9f8d-4bf4-9785-2d5cfe8c5c38"/>
+				<imageExpression><![CDATA["./images/tu1.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="206" y="5" width="12" height="14" uuid="8af14719-45f1-49cb-bbf5-ee84d15eb21a"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[否]]></text>
+			</staticText>
+			<image>
+				<reportElement x="220" y="6" width="15" height="12" uuid="748dbbdf-49b9-4943-9df9-a34f8b8b9cbc"/>
+				<imageExpression><![CDATA["./images/tu1.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="235" y="5" width="12" height="14" uuid="47bf2c62-a1cb-4272-8663-bee5200a5a7f"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[是]]></text>
+			</staticText>
+		</band>
+		<band height="25">
+			<staticText>
+				<reportElement stretchType="RelativeToBandHeight" mode="Opaque" x="34" y="0" width="148" height="25" backcolor="#F7DE94" uuid="3bc1ae59-07e4-447f-b39b-2288ace0c7ad">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineColor="#CECECE"/>
+					<leftPen lineWidth="2.0" lineColor="#8C735A"/>
+					<bottomPen lineWidth="1.0" lineColor="#CECECE"/>
+					<rightPen lineWidth="1.0" lineColor="#CECECE"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font size="9"/>
+					<paragraph spacingBefore="7"/>
+				</textElement>
+				<text><![CDATA[血脂异常]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="255" y="0" width="267" height="25" uuid="ba091b1d-8a43-436e-b5dd-a0f912ba202b">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineColor="#CECECE"/>
+					<leftPen lineWidth="1.0" lineColor="#CECECE"/>
+					<bottomPen lineWidth="1.0" lineColor="#CECECE"/>
+					<rightPen lineWidth="2.0" lineColor="#8C735A"/>
+				</box>
+				<textElement>
+					<font size="9"/>
+					<paragraph leftIndent="6"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{xzycDescription}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement stretchType="RelativeToBandHeight" x="182" y="0" width="73" height="25" uuid="2bcb8aa3-3189-4a91-9b91-72c26a6318f2">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineColor="#CECECE"/>
+					<leftPen lineWidth="1.0" lineColor="#CECECE"/>
+					<bottomPen lineWidth="1.0" lineColor="#CECECE"/>
+					<rightPen lineWidth="1.0" lineColor="#CECECE"/>
+				</box>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<image>
+				<reportElement x="191" y="6" width="15" height="12" uuid="34f603a8-665a-4d5e-b480-be2811a9e595"/>
+				<imageExpression><![CDATA["./images/tu1.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="206" y="5" width="12" height="14" uuid="26f74d25-0af9-41dd-8c96-ed616b666932"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[否]]></text>
+			</staticText>
+			<image>
+				<reportElement x="220" y="6" width="15" height="12" uuid="1c7cab9f-1909-400b-ba09-50cc5eb8741e"/>
+				<imageExpression><![CDATA["./images/tu1.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="235" y="5" width="12" height="14" uuid="15d4e9e1-7d79-4e8c-9bba-628b43c0ac48"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[是]]></text>
+			</staticText>
+		</band>
+		<band height="25">
+			<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+			<staticText>
+				<reportElement stretchType="RelativeToBandHeight" mode="Opaque" x="34" y="0" width="148" height="25" backcolor="#F7DE94" uuid="3b8c7f92-32d6-463f-947a-5b46b5a37a6a">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineColor="#CECECE"/>
+					<leftPen lineWidth="2.0" lineColor="#8C735A"/>
+					<bottomPen lineWidth="1.0" lineColor="#CECECE"/>
+					<rightPen lineWidth="1.0" lineColor="#CECECE"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font size="9"/>
+					<paragraph spacingBefore="7"/>
+				</textElement>
+				<text><![CDATA[冠心病（心绞痛，心肌梗死）]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="255" y="0" width="267" height="25" uuid="9b4aed6b-fb70-446c-9041-643f78cd239e">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineColor="#CECECE"/>
+					<leftPen lineWidth="1.0" lineColor="#CECECE"/>
+					<bottomPen lineWidth="1.0" lineColor="#CECECE"/>
+					<rightPen lineWidth="2.0" lineColor="#8C735A"/>
+				</box>
+				<textElement>
+					<font size="9"/>
+					<paragraph leftIndent="6"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{gxbDescription}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement stretchType="RelativeToBandHeight" x="182" y="0" width="73" height="25" uuid="9f0e9e53-9064-444a-946a-8e399d1d8077">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineColor="#CECECE"/>
+					<leftPen lineWidth="1.0" lineColor="#CECECE"/>
+					<bottomPen lineWidth="1.0" lineColor="#CECECE"/>
+					<rightPen lineWidth="1.0" lineColor="#CECECE"/>
+				</box>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<image>
+				<reportElement x="191" y="6" width="15" height="12" uuid="b3f787f0-dd0a-4f3d-ad18-334cabc5dece"/>
+				<imageExpression><![CDATA["./images/tu1.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="206" y="5" width="12" height="14" uuid="72599d07-46b0-42af-9d79-8f93a8100b50"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[否]]></text>
+			</staticText>
+			<image>
+				<reportElement x="220" y="6" width="15" height="12" uuid="393b1d02-78bb-44fe-9dcc-7dfa7516ecf7"/>
+				<imageExpression><![CDATA["./images/tu1.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="235" y="5" width="12" height="14" uuid="b8cbca3e-49a3-43b8-a4e5-67d8c0693874"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[是]]></text>
+			</staticText>
+		</band>
+		<band height="25">
+			<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+			<staticText>
+				<reportElement stretchType="RelativeToBandHeight" mode="Opaque" x="34" y="0" width="148" height="25" backcolor="#F7DE94" uuid="3cc85f95-fec1-4792-b9b3-77f579f47dc1">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineColor="#CECECE"/>
+					<leftPen lineWidth="2.0" lineColor="#8C735A"/>
+					<bottomPen lineWidth="1.0" lineColor="#CECECE"/>
+					<rightPen lineWidth="1.0" lineColor="#CECECE"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font size="9"/>
+					<paragraph spacingBefore="7"/>
+				</textElement>
+				<text><![CDATA[脑卒中（脑梗死，脑出血，TIA）]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="255" y="0" width="267" height="25" uuid="47bfe26e-f959-42c7-8bf2-b6da9496e129">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineColor="#CECECE"/>
+					<leftPen lineWidth="1.0" lineColor="#CECECE"/>
+					<bottomPen lineWidth="1.0" lineColor="#CECECE"/>
+					<rightPen lineWidth="2.0" lineColor="#8C735A"/>
+				</box>
+				<textElement>
+					<font size="9"/>
+					<paragraph leftIndent="6"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nzzDescription}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement stretchType="RelativeToBandHeight" x="182" y="0" width="73" height="25" uuid="c832fffb-62d9-44fe-834c-a1ff0451ac3c">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineColor="#CECECE"/>
+					<leftPen lineWidth="1.0" lineColor="#CECECE"/>
+					<bottomPen lineWidth="1.0" lineColor="#CECECE"/>
+					<rightPen lineWidth="1.0" lineColor="#CECECE"/>
+				</box>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<image>
+				<reportElement x="191" y="6" width="15" height="12" uuid="b703b663-59b4-4bea-9ea4-56e65946a745"/>
+				<imageExpression><![CDATA["./images/tu1.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="206" y="5" width="12" height="14" uuid="858e373e-5f85-40cc-8707-5f130d0afeee"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[否]]></text>
+			</staticText>
+			<image>
+				<reportElement x="220" y="6" width="15" height="12" uuid="a44d43ae-7cef-4d41-8423-d4ca1ac07e3c"/>
+				<imageExpression><![CDATA["./images/tu1.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="235" y="5" width="12" height="14" uuid="6903c375-a9d4-4083-8119-2775d96ef915"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[是]]></text>
+			</staticText>
+		</band>
+		<band height="68">
+			<staticText>
+				<reportElement stretchType="RelativeToBandHeight" mode="Opaque" x="34" y="0" width="148" height="68" backcolor="#F7DE94" uuid="4dcf2378-e87b-479a-913f-f6ba4bb6f7f6">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineColor="#CECECE"/>
+					<leftPen lineWidth="2.0" lineColor="#8C735A"/>
+					<bottomPen lineWidth="1.0" lineColor="#CECECE"/>
+					<rightPen lineWidth="1.0" lineColor="#CECECE"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font size="9"/>
+					<paragraph spacingBefore="7"/>
+				</textElement>
+				<text><![CDATA[慢性鼻咽部疾病史
+
+鼻部、咽部、鼻窦部等
+
+处的慢性疾病）]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="255" y="0" width="267" height="68" uuid="d8cfe554-b2d2-4a46-81ec-a72478004a2e">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineColor="#CECECE"/>
+					<leftPen lineWidth="1.0" lineColor="#CECECE"/>
+					<bottomPen lineWidth="1.0" lineColor="#CECECE"/>
+					<rightPen lineWidth="2.0" lineColor="#8C735A"/>
+				</box>
+				<textElement>
+					<font size="9"/>
+					<paragraph lineSpacing="Single" leftIndent="6"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{mxbybjbsDescription}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement stretchType="RelativeToBandHeight" x="182" y="0" width="73" height="68" uuid="633d12b7-e564-4d87-a870-36c75846acc0">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineColor="#CECECE"/>
+					<leftPen lineWidth="1.0" lineColor="#CECECE"/>
+					<bottomPen lineWidth="1.0" lineColor="#CECECE"/>
+					<rightPen lineWidth="1.0" lineColor="#CECECE"/>
+				</box>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<image>
+				<reportElement x="191" y="25" width="15" height="12" uuid="3b4871b9-b9d9-4590-bc21-c95d629869b7"/>
+				<imageExpression><![CDATA["./images/tu1.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="206" y="24" width="12" height="14" uuid="ec0b573d-730b-418d-a3ac-01af242de747"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[否]]></text>
+			</staticText>
+			<image>
+				<reportElement x="220" y="25" width="15" height="12" uuid="2c721f28-386a-491e-b83a-40dd54bea7f9"/>
+				<imageExpression><![CDATA["./images/tu1.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="235" y="24" width="12" height="14" uuid="41e306ad-79bc-4d9e-8720-f00a0138c510"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[是]]></text>
+			</staticText>
+		</band>
+		<band height="93">
+			<staticText>
+				<reportElement stretchType="RelativeToBandHeight" mode="Opaque" x="34" y="0" width="148" height="93" backcolor="#F7DE94" uuid="72706e14-483c-47dd-bddf-4590ab89b378">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineColor="#CECECE"/>
+					<leftPen lineWidth="2.0" lineColor="#8C735A"/>
+					<bottomPen lineWidth="1.0" lineColor="#CECECE"/>
+					<rightPen lineWidth="1.0" lineColor="#CECECE"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font size="9"/>
+					<paragraph spacingBefore="7"/>
+				</textElement>
+				<text><![CDATA[系统疾病史
+
+（肺结核、慢支、肺气肿、
+
+哮喘、支气管扩张、尘矽肺
+
+以及其他系统疾病）：]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="255" y="0" width="267" height="93" uuid="c7427cd1-5dc7-4e39-a0bd-c54e70bee631">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineColor="#CECECE"/>
+					<leftPen lineWidth="1.0" lineColor="#CECECE"/>
+					<bottomPen lineWidth="1.0" lineColor="#CECECE"/>
+					<rightPen lineWidth="2.0" lineColor="#8C735A"/>
+				</box>
+				<textElement>
+					<font size="9"/>
+					<paragraph leftIndent="6"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{mxhxjbsDescription}]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement x="191" y="35" width="15" height="12" uuid="0206f385-1849-483c-9af1-d28611473a6c"/>
+				<imageExpression><![CDATA["./images/tu1.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="206" y="33" width="12" height="14" uuid="6e0ea09b-208f-4848-8e99-80ed808b0fc8"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[否]]></text>
+			</staticText>
+			<image>
+				<reportElement x="220" y="35" width="15" height="12" uuid="f24fad85-b08b-45d5-8d53-87800fff7ac2"/>
+				<imageExpression><![CDATA["./images/tu1.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="235" y="34" width="12" height="14" uuid="a4893857-24ce-4387-8d71-921cb97dc016"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[是]]></text>
+			</staticText>
+			<staticText>
+				<reportElement stretchType="RelativeToBandHeight" x="182" y="0" width="73" height="93" uuid="a84ebe66-4a0b-441d-98f3-fce42b23a1df">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineColor="#CECECE"/>
+					<leftPen lineWidth="1.0" lineColor="#CECECE"/>
+					<bottomPen lineWidth="1.0" lineColor="#CECECE"/>
+					<rightPen lineWidth="1.0" lineColor="#CECECE"/>
+				</box>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+		</band>
+		<band height="25">
+			<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+			<staticText>
+				<reportElement stretchType="RelativeToBandHeight" mode="Opaque" x="34" y="0" width="148" height="25" backcolor="#F7DE94" uuid="3569ccf4-b27f-4bf3-87da-f8916bb853d1">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineColor="#CECECE"/>
+					<leftPen lineWidth="2.0" lineColor="#8C735A"/>
+					<bottomPen lineWidth="1.0" lineColor="#CECECE"/>
+					<rightPen lineWidth="1.0" lineColor="#CECECE"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font size="9"/>
+					<paragraph spacingBefore="7"/>
+				</textElement>
+				<text><![CDATA[反流性食管炎]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="255" y="0" width="267" height="25" uuid="1723de4f-6041-4b3a-b5de-b5493afd346e">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineColor="#CECECE"/>
+					<leftPen lineWidth="1.0" lineColor="#CECECE"/>
+					<bottomPen lineWidth="1.0" lineColor="#CECECE"/>
+					<rightPen lineWidth="2.0" lineColor="#8C735A"/>
+				</box>
+				<textElement>
+					<font size="9"/>
+					<paragraph leftIndent="6"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{flxsgyDescription}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement stretchType="RelativeToBandHeight" x="182" y="0" width="73" height="25" uuid="e26cfb50-6b47-4804-a730-d9467f34c593">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineColor="#CECECE"/>
+					<leftPen lineWidth="1.0" lineColor="#CECECE"/>
+					<bottomPen lineWidth="1.0" lineColor="#CECECE"/>
+					<rightPen lineWidth="1.0" lineColor="#CECECE"/>
+				</box>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<image>
+				<reportElement x="191" y="10" width="15" height="12" uuid="bb04ab9a-6c60-4eed-9b35-e28d877df073"/>
+				<imageExpression><![CDATA["./images/tu1.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="206" y="7" width="12" height="14" uuid="66cc51cf-3490-4351-9a88-44d0deb590a5"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[否]]></text>
+			</staticText>
+			<image>
+				<reportElement x="220" y="10" width="15" height="12" uuid="fbfb1686-5aec-48cd-a7a5-b724039d46ea"/>
+				<imageExpression><![CDATA["./images/tu1.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="235" y="7" width="12" height="14" uuid="4bb9478f-5166-4865-99eb-aedb7e6eabe4"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[是]]></text>
+			</staticText>
+		</band>
+		<band height="25">
+			<staticText>
+				<reportElement stretchType="RelativeToBandHeight" mode="Opaque" x="34" y="0" width="148" height="25" backcolor="#F7DE94" uuid="20a908ae-dafe-44b7-b636-0064a6cb39ed">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineColor="#CECECE"/>
+					<leftPen lineWidth="2.0" lineColor="#8C735A"/>
+					<bottomPen lineWidth="1.0" lineColor="#CECECE"/>
+					<rightPen lineWidth="1.0" lineColor="#CECECE"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font size="9"/>
+					<paragraph spacingBefore="7"/>
+				</textElement>
+				<text><![CDATA[慢性胃炎]]></text>
+			</staticText>
+			<staticText>
+				<reportElement stretchType="RelativeToBandHeight" x="182" y="0" width="73" height="25" uuid="df068380-9248-412f-af59-1d57e5931fbb">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineColor="#CECECE"/>
+					<leftPen lineWidth="1.0" lineColor="#CECECE"/>
+					<bottomPen lineWidth="1.0" lineColor="#CECECE"/>
+					<rightPen lineWidth="1.0" lineColor="#CECECE"/>
+				</box>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<image>
+				<reportElement x="191" y="5" width="15" height="12" uuid="bf21c563-78ae-4a3b-8631-e2acfc6bf3fc"/>
+				<imageExpression><![CDATA["./images/tu1.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="206" y="4" width="12" height="14" uuid="e9caedb9-3760-4f28-9ee4-7b81017050d7"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[否]]></text>
+			</staticText>
+			<image>
+				<reportElement x="220" y="5" width="15" height="12" uuid="397eaf3a-a0b0-404d-a2ab-5add0ac3ebe0"/>
+				<imageExpression><![CDATA["./images/tu1.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="235" y="4" width="12" height="14" uuid="b9f2a383-29f1-4a43-b10d-28aad10d95f2"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[是]]></text>
+			</staticText>
+			<staticText>
+				<reportElement stretchType="RelativeToBandHeight" x="255" y="0" width="267" height="25" uuid="d9e7aec4-a6be-4d22-a016-34d46614ed14">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineColor="#CECECE"/>
+					<leftPen lineWidth="1.0" lineColor="#CECECE"/>
+					<bottomPen lineWidth="1.0" lineColor="#CECECE"/>
+					<rightPen lineWidth="2.0" lineColor="#8C735A"/>
+				</box>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="277" y="5" width="69" height="18" uuid="5cb591ee-a2b1-4233-93d0-72c191d74717"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[慢性萎缩性胃炎]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="367" y="5" width="79" height="18" uuid="525ff250-2597-4abf-97e7-29a8018f97ab">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[慢性浅表性性胃炎燷]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="" x="468" y="4" width="30" height="18" uuid="0fab03aa-7aba-4b51-8f4a-ba89af666b5f">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[不知道]]></text>
+			</staticText>
+			<image>
+				<reportElement x="262" y="6" width="15" height="12" uuid="0d369ae7-23e9-44f8-b40f-72b7dd36d20c"/>
+				<imageExpression><![CDATA["./images/tu1.png"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="352" y="6" width="15" height="12" uuid="ceba271d-9f2a-4d67-9581-703d4b68888d"/>
+				<imageExpression><![CDATA["./images/tu1.png"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="453" y="6" width="15" height="12" uuid="f2fb6e32-7cbd-4af2-b13b-17b89f3e9be4"/>
+				<imageExpression><![CDATA["./images/tu1.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="469" y="4" width="37" height="18" uuid="ac6fe3cd-73d9-49bf-a67d-cefade9dd049">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<text><![CDATA[不知道]]></text>
+			</staticText>
+		</band>
+		<band height="25">
+			<staticText>
+				<reportElement stretchType="RelativeToBandHeight" mode="Opaque" x="34" y="0" width="148" height="25" backcolor="#F7DE94" uuid="107cfcff-eda5-4f5d-8b37-75b561a6baee">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineColor="#CECECE"/>
+					<leftPen lineWidth="2.0" lineColor="#8C735A"/>
+					<bottomPen lineWidth="1.0" lineColor="#CECECE"/>
+					<rightPen lineWidth="1.0" lineColor="#CECECE"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font size="9"/>
+					<paragraph spacingBefore="7"/>
+				</textElement>
+				<text><![CDATA[胃溃疡]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="255" y="0" width="267" height="25" uuid="e741cf60-a2a9-44b7-ae35-5d822240dd2c">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineColor="#CECECE"/>
+					<leftPen lineWidth="1.0" lineColor="#CECECE"/>
+					<bottomPen lineWidth="1.0" lineColor="#CECECE"/>
+					<rightPen lineWidth="2.0" lineColor="#8C735A"/>
+				</box>
+				<textElement>
+					<font size="9"/>
+					<paragraph lineSpacing="Single" leftIndent="6"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{wkyDescription}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement stretchType="RelativeToBandHeight" x="182" y="0" width="73" height="25" uuid="80c7f7f6-41b9-478f-9256-0bdd38a31366">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineColor="#CECECE"/>
+					<leftPen lineWidth="1.0" lineColor="#CECECE"/>
+					<bottomPen lineWidth="1.0" lineColor="#CECECE"/>
+					<rightPen lineWidth="1.0" lineColor="#CECECE"/>
+				</box>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<image>
+				<reportElement x="191" y="6" width="15" height="12" uuid="e86c5527-82c3-4198-93bf-652c867c20ef"/>
+				<imageExpression><![CDATA["./images/tu1.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="206" y="5" width="12" height="14" uuid="6e9402f0-f722-497a-8888-a3acf788c5ae"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[否]]></text>
+			</staticText>
+			<image>
+				<reportElement x="220" y="6" width="15" height="12" uuid="cbc2ee7d-1096-46f2-b7e6-e33119b86271"/>
+				<imageExpression><![CDATA["./images/tu1.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="235" y="5" width="12" height="14" uuid="907a1ca5-a17c-4167-910f-641661da2889"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[是]]></text>
+			</staticText>
+		</band>
+		<band height="25">
+			<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+			<staticText>
+				<reportElement stretchType="RelativeToBandHeight" mode="Opaque" x="34" y="0" width="148" height="25" backcolor="#F7DE94" uuid="91308dfc-2340-40d5-8642-90a67453f8fc">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineColor="#CECECE"/>
+					<leftPen lineWidth="2.0" lineColor="#8C735A"/>
+					<bottomPen lineWidth="1.0" lineColor="#CECECE"/>
+					<rightPen lineWidth="1.0" lineColor="#CECECE"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font size="9"/>
+					<paragraph spacingBefore="7"/>
+				</textElement>
+				<text><![CDATA[十二指肠溃疡]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="255" y="0" width="267" height="25" uuid="e6c827e0-d5ec-48fe-9a1e-90f07953caa4">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineColor="#CECECE"/>
+					<leftPen lineWidth="1.0" lineColor="#CECECE"/>
+					<bottomPen lineWidth="1.0" lineColor="#CECECE"/>
+					<rightPen lineWidth="2.0" lineColor="#8C735A"/>
+				</box>
+				<textElement>
+					<font size="9"/>
+					<paragraph leftIndent="6"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{sezckyDescription}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement stretchType="RelativeToBandHeight" x="182" y="0" width="73" height="25" uuid="b4612527-757f-4614-a946-0da2e8af524a">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineColor="#CECECE"/>
+					<leftPen lineWidth="1.0" lineColor="#CECECE"/>
+					<bottomPen lineWidth="1.0" lineColor="#CECECE"/>
+					<rightPen lineWidth="1.0" lineColor="#CECECE"/>
+				</box>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<image>
+				<reportElement x="191" y="6" width="15" height="12" uuid="e3098b6b-3e53-4ede-9783-deb316b7b42d"/>
+				<imageExpression><![CDATA["./images/tu1.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="206" y="5" width="12" height="14" uuid="ca77372e-9fe7-45ef-b5f1-81f9042ec17a"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[否]]></text>
+			</staticText>
+			<image>
+				<reportElement x="220" y="6" width="15" height="12" uuid="f264cf7c-264b-493b-856d-cac99993491e"/>
+				<imageExpression><![CDATA["./images/tu1.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="235" y="5" width="12" height="14" uuid="5b314d1c-b7b6-4e40-a7d1-1bf1bd845fd3"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[是]]></text>
+			</staticText>
+		</band>
+		<band height="25">
+			<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+			<staticText>
+				<reportElement stretchType="RelativeToBandHeight" mode="Opaque" x="34" y="0" width="148" height="25" backcolor="#F7DE94" uuid="de8e3086-c497-41f2-bb3f-8bc41f148c23">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineColor="#CECECE"/>
+					<leftPen lineWidth="2.0" lineColor="#8C735A"/>
+					<bottomPen lineWidth="1.0" lineColor="#CECECE"/>
+					<rightPen lineWidth="1.0" lineColor="#CECECE"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font size="9"/>
+					<paragraph spacingBefore="7"/>
+				</textElement>
+				<text><![CDATA[慢性乙型肝炎]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="255" y="0" width="267" height="25" uuid="f0056a31-8ca2-4d4d-bd99-bfaf997d5165">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineColor="#CECECE"/>
+					<leftPen lineWidth="1.0" lineColor="#CECECE"/>
+					<bottomPen lineWidth="1.0" lineColor="#CECECE"/>
+					<rightPen lineWidth="2.0" lineColor="#8C735A"/>
+				</box>
+				<textElement>
+					<font size="9"/>
+					<paragraph leftIndent="6"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{mxygyDescription}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement stretchType="RelativeToBandHeight" x="182" y="0" width="73" height="25" uuid="337bebae-5a98-4518-b22b-4155680a3db1">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineColor="#CECECE"/>
+					<leftPen lineWidth="1.0" lineColor="#CECECE"/>
+					<bottomPen lineWidth="1.0" lineColor="#CECECE"/>
+					<rightPen lineWidth="1.0" lineColor="#CECECE"/>
+				</box>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<image>
+				<reportElement x="191" y="6" width="15" height="12" uuid="286c4236-3651-45d6-9fea-b56005abf414"/>
+				<imageExpression><![CDATA["./images/tu1.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="206" y="5" width="12" height="14" uuid="7e195b26-ab66-4c08-a6d3-3a8334c24299"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[否]]></text>
+			</staticText>
+			<image>
+				<reportElement x="220" y="6" width="15" height="12" uuid="12dd59c8-024b-4093-bedd-12a8bc2a94ac"/>
+				<imageExpression><![CDATA["./images/tu1.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="235" y="5" width="12" height="14" uuid="4b096ac5-c4ec-45fb-80cb-47ff823b3ee0"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[是]]></text>
+			</staticText>
+		</band>
+		<band height="25">
+			<staticText>
+				<reportElement stretchType="RelativeToBandHeight" mode="Opaque" x="34" y="0" width="148" height="25" backcolor="#F7DE94" uuid="97f6d77e-5be6-4ed5-b85b-e7a8ab3334c1">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineColor="#CECECE"/>
+					<leftPen lineWidth="2.0" lineColor="#8C735A"/>
+					<bottomPen lineWidth="1.0" lineColor="#CECECE"/>
+					<rightPen lineWidth="1.0" lineColor="#CECECE"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font size="9"/>
+					<paragraph spacingBefore="1"/>
+				</textElement>
+				<text><![CDATA[乙肝表面抗原阳性
+（HBsAg+）]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="255" y="0" width="267" height="25" uuid="43483ef7-14e6-43fa-8bd5-cc596792fac6">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineColor="#CECECE"/>
+					<leftPen lineWidth="1.0" lineColor="#CECECE"/>
+					<bottomPen lineWidth="1.0" lineColor="#CECECE"/>
+					<rightPen lineWidth="2.0" lineColor="#8C735A"/>
+				</box>
+				<textElement>
+					<font size="9"/>
+					<paragraph leftIndent="6"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{ygkyyxDescription}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement stretchType="RelativeToBandHeight" x="182" y="0" width="73" height="25" uuid="60cf1846-fd38-41b1-bbb3-3ec719b8e7ac">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineColor="#CECECE"/>
+					<leftPen lineWidth="1.0" lineColor="#CECECE"/>
+					<bottomPen lineWidth="1.0" lineColor="#CECECE"/>
+					<rightPen lineWidth="1.0" lineColor="#CECECE"/>
+				</box>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<image>
+				<reportElement x="191" y="6" width="15" height="12" uuid="c1f7a9e5-dc4e-4bd2-9fb9-9915e7b0ae78"/>
+				<imageExpression><![CDATA["./images/tu1.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="206" y="5" width="12" height="14" uuid="35e214e0-9cb0-4d98-9f69-aa144be99010"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[否]]></text>
+			</staticText>
+			<image>
+				<reportElement x="220" y="6" width="15" height="12" uuid="9703adfb-ec92-430d-99e2-75b93f0fc39d"/>
+				<imageExpression><![CDATA["./images/tu1.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="235" y="5" width="12" height="14" uuid="ec9348a8-a9d6-4c35-9b75-f17cd20e78f3"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[是]]></text>
+			</staticText>
+		</band>
+		<band height="25">
+			<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+			<staticText>
+				<reportElement stretchType="RelativeToBandHeight" mode="Opaque" x="34" y="0" width="148" height="25" backcolor="#F7DE94" uuid="ab26b562-f5b3-4f5a-bc8f-78eff7e57031">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineColor="#CECECE"/>
+					<leftPen lineWidth="2.0" lineColor="#8C735A"/>
+					<bottomPen lineWidth="1.0" lineColor="#CECECE"/>
+					<rightPen lineWidth="1.0" lineColor="#CECECE"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font size="9"/>
+					<paragraph spacingBefore="7"/>
+				</textElement>
+				<text><![CDATA[慢性丙型肝炎]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="255" y="0" width="267" height="25" uuid="a247cc2f-7aad-4025-ae2e-f131b4745d6f">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineColor="#CECECE"/>
+					<leftPen lineWidth="1.0" lineColor="#CECECE"/>
+					<bottomPen lineWidth="1.0" lineColor="#CECECE"/>
+					<rightPen lineWidth="2.0" lineColor="#8C735A"/>
+				</box>
+				<textElement>
+					<font size="9"/>
+					<paragraph leftIndent="6"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{mxbxgyDescription}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement stretchType="RelativeToBandHeight" x="182" y="0" width="73" height="25" uuid="92c821fb-cca1-46d6-8c0c-195c21fd16fb">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineColor="#CECECE"/>
+					<leftPen lineWidth="1.0" lineColor="#CECECE"/>
+					<bottomPen lineWidth="1.0" lineColor="#CECECE"/>
+					<rightPen lineWidth="1.0" lineColor="#CECECE"/>
+				</box>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<image>
+				<reportElement x="191" y="6" width="15" height="12" uuid="d5a93d95-8653-4eff-ab4a-a0c902eee7d2"/>
+				<imageExpression><![CDATA["./images/tu1.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="206" y="5" width="12" height="14" uuid="513476b3-d298-4ced-a979-952e10858293"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[否]]></text>
+			</staticText>
+			<image>
+				<reportElement x="220" y="6" width="15" height="12" uuid="687ced95-8a36-435a-8eab-bd8b4ebeffd2"/>
+				<imageExpression><![CDATA["./images/tu1.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="235" y="5" width="12" height="14" uuid="afd2ae8e-ada8-4096-ab22-76fc615c7313"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[是]]></text>
+			</staticText>
+		</band>
+		<band height="25">
+			<staticText>
+				<reportElement stretchType="RelativeToBandHeight" mode="Opaque" x="34" y="0" width="148" height="25" backcolor="#F7DE94" uuid="35f336d1-42ca-447b-a8cb-e6ca4477a981">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineColor="#CECECE"/>
+					<leftPen lineWidth="2.0" lineColor="#8C735A"/>
+					<bottomPen lineWidth="1.0" lineColor="#CECECE"/>
+					<rightPen lineWidth="1.0" lineColor="#CECECE"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font size="9"/>
+					<paragraph spacingBefore="7"/>
+				</textElement>
+				<text><![CDATA[肝硬化]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="255" y="0" width="267" height="25" uuid="d09dbced-90c8-427f-a827-1d5bb25c7c3b">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineColor="#CECECE"/>
+					<leftPen lineWidth="1.0" lineColor="#CECECE"/>
+					<bottomPen lineWidth="1.0" lineColor="#CECECE"/>
+					<rightPen lineWidth="2.0" lineColor="#8C735A"/>
+				</box>
+				<textElement>
+					<font size="9"/>
+					<paragraph leftIndent="6"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{gyhDescription}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement stretchType="RelativeToBandHeight" x="182" y="0" width="73" height="25" uuid="588011df-a97d-44e4-8a5f-0703e07ed268">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineColor="#CECECE"/>
+					<leftPen lineWidth="1.0" lineColor="#CECECE"/>
+					<bottomPen lineWidth="1.0" lineColor="#CECECE"/>
+					<rightPen lineWidth="1.0" lineColor="#CECECE"/>
+				</box>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<image>
+				<reportElement x="191" y="6" width="15" height="12" uuid="30a1b35c-af5b-41e7-9fd4-5c51cfd55cf7"/>
+				<imageExpression><![CDATA["./images/tu1.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="206" y="5" width="12" height="14" uuid="c07d6c53-ac29-4237-bd1c-d44b69796714"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[否]]></text>
+			</staticText>
+			<image>
+				<reportElement x="220" y="6" width="15" height="12" uuid="f9850773-9b21-4837-b3a1-e0bb0b68a1d8"/>
+				<imageExpression><![CDATA["./images/tu1.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="235" y="5" width="12" height="14" uuid="29a1cf30-a3ad-4663-ba1a-44b6031996b0"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[是]]></text>
+			</staticText>
+		</band>
+		<band height="25">
+			<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+			<staticText>
+				<reportElement stretchType="RelativeToBandHeight" mode="Opaque" x="34" y="0" width="148" height="25" backcolor="#F7DE94" uuid="453de11c-b5cb-4fd6-b6e2-7316aa9a54a8">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineColor="#CECECE"/>
+					<leftPen lineWidth="2.0" lineColor="#8C735A"/>
+					<bottomPen lineWidth="1.0" lineColor="#CECECE"/>
+					<rightPen lineWidth="1.0" lineColor="#CECECE"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font size="9"/>
+					<paragraph spacingBefore="7"/>
+				</textElement>
+				<text><![CDATA[非酒精性脂肪肝]]></text>
+			</staticText>
+			<staticText>
+				<reportElement stretchType="RelativeToBandHeight" x="182" y="0" width="73" height="25" uuid="1bc28737-c1fd-440e-ac2e-c3001003a2c2">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineColor="#CECECE"/>
+					<leftPen lineWidth="1.0" lineColor="#CECECE"/>
+					<bottomPen lineWidth="1.0" lineColor="#CECECE"/>
+					<rightPen lineWidth="1.0" lineColor="#CECECE"/>
+				</box>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<image>
+				<reportElement x="191" y="6" width="15" height="12" uuid="7c9967b0-a801-4c1b-8649-f612b1da58ec"/>
+				<imageExpression><![CDATA["./images/tu1.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="206" y="5" width="12" height="14" uuid="95547651-6aa2-49d7-bd16-e32e0284a379"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[否]]></text>
+			</staticText>
+			<image>
+				<reportElement x="220" y="6" width="15" height="12" uuid="4dba934e-226c-40b6-8865-61d1f1d73b50"/>
+				<imageExpression><![CDATA["./images/tu1.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="235" y="5" width="12" height="14" uuid="1e6b9220-8511-4911-aca2-af2733d1ccb0"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[是]]></text>
+			</staticText>
+			<staticText>
+				<reportElement stretchType="RelativeToBandHeight" x="255" y="0" width="267" height="25" uuid="07028e6c-efda-4960-a176-6df735273f70">
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineColor="#CECECE"/>
+					<leftPen lineWidth="1.0" lineColor="#CECECE"/>
+					<bottomPen lineWidth="1.0" lineColor="#CECECE"/>
+					<rightPen lineWidth="2.0" lineColor="#8C735A"/>
+				</box>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="276" y="4" width="20" height="18" uuid="6cb247c7-56b7-44f6-9e10-e3da4fd73c54">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<text><![CDATA[轻度]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="317" y="4" width="20" height="18" uuid="69727aaa-f7fc-4270-a139-9ab26ea85592">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<text><![CDATA[中度]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="359" y="5" width="20" height="18" uuid="184b802a-9825-4ab4-a554-10df62af3d14">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<text><![CDATA[重度]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="401" y="5" width="37" height="18" uuid="6711fbef-b46f-45a3-9a7c-c0c9c4f840f6">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<text><![CDATA[不知道]]></text>
+			</staticText>
+			<image>
+				<reportElement x="261" y="6" width="15" height="12" uuid="4ce0b94f-7efe-425d-bcdb-094227d2f3df"/>
+				<imageExpression><![CDATA["./images/tu1.png"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="302" y="6" width="15" height="12" uuid="474b3b60-71e7-404d-9965-d65f07f6548a"/>
+				<imageExpression><![CDATA["./images/tu1.png"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="344" y="8" width="15" height="12" uuid="817b648f-e49b-4ba5-93e6-befe6058faec"/>
+				<imageExpression><![CDATA["./images/tu1.png"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="386" y="7" width="15" height="12" uuid="5bc610e4-2e9c-45c4-bd31-84de8f2d6d41"/>
+				<imageExpression><![CDATA["./images/tu1.png"]]></imageExpression>
+			</image>
+		</band>
+		<band height="25">
+			<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+			<staticText>
+				<reportElement stretchType="RelativeToBandHeight" mode="Opaque" x="34" y="0" width="148" height="25" backcolor="#F7DE94" uuid="65487130-1dae-4b29-86fa-d0fd651f26f7">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineColor="#CECECE"/>
+					<leftPen lineWidth="2.0" lineColor="#8C735A"/>
+					<bottomPen lineWidth="1.0" lineColor="#CECECE"/>
+					<rightPen lineWidth="1.0" lineColor="#CECECE"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font size="9"/>
+					<paragraph spacingBefore="7"/>
+				</textElement>
+				<text><![CDATA[胆结石症]]></text>
+			</staticText>
+			<staticText>
+				<reportElement stretchType="RelativeToBandHeight" x="182" y="0" width="73" height="25" uuid="4d11b900-0844-42c5-8636-ebc35bdf7b84">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineColor="#CECECE"/>
+					<leftPen lineWidth="1.0" lineColor="#CECECE"/>
+					<bottomPen lineWidth="1.0" lineColor="#CECECE"/>
+					<rightPen lineWidth="1.0" lineColor="#CECECE"/>
+				</box>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<image>
+				<reportElement x="191" y="6" width="15" height="12" uuid="4791b495-40ca-4cb7-850f-504e0998d93d"/>
+				<imageExpression><![CDATA["./images/tu1.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="206" y="5" width="12" height="14" uuid="a73db71d-a153-4b21-acab-b87307cc0ce9"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[否]]></text>
+			</staticText>
+			<image>
+				<reportElement x="220" y="6" width="15" height="12" uuid="7aa1dd4a-acea-41a8-ba2e-da11a5b7acfc"/>
+				<imageExpression><![CDATA["./images/tu1.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="235" y="5" width="12" height="14" uuid="702f198d-6129-48b8-8ddf-6f00cf0f0d49"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[是]]></text>
+			</staticText>
+			<staticText>
+				<reportElement stretchType="RelativeToBandHeight" x="255" y="0" width="267" height="25" uuid="b9941a40-03eb-4ea3-b5bb-f04deda69813">
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineColor="#CECECE"/>
+					<leftPen lineWidth="1.0" lineColor="#CECECE"/>
+					<bottomPen lineWidth="1.0" lineColor="#CECECE"/>
+					<rightPen lineWidth="2.0" lineColor="#8C735A"/>
+				</box>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<image>
+				<reportElement x="261" y="6" width="15" height="12" uuid="24ca0888-519e-46cb-ad00-a4110979ff51"/>
+				<imageExpression><![CDATA["./images/tu1.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="276" y="5" width="55" height="18" uuid="acca438f-7354-4080-8421-3d54c83d41e8">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[肝内胆管结石]]></text>
+			</staticText>
+			<image>
+				<reportElement x="338" y="6" width="15" height="12" uuid="bcaa9b9c-5ef5-4adc-a2a4-38740b5ea568"/>
+				<imageExpression><![CDATA["./images/tu1.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="353" y="5" width="57" height="18" uuid="016825d4-21e0-4a0d-9883-f480154f6ab4">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[肝外胆管结石]]></text>
+			</staticText>
+			<image>
+				<reportElement x="417" y="6" width="15" height="12" uuid="266c5bbf-3bc3-4f34-8d02-21081bc1e2ff"/>
+				<imageExpression><![CDATA["./images/tu1.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="432" y="5" width="36" height="18" uuid="17ae057d-b49a-49a3-88f9-6c4cc2f33323">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[胆囊结石]]></text>
+			</staticText>
+			<image>
+				<reportElement x="475" y="6" width="15" height="12" uuid="38829097-6c8c-46dd-9839-9ad6278c0504"/>
+				<imageExpression><![CDATA["./images/tu1.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="490" y="5" width="30" height="18" uuid="c0c728d1-99d9-4e01-8a2f-e0c3d4b3519a">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[不知道]]></text>
+			</staticText>
+		</band>
+		<band height="25">
+			<staticText>
+				<reportElement stretchType="RelativeToBandHeight" mode="Opaque" x="34" y="0" width="148" height="25" backcolor="#F7DE94" uuid="051577ef-5adc-4a23-99e6-a522ef26d293">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineColor="#CECECE"/>
+					<leftPen lineWidth="2.0" lineColor="#8C735A"/>
+					<bottomPen lineWidth="1.0" lineColor="#CECECE"/>
+					<rightPen lineWidth="1.0" lineColor="#CECECE"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font size="9"/>
+					<paragraph spacingBefore="7"/>
+				</textElement>
+				<text><![CDATA[胆囊摘除术]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="255" y="0" width="267" height="25" uuid="3182d327-2e0f-4c99-b10b-58bfb6497590">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineColor="#CECECE"/>
+					<leftPen lineWidth="1.0" lineColor="#CECECE"/>
+					<bottomPen lineWidth="1.0" lineColor="#CECECE"/>
+					<rightPen lineWidth="2.0" lineColor="#8C735A"/>
+				</box>
+				<textElement>
+					<font size="9"/>
+					<paragraph leftIndent="6"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{dnzcsDescription}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement stretchType="RelativeToBandHeight" x="182" y="0" width="73" height="25" uuid="b669f61c-1930-4a37-a71b-9b95e73788f1">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineColor="#CECECE"/>
+					<leftPen lineWidth="1.0" lineColor="#CECECE"/>
+					<bottomPen lineWidth="1.0" lineColor="#CECECE"/>
+					<rightPen lineWidth="1.0" lineColor="#CECECE"/>
+				</box>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<image>
+				<reportElement x="191" y="7" width="15" height="12" uuid="a83e2744-4c31-4e1f-912d-78bd368836db"/>
+				<imageExpression><![CDATA["./images/tu1.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="206" y="6" width="12" height="14" uuid="d58680df-0998-4519-a716-6cf6b167461a"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[否]]></text>
+			</staticText>
+			<image>
+				<reportElement x="220" y="7" width="15" height="12" uuid="ceabc90e-513c-42fb-8514-e649a1d172cf"/>
+				<imageExpression><![CDATA["./images/tu1.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="235" y="6" width="12" height="14" uuid="15adcd6e-5fbf-400e-b472-5e9e4f58d34e"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[是]]></text>
+			</staticText>
+		</band>
+		<band height="25">
+			<staticText>
+				<reportElement stretchType="RelativeToBandHeight" mode="Opaque" x="34" y="0" width="148" height="25" backcolor="#F7DE94" uuid="a97e0160-53e1-41bf-88c9-78e99f0de373">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineColor="#CECECE"/>
+					<leftPen lineWidth="2.0" lineColor="#8C735A"/>
+					<bottomPen lineWidth="1.0" lineColor="#CECECE"/>
+					<rightPen lineWidth="1.0" lineColor="#CECECE"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font size="9"/>
+					<paragraph spacingBefore="7"/>
+				</textElement>
+				<text><![CDATA[慢性胰腺炎]]></text>
+			</staticText>
+			<staticText>
+				<reportElement stretchType="RelativeToBandHeight" x="182" y="0" width="73" height="25" uuid="9d5ec1a9-5fb0-4aca-8b80-1e7cf0337b67">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineColor="#CECECE"/>
+					<leftPen lineWidth="1.0" lineColor="#CECECE"/>
+					<bottomPen lineWidth="1.0" lineColor="#CECECE"/>
+					<rightPen lineWidth="1.0" lineColor="#CECECE"/>
+				</box>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="255" y="0" width="267" height="25" uuid="ad706cd1-bfb7-456e-bc7d-6119bd583c99">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineColor="#CECECE"/>
+					<leftPen lineWidth="1.0" lineColor="#CECECE"/>
+					<bottomPen lineWidth="1.0" lineColor="#CECECE"/>
+					<rightPen lineWidth="2.0" lineColor="#8C735A"/>
+				</box>
+				<textElement>
+					<font size="9"/>
+					<paragraph leftIndent="6"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{mxyxyDescription}]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement x="191" y="5" width="15" height="12" uuid="f4636fee-9351-4bde-ba54-b7dc34461155"/>
+				<imageExpression><![CDATA["./images/tu1.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="206" y="4" width="12" height="14" uuid="c13139fa-23cf-4b37-a62c-039f4df5562d"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[否]]></text>
+			</staticText>
+			<image>
+				<reportElement x="220" y="5" width="15" height="12" uuid="2ebd3441-7ebe-4409-8119-e354e66748ef"/>
+				<imageExpression><![CDATA["./images/tu1.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="235" y="4" width="12" height="14" uuid="7e099af0-e4f3-4867-926e-bb92f854075f"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[是]]></text>
+			</staticText>
+		</band>
+		<band height="25">
+			<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+			<staticText>
+				<reportElement stretchType="RelativeToBandHeight" mode="Opaque" x="34" y="0" width="148" height="25" backcolor="#F7DE94" uuid="d6406da2-7ede-4eee-ac6e-6aa903470aa6">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineColor="#CECECE"/>
+					<leftPen lineWidth="2.0" lineColor="#8C735A"/>
+					<bottomPen lineWidth="1.0" lineColor="#CECECE"/>
+					<rightPen lineWidth="1.0" lineColor="#CECECE"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font size="9"/>
+					<paragraph spacingBefore="7"/>
+				</textElement>
+				<text><![CDATA[慢性结肠炎]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="255" y="0" width="267" height="25" uuid="e768bd32-320b-452d-bb4f-4d1cc4c0b403">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineColor="#CECECE"/>
+					<leftPen lineWidth="1.0" lineColor="#CECECE"/>
+					<bottomPen lineWidth="1.0" lineColor="#CECECE"/>
+					<rightPen lineWidth="2.0" lineColor="#8C735A"/>
+				</box>
+				<textElement>
+					<font size="9"/>
+					<paragraph leftIndent="6"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{mxjcyDescription}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement stretchType="RelativeToBandHeight" x="182" y="0" width="73" height="25" uuid="fec45dcb-56c3-4c50-91d9-fc424d06b396">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineColor="#CECECE"/>
+					<leftPen lineWidth="1.0" lineColor="#CECECE"/>
+					<bottomPen lineWidth="1.0" lineColor="#CECECE"/>
+					<rightPen lineWidth="1.0" lineColor="#CECECE"/>
+				</box>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<image>
+				<reportElement x="191" y="6" width="15" height="12" uuid="4a8bd950-90ef-4324-98a4-eec2b0417fce"/>
+				<imageExpression><![CDATA["./images/tu1.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="206" y="5" width="12" height="14" uuid="0099ab8f-a419-42be-9c13-69d21c6252ca"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[否]]></text>
+			</staticText>
+			<image>
+				<reportElement x="220" y="6" width="15" height="12" uuid="fa9233e4-ecd4-43ef-b55c-524627aee569"/>
+				<imageExpression><![CDATA["./images/tu1.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="235" y="5" width="12" height="14" uuid="45108d10-b577-4636-b107-e1b97c814d42"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[是]]></text>
+			</staticText>
+		</band>
+		<band height="25">
+			<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+			<staticText>
+				<reportElement stretchType="RelativeToBandHeight" mode="Opaque" x="34" y="0" width="148" height="25" backcolor="#F7DE94" uuid="5ea635da-e1ed-4866-a766-fa0b21bbcce0">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineColor="#CECECE"/>
+					<leftPen lineWidth="2.0" lineColor="#8C735A"/>
+					<bottomPen lineWidth="1.0" lineColor="#CECECE"/>
+					<rightPen lineWidth="1.0" lineColor="#CECECE"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font size="9"/>
+					<paragraph spacingBefore="7"/>
+				</textElement>
+				<text><![CDATA[肠息肉]]></text>
+			</staticText>
+			<staticText>
+				<reportElement stretchType="RelativeToBandHeight" x="182" y="0" width="73" height="25" uuid="9674da23-6148-4635-a177-313fd12e44c9">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineColor="#CECECE"/>
+					<leftPen lineWidth="1.0" lineColor="#CECECE"/>
+					<bottomPen lineWidth="1.0" lineColor="#CECECE"/>
+					<rightPen lineWidth="1.0" lineColor="#CECECE"/>
+				</box>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<image>
+				<reportElement x="191" y="6" width="15" height="12" uuid="da6eebca-5d77-477f-8e67-8898b0147b7f"/>
+				<imageExpression><![CDATA["./images/tu1.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="206" y="5" width="12" height="14" uuid="49367207-98bc-4c24-af96-8ef7b6adda54"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[否]]></text>
+			</staticText>
+			<image>
+				<reportElement x="220" y="6" width="15" height="12" uuid="b798920c-bcbd-49c4-941a-e0a9d9975046"/>
+				<imageExpression><![CDATA["./images/tu1.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="235" y="5" width="12" height="14" uuid="367e7cb5-31ca-4055-aa07-05644c491878"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[是]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="" stretchType="RelativeToBandHeight" x="255" y="0" width="267" height="25" uuid="6eb58f0d-837a-4f42-be8c-8032e455bd8d">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<box>
+					<pen lineColor="#8C735A"/>
+					<topPen lineWidth="1.0" lineColor="#CECECE"/>
+					<leftPen lineWidth="1.0" lineColor="#CECECE"/>
+					<bottomPen lineWidth="1.0" lineColor="#CECECE"/>
+					<rightPen lineWidth="2.0" lineColor="#8C735A"/>
+				</box>
+				<textElement>
+					<font size="9"/>
+					<paragraph leftIndent="6" spacingBefore="7"/>
+				</textElement>
+				<text><![CDATA[腺瘤性肠息肉（家族性肠息肉亦属此类）]]></text>
+			</staticText>
+			<image>
+				<reportElement x="420" y="7" width="15" height="12" uuid="fcfc86bd-28d4-43b4-9a0c-96a0cda4ad11"/>
+				<imageExpression><![CDATA["./images/tu1.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="435" y="6" width="12" height="14" uuid="dc4e5b18-49fb-48a4-b99d-1d14e526467d"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[是]]></text>
+			</staticText>
+			<image>
+				<reportElement x="448" y="7" width="15" height="12" uuid="9dc2a990-ea68-45b1-a5d8-295dc5c17e68"/>
+				<imageExpression><![CDATA["./images/tu1.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="463" y="6" width="12" height="14" uuid="7effcab5-087c-4296-9cdb-fd1a65ec865b"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[否]]></text>
+			</staticText>
+			<image>
+				<reportElement x="477" y="7" width="15" height="12" uuid="dc80be9b-20a1-4c7d-82b5-e861d1216553"/>
+				<imageExpression><![CDATA["./images/tu1.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="490" y="6" width="30" height="18" uuid="81f6e8b6-e5e6-497c-a24d-2db1bf022c1f">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[不知道]]></text>
+			</staticText>
+		</band>
+		<band height="25">
+			<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+			<staticText>
+				<reportElement stretchType="RelativeToBandHeight" mode="Opaque" x="34" y="0" width="148" height="25" backcolor="#F7DE94" uuid="43d7c0f5-bf87-4661-a599-62b515a3abbd">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineColor="#CECECE"/>
+					<leftPen lineWidth="2.0" lineColor="#8C735A"/>
+					<bottomPen lineWidth="1.0" lineColor="#CECECE"/>
+					<rightPen lineWidth="1.0" lineColor="#CECECE"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font size="9"/>
+					<paragraph spacingBefore="7"/>
+				</textElement>
+				<text><![CDATA[其他消化道疾病史]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="255" y="0" width="267" height="25" uuid="4139c5bd-9fa0-48b6-b6e7-8c9befff8862">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineColor="#CECECE"/>
+					<leftPen lineWidth="1.0" lineColor="#CECECE"/>
+					<bottomPen lineWidth="1.0" lineColor="#CECECE"/>
+					<rightPen lineWidth="2.0" lineColor="#8C735A"/>
+				</box>
+				<textElement>
+					<font size="9"/>
+					<paragraph leftIndent="6"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{otherJbsDescription}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement stretchType="RelativeToBandHeight" x="182" y="0" width="73" height="25" uuid="69eb3a37-145b-45ad-9cdf-a2bea9747512">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineColor="#CECECE"/>
+					<leftPen lineWidth="1.0" lineColor="#CECECE"/>
+					<bottomPen lineWidth="1.0" lineColor="#CECECE"/>
+					<rightPen lineWidth="1.0" lineColor="#CECECE"/>
+				</box>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<image>
+				<reportElement x="191" y="6" width="15" height="12" uuid="040c9891-66d1-43fb-b633-9e7ab7a84a1e"/>
+				<imageExpression><![CDATA["./images/tu1.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="206" y="5" width="12" height="14" uuid="86fbc573-eeff-4511-84ad-2febff3bdedb"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[否]]></text>
+			</staticText>
+			<image>
+				<reportElement x="220" y="6" width="15" height="12" uuid="b4707f1f-d136-4af0-a1d9-f3816b02095e"/>
+				<imageExpression><![CDATA["./images/tu1.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="235" y="5" width="12" height="14" uuid="285a8750-3933-448a-b6b6-0812cf99b1ea"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[是]]></text>
+			</staticText>
+		</band>
+		<band height="25">
+			<staticText>
+				<reportElement stretchType="RelativeToBandHeight" mode="Opaque" x="34" y="0" width="148" height="25" backcolor="#F7DE94" uuid="ef0ed487-75dc-45c1-90ea-09cf14fce5e6">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineColor="#CECECE"/>
+					<leftPen lineWidth="2.0" lineColor="#8C735A"/>
+					<bottomPen lineWidth="1.0" lineColor="#CECECE"/>
+					<rightPen lineWidth="1.0" lineColor="#CECECE"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font size="9"/>
+					<paragraph spacingBefore="7"/>
+				</textElement>
+				<text><![CDATA[癌症]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="255" y="0" width="267" height="25" uuid="71a31684-3fc1-49d9-ad1c-c7666e7bc80d">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineColor="#CECECE"/>
+					<leftPen lineWidth="1.0" lineColor="#CECECE"/>
+					<bottomPen lineWidth="1.0" lineColor="#CECECE"/>
+					<rightPen lineWidth="2.0" lineColor="#8C735A"/>
+				</box>
+				<textElement>
+					<font size="9"/>
+					<paragraph leftIndent="6"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{cancerDescription}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement stretchType="RelativeToBandHeight" x="182" y="0" width="73" height="25" uuid="ac36fbd2-ee13-43a7-b6cf-36b14b15af29">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineColor="#CECECE"/>
+					<leftPen lineWidth="1.0" lineColor="#CECECE"/>
+					<bottomPen lineWidth="1.0" lineColor="#CECECE"/>
+					<rightPen lineWidth="1.0" lineColor="#CECECE"/>
+				</box>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<image>
+				<reportElement x="191" y="6" width="15" height="12" uuid="da0d0756-9f02-44d5-9375-62ab4dd2ddb0"/>
+				<imageExpression><![CDATA["./images/tu1.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="206" y="5" width="12" height="14" uuid="5ce65023-30e0-48e6-a26f-8a5e56ec6e31"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[否]]></text>
+			</staticText>
+			<image>
+				<reportElement x="220" y="6" width="15" height="12" uuid="e514aefc-fe6f-4d95-8f41-617d00dfee26"/>
+				<imageExpression><![CDATA["./images/tu1.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="235" y="5" width="12" height="14" uuid="26ab0b4b-cb20-45e6-af6d-4df14181a66b"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[是]]></text>
+			</staticText>
+		</band>
+		<band height="25">
+			<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+			<staticText>
+				<reportElement stretchType="RelativeToBandHeight" mode="Opaque" x="34" y="0" width="148" height="25" backcolor="#F7DE94" uuid="cfb8cced-9035-450c-9135-6fa3124baf4a">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineColor="#CECECE"/>
+					<leftPen lineWidth="2.0" lineColor="#8C735A"/>
+					<bottomPen lineWidth="1.0" lineColor="#CECECE"/>
+					<rightPen lineWidth="1.0" lineColor="#CECECE"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font size="9"/>
+					<paragraph spacingBefore="7"/>
+				</textElement>
+				<text><![CDATA[其它疾病]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="255" y="0" width="267" height="25" uuid="4c710860-8ae4-43da-862a-31e92f42be7a">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineColor="#CECECE"/>
+					<leftPen lineWidth="1.0" lineColor="#CECECE"/>
+					<bottomPen lineWidth="1.0" lineColor="#CECECE"/>
+					<rightPen lineWidth="2.0" lineColor="#8C735A"/>
+				</box>
+				<textElement>
+					<font size="9"/>
+					<paragraph leftIndent="6"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{otherDiseaseDescription}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement stretchType="RelativeToBandHeight" x="182" y="0" width="73" height="25" uuid="179d7f8e-c992-4db9-ad5c-11924b7360e2">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineColor="#CECECE"/>
+					<leftPen lineWidth="1.0" lineColor="#CECECE"/>
+					<bottomPen lineWidth="1.0" lineColor="#CECECE"/>
+					<rightPen lineWidth="1.0" lineColor="#CECECE"/>
+				</box>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<image>
+				<reportElement x="191" y="6" width="15" height="12" uuid="2d4e2ac2-92ff-4825-a5a6-b386c91cf204"/>
+				<imageExpression><![CDATA["./images/tu1.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="206" y="5" width="12" height="14" uuid="781a37ab-58ad-4359-97bf-985ddac4e590"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[否]]></text>
+			</staticText>
+			<image>
+				<reportElement x="223" y="6" width="15" height="12" uuid="49000164-cc7f-4eea-90fe-d34708dadcea"/>
+				<imageExpression><![CDATA["./images/tu1.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="238" y="5" width="12" height="14" uuid="71eff480-1d1b-49a2-b658-701dc717d81e"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[是]]></text>
+			</staticText>
+		</band>
+		<band height="25">
+			<staticText>
+				<reportElement stretchType="RelativeToBandHeight" mode="Opaque" x="34" y="0" width="148" height="25" backcolor="#F7DE94" uuid="9bad62f5-1e9f-4c20-8ff7-197d4029c561">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineColor="#CECECE"/>
+					<leftPen lineWidth="2.0" lineColor="#8C735A"/>
+					<bottomPen lineWidth="2.0" lineColor="#8C735A"/>
+					<rightPen lineWidth="1.0" lineColor="#CECECE"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font size="9"/>
+					<paragraph spacingBefore="7"/>
+				</textElement>
+				<text><![CDATA[手术史]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="255" y="0" width="267" height="25" uuid="0e6c7c5a-6a10-412b-8aaa-d1ea75e141d8">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineColor="#CECECE"/>
+					<leftPen lineWidth="1.0" lineColor="#CECECE"/>
+					<bottomPen lineWidth="2.0" lineColor="#8C735A"/>
+					<rightPen lineWidth="2.0" lineColor="#8C735A"/>
+				</box>
+				<textElement>
+					<font size="9"/>
+					<paragraph leftIndent="6"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{surgeryDescription}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement stretchType="RelativeToBandHeight" x="182" y="0" width="73" height="25" uuid="a6e393b6-315b-43c3-819b-83a1fba7de20">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineColor="#CECECE"/>
+					<leftPen lineWidth="1.0" lineColor="#CECECE"/>
+					<bottomPen lineWidth="2.0" lineColor="#8C735A"/>
+					<rightPen lineWidth="1.0" lineColor="#CECECE"/>
+				</box>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<image>
+				<reportElement x="191" y="6" width="15" height="12" uuid="687194d2-6597-470d-99a9-18cddf5e96b6"/>
+				<imageExpression><![CDATA["./images/tu1.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="206" y="5" width="12" height="14" uuid="f1cb1273-4d4f-424d-bbbd-371cc15aeb00"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[否]]></text>
+			</staticText>
+			<image>
+				<reportElement x="224" y="6" width="15" height="12" uuid="444630d1-d9d3-4ed2-996c-d6644b4860da"/>
+				<imageExpression><![CDATA["./images/tu1.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="239" y="5" width="12" height="14" uuid="090a9b40-6781-4f36-b9ae-bb29f2aa17a4"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[是]]></text>
+			</staticText>
+		</band>
+	</detail>
+</jasperReport>

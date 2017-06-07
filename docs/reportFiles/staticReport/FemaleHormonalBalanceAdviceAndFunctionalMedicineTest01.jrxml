@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
-<!-- 2017-06-01T18:32:45 -->
+<!-- 2017-06-07T17:55:37 -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="AdrenalStressAnalysisReport01" pageWidth="595" pageHeight="662" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="0" bottomMargin="0" uuid="271f1782-90c3-4689-9ccf-8cfaf19e32fa">
-	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="New Data Adapter "/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
 	<property name="com.jaspersoft.studio.unit." value="pixel"/>
 	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
 	<property name="com.jaspersoft.studio.unit.pageWidth" value="pixel"/>
@@ -22,13 +22,12 @@
 	<detail>
 		<band height="112" splitType="Stretch">
 			<staticText>
-				<reportElement x="30" y="40" width="530" height="70" uuid="5d96d265-f95b-4121-87b2-1f7ee8ae6ed9"/>
+				<reportElement x="30" y="40" width="514" height="70" uuid="5d96d265-f95b-4121-87b2-1f7ee8ae6ed9"/>
 				<textElement rotation="None" markup="none">
 					<font size="12" isBold="false"/>
 					<paragraph lineSpacing="1_1_2" lineSpacingSize="1.0" spacingBefore="0"/>
 				</textElement>
-				<text><![CDATA[ 完整性的促进女性健康、荷尔蒙平衡应配合「雌激素代谢基因分析」、「雌激素
-代谢健康评估」、「环境荷尔蒙分析」、「心血管代谢健康评估」、「肾上腺皮质压 力分析」、「癌症标记检查」、「肝肾功能检查」、「血液常规检查」才能有完整性 的健康促进策略。]]></text>
+				<text><![CDATA[ 完整性的促进女性健康、荷尔蒙平衡应配合「雌激素代谢基因分析」、「雌激素代谢健康评估」、「环境荷尔蒙分析」、「心血管代谢健康评估」、「肾上腺皮质压 力分析」、「癌症标记检查」、「肝肾功能检查」、「血液常规检查」才能有完整性 的健康促进策略。]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="0" y="40" width="30" height="30" uuid="a71cd2a7-7435-40c6-ae73-d1d66a832257"/>
