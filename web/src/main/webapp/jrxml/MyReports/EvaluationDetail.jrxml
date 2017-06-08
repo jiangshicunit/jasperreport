@@ -29,7 +29,7 @@
 	<background>
 		<band splitType="Stretch"/>
 	</background>
-	<columnHeader>
+	<title>
 		<band height="41">
 			<textField>
 				<reportElement x="24" y="10" width="191" height="31" forecolor="#BE995E" uuid="e533f146-45e2-44e4-a8fd-775be4063707"/>
@@ -39,7 +39,7 @@
 				<textFieldExpression><![CDATA[$F{maintitle}]]></textFieldExpression>
 			</textField>
 		</band>
-	</columnHeader>
+	</title>
 	<detail>
 		<band height="45" splitType="Stretch">
 			<textField isStretchWithOverflow="true">

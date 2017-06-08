@@ -20,9 +20,9 @@
 		<band splitType="Stretch"/>
 	</background>
 	<detail>
-		<band height="103" splitType="Stretch">
+		<band height="75" splitType="Stretch">
 			<staticText>
-				<reportElement x="10" y="10" width="308" height="20" forecolor="#BE995E" uuid="9a143aa8-566b-408f-9514-b1c9debc5776"/>
+				<reportElement x="24" y="0" width="308" height="20" forecolor="#BE995E" uuid="9a143aa8-566b-408f-9514-b1c9debc5776"/>
 				<textElement textAlignment="Left" verticalAlignment="Middle" rotation="None" markup="none">
 					<font size="12" isBold="false"/>
 					<paragraph lineSpacing="1_1_2" lineSpacingSize="1.0" spacingBefore="0"/>
@@ -30,7 +30,7 @@
 				<text><![CDATA[28天月经周期计算方式说明: ]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="10" y="33" width="530" height="70" uuid="ad48ae27-4def-441c-b49c-e7b51cd9c879"/>
+				<reportElement x="24" y="23" width="530" height="50" uuid="ad48ae27-4def-441c-b49c-e7b51cd9c879"/>
 				<textElement rotation="None" markup="none">
 					<font size="12" isBold="false"/>
 					<paragraph lineSpacing="1_1_2" lineSpacingSize="1.0" spacingBefore="0"/>

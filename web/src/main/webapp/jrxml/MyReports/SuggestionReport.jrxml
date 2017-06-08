@@ -18,12 +18,12 @@
 	<field name="title" class="java.lang.String"/>
 	<field name="text" class="java.lang.String"/>
 	<background>
-		<band splitType="Stretch"/>
+		<band splitType="Stretch" />
 	</background>
 
 	<detail>
 
-		<band height="550" splitType="Stretch">
+		<band height="600" splitType="Stretch">
 			<textField>
 				<reportElement x="20" y="10" width="520" height="41" forecolor="#BE995E" uuid="707b6d8b-1696-4746-a854-5d8c52cd2d2d"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
@@ -32,7 +32,7 @@
 				<textFieldExpression><![CDATA[$F{title}]]></textFieldExpression>
 			</textField>
 			<textField isStretchWithOverflow="true">
-				<reportElement positionType="Float" mode="Opaque" x="20" y="57" width="524" height="90" uuid="4c14d7cf-8e61-476e-a196-4839669ac3c5"/>
+				<reportElement positionType="Float" mode="Opaque" x="20" y="57" width="524" height="540" uuid="4c14d7cf-8e61-476e-a196-4839669ac3c5"/>
 				<textElement markup="html">
 					<font size="13" isBold="false"/>
 					<paragraph lineSpacing="Single" lineSpacingSize="1.0"/>

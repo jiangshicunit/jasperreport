@@ -22,14 +22,14 @@
 	<detail>
 		<band height="32" splitType="Stretch">
 			<subreport>
-				<reportElement x="-20" y="0" width="200" height="30" uuid="ccd37575-7e25-4eed-bce4-2b1a1ea38410"/>
+				<reportElement x="0" y="0" width="200" height="30" uuid="ccd37575-7e25-4eed-bce4-2b1a1ea38410"/>
 				<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.JREmptyDataSource()]]></dataSourceExpression>
 				<subreportExpression><![CDATA["./AdrenalStressAnalysisReport01.jasper"]]></subreportExpression>
 			</subreport>
 		</band>
 		<band height="51">
 			<subreport>
-				<reportElement x="-20" y="0" width="200" height="50" uuid="4a57a9cd-0c50-46c7-8abe-cd91d8766226"/>
+				<reportElement x="0" y="0" width="200" height="50" uuid="4a57a9cd-0c50-46c7-8abe-cd91d8766226"/>
 				<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.JREmptyDataSource()]]></dataSourceExpression>
 				<subreportExpression><![CDATA["./AdrenalStressAnalysisReport02.jasper"]]></subreportExpression>
 			</subreport>

@@ -47,7 +47,7 @@
 	<background>
 		<band splitType="Stretch"/>
 	</background>
-	<columnHeader>
+	<title>
 		<band height="22" splitType="Stretch">
 			<textField>
 				<reportElement x="0" y="0" width="121" height="20" uuid="433ad24d-b0f8-4b20-aa1f-c7d64b792baa"/>
@@ -121,7 +121,7 @@
 				<text><![CDATA[单位]]></text>
 			</staticText>
 		</band>
-	</columnHeader>
+	</title>
 	<detail>
 		<band height="31" splitType="Stretch">
 			<textField>

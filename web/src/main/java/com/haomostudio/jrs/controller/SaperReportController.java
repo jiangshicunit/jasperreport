@@ -366,8 +366,8 @@ public class SaperReportController {
         if (!StringUtils.isEmpty( detailMap.get("data") ) ){
             JSONObject dataObject = JSONObject.parseObject( detailMap.get("data").toString() );
             String dataTitle = dataObject.get("title")==null?"":dataObject.get("title").toString();
-            if (!StringUtils.isEmpty( dataObject.get("content") ) ){
-                JSONArray contentArray = JSON.parseArray(dataObject.get("content").toString());
+            if (!StringUtils.isEmpty( dataObject.get("items") ) ){
+                JSONArray contentArray = JSON.parseArray(dataObject.get("items").toString());
                 for (Object contentObject : contentArray){
                     Map<String,String> contentMap = (Map<String,String>) contentObject;
                     String contentTitle = contentMap.get("title");
