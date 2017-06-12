@@ -55,23 +55,23 @@
 				<text><![CDATA[健康期望]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="30" y="27" width="260" height="17" uuid="33dd3223-3df6-4a52-9ac5-4146df83c6cf"/>
+				<reportElement x="30" y="24" width="260" height="17" uuid="33dd3223-3df6-4a52-9ac5-4146df83c6cf"/>
 				<textElement>
 					<font size="9"/>
 				</textElement>
-				<text><![CDATA[1.1整体而言，您最希望解决的健康问题是（请依优先次序）：]]></text>
+				<text><![CDATA[1.1 整体而言，您最希望解决的健康问题是（请依优先次序）：]]></text>
 			</staticText>
 		</band>
-		<band height="57">
+		<band height="48">
 			<textField>
-				<reportElement x="39" y="10" width="450" height="14" uuid="55f99b6c-6e19-466d-8eba-1116e23ab5e4"/>
+				<reportElement x="39" y="0" width="450" height="14" uuid="55f99b6c-6e19-466d-8eba-1116e23ab5e4"/>
 				<box>
 					<bottomPen lineWidth="1.0"/>
 				</box>
 				<textFieldExpression><![CDATA[$F{problem1}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="39" y="39" width="450" height="14" uuid="6a807dda-8703-4630-b491-ddfde20b4163">
+				<reportElement x="39" y="24" width="450" height="14" uuid="6a807dda-8703-4630-b491-ddfde20b4163">
 					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
 				</reportElement>
@@ -81,23 +81,23 @@
 				<textFieldExpression><![CDATA[$F{problem2}]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement x="29" y="10" width="10" height="14" uuid="558600f3-87b4-4b15-aae7-7b9f73e4e9f5"/>
+				<reportElement x="29" y="0" width="10" height="14" uuid="558600f3-87b4-4b15-aae7-7b9f73e4e9f5"/>
 				<textElement textAlignment="Center" verticalAlignment="Top">
 					<font size="9"/>
 				</textElement>
 				<text><![CDATA[1]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="29" y="39" width="10" height="14" uuid="fd1e79b0-74a5-47ba-bf18-0365521eb5ed"/>
+				<reportElement x="29" y="24" width="10" height="14" uuid="fd1e79b0-74a5-47ba-bf18-0365521eb5ed"/>
 				<textElement textAlignment="Center" verticalAlignment="Top">
 					<font size="9"/>
 				</textElement>
 				<text><![CDATA[2]]></text>
 			</staticText>
 		</band>
-		<band height="53">
+		<band height="48">
 			<textField>
-				<reportElement x="39" y="7" width="450" height="14" uuid="dc8b9f28-79e9-4327-8b14-4fcee6e98dc1">
+				<reportElement x="39" y="0" width="450" height="14" uuid="dc8b9f28-79e9-4327-8b14-4fcee6e98dc1">
 					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
@@ -108,7 +108,7 @@
 				<textFieldExpression><![CDATA[$F{problem3}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="39" y="35" width="450" height="14" uuid="8eb8d27d-f69a-4709-98ce-d3021b78ac8d">
+				<reportElement x="39" y="24" width="450" height="14" uuid="8eb8d27d-f69a-4709-98ce-d3021b78ac8d">
 					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
 				</reportElement>
 				<box>
@@ -117,23 +117,23 @@
 				<textFieldExpression><![CDATA[$F{problem4}]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement x="29" y="7" width="10" height="14" uuid="f901c779-4e79-4c32-9b69-82ca820cdc3c"/>
+				<reportElement x="29" y="0" width="10" height="14" uuid="f901c779-4e79-4c32-9b69-82ca820cdc3c"/>
 				<textElement textAlignment="Center" verticalAlignment="Top">
 					<font size="9"/>
 				</textElement>
 				<text><![CDATA[3]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="29" y="35" width="10" height="14" uuid="c94262fe-2ebf-4276-b93d-6b18264e405e"/>
+				<reportElement x="29" y="24" width="10" height="14" uuid="c94262fe-2ebf-4276-b93d-6b18264e405e"/>
 				<textElement textAlignment="Center" verticalAlignment="Top">
 					<font size="9"/>
 				</textElement>
 				<text><![CDATA[4]]></text>
 			</staticText>
 		</band>
-		<band height="54">
+		<band height="48">
 			<textField>
-				<reportElement x="39" y="2" width="450" height="14" uuid="2704e6f2-1a1c-414d-993e-c0a337d4bdb0">
+				<reportElement x="39" y="0" width="450" height="14" uuid="2704e6f2-1a1c-414d-993e-c0a337d4bdb0">
 					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
 				</reportElement>
 				<box>
@@ -142,23 +142,23 @@
 				<textFieldExpression><![CDATA[$F{problem5}]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement x="30" y="30" width="309" height="20" uuid="5ab5ca30-d7a6-42ae-b4f1-2151ff1ec341"/>
+				<reportElement x="30" y="24" width="309" height="20" uuid="5ab5ca30-d7a6-42ae-b4f1-2151ff1ec341"/>
 				<textElement verticalAlignment="Middle">
 					<font size="9"/>
 				</textElement>
 				<text><![CDATA[以上症状是否有医生的诊断结果，请具体描述(请随此问卷附上医生诊断建议):]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="29" y="2" width="10" height="14" uuid="e7ff9f61-87be-48a8-b795-23b2bd758e2f"/>
+				<reportElement x="29" y="0" width="10" height="14" uuid="e7ff9f61-87be-48a8-b795-23b2bd758e2f"/>
 				<textElement textAlignment="Center" verticalAlignment="Top">
 					<font size="9"/>
 				</textElement>
 				<text><![CDATA[5]]></text>
 			</staticText>
 		</band>
-		<band height="51">
+		<band height="48">
 			<textField>
-				<reportElement x="30" y="6" width="460" height="14" uuid="2326e4f4-1bc2-4708-a679-45ca75a63e19">
+				<reportElement x="30" y="0" width="460" height="14" uuid="2326e4f4-1bc2-4708-a679-45ca75a63e19">
 					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
 				</reportElement>
 				<box>
@@ -167,7 +167,7 @@
 				<textFieldExpression><![CDATA[$F{description1}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="30" y="33" width="460" height="14" uuid="554a2595-2187-4e59-9a2b-0e27e5da663b">
+				<reportElement x="30" y="24" width="460" height="14" uuid="554a2595-2187-4e59-9a2b-0e27e5da663b">
 					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
 				</reportElement>
@@ -177,16 +177,16 @@
 				<textFieldExpression><![CDATA[$F{description2}]]></textFieldExpression>
 			</textField>
 		</band>
-		<band height="49">
+		<band height="48">
 			<staticText>
 				<reportElement x="30" y="0" width="360" height="20" uuid="5044f934-c842-4f02-aea0-eacda128b384"/>
 				<textElement verticalAlignment="Middle">
 					<font size="9"/>
 				</textElement>
-				<text><![CDATA[1.2您是否接受过以下检测项目：（请提供最近一次的体检结果报告和医生诊疗建议）：]]></text>
+				<text><![CDATA[1.2 您是否接受过以下检测项目：（请提供最近一次的体检结果报告和医生诊疗建议）：]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="30" y="25" width="309" height="20" uuid="2928bdc9-3051-4556-9b1b-606a5a641ced">
+				<reportElement x="30" y="24" width="309" height="20" uuid="2928bdc9-3051-4556-9b1b-606a5a641ced">
 					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
 				</reportElement>
 				<textElement verticalAlignment="Middle">
@@ -272,19 +272,19 @@
 			</textField>
 			<image>
 				<reportElement x="86" y="4" width="15" height="12" uuid="5f5aea2a-ea02-4c55-b2b8-2048654b8c30"/>
-				<imageExpression><![CDATA["./images/tu"+($F{examinationType}.equals("1")?"2":"1")+".png"]]></imageExpression>
+				<imageExpression><![CDATA["./images/tu"+($F{examinationType}.contains("1")?"2":"1")+".png"]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="132" y="4" width="15" height="12" uuid="f9c59c58-4199-4952-a2b9-7d159de7df3f"/>
-				<imageExpression><![CDATA["./images/tu"+($F{examinationType}.equals("2")?"2":"1")+".png"]]></imageExpression>
+				<imageExpression><![CDATA["./images/tu"+($F{examinationType}.contains("2")?"2":"1")+".png"]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="210" y="4" width="15" height="12" uuid="811b780b-321e-45f5-8ec1-9535c0ad913f"/>
-				<imageExpression><![CDATA["./images/tu"+($F{examinationType}.equals("3")?"2":"1")+".png"]]></imageExpression>
+				<imageExpression><![CDATA["./images/tu"+($F{examinationType}.contains("3")?"2":"1")+".png"]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="258" y="4" width="15" height="12" uuid="962b24b9-e7c6-4847-92bc-f5e9159f0b81"/>
-				<imageExpression><![CDATA["./images/tu"+($F{examinationType}.equals("4")?"2":"1")+".png"]]></imageExpression>
+				<imageExpression><![CDATA["./images/tu"+($F{examinationType}.contains("4")?"2":"1")+".png"]]></imageExpression>
 			</image>
 		</band>
 		<band height="48">
@@ -300,7 +300,7 @@
 				<textElement verticalAlignment="Middle">
 					<font size="9"/>
 				</textElement>
-				<text><![CDATA[1.3您目前或曾经采取过的抗衰老措施：]]></text>
+				<text><![CDATA[1.3 您目前或曾经采取过的抗衰老措施：]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="96" y="3" width="20" height="14" uuid="964dde94-9dd7-4155-84d0-1b30fe5349f0"/>
@@ -357,11 +357,11 @@
 			</staticText>
 			<image>
 				<reportElement x="153" y="4" width="15" height="12" uuid="9c7791ac-8dd1-40df-82cd-b7c54b75217a"/>
-				<imageExpression><![CDATA["./images/tu"+($F{isAuxiliary}.equals("1")?"2":"1")+".png"]]></imageExpression>
+				<imageExpression><![CDATA["./images/tu"+($F{isAuxiliary}.contains("1")?"2":"1")+".png"]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="119" y="4" width="15" height="12" uuid="e8b26497-b2ff-4e3d-bd59-bc32857777e9"/>
-				<imageExpression><![CDATA["./images/tu"+($F{isAuxiliary}.equals("0")?"2":"1")+".png"]]></imageExpression>
+				<imageExpression><![CDATA["./images/tu"+($F{isAuxiliary}.contains("0")?"2":"1")+".png"]]></imageExpression>
 			</image>
 			<staticText>
 				<reportElement x="186" y="3" width="28" height="14" uuid="b03ed5d2-6cfa-4de3-9826-26e2cbe81cc7"/>
@@ -398,13 +398,14 @@
 					<bottomPen lineWidth="1.0"/>
 				</box>
 				<textElement markup="html">
+					<font size="9"/>
 					<paragraph firstLineIndent="0"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{prescriptionName1}]]></textFieldExpression>
 			</textField>
 			<image>
 				<reportElement x="111" y="6" width="15" height="12" uuid="3641637e-5f9a-4ed3-a672-71c788ccd5fb"/>
-				<imageExpression><![CDATA["./images/tu"+($F{isPrescription}.equals("0")?"2":"1")+".png"]]></imageExpression>
+				<imageExpression><![CDATA["./images/tu"+($F{isPrescription}.contains("0")?"2":"1")+".png"]]></imageExpression>
 			</image>
 			<staticText>
 				<reportElement x="125" y="5" width="12" height="14" uuid="5634d4f7-28f3-4d9c-9495-7bbfae4376b3"/>
@@ -415,7 +416,7 @@
 			</staticText>
 			<image>
 				<reportElement x="139" y="6" width="15" height="12" uuid="fd2e908c-ac75-4e06-b249-98602a16cade"/>
-				<imageExpression><![CDATA["./images/tu"+($F{isPrescription}.equals("1")?"2":"1")+".png"]]></imageExpression>
+				<imageExpression><![CDATA["./images/tu"+($F{isPrescription}.contains("1")?"2":"1")+".png"]]></imageExpression>
 			</image>
 			<staticText>
 				<reportElement x="154" y="5" width="12" height="14" uuid="3267e78f-0b57-4421-9df0-47c3548160ae"/>
@@ -466,7 +467,7 @@
 			</staticText>
 			<image>
 				<reportElement x="83" y="7" width="15" height="12" uuid="3fc4eee7-f5f9-4124-904a-a889f3fa9a0a"/>
-				<imageExpression><![CDATA["./images/tu"+($F{isMedicine}.equals("0")?"2":"1")+".png"]]></imageExpression>
+				<imageExpression><![CDATA["./images/tu"+($F{isMedicine}.contains("0")?"2":"1")+".png"]]></imageExpression>
 			</image>
 			<staticText>
 				<reportElement x="98" y="6" width="12" height="14" uuid="6550b4ab-274c-4584-b4c6-ba5a04c9da6b"/>
@@ -477,7 +478,7 @@
 			</staticText>
 			<image>
 				<reportElement x="115" y="7" width="15" height="12" uuid="48c72cfa-fc43-4ff3-80fd-b77da229f748"/>
-				<imageExpression><![CDATA["./images/tu"+($F{isMedicine}.equals("1")?"2":"1")+".png"]]></imageExpression>
+				<imageExpression><![CDATA["./images/tu"+($F{isMedicine}.contains("1")?"2":"1")+".png"]]></imageExpression>
 			</image>
 			<staticText>
 				<reportElement x="130" y="6" width="12" height="14" uuid="6bed8b9c-2a8f-48b1-b3d3-1041492b7407"/>
@@ -530,7 +531,7 @@
 			</textField>
 			<image>
 				<reportElement x="217" y="7" width="15" height="12" uuid="19c747b3-0e1b-4054-9c0c-365e8527cf03"/>
-				<imageExpression><![CDATA["./images/tu"+($F{isTreatment}.equals("0")?"2":"1")+".png"]]></imageExpression>
+				<imageExpression><![CDATA["./images/tu"+($F{isTreatment}.contains("0")?"2":"1")+".png"]]></imageExpression>
 			</image>
 			<staticText>
 				<reportElement x="232" y="6" width="12" height="14" uuid="b4fd0f77-0542-4c18-9463-46526d1a95ae"/>
@@ -541,7 +542,7 @@
 			</staticText>
 			<image>
 				<reportElement x="253" y="6" width="15" height="12" uuid="25742952-d312-4e29-9590-0f2d7ae38626"/>
-				<imageExpression><![CDATA["./images/tu"+($F{isTreatment}.equals("1")?"2":"1")+".png"]]></imageExpression>
+				<imageExpression><![CDATA["./images/tu"+($F{isTreatment}.contains("1")?"2":"1")+".png"]]></imageExpression>
 			</image>
 			<staticText>
 				<reportElement x="268" y="5" width="12" height="14" uuid="082314d1-a2db-42cb-a548-b148e9b59f0a"/>
@@ -573,7 +574,7 @@
 		</band>
 		<band height="37">
 			<textField>
-				<reportElement x="208" y="6" width="282" height="14" uuid="c49872c3-c8f0-4041-b918-05ab87f03c82">
+				<reportElement x="322" y="0" width="168" height="14" uuid="c49872c3-c8f0-4041-b918-05ab87f03c82">
 					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
 				</reportElement>
 				<box>
@@ -585,43 +586,43 @@
 				<textFieldExpression><![CDATA[$F{dietDescription1}]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement x="32" y="6" width="77" height="14" uuid="80787c39-d0e0-435f-b5c4-871f90512124"/>
+				<reportElement x="32" y="0" width="77" height="14" uuid="80787c39-d0e0-435f-b5c4-871f90512124"/>
 				<textElement>
 					<font size="9"/>
 				</textElement>
 				<text><![CDATA[进行特殊饮食： ]]></text>
 			</staticText>
 			<image>
-				<reportElement x="111" y="7" width="15" height="12" uuid="25f172a8-e213-4a25-b35d-6f5878d65d77"/>
-				<imageExpression><![CDATA["./images/tu"+($F{dietType}.equals("0")?"2":"1")+".png"]]></imageExpression>
+				<reportElement x="111" y="1" width="15" height="12" uuid="25f172a8-e213-4a25-b35d-6f5878d65d77"/>
+				<imageExpression><![CDATA["./images/tu"+($F{dietType}.contains("1")?"2":"1")+".png"]]></imageExpression>
 			</image>
 			<staticText>
-				<reportElement x="126" y="6" width="12" height="14" uuid="84fba707-e655-4d2d-8d67-57e0aa2215a1"/>
+				<reportElement x="126" y="0" width="12" height="14" uuid="84fba707-e655-4d2d-8d67-57e0aa2215a1"/>
 				<textElement>
 					<font size="9"/>
 				</textElement>
-				<text><![CDATA[否]]></text>
+				<text><![CDATA[无]]></text>
 			</staticText>
 			<image>
-				<reportElement x="147" y="7" width="15" height="12" uuid="7b16afe7-ef25-41b6-b24f-34ca5bb3be0f"/>
-				<imageExpression><![CDATA["./images/tu"+($F{dietType}.equals("1")?"2":"1")+".png"]]></imageExpression>
+				<reportElement x="147" y="1" width="15" height="12" uuid="7b16afe7-ef25-41b6-b24f-34ca5bb3be0f"/>
+				<imageExpression><![CDATA["./images/tu"+($F{dietType}.contains("2")?"2":"1")+".png"]]></imageExpression>
 			</image>
 			<staticText>
-				<reportElement x="162" y="6" width="12" height="14" uuid="e66ba094-1e8f-4de4-8770-30a93a081a24"/>
+				<reportElement x="162" y="0" width="28" height="14" uuid="e66ba094-1e8f-4de4-8770-30a93a081a24"/>
 				<textElement>
 					<font size="9"/>
 				</textElement>
-				<text><![CDATA[是]]></text>
+				<text><![CDATA[养生餐]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="180" y="6" width="28" height="14" uuid="8dced85c-e800-49fa-a942-025e5a62cd32"/>
+				<reportElement x="214" y="0" width="18" height="14" uuid="8dced85c-e800-49fa-a942-025e5a62cd32"/>
 				<textElement>
 					<font size="9"/>
 				</textElement>
-				<text><![CDATA[名称 :]]></text>
+				<text><![CDATA[素食]]></text>
 			</staticText>
 			<textField>
-				<reportElement x="32" y="21" width="458" height="14" uuid="43b55f3b-b791-43d3-91f0-fbbd74a5a8cd">
+				<reportElement x="32" y="22" width="458" height="14" uuid="43b55f3b-b791-43d3-91f0-fbbd74a5a8cd">
 					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
 				</reportElement>
 				<box>
@@ -632,6 +633,32 @@
 				</textElement>
 				<textFieldExpression><![CDATA[$F{dietDescription2}]]></textFieldExpression>
 			</textField>
+			<image>
+				<reportElement x="199" y="1" width="15" height="12" uuid="f4ae9b3c-96ad-43f8-96a3-c2bfd3f44ef1"/>
+				<imageExpression><![CDATA["./images/tu"+($F{dietType}.contains("3")?"2":"1")+".png"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="244" y="1" width="15" height="12" uuid="da5892d2-d8cd-4a6b-9f48-e215cf251d81"/>
+				<imageExpression><![CDATA["./images/tu"+($F{dietType}.contains("4")?"2":"1")+".png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="260" y="0" width="18" height="14" uuid="2dddedbd-ae6f-4ded-afdb-25698eedb705"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[节食]]></text>
+			</staticText>
+			<image>
+				<reportElement x="289" y="1" width="15" height="12" uuid="31b2d07c-dc53-4407-9acb-de46dde5b06d"/>
+				<imageExpression><![CDATA["./images/tu"+($F{dietType}.contains("5")?"2":"1")+".png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="304" y="0" width="0" height="14" uuid="24c867e7-15e6-4942-acc5-97b6002ba0e0"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[其他]]></text>
+			</staticText>
 		</band>
 	</detail>
 </jasperReport>
