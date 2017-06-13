@@ -419,6 +419,10 @@ public class SaperReportController {
             JSONObject dataObject = JSONObject.parseObject( detailMap.get("data").toString() );
             String dataTitle = dataObject.get("title")==null?"":dataObject.get("title").toString();
             String dataContent = dataObject.get("content")==null?"":dataObject.get("content").toString();
+            if(StringUtils.isEmpty(dataContent)){
+                jDesignde = JRXmlLoader.load(new File(xml_save_path+"/LabTestItemExplanation1.jrxml"));
+                jReportde = JasperCompileManager.compileReport(jDesignde);
+            }
             if (!StringUtils.isEmpty( dataObject.get("items") ) ){
                 JSONArray contentArray = JSON.parseArray(dataObject.get("items").toString());
                 int num = 1;

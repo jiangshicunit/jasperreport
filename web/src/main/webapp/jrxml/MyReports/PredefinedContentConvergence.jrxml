@@ -35,9 +35,9 @@
 		</band>
 	</title>
 	<detail>
-		<band height="82" splitType="Stretch">
+		<band height="32" splitType="Stretch">
 			<subreport>
-				<reportElement x="-20" y="0" width="180" height="81" uuid="4818917e-2ce1-4e27-8508-03e76e851db7"/>
+				<reportElement x="-20" y="0" width="180" height="31" uuid="4818917e-2ce1-4e27-8508-03e76e851db7"/>
 				<dataSourceExpression><![CDATA[$F{ds}]]></dataSourceExpression>
 				<subreportExpression><![CDATA[$F{subReport}]]></subreportExpression>
 			</subreport>
