@@ -24,7 +24,7 @@
 		<band splitType="Stretch"/>
 	</background>
 	<title>
-		<band height="50">
+		<band height="45">
 			<textField>
 				<reportElement x="0" y="0" width="551" height="32" forecolor="#BE995E" uuid="4da012de-5271-47af-a498-f867e973e2ca"/>
 				<textElement textAlignment="Center" verticalAlignment="Top">
@@ -37,7 +37,7 @@
 	<detail>
 		<band height="12" splitType="Stretch">
 			<subreport>
-				<reportElement x="0" y="0" width="180" height="11" uuid="4818917e-2ce1-4e27-8508-03e76e851db7"/>
+				<reportElement x="-20" y="0" width="180" height="11" uuid="4818917e-2ce1-4e27-8508-03e76e851db7"/>
 				<dataSourceExpression><![CDATA[$F{ds}]]></dataSourceExpression>
 				<subreportExpression><![CDATA[$F{subReport}]]></subreportExpression>
 			</subreport>

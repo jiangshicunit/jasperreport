@@ -32,7 +32,7 @@
 	<title>
 		<band height="41">
 			<textField>
-				<reportElement x="24" y="10" width="471" height="31" forecolor="#BE995E" uuid="e533f146-45e2-44e4-a8fd-775be4063707"/>
+				<reportElement x="10" y="10" width="511" height="31" forecolor="#BE995E" uuid="e533f146-45e2-44e4-a8fd-775be4063707"/>
 				<textElement textAlignment="Left" verticalAlignment="Middle">
 					<font size="16"/>
 				</textElement>
@@ -43,19 +43,19 @@
 	<detail>
 		<band height="45" splitType="Stretch">
 			<textField isStretchWithOverflow="true">
-				<reportElement x="24" y="0" width="310" height="30" forecolor="#BE995E" uuid="91c13aaf-54b3-4504-b490-c724a4fb3503"/>
+				<reportElement x="10" y="0" width="310" height="30" forecolor="#BE995E" uuid="91c13aaf-54b3-4504-b490-c724a4fb3503"/>
 				<textElement textAlignment="Left" verticalAlignment="Middle">
 					<font size="12"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{title}]]></textFieldExpression>
 			</textField>
 			<textField isStretchWithOverflow="true" isBlankWhenNull="false">
-				<reportElement x="24" y="24" width="471" height="21" uuid="02cdfe56-056c-427c-845c-14f482d919f1">
+				<reportElement x="10" y="24" width="511" height="21" uuid="02cdfe56-056c-427c-845c-14f482d919f1">
 					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
 				</reportElement>
 				<textElement>
 					<font size="12"/>
-					<paragraph lineSpacing="Single"/>
+					<paragraph lineSpacing="1_1_2" lineSpacingSize="1.0"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{content}]]></textFieldExpression>
 			</textField>

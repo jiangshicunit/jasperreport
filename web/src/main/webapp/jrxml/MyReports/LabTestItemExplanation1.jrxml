@@ -27,7 +27,7 @@
 	<title>
 		<band height="35" splitType="Stretch">
 			<textField>
-				<reportElement x="24" y="1" width="240" height="20" forecolor="#BE995E" uuid="5c51cfc7-c590-4d3d-adef-6af62120b2c1"/>
+				<reportElement x="10" y="1" width="240" height="20" forecolor="#BE995E" uuid="5c51cfc7-c590-4d3d-adef-6af62120b2c1"/>
 				<textElement>
 					<font size="12" isBold="false"/>
 				</textElement>
@@ -38,14 +38,14 @@
 	<detail>
 		<band height="62" splitType="Stretch">
 			<textField>
-				<reportElement x="24" y="1" width="240" height="20" forecolor="#BE995E" uuid="e0c35620-e72e-409e-bd0c-f24f9a49222d"/>
+				<reportElement x="10" y="1" width="240" height="20" forecolor="#BE995E" uuid="e0c35620-e72e-409e-bd0c-f24f9a49222d"/>
 				<textElement>
 					<font size="12" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{title}]]></textFieldExpression>
 			</textField>
 			<textField isStretchWithOverflow="true">
-				<reportElement x="24" y="31" width="520" height="20" uuid="a3875be5-6a5e-469c-ba2e-69b5f12954ac"/>
+				<reportElement x="10" y="31" width="471" height="20" uuid="a3875be5-6a5e-469c-ba2e-69b5f12954ac"/>
 				<textElement>
 					<font size="12" isBold="false"/>
 				</textElement>

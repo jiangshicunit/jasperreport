@@ -35,33 +35,42 @@
 				</reportElement>
 				<ellipse>
 					<reportElement x="20" y="30" width="8" height="8" backcolor="#FF0400" uuid="6c0761e7-c15a-49c7-aa75-2586681fca68"/>
+					<graphicElement>
+						<pen lineColor="#FFFFFF"/>
+					</graphicElement>
 				</ellipse>
 				<staticText>
-					<reportElement x="40" y="20" width="100" height="31" uuid="c1f7cc4a-553a-4915-81bd-240b88801acd"/>
+					<reportElement x="33" y="18" width="100" height="31" uuid="c1f7cc4a-553a-4915-81bd-240b88801acd"/>
 					<textElement verticalAlignment="Middle">
-						<font size="10"/>
+						<font size="9"/>
 					</textElement>
 					<text><![CDATA[高度患病风险]]></text>
 				</staticText>
 				<staticText>
-					<reportElement x="40" y="50" width="100" height="31" uuid="5893cc79-743e-4e0e-b6a3-f5990d5c9a68"/>
+					<reportElement x="33" y="48" width="100" height="31" uuid="5893cc79-743e-4e0e-b6a3-f5990d5c9a68"/>
 					<textElement verticalAlignment="Middle">
-						<font size="10"/>
+						<font size="9"/>
 					</textElement>
-					<text><![CDATA[高度患病风险]]></text>
+					<text><![CDATA[中度患病风险]]></text>
 				</staticText>
 				<ellipse>
 					<reportElement x="20" y="60" width="8" height="8" backcolor="#FFF94A" uuid="eb013da9-3b28-4ab2-ab1d-3810cf9b01b2"/>
+					<graphicElement>
+						<pen lineColor="#FFFFFF"/>
+					</graphicElement>
 				</ellipse>
 				<ellipse>
 					<reportElement x="20" y="90" width="8" height="8" backcolor="#007034" uuid="bbb13507-11e9-4c15-ad03-3c0747f9c696"/>
+					<graphicElement>
+						<pen lineColor="#FFFFFF"/>
+					</graphicElement>
 				</ellipse>
 				<staticText>
-					<reportElement x="40" y="80" width="100" height="31" uuid="780d824c-7d68-401b-a0cd-508746a42127"/>
+					<reportElement x="33" y="78" width="100" height="31" uuid="780d824c-7d68-401b-a0cd-508746a42127"/>
 					<textElement verticalAlignment="Middle">
-						<font size="10"/>
+						<font size="9"/>
 					</textElement>
-					<text><![CDATA[高度患病风险]]></text>
+					<text><![CDATA[低度患病风险]]></text>
 				</staticText>
 			</frame>
 		</band>
