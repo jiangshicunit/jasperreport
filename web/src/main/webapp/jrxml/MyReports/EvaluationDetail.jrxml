@@ -32,7 +32,7 @@
 	<title>
 		<band height="41">
 			<textField>
-				<reportElement x="24" y="10" width="191" height="31" forecolor="#BE995E" uuid="e533f146-45e2-44e4-a8fd-775be4063707"/>
+				<reportElement x="24" y="10" width="471" height="31" forecolor="#BE995E" uuid="e533f146-45e2-44e4-a8fd-775be4063707"/>
 				<textElement textAlignment="Left" verticalAlignment="Middle">
 					<font size="16"/>
 				</textElement>
@@ -50,7 +50,7 @@
 				<textFieldExpression><![CDATA[$F{title}]]></textFieldExpression>
 			</textField>
 			<textField isStretchWithOverflow="true" isBlankWhenNull="false">
-				<reportElement x="24" y="24" width="521" height="21" uuid="02cdfe56-056c-427c-845c-14f482d919f1">
+				<reportElement x="24" y="24" width="471" height="21" uuid="02cdfe56-056c-427c-845c-14f482d919f1">
 					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
 				</reportElement>
 				<textElement>

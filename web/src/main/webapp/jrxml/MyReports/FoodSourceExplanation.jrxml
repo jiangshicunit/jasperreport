@@ -24,9 +24,9 @@
 		<band splitType="Stretch"/>
 	</background>
 	<title>
-		<band height="47" splitType="Stretch">
+		<band height="41" splitType="Stretch">
 			<textField>
-				<reportElement x="24" y="10" width="201" height="31" forecolor="#BE995E" uuid="7146306d-704a-4339-a93a-864195517a2d"/>
+				<reportElement x="24" y="10" width="471" height="31" forecolor="#BE995E" uuid="7146306d-704a-4339-a93a-864195517a2d"/>
 				<textElement verticalAlignment="Middle">
 					<font size="16"/>
 				</textElement>
@@ -44,7 +44,7 @@
 				<textFieldExpression><![CDATA[$F{title}]]></textFieldExpression>
 			</textField>
 			<textField isStretchWithOverflow="true" isBlankWhenNull="false">
-				<reportElement x="24" y="21" width="521" height="20" uuid="9cb31c1d-e7a8-4dc1-8de4-213522710822"/>
+				<reportElement x="24" y="21" width="471" height="20" uuid="9cb31c1d-e7a8-4dc1-8de4-213522710822"/>
 				<textElement>
 					<font size="12"/>
 					<paragraph lineSpacing="1_1_2"/>
