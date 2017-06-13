@@ -110,11 +110,11 @@
 				<textFieldExpression><![CDATA[$F{bmi}]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement x="191" y="0" width="210" height="14" uuid="dd83397c-9f7c-4e5c-ac1d-0d59d568e396"/>
+				<reportElement x="191" y="0" width="299" height="14" uuid="dd83397c-9f7c-4e5c-ac1d-0d59d568e396"/>
 				<textElement verticalAlignment="Middle">
 					<font size="9"/>
 				</textElement>
-				<text><![CDATA[(过轻≤18.4 理想18.5-23.9 过重24.0-26.9 肥胖≥27)]]></text>
+				<text><![CDATA[(过轻≤18.4   理想18.5-23.9   过重24.0-26.9   肥胖≥27)]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="31" y="19" width="30" height="14" uuid="8c451577-6d10-444f-9f8f-7e75e727f37d"/>
@@ -244,42 +244,42 @@
 				<text><![CDATA[是否食物或药物过敏：]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="82" y="0" width="20" height="14" uuid="5cba1b7a-f838-41d5-8386-3ef9f0d25b24"/>
+				<reportElement x="77" y="0" width="20" height="14" uuid="5cba1b7a-f838-41d5-8386-3ef9f0d25b24"/>
 				<textElement verticalAlignment="Middle">
 					<font size="9"/>
 				</textElement>
 				<text><![CDATA[ O型]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="127" y="0" width="20" height="14" uuid="f2f1a9d6-c944-4f97-8f48-9fbe7e2c357f"/>
+				<reportElement x="122" y="0" width="20" height="14" uuid="f2f1a9d6-c944-4f97-8f48-9fbe7e2c357f"/>
 				<textElement verticalAlignment="Middle">
 					<font size="9"/>
 				</textElement>
 				<text><![CDATA[ A型]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="170" y="0" width="20" height="14" uuid="05c172f0-0ad5-477e-af13-fcb7a9f08347"/>
+				<reportElement x="165" y="0" width="20" height="14" uuid="05c172f0-0ad5-477e-af13-fcb7a9f08347"/>
 				<textElement verticalAlignment="Middle">
 					<font size="9"/>
 				</textElement>
 				<text><![CDATA[ B型]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="214" y="0" width="25" height="14" uuid="c41eb9ef-de5d-4bf7-8f30-ac1dcd5831a3"/>
+				<reportElement x="209" y="0" width="25" height="14" uuid="c41eb9ef-de5d-4bf7-8f30-ac1dcd5831a3"/>
 				<textElement verticalAlignment="Middle">
 					<font size="9"/>
 				</textElement>
 				<text><![CDATA[ AB型]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="246" y="0" width="25" height="14" uuid="019b6b2a-fd9d-4a01-b251-e80f12366e6a"/>
+				<reportElement x="241" y="0" width="25" height="14" uuid="019b6b2a-fd9d-4a01-b251-e80f12366e6a"/>
 				<textElement verticalAlignment="Middle">
 					<font size="9"/>
 				</textElement>
 				<text><![CDATA[其他 :]]></text>
 			</staticText>
 			<textField>
-				<reportElement x="271" y="0" width="120" height="14" uuid="424f14a4-96ef-4556-8dfa-e39275b4700e">
+				<reportElement x="266" y="0" width="120" height="14" uuid="424f14a4-96ef-4556-8dfa-e39275b4700e">
 					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
 				</reportElement>
 				<box>
@@ -288,28 +288,28 @@
 				<textFieldExpression><![CDATA[$F{bloodOther}]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement x="144" y="21" width="12" height="14" uuid="23c340b0-fad0-4158-8fd6-5147091cc2bb"/>
+				<reportElement x="139" y="21" width="12" height="14" uuid="23c340b0-fad0-4158-8fd6-5147091cc2bb"/>
 				<textElement>
 					<font size="9"/>
 				</textElement>
 				<text><![CDATA[否]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="178" y="21" width="12" height="14" uuid="7514fed7-44e7-462e-9c70-216b76c8f79d"/>
+				<reportElement x="173" y="21" width="12" height="14" uuid="7514fed7-44e7-462e-9c70-216b76c8f79d"/>
 				<textElement>
 					<font size="9"/>
 				</textElement>
 				<text><![CDATA[是]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="198" y="21" width="32" height="14" uuid="2c16866e-6ce9-4041-acca-5a77725043da"/>
+				<reportElement x="193" y="21" width="32" height="14" uuid="2c16866e-6ce9-4041-acca-5a77725043da"/>
 				<textElement>
 					<font size="9"/>
 				</textElement>
 				<text><![CDATA[名称：]]></text>
 			</staticText>
 			<textField>
-				<reportElement x="226" y="21" width="150" height="14" uuid="db0a400c-14c0-455d-b37a-0513df330553">
+				<reportElement x="221" y="21" width="150" height="14" uuid="db0a400c-14c0-455d-b37a-0513df330553">
 					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
 				</reportElement>
 				<box>
@@ -321,27 +321,27 @@
 				<textFieldExpression><![CDATA[$F{allergyName}]]></textFieldExpression>
 			</textField>
 			<image>
-				<reportElement x="67" y="1" width="15" height="12" uuid="648efcdf-1b6d-4981-b700-345d7256fc12"/>
+				<reportElement x="62" y="1" width="15" height="12" uuid="648efcdf-1b6d-4981-b700-345d7256fc12"/>
 				<imageExpression><![CDATA["./images/tu"+($F{bloodType}.contains("1")?"2":"1")+".png"]]></imageExpression>
 			</image>
 			<image>
-				<reportElement x="112" y="1" width="15" height="12" uuid="1488c4c0-af74-4a3b-8765-fedff6915784"/>
+				<reportElement x="107" y="1" width="15" height="12" uuid="1488c4c0-af74-4a3b-8765-fedff6915784"/>
 				<imageExpression><![CDATA["./images/tu"+($F{bloodType}.contains("2")?"2":"1")+".png"]]></imageExpression>
 			</image>
 			<image>
-				<reportElement x="155" y="1" width="15" height="12" uuid="3fcf2e9e-7cfe-47ba-98f9-50a622066f52"/>
+				<reportElement x="150" y="1" width="15" height="12" uuid="3fcf2e9e-7cfe-47ba-98f9-50a622066f52"/>
 				<imageExpression><![CDATA["./images/tu"+($F{bloodType}.contains("3")?"2":"1")+".png"]]></imageExpression>
 			</image>
 			<image>
-				<reportElement x="199" y="1" width="15" height="12" uuid="d808fceb-ba6b-44b0-af06-e8c90259017e"/>
+				<reportElement x="194" y="1" width="15" height="12" uuid="d808fceb-ba6b-44b0-af06-e8c90259017e"/>
 				<imageExpression><![CDATA["./images/tu"+($F{bloodType}.contains("4")?"2":"1")+".png"]]></imageExpression>
 			</image>
 			<image>
-				<reportElement x="161" y="22" width="15" height="12" uuid="7c88ae94-5a88-46ce-9274-9f9be7ec15d2"/>
+				<reportElement x="156" y="21" width="15" height="12" uuid="7c88ae94-5a88-46ce-9274-9f9be7ec15d2"/>
 				<imageExpression><![CDATA["./images/tu"+($F{isAllergy}.contains("0")?"2":"1")+".png"]]></imageExpression>
 			</image>
 			<image>
-				<reportElement x="127" y="22" width="15" height="12" uuid="79a5843b-fe63-46df-8bc4-4267f4c6c2d5"/>
+				<reportElement x="122" y="21" width="15" height="12" uuid="79a5843b-fe63-46df-8bc4-4267f4c6c2d5"/>
 				<imageExpression><![CDATA["./images/tu"+($F{isAllergy}.contains("1")?"2":"1")+".png"]]></imageExpression>
 			</image>
 		</band>
@@ -361,7 +361,7 @@
 				<text><![CDATA[常住地是否为鼻咽癌高发区（广东、广西、福建、湖南、港澳台等）？]]></text>
 			</staticText>
 			<image>
-				<reportElement x="311" y="0" width="15" height="12" uuid="78bf26a0-2a51-423f-bda0-cfe16750b93c"/>
+				<reportElement x="311" y="1" width="15" height="12" uuid="78bf26a0-2a51-423f-bda0-cfe16750b93c"/>
 				<imageExpression><![CDATA["./images/tu"+($F{isDisease}.contains("1")?"2":"1")+".png"]]></imageExpression>
 			</image>
 			<staticText>
@@ -372,7 +372,7 @@
 				<text><![CDATA[是]]></text>
 			</staticText>
 			<image>
-				<reportElement x="348" y="0" width="15" height="12" uuid="f6c2c2d1-7181-4d5a-abca-4be009195bc8"/>
+				<reportElement x="348" y="1" width="15" height="12" uuid="f6c2c2d1-7181-4d5a-abca-4be009195bc8"/>
 				<imageExpression><![CDATA["./images/tu"+($F{isDisease}.contains("0")?"2":"1")+".png"]]></imageExpression>
 			</image>
 			<staticText>
@@ -383,58 +383,58 @@
 				<text><![CDATA[否]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="101" y="20" width="39" height="14" uuid="b5c1035d-0cd3-4e97-b4a5-075e2a39bb4c"/>
+				<reportElement x="96" y="20" width="39" height="14" uuid="b5c1035d-0cd3-4e97-b4a5-075e2a39bb4c"/>
 				<textElement verticalAlignment="Middle">
 					<font size="9"/>
 				</textElement>
 				<text><![CDATA[未受教育]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="164" y="20" width="22" height="14" uuid="5df41234-760a-49f6-a2e0-d76a07020cab"/>
+				<reportElement x="159" y="20" width="22" height="14" uuid="5df41234-760a-49f6-a2e0-d76a07020cab"/>
 				<textElement verticalAlignment="Middle">
 					<font size="9"/>
 				</textElement>
 				<text><![CDATA[小学]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="210" y="20" width="45" height="14" uuid="5420748e-63f4-43a1-a565-7985098fbb57"/>
+				<reportElement x="205" y="20" width="45" height="14" uuid="5420748e-63f4-43a1-a565-7985098fbb57"/>
 				<textElement verticalAlignment="Middle">
 					<font size="9"/>
 				</textElement>
 				<text><![CDATA[中学/中专]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="278" y="20" width="45" height="14" uuid="287bdfea-f011-47ef-b4e2-9bfbe844360d"/>
+				<reportElement x="273" y="20" width="45" height="14" uuid="287bdfea-f011-47ef-b4e2-9bfbe844360d"/>
 				<textElement verticalAlignment="Middle">
 					<font size="9"/>
 				</textElement>
 				<text><![CDATA[大专/本科]]></text>
 			</staticText>
 			<image>
-				<reportElement x="334" y="21" width="15" height="12" uuid="ccbedce5-a677-4b63-b7fc-a5c232013143"/>
+				<reportElement x="329" y="21" width="15" height="12" uuid="ccbedce5-a677-4b63-b7fc-a5c232013143"/>
 				<imageExpression><![CDATA["./images/tu"+($F{culturalLevel}.contains("5")?"2":"1")+".png"]]></imageExpression>
 			</image>
 			<staticText>
-				<reportElement x="349" y="20" width="45" height="14" uuid="deffd98a-5245-4648-9499-48975565a92d"/>
+				<reportElement x="344" y="20" width="45" height="14" uuid="deffd98a-5245-4648-9499-48975565a92d"/>
 				<textElement verticalAlignment="Middle">
 					<font size="9"/>
 				</textElement>
 				<text><![CDATA[硕士及以上]]></text>
 			</staticText>
 			<image>
-				<reportElement x="86" y="21" width="15" height="12" uuid="53388c08-7d3b-4f12-bbb9-6bb0f56b908b"/>
+				<reportElement x="81" y="21" width="15" height="12" uuid="53388c08-7d3b-4f12-bbb9-6bb0f56b908b"/>
 				<imageExpression><![CDATA["./images/tu"+($F{culturalLevel}.contains("1")?"2":"1")+".png"]]></imageExpression>
 			</image>
 			<image>
-				<reportElement x="149" y="21" width="15" height="12" uuid="e9d656eb-9095-4b7d-99b2-2d32f59902bc"/>
+				<reportElement x="144" y="21" width="15" height="12" uuid="e9d656eb-9095-4b7d-99b2-2d32f59902bc"/>
 				<imageExpression><![CDATA["./images/tu"+($F{culturalLevel}.contains("2")?"2":"1")+".png"]]></imageExpression>
 			</image>
 			<image>
-				<reportElement x="195" y="21" width="15" height="12" uuid="e3a4dff3-57b5-4fd8-8477-52b905ac836a"/>
+				<reportElement x="190" y="21" width="15" height="12" uuid="e3a4dff3-57b5-4fd8-8477-52b905ac836a"/>
 				<imageExpression><![CDATA["./images/tu"+($F{culturalLevel}.contains("3")?"2":"1")+".png"]]></imageExpression>
 			</image>
 			<image>
-				<reportElement x="263" y="21" width="15" height="12" uuid="aa1262aa-0ff6-4831-b346-fd1bc47ce89d"/>
+				<reportElement x="258" y="21" width="15" height="12" uuid="aa1262aa-0ff6-4831-b346-fd1bc47ce89d"/>
 				<imageExpression><![CDATA["./images/tu"+($F{culturalLevel}.contains("4")?"2":"1")+".png"]]></imageExpression>
 			</image>
 		</band>
@@ -447,69 +447,69 @@
 				<text><![CDATA[婚姻状况：]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="101" y="0" width="22" height="14" uuid="56c4f0b8-4db1-4b87-945d-34c9562b4a86"/>
+				<reportElement x="96" y="0" width="22" height="14" uuid="56c4f0b8-4db1-4b87-945d-34c9562b4a86"/>
 				<textElement verticalAlignment="Middle">
 					<font size="9"/>
 				</textElement>
 				<text><![CDATA[未婚]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="145" y="0" width="86" height="14" uuid="8aaa1c5d-274e-412c-8e58-7a810c35c383"/>
+				<reportElement x="140" y="0" width="86" height="14" uuid="8aaa1c5d-274e-412c-8e58-7a810c35c383"/>
 				<textElement verticalAlignment="Middle">
 					<font size="9"/>
 				</textElement>
 				<text><![CDATA[未婚有固定生活伴侣]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="254" y="0" width="22" height="14" uuid="f442e1cd-c97d-47e3-9232-e8b885209be5"/>
+				<reportElement x="249" y="0" width="22" height="14" uuid="f442e1cd-c97d-47e3-9232-e8b885209be5"/>
 				<textElement verticalAlignment="Middle">
 					<font size="9"/>
 				</textElement>
 				<text><![CDATA[初婚]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="300" y="0" width="22" height="14" uuid="f05ad30e-4eaa-4e38-8f59-d50f0f1419d0"/>
+				<reportElement x="295" y="0" width="22" height="14" uuid="f05ad30e-4eaa-4e38-8f59-d50f0f1419d0"/>
 				<textElement verticalAlignment="Middle">
 					<font size="9"/>
 				</textElement>
 				<text><![CDATA[再婚]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="345" y="0" width="22" height="14" uuid="c1f89b5c-83b3-4fd9-9570-d7703c6c0f8d"/>
+				<reportElement x="340" y="0" width="22" height="14" uuid="c1f89b5c-83b3-4fd9-9570-d7703c6c0f8d"/>
 				<textElement verticalAlignment="Middle">
 					<font size="9"/>
 				</textElement>
 				<text><![CDATA[离异]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="389" y="0" width="22" height="14" uuid="22b3f300-30b0-4e91-bd54-35ab9ee91999"/>
+				<reportElement x="384" y="0" width="22" height="14" uuid="22b3f300-30b0-4e91-bd54-35ab9ee91999"/>
 				<textElement verticalAlignment="Middle">
 					<font size="9"/>
 				</textElement>
 				<text><![CDATA[丧偶]]></text>
 			</staticText>
 			<image>
-				<reportElement x="86" y="1" width="15" height="12" uuid="16d39124-24e4-4977-b641-71fb334ac907"/>
+				<reportElement x="81" y="1" width="15" height="12" uuid="16d39124-24e4-4977-b641-71fb334ac907"/>
 				<imageExpression><![CDATA["./images/tu"+($F{maritalStatus}.contains("1")?"2":"1")+".png"]]></imageExpression>
 			</image>
 			<image>
-				<reportElement x="130" y="1" width="15" height="12" uuid="2b65b777-e77e-45e8-a6a1-dc00c1e11760"/>
+				<reportElement x="125" y="1" width="15" height="12" uuid="2b65b777-e77e-45e8-a6a1-dc00c1e11760"/>
 				<imageExpression><![CDATA["./images/tu"+($F{maritalStatus}.contains("2")?"2":"1")+".png"]]></imageExpression>
 			</image>
 			<image>
-				<reportElement x="239" y="1" width="15" height="12" uuid="8c9420cd-a2e4-411f-86d4-0f44258a16e1"/>
+				<reportElement x="234" y="1" width="15" height="12" uuid="8c9420cd-a2e4-411f-86d4-0f44258a16e1"/>
 				<imageExpression><![CDATA["./images/tu"+($F{maritalStatus}.contains("3")?"2":"1")+".png"]]></imageExpression>
 			</image>
 			<image>
-				<reportElement x="285" y="1" width="15" height="12" uuid="a5baaae2-f7f8-4dda-bc34-1d07cc79407f"/>
+				<reportElement x="280" y="1" width="15" height="12" uuid="a5baaae2-f7f8-4dda-bc34-1d07cc79407f"/>
 				<imageExpression><![CDATA["./images/tu"+($F{maritalStatus}.contains("4")?"2":"1")+".png"]]></imageExpression>
 			</image>
 			<image>
-				<reportElement x="330" y="1" width="15" height="12" uuid="3aa2bb40-9249-455a-a3bd-01e5a01d967b"/>
+				<reportElement x="325" y="1" width="15" height="12" uuid="3aa2bb40-9249-455a-a3bd-01e5a01d967b"/>
 				<imageExpression><![CDATA["./images/tu"+($F{maritalStatus}.contains("5")?"2":"1")+".png"]]></imageExpression>
 			</image>
 			<image>
-				<reportElement x="374" y="1" width="15" height="12" uuid="f81ee1f9-d6a4-4ef7-abe9-8e4e2597f129"/>
+				<reportElement x="369" y="1" width="15" height="12" uuid="f81ee1f9-d6a4-4ef7-abe9-8e4e2597f129"/>
 				<imageExpression><![CDATA["./images/tu"+($F{maritalStatus}.contains("6")?"2":"1")+".png"]]></imageExpression>
 			</image>
 		</band>

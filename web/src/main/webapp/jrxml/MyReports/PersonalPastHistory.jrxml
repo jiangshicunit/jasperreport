@@ -157,7 +157,7 @@
 				</box>
 				<text><![CDATA[]]></text>
 			</staticText>
-			<image>
+			<image vAlign="Middle">
 				<reportElement x="191" y="6" width="15" height="12" uuid="172b10d3-f51f-459f-bd24-0b64d151b83e"/>
 				<imageExpression><![CDATA["./images/tu"+($F{isTnb1}.contains("0")?"2":"1")+".png"]]></imageExpression>
 			</image>
@@ -168,7 +168,7 @@
 				</textElement>
 				<text><![CDATA[否]]></text>
 			</staticText>
-			<image>
+			<image vAlign="Middle">
 				<reportElement x="220" y="6" width="15" height="12" uuid="5309ed9e-f9de-4964-84ef-6f14b262dd9a"/>
 				<imageExpression><![CDATA["./images/tu"+($F{isTnb1}.contains("1")?"2":"1")+".png"]]></imageExpression>
 			</image>
@@ -255,11 +255,11 @@
 				</textElement>
 				<text><![CDATA[否]]></text>
 			</staticText>
-			<image>
+			<image vAlign="Middle">
 				<reportElement x="191" y="6" width="15" height="12" uuid="2fcfba1b-821a-4702-916b-e805fd0e0c6b"/>
 				<imageExpression><![CDATA["./images/tu"+($F{isTnb2}.contains("0")?"2":"1")+".png"]]></imageExpression>
 			</image>
-			<image>
+			<image vAlign="Middle">
 				<reportElement x="220" y="6" width="15" height="12" uuid="6180d7b7-c284-47c0-9d80-b56c7f088ec8"/>
 				<imageExpression><![CDATA["./images/tu"+($F{isTnb2}.contains("1")?"2":"1")+".png"]]></imageExpression>
 			</image>
@@ -321,7 +321,7 @@
 				</textElement>
 				<text><![CDATA[]]></text>
 			</staticText>
-			<image>
+			<image vAlign="Middle">
 				<reportElement x="191" y="6" width="15" height="12" uuid="03ce60cc-9f8d-4bf4-9785-2d5cfe8c5c38"/>
 				<imageExpression><![CDATA["./images/tu"+($F{isGxyb}.contains("0")?"2":"1")+".png"]]></imageExpression>
 			</image>
@@ -332,7 +332,7 @@
 				</textElement>
 				<text><![CDATA[否]]></text>
 			</staticText>
-			<image>
+			<image vAlign="Middle">
 				<reportElement x="220" y="6" width="15" height="12" uuid="748dbbdf-49b9-4943-9df9-a34f8b8b9cbc"/>
 				<imageExpression><![CDATA["./images/tu"+($F{isGxyb}.contains("1")?"2":"1")+".png"]]></imageExpression>
 			</image>
@@ -394,7 +394,7 @@
 				</textElement>
 				<text><![CDATA[]]></text>
 			</staticText>
-			<image>
+			<image vAlign="Middle">
 				<reportElement x="191" y="6" width="15" height="12" uuid="34f603a8-665a-4d5e-b480-be2811a9e595"/>
 				<imageExpression><![CDATA["./images/tu"+($F{isXzyc}.contains("0")?"2":"1")+".png"]]></imageExpression>
 			</image>
@@ -405,7 +405,7 @@
 				</textElement>
 				<text><![CDATA[否]]></text>
 			</staticText>
-			<image>
+			<image vAlign="Middle">
 				<reportElement x="220" y="6" width="15" height="12" uuid="1c7cab9f-1909-400b-ba09-50cc5eb8741e"/>
 				<imageExpression><![CDATA["./images/tu"+($F{isXzyc}.contains("1")?"2":"1")+".png"]]></imageExpression>
 			</image>
@@ -468,7 +468,7 @@
 				</textElement>
 				<text><![CDATA[]]></text>
 			</staticText>
-			<image>
+			<image vAlign="Middle">
 				<reportElement x="191" y="6" width="15" height="12" uuid="b3f787f0-dd0a-4f3d-ad18-334cabc5dece"/>
 				<imageExpression><![CDATA["./images/tu"+($F{isGxb}.contains("0")?"2":"1")+".png"]]></imageExpression>
 			</image>
@@ -479,7 +479,7 @@
 				</textElement>
 				<text><![CDATA[否]]></text>
 			</staticText>
-			<image>
+			<image vAlign="Middle">
 				<reportElement x="220" y="6" width="15" height="12" uuid="393b1d02-78bb-44fe-9dcc-7dfa7516ecf7"/>
 				<imageExpression><![CDATA["./images/tu"+($F{isGxb}.contains("1")?"2":"1")+".png"]]></imageExpression>
 			</image>
@@ -542,7 +542,7 @@
 				</textElement>
 				<text><![CDATA[]]></text>
 			</staticText>
-			<image>
+			<image vAlign="Middle">
 				<reportElement x="191" y="6" width="15" height="12" uuid="b703b663-59b4-4bea-9ea4-56e65946a745"/>
 				<imageExpression><![CDATA["./images/tu"+($F{isNzz}.contains("0")?"2":"1")+".png"]]></imageExpression>
 			</image>
@@ -553,7 +553,7 @@
 				</textElement>
 				<text><![CDATA[否]]></text>
 			</staticText>
-			<image>
+			<image vAlign="Middle">
 				<reportElement x="220" y="6" width="15" height="12" uuid="a44d43ae-7cef-4d41-8423-d4ca1ac07e3c"/>
 				<imageExpression><![CDATA["./images/tu"+($F{isNzz}.contains("1")?"2":"1")+".png"]]></imageExpression>
 			</image>
@@ -565,9 +565,9 @@
 				<text><![CDATA[是]]></text>
 			</staticText>
 		</band>
-		<band height="73">
+		<band height="75">
 			<staticText>
-				<reportElement stretchType="RelativeToBandHeight" mode="Opaque" x="34" y="0" width="148" height="73" backcolor="#F7DE94" uuid="4dcf2378-e87b-479a-913f-f6ba4bb6f7f6">
+				<reportElement stretchType="RelativeToBandHeight" mode="Opaque" x="34" y="0" width="148" height="75" backcolor="#F7DE94" uuid="4dcf2378-e87b-479a-913f-f6ba4bb6f7f6">
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 				</reportElement>
 				<box>
@@ -587,7 +587,7 @@
 处的慢性疾病）]]></text>
 			</staticText>
 			<textField isStretchWithOverflow="true">
-				<reportElement x="255" y="0" width="267" height="73" uuid="d8cfe554-b2d2-4a46-81ec-a72478004a2e">
+				<reportElement x="255" y="0" width="267" height="75" uuid="d8cfe554-b2d2-4a46-81ec-a72478004a2e">
 					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
 				</reportElement>
 				<box>
@@ -603,7 +603,7 @@
 				<textFieldExpression><![CDATA[$F{mxbybjbsDescription}]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement stretchType="RelativeToBandHeight" x="182" y="0" width="73" height="73" uuid="633d12b7-e564-4d87-a870-36c75846acc0">
+				<reportElement stretchType="RelativeToBandHeight" x="182" y="0" width="73" height="75" uuid="633d12b7-e564-4d87-a870-36c75846acc0">
 					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
 				</reportElement>
 				<box>
@@ -617,32 +617,32 @@
 				</textElement>
 				<text><![CDATA[]]></text>
 			</staticText>
-			<image>
-				<reportElement x="191" y="28" width="15" height="12" uuid="3b4871b9-b9d9-4590-bc21-c95d629869b7"/>
+			<image vAlign="Middle">
+				<reportElement x="191" y="33" width="15" height="12" uuid="3b4871b9-b9d9-4590-bc21-c95d629869b7"/>
 				<imageExpression><![CDATA["./images/tu"+($F{isMxbybjbs}.contains("0")?"2":"1")+".png"]]></imageExpression>
 			</image>
 			<staticText>
-				<reportElement x="206" y="27" width="12" height="14" uuid="ec0b573d-730b-418d-a3ac-01af242de747"/>
+				<reportElement x="206" y="32" width="12" height="14" uuid="ec0b573d-730b-418d-a3ac-01af242de747"/>
 				<textElement>
 					<font size="9"/>
 				</textElement>
 				<text><![CDATA[否]]></text>
 			</staticText>
-			<image>
-				<reportElement x="220" y="28" width="15" height="12" uuid="2c721f28-386a-491e-b83a-40dd54bea7f9"/>
+			<image vAlign="Middle">
+				<reportElement x="220" y="33" width="15" height="12" uuid="2c721f28-386a-491e-b83a-40dd54bea7f9"/>
 				<imageExpression><![CDATA["./images/tu"+($F{isMxbybjbs}.contains("1")?"2":"1")+".png"]]></imageExpression>
 			</image>
 			<staticText>
-				<reportElement x="235" y="27" width="12" height="14" uuid="41e306ad-79bc-4d9e-8720-f00a0138c510"/>
+				<reportElement x="235" y="32" width="12" height="14" uuid="41e306ad-79bc-4d9e-8720-f00a0138c510"/>
 				<textElement>
 					<font size="9"/>
 				</textElement>
 				<text><![CDATA[是]]></text>
 			</staticText>
 		</band>
-		<band height="98">
+		<band height="100">
 			<staticText>
-				<reportElement stretchType="RelativeToBandHeight" mode="Opaque" x="34" y="0" width="148" height="98" backcolor="#F7DE94" uuid="72706e14-483c-47dd-bddf-4590ab89b378">
+				<reportElement stretchType="RelativeToBandHeight" mode="Opaque" x="34" y="0" width="148" height="100" backcolor="#F7DE94" uuid="72706e14-483c-47dd-bddf-4590ab89b378">
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 				</reportElement>
 				<box>
@@ -655,16 +655,16 @@
 					<font size="9"/>
 					<paragraph spacingBefore="7"/>
 				</textElement>
-				<text><![CDATA[系统疾病史
+				<text><![CDATA[慢性呼吸系统疾病史
 
 （肺结核、慢支、肺气肿、
 
 哮喘、支气管扩张、尘矽肺
 
-以及其他系统疾病）：]]></text>
+以及其他慢性呼吸系统疾病）：]]></text>
 			</staticText>
 			<textField isStretchWithOverflow="true">
-				<reportElement x="255" y="0" width="267" height="98" uuid="c7427cd1-5dc7-4e39-a0bd-c54e70bee631">
+				<reportElement x="255" y="0" width="267" height="100" uuid="c7427cd1-5dc7-4e39-a0bd-c54e70bee631">
 					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
 				</reportElement>
 				<box>
@@ -679,30 +679,30 @@
 				</textElement>
 				<textFieldExpression><![CDATA[$F{mxhxjbsDescription}]]></textFieldExpression>
 			</textField>
-			<image>
-				<reportElement x="191" y="40" width="15" height="12" uuid="0206f385-1849-483c-9af1-d28611473a6c"/>
+			<image vAlign="Middle">
+				<reportElement x="191" y="45" width="15" height="12" uuid="0206f385-1849-483c-9af1-d28611473a6c"/>
 				<imageExpression><![CDATA["./images/tu"+($F{isMxhxjbs}.contains("0")?"2":"1")+".png"]]></imageExpression>
 			</image>
 			<staticText>
-				<reportElement x="206" y="39" width="12" height="14" uuid="6e0ea09b-208f-4848-8e99-80ed808b0fc8"/>
+				<reportElement x="206" y="44" width="12" height="14" uuid="6e0ea09b-208f-4848-8e99-80ed808b0fc8"/>
 				<textElement>
 					<font size="9"/>
 				</textElement>
 				<text><![CDATA[否]]></text>
 			</staticText>
-			<image>
-				<reportElement x="220" y="40" width="15" height="12" uuid="f24fad85-b08b-45d5-8d53-87800fff7ac2"/>
+			<image vAlign="Middle">
+				<reportElement x="220" y="45" width="15" height="12" uuid="f24fad85-b08b-45d5-8d53-87800fff7ac2"/>
 				<imageExpression><![CDATA["./images/tu"+($F{isMxhxjbs}.contains("1")?"2":"1")+".png"]]></imageExpression>
 			</image>
 			<staticText>
-				<reportElement x="235" y="39" width="12" height="14" uuid="a4893857-24ce-4387-8d71-921cb97dc016"/>
+				<reportElement x="235" y="44" width="12" height="14" uuid="a4893857-24ce-4387-8d71-921cb97dc016"/>
 				<textElement>
 					<font size="9"/>
 				</textElement>
 				<text><![CDATA[是]]></text>
 			</staticText>
 			<staticText>
-				<reportElement stretchType="RelativeToBandHeight" x="182" y="0" width="73" height="98" uuid="a84ebe66-4a0b-441d-98f3-fce42b23a1df">
+				<reportElement stretchType="RelativeToBandHeight" x="182" y="0" width="73" height="100" uuid="a84ebe66-4a0b-441d-98f3-fce42b23a1df">
 					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
 				</reportElement>
 				<box>
@@ -768,30 +768,30 @@
 				</textElement>
 				<text><![CDATA[]]></text>
 			</staticText>
-			<image>
-				<reportElement x="191" y="10" width="15" height="12" uuid="bb04ab9a-6c60-4eed-9b35-e28d877df073"/>
+			<image vAlign="Middle">
+				<reportElement x="191" y="6" width="15" height="12" uuid="bb04ab9a-6c60-4eed-9b35-e28d877df073"/>
 				<imageExpression><![CDATA["./images/tu"+($F{isFlxsgy}.contains("0")?"2":"1")+".png"]]></imageExpression>
 			</image>
 			<staticText>
-				<reportElement x="206" y="7" width="12" height="14" uuid="66cc51cf-3490-4351-9a88-44d0deb590a5"/>
+				<reportElement x="206" y="5" width="12" height="14" uuid="66cc51cf-3490-4351-9a88-44d0deb590a5"/>
 				<textElement>
 					<font size="9"/>
 				</textElement>
 				<text><![CDATA[否]]></text>
 			</staticText>
-			<image>
-				<reportElement x="220" y="10" width="15" height="12" uuid="fbfb1686-5aec-48cd-a7a5-b724039d46ea"/>
+			<image vAlign="Middle">
+				<reportElement x="220" y="6" width="15" height="12" uuid="fbfb1686-5aec-48cd-a7a5-b724039d46ea"/>
 				<imageExpression><![CDATA["./images/tu"+($F{isFlxsgy}.contains("1")?"2":"1")+".png"]]></imageExpression>
 			</image>
 			<staticText>
-				<reportElement x="235" y="7" width="12" height="14" uuid="4bb9478f-5166-4865-99eb-aedb7e6eabe4"/>
+				<reportElement x="235" y="5" width="12" height="14" uuid="4bb9478f-5166-4865-99eb-aedb7e6eabe4"/>
 				<textElement>
 					<font size="9"/>
 				</textElement>
 				<text><![CDATA[是]]></text>
 			</staticText>
 		</band>
-		<band height="25">
+		<band height="25" splitType="Prevent">
 			<staticText>
 				<reportElement stretchType="RelativeToBandHeight" mode="Opaque" x="34" y="0" width="148" height="25" backcolor="#F7DE94" uuid="20a908ae-dafe-44b7-b636-0064a6cb39ed">
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
@@ -824,23 +824,23 @@
 				</textElement>
 				<text><![CDATA[]]></text>
 			</staticText>
-			<image>
-				<reportElement x="191" y="5" width="15" height="12" uuid="bf21c563-78ae-4a3b-8631-e2acfc6bf3fc"/>
+			<image vAlign="Middle">
+				<reportElement x="191" y="6" width="15" height="12" uuid="bf21c563-78ae-4a3b-8631-e2acfc6bf3fc"/>
 				<imageExpression><![CDATA["./images/tu"+($F{isMxwy}.contains("0")?"2":"1")+".png"]]></imageExpression>
 			</image>
 			<staticText>
-				<reportElement x="206" y="4" width="12" height="14" uuid="e9caedb9-3760-4f28-9ee4-7b81017050d7"/>
+				<reportElement x="206" y="5" width="12" height="14" uuid="e9caedb9-3760-4f28-9ee4-7b81017050d7"/>
 				<textElement>
 					<font size="9"/>
 				</textElement>
 				<text><![CDATA[否]]></text>
 			</staticText>
-			<image>
-				<reportElement x="220" y="5" width="15" height="12" uuid="397eaf3a-a0b0-404d-a2ab-5add0ac3ebe0"/>
+			<image vAlign="Middle">
+				<reportElement x="220" y="6" width="15" height="12" uuid="397eaf3a-a0b0-404d-a2ab-5add0ac3ebe0"/>
 				<imageExpression><![CDATA["./images/tu"+($F{isMxwy}.contains("1")?"2":"1")+".png"]]></imageExpression>
 			</image>
 			<staticText>
-				<reportElement x="235" y="4" width="12" height="14" uuid="b9f2a383-29f1-4a43-b10d-28aad10d95f2"/>
+				<reportElement x="235" y="5" width="12" height="14" uuid="b9f2a383-29f1-4a43-b10d-28aad10d95f2"/>
 				<textElement>
 					<font size="9"/>
 				</textElement>
@@ -887,20 +887,20 @@
 				</textElement>
 				<text><![CDATA[不知道]]></text>
 			</staticText>
-			<image>
+			<image vAlign="Middle">
 				<reportElement x="262" y="6" width="15" height="12" uuid="0d369ae7-23e9-44f8-b40f-72b7dd36d20c"/>
 				<imageExpression><![CDATA["./images/tu"+($F{mxwyType}.contains("1")?"2":"1")+".png"]]></imageExpression>
 			</image>
-			<image>
+			<image vAlign="Middle">
 				<reportElement x="352" y="6" width="15" height="12" uuid="ceba271d-9f2a-4d67-9581-703d4b68888d"/>
 				<imageExpression><![CDATA["./images/tu"+($F{mxwyType}.contains("2")?"2":"1")+".png"]]></imageExpression>
 			</image>
-			<image>
+			<image vAlign="Middle">
 				<reportElement x="453" y="6" width="15" height="12" uuid="f2fb6e32-7cbd-4af2-b13b-17b89f3e9be4"/>
 				<imageExpression><![CDATA["./images/tu"+($F{mxwyType}.contains("3")?"2":"1")+".png"]]></imageExpression>
 			</image>
 			<staticText>
-				<reportElement x="469" y="4" width="37" height="18" uuid="ac6fe3cd-73d9-49bf-a67d-cefade9dd049">
+				<reportElement x="469" y="5" width="37" height="18" uuid="ac6fe3cd-73d9-49bf-a67d-cefade9dd049">
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 				</reportElement>
 				<text><![CDATA[不知道]]></text>
@@ -956,7 +956,7 @@
 				</textElement>
 				<text><![CDATA[]]></text>
 			</staticText>
-			<image>
+			<image vAlign="Middle">
 				<reportElement x="191" y="6" width="15" height="12" uuid="e86c5527-82c3-4198-93bf-652c867c20ef"/>
 				<imageExpression><![CDATA["./images/tu"+($F{isWky}.contains("0")?"2":"1")+".png"]]></imageExpression>
 			</image>
@@ -967,7 +967,7 @@
 				</textElement>
 				<text><![CDATA[否]]></text>
 			</staticText>
-			<image>
+			<image vAlign="Middle">
 				<reportElement x="220" y="6" width="15" height="12" uuid="cbc2ee7d-1096-46f2-b7e6-e33119b86271"/>
 				<imageExpression><![CDATA["./images/tu"+($F{isWky}.contains("1")?"2":"1")+".png"]]></imageExpression>
 			</image>
@@ -1030,7 +1030,7 @@
 				</textElement>
 				<text><![CDATA[]]></text>
 			</staticText>
-			<image>
+			<image vAlign="Middle">
 				<reportElement x="191" y="6" width="15" height="12" uuid="e3098b6b-3e53-4ede-9783-deb316b7b42d"/>
 				<imageExpression><![CDATA["./images/tu"+($F{isSezcky}.contains("0")?"2":"1")+".png"]]></imageExpression>
 			</image>
@@ -1041,7 +1041,7 @@
 				</textElement>
 				<text><![CDATA[否]]></text>
 			</staticText>
-			<image>
+			<image vAlign="Middle">
 				<reportElement x="220" y="6" width="15" height="12" uuid="f264cf7c-264b-493b-856d-cac99993491e"/>
 				<imageExpression><![CDATA["./images/tu"+($F{isSezcky}.contains("1")?"2":"1")+".png"]]></imageExpression>
 			</image>
@@ -1104,7 +1104,7 @@
 				</textElement>
 				<text><![CDATA[]]></text>
 			</staticText>
-			<image>
+			<image vAlign="Middle">
 				<reportElement x="191" y="6" width="15" height="12" uuid="286c4236-3651-45d6-9fea-b56005abf414"/>
 				<imageExpression><![CDATA["./images/tu"+($F{isMxygy}.contains("0")?"2":"1")+".png"]]></imageExpression>
 			</image>
@@ -1115,7 +1115,7 @@
 				</textElement>
 				<text><![CDATA[否]]></text>
 			</staticText>
-			<image>
+			<image vAlign="Middle">
 				<reportElement x="220" y="6" width="15" height="12" uuid="12dd59c8-024b-4093-bedd-12a8bc2a94ac"/>
 				<imageExpression><![CDATA["./images/tu"+($F{isMxygy}.contains("1")?"2":"1")+".png"]]></imageExpression>
 			</image>
@@ -1178,7 +1178,7 @@
 				</textElement>
 				<text><![CDATA[]]></text>
 			</staticText>
-			<image>
+			<image vAlign="Middle">
 				<reportElement x="191" y="6" width="15" height="12" uuid="c1f7a9e5-dc4e-4bd2-9fb9-9915e7b0ae78"/>
 				<imageExpression><![CDATA["./images/tu"+($F{isYgkyyx}.contains("0")?"2":"1")+".png"]]></imageExpression>
 			</image>
@@ -1189,7 +1189,7 @@
 				</textElement>
 				<text><![CDATA[否]]></text>
 			</staticText>
-			<image>
+			<image vAlign="Middle">
 				<reportElement x="220" y="6" width="15" height="12" uuid="9703adfb-ec92-430d-99e2-75b93f0fc39d"/>
 				<imageExpression><![CDATA["./images/tu"+($F{isYgkyyx}.contains("1")?"2":"1")+".png"]]></imageExpression>
 			</image>
@@ -1252,7 +1252,7 @@
 				</textElement>
 				<text><![CDATA[]]></text>
 			</staticText>
-			<image>
+			<image vAlign="Middle">
 				<reportElement x="191" y="6" width="15" height="12" uuid="d5a93d95-8653-4eff-ab4a-a0c902eee7d2"/>
 				<imageExpression><![CDATA["./images/tu"+($F{isMxbxgy}.contains("0")?"2":"1")+".png"]]></imageExpression>
 			</image>
@@ -1263,7 +1263,7 @@
 				</textElement>
 				<text><![CDATA[否]]></text>
 			</staticText>
-			<image>
+			<image vAlign="Middle">
 				<reportElement x="220" y="6" width="15" height="12" uuid="687ced95-8a36-435a-8eab-bd8b4ebeffd2"/>
 				<imageExpression><![CDATA["./images/tu"+($F{isMxbxgy}.contains("1")?"2":"1")+".png"]]></imageExpression>
 			</image>
@@ -1325,7 +1325,7 @@
 				</textElement>
 				<text><![CDATA[]]></text>
 			</staticText>
-			<image>
+			<image vAlign="Middle">
 				<reportElement x="191" y="6" width="15" height="12" uuid="30a1b35c-af5b-41e7-9fd4-5c51cfd55cf7"/>
 				<imageExpression><![CDATA["./images/tu"+($F{isGyh}.contains("0")?"2":"1")+".png"]]></imageExpression>
 			</image>
@@ -1336,7 +1336,7 @@
 				</textElement>
 				<text><![CDATA[否]]></text>
 			</staticText>
-			<image>
+			<image vAlign="Middle">
 				<reportElement x="220" y="6" width="15" height="12" uuid="f9850773-9b21-4837-b3a1-e0bb0b68a1d8"/>
 				<imageExpression><![CDATA["./images/tu"+($F{isGyh}.contains("1")?"2":"1")+".png"]]></imageExpression>
 			</image>
@@ -1348,7 +1348,7 @@
 				<text><![CDATA[是]]></text>
 			</staticText>
 		</band>
-		<band height="25">
+		<band height="25" splitType="Prevent">
 			<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 			<staticText>
 				<reportElement stretchType="RelativeToBandHeight" mode="Opaque" x="34" y="0" width="148" height="25" backcolor="#F7DE94" uuid="453de11c-b5cb-4fd6-b6e2-7316aa9a54a8">
@@ -1382,7 +1382,7 @@
 				</textElement>
 				<text><![CDATA[]]></text>
 			</staticText>
-			<image>
+			<image vAlign="Middle">
 				<reportElement x="191" y="6" width="15" height="12" uuid="7c9967b0-a801-4c1b-8649-f612b1da58ec"/>
 				<imageExpression><![CDATA["./images/tu"+($F{isZfg}.contains("0")?"2":"1")+".png"]]></imageExpression>
 			</image>
@@ -1393,7 +1393,7 @@
 				</textElement>
 				<text><![CDATA[否]]></text>
 			</staticText>
-			<image>
+			<image vAlign="Middle">
 				<reportElement x="220" y="6" width="15" height="12" uuid="4dba934e-226c-40b6-8865-61d1f1d73b50"/>
 				<imageExpression><![CDATA["./images/tu"+($F{isZfg}.contains("1")?"2":"1")+".png"]]></imageExpression>
 			</image>
@@ -1420,47 +1420,47 @@
 				<text><![CDATA[]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="276" y="4" width="20" height="18" uuid="6cb247c7-56b7-44f6-9e10-e3da4fd73c54">
+				<reportElement x="276" y="5" width="20" height="18" uuid="6cb247c7-56b7-44f6-9e10-e3da4fd73c54">
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 				</reportElement>
 				<text><![CDATA[轻度]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="317" y="4" width="20" height="18" uuid="69727aaa-f7fc-4270-a139-9ab26ea85592">
+				<reportElement x="317" y="5" width="20" height="18" uuid="69727aaa-f7fc-4270-a139-9ab26ea85592">
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 				</reportElement>
 				<text><![CDATA[中度]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="359" y="4" width="20" height="18" uuid="184b802a-9825-4ab4-a554-10df62af3d14">
+				<reportElement x="359" y="5" width="20" height="18" uuid="184b802a-9825-4ab4-a554-10df62af3d14">
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 				</reportElement>
 				<text><![CDATA[重度]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="401" y="4" width="37" height="18" uuid="6711fbef-b46f-45a3-9a7c-c0c9c4f840f6">
+				<reportElement x="401" y="5" width="37" height="18" uuid="6711fbef-b46f-45a3-9a7c-c0c9c4f840f6">
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 				</reportElement>
 				<text><![CDATA[不知道]]></text>
 			</staticText>
-			<image>
+			<image vAlign="Middle">
 				<reportElement x="261" y="6" width="15" height="12" uuid="4ce0b94f-7efe-425d-bcdb-094227d2f3df"/>
 				<imageExpression><![CDATA["./images/tu"+($F{zfgType}.contains("1")?"2":"1")+".png"]]></imageExpression>
 			</image>
-			<image>
+			<image vAlign="Middle">
 				<reportElement x="302" y="6" width="15" height="12" uuid="474b3b60-71e7-404d-9965-d65f07f6548a"/>
 				<imageExpression><![CDATA["./images/tu"+($F{zfgType}.contains("2")?"2":"1")+".png"]]></imageExpression>
 			</image>
-			<image>
+			<image vAlign="Middle">
 				<reportElement x="344" y="6" width="15" height="12" uuid="817b648f-e49b-4ba5-93e6-befe6058faec"/>
 				<imageExpression><![CDATA["./images/tu"+($F{zfgType}.contains("3")?"2":"1")+".png"]]></imageExpression>
 			</image>
-			<image>
+			<image vAlign="Middle">
 				<reportElement x="386" y="6" width="15" height="12" uuid="5bc610e4-2e9c-45c4-bd31-84de8f2d6d41"/>
 				<imageExpression><![CDATA["./images/tu"+($F{zfgType}.contains("4")?"2":"1")+".png"]]></imageExpression>
 			</image>
 		</band>
-		<band height="25">
+		<band height="25" splitType="Prevent">
 			<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 			<staticText>
 				<reportElement stretchType="RelativeToBandHeight" mode="Opaque" x="34" y="0" width="148" height="25" backcolor="#F7DE94" uuid="65487130-1dae-4b29-86fa-d0fd651f26f7">
@@ -1494,9 +1494,9 @@
 				</textElement>
 				<text><![CDATA[]]></text>
 			</staticText>
-			<image>
+			<image vAlign="Middle">
 				<reportElement x="191" y="6" width="15" height="12" uuid="4791b495-40ca-4cb7-850f-504e0998d93d"/>
-				<imageExpression><![CDATA["./images/tu"+($F{isTnb1}.contains("0")?"2":"1")+".png"]]></imageExpression>
+				<imageExpression><![CDATA["./images/tu"+($F{isDjsz}.contains("0")?"2":"1")+".png"]]></imageExpression>
 			</image>
 			<staticText>
 				<reportElement x="206" y="5" width="12" height="14" uuid="a73db71d-a153-4b21-acab-b87307cc0ce9"/>
@@ -1505,9 +1505,9 @@
 				</textElement>
 				<text><![CDATA[否]]></text>
 			</staticText>
-			<image>
+			<image vAlign="Middle">
 				<reportElement x="220" y="6" width="15" height="12" uuid="7aa1dd4a-acea-41a8-ba2e-da11a5b7acfc"/>
-				<imageExpression><![CDATA["./images/tu"+($F{isTnb1}.contains("0")?"2":"1")+".png"]]></imageExpression>
+				<imageExpression><![CDATA["./images/tu"+($F{isDjsz}.contains("1")?"2":"1")+".png"]]></imageExpression>
 			</image>
 			<staticText>
 				<reportElement x="235" y="5" width="12" height="14" uuid="702f198d-6129-48b8-8ddf-6f00cf0f0d49"/>
@@ -1531,9 +1531,9 @@
 				</box>
 				<text><![CDATA[]]></text>
 			</staticText>
-			<image>
+			<image vAlign="Middle">
 				<reportElement x="261" y="6" width="15" height="12" uuid="24ca0888-519e-46cb-ad00-a4110979ff51"/>
-				<imageExpression><![CDATA["./images/tu"+($F{isTnb1}.contains("0")?"2":"1")+".png"]]></imageExpression>
+				<imageExpression><![CDATA["./images/tu"+($F{djszType}.contains("1")?"2":"1")+".png"]]></imageExpression>
 			</image>
 			<staticText>
 				<reportElement x="276" y="5" width="55" height="18" uuid="acca438f-7354-4080-8421-3d54c83d41e8">
@@ -1544,9 +1544,9 @@
 				</textElement>
 				<text><![CDATA[肝内胆管结石]]></text>
 			</staticText>
-			<image>
+			<image vAlign="Middle">
 				<reportElement x="338" y="6" width="15" height="12" uuid="bcaa9b9c-5ef5-4adc-a2a4-38740b5ea568"/>
-				<imageExpression><![CDATA["./images/tu"+($F{isTnb1}.contains("0")?"2":"1")+".png"]]></imageExpression>
+				<imageExpression><![CDATA["./images/tu"+($F{djszType}.contains("2")?"2":"1")+".png"]]></imageExpression>
 			</image>
 			<staticText>
 				<reportElement x="353" y="5" width="57" height="18" uuid="016825d4-21e0-4a0d-9883-f480154f6ab4">
@@ -1557,9 +1557,9 @@
 				</textElement>
 				<text><![CDATA[肝外胆管结石]]></text>
 			</staticText>
-			<image>
+			<image vAlign="Middle">
 				<reportElement x="417" y="6" width="15" height="12" uuid="266c5bbf-3bc3-4f34-8d02-21081bc1e2ff"/>
-				<imageExpression><![CDATA["./images/tu"+($F{isTnb1}.contains("0")?"2":"1")+".png"]]></imageExpression>
+				<imageExpression><![CDATA["./images/tu"+($F{djszType}.contains("3")?"2":"1")+".png"]]></imageExpression>
 			</image>
 			<staticText>
 				<reportElement x="432" y="5" width="36" height="18" uuid="17ae057d-b49a-49a3-88f9-6c4cc2f33323">
@@ -1570,9 +1570,9 @@
 				</textElement>
 				<text><![CDATA[胆囊结石]]></text>
 			</staticText>
-			<image>
+			<image vAlign="Middle">
 				<reportElement x="475" y="6" width="15" height="12" uuid="38829097-6c8c-46dd-9839-9ad6278c0504"/>
-				<imageExpression><![CDATA["./images/tu"+($F{isTnb1}.contains("0")?"2":"1")+".png"]]></imageExpression>
+				<imageExpression><![CDATA["./images/tu"+($F{djszType}.contains("4")?"2":"1")+".png"]]></imageExpression>
 			</image>
 			<staticText>
 				<reportElement x="490" y="5" width="30" height="18" uuid="c0c728d1-99d9-4e01-8a2f-e0c3d4b3519a">
@@ -1634,7 +1634,7 @@
 				</textElement>
 				<text><![CDATA[]]></text>
 			</staticText>
-			<image>
+			<image vAlign="Middle">
 				<reportElement x="191" y="7" width="15" height="12" uuid="a83e2744-4c31-4e1f-912d-78bd368836db"/>
 				<imageExpression><![CDATA["./images/tu"+($F{isDnzcs}.contains("0")?"2":"1")+".png"]]></imageExpression>
 			</image>
@@ -1645,12 +1645,12 @@
 				</textElement>
 				<text><![CDATA[否]]></text>
 			</staticText>
-			<image>
-				<reportElement x="220" y="7" width="15" height="12" uuid="ceabc90e-513c-42fb-8514-e649a1d172cf"/>
+			<image vAlign="Middle">
+				<reportElement x="220" y="6" width="15" height="12" uuid="ceabc90e-513c-42fb-8514-e649a1d172cf"/>
 				<imageExpression><![CDATA["./images/tu"+($F{isDnzcs}.contains("1")?"2":"1")+".png"]]></imageExpression>
 			</image>
 			<staticText>
-				<reportElement x="235" y="6" width="12" height="14" uuid="15adcd6e-5fbf-400e-b472-5e9e4f58d34e"/>
+				<reportElement x="235" y="5" width="12" height="14" uuid="15adcd6e-5fbf-400e-b472-5e9e4f58d34e"/>
 				<textElement>
 					<font size="9"/>
 				</textElement>
@@ -1707,23 +1707,23 @@
 				</textElement>
 				<textFieldExpression><![CDATA[$F{mxyxyDescription}]]></textFieldExpression>
 			</textField>
-			<image>
-				<reportElement x="191" y="5" width="15" height="12" uuid="f4636fee-9351-4bde-ba54-b7dc34461155"/>
+			<image vAlign="Middle">
+				<reportElement x="191" y="6" width="15" height="12" uuid="f4636fee-9351-4bde-ba54-b7dc34461155"/>
 				<imageExpression><![CDATA["./images/tu"+($F{isMxyxy}.contains("0")?"2":"1")+".png"]]></imageExpression>
 			</image>
 			<staticText>
-				<reportElement x="206" y="4" width="12" height="14" uuid="c13139fa-23cf-4b37-a62c-039f4df5562d"/>
+				<reportElement x="206" y="5" width="12" height="14" uuid="c13139fa-23cf-4b37-a62c-039f4df5562d"/>
 				<textElement>
 					<font size="9"/>
 				</textElement>
 				<text><![CDATA[否]]></text>
 			</staticText>
-			<image>
-				<reportElement x="220" y="5" width="15" height="12" uuid="2ebd3441-7ebe-4409-8119-e354e66748ef"/>
+			<image vAlign="Middle">
+				<reportElement x="220" y="6" width="15" height="12" uuid="2ebd3441-7ebe-4409-8119-e354e66748ef"/>
 				<imageExpression><![CDATA["./images/tu"+($F{isMxyxy}.contains("1")?"2":"1")+".png"]]></imageExpression>
 			</image>
 			<staticText>
-				<reportElement x="235" y="4" width="12" height="14" uuid="7e099af0-e4f3-4867-926e-bb92f854075f"/>
+				<reportElement x="235" y="5" width="12" height="14" uuid="7e099af0-e4f3-4867-926e-bb92f854075f"/>
 				<textElement>
 					<font size="9"/>
 				</textElement>
@@ -1781,7 +1781,7 @@
 				</textElement>
 				<text><![CDATA[]]></text>
 			</staticText>
-			<image>
+			<image vAlign="Middle">
 				<reportElement x="191" y="6" width="15" height="12" uuid="4a8bd950-90ef-4324-98a4-eec2b0417fce"/>
 				<imageExpression><![CDATA["./images/tu"+($F{isMxjcy}.contains("0")?"2":"1")+".png"]]></imageExpression>
 			</image>
@@ -1792,7 +1792,7 @@
 				</textElement>
 				<text><![CDATA[否]]></text>
 			</staticText>
-			<image>
+			<image vAlign="Middle">
 				<reportElement x="220" y="6" width="15" height="12" uuid="fa9233e4-ecd4-43ef-b55c-524627aee569"/>
 				<imageExpression><![CDATA["./images/tu"+($F{isMxjcy}.contains("1")?"2":"1")+".png"]]></imageExpression>
 			</image>
@@ -1804,7 +1804,7 @@
 				<text><![CDATA[是]]></text>
 			</staticText>
 		</band>
-		<band height="25">
+		<band height="25" splitType="Prevent">
 			<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 			<staticText>
 				<reportElement stretchType="RelativeToBandHeight" mode="Opaque" x="34" y="0" width="148" height="25" backcolor="#F7DE94" uuid="5ea635da-e1ed-4866-a766-fa0b21bbcce0">
@@ -1838,7 +1838,7 @@
 				</textElement>
 				<text><![CDATA[]]></text>
 			</staticText>
-			<image>
+			<image vAlign="Middle">
 				<reportElement x="191" y="6" width="15" height="12" uuid="da6eebca-5d77-477f-8e67-8898b0147b7f"/>
 				<imageExpression><![CDATA["./images/tu"+($F{isCxr}.contains("0")?"2":"1")+".png"]]></imageExpression>
 			</image>
@@ -1849,7 +1849,7 @@
 				</textElement>
 				<text><![CDATA[否]]></text>
 			</staticText>
-			<image>
+			<image vAlign="Middle">
 				<reportElement x="220" y="6" width="15" height="12" uuid="b798920c-bcbd-49c4-941a-e0a9d9975046"/>
 				<imageExpression><![CDATA["./images/tu"+($F{isCxr}.contains("1")?"2":"1")+".png"]]></imageExpression>
 			</image>
@@ -1877,29 +1877,29 @@
 				</textElement>
 				<text><![CDATA[腺瘤性肠息肉（家族性肠息肉亦属此类）]]></text>
 			</staticText>
-			<image>
-				<reportElement x="420" y="7" width="15" height="12" uuid="fcfc86bd-28d4-43b4-9a0c-96a0cda4ad11"/>
+			<image vAlign="Middle">
+				<reportElement x="420" y="6" width="15" height="12" uuid="fcfc86bd-28d4-43b4-9a0c-96a0cda4ad11"/>
 				<imageExpression><![CDATA["./images/tu"+($F{cxrType}.contains("1")?"2":"1")+".png"]]></imageExpression>
 			</image>
 			<staticText>
-				<reportElement x="435" y="6" width="12" height="14" uuid="dc4e5b18-49fb-48a4-b99d-1d14e526467d"/>
+				<reportElement x="435" y="5" width="12" height="14" uuid="dc4e5b18-49fb-48a4-b99d-1d14e526467d"/>
 				<textElement>
 					<font size="9"/>
 				</textElement>
 				<text><![CDATA[是]]></text>
 			</staticText>
-			<image>
-				<reportElement x="448" y="7" width="15" height="12" uuid="9dc2a990-ea68-45b1-a5d8-295dc5c17e68"/>
+			<image vAlign="Middle">
+				<reportElement x="448" y="6" width="15" height="12" uuid="9dc2a990-ea68-45b1-a5d8-295dc5c17e68"/>
 				<imageExpression><![CDATA["./images/tu"+($F{cxrType}.contains("2")?"2":"1")+".png"]]></imageExpression>
 			</image>
 			<staticText>
-				<reportElement x="463" y="6" width="12" height="14" uuid="7effcab5-087c-4296-9cdb-fd1a65ec865b"/>
+				<reportElement x="463" y="5" width="12" height="14" uuid="7effcab5-087c-4296-9cdb-fd1a65ec865b"/>
 				<textElement>
 					<font size="9"/>
 				</textElement>
 				<text><![CDATA[否]]></text>
 			</staticText>
-			<image>
+			<image vAlign="Middle">
 				<reportElement x="477" y="7" width="15" height="12" uuid="dc80be9b-20a1-4c7d-82b5-e861d1216553"/>
 				<imageExpression><![CDATA["./images/tu"+($F{cxrType}.contains("3")?"2":"1")+".png"]]></imageExpression>
 			</image>
@@ -1964,7 +1964,7 @@
 				</textElement>
 				<text><![CDATA[]]></text>
 			</staticText>
-			<image>
+			<image vAlign="Middle">
 				<reportElement x="191" y="6" width="15" height="12" uuid="040c9891-66d1-43fb-b633-9e7ab7a84a1e"/>
 				<imageExpression><![CDATA["./images/tu"+($F{isOtherJbs}.contains("0")?"2":"1")+".png"]]></imageExpression>
 			</image>
@@ -1975,7 +1975,7 @@
 				</textElement>
 				<text><![CDATA[否]]></text>
 			</staticText>
-			<image>
+			<image vAlign="Middle">
 				<reportElement x="220" y="6" width="15" height="12" uuid="b4707f1f-d136-4af0-a1d9-f3816b02095e"/>
 				<imageExpression><![CDATA["./images/tu"+($F{isOtherJbs}.contains("1")?"2":"1")+".png"]]></imageExpression>
 			</image>
@@ -2037,7 +2037,7 @@
 				</textElement>
 				<text><![CDATA[]]></text>
 			</staticText>
-			<image>
+			<image vAlign="Middle">
 				<reportElement x="191" y="6" width="15" height="12" uuid="da0d0756-9f02-44d5-9375-62ab4dd2ddb0"/>
 				<imageExpression><![CDATA["./images/tu"+($F{isCancer}.contains("0")?"2":"1")+".png"]]></imageExpression>
 			</image>
@@ -2048,7 +2048,7 @@
 				</textElement>
 				<text><![CDATA[否]]></text>
 			</staticText>
-			<image>
+			<image vAlign="Middle">
 				<reportElement x="220" y="6" width="15" height="12" uuid="e514aefc-fe6f-4d95-8f41-617d00dfee26"/>
 				<imageExpression><![CDATA["./images/tu"+($F{isCancer}.contains("1")?"2":"1")+".png"]]></imageExpression>
 			</image>
@@ -2111,7 +2111,7 @@
 				</textElement>
 				<text><![CDATA[]]></text>
 			</staticText>
-			<image>
+			<image vAlign="Middle">
 				<reportElement x="191" y="6" width="15" height="12" uuid="2d4e2ac2-92ff-4825-a5a6-b386c91cf204"/>
 				<imageExpression><![CDATA["./images/tu"+($F{isOtherDisease}.contains("0")?"2":"1")+".png"]]></imageExpression>
 			</image>
@@ -2122,12 +2122,12 @@
 				</textElement>
 				<text><![CDATA[否]]></text>
 			</staticText>
-			<image>
-				<reportElement x="223" y="6" width="15" height="12" uuid="49000164-cc7f-4eea-90fe-d34708dadcea"/>
+			<image vAlign="Middle">
+				<reportElement x="220" y="6" width="15" height="12" uuid="49000164-cc7f-4eea-90fe-d34708dadcea"/>
 				<imageExpression><![CDATA["./images/tu"+($F{isOtherDisease}.contains("1")?"2":"1")+".png"]]></imageExpression>
 			</image>
 			<staticText>
-				<reportElement x="238" y="5" width="12" height="14" uuid="71eff480-1d1b-49a2-b658-701dc717d81e"/>
+				<reportElement x="235" y="5" width="12" height="14" uuid="71eff480-1d1b-49a2-b658-701dc717d81e"/>
 				<textElement>
 					<font size="9"/>
 				</textElement>
@@ -2184,7 +2184,7 @@
 				</textElement>
 				<text><![CDATA[]]></text>
 			</staticText>
-			<image>
+			<image vAlign="Middle">
 				<reportElement x="191" y="6" width="15" height="12" uuid="687194d2-6597-470d-99a9-18cddf5e96b6"/>
 				<imageExpression><![CDATA["./images/tu"+($F{isSurgery}.contains("0")?"2":"1")+".png"]]></imageExpression>
 			</image>
@@ -2195,12 +2195,12 @@
 				</textElement>
 				<text><![CDATA[否]]></text>
 			</staticText>
-			<image>
-				<reportElement x="224" y="6" width="15" height="12" uuid="444630d1-d9d3-4ed2-996c-d6644b4860da"/>
+			<image vAlign="Middle">
+				<reportElement x="220" y="6" width="15" height="12" uuid="444630d1-d9d3-4ed2-996c-d6644b4860da"/>
 				<imageExpression><![CDATA["./images/tu"+($F{isSurgery}.contains("1")?"2":"1")+".png"]]></imageExpression>
 			</image>
 			<staticText>
-				<reportElement x="239" y="5" width="12" height="14" uuid="090a9b40-6781-4f36-b9ae-bb29f2aa17a4"/>
+				<reportElement x="235" y="5" width="12" height="14" uuid="090a9b40-6781-4f36-b9ae-bb29f2aa17a4"/>
 				<textElement>
 					<font size="9"/>
 				</textElement>
