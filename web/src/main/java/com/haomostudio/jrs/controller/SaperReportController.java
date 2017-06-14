@@ -37,62 +37,14 @@ public class SaperReportController {
     @Autowired
     PropertyConfigurer propertyConfigurer;
 
-    @RequestMapping(value = "/yd",
-            method = {RequestMethod.POST},
-            produces = "application/json;carset=UTF-8")
-    @ResponseBody
-    public Object testStatic(HttpServletResponse response,HttpServletRequest request,
-                             @RequestParam(value = "name1",required = false)String name,
-                             @RequestParam(value = "path",required = false)String path){
-        Map<String,Object> resultMap = new HashMap<String,Object>();
-        String  realPath = request.getSession().getServletContext().getRealPath("");
-        //创建文件夹
-        File reportsDir = new File(realPath);
-        LocalJasperReportsContext ctx = new LocalJasperReportsContext(DefaultJasperReportsContext.getInstance());
-        ctx.setClassLoader(getClass().getClassLoader());
-        ctx.setFileResolver(new SimpleFileResolver(reportsDir));//注意，设置JasperReport的相对路径，很重要
-        JRDataSource jrDataSource = new JRBeanCollectionDataSource(null);
-        JasperFillManager fillManager = JasperFillManager.getInstance(ctx);
-        JasperExportManager exportManager = JasperExportManager.getInstance(ctx);
-        resultMap.put("名称：",name);
-        resultMap.put("路径：",path);
-        resultMap.put("服务器相对路径",realPath);
-        Map parameters=new HashMap();
-        ByteArrayOutputStream outPut=new ByteArrayOutputStream();
-        FileOutputStream outputStream=null;
-        String reportModelFile=realPath+"/jrxml/MyReports/test1.jasper";
-        File outPdfFile =  new File(realPath+"ydpdf/");
-        if(!outPdfFile.exists()){
-            outPdfFile.mkdirs();
-        }
-        try {
-
-            JasperPrint jasperPrint=fillManager.fillReport(reportModelFile,
-                    parameters,new JREmptyDataSource());
-            FileOutputStream outs = new FileOutputStream(realPath+"ydpdf/"+name+".pdf");
-            exportManager.exportToPdfStream(jasperPrint, outs);
-        } catch (JRException e) {
-            e.printStackTrace();
-        }catch (Exception e) {
-            e.printStackTrace();
-        }finally{
-            try {
-                outPut.flush();
-                outPut.close();
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
-        }
-        return resultMap;
-    }
 
     @RequestMapping(value = "/generatepdf",
             method = {  RequestMethod.POST },
             produces = "application/json;charset=UTF-8")
     @ResponseBody
     public Object groupVoid5(HttpServletResponse response,HttpServletRequest request,
-//                           @RequestBody String json,
-                             @RequestParam(value = "json",required = false) String json,
+                           @RequestBody String json,
+//                             @RequestParam(value = "json",required = false) String json,
                              @RequestParam(value = "pdfName",required = false) String pdfName
     ) throws JRException, IOException  {
 

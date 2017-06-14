@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.1.1.final using JasperReports Library version 6.1.1  -->
+<!-- 2017-05-03T00:48:58 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Physical specifications_13" pageWidth="595" pageHeight="662" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="0" bottomMargin="0" uuid="1a28301a-adc3-4ddf-8fe7-76e4a5d4c58e">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="New Data Adapter "/>
+	<property name="com.jaspersoft.studio.unit." value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.topMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.bottomMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.leftMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.rightMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnSpacing" value="pixel"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<detail>
+		<band height="196" splitType="Stretch">
+			<staticText>
+				<reportElement x="40" y="6" width="480" height="54" uuid="449355cb-fb76-4081-b67f-53ea223329c7"/>
+				<textElement>
+					<font fontName="微软雅黑" size="12"/>
+				</textElement>
+				<text><![CDATA[之发生与食物有关。此种过敏通常需要大量且密集的食用过敏原，使得免疫球蛋白达到一
+定程度时才引起反应，因此可以在禁食一段时间后再慢慢少量的恢复摄取，而不需要终生
+禁绝。]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="40" y="90" width="504" height="80" uuid="24def33d-3379-4a69-bdca-7abade35cbd9"/>
+				<textElement>
+					<font fontName="微软雅黑" size="12"/>
+				</textElement>
+				<text><![CDATA[    传统的食物过敏检测多侧重于立即性过敏反应，但是一般人因立即性过敏反应快且症状
+明显，多已懂得自行趋吉避凶。反而是延迟性过敏反应，引起的症状牵涉广泛且不具特异性，
+在临床上一般人无法自行判断，必须藉由检查来提醒病人正确的选择食物，以达到真正的健
+康饮食。因此希望透过血液的分析，让医师能够提供个人化量身订做的饮食咨询，让我们不
+吃的好更能吃得健康有效。]]></text>
+			</staticText>
+		</band>
+	</detail>
+</jasperReport>

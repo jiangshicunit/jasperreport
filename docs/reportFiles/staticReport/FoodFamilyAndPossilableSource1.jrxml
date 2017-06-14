@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.1.1.final using JasperReports Library version 6.1.1  -->
+<!-- 2017-05-03T00:58:55 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="FoodFamilyAndPossilableSource1" pageWidth="595" pageHeight="662" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="0" bottomMargin="0" uuid="d3bc1c82-8f99-421d-a50e-5657fed74991">
+	<property name="com.jaspersoft.studio.unit." value="pixel"/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="New Data Adapter "/>
+	<style name="Style1" fontName="微软雅黑"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<detail>
+		<band height="614" splitType="Stretch">
+			<staticText>
+				<reportElement x="53" y="0" width="457" height="30" forecolor="#CDA95A" uuid="51f1a958-111b-490c-96d3-18bc8b882dfd"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="微软雅黑" size="20"/>
+				</textElement>
+				<text><![CDATA[食物家族及可能食物来源]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="53" y="57" width="477" height="23" forecolor="#CDA95A" uuid="f478fd70-7ae4-4ea2-995c-0d69478e8a28"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="微软雅黑" size="16"/>
+				</textElement>
+				<text><![CDATA[奶蛋类]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="50" y="90" width="480" height="20" uuid="4b994bac-41b5-4594-ac8e-71beb8436672"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="微软雅黑" size="14"/>
+				</textElement>
+				<text><![CDATA[牛奶类制品]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="50" y="110" width="480" height="40" uuid="e0724272-c84e-4a6c-96a3-24f8dfc093a9"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="微软雅黑" size="12"/>
+				</textElement>
+				<text><![CDATA[牛奶、奶粉、乳脂、脱脂奶油、酸奶油、乳清蛋白、酪蛋白、乳白蛋白、乳糖、牛奶固形物
+、牛油、牛奶巧克力、优格、炼乳、乳浆、奶水等。]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="50" y="180" width="480" height="23" forecolor="#CDA95A" uuid="ece438aa-ef48-4a15-82b5-c5780f4c8ead"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="微软雅黑" size="16"/>
+				</textElement>
+				<text><![CDATA[海产类]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="50" y="210" width="480" height="20" uuid="0f18f361-4dec-457f-8b15-81f1d308a9ac"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="微软雅黑" size="14"/>
+				</textElement>
+				<text><![CDATA[牡蛎]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="50" y="230" width="480" height="50" uuid="c0d8a96f-f1e4-46d3-8b20-f8688ea8a50b"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="微软雅黑" size="12"/>
+				</textElement>
+				<text><![CDATA[小者常用于料理如蚵仔煎、蚵仔面线、蚵嗲等，大者即生蚝常见于法国料理或高级自助餐。
+须注意在中式料理中常用来调味的蚝油亦是以牡蛎为原料。另外牡蛎壳中含有大量钙质，由
+于取得容易价格便宜是许多市售「天然钙」的主要来源，因此选用钙片时需特别留意。]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="50" y="310" width="480" height="23" forecolor="#CDA95A" uuid="25b8f911-4e42-49d3-a164-e0fd68af08b8"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="微软雅黑" size="16"/>
+				</textElement>
+				<text><![CDATA[蔬菜类]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="50" y="340" width="480" height="20" uuid="3f450192-657a-4724-9c9c-32ac41eeb98e"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="微软雅黑" size="14"/>
+				</textElement>
+				<text><![CDATA[十字花科蔬菜]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="50" y="360" width="480" height="50" uuid="846d54fd-b066-422e-920b-b05e5e888e25"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="微软雅黑" size="12"/>
+				</textElement>
+				<text><![CDATA[包含的种类非常广泛也是我们平常主要食用的蔬菜，如白菜、绿花椰菜、芽甘蓝、高丽菜、
+白花椰菜、大白菜、莴苣、辣根、芥蓝菜、大头菜、芥菜、芥菜籽、白萝卜、油菜、芜菁、
+西洋菜、油菜、水芹等。]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="51" y="440" width="480" height="23" forecolor="#CDA95A" uuid="89bbe267-ffd2-4c1c-9042-2bd7bd4eb361"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="微软雅黑" size="16"/>
+				</textElement>
+				<text><![CDATA[其他类]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="51" y="470" width="480" height="20" uuid="9b1a8c61-32f0-44dc-aedf-ee340711bda9"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="微软雅黑" size="14"/>
+				</textElement>
+				<text><![CDATA[酵母]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="51" y="490" width="480" height="120" uuid="f7d22e06-8b15-417a-9c4e-27d9edb0f4be"/>
+				<textElement textAlignment="Left" verticalAlignment="Top">
+					<font fontName="微软雅黑" size="12"/>
+				</textElement>
+				<text><![CDATA[霉菌及酵母菌是食物腐败的主要原因，它们存在于空气中，冷藏或冷冻可以减缓其生长，高
+温可以破坏它们，但在适合的条件下其生长速率十分惊人。虽然烘焙酵母及啤酒酵母有不同
+的代谢特性，但是若对任何菌菇类过敏的人，应在食物及环境中皆避免掉所有型式的酵母菌
+、霉菌及相关食品。含高淀粉或糖类的食物（如水果、果汁、根茎类蔬菜、榖类）在自然环
+境下易被发酵，因为酵母菌在这些食物上易于生长。烹调过的食物置于室温下也非常容易吸
+引酵母菌，所以必需聪明的处理食物，如果在24 小时内不吃的食物最好加以冷冻，冷藏
+的食物最好在24 小时内吃完。许多食物表面易沾染霉菌，例如葡萄、哈密瓜、柑橘等食]]></text>
+			</staticText>
+		</band>
+	</detail>
+</jasperReport>

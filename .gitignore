@@ -28,4 +28,4 @@ rebel.xml
 #lilei environment
 dep2.sh
 
-crm-web/src/main/filters/dev.properties
+README.mdweb/src/main/filters/dev.properties

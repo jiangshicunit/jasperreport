@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.1.1.final using JasperReports Library version 6.1.1  -->
+<!-- 2017-05-03T01:02:53 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="FoodFamilyAndPossilableSource2" pageWidth="595" pageHeight="662" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="0" bottomMargin="0" uuid="947a4cfc-8ccf-43e6-926b-949d1101a90e">
+	<property name="com.jaspersoft.studio.unit." value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.topMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.bottomMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.leftMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.rightMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnSpacing" value="pixel"/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="New Data Adapter "/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<detail>
+		<band height="117" splitType="Stretch">
+			<staticText>
+				<reportElement x="40" y="0" width="480" height="117" uuid="18665a5d-e106-4d22-a732-37d0710f0dfa"/>
+				<textElement>
+					<font fontName="微软雅黑" size="12"/>
+					<paragraph lineSpacing="Single" lineSpacingSize="1.0"/>
+				</textElement>
+				<text><![CDATA[用前外皮最好都加以洗净，以避免霉菌带来不适反应。加工食品如热狗、加工肉品、冷冻浓
+缩果汁、罐装果汁、腊肠等，因为在制作过程中长时间暴露于空气中，所以也都很容易被霉
+菌污染。 可能来源：发酵食物及饮料（所有酒精性饮料、啤酒、黑啤、麦酒、酱油、醋、
+优格、酸奶等），霉及陈年干酪、面包、包子、馒头、蛋糕、蛋糕粉、脆饼、饼干、强化牛
+奶（如添加来自酵母菌之维生素）、蕈菇类、腌渍食物、烟熏食物、培根、火腿、含醋食物
+（蕃茄酱、烤肉酱、美奶滋、调味汁）、维生素（天然维生素产生于酵母菌或添加啤酒酵母
+）等。的乳酸发酵乳制品还有如酸奶、养乐多、可尔必思、酸奶酪、优格色拉等。]]></text>
+			</staticText>
+		</band>
+	</detail>
+</jasperReport>
