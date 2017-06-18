@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
+<!-- 2017-06-13T15:55:03 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Physical specifications_12" pageWidth="595" pageHeight="662" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="0" bottomMargin="0" uuid="1142cc5a-eb12-4b9a-8093-ff3e396e6dad">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<property name="com.jaspersoft.studio.unit." value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.topMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.bottomMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.leftMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.rightMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnSpacing" value="pixel"/>
+	<style name="myStyle" isDefault="true" fontName="微软雅黑" pdfFontName="MSYH.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+	<style name="Table_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<detail>
+		<band height="590" splitType="Stretch">
+			<staticText>
+				<reportElement x="80" y="0" width="400" height="30" forecolor="#CDA95A" uuid="68418629-89ac-4957-9766-e1420488070c"/>
+				<textElement textAlignment="Center">
+					<font fontName="微软雅黑" size="18"/>
+				</textElement>
+				<text><![CDATA[食物过敏原分析]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="40" y="40" width="492" height="80" uuid="a492cbeb-7aad-4153-ac7b-19ca07314945"/>
+				<textElement>
+					<font fontName="微软雅黑" size="12"/>
+					<paragraph lineSpacing="1_1_2" lineSpacingSize="1.0"/>
+				</textElement>
+				<text><![CDATA[       全世界有超过千万的人口受过敏的影响，从春天的花、朋友的猫狗到灰尘，都可能使人
+们起疹子、打喷嚏甚至无法控制的搔痒。一些看似无辜的食物，如牛奶、麦麸、玉米等，其
+实也可能引起人类的过敏反应甚至危害生命。所以了解食物过敏不但可以改善许多人的健康
+状态，更可以有助于挽救生命。]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="40" y="140" width="494" height="80" uuid="e6bfa39c-0894-4e55-a712-a27953f6f023"/>
+				<textElement>
+					<font fontName="微软雅黑" size="12"/>
+					<paragraph lineSpacing="1_1_2" lineSpacingSize="2.0"/>
+				</textElement>
+				<text><![CDATA[       食物过敏是身体的免疫系统对于食物的成份或原料产生过度的反应，通常是由蛋白质引
+起。最常见的食物过敏原有以下八大类：牛奶、蛋、花生、大豆、坚果类、小麦、鱼及甲壳
+类海产。当然还有许多其他种类的食物也会引起一些人的过敏反应，但以上八大类食物可含
+括约90%的案例。]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="41" y="240" width="492" height="80" uuid="d38497c2-b1b6-4f3b-afd9-491bc5e85ce3"/>
+				<textElement>
+					<font fontName="微软雅黑" size="12"/>
+					<paragraph lineSpacing="1_1_2" lineSpacingSize="2.0"/>
+				</textElement>
+				<text><![CDATA[       不同人过敏的症状可以有极大的差异，即使同一个人对不同的食物也可能出现不同的过
+敏症状。食物的过敏反应在严重程度及发生的快慢上会有所不同，甚至不同时间吃都可能有
+不同反应。一般常见的急性症状包含皮肤不适如荨麻疹、湿疹；肠胃症状如恶心、呕吐、腹
+泻；呼吸道症状如流鼻水、打喷嚏、呼吸短促等。]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="40" y="340" width="489" height="58" uuid="d9915b3f-ad30-4e8b-b2f0-a6a8c84821b3"/>
+				<textElement>
+					<font fontName="微软雅黑" size="12"/>
+					<paragraph lineSpacing="1_1_2" lineSpacingSize="2.0"/>
+				</textElement>
+				<text><![CDATA[       严重的过敏反应虽不常见但却可能致死，身体数个不同的系统可能同时受到影响，而出
+现荨麻疹、喉头肿胀、呼吸困难、低血压及昏迷等症状。但也可能是延迟性的反应，产生关
+节痛、行为异常、头痛、肌肉疼痛、沮丧、失眠等症状。]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="50" y="430" width="494" height="20" uuid="d1704346-d683-4aad-9bd9-b982cfdf1ff9"/>
+				<textElement>
+					<font fontName="微软雅黑" size="12"/>
+					<paragraph lineSpacingSize="2.0"/>
+				</textElement>
+				<text><![CDATA[   食物过敏可分为立即性反应及延迟性反应两种：]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="50" y="450" width="100" height="20" forecolor="#FC0E0A" uuid="b576d46e-0f51-485d-849d-9f3c4e194d02"/>
+				<textElement>
+					<font fontName="微软雅黑" size="12"/>
+					<paragraph lineSpacingSize="2.0"/>
+				</textElement>
+				<text><![CDATA[   立即性过敏反应]]></text>
+			</staticText>
+			<line>
+				<reportElement x="61" y="465" width="89" height="1" forecolor="#F73531" uuid="c24c0137-d5ba-4173-bdf5-efffb165d644">
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
+			</line>
+			<staticText>
+				<reportElement x="150" y="450" width="417" height="21" uuid="4e58e264-52d5-44cf-afc4-9d3f50aae86e"/>
+				<textElement>
+					<font fontName="微软雅黑" size="12"/>
+					<paragraph lineSpacingSize="2.0"/>
+				</textElement>
+				<text><![CDATA[主要由免疫球蛋白E主导，通常在接触过敏原后的2个钟头内即产生反]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="36" y="470" width="493" height="40" uuid="3c0ac91b-3db8-4a11-84b0-bd0f4f347cd8"/>
+				<textElement>
+					<font fontName="微软雅黑" size="12"/>
+					<paragraph lineSpacing="1_1_2" lineSpacingSize="2.0"/>
+				</textElement>
+				<text><![CDATA[应。此种过敏是终生存在的，只要少量的过敏原即可引发过敏，症状严重时可能会致命，因
+此需绝对避免此类食物的摄取。]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="61" y="540" width="89" height="19" forecolor="#FFD312" uuid="2696c644-271f-491d-85d8-f5ec3c8a6b34"/>
+				<textElement>
+					<font fontName="微软雅黑" size="12"/>
+					<paragraph lineSpacingSize="2.0"/>
+				</textElement>
+				<text><![CDATA[延迟性过敏反应]]></text>
+			</staticText>
+			<line>
+				<reportElement x="61" y="555" width="89" height="1" forecolor="#FFD312" uuid="4ce842ad-16fc-4084-a54c-b9744c7c7968">
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
+			</line>
+			<staticText>
+				<reportElement x="150" y="540" width="416" height="21" uuid="39581dab-da87-49fa-93f4-27d8f6e320de"/>
+				<textElement>
+					<font fontName="微软雅黑" size="12"/>
+					<paragraph lineSpacingSize="2.0"/>
+				</textElement>
+				<text><![CDATA[主要牵涉到免疫球蛋白G，通常在接触过敏原2-24小时后才出现反应，]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="40" y="560" width="494" height="19" uuid="ddc7d9d3-35f4-4b96-9c27-30f98cace7b2"/>
+				<textElement>
+					<font fontName="微软雅黑" size="12"/>
+					<paragraph lineSpacingSize="2.0"/>
+				</textElement>
+				<text><![CDATA[有时甚至可拖延至72小时以后。由于反应时间较久，因此临床上病人常无法联想到症状]]></text>
+			</staticText>
+		</band>
+	</detail>
+</jasperReport>
