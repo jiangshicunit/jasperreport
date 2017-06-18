@@ -24,11 +24,11 @@
 		<band splitType="Stretch"/>
 	</background>
 	<title>
-		<band height="45">
+		<band height="40">
 			<textField>
-				<reportElement x="0" y="0" width="551" height="32" forecolor="#BE995E" uuid="4da012de-5271-47af-a498-f867e973e2ca"/>
+				<reportElement x="0" y="0" width="551" height="30" forecolor="#BE995E" uuid="4da012de-5271-47af-a498-f867e973e2ca"/>
 				<textElement textAlignment="Center" verticalAlignment="Top">
-					<font size="20" isBold="true"/>
+					<font size="18" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{title}]]></textFieldExpression>
 			</textField>

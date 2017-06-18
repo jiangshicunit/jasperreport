@@ -43,8 +43,8 @@ public class SaperReportController {
             produces = "application/json;charset=UTF-8")
     @ResponseBody
     public Object groupVoid5(HttpServletResponse response,HttpServletRequest request,
-                           @RequestBody String json,
-//                             @RequestParam(value = "json",required = false) String json,
+//                           @RequestBody String json,
+                             @RequestParam(value = "json",required = false) String json,
                              @RequestParam(value = "pdfName",required = false) String pdfName
     ) throws JRException, IOException  {
 
