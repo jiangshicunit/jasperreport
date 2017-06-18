@@ -29,7 +29,7 @@
 				<textFieldExpression><![CDATA["报告书明"]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement x="20" y="40" width="530" height="300" uuid="4353f03a-267f-463c-bdee-1bb68748af97"/>
+				<reportElement x="25" y="40" width="530" height="300" uuid="4353f03a-267f-463c-bdee-1bb68748af97"/>
 				<textElement>
 					<font size="12" isBold="false"/>
 					<paragraph lineSpacing="1_1_2" lineSpacingSize="1.0"/>
@@ -46,7 +46,7 @@
 ]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="20" y="371" width="530" height="140" uuid="d34eed0b-e279-49e5-a095-bf2809539134"/>
+				<reportElement x="25" y="371" width="530" height="140" uuid="d34eed0b-e279-49e5-a095-bf2809539134"/>
 				<textElement>
 					<font size="12" isBold="false"/>
 					<paragraph lineSpacing="1_1_2" lineSpacingSize="1.0"/>
@@ -59,7 +59,7 @@
 会下降，也与许多严重慢性疾病有关。]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="20" y="340" width="191" height="31" forecolor="#BE995E" uuid="d3519f06-c70d-4eea-b2bd-8e5875d734db"/>
+				<reportElement x="25" y="340" width="191" height="31" forecolor="#BE995E" uuid="d3519f06-c70d-4eea-b2bd-8e5875d734db"/>
 				<textElement textAlignment="Left" verticalAlignment="Middle">
 					<font size="12"/>
 				</textElement>

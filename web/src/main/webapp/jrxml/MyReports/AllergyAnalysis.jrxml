@@ -56,63 +56,63 @@
 	<title>
 		<band height="57">
 			<image>
-				<reportElement x="25" y="43" width="6" height="6" uuid="749a09ab-e94c-4c9c-84aa-3e6386b1fa1c">
+				<reportElement x="55" y="43" width="6" height="6" uuid="749a09ab-e94c-4c9c-84aa-3e6386b1fa1c">
 					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 				</reportElement>
 				<imageExpression><![CDATA["./red.png"]]></imageExpression>
 			</image>
 			<staticText>
-				<reportElement x="35" y="36" width="30" height="21" uuid="5a60fbf5-24a1-4e6e-99e2-48f3f9870b50"/>
+				<reportElement x="66" y="36" width="18" height="21" uuid="5a60fbf5-24a1-4e6e-99e2-48f3f9870b50"/>
 				<textElement verticalAlignment="Middle">
 					<font fontName="微软雅黑" size="9"/>
 				</textElement>
 				<text><![CDATA[重度]]></text>
 			</staticText>
 			<image>
-				<reportElement x="65" y="43" width="6" height="6" uuid="e6cf58e2-a374-49bb-90d0-24e249a25f9f">
+				<reportElement x="87" y="43" width="6" height="6" uuid="e6cf58e2-a374-49bb-90d0-24e249a25f9f">
 					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 				</reportElement>
 				<imageExpression><![CDATA["./hese.png"]]></imageExpression>
 			</image>
 			<staticText>
-				<reportElement x="75" y="36" width="30" height="21" uuid="0fd7af71-3fd0-4cbe-ad2b-d6c160f1f076"/>
+				<reportElement x="96" y="36" width="18" height="21" uuid="0fd7af71-3fd0-4cbe-ad2b-d6c160f1f076"/>
 				<textElement verticalAlignment="Middle">
 					<font fontName="微软雅黑" size="9"/>
 				</textElement>
 				<text><![CDATA[中度]]></text>
 			</staticText>
 			<image>
-				<reportElement x="105" y="43" width="6" height="6" uuid="4012ece5-7b9e-4adb-ba60-2c0529be0c2a">
+				<reportElement x="117" y="43" width="6" height="6" uuid="4012ece5-7b9e-4adb-ba60-2c0529be0c2a">
 					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 				</reportElement>
 				<imageExpression><![CDATA["./yellow.png"]]></imageExpression>
 			</image>
 			<staticText>
-				<reportElement x="115" y="36" width="30" height="21" uuid="1159330a-102b-471d-b844-2357bb9ca193"/>
+				<reportElement x="126" y="36" width="18" height="21" uuid="1159330a-102b-471d-b844-2357bb9ca193"/>
 				<textElement verticalAlignment="Middle">
 					<font fontName="微软雅黑" size="9"/>
 				</textElement>
 				<text><![CDATA[轻度]]></text>
 			</staticText>
 			<image>
-				<reportElement x="145" y="43" width="6" height="6" uuid="bc3cd4f0-171c-4bf1-8a84-f391cb8c1886">
+				<reportElement x="147" y="43" width="6" height="6" uuid="bc3cd4f0-171c-4bf1-8a84-f391cb8c1886">
 					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 				</reportElement>
 				<imageExpression><![CDATA["./green.png"]]></imageExpression>
 			</image>
 			<staticText>
-				<reportElement x="155" y="36" width="30" height="21" uuid="aedc5a71-41bc-46b9-960e-a9a675fbe056"/>
+				<reportElement x="156" y="36" width="18" height="21" uuid="aedc5a71-41bc-46b9-960e-a9a675fbe056"/>
 				<textElement verticalAlignment="Middle">
 					<font fontName="微软雅黑" size="9"/>
 				</textElement>
 				<text><![CDATA[正常 ]]></text>
 			</staticText>
 			<textField>
-				<reportElement x="23" y="6" width="178" height="25" uuid="1e216017-236e-4866-ae2e-2a2be9251a74"/>
+				<reportElement x="55" y="6" width="178" height="25" uuid="1e216017-236e-4866-ae2e-2a2be9251a74"/>
 				<textElement>
 					<font fontName="微软雅黑" size="13"/>
 				</textElement>
@@ -121,15 +121,15 @@
 		</band>
 	</title>
 	<detail>
-		<band height="63" splitType="Stretch">
+		<band height="73" splitType="Stretch">
 			<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.HorizontalRowLayout"/>
 			<subreport>
-				<reportElement x="9" y="0" width="298" height="63" uuid="9508cf97-6569-4501-b5ed-d7e02afc3e75"/>
+				<reportElement x="0" y="10" width="298" height="63" uuid="9508cf97-6569-4501-b5ed-d7e02afc3e75"/>
 				<dataSourceExpression><![CDATA[$F{cityDs}]]></dataSourceExpression>
 				<subreportExpression><![CDATA[$F{subReportObject1}]]></subreportExpression>
 			</subreport>
 			<subreport>
-				<reportElement x="298" y="0" width="297" height="63" uuid="5906bbec-2510-4668-9637-2ad3c7348136"/>
+				<reportElement x="268" y="10" width="297" height="63" uuid="5906bbec-2510-4668-9637-2ad3c7348136"/>
 				<dataSourceExpression><![CDATA[$F{cityDs1}]]></dataSourceExpression>
 				<subreportExpression><![CDATA[$F{subReportObject2}]]></subreportExpression>
 			</subreport>
