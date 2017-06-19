@@ -21,7 +21,7 @@
 				<text><![CDATA[microRNA癌症监察]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="43" y="50" width="504" height="50" uuid="60aca8f5-f738-4357-a300-9870067e808b"/>
+				<reportElement x="30" y="50" width="504" height="50" uuid="60aca8f5-f738-4357-a300-9870067e808b"/>
 				<textElement>
 					<font size="12" isBold="false"/>
 					<paragraph lineSpacing="1_1_2"/>
@@ -30,7 +30,7 @@
 是，这三种癌症已被世界卫生组织也确认为可以通过早期诊断降低死亡率的恶性肿瘤之一。]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="40" y="110" width="507" height="50" uuid="0af01211-f512-447c-a493-0ffd4403388f"/>
+				<reportElement x="30" y="110" width="507" height="50" uuid="0af01211-f512-447c-a493-0ffd4403388f"/>
 				<textElement>
 					<font size="12" isBold="false"/>
 					<paragraph lineSpacing="1_1_2"/>
@@ -39,7 +39,7 @@
 以指导您的风险控制方法，预防肿瘤的发生。]]></text>
 			</staticText>
 			<image>
-				<reportElement x="40" y="190" width="240" height="280" uuid="4aa31a9e-4235-4710-a551-e2d3627babaf"/>
+				<reportElement x="30" y="190" width="240" height="280" uuid="4aa31a9e-4235-4710-a551-e2d3627babaf"/>
 				<imageExpression><![CDATA["images/microRNA.jpg"]]></imageExpression>
 			</image>
 		</band>

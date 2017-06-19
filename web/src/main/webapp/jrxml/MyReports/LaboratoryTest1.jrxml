@@ -33,25 +33,25 @@
 	<lastPageFooter>
 		<band height="50">
 			<image>
-				<reportElement x="0" y="10" width="14" height="14" uuid="2dbbe52c-cab0-4922-ae14-367d2cb7f3a2">
+				<reportElement x="30" y="10" width="14" height="14" uuid="2dbbe52c-cab0-4922-ae14-367d2cb7f3a2">
 					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 				</reportElement>
 				<imageExpression><![CDATA["./red.jpg"]]></imageExpression>
 			</image>
 			<image>
-				<reportElement x="96" y="10" width="14" height="14" uuid="6c7340dc-77fd-415c-ac18-f2dde5861256"/>
+				<reportElement x="126" y="10" width="14" height="14" uuid="6c7340dc-77fd-415c-ac18-f2dde5861256"/>
 				<imageExpression><![CDATA["./orong.jpg"]]></imageExpression>
 			</image>
 			<image>
-				<reportElement x="46" y="10" width="14" height="14" uuid="74c73c7f-3ddb-4c79-ba4e-b7ac438ff5d0">
+				<reportElement x="76" y="10" width="14" height="14" uuid="74c73c7f-3ddb-4c79-ba4e-b7ac438ff5d0">
 					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 				</reportElement>
 				<imageExpression><![CDATA["./blue.jpg"]]></imageExpression>
 			</image>
 			<textField>
-				<reportElement x="14" y="7" width="41" height="21" uuid="ebfd7116-16e5-4849-8f5c-48139ca2cafc"/>
+				<reportElement x="44" y="7" width="41" height="21" uuid="ebfd7116-16e5-4849-8f5c-48139ca2cafc"/>
 				<textElement textAlignment="Left" verticalAlignment="Middle">
 					<font isBold="false"/>
 					<paragraph leftIndent="2"/>
@@ -59,7 +59,7 @@
 				<textFieldExpression><![CDATA["异常"]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="60" y="7" width="41" height="21" uuid="d337db8a-52f2-4585-816e-6cef779dd5eb"/>
+				<reportElement x="90" y="7" width="41" height="21" uuid="d337db8a-52f2-4585-816e-6cef779dd5eb"/>
 				<textElement textAlignment="Left" verticalAlignment="Middle">
 					<font isBold="false"/>
 					<paragraph leftIndent="2"/>
@@ -67,7 +67,7 @@
 				<textFieldExpression><![CDATA["正常"]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="110" y="7" width="140" height="21" uuid="43699d4c-03d2-4bdb-9e8b-a0a0fb17dc25"/>
+				<reportElement x="140" y="7" width="140" height="21" uuid="43699d4c-03d2-4bdb-9e8b-a0a0fb17dc25"/>
 				<textElement textAlignment="Left" verticalAlignment="Middle">
 					<font isBold="false"/>
 					<paragraph leftIndent="2"/>

@@ -26,7 +26,7 @@
 	<columnHeader>
 		<band height="32">
 			<textField>
-				<reportElement x="19" y="0" width="161" height="31" forecolor="#BE995E" uuid="ef5dad78-8ffe-4fe7-9120-cef171e0310e"/>
+				<reportElement x="30" y="0" width="161" height="31" forecolor="#BE995E" uuid="ef5dad78-8ffe-4fe7-9120-cef171e0310e"/>
 				<textElement>
 					<font size="14" isBold="false"/>
 				</textElement>
