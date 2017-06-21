@@ -38,11 +38,11 @@ define('d3Circle', ['d3'], function (d3) {
     }
 
     var data = [
-        {value: redLeft, color: '#ff0000', Proportion: redLeft},
-        {value: yellowLeft, color: '#fff000', Proportion: yellowLeft},
-        {value: G, color: '#00ff00', Proportion: G},
-        {value: yellowRight, color: '#fff000', Proportion: yellowRight},
-        {value: redRight, color: '#ff0000', Proportion: redRight}
+        {value: redLeft, color: '#DE2121', Proportion: redLeft},
+        {value: yellowLeft, color: '#FFDE08', Proportion: yellowLeft},
+        {value: G, color: '#BDD639', Proportion: G},
+        {value: yellowRight, color: '#FFDE08', Proportion: yellowRight},
+        {value: redRight, color: '#DE2121', Proportion: redRight}
       ],
       circlevalue = [
         {value: 6, color: circleColor(V), Proportion: V},
