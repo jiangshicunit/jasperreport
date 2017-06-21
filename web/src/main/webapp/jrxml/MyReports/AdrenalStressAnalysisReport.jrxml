@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
-<!-- 2017-06-16T09:39:30 -->
+<!-- 2017-06-21T14:58:36 -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="FemaleHormonalBalanceAdviceAndFunctionalMedicineTest" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="0" bottomMargin="0" uuid="b9efc687-b655-46ee-9974-742cdbafe74b">
 	<property name="com.jaspersoft.studio.unit." value="pixel"/>
 	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="New Data Adapter (2)"/>
@@ -252,7 +252,7 @@
 正肾上腺素（norepinephrine）的主要来源。]]></text>
 			</staticText>
 			<image>
-				<reportElement x="295" y="0" width="270" height="330" uuid="b037af92-3348-4ecb-bca3-1b541255fb2e"/>
+				<reportElement x="295" y="0" width="270" height="320" uuid="b037af92-3348-4ecb-bca3-1b541255fb2e"/>
 				<imageExpression><![CDATA["images/ydxs.jpg"]]></imageExpression>
 			</image>
 		</band>
