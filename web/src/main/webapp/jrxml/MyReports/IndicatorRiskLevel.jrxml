@@ -79,7 +79,7 @@
 					<rightPen lineColor="#707070"/>
 				</box>
 				<textElement verticalAlignment="Middle">
-					<paragraph leftIndent="30"/>
+					<paragraph leftIndent="20"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{name}]]></textFieldExpression>
 			</textField>

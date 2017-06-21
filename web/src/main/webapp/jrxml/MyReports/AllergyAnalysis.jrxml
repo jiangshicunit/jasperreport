@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Created with Jaspersoft Studio version 6.1.1.final using JasperReports Library version 6.1.1  -->
-<!-- 2017-05-03T00:12:48 -->
+<!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
+<!-- 2017-06-21T11:49:45 -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="AllergyAnalysis" pageWidth="595" pageHeight="662" columnWidth="595" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="5a5ad8a6-f3e3-4f73-b6f9-611063c45d08">
 	<property name="com.jaspersoft.studio.data.sql.tables" value="YWxsZXJneWFuYWx5c2lzdGFibGUgLDE1LDE1LDYxM2QzMmJlLTEzODYtNGVjNC04OWMzLWFmMGNh&#xA;NTQ0ZGVkMzs="/>
 	<property name="com.jaspersoft.studio.unit." value="pixel"/>
 	<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.HorizontalRowLayout"/>
-	<style name="myStyle" isDefault="true" fontName="微软雅黑" pdfFontName="MSYH.TTF" isBold="true" isPdfEmbedded ="true" pdfEncoding ="Identity-H"/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="New Data Adapter (2)"/>
+	<style name="myStyle" isDefault="true" fontName="微软雅黑" isBold="true" pdfFontName="MSYH.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
 	<style name="Crosstab_CH" mode="Opaque" backcolor="#F0F8FF">
 		<box>
 			<pen lineWidth="0.5" lineColor="#000000"/>
@@ -48,64 +49,37 @@
 	<field name="name" class="java.lang.String"/>
 	<field name="cityDs" class="net.sf.jasperreports.engine.data.JRBeanCollectionDataSource"/>
 	<field name="cityDs1" class="net.sf.jasperreports.engine.data.JRBeanCollectionDataSource"/>
-	<field name="subReportObject1" class="net.sf.jasperreports.engine.JasperReport" />
-	<field name="subReportObject2" class="net.sf.jasperreports.engine.JasperReport" />
+	<field name="subReportObject1" class="net.sf.jasperreports.engine.JasperReport"/>
+	<field name="subReportObject2" class="net.sf.jasperreports.engine.JasperReport"/>
 	<background>
 		<band splitType="Stretch"/>
 	</background>
 	<title>
-		<band height="57">
-			<image>
-				<reportElement x="55" y="43" width="6" height="6" uuid="749a09ab-e94c-4c9c-84aa-3e6386b1fa1c">
-					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
-					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
-				</reportElement>
-				<imageExpression><![CDATA["./red.png"]]></imageExpression>
-			</image>
+		<band height="58">
+			<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 			<staticText>
-				<reportElement x="66" y="36" width="18" height="21" uuid="5a60fbf5-24a1-4e6e-99e2-48f3f9870b50"/>
+				<reportElement x="64" y="36" width="18" height="21" uuid="5a60fbf5-24a1-4e6e-99e2-48f3f9870b50"/>
 				<textElement verticalAlignment="Middle">
 					<font fontName="微软雅黑" size="9"/>
 				</textElement>
 				<text><![CDATA[重度]]></text>
 			</staticText>
-			<image>
-				<reportElement x="87" y="43" width="6" height="6" uuid="e6cf58e2-a374-49bb-90d0-24e249a25f9f">
-					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
-					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
-				</reportElement>
-				<imageExpression><![CDATA["./hese.png"]]></imageExpression>
-			</image>
 			<staticText>
-				<reportElement x="96" y="36" width="18" height="21" uuid="0fd7af71-3fd0-4cbe-ad2b-d6c160f1f076"/>
+				<reportElement x="94" y="36" width="18" height="21" uuid="0fd7af71-3fd0-4cbe-ad2b-d6c160f1f076"/>
 				<textElement verticalAlignment="Middle">
 					<font fontName="微软雅黑" size="9"/>
 				</textElement>
 				<text><![CDATA[中度]]></text>
 			</staticText>
-			<image>
-				<reportElement x="117" y="43" width="6" height="6" uuid="4012ece5-7b9e-4adb-ba60-2c0529be0c2a">
-					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
-					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
-				</reportElement>
-				<imageExpression><![CDATA["./yellow.png"]]></imageExpression>
-			</image>
 			<staticText>
-				<reportElement x="126" y="36" width="18" height="21" uuid="1159330a-102b-471d-b844-2357bb9ca193"/>
+				<reportElement x="124" y="36" width="18" height="21" uuid="1159330a-102b-471d-b844-2357bb9ca193"/>
 				<textElement verticalAlignment="Middle">
 					<font fontName="微软雅黑" size="9"/>
 				</textElement>
 				<text><![CDATA[轻度]]></text>
 			</staticText>
-			<image>
-				<reportElement x="147" y="43" width="6" height="6" uuid="bc3cd4f0-171c-4bf1-8a84-f391cb8c1886">
-					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
-					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
-				</reportElement>
-				<imageExpression><![CDATA["./green.png"]]></imageExpression>
-			</image>
 			<staticText>
-				<reportElement x="156" y="36" width="18" height="21" uuid="aedc5a71-41bc-46b9-960e-a9a675fbe056"/>
+				<reportElement x="154" y="36" width="18" height="21" uuid="aedc5a71-41bc-46b9-960e-a9a675fbe056"/>
 				<textElement verticalAlignment="Middle">
 					<font fontName="微软雅黑" size="9"/>
 				</textElement>
@@ -118,18 +92,42 @@
 				</textElement>
 				<textFieldExpression><![CDATA[$F{name}]]></textFieldExpression>
 			</textField>
+			<ellipse>
+				<reportElement mode="Opaque" x="55" y="45" width="7" height="7" backcolor="#FF1808" uuid="bd9be726-9ce8-4c76-b6b3-09db73332421"/>
+				<graphicElement>
+					<pen lineWidth="0.0"/>
+				</graphicElement>
+			</ellipse>
+			<ellipse>
+				<reportElement x="85" y="45" width="7" height="7" backcolor="#A55210" uuid="4b1ee748-6967-42a3-b797-f75d92fe5a1a"/>
+				<graphicElement>
+					<pen lineWidth="0.0"/>
+				</graphicElement>
+			</ellipse>
+			<ellipse>
+				<reportElement x="115" y="45" width="7" height="7" backcolor="#FFF708" uuid="fdff171f-31f6-4973-9e25-e18a4f5003cb"/>
+				<graphicElement>
+					<pen lineWidth="0.0"/>
+				</graphicElement>
+			</ellipse>
+			<ellipse>
+				<reportElement x="145" y="45" width="7" height="7" backcolor="#297310" uuid="36317f23-da71-4ba4-ab32-a66fa344409a"/>
+				<graphicElement>
+					<pen lineWidth="0.0"/>
+				</graphicElement>
+			</ellipse>
 		</band>
 	</title>
 	<detail>
-		<band height="73" splitType="Stretch">
+		<band height="63" splitType="Stretch">
 			<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.HorizontalRowLayout"/>
 			<subreport>
-				<reportElement x="0" y="10" width="298" height="63" uuid="9508cf97-6569-4501-b5ed-d7e02afc3e75"/>
+				<reportElement x="9" y="0" width="298" height="63" uuid="9508cf97-6569-4501-b5ed-d7e02afc3e75"/>
 				<dataSourceExpression><![CDATA[$F{cityDs}]]></dataSourceExpression>
 				<subreportExpression><![CDATA[$F{subReportObject1}]]></subreportExpression>
 			</subreport>
 			<subreport>
-				<reportElement x="268" y="10" width="297" height="63" uuid="5906bbec-2510-4668-9637-2ad3c7348136"/>
+				<reportElement x="298" y="0" width="297" height="63" uuid="5906bbec-2510-4668-9637-2ad3c7348136"/>
 				<dataSourceExpression><![CDATA[$F{cityDs1}]]></dataSourceExpression>
 				<subreportExpression><![CDATA[$F{subReportObject2}]]></subreportExpression>
 			</subreport>
