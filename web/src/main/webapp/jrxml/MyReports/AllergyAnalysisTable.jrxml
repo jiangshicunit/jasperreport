@@ -67,7 +67,7 @@
 				</textElement>
 				<text><![CDATA[]]></text>
 			</staticText>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="113" y="0" width="49" height="20" isPrintInFirstWholeBand="true" uuid="dde04f27-c463-4804-aaec-c9db16c847c0">
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 				</reportElement>
@@ -79,7 +79,7 @@
 				</textElement>
 				<textFieldExpression><![CDATA[$F{date}]]></textFieldExpression>
 			</textField>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="44" y="0" width="69" height="20" isPrintInFirstWholeBand="true" uuid="75d11f74-40f0-4d2a-bc9e-e6404d8850f6"/>
 				<box>
 					<bottomPen lineWidth="1.3"/>
@@ -93,7 +93,7 @@
 	</title>
 	<detail>
 		<band height="16" splitType="Stretch">
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="44" y="0" width="69" height="16" uuid="8c399c1e-7e00-4e5e-9b18-fffc9aadacf2">
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 				</reportElement>

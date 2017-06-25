@@ -25,7 +25,7 @@
 	</background>
 	<title>
 		<band height="40">
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="0" y="0" width="551" height="30" forecolor="#BE995E" uuid="4da012de-5271-47af-a498-f867e973e2ca"/>
 				<textElement textAlignment="Center" verticalAlignment="Top">
 					<font size="18" isBold="true"/>

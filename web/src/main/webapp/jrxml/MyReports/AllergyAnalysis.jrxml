@@ -85,7 +85,7 @@
 				</textElement>
 				<text><![CDATA[正常 ]]></text>
 			</staticText>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="55" y="6" width="178" height="25" uuid="1e216017-236e-4866-ae2e-2a2be9251a74"/>
 				<textElement>
 					<font fontName="微软雅黑" size="13"/>

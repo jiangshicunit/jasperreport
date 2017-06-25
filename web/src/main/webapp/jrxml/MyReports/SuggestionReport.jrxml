@@ -24,14 +24,14 @@
 	<detail>
 
 		<band height="600" splitType="Stretch">
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="20" y="10" width="520" height="41" forecolor="#BE995E" uuid="707b6d8b-1696-4746-a854-5d8c52cd2d2d"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="微软雅黑" size="20" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{title}]]></textFieldExpression>
 			</textField>
-			<textField isStretchWithOverflow="true">
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
 				<reportElement positionType="Float" mode="Opaque" x="40" y="57" width="480" height="540" uuid="4c14d7cf-8e61-476e-a196-4839669ac3c5"/>
 				<textElement markup="html">
 					<font size="12" isBold="false"/>

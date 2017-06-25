@@ -158,8 +158,8 @@
 				<text><![CDATA[]]></text>
 			</staticText>
 			<image vAlign="Middle">
-				<reportElement x="191" y="6" width="15" height="12" uuid="172b10d3-f51f-459f-bd24-0b64d151b83e"/>
-				<imageExpression><![CDATA["./images/tu"+($F{isTnb1}.contains("0")?"2":"1")+".png"]]></imageExpression>
+				<reportElement x="191" y="6" width="15" height="12" uuid="03ce60cc-9f8d-4bf4-9785-2d5cfe8c5c38"/>
+				<imageExpression><![CDATA["./images/tu"+($F{isGxyb}!=null?($F{isGxyb}.contains("0")?"2":"1"):"1")+".png"]]></imageExpression>
 			</image>
 			<staticText>
 				<reportElement x="206" y="5" width="12" height="14" uuid="06eae1e7-e27c-4ee1-9b2d-e62052f2652a"/>
@@ -170,7 +170,7 @@
 			</staticText>
 			<image vAlign="Middle">
 				<reportElement x="220" y="6" width="15" height="12" uuid="5309ed9e-f9de-4964-84ef-6f14b262dd9a"/>
-				<imageExpression><![CDATA["./images/tu"+($F{isTnb1}.contains("1")?"2":"1")+".png"]]></imageExpression>
+				<imageExpression><![CDATA["./images/tu"+($F{isGxyb}!=null?($F{isGxyb}.contains("1")?"2":"1"):"1")+".png"]]></imageExpression>
 			</image>
 			<staticText>
 				<reportElement x="235" y="5" width="12" height="14" uuid="a1f30225-ae2d-4ab8-8823-68ad6a79e880"/>
@@ -179,7 +179,7 @@
 				</textElement>
 				<text><![CDATA[是]]></text>
 			</staticText>
-			<textField isStretchWithOverflow="true">
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
 				<reportElement x="255" y="0" width="267" height="25" uuid="e35f5c05-b7e8-42c3-a49d-0f6b838c54f6">
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
@@ -215,7 +215,7 @@
 				</textElement>
 				<text><![CDATA[II型糖尿病]]></text>
 			</staticText>
-			<textField isStretchWithOverflow="true">
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
 				<reportElement x="255" y="0" width="267" height="25" uuid="fbdc0e0b-7ca5-4ada-aafd-40002f1908ab">
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
@@ -257,11 +257,11 @@
 			</staticText>
 			<image vAlign="Middle">
 				<reportElement x="191" y="6" width="15" height="12" uuid="2fcfba1b-821a-4702-916b-e805fd0e0c6b"/>
-				<imageExpression><![CDATA["./images/tu"+($F{isTnb2}.contains("0")?"2":"1")+".png"]]></imageExpression>
+				<imageExpression><![CDATA["./images/tu"+($F{isTnb2}!=null?($F{isTnb2}.contains("0")?"2":"1"):"1")+".png"]]></imageExpression>
 			</image>
 			<image vAlign="Middle">
 				<reportElement x="220" y="6" width="15" height="12" uuid="6180d7b7-c284-47c0-9d80-b56c7f088ec8"/>
-				<imageExpression><![CDATA["./images/tu"+($F{isTnb2}.contains("1")?"2":"1")+".png"]]></imageExpression>
+				<imageExpression><![CDATA["./images/tu"+($F{isTnb2}!=null?($F{isTnb2}.contains("1")?"2":"1"):"1")+".png"]]></imageExpression>
 			</image>
 			<staticText>
 				<reportElement x="235" y="5" width="12" height="14" uuid="5fa1c258-8a3c-4d75-a42c-b4813a8a8c54"/>
@@ -288,7 +288,7 @@
 				</textElement>
 				<text><![CDATA[高血压病]]></text>
 			</staticText>
-			<textField isStretchWithOverflow="true">
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
 				<reportElement x="255" y="0" width="267" height="25" uuid="6c18f118-4076-411d-ac00-78020d5d6ec7">
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
@@ -323,7 +323,7 @@
 			</staticText>
 			<image vAlign="Middle">
 				<reportElement x="191" y="6" width="15" height="12" uuid="03ce60cc-9f8d-4bf4-9785-2d5cfe8c5c38"/>
-				<imageExpression><![CDATA["./images/tu"+($F{isGxyb}.contains("0")?"2":"1")+".png"]]></imageExpression>
+				<imageExpression><![CDATA["./images/tu"+($F{isGxyb}!=null?($F{isGxyb}.contains("0")?"2":"1"):"1")+".png"]]></imageExpression>
 			</image>
 			<staticText>
 				<reportElement x="206" y="5" width="12" height="14" uuid="8af14719-45f1-49cb-bbf5-ee84d15eb21a"/>
@@ -334,7 +334,7 @@
 			</staticText>
 			<image vAlign="Middle">
 				<reportElement x="220" y="6" width="15" height="12" uuid="748dbbdf-49b9-4943-9df9-a34f8b8b9cbc"/>
-				<imageExpression><![CDATA["./images/tu"+($F{isGxyb}.contains("1")?"2":"1")+".png"]]></imageExpression>
+				<imageExpression><![CDATA["./images/tu"+($F{isGxyb}!=null?($F{isGxyb}.contains("1")?"2":"1"):"1")+".png"]]></imageExpression>
 			</image>
 			<staticText>
 				<reportElement x="235" y="5" width="12" height="14" uuid="47bf2c62-a1cb-4272-8663-bee5200a5a7f"/>
@@ -361,7 +361,7 @@
 				</textElement>
 				<text><![CDATA[血脂异常]]></text>
 			</staticText>
-			<textField isStretchWithOverflow="true">
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
 				<reportElement x="255" y="0" width="267" height="25" uuid="ba091b1d-8a43-436e-b5dd-a0f912ba202b">
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
@@ -396,7 +396,7 @@
 			</staticText>
 			<image vAlign="Middle">
 				<reportElement x="191" y="6" width="15" height="12" uuid="34f603a8-665a-4d5e-b480-be2811a9e595"/>
-				<imageExpression><![CDATA["./images/tu"+($F{isXzyc}.contains("0")?"2":"1")+".png"]]></imageExpression>
+				<imageExpression><![CDATA["./images/tu"+($F{isXzyc}!=null?($F{isXzyc}.contains("0")?"2":"1"):"1")+".png"]]></imageExpression>
 			</image>
 			<staticText>
 				<reportElement x="206" y="5" width="12" height="14" uuid="26f74d25-0af9-41dd-8c96-ed616b666932"/>
@@ -407,7 +407,7 @@
 			</staticText>
 			<image vAlign="Middle">
 				<reportElement x="220" y="6" width="15" height="12" uuid="1c7cab9f-1909-400b-ba09-50cc5eb8741e"/>
-				<imageExpression><![CDATA["./images/tu"+($F{isXzyc}.contains("1")?"2":"1")+".png"]]></imageExpression>
+				<imageExpression><![CDATA["./images/tu"+($F{isXzyc}!=null?($F{isXzyc}.contains("1")?"2":"1"):"1")+".png"]]></imageExpression>
 			</image>
 			<staticText>
 				<reportElement x="235" y="5" width="12" height="14" uuid="15d4e9e1-7d79-4e8c-9bba-628b43c0ac48"/>
@@ -435,7 +435,7 @@
 				</textElement>
 				<text><![CDATA[冠心病（心绞痛，心肌梗死）]]></text>
 			</staticText>
-			<textField isStretchWithOverflow="true">
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
 				<reportElement x="255" y="0" width="267" height="25" uuid="9b4aed6b-fb70-446c-9041-643f78cd239e">
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
@@ -470,7 +470,7 @@
 			</staticText>
 			<image vAlign="Middle">
 				<reportElement x="191" y="6" width="15" height="12" uuid="b3f787f0-dd0a-4f3d-ad18-334cabc5dece"/>
-				<imageExpression><![CDATA["./images/tu"+($F{isGxb}.contains("0")?"2":"1")+".png"]]></imageExpression>
+				<imageExpression><![CDATA["./images/tu"+($F{isGxb}!=null?($F{isGxb}.contains("0")?"2":"1"):"1")+".png"]]></imageExpression>
 			</image>
 			<staticText>
 				<reportElement x="206" y="5" width="12" height="14" uuid="72599d07-46b0-42af-9d79-8f93a8100b50"/>
@@ -481,7 +481,7 @@
 			</staticText>
 			<image vAlign="Middle">
 				<reportElement x="220" y="6" width="15" height="12" uuid="393b1d02-78bb-44fe-9dcc-7dfa7516ecf7"/>
-				<imageExpression><![CDATA["./images/tu"+($F{isGxb}.contains("1")?"2":"1")+".png"]]></imageExpression>
+				<imageExpression><![CDATA["./images/tu"+($F{isGxb}!=null?($F{isGxb}.contains("1")?"2":"1"):"1")+".png"]]></imageExpression>
 			</image>
 			<staticText>
 				<reportElement x="235" y="5" width="12" height="14" uuid="b8cbca3e-49a3-43b8-a4e5-67d8c0693874"/>
@@ -509,7 +509,7 @@
 				</textElement>
 				<text><![CDATA[脑卒中（脑梗死，脑出血，TIA）]]></text>
 			</staticText>
-			<textField isStretchWithOverflow="true">
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
 				<reportElement x="255" y="0" width="267" height="25" uuid="47bfe26e-f959-42c7-8bf2-b6da9496e129">
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
@@ -544,7 +544,7 @@
 			</staticText>
 			<image vAlign="Middle">
 				<reportElement x="191" y="6" width="15" height="12" uuid="b703b663-59b4-4bea-9ea4-56e65946a745"/>
-				<imageExpression><![CDATA["./images/tu"+($F{isNzz}.contains("0")?"2":"1")+".png"]]></imageExpression>
+				<imageExpression><![CDATA["./images/tu"+($F{isNzz}!=null?($F{isNzz}.contains("0")?"2":"1"):"1")+".png"]]></imageExpression>
 			</image>
 			<staticText>
 				<reportElement x="206" y="5" width="12" height="14" uuid="858e373e-5f85-40cc-8707-5f130d0afeee"/>
@@ -555,7 +555,7 @@
 			</staticText>
 			<image vAlign="Middle">
 				<reportElement x="220" y="6" width="15" height="12" uuid="a44d43ae-7cef-4d41-8423-d4ca1ac07e3c"/>
-				<imageExpression><![CDATA["./images/tu"+($F{isNzz}.contains("1")?"2":"1")+".png"]]></imageExpression>
+				<imageExpression><![CDATA["./images/tu"+($F{isNzz}!=null?($F{isNzz}.contains("1")?"2":"1"):"1")+".png"]]></imageExpression>
 			</image>
 			<staticText>
 				<reportElement x="235" y="5" width="12" height="14" uuid="6903c375-a9d4-4083-8119-2775d96ef915"/>
@@ -586,7 +586,7 @@
 
 处的慢性疾病）]]></text>
 			</staticText>
-			<textField isStretchWithOverflow="true">
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
 				<reportElement x="255" y="0" width="267" height="75" uuid="d8cfe554-b2d2-4a46-81ec-a72478004a2e">
 					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
 				</reportElement>
@@ -619,7 +619,7 @@
 			</staticText>
 			<image vAlign="Middle">
 				<reportElement x="191" y="33" width="15" height="12" uuid="3b4871b9-b9d9-4590-bc21-c95d629869b7"/>
-				<imageExpression><![CDATA["./images/tu"+($F{isMxbybjbs}.contains("0")?"2":"1")+".png"]]></imageExpression>
+				<imageExpression><![CDATA["./images/tu"+($F{isMxbybjbs}!=null?($F{isMxbybjbs}.contains("0")?"2":"1"):"1")+".png"]]></imageExpression>
 			</image>
 			<staticText>
 				<reportElement x="206" y="32" width="12" height="14" uuid="ec0b573d-730b-418d-a3ac-01af242de747"/>
@@ -630,7 +630,7 @@
 			</staticText>
 			<image vAlign="Middle">
 				<reportElement x="220" y="33" width="15" height="12" uuid="2c721f28-386a-491e-b83a-40dd54bea7f9"/>
-				<imageExpression><![CDATA["./images/tu"+($F{isMxbybjbs}.contains("1")?"2":"1")+".png"]]></imageExpression>
+				<imageExpression><![CDATA["./images/tu"+($F{isMxbybjbs}!=null?($F{isMxbybjbs}.contains("1")?"2":"1"):"1")+".png"]]></imageExpression>
 			</image>
 			<staticText>
 				<reportElement x="235" y="32" width="12" height="14" uuid="41e306ad-79bc-4d9e-8720-f00a0138c510"/>
@@ -663,7 +663,7 @@
 
 以及其他慢性呼吸系统疾病）：]]></text>
 			</staticText>
-			<textField isStretchWithOverflow="true">
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
 				<reportElement x="255" y="0" width="267" height="100" uuid="c7427cd1-5dc7-4e39-a0bd-c54e70bee631">
 					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
 				</reportElement>
@@ -681,7 +681,7 @@
 			</textField>
 			<image vAlign="Middle">
 				<reportElement x="191" y="45" width="15" height="12" uuid="0206f385-1849-483c-9af1-d28611473a6c"/>
-				<imageExpression><![CDATA["./images/tu"+($F{isMxhxjbs}.contains("0")?"2":"1")+".png"]]></imageExpression>
+				<imageExpression><![CDATA["./images/tu"+($F{isMxhxjbs}!=null?($F{isMxhxjbs}.contains("0")?"2":"1"):"1")+".png"]]></imageExpression>
 			</image>
 			<staticText>
 				<reportElement x="206" y="44" width="12" height="14" uuid="6e0ea09b-208f-4848-8e99-80ed808b0fc8"/>
@@ -692,7 +692,7 @@
 			</staticText>
 			<image vAlign="Middle">
 				<reportElement x="220" y="45" width="15" height="12" uuid="f24fad85-b08b-45d5-8d53-87800fff7ac2"/>
-				<imageExpression><![CDATA["./images/tu"+($F{isMxhxjbs}.contains("1")?"2":"1")+".png"]]></imageExpression>
+				<imageExpression><![CDATA["./images/tu"+($F{isMxhxjbs}!=null?($F{isMxhxjbs}.contains("1")?"2":"1"):"1")+".png"]]></imageExpression>
 			</image>
 			<staticText>
 				<reportElement x="235" y="44" width="12" height="14" uuid="a4893857-24ce-4387-8d71-921cb97dc016"/>
@@ -735,7 +735,7 @@
 				</textElement>
 				<text><![CDATA[反流性食管炎]]></text>
 			</staticText>
-			<textField isStretchWithOverflow="true">
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
 				<reportElement x="255" y="0" width="267" height="25" uuid="1723de4f-6041-4b3a-b5de-b5493afd346e">
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
@@ -770,7 +770,7 @@
 			</staticText>
 			<image vAlign="Middle">
 				<reportElement x="191" y="6" width="15" height="12" uuid="bb04ab9a-6c60-4eed-9b35-e28d877df073"/>
-				<imageExpression><![CDATA["./images/tu"+($F{isFlxsgy}.contains("0")?"2":"1")+".png"]]></imageExpression>
+				<imageExpression><![CDATA["./images/tu"+($F{isFlxsgy}!=null?($F{isFlxsgy}.contains("0")?"2":"1"):"1")+".png"]]></imageExpression>
 			</image>
 			<staticText>
 				<reportElement x="206" y="5" width="12" height="14" uuid="66cc51cf-3490-4351-9a88-44d0deb590a5"/>
@@ -781,7 +781,7 @@
 			</staticText>
 			<image vAlign="Middle">
 				<reportElement x="220" y="6" width="15" height="12" uuid="fbfb1686-5aec-48cd-a7a5-b724039d46ea"/>
-				<imageExpression><![CDATA["./images/tu"+($F{isFlxsgy}.contains("1")?"2":"1")+".png"]]></imageExpression>
+				<imageExpression><![CDATA["./images/tu"+($F{isFlxsgy}!=null?($F{isFlxsgy}.contains("1")?"2":"1"):"1")+".png"]]></imageExpression>
 			</image>
 			<staticText>
 				<reportElement x="235" y="5" width="12" height="14" uuid="4bb9478f-5166-4865-99eb-aedb7e6eabe4"/>
@@ -826,7 +826,7 @@
 			</staticText>
 			<image vAlign="Middle">
 				<reportElement x="191" y="6" width="15" height="12" uuid="bf21c563-78ae-4a3b-8631-e2acfc6bf3fc"/>
-				<imageExpression><![CDATA["./images/tu"+($F{isMxwy}.contains("0")?"2":"1")+".png"]]></imageExpression>
+				<imageExpression><![CDATA["./images/tu"+($F{isMxwy}!=null?($F{isMxwy}.contains("0")?"2":"1"):"1")+".png"]]></imageExpression>
 			</image>
 			<staticText>
 				<reportElement x="206" y="5" width="12" height="14" uuid="e9caedb9-3760-4f28-9ee4-7b81017050d7"/>
@@ -837,7 +837,7 @@
 			</staticText>
 			<image vAlign="Middle">
 				<reportElement x="220" y="6" width="15" height="12" uuid="397eaf3a-a0b0-404d-a2ab-5add0ac3ebe0"/>
-				<imageExpression><![CDATA["./images/tu"+($F{isMxwy}.contains("1")?"2":"1")+".png"]]></imageExpression>
+				<imageExpression><![CDATA["./images/tu"+($F{isMxwy}!=null?($F{isMxwy}.contains("1")?"2":"1"):"1")+".png"]]></imageExpression>
 			</image>
 			<staticText>
 				<reportElement x="235" y="5" width="12" height="14" uuid="b9f2a383-29f1-4a43-b10d-28aad10d95f2"/>
@@ -889,15 +889,15 @@
 			</staticText>
 			<image vAlign="Middle">
 				<reportElement x="262" y="6" width="15" height="12" uuid="0d369ae7-23e9-44f8-b40f-72b7dd36d20c"/>
-				<imageExpression><![CDATA["./images/tu"+($F{mxwyType}.contains("1")?"2":"1")+".png"]]></imageExpression>
+				<imageExpression><![CDATA["./images/tu"+($F{mxwyType}!=null?($F{mxwyType}.contains("1")?"2":"1"):"1")+".png"]]></imageExpression>
 			</image>
 			<image vAlign="Middle">
 				<reportElement x="352" y="6" width="15" height="12" uuid="ceba271d-9f2a-4d67-9581-703d4b68888d"/>
-				<imageExpression><![CDATA["./images/tu"+($F{mxwyType}.contains("2")?"2":"1")+".png"]]></imageExpression>
+				<imageExpression><![CDATA["./images/tu"+($F{mxwyType}!=null?($F{mxwyType}.contains("2")?"2":"1"):"1")+".png"]]></imageExpression>
 			</image>
 			<image vAlign="Middle">
 				<reportElement x="453" y="6" width="15" height="12" uuid="f2fb6e32-7cbd-4af2-b13b-17b89f3e9be4"/>
-				<imageExpression><![CDATA["./images/tu"+($F{mxwyType}.contains("3")?"2":"1")+".png"]]></imageExpression>
+				<imageExpression><![CDATA["./images/tu"+($F{mxwyType}!=null?($F{mxwyType}.contains("3")?"2":"1"):"1")+".png"]]></imageExpression>
 			</image>
 			<staticText>
 				<reportElement x="469" y="5" width="37" height="18" uuid="ac6fe3cd-73d9-49bf-a67d-cefade9dd049">
@@ -923,7 +923,7 @@
 				</textElement>
 				<text><![CDATA[胃溃疡]]></text>
 			</staticText>
-			<textField isStretchWithOverflow="true">
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
 				<reportElement x="255" y="0" width="267" height="25" uuid="e741cf60-a2a9-44b7-ae35-5d822240dd2c">
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
@@ -958,7 +958,7 @@
 			</staticText>
 			<image vAlign="Middle">
 				<reportElement x="191" y="6" width="15" height="12" uuid="e86c5527-82c3-4198-93bf-652c867c20ef"/>
-				<imageExpression><![CDATA["./images/tu"+($F{isWky}.contains("0")?"2":"1")+".png"]]></imageExpression>
+				<imageExpression><![CDATA["./images/tu"+($F{isWky}!=null?($F{isWky}.contains("0")?"2":"1"):"1")+".png"]]></imageExpression>
 			</image>
 			<staticText>
 				<reportElement x="206" y="5" width="12" height="14" uuid="6e9402f0-f722-497a-8888-a3acf788c5ae"/>
@@ -969,7 +969,7 @@
 			</staticText>
 			<image vAlign="Middle">
 				<reportElement x="220" y="6" width="15" height="12" uuid="cbc2ee7d-1096-46f2-b7e6-e33119b86271"/>
-				<imageExpression><![CDATA["./images/tu"+($F{isWky}.contains("1")?"2":"1")+".png"]]></imageExpression>
+				<imageExpression><![CDATA["./images/tu"+($F{isWky}!=null?($F{isWky}.contains("1")?"2":"1"):"1")+".png"]]></imageExpression>
 			</image>
 			<staticText>
 				<reportElement x="235" y="5" width="12" height="14" uuid="907a1ca5-a17c-4167-910f-641661da2889"/>
@@ -997,7 +997,7 @@
 				</textElement>
 				<text><![CDATA[十二指肠溃疡]]></text>
 			</staticText>
-			<textField isStretchWithOverflow="true">
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
 				<reportElement x="255" y="0" width="267" height="25" uuid="e6c827e0-d5ec-48fe-9a1e-90f07953caa4">
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
@@ -1032,7 +1032,7 @@
 			</staticText>
 			<image vAlign="Middle">
 				<reportElement x="191" y="6" width="15" height="12" uuid="e3098b6b-3e53-4ede-9783-deb316b7b42d"/>
-				<imageExpression><![CDATA["./images/tu"+($F{isSezcky}.contains("0")?"2":"1")+".png"]]></imageExpression>
+				<imageExpression><![CDATA["./images/tu"+($F{isSezcky}!=null?($F{isSezcky}.contains("0")?"2":"1"):1)+".png"]]></imageExpression>
 			</image>
 			<staticText>
 				<reportElement x="206" y="5" width="12" height="14" uuid="ca77372e-9fe7-45ef-b5f1-81f9042ec17a"/>
@@ -1043,7 +1043,7 @@
 			</staticText>
 			<image vAlign="Middle">
 				<reportElement x="220" y="6" width="15" height="12" uuid="f264cf7c-264b-493b-856d-cac99993491e"/>
-				<imageExpression><![CDATA["./images/tu"+($F{isSezcky}.contains("1")?"2":"1")+".png"]]></imageExpression>
+				<imageExpression><![CDATA["./images/tu"+($F{isSezcky}!=null?($F{isSezcky}.contains("1")?"2":"1"):1)+".png"]]></imageExpression>
 			</image>
 			<staticText>
 				<reportElement x="235" y="5" width="12" height="14" uuid="5b314d1c-b7b6-4e40-a7d1-1bf1bd845fd3"/>
@@ -1071,7 +1071,7 @@
 				</textElement>
 				<text><![CDATA[慢性乙型肝炎]]></text>
 			</staticText>
-			<textField isStretchWithOverflow="true">
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
 				<reportElement x="255" y="0" width="267" height="25" uuid="f0056a31-8ca2-4d4d-bd99-bfaf997d5165">
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
@@ -1106,7 +1106,7 @@
 			</staticText>
 			<image vAlign="Middle">
 				<reportElement x="191" y="6" width="15" height="12" uuid="286c4236-3651-45d6-9fea-b56005abf414"/>
-				<imageExpression><![CDATA["./images/tu"+($F{isMxygy}.contains("0")?"2":"1")+".png"]]></imageExpression>
+				<imageExpression><![CDATA["./images/tu"+($F{isMxygy}!=null?($F{isMxygy}.contains("0")?"2":"1"):"1")+".png"]]></imageExpression>
 			</image>
 			<staticText>
 				<reportElement x="206" y="5" width="12" height="14" uuid="7e195b26-ab66-4c08-a6d3-3a8334c24299"/>
@@ -1117,7 +1117,7 @@
 			</staticText>
 			<image vAlign="Middle">
 				<reportElement x="220" y="6" width="15" height="12" uuid="12dd59c8-024b-4093-bedd-12a8bc2a94ac"/>
-				<imageExpression><![CDATA["./images/tu"+($F{isMxygy}.contains("1")?"2":"1")+".png"]]></imageExpression>
+				<imageExpression><![CDATA["./images/tu"+($F{isMxygy}!=null?($F{isMxygy}.contains("1")?"2":"1"):"1")+".png"]]></imageExpression>
 			</image>
 			<staticText>
 				<reportElement x="235" y="5" width="12" height="14" uuid="4b096ac5-c4ec-45fb-80cb-47ff823b3ee0"/>
@@ -1145,7 +1145,7 @@
 				<text><![CDATA[乙肝表面抗原阳性
 （HBsAg+）]]></text>
 			</staticText>
-			<textField isStretchWithOverflow="true">
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
 				<reportElement x="255" y="0" width="267" height="25" uuid="43483ef7-14e6-43fa-8bd5-cc596792fac6">
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
@@ -1180,7 +1180,7 @@
 			</staticText>
 			<image vAlign="Middle">
 				<reportElement x="191" y="6" width="15" height="12" uuid="c1f7a9e5-dc4e-4bd2-9fb9-9915e7b0ae78"/>
-				<imageExpression><![CDATA["./images/tu"+($F{isYgkyyx}.contains("0")?"2":"1")+".png"]]></imageExpression>
+				<imageExpression><![CDATA["./images/tu"+($F{isYgkyyx}!=null?($F{isYgkyyx}.contains("0")?"2":"1"):"1")+".png"]]></imageExpression>
 			</image>
 			<staticText>
 				<reportElement x="206" y="5" width="12" height="14" uuid="35e214e0-9cb0-4d98-9f69-aa144be99010"/>
@@ -1191,7 +1191,7 @@
 			</staticText>
 			<image vAlign="Middle">
 				<reportElement x="220" y="6" width="15" height="12" uuid="9703adfb-ec92-430d-99e2-75b93f0fc39d"/>
-				<imageExpression><![CDATA["./images/tu"+($F{isYgkyyx}.contains("1")?"2":"1")+".png"]]></imageExpression>
+				<imageExpression><![CDATA["./images/tu"+($F{isYgkyyx}!=null?($F{isYgkyyx}.contains("1")?"2":"1"):"1")+".png"]]></imageExpression>
 			</image>
 			<staticText>
 				<reportElement x="235" y="5" width="12" height="14" uuid="ec9348a8-a9d6-4c35-9b75-f17cd20e78f3"/>
@@ -1219,7 +1219,7 @@
 				</textElement>
 				<text><![CDATA[慢性丙型肝炎]]></text>
 			</staticText>
-			<textField isStretchWithOverflow="true">
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
 				<reportElement x="255" y="0" width="267" height="25" uuid="a247cc2f-7aad-4025-ae2e-f131b4745d6f">
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
@@ -1254,7 +1254,7 @@
 			</staticText>
 			<image vAlign="Middle">
 				<reportElement x="191" y="6" width="15" height="12" uuid="d5a93d95-8653-4eff-ab4a-a0c902eee7d2"/>
-				<imageExpression><![CDATA["./images/tu"+($F{isMxbxgy}.contains("0")?"2":"1")+".png"]]></imageExpression>
+				<imageExpression><![CDATA["./images/tu"+($F{isMxbxgy}!=null?($F{isMxbxgy}.contains("0")?"2":"1"):"1")+".png"]]></imageExpression>
 			</image>
 			<staticText>
 				<reportElement x="206" y="5" width="12" height="14" uuid="513476b3-d298-4ced-a979-952e10858293"/>
@@ -1265,7 +1265,7 @@
 			</staticText>
 			<image vAlign="Middle">
 				<reportElement x="220" y="6" width="15" height="12" uuid="687ced95-8a36-435a-8eab-bd8b4ebeffd2"/>
-				<imageExpression><![CDATA["./images/tu"+($F{isMxbxgy}.contains("1")?"2":"1")+".png"]]></imageExpression>
+				<imageExpression><![CDATA["./images/tu"+($F{isMxbxgy}!=null?($F{isMxbxgy}.contains("1")?"2":"1"):"1")+".png"]]></imageExpression>
 			</image>
 			<staticText>
 				<reportElement x="235" y="5" width="12" height="14" uuid="afd2ae8e-ada8-4096-ab22-76fc615c7313"/>
@@ -1327,7 +1327,7 @@
 			</staticText>
 			<image vAlign="Middle">
 				<reportElement x="191" y="6" width="15" height="12" uuid="30a1b35c-af5b-41e7-9fd4-5c51cfd55cf7"/>
-				<imageExpression><![CDATA["./images/tu"+($F{isGyh}.contains("0")?"2":"1")+".png"]]></imageExpression>
+				<imageExpression><![CDATA["./images/tu"+($F{isGyh}!=null?($F{isGyh}.contains("0")?"2":"1"):"1")+".png"]]></imageExpression>
 			</image>
 			<staticText>
 				<reportElement x="206" y="5" width="12" height="14" uuid="c07d6c53-ac29-4237-bd1c-d44b69796714"/>
@@ -1338,7 +1338,7 @@
 			</staticText>
 			<image vAlign="Middle">
 				<reportElement x="220" y="6" width="15" height="12" uuid="f9850773-9b21-4837-b3a1-e0bb0b68a1d8"/>
-				<imageExpression><![CDATA["./images/tu"+($F{isGyh}.contains("1")?"2":"1")+".png"]]></imageExpression>
+				<imageExpression><![CDATA["./images/tu"+($F{isGyh}!=null?($F{isGyh}.contains("1")?"2":"1"):"1")+".png"]]></imageExpression>
 			</image>
 			<staticText>
 				<reportElement x="235" y="5" width="12" height="14" uuid="29a1cf30-a3ad-4663-ba1a-44b6031996b0"/>
@@ -1384,7 +1384,7 @@
 			</staticText>
 			<image vAlign="Middle">
 				<reportElement x="191" y="6" width="15" height="12" uuid="7c9967b0-a801-4c1b-8649-f612b1da58ec"/>
-				<imageExpression><![CDATA["./images/tu"+($F{isZfg}.contains("0")?"2":"1")+".png"]]></imageExpression>
+				<imageExpression><![CDATA["./images/tu"+($F{isZfg}!=null?($F{isZfg}.contains("0")?"2":"1"):"1")+".png"]]></imageExpression>
 			</image>
 			<staticText>
 				<reportElement x="206" y="5" width="12" height="14" uuid="95547651-6aa2-49d7-bd16-e32e0284a379"/>
@@ -1395,7 +1395,7 @@
 			</staticText>
 			<image vAlign="Middle">
 				<reportElement x="220" y="6" width="15" height="12" uuid="4dba934e-226c-40b6-8865-61d1f1d73b50"/>
-				<imageExpression><![CDATA["./images/tu"+($F{isZfg}.contains("1")?"2":"1")+".png"]]></imageExpression>
+				<imageExpression><![CDATA["./images/tu"+($F{isZfg}!=null?($F{isZfg}.contains("1")?"2":"1"):"1")+".png"]]></imageExpression>
 			</image>
 			<staticText>
 				<reportElement x="235" y="5" width="12" height="14" uuid="1e6b9220-8511-4911-aca2-af2733d1ccb0"/>
@@ -1445,19 +1445,19 @@
 			</staticText>
 			<image vAlign="Middle">
 				<reportElement x="261" y="6" width="15" height="12" uuid="4ce0b94f-7efe-425d-bcdb-094227d2f3df"/>
-				<imageExpression><![CDATA["./images/tu"+($F{zfgType}.contains("1")?"2":"1")+".png"]]></imageExpression>
+				<imageExpression><![CDATA["./images/tu"+($F{zfgType}!=null?($F{zfgType}.contains("1")?"2":"1"):"1")+".png"]]></imageExpression>
 			</image>
 			<image vAlign="Middle">
 				<reportElement x="302" y="6" width="15" height="12" uuid="474b3b60-71e7-404d-9965-d65f07f6548a"/>
-				<imageExpression><![CDATA["./images/tu"+($F{zfgType}.contains("2")?"2":"1")+".png"]]></imageExpression>
+				<imageExpression><![CDATA["./images/tu"+($F{zfgType}!=null?($F{zfgType}.contains("2")?"2":"1"):"1")+".png"]]></imageExpression>
 			</image>
 			<image vAlign="Middle">
 				<reportElement x="344" y="6" width="15" height="12" uuid="817b648f-e49b-4ba5-93e6-befe6058faec"/>
-				<imageExpression><![CDATA["./images/tu"+($F{zfgType}.contains("3")?"2":"1")+".png"]]></imageExpression>
+				<imageExpression><![CDATA["./images/tu"+($F{zfgType}!=null?($F{zfgType}.contains("3")?"2":"1"):"1")+".png"]]></imageExpression>
 			</image>
 			<image vAlign="Middle">
 				<reportElement x="386" y="6" width="15" height="12" uuid="5bc610e4-2e9c-45c4-bd31-84de8f2d6d41"/>
-				<imageExpression><![CDATA["./images/tu"+($F{zfgType}.contains("4")?"2":"1")+".png"]]></imageExpression>
+				<imageExpression><![CDATA["./images/tu"+($F{zfgType}!=null?($F{zfgType}.contains("4")?"2":"1"):"1")+".png"]]></imageExpression>
 			</image>
 		</band>
 		<band height="25" splitType="Prevent">
@@ -1496,7 +1496,7 @@
 			</staticText>
 			<image vAlign="Middle">
 				<reportElement x="191" y="6" width="15" height="12" uuid="4791b495-40ca-4cb7-850f-504e0998d93d"/>
-				<imageExpression><![CDATA["./images/tu"+($F{isDjsz}.contains("0")?"2":"1")+".png"]]></imageExpression>
+				<imageExpression><![CDATA["./images/tu"+($F{isDjsz}!=null?($F{isDjsz}.contains("0")?"2":"1"):"1")+".png"]]></imageExpression>
 			</image>
 			<staticText>
 				<reportElement x="206" y="5" width="12" height="14" uuid="a73db71d-a153-4b21-acab-b87307cc0ce9"/>
@@ -1507,7 +1507,7 @@
 			</staticText>
 			<image vAlign="Middle">
 				<reportElement x="220" y="6" width="15" height="12" uuid="7aa1dd4a-acea-41a8-ba2e-da11a5b7acfc"/>
-				<imageExpression><![CDATA["./images/tu"+($F{isDjsz}.contains("1")?"2":"1")+".png"]]></imageExpression>
+				<imageExpression><![CDATA["./images/tu"+($F{isDjsz}!=null?($F{isDjsz}.contains("1")?"2":"1"):"1")+".png"]]></imageExpression>
 			</image>
 			<staticText>
 				<reportElement x="235" y="5" width="12" height="14" uuid="702f198d-6129-48b8-8ddf-6f00cf0f0d49"/>
@@ -1533,7 +1533,7 @@
 			</staticText>
 			<image vAlign="Middle">
 				<reportElement x="261" y="6" width="15" height="12" uuid="24ca0888-519e-46cb-ad00-a4110979ff51"/>
-				<imageExpression><![CDATA["./images/tu"+($F{djszType}.contains("1")?"2":"1")+".png"]]></imageExpression>
+				<imageExpression><![CDATA["./images/tu"+($F{djszType}!=null?($F{djszType}.contains("1")?"2":"1"):"1")+".png"]]></imageExpression>
 			</image>
 			<staticText>
 				<reportElement x="276" y="5" width="55" height="18" uuid="acca438f-7354-4080-8421-3d54c83d41e8">
@@ -1546,7 +1546,7 @@
 			</staticText>
 			<image vAlign="Middle">
 				<reportElement x="338" y="6" width="15" height="12" uuid="bcaa9b9c-5ef5-4adc-a2a4-38740b5ea568"/>
-				<imageExpression><![CDATA["./images/tu"+($F{djszType}.contains("2")?"2":"1")+".png"]]></imageExpression>
+				<imageExpression><![CDATA["./images/tu"+($F{djszType}!=null?($F{djszType}.contains("2")?"2":"1"):"1")+".png"]]></imageExpression>
 			</image>
 			<staticText>
 				<reportElement x="353" y="5" width="57" height="18" uuid="016825d4-21e0-4a0d-9883-f480154f6ab4">
@@ -1559,7 +1559,7 @@
 			</staticText>
 			<image vAlign="Middle">
 				<reportElement x="417" y="6" width="15" height="12" uuid="266c5bbf-3bc3-4f34-8d02-21081bc1e2ff"/>
-				<imageExpression><![CDATA["./images/tu"+($F{djszType}.contains("3")?"2":"1")+".png"]]></imageExpression>
+				<imageExpression><![CDATA["./images/tu"+($F{djszType}!=null?($F{djszType}.contains("3")?"2":"1"):"1")+".png"]]></imageExpression>
 			</image>
 			<staticText>
 				<reportElement x="432" y="5" width="36" height="18" uuid="17ae057d-b49a-49a3-88f9-6c4cc2f33323">
@@ -1572,7 +1572,7 @@
 			</staticText>
 			<image vAlign="Middle">
 				<reportElement x="475" y="6" width="15" height="12" uuid="38829097-6c8c-46dd-9839-9ad6278c0504"/>
-				<imageExpression><![CDATA["./images/tu"+($F{djszType}.contains("4")?"2":"1")+".png"]]></imageExpression>
+				<imageExpression><![CDATA["./images/tu"+($F{djszType}!=null?($F{djszType}.contains("4")?"2":"1"):"1")+".png"]]></imageExpression>
 			</image>
 			<staticText>
 				<reportElement x="490" y="5" width="30" height="18" uuid="c0c728d1-99d9-4e01-8a2f-e0c3d4b3519a">
@@ -1601,7 +1601,7 @@
 				</textElement>
 				<text><![CDATA[胆囊摘除术]]></text>
 			</staticText>
-			<textField isStretchWithOverflow="true">
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
 				<reportElement x="255" y="0" width="267" height="25" uuid="3182d327-2e0f-4c99-b10b-58bfb6497590">
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
@@ -1636,7 +1636,7 @@
 			</staticText>
 			<image vAlign="Middle">
 				<reportElement x="191" y="7" width="15" height="12" uuid="a83e2744-4c31-4e1f-912d-78bd368836db"/>
-				<imageExpression><![CDATA["./images/tu"+($F{isDnzcs}.contains("0")?"2":"1")+".png"]]></imageExpression>
+				<imageExpression><![CDATA["./images/tu"+($F{isDnzcs}!=null?($F{isDnzcs}.contains("0")?"2":"1"):1)+".png"]]></imageExpression>
 			</image>
 			<staticText>
 				<reportElement x="206" y="6" width="12" height="14" uuid="d58680df-0998-4519-a716-6cf6b167461a"/>
@@ -1647,7 +1647,7 @@
 			</staticText>
 			<image vAlign="Middle">
 				<reportElement x="220" y="6" width="15" height="12" uuid="ceabc90e-513c-42fb-8514-e649a1d172cf"/>
-				<imageExpression><![CDATA["./images/tu"+($F{isDnzcs}.contains("1")?"2":"1")+".png"]]></imageExpression>
+				<imageExpression><![CDATA["./images/tu"+($F{isDnzcs}!=null?($F{isDnzcs}.contains("1")?"2":"1"):1)+".png"]]></imageExpression>
 			</image>
 			<staticText>
 				<reportElement x="235" y="5" width="12" height="14" uuid="15adcd6e-5fbf-400e-b472-5e9e4f58d34e"/>
@@ -1709,7 +1709,7 @@
 			</textField>
 			<image vAlign="Middle">
 				<reportElement x="191" y="6" width="15" height="12" uuid="f4636fee-9351-4bde-ba54-b7dc34461155"/>
-				<imageExpression><![CDATA["./images/tu"+($F{isMxyxy}.contains("0")?"2":"1")+".png"]]></imageExpression>
+				<imageExpression><![CDATA["./images/tu"+($F{isMxyxy}!=null?($F{isMxyxy}.contains("0")?"2":"1"):"1")+".png"]]></imageExpression>
 			</image>
 			<staticText>
 				<reportElement x="206" y="5" width="12" height="14" uuid="c13139fa-23cf-4b37-a62c-039f4df5562d"/>
@@ -1720,7 +1720,7 @@
 			</staticText>
 			<image vAlign="Middle">
 				<reportElement x="220" y="6" width="15" height="12" uuid="2ebd3441-7ebe-4409-8119-e354e66748ef"/>
-				<imageExpression><![CDATA["./images/tu"+($F{isMxyxy}.contains("1")?"2":"1")+".png"]]></imageExpression>
+				<imageExpression><![CDATA["./images/tu"+($F{isMxyxy}!=null?($F{isMxyxy}.contains("1")?"2":"1"):"1")+".png"]]></imageExpression>
 			</image>
 			<staticText>
 				<reportElement x="235" y="5" width="12" height="14" uuid="7e099af0-e4f3-4867-926e-bb92f854075f"/>
@@ -1748,7 +1748,7 @@
 				</textElement>
 				<text><![CDATA[慢性结肠炎]]></text>
 			</staticText>
-			<textField isStretchWithOverflow="true">
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
 				<reportElement x="255" y="0" width="267" height="25" uuid="e768bd32-320b-452d-bb4f-4d1cc4c0b403">
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
@@ -1783,7 +1783,7 @@
 			</staticText>
 			<image vAlign="Middle">
 				<reportElement x="191" y="6" width="15" height="12" uuid="4a8bd950-90ef-4324-98a4-eec2b0417fce"/>
-				<imageExpression><![CDATA["./images/tu"+($F{isMxjcy}.contains("0")?"2":"1")+".png"]]></imageExpression>
+				<imageExpression><![CDATA["./images/tu"+($F{isMxjcy}!=null?($F{isMxjcy}.contains("0")?"2":"1"):"1")+".png"]]></imageExpression>
 			</image>
 			<staticText>
 				<reportElement x="206" y="5" width="12" height="14" uuid="0099ab8f-a419-42be-9c13-69d21c6252ca"/>
@@ -1794,7 +1794,7 @@
 			</staticText>
 			<image vAlign="Middle">
 				<reportElement x="220" y="6" width="15" height="12" uuid="fa9233e4-ecd4-43ef-b55c-524627aee569"/>
-				<imageExpression><![CDATA["./images/tu"+($F{isMxjcy}.contains("1")?"2":"1")+".png"]]></imageExpression>
+				<imageExpression><![CDATA["./images/tu"+($F{isMxjcy}!=null?($F{isMxjcy}.contains("1")?"2":"1"):"1")+".png"]]></imageExpression>
 			</image>
 			<staticText>
 				<reportElement x="235" y="5" width="12" height="14" uuid="45108d10-b577-4636-b107-e1b97c814d42"/>
@@ -1840,7 +1840,7 @@
 			</staticText>
 			<image vAlign="Middle">
 				<reportElement x="191" y="6" width="15" height="12" uuid="da6eebca-5d77-477f-8e67-8898b0147b7f"/>
-				<imageExpression><![CDATA["./images/tu"+($F{isCxr}.contains("0")?"2":"1")+".png"]]></imageExpression>
+				<imageExpression><![CDATA["./images/tu"+($F{isCxr}!=null?($F{isCxr}.contains("0")?"2":"1"):"1")+".png"]]></imageExpression>
 			</image>
 			<staticText>
 				<reportElement x="206" y="5" width="12" height="14" uuid="49367207-98bc-4c24-af96-8ef7b6adda54"/>
@@ -1851,7 +1851,7 @@
 			</staticText>
 			<image vAlign="Middle">
 				<reportElement x="220" y="6" width="15" height="12" uuid="b798920c-bcbd-49c4-941a-e0a9d9975046"/>
-				<imageExpression><![CDATA["./images/tu"+($F{isCxr}.contains("1")?"2":"1")+".png"]]></imageExpression>
+				<imageExpression><![CDATA["./images/tu"+($F{isCxr}!=null?($F{isCxr}.contains("1")?"2":"1"):"1")+".png"]]></imageExpression>
 			</image>
 			<staticText>
 				<reportElement x="235" y="5" width="12" height="14" uuid="367e7cb5-31ca-4055-aa07-05644c491878"/>
@@ -1879,7 +1879,7 @@
 			</staticText>
 			<image vAlign="Middle">
 				<reportElement x="420" y="6" width="15" height="12" uuid="fcfc86bd-28d4-43b4-9a0c-96a0cda4ad11"/>
-				<imageExpression><![CDATA["./images/tu"+($F{cxrType}.contains("1")?"2":"1")+".png"]]></imageExpression>
+				<imageExpression><![CDATA["./images/tu"+($F{cxrType}!=null?($F{cxrType}.contains("1")?"2":"1"):"1")+".png"]]></imageExpression>
 			</image>
 			<staticText>
 				<reportElement x="435" y="5" width="12" height="14" uuid="dc4e5b18-49fb-48a4-b99d-1d14e526467d"/>
@@ -1890,7 +1890,7 @@
 			</staticText>
 			<image vAlign="Middle">
 				<reportElement x="448" y="6" width="15" height="12" uuid="9dc2a990-ea68-45b1-a5d8-295dc5c17e68"/>
-				<imageExpression><![CDATA["./images/tu"+($F{cxrType}.contains("2")?"2":"1")+".png"]]></imageExpression>
+				<imageExpression><![CDATA["./images/tu"+($F{cxrType}!=null?($F{cxrType}.contains("2")?"2":"1"):"1")+".png"]]></imageExpression>
 			</image>
 			<staticText>
 				<reportElement x="463" y="5" width="12" height="14" uuid="7effcab5-087c-4296-9cdb-fd1a65ec865b"/>
@@ -1901,7 +1901,7 @@
 			</staticText>
 			<image vAlign="Middle">
 				<reportElement x="477" y="7" width="15" height="12" uuid="dc80be9b-20a1-4c7d-82b5-e861d1216553"/>
-				<imageExpression><![CDATA["./images/tu"+($F{cxrType}.contains("3")?"2":"1")+".png"]]></imageExpression>
+				<imageExpression><![CDATA["./images/tu"+($F{cxrType}!=null?($F{cxrType}.contains("3")?"2":"1"):"1")+".png"]]></imageExpression>
 			</image>
 			<staticText>
 				<reportElement x="490" y="6" width="30" height="18" uuid="81f6e8b6-e5e6-497c-a24d-2db1bf022c1f">
@@ -1931,7 +1931,7 @@
 				</textElement>
 				<text><![CDATA[其他消化道疾病史]]></text>
 			</staticText>
-			<textField isStretchWithOverflow="true">
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
 				<reportElement x="255" y="0" width="267" height="25" uuid="4139c5bd-9fa0-48b6-b6e7-8c9befff8862">
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
@@ -1966,7 +1966,7 @@
 			</staticText>
 			<image vAlign="Middle">
 				<reportElement x="191" y="6" width="15" height="12" uuid="040c9891-66d1-43fb-b633-9e7ab7a84a1e"/>
-				<imageExpression><![CDATA["./images/tu"+($F{isOtherJbs}.contains("0")?"2":"1")+".png"]]></imageExpression>
+				<imageExpression><![CDATA["./images/tu"+($F{isOtherJbs}!=null?($F{isOtherJbs}.contains("0")?"2":"1"):"1")+".png"]]></imageExpression>
 			</image>
 			<staticText>
 				<reportElement x="206" y="5" width="12" height="14" uuid="86fbc573-eeff-4511-84ad-2febff3bdedb"/>
@@ -1977,7 +1977,7 @@
 			</staticText>
 			<image vAlign="Middle">
 				<reportElement x="220" y="6" width="15" height="12" uuid="b4707f1f-d136-4af0-a1d9-f3816b02095e"/>
-				<imageExpression><![CDATA["./images/tu"+($F{isOtherJbs}.contains("1")?"2":"1")+".png"]]></imageExpression>
+				<imageExpression><![CDATA["./images/tu"+($F{isOtherJbs}!=null?($F{isOtherJbs}.contains("1")?"2":"1"):"1")+".png"]]></imageExpression>
 			</image>
 			<staticText>
 				<reportElement x="235" y="5" width="12" height="14" uuid="285a8750-3933-448a-b6b6-0812cf99b1ea"/>
@@ -2004,7 +2004,7 @@
 				</textElement>
 				<text><![CDATA[癌症]]></text>
 			</staticText>
-			<textField isStretchWithOverflow="true">
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
 				<reportElement x="255" y="0" width="267" height="25" uuid="71a31684-3fc1-49d9-ad1c-c7666e7bc80d">
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
@@ -2039,7 +2039,7 @@
 			</staticText>
 			<image vAlign="Middle">
 				<reportElement x="191" y="6" width="15" height="12" uuid="da0d0756-9f02-44d5-9375-62ab4dd2ddb0"/>
-				<imageExpression><![CDATA["./images/tu"+($F{isCancer}.contains("0")?"2":"1")+".png"]]></imageExpression>
+				<imageExpression><![CDATA["./images/tu"+($F{isCancer}!=null?($F{isCancer}.contains("0")?"2":"1"):"1")+".png"]]></imageExpression>
 			</image>
 			<staticText>
 				<reportElement x="206" y="5" width="12" height="14" uuid="5ce65023-30e0-48e6-a26f-8a5e56ec6e31"/>
@@ -2050,7 +2050,7 @@
 			</staticText>
 			<image vAlign="Middle">
 				<reportElement x="220" y="6" width="15" height="12" uuid="e514aefc-fe6f-4d95-8f41-617d00dfee26"/>
-				<imageExpression><![CDATA["./images/tu"+($F{isCancer}.contains("1")?"2":"1")+".png"]]></imageExpression>
+				<imageExpression><![CDATA["./images/tu"+($F{isCancer}!=null?($F{isCancer}.contains("1")?"2":"1"):"1")+".png"]]></imageExpression>
 			</image>
 			<staticText>
 				<reportElement x="235" y="5" width="12" height="14" uuid="26ab0b4b-cb20-45e6-af6d-4df14181a66b"/>
@@ -2078,7 +2078,7 @@
 				</textElement>
 				<text><![CDATA[其它疾病]]></text>
 			</staticText>
-			<textField isStretchWithOverflow="true">
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
 				<reportElement x="255" y="0" width="267" height="25" uuid="4c710860-8ae4-43da-862a-31e92f42be7a">
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
@@ -2113,7 +2113,7 @@
 			</staticText>
 			<image vAlign="Middle">
 				<reportElement x="191" y="6" width="15" height="12" uuid="2d4e2ac2-92ff-4825-a5a6-b386c91cf204"/>
-				<imageExpression><![CDATA["./images/tu"+($F{isOtherDisease}.contains("0")?"2":"1")+".png"]]></imageExpression>
+				<imageExpression><![CDATA["./images/tu"+($F{isOtherDisease}!=null?($F{isOtherDisease}.contains("0")?"2":"1"):"1")+".png"]]></imageExpression>
 			</image>
 			<staticText>
 				<reportElement x="206" y="5" width="12" height="14" uuid="781a37ab-58ad-4359-97bf-985ddac4e590"/>
@@ -2124,7 +2124,7 @@
 			</staticText>
 			<image vAlign="Middle">
 				<reportElement x="220" y="6" width="15" height="12" uuid="49000164-cc7f-4eea-90fe-d34708dadcea"/>
-				<imageExpression><![CDATA["./images/tu"+($F{isOtherDisease}.contains("1")?"2":"1")+".png"]]></imageExpression>
+				<imageExpression><![CDATA["./images/tu"+($F{isOtherDisease}!=null?($F{isOtherDisease}.contains("1")?"2":"1"):"1")+".png"]]></imageExpression>
 			</image>
 			<staticText>
 				<reportElement x="235" y="5" width="12" height="14" uuid="71eff480-1d1b-49a2-b658-701dc717d81e"/>
@@ -2151,7 +2151,7 @@
 				</textElement>
 				<text><![CDATA[手术史]]></text>
 			</staticText>
-			<textField isStretchWithOverflow="true">
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
 				<reportElement x="255" y="0" width="267" height="25" uuid="0e6c7c5a-6a10-412b-8aaa-d1ea75e141d8">
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
@@ -2186,7 +2186,7 @@
 			</staticText>
 			<image vAlign="Middle">
 				<reportElement x="191" y="6" width="15" height="12" uuid="687194d2-6597-470d-99a9-18cddf5e96b6"/>
-				<imageExpression><![CDATA["./images/tu"+($F{isSurgery}.contains("0")?"2":"1")+".png"]]></imageExpression>
+				<imageExpression><![CDATA["./images/tu"+($F{isSurgery}!=null?($F{isSurgery}.contains("0")?"2":"1"):"1")+".png"]]></imageExpression>
 			</image>
 			<staticText>
 				<reportElement x="206" y="5" width="12" height="14" uuid="f1cb1273-4d4f-424d-bbbd-371cc15aeb00"/>
@@ -2197,7 +2197,7 @@
 			</staticText>
 			<image vAlign="Middle">
 				<reportElement x="220" y="6" width="15" height="12" uuid="444630d1-d9d3-4ed2-996c-d6644b4860da"/>
-				<imageExpression><![CDATA["./images/tu"+($F{isSurgery}.contains("1")?"2":"1")+".png"]]></imageExpression>
+				<imageExpression><![CDATA["./images/tu"+($F{isSurgery}!=null?($F{isSurgery}.contains("1")?"2":"1"):"1")+".png"]]></imageExpression>
 			</image>
 			<staticText>
 				<reportElement x="235" y="5" width="12" height="14" uuid="090a9b40-6781-4f36-b9ae-bb29f2aa17a4"/>

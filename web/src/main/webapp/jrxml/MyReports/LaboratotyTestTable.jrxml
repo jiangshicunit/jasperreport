@@ -49,7 +49,7 @@
 	</background>
 	<title>
 		<band height="22" splitType="Stretch">
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="30" y="0" width="90" height="20" uuid="433ad24d-b0f8-4b20-aa1f-c7d64b792baa"/>
 				<box>
 					<bottomPen lineWidth="1.3"/>
@@ -70,7 +70,7 @@
 				</textElement>
 				<text><![CDATA[]]></text>
 			</staticText>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="199" y="4" width="184" height="16" uuid="a200ec5b-e176-4262-8616-0fe4ee3b6715"/>
 				<box>
 					<bottomPen lineWidth="1.3"/>
@@ -124,7 +124,7 @@
 	</title>
 	<detail>
 		<band height="31" splitType="Stretch">
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="30" y="0" width="90" height="30" uuid="650b9f4b-59fb-4006-952b-0e4c748bdcb9"/>
 				<box>
 					<bottomPen lineWidth="0" lineColor="#404040"/>
@@ -132,7 +132,7 @@
 				<textElement textAlignment="Left" verticalAlignment="Middle"/>
 				<textFieldExpression><![CDATA[$F{ename}]]></textFieldExpression>
 			</textField>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="120" y="0" width="79" height="30" uuid="40d7fb55-07cd-4f4c-8163-a10db4851ce6"/>
 				<box>
 					<bottomPen lineWidth="0" lineColor="#404040"/>
@@ -159,7 +159,7 @@
 				<textElement textAlignment="Center" verticalAlignment="Middle"/>
 				<textFieldExpression><![CDATA["-"]]></textFieldExpression>
 			</textField>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="440" y="0" width="50" height="30" uuid="2ebb76d0-b164-41c3-b051-ed9505b611bc"/>
 				<box>
 					<topPen lineStyle="Dashed"/>
@@ -170,7 +170,7 @@
 				<textElement textAlignment="Center" verticalAlignment="Middle"/>
 				<textFieldExpression><![CDATA[($F{min}==-1000?"<="+$F{max}:$F{min}+"-"+$F{max})]]></textFieldExpression>
 			</textField>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="490" y="0" width="44" height="30" uuid="e345e278-a36f-48e0-b853-7517fc3a32e4"/>
 				<box>
 					<bottomPen lineWidth="0" lineColor="#404040"/>
@@ -205,7 +205,7 @@
 				</cvc:customvisualization>
 
 			</componentElement>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="366" y="4" width="27" height="23" uuid="63e35ea1-6d9f-45eb-9d5d-1d83c13d0f3f"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle"/>
 				<textFieldExpression><![CDATA[$F{value}]]></textFieldExpression>

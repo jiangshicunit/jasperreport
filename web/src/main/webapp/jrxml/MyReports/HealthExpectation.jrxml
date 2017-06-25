@@ -63,7 +63,7 @@
 			</staticText>
 		</band>
 		<band height="48">
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="39" y="0" width="450" height="14" uuid="55f99b6c-6e19-466d-8eba-1116e23ab5e4"/>
 				<box>
 					<bottomPen lineWidth="1.0"/>
@@ -73,7 +73,7 @@
 				</textElement>
 				<textFieldExpression><![CDATA[$F{problem1}]]></textFieldExpression>
 			</textField>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="39" y="24" width="450" height="14" uuid="6a807dda-8703-4630-b491-ddfde20b4163">
 					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
@@ -102,7 +102,7 @@
 			</staticText>
 		</band>
 		<band height="48">
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="39" y="0" width="450" height="14" uuid="dc8b9f28-79e9-4327-8b14-4fcee6e98dc1">
 					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
@@ -113,7 +113,7 @@
 				</box>
 				<textFieldExpression><![CDATA[$F{problem3}]]></textFieldExpression>
 			</textField>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="39" y="24" width="450" height="14" uuid="8eb8d27d-f69a-4709-98ce-d3021b78ac8d">
 					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
 				</reportElement>
@@ -141,7 +141,7 @@
 			</staticText>
 		</band>
 		<band height="48">
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="39" y="0" width="450" height="14" uuid="2704e6f2-1a1c-414d-993e-c0a337d4bdb0">
 					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
 				</reportElement>
@@ -169,7 +169,7 @@
 			</staticText>
 		</band>
 		<band height="48">
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="30" y="0" width="460" height="14" uuid="2326e4f4-1bc2-4708-a679-45ca75a63e19">
 					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
 				</reportElement>
@@ -181,7 +181,7 @@
 				</textElement>
 				<textFieldExpression><![CDATA[$F{description1}]]></textFieldExpression>
 			</textField>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="30" y="24" width="460" height="14" uuid="554a2595-2187-4e59-9a2b-0e27e5da663b">
 					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
@@ -282,7 +282,7 @@
 				</textElement>
 				<text><![CDATA[时间]]></text>
 			</staticText>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="117" y="28" width="100" height="14" uuid="6ed9efde-12d2-442c-9651-f2ba02240ce5">
 					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
 				</reportElement>
@@ -296,19 +296,19 @@
 			</textField>
 			<image>
 				<reportElement x="86" y="4" width="15" height="12" uuid="5f5aea2a-ea02-4c55-b2b8-2048654b8c30"/>
-				<imageExpression><![CDATA["./images/tu"+($F{examinationType}.contains("1")?"2":"1")+".png"]]></imageExpression>
+				<imageExpression><![CDATA["./images/tu"+($F{examinationType}!=null?($F{examinationType}.contains("1")?"2":"1"):"1")+".png"]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="132" y="4" width="15" height="12" uuid="f9c59c58-4199-4952-a2b9-7d159de7df3f"/>
-				<imageExpression><![CDATA["./images/tu"+($F{examinationType}.contains("2")?"2":"1")+".png"]]></imageExpression>
+				<imageExpression><![CDATA["./images/tu"+($F{examinationType}!=null?($F{examinationType}.contains("2")?"2":"1"):"1")+".png"]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="210" y="4" width="15" height="12" uuid="811b780b-321e-45f5-8ec1-9535c0ad913f"/>
-				<imageExpression><![CDATA["./images/tu"+($F{examinationType}.contains("3")?"2":"1")+".png"]]></imageExpression>
+				<imageExpression><![CDATA["./images/tu"+($F{examinationType}!=null?($F{examinationType}.contains("3")?"2":"1"):"1")+".png"]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="258" y="4" width="15" height="12" uuid="962b24b9-e7c6-4847-92bc-f5e9159f0b81"/>
-				<imageExpression><![CDATA["./images/tu"+($F{examinationType}.contains("4")?"2":"1")+".png"]]></imageExpression>
+				<imageExpression><![CDATA["./images/tu"+($F{examinationType}!=null?($F{examinationType}.contains("4")?"2":"1"):"1")+".png"]]></imageExpression>
 			</image>
 		</band>
 		<band height="48">
@@ -333,7 +333,7 @@
 				</textElement>
 				<text><![CDATA[时间]]></text>
 			</staticText>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="117" y="3" width="100" height="14" uuid="a7ed564c-6ccc-4ca7-871e-b33364fbd3ba">
 					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
 				</reportElement>
@@ -355,7 +355,7 @@
 				</textElement>
 				<text><![CDATA[使用维他命辅助品：]]></text>
 			</staticText>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement key="" x="214" y="0" width="276" height="14" uuid="c62a2ff9-1b42-4f31-ac57-ec757a8fb6d6">
 					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
 				</reportElement>
@@ -384,11 +384,11 @@
 			</staticText>
 			<image>
 				<reportElement x="153" y="1" width="15" height="12" uuid="9c7791ac-8dd1-40df-82cd-b7c54b75217a"/>
-				<imageExpression><![CDATA["./images/tu"+($F{isAuxiliary}.contains("1")?"2":"1")+".png"]]></imageExpression>
+				<imageExpression><![CDATA["./images/tu"+($F{isAuxiliary}!=null?($F{isAuxiliary}.contains("1")?"2":"1"):"1")+".png"]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="119" y="1" width="15" height="12" uuid="e8b26497-b2ff-4e3d-bd59-bc32857777e9"/>
-				<imageExpression><![CDATA["./images/tu"+($F{isAuxiliary}.contains("0")?"2":"1")+".png"]]></imageExpression>
+				<imageExpression><![CDATA["./images/tu"+($F{isAuxiliary}!=null?($F{isAuxiliary}.contains("0")?"2":"1"):"1")+".png"]]></imageExpression>
 			</image>
 			<staticText>
 				<reportElement x="186" y="0" width="28" height="14" uuid="b03ed5d2-6cfa-4de3-9826-26e2cbe81cc7"/>
@@ -419,7 +419,7 @@
 				</textElement>
 				<text><![CDATA[使用医师处方药：]]></text>
 			</staticText>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="200" y="0" width="290" height="14" uuid="404773e8-a019-4e92-830d-60f3ad9a074f"/>
 				<box>
 					<bottomPen lineWidth="1.0"/>
@@ -432,7 +432,7 @@
 			</textField>
 			<image>
 				<reportElement x="111" y="1" width="15" height="12" uuid="3641637e-5f9a-4ed3-a672-71c788ccd5fb"/>
-				<imageExpression><![CDATA["./images/tu"+($F{isPrescription}.contains("0")?"2":"1")+".png"]]></imageExpression>
+				<imageExpression><![CDATA["./images/tu"+($F{isPrescription}!=null?($F{isPrescription}.contains("0")?"2":"1"):"1")+".png"]]></imageExpression>
 			</image>
 			<staticText>
 				<reportElement x="125" y="0" width="12" height="14" uuid="5634d4f7-28f3-4d9c-9495-7bbfae4376b3"/>
@@ -443,7 +443,7 @@
 			</staticText>
 			<image>
 				<reportElement x="139" y="1" width="15" height="12" uuid="fd2e908c-ac75-4e06-b249-98602a16cade"/>
-				<imageExpression><![CDATA["./images/tu"+($F{isPrescription}.contains("1")?"2":"1")+".png"]]></imageExpression>
+				<imageExpression><![CDATA["./images/tu"+($F{isPrescription}!=null?($F{isPrescription}.contains("1")?"2":"1"):"1")+".png"]]></imageExpression>
 			</image>
 			<staticText>
 				<reportElement x="154" y="0" width="12" height="14" uuid="3267e78f-0b57-4421-9df0-47c3548160ae"/>
@@ -459,7 +459,7 @@
 				</textElement>
 				<text><![CDATA[名称 :]]></text>
 			</staticText>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="31" y="24" width="459" height="14" uuid="85d54e90-acfd-4ba9-a0e1-e754d769252c"/>
 				<box>
 					<bottomPen lineWidth="1.0"/>
@@ -494,7 +494,7 @@
 			</staticText>
 			<image>
 				<reportElement x="83" y="1" width="15" height="12" uuid="3fc4eee7-f5f9-4124-904a-a889f3fa9a0a"/>
-				<imageExpression><![CDATA["./images/tu"+($F{isMedicine}.contains("0")?"2":"1")+".png"]]></imageExpression>
+				<imageExpression><![CDATA["./images/tu"+($F{isMedicine}!=null?($F{isMedicine}.contains("0")?"2":"1"):"1")+".png"]]></imageExpression>
 			</image>
 			<staticText>
 				<reportElement x="98" y="0" width="12" height="14" uuid="6550b4ab-274c-4584-b4c6-ba5a04c9da6b"/>
@@ -505,7 +505,7 @@
 			</staticText>
 			<image>
 				<reportElement x="115" y="1" width="15" height="12" uuid="48c72cfa-fc43-4ff3-80fd-b77da229f748"/>
-				<imageExpression><![CDATA["./images/tu"+($F{isMedicine}.contains("1")?"2":"1")+".png"]]></imageExpression>
+				<imageExpression><![CDATA["./images/tu"+($F{isMedicine}!=null?($F{isMedicine}.contains("1")?"2":"1"):"1")+".png"]]></imageExpression>
 			</image>
 			<staticText>
 				<reportElement x="130" y="0" width="12" height="14" uuid="6bed8b9c-2a8f-48b1-b3d3-1041492b7407"/>
@@ -521,7 +521,7 @@
 				</textElement>
 				<text><![CDATA[名称 :]]></text>
 			</staticText>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="31" y="24" width="459" height="14" uuid="a95bab2e-dceb-4494-a774-963c50515e71">
 					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
 				</reportElement>
@@ -558,7 +558,7 @@
 			</textField>
 			<image>
 				<reportElement x="217" y="1" width="15" height="12" uuid="19c747b3-0e1b-4054-9c0c-365e8527cf03"/>
-				<imageExpression><![CDATA["./images/tu"+($F{isTreatment}.contains("0")?"2":"1")+".png"]]></imageExpression>
+				<imageExpression><![CDATA["./images/tu"+($F{isTreatment}!=null?($F{isTreatment}.contains("0")?"2":"1"):"1")+".png"]]></imageExpression>
 			</image>
 			<staticText>
 				<reportElement x="232" y="0" width="12" height="14" uuid="b4fd0f77-0542-4c18-9463-46526d1a95ae"/>
@@ -569,7 +569,7 @@
 			</staticText>
 			<image>
 				<reportElement x="253" y="1" width="15" height="12" uuid="25742952-d312-4e29-9590-0f2d7ae38626"/>
-				<imageExpression><![CDATA["./images/tu"+($F{isTreatment}.contains("1")?"2":"1")+".png"]]></imageExpression>
+				<imageExpression><![CDATA["./images/tu"+($F{isTreatment}!=null?($F{isTreatment}.contains("1")?"2":"1"):"1")+".png"]]></imageExpression>
 			</image>
 			<staticText>
 				<reportElement x="268" y="0" width="12" height="14" uuid="082314d1-a2db-42cb-a548-b148e9b59f0a"/>
@@ -585,7 +585,7 @@
 				</textElement>
 				<text><![CDATA[名称 :]]></text>
 			</staticText>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="31" y="24" width="459" height="14" uuid="a4996293-d4a6-4c87-9eae-3edecf544c49">
 					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
 				</reportElement>
@@ -600,7 +600,7 @@
 			</textField>
 		</band>
 		<band height="48">
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="324" y="0" width="168" height="14" uuid="c49872c3-c8f0-4041-b918-05ab87f03c82">
 					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
 				</reportElement>
@@ -622,7 +622,7 @@
 			</staticText>
 			<image>
 				<reportElement x="111" y="1" width="15" height="12" uuid="25f172a8-e213-4a25-b35d-6f5878d65d77"/>
-				<imageExpression><![CDATA["./images/tu"+($F{dietType}.contains("1")?"2":"1")+".png"]]></imageExpression>
+				<imageExpression><![CDATA["./images/tu"+($F{dietType}!=null?($F{dietType}.contains("1")?"2":"1"):"1")+".png"]]></imageExpression>
 			</image>
 			<staticText>
 				<reportElement x="126" y="0" width="12" height="14" uuid="84fba707-e655-4d2d-8d67-57e0aa2215a1"/>
@@ -633,7 +633,7 @@
 			</staticText>
 			<image>
 				<reportElement x="147" y="1" width="15" height="12" uuid="7b16afe7-ef25-41b6-b24f-34ca5bb3be0f"/>
-				<imageExpression><![CDATA["./images/tu"+($F{dietType}.contains("2")?"2":"1")+".png"]]></imageExpression>
+				<imageExpression><![CDATA["./images/tu"+($F{dietType}!=null?($F{dietType}.contains("2")?"2":"1"):"1")+".png"]]></imageExpression>
 			</image>
 			<staticText>
 				<reportElement x="162" y="0" width="28" height="14" uuid="e66ba094-1e8f-4de4-8770-30a93a081a24"/>
@@ -665,11 +665,11 @@
 			<image>
 				<reportElement x="199" y="1" width="
 				15" height="12" uuid="f4ae9b3c-96ad-43f8-96a3-c2bfd3f44ef1"/>
-				<imageExpression><![CDATA["./images/tu"+($F{dietType}.contains("3")?"2":"1")+".png"]]></imageExpression>
+				<imageExpression><![CDATA["./images/tu"+($F{dietType}!=null?($F{dietType}.contains("3")?"2":"1"):"1")+".png"]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="244" y="1" width="15" height="12" uuid="da5892d2-d8cd-4a6b-9f48-e215cf251d81"/>
-				<imageExpression><![CDATA["./images/tu"+($F{dietType}.contains("4")?"2":"1")+".png"]]></imageExpression>
+				<imageExpression><![CDATA["./images/tu"+($F{dietType}!=null?($F{dietType}.contains("4")?"2":"1"):"1")+".png"]]></imageExpression>
 			</image>
 			<staticText>
 				<reportElement x="260" y="0" width="18" height="14" uuid="2dddedbd-ae6f-4ded-afdb-25698eedb705"/>
@@ -680,7 +680,7 @@
 			</staticText>
 			<image>
 				<reportElement x="289" y="1" width="15" height="12" uuid="31b2d07c-dc53-4407-9acb-de46dde5b06d"/>
-				<imageExpression><![CDATA["./images/tu"+($F{dietType}.contains("5")?"2":"1")+".png"]]></imageExpression>
+				<imageExpression><![CDATA["./images/tu"+($F{dietType}!=null?($F{dietType}.contains("5")?"2":"1"):"1")+".png"]]></imageExpression>
 			</image>
 			<staticText>
 				<reportElement x="304" y="0" width="18" height="14" uuid="24c867e7-15e6-4942-acc5-97b6002ba0e0"/>

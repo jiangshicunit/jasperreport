@@ -52,7 +52,7 @@
 				<reportElement x="430" y="18" width="130" height="63" uuid="9002bda9-81c5-4995-bf96-c78ed7b7b684"/>
 				<imageExpression><![CDATA["./yd_cancerManHeader2.jpg"]]></imageExpression>
 			</image>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement key="" mode="Transparent" x="426" y="82" width="42" height="21" uuid="aae4b57d-b7e8-49d2-8698-2f9ffbb66754"/>
 				<textElement>
 					<font size="8" />
@@ -73,7 +73,7 @@
 				</textElement>
 				<text><![CDATA[生日：]]></text>
 			</staticText>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="480" y="82" width="52" height="21" uuid="c5537435-74f1-4d65-bf35-2571fc995936"/>
 				<textElement>
 					<font size="8" />

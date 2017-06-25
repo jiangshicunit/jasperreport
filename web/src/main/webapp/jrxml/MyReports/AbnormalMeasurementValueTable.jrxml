@@ -43,7 +43,7 @@
 					</textElement>
 					<textFieldExpression><![CDATA[$F{title}]]></textFieldExpression>
 				</textField>
-				<textField>
+				<textField isBlankWhenNull="true">
 					<reportElement x="100" y="22" width="75" height="53" uuid="44e5b45f-2fca-4574-9b43-7985f005d515">
 						<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
 						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
@@ -53,7 +53,7 @@
 					</textElement>
 					<textFieldExpression><![CDATA[$F{measurementTitle}]]></textFieldExpression>
 				</textField>
-				<textField>
+				<textField isBlankWhenNull="true">
 					<reportElement x="192" y="22" width="43" height="30" uuid="67e392e3-1b56-4110-97a8-d0333fe35284">
 						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
 					</reportElement>
@@ -62,7 +62,7 @@
 					</textElement>
 					<textFieldExpression><![CDATA[$F{value}]]></textFieldExpression>
 				</textField>
-				<textField>
+				<textField isBlankWhenNull="true">
 					<reportElement x="292" y="22" width="92" height="30" uuid="714a2e5f-e5ba-4e5a-87f0-ffd1f9eb1bd3">
 						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
 					</reportElement>

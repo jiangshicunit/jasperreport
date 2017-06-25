@@ -31,7 +31,7 @@
 	</background>
 	<title>
 		<band height="41">
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="30" y="10" width="500" height="31" forecolor="#BE995E" uuid="e533f146-45e2-44e4-a8fd-775be4063707"/>
 				<textElement textAlignment="Left" verticalAlignment="Middle">
 					<font size="16"/>
@@ -42,14 +42,14 @@
 	</title>
 	<detail>
 		<band height="45" splitType="Stretch">
-			<textField isStretchWithOverflow="true">
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
 				<reportElement x="30" y="0" width="500" height="28" forecolor="#BE995E" uuid="91c13aaf-54b3-4504-b490-c724a4fb3503"/>
 				<textElement textAlignment="Left" verticalAlignment="Middle">
 					<font size="12"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{title}]]></textFieldExpression>
 			</textField>
-			<textField isStretchWithOverflow="true" isBlankWhenNull="false">
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
 				<reportElement x="30" y="24" width="500" height="21" uuid="02cdfe56-056c-427c-845c-14f482d919f1">
 					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
 				</reportElement>

@@ -32,7 +32,7 @@
 	</background>
 	<detail>
 		<band height="500" splitType="Stretch">
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="20" y="220" width="521" height="71" forecolor="#C0995E" uuid="b01c7ab4-026d-426f-9976-7a36b2cf4da9"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font size="30" isBold="true"/>

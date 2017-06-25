@@ -26,14 +26,14 @@
 	</background>
 	<title>
 		<band height="68" splitType="Stretch">
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="30" y="0" width="240" height="20" forecolor="#BE995E" uuid="5c51cfc7-c590-4d3d-adef-6af62120b2c1"/>
 				<textElement>
 					<font size="12" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{mainTitle}]]></textFieldExpression>
 			</textField>
-			<textField isStretchWithOverflow="true">
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
 				<reportElement x="30" y="30" width="500" height="30" uuid="616a8eee-7bc2-4e33-882f-82e8bf08a423">
 					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
 				</reportElement>

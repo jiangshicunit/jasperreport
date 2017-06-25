@@ -70,7 +70,7 @@
 	</title>
 	<detail>
 		<band height="21" splitType="Stretch">
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="90" y="1" width="115" height="20" uuid="dd8fb796-637d-4e70-8b5a-62a95923810d"/>
 				<box>
 					<topPen lineColor="#707070"/>
@@ -83,7 +83,7 @@
 				</textElement>
 				<textFieldExpression><![CDATA[$F{name}]]></textFieldExpression>
 			</textField>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="205" y="1" width="145" height="20" uuid="8bcddece-d3ba-4a0a-952d-f79961279dcb"/>
 				<box>
 					<topPen lineColor="#707070"/>

@@ -26,7 +26,7 @@
 	</background>
 	<title>
 		<band height="17" splitType="Stretch">
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="70" y="0" width="163" height="16" uuid="0c08e76a-0664-442f-9a22-2a00d14e704c">
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 				</reportElement>
@@ -61,7 +61,7 @@
 	</title>
 	<detail>
 		<band height="16" splitType="Stretch">
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="70" y="0" width="163" height="16" uuid="3958a8e7-28d1-490b-a513-364ebde5aa28">
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 				</reportElement>
