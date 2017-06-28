@@ -83,9 +83,9 @@
 		</band>
 	</pageHeader>
 	<detail>
-		<band height="209">
+		<band height="30">
 			<subreport>
-				<reportElement x="-15" y="4" width="200" height="200" uuid="e4cd7119-5411-4bd8-81d1-cafdffb302f9"/>
+				<reportElement x="-15" y="4" width="200" height="30" uuid="e4cd7119-5411-4bd8-81d1-cafdffb302f9"/>
 				<subreportParameter name="subReportObject">
 					<subreportParameterExpression><![CDATA[$F{subJasper}]]></subreportParameterExpression>
 				</subreportParameter>

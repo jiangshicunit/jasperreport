@@ -625,9 +625,9 @@ public class SaperReportController {
     }
 
     private  void  basicInformation(String xml_save_path,Map<String,Object> submap,List<MainReports> mainList) throws JRException, FileNotFoundException {
-        JasperReport jReport = (JasperReport) JRLoader.loadObject(new File(xml_save_path+"/BasicInformation.jasper"));
-//        JasperDesign jDesign = JRXmlLoader.load(new File(xml_save_path+"/BasicInformation.jrxml"));
-//        JasperReport jReport = JasperCompileManager.compileReport(jDesign);
+//        JasperReport jReport = (JasperReport) JRLoader.loadObject(new File(xml_save_path+"/BasicInformation.jasper"));
+        JasperDesign jDesign = JRXmlLoader.load(new File(xml_save_path+"/BasicInformation.jrxml"));
+        JasperReport jReport = JasperCompileManager.compileReport(jDesign);
         JSONObject allergyObject = JSONObject.parseObject(submap.get("data").toString());
         BasicInformation basicInformation = new BasicInformation();
         if (allergyObject != null){
@@ -640,9 +640,9 @@ public class SaperReportController {
 
     }
     private  void  healthExpectation(String xml_save_path,Map<String,Object> submap,List<MainReports> mainList) throws JRException, FileNotFoundException {
-        JasperReport jReport = (JasperReport) JRLoader.loadObject(new File(xml_save_path+"/HealthExpectation.jasper"));
-//        JasperDesign jDesign = JRXmlLoader.load(new File(xml_save_path+"/HealthExpectation.jrxml"));
-//        JasperReport jReport = JasperCompileManager.compileReport(jDesign);
+//        JasperReport jReport = (JasperReport) JRLoader.loadObject(new File(xml_save_path+"/HealthExpectation.jasper"));
+        JasperDesign jDesign = JRXmlLoader.load(new File(xml_save_path+"/HealthExpectation.jrxml"));
+        JasperReport jReport = JasperCompileManager.compileReport(jDesign);
         JSONObject allergyObject = JSONObject.parseObject(submap.get("data").toString());
         HealthExpectation healthExpectation = new HealthExpectation();
         if(allergyObject != null){
@@ -653,9 +653,9 @@ public class SaperReportController {
 
     }
     private  void  personalPastHistory(String xml_save_path,Map<String,Object> submap,List<MainReports> mainList) throws JRException, FileNotFoundException {
-        JasperReport jReport = (JasperReport) JRLoader.loadObject(new File(xml_save_path+"/PersonalPastHistory.jasper"));
-//        JasperDesign jDesign = JRXmlLoader.load(new File(xml_save_path+"/PersonalPastHistory.jrxml"));
-//        JasperReport jReport = JasperCompileManager.compileReport(jDesign);
+//        JasperReport jReport = (JasperReport) JRLoader.loadObject(new File(xml_save_path+"/PersonalPastHistory.jasper"));
+        JasperDesign jDesign = JRXmlLoader.load(new File(xml_save_path+"/PersonalPastHistory.jrxml"));
+        JasperReport jReport = JasperCompileManager.compileReport(jDesign);
         JSONObject allergyObject = JSONObject.parseObject(submap.get("data").toString());
         PersonalPastHistory personalPastHistory = new PersonalPastHistory();
         if(allergyObject != null){
