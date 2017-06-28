@@ -8,6 +8,7 @@ import com.haomostudio.jrs.common.PropertyConfigurer;
 import net.sf.jasperreports.engine.*;
 import net.sf.jasperreports.engine.data.JRBeanCollectionDataSource;
 import net.sf.jasperreports.engine.design.JasperDesign;
+import net.sf.jasperreports.engine.type.WhenNoDataTypeEnum;
 import net.sf.jasperreports.engine.util.JRLoader;
 import net.sf.jasperreports.engine.util.LocalJasperReportsContext;
 import net.sf.jasperreports.engine.util.SimpleFileResolver;
@@ -459,6 +460,7 @@ public class SaperReportController {
         JasperReport jasperReport3 = (JasperReport) JRLoader.loadObject(new File(xml_save_path+"/AllergyAnalysisTable.jasper"));
 //        JasperDesign jasperDesign3 = JRXmlLoader.load(new FileInputStream(xml_save_path+"/AllergyAnalysisTable.jrxml"));
 //        JasperReport jasperReport3 = JasperCompileManager.compileReport(jasperDesign3);
+        jasperReport3.setWhenNoDataType(WhenNoDataTypeEnum.NO_PAGES);
         List<AllergyAnalysis1> county1List = new ArrayList<>();
         List<AllergyAnalysis1> county2List = new ArrayList<>();
         for (int i = 0;i<sunBeanList.size();i=i+2){
