@@ -26,7 +26,7 @@
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font size="20" isBold="false"/>
 				</textElement>
-				<textFieldExpression><![CDATA["报告书明"]]></textFieldExpression>
+				<textFieldExpression><![CDATA["报告说明"]]></textFieldExpression>
 			</textField>
 			<staticText>
 				<reportElement x="25" y="40" width="530" height="300" uuid="4353f03a-267f-463c-bdee-1bb68748af97"/>

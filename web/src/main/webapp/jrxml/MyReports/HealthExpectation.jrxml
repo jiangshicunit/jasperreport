@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
-<!-- 2017-06-07T10:07:07 -->
-<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="HealthExpectation" pageWidth="595" pageHeight="500" columnWidth="400" leftMargin="20" rightMargin="20" topMargin="0" bottomMargin="0" uuid="943cabb6-bf80-408a-ba29-15955ef8b0cf">
+<!-- 2017-06-27T10:19:22 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="HealthExpectation" pageWidth="595" pageHeight="662" columnWidth="400" leftMargin="20" rightMargin="20" topMargin="0" bottomMargin="0" uuid="943cabb6-bf80-408a-ba29-15955ef8b0cf">
 	<property name="com.jaspersoft.studio.unit." value="pixel"/>
 	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
 	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
@@ -347,7 +347,6 @@
 			</textField>
 		</band>
 		<band height="48">
-			<!--<property name="com.jaspersoft.studio.unit.height" value="pixel"/>-->
 			<staticText>
 				<reportElement x="31" y="0" width="85" height="14" uuid="ff45958d-d473-41cc-b95e-9524081be1a4"/>
 				<textElement>
@@ -663,8 +662,7 @@
 				<textFieldExpression><![CDATA[$F{dietDescription2}]]></textFieldExpression>
 			</textField>
 			<image>
-				<reportElement x="199" y="1" width="
-				15" height="12" uuid="f4ae9b3c-96ad-43f8-96a3-c2bfd3f44ef1"/>
+				<reportElement x="199" y="1" width="15" height="12" uuid="f4ae9b3c-96ad-43f8-96a3-c2bfd3f44ef1"/>
 				<imageExpression><![CDATA["./images/tu"+($F{dietType}!=null?($F{dietType}.contains("3")?"2":"1"):"1")+".png"]]></imageExpression>
 			</image>
 			<image>
