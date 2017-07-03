@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
-<!-- 2017-06-07T14:58:06 -->
+<!-- 2017-07-03T15:26:20 -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="PersonalPastHistory1" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="0" bottomMargin="0" uuid="ed6315c1-74d1-499f-bbd5-2d2a738cb0a8">
 	<property name="com.jaspersoft.studio.unit." value="pixel"/>
 	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="New Data Adapter (2)"/>
@@ -120,7 +120,7 @@
 				</box>
 				<textElement textAlignment="Left" verticalAlignment="Top">
 					<font size="9"/>
-					<paragraph lineSpacing="Single" leftIndent="6" rightIndent="0" spacingBefore="7"/>
+					<paragraph lineSpacing="Single" spacingBefore="7"/>
 				</textElement>
 				<text><![CDATA[病史描述]]></text>
 			</staticText>
@@ -157,7 +157,7 @@
 				</box>
 				<text><![CDATA[]]></text>
 			</staticText>
-			<image >
+			<image>
 				<reportElement stretchType="RelativeToBandHeight" x="191" y="6" width="12" height="19" uuid="03ce60cc-9f8d-4bf4-9785-2d5cfe8c5c38"/>
 				<imageExpression><![CDATA["./images/tu"+($F{isGxyb}!=null?($F{isGxyb}.contains("0")?"2":"1"):"1")+".png"]]></imageExpression>
 			</image>
@@ -168,7 +168,7 @@
 				</textElement>
 				<text><![CDATA[否]]></text>
 			</staticText>
-			<image >
+			<image>
 				<reportElement stretchType="RelativeToBandHeight" x="220" y="6" width="12" height="19" uuid="5309ed9e-f9de-4964-84ef-6f14b262dd9a"/>
 				<imageExpression><![CDATA["./images/tu"+($F{isGxyb}!=null?($F{isGxyb}.contains("1")?"2":"1"):"1")+".png"]]></imageExpression>
 			</image>
@@ -192,7 +192,7 @@
 				</box>
 				<textElement textAlignment="Left" verticalAlignment="Middle">
 					<font size="9"/>
-					<paragraph leftIndent="6"/>
+					<paragraph leftIndent="0"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{tnb1Description}]]></textFieldExpression>
 			</textField>
@@ -228,7 +228,6 @@
 				</box>
 				<textElement verticalAlignment="Middle">
 					<font size="9"/>
-					<paragraph leftIndent="6"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{tnb2Description}]]></textFieldExpression>
 			</textField>
@@ -301,7 +300,6 @@
 				</box>
 				<textElement verticalAlignment="Middle">
 					<font size="9"/>
-					<paragraph leftIndent="6"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{gxybDescription}]]></textFieldExpression>
 			</textField>
@@ -580,9 +578,11 @@
 					<font size="9"/>
 					<paragraph spacingBefore="7"/>
 				</textElement>
-				<text><![CDATA[慢性鼻咽部疾病史鼻部、
+				<text><![CDATA[慢性鼻咽部疾病史
 
-				咽部、鼻窦部等处的慢性疾病）]]></text>
+（鼻部、咽部、鼻窦部等
+
+处的慢性疾病）]]></text>
 			</staticText>
 			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
 				<reportElement x="255" y="0" width="267" height="75" uuid="d8cfe554-b2d2-4a46-81ec-a72478004a2e">
@@ -677,8 +677,8 @@
 				</textElement>
 				<textFieldExpression><![CDATA[$F{mxhxjbsDescription}]]></textFieldExpression>
 			</textField>
-			<image >
-				<reportElement stretchType="RelativeToBandHeight" x="191" y="44" width="12"   height="55"  uuid="0206f385-1849-483c-9af1-d28611473a6c"/>
+			<image>
+				<reportElement stretchType="RelativeToBandHeight" x="191" y="44" width="12" height="55" uuid="0206f385-1849-483c-9af1-d28611473a6c"/>
 				<imageExpression><![CDATA["./images/tu"+($F{isMxhxjbs}!=null?($F{isMxhxjbs}.contains("0")?"2":"1"):"1")+".png"]]></imageExpression>
 			</image>
 			<staticText>
@@ -688,16 +688,16 @@
 				</textElement>
 				<text><![CDATA[否]]></text>
 			</staticText>
-			<image >
+			<image>
 				<reportElement stretchType="RelativeToBandHeight" x="220" y="44" width="12" height="55" uuid="f24fad85-b08b-45d5-8d53-87800fff7ac2"/>
 				<imageExpression><![CDATA["./images/tu"+($F{isMxhxjbs}!=null?($F{isMxhxjbs}.contains("1")?"2":"1"):"1")+".png"]]></imageExpression>
 			</image>
-			<staticText >
-				<reportElement   stretchType="RelativeToBandHeight" x="235" y="44" width="12" height="55" uuid="a4893857-24ce-4387-8d71-921cb97dc016"/>
-				<textElement >
+			<staticText>
+				<reportElement stretchType="RelativeToBandHeight" x="235" y="44" width="12" height="55" uuid="a4893857-24ce-4387-8d71-921cb97dc016"/>
+				<textElement>
 					<font size="9"/>
 				</textElement>
-				<text  ><![CDATA[是]]></text>
+				<text><![CDATA[是]]></text>
 			</staticText>
 			<staticText>
 				<reportElement stretchType="RelativeToBandHeight" x="182" y="0" width="73" height="100" uuid="a84ebe66-4a0b-441d-98f3-fce42b23a1df">
@@ -2195,7 +2195,7 @@
 				<text><![CDATA[否]]></text>
 			</staticText>
 			<image>
-				<reportElement stretchType="RelativeToBandHeight"  x="220" y="6" width="12" height="19" uuid="444630d1-d9d3-4ed2-996c-d6644b4860da"/>
+				<reportElement stretchType="RelativeToBandHeight" x="220" y="6" width="12" height="19" uuid="444630d1-d9d3-4ed2-996c-d6644b4860da"/>
 				<imageExpression><![CDATA["./images/tu"+($F{isSurgery}!=null?($F{isSurgery}.contains("1")?"2":"1"):"1")+".png"]]></imageExpression>
 			</image>
 			<staticText>
