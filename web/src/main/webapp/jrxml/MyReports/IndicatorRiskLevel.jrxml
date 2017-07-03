@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
-<!-- 2017-07-03T23:26:06 -->
+<!-- 2017-07-04T00:33:04 -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="IndicatorRiskLevel" pageWidth="595" pageHeight="662" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="0" bottomMargin="0" uuid="c865af7f-23c5-4289-97ca-824c7f662124">
 	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
 	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="testStuden"/>
@@ -69,19 +69,6 @@
 	</title>
 	<detail>
 		<band height="21" splitType="Stretch">
-			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
-				<reportElement stretchType="RelativeToBandHeight" x="110" y="1" width="95" height="20" uuid="dd8fb796-637d-4e70-8b5a-62a95923810d"/>
-				<box>
-					<topPen lineColor="#707070"/>
-					<leftPen lineColor="#707070"/>
-					<bottomPen lineWidth="1.0" lineColor="#707070"/>
-					<rightPen lineColor="#707070"/>
-				</box>
-				<textElement verticalAlignment="Top">
-					<paragraph spacingBefore="5"/>
-				</textElement>
-				<textFieldExpression><![CDATA[$F{name}]]></textFieldExpression>
-			</textField>
 			<staticText>
 				<reportElement stretchType="RelativeToBandHeight" x="350" y="1" width="100" height="20" uuid="1cf0b39d-223b-4c9b-9cf9-09f572068895"/>
 				<box>
@@ -129,10 +116,16 @@
 					<bottomPen lineWidth="1.0" lineColor="#707070"/>
 					<rightPen lineWidth="1.0" lineColor="#707070"/>
 				</box>
-				<textElement verticalAlignment="Top">
-					<paragraph spacingBefore="5"/>
-				</textElement>
+				<textElement verticalAlignment="Middle"/>
 				<textFieldExpression><![CDATA[$F{ename}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement stretchType="RelativeToBandHeight" x="110" y="1" width="95" height="20" uuid="44f7f672-4a27-4caa-8ed8-71280eca95da"/>
+				<box>
+					<bottomPen lineWidth="1.0" lineColor="#707070"/>
+				</box>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{name}]]></textFieldExpression>
 			</textField>
 		</band>
 	</detail>
