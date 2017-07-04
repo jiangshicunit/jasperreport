@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
-<!-- 2017-07-04T00:33:04 -->
+<!-- 2017-07-04T10:24:28 -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="IndicatorRiskLevel" pageWidth="595" pageHeight="662" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="0" bottomMargin="0" uuid="c865af7f-23c5-4289-97ca-824c7f662124">
 	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
 	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="testStuden"/>
@@ -97,7 +97,10 @@
 				</textElement>
 			</textField>
 			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
-				<reportElement stretchType="RelativeToBandHeight" x="205" y="1" width="25" height="20" uuid="e48fcb8d-cdc4-4a8b-93c1-019d64951100"/>
+				<reportElement stretchType="RelativeToBandHeight" x="205" y="0" width="25" height="21" uuid="e48fcb8d-cdc4-4a8b-93c1-019d64951100">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
 				<box>
 					<topPen lineColor="#707070"/>
 					<leftPen lineWidth="1.0" lineColor="#707070"/>
@@ -109,7 +112,10 @@
 				</textElement>
 			</textField>
 			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
-				<reportElement stretchType="RelativeToBandHeight" x="230" y="1" width="120" height="20" uuid="bc2a06e0-5f39-4dbf-9f61-c512152f49aa"/>
+				<reportElement stretchType="RelativeToBandHeight" x="230" y="0" width="120" height="21" uuid="bc2a06e0-5f39-4dbf-9f61-c512152f49aa">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
 				<box>
 					<topPen lineColor="#707070"/>
 					<leftPen lineColor="#707070"/>
@@ -120,7 +126,9 @@
 				<textFieldExpression><![CDATA[$F{ename}]]></textFieldExpression>
 			</textField>
 			<textField isStretchWithOverflow="true">
-				<reportElement stretchType="RelativeToBandHeight" x="110" y="1" width="95" height="20" uuid="44f7f672-4a27-4caa-8ed8-71280eca95da"/>
+				<reportElement stretchType="RelativeToBandHeight" x="110" y="1" width="95" height="20" uuid="44f7f672-4a27-4caa-8ed8-71280eca95da">
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
 				<box>
 					<bottomPen lineWidth="1.0" lineColor="#707070"/>
 				</box>
