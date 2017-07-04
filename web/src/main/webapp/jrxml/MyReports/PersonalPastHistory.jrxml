@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
-<!-- 2017-07-03T15:26:20 -->
+<!-- 2017-07-04T21:43:08 -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="PersonalPastHistory1" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="0" bottomMargin="0" uuid="ed6315c1-74d1-499f-bbd5-2d2a738cb0a8">
 	<property name="com.jaspersoft.studio.unit." value="pixel"/>
 	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="New Data Adapter (2)"/>
@@ -122,12 +122,12 @@
 					<font size="9"/>
 					<paragraph lineSpacing="Single" spacingBefore="7"/>
 				</textElement>
-				<text><![CDATA[病史描述]]></text>
+				<text><![CDATA[   病史描述]]></text>
 			</staticText>
 		</band>
 	</columnHeader>
 	<detail>
-		<band height="25" splitType="Stretch">
+		<band height="25" splitType="Prevent">
 			<staticText>
 				<reportElement stretchType="RelativeToBandHeight" mode="Opaque" x="34" y="0" width="148" height="25" backcolor="#F7DE94" uuid="5676206b-8b72-4cd6-84d4-8ec666dc01ad">
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
@@ -180,24 +180,31 @@
 				<text><![CDATA[是]]></text>
 			</staticText>
 			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
-				<reportElement x="255" y="0" width="267" height="25" uuid="e35f5c05-b7e8-42c3-a49d-0f6b838c54f6">
+				<reportElement x="261" y="0" width="261" height="25" uuid="e35f5c05-b7e8-42c3-a49d-0f6b838c54f6">
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
 				</reportElement>
 				<box>
 					<topPen lineWidth="1.0" lineColor="#CECECE"/>
-					<leftPen lineWidth="1.0" lineColor="#CECECE"/>
+					<leftPen lineWidth="0.0" lineColor="#CECECE"/>
 					<bottomPen lineWidth="1.0" lineColor="#CECECE"/>
 					<rightPen lineWidth="2.0" lineColor="#8C735A"/>
 				</box>
 				<textElement textAlignment="Left" verticalAlignment="Middle">
 					<font size="9"/>
-					<paragraph leftIndent="0"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{tnb1Description}]]></textFieldExpression>
 			</textField>
+			<staticText>
+				<reportElement stretchType="RelativeToBandHeight" x="255" y="0" width="7" height="25" uuid="80fabf13-c8df-4531-99cb-09da8f05effa"/>
+				<box>
+					<pen lineColor="#CECECE"/>
+					<bottomPen lineWidth="1.0" lineColor="#CECECE"/>
+				</box>
+				<text><![CDATA[]]></text>
+			</staticText>
 		</band>
-		<band height="25">
+		<band height="25" splitType="Prevent">
 			<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 			<staticText>
 				<reportElement stretchType="RelativeToBandHeight" mode="Opaque" x="34" y="0" width="148" height="25" backcolor="#F7DE94" uuid="a04d2375-3f86-4640-91ab-e9d145e6b9df">
@@ -216,13 +223,13 @@
 				<text><![CDATA[II型糖尿病]]></text>
 			</staticText>
 			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
-				<reportElement x="255" y="0" width="267" height="25" uuid="fbdc0e0b-7ca5-4ada-aafd-40002f1908ab">
+				<reportElement x="261" y="0" width="261" height="25" uuid="fbdc0e0b-7ca5-4ada-aafd-40002f1908ab">
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
-					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
 				</reportElement>
 				<box>
 					<topPen lineWidth="1.0" lineColor="#CECECE"/>
-					<leftPen lineWidth="1.0" lineColor="#CECECE"/>
+					<leftPen lineWidth="0.0" lineColor="#CECECE"/>
 					<bottomPen lineWidth="1.0" lineColor="#CECECE"/>
 					<rightPen lineWidth="2.0" lineColor="#8C735A"/>
 				</box>
@@ -269,8 +276,16 @@
 				</textElement>
 				<text><![CDATA[是]]></text>
 			</staticText>
+			<staticText>
+				<reportElement stretchType="RelativeToBandHeight" x="255" y="0" width="7" height="25" uuid="fafcdb51-a950-4035-be3d-c0b191978a56"/>
+				<box>
+					<pen lineColor="#CECECE"/>
+					<bottomPen lineWidth="1.0" lineColor="#CECECE"/>
+				</box>
+				<text><![CDATA[]]></text>
+			</staticText>
 		</band>
-		<band height="25">
+		<band height="25" splitType="Prevent">
 			<staticText>
 				<reportElement stretchType="RelativeToBandHeight" mode="Opaque" x="34" y="0" width="148" height="25" backcolor="#F7DE94" uuid="60b5af6e-9575-4203-a0a7-9f4a99561933">
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
@@ -288,13 +303,13 @@
 				<text><![CDATA[高血压病]]></text>
 			</staticText>
 			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
-				<reportElement x="255" y="0" width="267" height="25" uuid="6c18f118-4076-411d-ac00-78020d5d6ec7">
+				<reportElement x="261" y="0" width="261" height="25" uuid="6c18f118-4076-411d-ac00-78020d5d6ec7">
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
 				</reportElement>
 				<box>
 					<topPen lineWidth="1.0" lineColor="#CECECE"/>
-					<leftPen lineWidth="1.0" lineColor="#CECECE"/>
+					<leftPen lineWidth="0.0" lineColor="#CECECE"/>
 					<bottomPen lineWidth="1.0" lineColor="#CECECE"/>
 					<rightPen lineWidth="2.0" lineColor="#8C735A"/>
 				</box>
@@ -341,8 +356,16 @@
 				</textElement>
 				<text><![CDATA[是]]></text>
 			</staticText>
+			<staticText>
+				<reportElement stretchType="RelativeToBandHeight" x="255" y="0" width="7" height="25" uuid="cce0b205-d22c-4c5a-8b5e-4643c9d57bbc"/>
+				<box>
+					<pen lineColor="#CECECE"/>
+					<bottomPen lineWidth="1.0" lineColor="#CECECE"/>
+				</box>
+				<text><![CDATA[]]></text>
+			</staticText>
 		</band>
-		<band height="25">
+		<band height="25" splitType="Prevent">
 			<staticText>
 				<reportElement stretchType="RelativeToBandHeight" mode="Opaque" x="34" y="0" width="148" height="25" backcolor="#F7DE94" uuid="3bc1ae59-07e4-447f-b39b-2288ace0c7ad">
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
@@ -360,19 +383,18 @@
 				<text><![CDATA[血脂异常]]></text>
 			</staticText>
 			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
-				<reportElement x="255" y="0" width="267" height="25" uuid="ba091b1d-8a43-436e-b5dd-a0f912ba202b">
+				<reportElement x="261" y="0" width="261" height="25" uuid="ba091b1d-8a43-436e-b5dd-a0f912ba202b">
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
 				</reportElement>
 				<box>
 					<topPen lineWidth="1.0" lineColor="#CECECE"/>
-					<leftPen lineWidth="1.0" lineColor="#CECECE"/>
+					<leftPen lineWidth="0.0" lineColor="#CECECE"/>
 					<bottomPen lineWidth="1.0" lineColor="#CECECE"/>
 					<rightPen lineWidth="2.0" lineColor="#8C735A"/>
 				</box>
 				<textElement verticalAlignment="Middle">
 					<font size="9"/>
-					<paragraph leftIndent="6"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{xzycDescription}]]></textFieldExpression>
 			</textField>
@@ -414,8 +436,16 @@
 				</textElement>
 				<text><![CDATA[是]]></text>
 			</staticText>
+			<staticText>
+				<reportElement stretchType="RelativeToBandHeight" x="255" y="0" width="7" height="25" uuid="61be4dba-23da-4c30-a2b3-be10632629a5"/>
+				<box>
+					<pen lineColor="#CECECE"/>
+					<bottomPen lineWidth="1.0" lineColor="#CECECE"/>
+				</box>
+				<text><![CDATA[]]></text>
+			</staticText>
 		</band>
-		<band height="25">
+		<band height="25" splitType="Prevent">
 			<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 			<staticText>
 				<reportElement stretchType="RelativeToBandHeight" mode="Opaque" x="34" y="0" width="148" height="25" backcolor="#F7DE94" uuid="3b8c7f92-32d6-463f-947a-5b46b5a37a6a">
@@ -434,19 +464,18 @@
 				<text><![CDATA[冠心病（心绞痛，心肌梗死）]]></text>
 			</staticText>
 			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
-				<reportElement x="255" y="0" width="267" height="25" uuid="9b4aed6b-fb70-446c-9041-643f78cd239e">
+				<reportElement x="261" y="0" width="261" height="25" uuid="9b4aed6b-fb70-446c-9041-643f78cd239e">
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
 				</reportElement>
 				<box>
 					<topPen lineWidth="1.0" lineColor="#CECECE"/>
-					<leftPen lineWidth="1.0" lineColor="#CECECE"/>
+					<leftPen lineWidth="0.0" lineColor="#CECECE"/>
 					<bottomPen lineWidth="1.0" lineColor="#CECECE"/>
 					<rightPen lineWidth="2.0" lineColor="#8C735A"/>
 				</box>
 				<textElement verticalAlignment="Middle">
 					<font size="9"/>
-					<paragraph leftIndent="6"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{gxbDescription}]]></textFieldExpression>
 			</textField>
@@ -488,82 +517,100 @@
 				</textElement>
 				<text><![CDATA[是]]></text>
 			</staticText>
-		</band>
-		<band height="25">
-			<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 			<staticText>
-				<reportElement stretchType="RelativeToBandHeight" mode="Opaque" x="34" y="0" width="148" height="25" backcolor="#F7DE94" uuid="3cc85f95-fec1-4792-b9b3-77f579f47dc1">
-					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
-				</reportElement>
+				<reportElement stretchType="RelativeToBandHeight" x="255" y="0" width="7" height="25" uuid="db62e174-7636-42c2-aed6-4a1a0c290647"/>
 				<box>
-					<topPen lineWidth="1.0" lineColor="#CECECE"/>
-					<leftPen lineWidth="2.0" lineColor="#8C735A"/>
+					<pen lineColor="#CECECE"/>
 					<bottomPen lineWidth="1.0" lineColor="#CECECE"/>
-					<rightPen lineWidth="1.0" lineColor="#CECECE"/>
 				</box>
-				<textElement textAlignment="Center" verticalAlignment="Top">
-					<font size="9"/>
-					<paragraph spacingBefore="7"/>
-				</textElement>
-				<text><![CDATA[脑卒中（脑梗死，脑出血，TIA）]]></text>
-			</staticText>
-			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
-				<reportElement x="255" y="0" width="267" height="25" uuid="47bfe26e-f959-42c7-8bf2-b6da9496e129">
-					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
-					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
-				</reportElement>
-				<box>
-					<topPen lineWidth="1.0" lineColor="#CECECE"/>
-					<leftPen lineWidth="1.0" lineColor="#CECECE"/>
-					<bottomPen lineWidth="1.0" lineColor="#CECECE"/>
-					<rightPen lineWidth="2.0" lineColor="#8C735A"/>
-				</box>
-				<textElement verticalAlignment="Middle">
-					<font size="9"/>
-					<paragraph leftIndent="6"/>
-				</textElement>
-				<textFieldExpression><![CDATA[$F{nzzDescription}]]></textFieldExpression>
-			</textField>
-			<staticText>
-				<reportElement stretchType="RelativeToBandHeight" x="182" y="0" width="73" height="25" uuid="c832fffb-62d9-44fe-834c-a1ff0451ac3c">
-					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
-					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
-				</reportElement>
-				<box>
-					<topPen lineWidth="1.0" lineColor="#CECECE"/>
-					<leftPen lineWidth="1.0" lineColor="#CECECE"/>
-					<bottomPen lineWidth="1.0" lineColor="#CECECE"/>
-					<rightPen lineWidth="1.0" lineColor="#CECECE"/>
-				</box>
-				<textElement>
-					<font size="9"/>
-				</textElement>
 				<text><![CDATA[]]></text>
 			</staticText>
-			<image>
-				<reportElement stretchType="RelativeToBandHeight" x="191" y="6" width="12" height="19" uuid="b703b663-59b4-4bea-9ea4-56e65946a745"/>
-				<imageExpression><![CDATA["./images/tu"+($F{isNzz}!=null?($F{isNzz}.contains("0")?"2":"1"):"1")+".png"]]></imageExpression>
-			</image>
-			<staticText>
-				<reportElement stretchType="RelativeToBandHeight" x="206" y="5" width="12" height="20" uuid="858e373e-5f85-40cc-8707-5f130d0afeee"/>
-				<textElement>
-					<font size="9"/>
-				</textElement>
-				<text><![CDATA[否]]></text>
-			</staticText>
-			<image>
-				<reportElement stretchType="RelativeToBandHeight" x="220" y="6" width="12" height="19" uuid="a44d43ae-7cef-4d41-8423-d4ca1ac07e3c"/>
-				<imageExpression><![CDATA["./images/tu"+($F{isNzz}!=null?($F{isNzz}.contains("1")?"2":"1"):"1")+".png"]]></imageExpression>
-			</image>
-			<staticText>
-				<reportElement stretchType="RelativeToBandHeight" x="235" y="5" width="12" height="20" uuid="6903c375-a9d4-4083-8119-2775d96ef915"/>
-				<textElement>
-					<font size="9"/>
-				</textElement>
-				<text><![CDATA[是]]></text>
-			</staticText>
 		</band>
-		<band height="75">
+		<band height="25" splitType="Prevent">
+			<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+			<frame>
+				<reportElement stretchType="RelativeToTallestObject" x="34" y="0" width="488" height="25" uuid="7751ee12-966c-4c1f-b7af-b35e8cd5e555"/>
+				<staticText>
+					<reportElement stretchType="RelativeToTallestObject" mode="Opaque" x="0" y="0" width="148" height="25" backcolor="#F7DE94" uuid="3cc85f95-fec1-4792-b9b3-77f579f47dc1">
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					</reportElement>
+					<box>
+						<topPen lineWidth="1.0" lineColor="#CECECE"/>
+						<leftPen lineWidth="2.0" lineColor="#8C735A"/>
+						<bottomPen lineWidth="1.0" lineColor="#CECECE"/>
+						<rightPen lineWidth="1.0" lineColor="#CECECE"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Top">
+						<font size="9"/>
+						<paragraph spacingBefore="7"/>
+					</textElement>
+					<text><![CDATA[脑卒中（脑梗死，脑出血，TIA）]]></text>
+				</staticText>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement stretchType="RelativeToBandHeight" x="227" y="0" width="261" height="25" uuid="47bfe26e-f959-42c7-8bf2-b6da9496e129">
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					</reportElement>
+					<box>
+						<topPen lineWidth="1.0" lineColor="#CECECE"/>
+						<leftPen lineWidth="0.0" lineColor="#CECECE"/>
+						<bottomPen lineWidth="1.0" lineColor="#CECECE"/>
+						<rightPen lineWidth="2.0" lineColor="#8C735A"/>
+					</box>
+					<textElement verticalAlignment="Middle">
+						<font size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{nzzDescription}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement stretchType="RelativeToBandHeight" x="148" y="0" width="73" height="25" uuid="c832fffb-62d9-44fe-834c-a1ff0451ac3c">
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<box>
+						<topPen lineWidth="1.0" lineColor="#CECECE"/>
+						<leftPen lineWidth="1.0" lineColor="#CECECE"/>
+						<bottomPen lineWidth="1.0" lineColor="#CECECE"/>
+						<rightPen lineWidth="1.0" lineColor="#CECECE"/>
+					</box>
+					<textElement>
+						<font size="9"/>
+					</textElement>
+					<text><![CDATA[]]></text>
+				</staticText>
+				<image>
+					<reportElement stretchType="RelativeToBandHeight" x="157" y="6" width="12" height="19" uuid="b703b663-59b4-4bea-9ea4-56e65946a745"/>
+					<imageExpression><![CDATA["./images/tu"+($F{isNzz}!=null?($F{isNzz}.contains("0")?"2":"1"):"1")+".png"]]></imageExpression>
+				</image>
+				<staticText>
+					<reportElement stretchType="RelativeToBandHeight" x="172" y="5" width="12" height="20" uuid="858e373e-5f85-40cc-8707-5f130d0afeee"/>
+					<textElement>
+						<font size="9"/>
+					</textElement>
+					<text><![CDATA[否]]></text>
+				</staticText>
+				<image>
+					<reportElement stretchType="RelativeToBandHeight" x="186" y="6" width="12" height="19" uuid="a44d43ae-7cef-4d41-8423-d4ca1ac07e3c"/>
+					<imageExpression><![CDATA["./images/tu"+($F{isNzz}!=null?($F{isNzz}.contains("1")?"2":"1"):"1")+".png"]]></imageExpression>
+				</image>
+				<staticText>
+					<reportElement stretchType="RelativeToBandHeight" x="201" y="5" width="12" height="20" uuid="6903c375-a9d4-4083-8119-2775d96ef915"/>
+					<textElement>
+						<font size="9"/>
+					</textElement>
+					<text><![CDATA[是]]></text>
+				</staticText>
+				<staticText>
+					<reportElement stretchType="RelativeToBandHeight" x="221" y="0" width="7" height="25" uuid="afd134bc-be2f-4e59-8e0f-909a971d6dae"/>
+					<box>
+						<pen lineColor="#CECECE"/>
+						<bottomPen lineWidth="1.0" lineColor="#CECECE"/>
+					</box>
+					<text><![CDATA[]]></text>
+				</staticText>
+			</frame>
+		</band>
+		<band height="75" splitType="Prevent">
 			<staticText>
 				<reportElement stretchType="RelativeToBandHeight" mode="Opaque" x="34" y="0" width="148" height="75" backcolor="#F7DE94" uuid="4dcf2378-e87b-479a-913f-f6ba4bb6f7f6">
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
@@ -585,18 +632,17 @@
 处的慢性疾病）]]></text>
 			</staticText>
 			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
-				<reportElement x="255" y="0" width="267" height="75" uuid="d8cfe554-b2d2-4a46-81ec-a72478004a2e">
+				<reportElement stretchType="RelativeToBandHeight" x="261" y="0" width="261" height="75" uuid="d8cfe554-b2d2-4a46-81ec-a72478004a2e">
 					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
 				</reportElement>
 				<box>
 					<topPen lineWidth="1.0" lineColor="#CECECE"/>
-					<leftPen lineWidth="1.0" lineColor="#CECECE"/>
+					<leftPen lineWidth="0.0" lineColor="#CECECE"/>
 					<bottomPen lineWidth="1.0" lineColor="#CECECE"/>
 					<rightPen lineWidth="2.0" lineColor="#8C735A"/>
 				</box>
 				<textElement verticalAlignment="Middle">
 					<font size="9"/>
-					<paragraph lineSpacing="Single" leftIndent="6"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{mxbybjbsDescription}]]></textFieldExpression>
 			</textField>
@@ -637,8 +683,16 @@
 				</textElement>
 				<text><![CDATA[是]]></text>
 			</staticText>
+			<staticText>
+				<reportElement stretchType="RelativeToBandHeight" x="255" y="0" width="7" height="75" uuid="3412c539-2edf-48ac-90fa-9d38434a33ab"/>
+				<box>
+					<pen lineColor="#CECECE"/>
+					<bottomPen lineWidth="1.0" lineColor="#CECECE"/>
+				</box>
+				<text><![CDATA[]]></text>
+			</staticText>
 		</band>
-		<band height="100">
+		<band height="100" splitType="Prevent">
 			<staticText>
 				<reportElement stretchType="RelativeToBandHeight" mode="Opaque" x="34" y="0" width="148" height="100" backcolor="#F7DE94" uuid="72706e14-483c-47dd-bddf-4590ab89b378">
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
@@ -662,18 +716,17 @@
 以及其他慢性呼吸系统疾病）：]]></text>
 			</staticText>
 			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
-				<reportElement x="255" y="0" width="267" height="100" uuid="c7427cd1-5dc7-4e39-a0bd-c54e70bee631">
+				<reportElement x="261" y="0" width="261" height="100" uuid="c7427cd1-5dc7-4e39-a0bd-c54e70bee631">
 					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
 				</reportElement>
 				<box>
 					<topPen lineWidth="1.0" lineColor="#CECECE"/>
-					<leftPen lineWidth="1.0" lineColor="#CECECE"/>
+					<leftPen lineWidth="0.0" lineColor="#CECECE"/>
 					<bottomPen lineWidth="1.0" lineColor="#CECECE"/>
 					<rightPen lineWidth="2.0" lineColor="#8C735A"/>
 				</box>
 				<textElement verticalAlignment="Middle">
 					<font size="9"/>
-					<paragraph leftIndent="6"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{mxhxjbsDescription}]]></textFieldExpression>
 			</textField>
@@ -714,8 +767,16 @@
 				</textElement>
 				<text><![CDATA[]]></text>
 			</staticText>
+			<staticText>
+				<reportElement stretchType="RelativeToBandHeight" x="255" y="0" width="7" height="100" uuid="1c8df053-f183-42fc-84df-806682184b6d"/>
+				<box>
+					<pen lineColor="#CECECE"/>
+					<bottomPen lineWidth="1.0" lineColor="#CECECE"/>
+				</box>
+				<text><![CDATA[]]></text>
+			</staticText>
 		</band>
-		<band height="25">
+		<band height="25" splitType="Prevent">
 			<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 			<staticText>
 				<reportElement stretchType="RelativeToBandHeight" mode="Opaque" x="34" y="0" width="148" height="25" backcolor="#F7DE94" uuid="3569ccf4-b27f-4bf3-87da-f8916bb853d1">
@@ -734,19 +795,18 @@
 				<text><![CDATA[反流性食管炎]]></text>
 			</staticText>
 			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
-				<reportElement x="255" y="0" width="267" height="25" uuid="1723de4f-6041-4b3a-b5de-b5493afd346e">
+				<reportElement x="261" y="0" width="261" height="25" uuid="1723de4f-6041-4b3a-b5de-b5493afd346e">
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
 				</reportElement>
 				<box>
 					<topPen lineWidth="1.0" lineColor="#CECECE"/>
-					<leftPen lineWidth="1.0" lineColor="#CECECE"/>
+					<leftPen lineWidth="0.0" lineColor="#CECECE"/>
 					<bottomPen lineWidth="1.0" lineColor="#CECECE"/>
 					<rightPen lineWidth="2.0" lineColor="#8C735A"/>
 				</box>
 				<textElement verticalAlignment="Middle">
 					<font size="9"/>
-					<paragraph leftIndent="6"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{flxsgyDescription}]]></textFieldExpression>
 			</textField>
@@ -787,6 +847,14 @@
 					<font size="9"/>
 				</textElement>
 				<text><![CDATA[是]]></text>
+			</staticText>
+			<staticText>
+				<reportElement stretchType="RelativeToBandHeight" x="255" y="0" width="7" height="25" uuid="9934c631-f432-4016-a1c2-bcadac9b2352"/>
+				<box>
+					<pen lineColor="#CECECE"/>
+					<bottomPen lineWidth="1.0" lineColor="#CECECE"/>
+				</box>
+				<text><![CDATA[]]></text>
 			</staticText>
 		</band>
 		<band height="25" splitType="Prevent">
@@ -905,7 +973,7 @@
 				<text><![CDATA[不知道]]></text>
 			</staticText>
 		</band>
-		<band height="25">
+		<band height="25" splitType="Prevent">
 			<staticText>
 				<reportElement stretchType="RelativeToBandHeight" mode="Opaque" x="34" y="0" width="148" height="25" backcolor="#F7DE94" uuid="107cfcff-eda5-4f5d-8b37-75b561a6baee">
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
@@ -923,19 +991,18 @@
 				<text><![CDATA[胃溃疡]]></text>
 			</staticText>
 			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
-				<reportElement x="255" y="0" width="267" height="25" uuid="e741cf60-a2a9-44b7-ae35-5d822240dd2c">
+				<reportElement x="261" y="0" width="261" height="25" uuid="e741cf60-a2a9-44b7-ae35-5d822240dd2c">
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
 				</reportElement>
 				<box>
 					<topPen lineWidth="1.0" lineColor="#CECECE"/>
-					<leftPen lineWidth="1.0" lineColor="#CECECE"/>
+					<leftPen lineWidth="0.0" lineColor="#CECECE"/>
 					<bottomPen lineWidth="1.0" lineColor="#CECECE"/>
 					<rightPen lineWidth="2.0" lineColor="#8C735A"/>
 				</box>
 				<textElement verticalAlignment="Middle">
 					<font size="9"/>
-					<paragraph lineSpacing="Single" leftIndent="6"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{wkyDescription}]]></textFieldExpression>
 			</textField>
@@ -977,8 +1044,16 @@
 				</textElement>
 				<text><![CDATA[是]]></text>
 			</staticText>
+			<staticText>
+				<reportElement stretchType="RelativeToBandHeight" x="255" y="0" width="7" height="25" uuid="731b8ca4-6dbd-4a13-8698-ed15bae1eca9"/>
+				<box>
+					<pen lineColor="#CECECE"/>
+					<bottomPen lineWidth="1.0" lineColor="#CECECE"/>
+				</box>
+				<text><![CDATA[]]></text>
+			</staticText>
 		</band>
-		<band height="25">
+		<band height="25" splitType="Prevent">
 			<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 			<staticText>
 				<reportElement stretchType="RelativeToBandHeight" mode="Opaque" x="34" y="0" width="148" height="25" backcolor="#F7DE94" uuid="91308dfc-2340-40d5-8642-90a67453f8fc">
@@ -997,19 +1072,18 @@
 				<text><![CDATA[十二指肠溃疡]]></text>
 			</staticText>
 			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
-				<reportElement x="255" y="0" width="267" height="25" uuid="e6c827e0-d5ec-48fe-9a1e-90f07953caa4">
+				<reportElement x="261" y="0" width="261" height="25" uuid="e6c827e0-d5ec-48fe-9a1e-90f07953caa4">
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
 				</reportElement>
 				<box>
 					<topPen lineWidth="1.0" lineColor="#CECECE"/>
-					<leftPen lineWidth="1.0" lineColor="#CECECE"/>
+					<leftPen lineWidth="0.0" lineColor="#CECECE"/>
 					<bottomPen lineWidth="1.0" lineColor="#CECECE"/>
 					<rightPen lineWidth="2.0" lineColor="#8C735A"/>
 				</box>
 				<textElement verticalAlignment="Middle">
 					<font size="9"/>
-					<paragraph leftIndent="6"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{sezckyDescription}]]></textFieldExpression>
 			</textField>
@@ -1051,8 +1125,16 @@
 				</textElement>
 				<text><![CDATA[是]]></text>
 			</staticText>
+			<staticText>
+				<reportElement stretchType="RelativeToBandHeight" x="255" y="0" width="7" height="25" uuid="f96a333e-dd05-459e-8869-3c86c6f11ba1"/>
+				<box>
+					<pen lineColor="#CECECE"/>
+					<bottomPen lineWidth="1.0" lineColor="#CECECE"/>
+				</box>
+				<text><![CDATA[]]></text>
+			</staticText>
 		</band>
-		<band height="25">
+		<band height="25" splitType="Prevent">
 			<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 			<staticText>
 				<reportElement stretchType="RelativeToBandHeight" mode="Opaque" x="34" y="0" width="148" height="25" backcolor="#F7DE94" uuid="de8e3086-c497-41f2-bb3f-8bc41f148c23">
@@ -1071,19 +1153,18 @@
 				<text><![CDATA[慢性乙型肝炎]]></text>
 			</staticText>
 			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
-				<reportElement x="255" y="0" width="267" height="25" uuid="f0056a31-8ca2-4d4d-bd99-bfaf997d5165">
+				<reportElement x="261" y="0" width="261" height="25" uuid="f0056a31-8ca2-4d4d-bd99-bfaf997d5165">
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
 				</reportElement>
 				<box>
 					<topPen lineWidth="1.0" lineColor="#CECECE"/>
-					<leftPen lineWidth="1.0" lineColor="#CECECE"/>
+					<leftPen lineWidth="0.0" lineColor="#CECECE"/>
 					<bottomPen lineWidth="1.0" lineColor="#CECECE"/>
 					<rightPen lineWidth="2.0" lineColor="#8C735A"/>
 				</box>
 				<textElement verticalAlignment="Middle">
 					<font size="9"/>
-					<paragraph leftIndent="6"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{mxygyDescription}]]></textFieldExpression>
 			</textField>
@@ -1125,8 +1206,16 @@
 				</textElement>
 				<text><![CDATA[是]]></text>
 			</staticText>
+			<staticText>
+				<reportElement stretchType="RelativeToBandHeight" x="255" y="0" width="7" height="25" uuid="a7ecee15-80eb-4207-9a51-50111178bae7"/>
+				<box>
+					<pen lineColor="#CECECE"/>
+					<bottomPen lineWidth="1.0" lineColor="#CECECE"/>
+				</box>
+				<text><![CDATA[]]></text>
+			</staticText>
 		</band>
-		<band height="25">
+		<band height="25" splitType="Prevent">
 			<staticText>
 				<reportElement stretchType="RelativeToBandHeight" mode="Opaque" x="34" y="0" width="148" height="25" backcolor="#F7DE94" uuid="97f6d77e-5be6-4ed5-b85b-e7a8ab3334c1">
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
@@ -1145,19 +1234,18 @@
 （HBsAg+）]]></text>
 			</staticText>
 			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
-				<reportElement x="255" y="0" width="267" height="25" uuid="43483ef7-14e6-43fa-8bd5-cc596792fac6">
+				<reportElement x="261" y="0" width="261" height="25" uuid="43483ef7-14e6-43fa-8bd5-cc596792fac6">
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
-					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
 				</reportElement>
 				<box>
 					<topPen lineWidth="1.0" lineColor="#CECECE"/>
-					<leftPen lineWidth="1.0" lineColor="#CECECE"/>
+					<leftPen lineWidth="0.0" lineColor="#CECECE"/>
 					<bottomPen lineWidth="1.0" lineColor="#CECECE"/>
 					<rightPen lineWidth="2.0" lineColor="#8C735A"/>
 				</box>
 				<textElement verticalAlignment="Middle">
 					<font size="9"/>
-					<paragraph leftIndent="6"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{ygkyyxDescription}]]></textFieldExpression>
 			</textField>
@@ -1199,8 +1287,16 @@
 				</textElement>
 				<text><![CDATA[是]]></text>
 			</staticText>
+			<staticText>
+				<reportElement stretchType="RelativeToBandHeight" x="255" y="0" width="7" height="25" uuid="b83b0289-cdf4-4b91-b6e3-8de00ad1d659"/>
+				<box>
+					<pen lineColor="#CECECE"/>
+					<bottomPen lineWidth="1.0" lineColor="#CECECE"/>
+				</box>
+				<text><![CDATA[]]></text>
+			</staticText>
 		</band>
-		<band height="25">
+		<band height="25" splitType="Prevent">
 			<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 			<staticText>
 				<reportElement stretchType="RelativeToBandHeight" mode="Opaque" x="34" y="0" width="148" height="25" backcolor="#F7DE94" uuid="ab26b562-f5b3-4f5a-bc8f-78eff7e57031">
@@ -1219,19 +1315,18 @@
 				<text><![CDATA[慢性丙型肝炎]]></text>
 			</staticText>
 			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
-				<reportElement x="255" y="0" width="267" height="25" uuid="a247cc2f-7aad-4025-ae2e-f131b4745d6f">
+				<reportElement x="261" y="0" width="261" height="25" uuid="a247cc2f-7aad-4025-ae2e-f131b4745d6f">
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
 				</reportElement>
 				<box>
 					<topPen lineWidth="1.0" lineColor="#CECECE"/>
-					<leftPen lineWidth="1.0" lineColor="#CECECE"/>
+					<leftPen lineWidth="0.0" lineColor="#CECECE"/>
 					<bottomPen lineWidth="1.0" lineColor="#CECECE"/>
 					<rightPen lineWidth="2.0" lineColor="#8C735A"/>
 				</box>
 				<textElement verticalAlignment="Middle">
 					<font size="9"/>
-					<paragraph leftIndent="6"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{mxbxgyDescription}]]></textFieldExpression>
 			</textField>
@@ -1273,8 +1368,16 @@
 				</textElement>
 				<text><![CDATA[是]]></text>
 			</staticText>
+			<staticText>
+				<reportElement stretchType="RelativeToBandHeight" x="255" y="0" width="7" height="25" uuid="c0995296-a004-4ea4-9713-2aebb0e7eb95"/>
+				<box>
+					<pen lineColor="#CECECE"/>
+					<bottomPen lineWidth="1.0" lineColor="#CECECE"/>
+				</box>
+				<text><![CDATA[]]></text>
+			</staticText>
 		</band>
-		<band height="25">
+		<band height="25" splitType="Prevent">
 			<staticText>
 				<reportElement stretchType="RelativeToBandHeight" mode="Opaque" x="34" y="0" width="148" height="25" backcolor="#F7DE94" uuid="35f336d1-42ca-447b-a8cb-e6ca4477a981">
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
@@ -1292,19 +1395,18 @@
 				<text><![CDATA[肝硬化]]></text>
 			</staticText>
 			<textField isStretchWithOverflow="true">
-				<reportElement x="255" y="0" width="267" height="25" uuid="d09dbced-90c8-427f-a827-1d5bb25c7c3b">
+				<reportElement x="261" y="0" width="261" height="25" uuid="d09dbced-90c8-427f-a827-1d5bb25c7c3b">
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
 				</reportElement>
 				<box>
 					<topPen lineWidth="1.0" lineColor="#CECECE"/>
-					<leftPen lineWidth="1.0" lineColor="#CECECE"/>
+					<leftPen lineWidth="0.0" lineColor="#CECECE"/>
 					<bottomPen lineWidth="1.0" lineColor="#CECECE"/>
 					<rightPen lineWidth="2.0" lineColor="#8C735A"/>
 				</box>
 				<textElement verticalAlignment="Middle">
 					<font size="9"/>
-					<paragraph leftIndent="6"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{gyhDescription}]]></textFieldExpression>
 			</textField>
@@ -1345,6 +1447,14 @@
 					<font size="9"/>
 				</textElement>
 				<text><![CDATA[是]]></text>
+			</staticText>
+			<staticText>
+				<reportElement stretchType="RelativeToBandHeight" x="255" y="0" width="7" height="25" uuid="55adc971-d4db-419d-b0a7-eeda568bbe65"/>
+				<box>
+					<pen lineColor="#CECECE"/>
+					<bottomPen lineWidth="1.0" lineColor="#CECECE"/>
+				</box>
+				<text><![CDATA[]]></text>
 			</staticText>
 		</band>
 		<band height="25" splitType="Prevent">
@@ -1583,7 +1693,7 @@
 				<text><![CDATA[不知道]]></text>
 			</staticText>
 		</band>
-		<band height="25">
+		<band height="25" splitType="Prevent">
 			<staticText>
 				<reportElement stretchType="RelativeToBandHeight" mode="Opaque" x="34" y="0" width="148" height="25" backcolor="#F7DE94" uuid="051577ef-5adc-4a23-99e6-a522ef26d293">
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
@@ -1601,19 +1711,18 @@
 				<text><![CDATA[胆囊摘除术]]></text>
 			</staticText>
 			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
-				<reportElement x="255" y="0" width="267" height="25" uuid="3182d327-2e0f-4c99-b10b-58bfb6497590">
+				<reportElement x="261" y="0" width="261" height="25" uuid="3182d327-2e0f-4c99-b10b-58bfb6497590">
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
 				</reportElement>
 				<box>
 					<topPen lineWidth="1.0" lineColor="#CECECE"/>
-					<leftPen lineWidth="1.0" lineColor="#CECECE"/>
+					<leftPen lineWidth="0.0" lineColor="#CECECE"/>
 					<bottomPen lineWidth="1.0" lineColor="#CECECE"/>
 					<rightPen lineWidth="2.0" lineColor="#8C735A"/>
 				</box>
 				<textElement verticalAlignment="Middle">
 					<font size="9"/>
-					<paragraph leftIndent="6"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{dnzcsDescription}]]></textFieldExpression>
 			</textField>
@@ -1655,8 +1764,16 @@
 				</textElement>
 				<text><![CDATA[是]]></text>
 			</staticText>
+			<staticText>
+				<reportElement stretchType="RelativeToBandHeight" x="255" y="0" width="7" height="25" uuid="01154074-c6dd-4f43-93f9-62ee711721d3"/>
+				<box>
+					<pen lineColor="#CECECE"/>
+					<bottomPen lineWidth="1.0" lineColor="#CECECE"/>
+				</box>
+				<text><![CDATA[]]></text>
+			</staticText>
 		</band>
-		<band height="25">
+		<band height="25" splitType="Prevent">
 			<staticText>
 				<reportElement stretchType="RelativeToBandHeight" mode="Opaque" x="34" y="0" width="148" height="25" backcolor="#F7DE94" uuid="a97e0160-53e1-41bf-88c9-78e99f0de373">
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
@@ -1690,19 +1807,18 @@
 				<text><![CDATA[]]></text>
 			</staticText>
 			<textField isStretchWithOverflow="true">
-				<reportElement x="255" y="0" width="267" height="25" uuid="ad706cd1-bfb7-456e-bc7d-6119bd583c99">
+				<reportElement x="261" y="0" width="261" height="25" uuid="ad706cd1-bfb7-456e-bc7d-6119bd583c99">
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
 				</reportElement>
 				<box>
 					<topPen lineWidth="1.0" lineColor="#CECECE"/>
-					<leftPen lineWidth="1.0" lineColor="#CECECE"/>
+					<leftPen lineWidth="0.0" lineColor="#CECECE"/>
 					<bottomPen lineWidth="1.0" lineColor="#CECECE"/>
 					<rightPen lineWidth="2.0" lineColor="#8C735A"/>
 				</box>
 				<textElement verticalAlignment="Middle">
 					<font size="9"/>
-					<paragraph leftIndent="6"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{mxyxyDescription}]]></textFieldExpression>
 			</textField>
@@ -1728,8 +1844,16 @@
 				</textElement>
 				<text><![CDATA[是]]></text>
 			</staticText>
+			<staticText>
+				<reportElement stretchType="RelativeToBandHeight" x="255" y="0" width="7" height="25" uuid="dbeeba52-1e22-4c6e-8d35-3a3f250eba8c"/>
+				<box>
+					<pen lineColor="#CECECE"/>
+					<bottomPen lineWidth="1.0" lineColor="#CECECE"/>
+				</box>
+				<text><![CDATA[]]></text>
+			</staticText>
 		</band>
-		<band height="25">
+		<band height="25" splitType="Prevent">
 			<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 			<staticText>
 				<reportElement stretchType="RelativeToBandHeight" mode="Opaque" x="34" y="0" width="148" height="25" backcolor="#F7DE94" uuid="d6406da2-7ede-4eee-ac6e-6aa903470aa6">
@@ -1748,19 +1872,18 @@
 				<text><![CDATA[慢性结肠炎]]></text>
 			</staticText>
 			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
-				<reportElement x="255" y="0" width="267" height="25" uuid="e768bd32-320b-452d-bb4f-4d1cc4c0b403">
+				<reportElement x="261" y="0" width="261" height="25" uuid="e768bd32-320b-452d-bb4f-4d1cc4c0b403">
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
-					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
 				</reportElement>
 				<box>
 					<topPen lineWidth="1.0" lineColor="#CECECE"/>
-					<leftPen lineWidth="1.0" lineColor="#CECECE"/>
+					<leftPen lineWidth="0.0" lineColor="#CECECE"/>
 					<bottomPen lineWidth="1.0" lineColor="#CECECE"/>
 					<rightPen lineWidth="2.0" lineColor="#8C735A"/>
 				</box>
 				<textElement verticalAlignment="Middle">
 					<font size="9"/>
-					<paragraph leftIndent="6"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{mxjcyDescription}]]></textFieldExpression>
 			</textField>
@@ -1801,6 +1924,14 @@
 					<font size="9"/>
 				</textElement>
 				<text><![CDATA[是]]></text>
+			</staticText>
+			<staticText>
+				<reportElement stretchType="RelativeToBandHeight" x="255" y="0" width="7" height="25" uuid="35a96537-1e33-4166-b343-4d4ce7975f09"/>
+				<box>
+					<pen lineColor="#CECECE"/>
+					<bottomPen lineWidth="1.0" lineColor="#CECECE"/>
+				</box>
+				<text><![CDATA[]]></text>
 			</staticText>
 		</band>
 		<band height="25" splitType="Prevent">
@@ -1872,9 +2003,9 @@
 				</box>
 				<textElement>
 					<font size="9"/>
-					<paragraph leftIndent="6" spacingBefore="7"/>
+					<paragraph spacingBefore="7"/>
 				</textElement>
-				<text><![CDATA[腺瘤性肠息肉（家族性肠息肉亦属此类）]]></text>
+				<text><![CDATA[ 腺瘤性肠息肉（家族性肠息肉亦属此类）]]></text>
 			</staticText>
 			<image vAlign="Middle">
 				<reportElement x="420" y="6" width="15" height="12" uuid="fcfc86bd-28d4-43b4-9a0c-96a0cda4ad11"/>
@@ -1912,7 +2043,7 @@
 				<text><![CDATA[不知道]]></text>
 			</staticText>
 		</band>
-		<band height="25">
+		<band height="25" splitType="Prevent">
 			<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 			<staticText>
 				<reportElement stretchType="RelativeToBandHeight" mode="Opaque" x="34" y="0" width="148" height="25" backcolor="#F7DE94" uuid="43d7c0f5-bf87-4661-a599-62b515a3abbd">
@@ -1931,19 +2062,18 @@
 				<text><![CDATA[其他消化道疾病史]]></text>
 			</staticText>
 			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
-				<reportElement x="255" y="0" width="267" height="25" uuid="4139c5bd-9fa0-48b6-b6e7-8c9befff8862">
+				<reportElement x="261" y="0" width="261" height="25" uuid="4139c5bd-9fa0-48b6-b6e7-8c9befff8862">
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
-					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
 				</reportElement>
 				<box>
 					<topPen lineWidth="1.0" lineColor="#CECECE"/>
-					<leftPen lineWidth="1.0" lineColor="#CECECE"/>
+					<leftPen lineWidth="0.0" lineColor="#CECECE"/>
 					<bottomPen lineWidth="1.0" lineColor="#CECECE"/>
 					<rightPen lineWidth="2.0" lineColor="#8C735A"/>
 				</box>
 				<textElement verticalAlignment="Middle">
 					<font size="9"/>
-					<paragraph leftIndent="6"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{otherJbsDescription}]]></textFieldExpression>
 			</textField>
@@ -1985,8 +2115,16 @@
 				</textElement>
 				<text><![CDATA[是]]></text>
 			</staticText>
+			<staticText>
+				<reportElement stretchType="RelativeToBandHeight" x="255" y="0" width="7" height="25" uuid="313cc82d-5093-48ce-9203-933c8a78022f"/>
+				<box>
+					<pen lineColor="#CECECE"/>
+					<bottomPen lineWidth="1.0" lineColor="#CECECE"/>
+				</box>
+				<text><![CDATA[]]></text>
+			</staticText>
 		</band>
-		<band height="25">
+		<band height="25" splitType="Prevent">
 			<staticText>
 				<reportElement stretchType="RelativeToBandHeight" mode="Opaque" x="34" y="0" width="148" height="25" backcolor="#F7DE94" uuid="ef0ed487-75dc-45c1-90ea-09cf14fce5e6">
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
@@ -2004,19 +2142,18 @@
 				<text><![CDATA[癌症]]></text>
 			</staticText>
 			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
-				<reportElement x="255" y="0" width="267" height="25" uuid="71a31684-3fc1-49d9-ad1c-c7666e7bc80d">
+				<reportElement x="261" y="0" width="261" height="25" uuid="71a31684-3fc1-49d9-ad1c-c7666e7bc80d">
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
 				</reportElement>
 				<box>
 					<topPen lineWidth="1.0" lineColor="#CECECE"/>
-					<leftPen lineWidth="1.0" lineColor="#CECECE"/>
+					<leftPen lineWidth="0.0" lineColor="#CECECE"/>
 					<bottomPen lineWidth="1.0" lineColor="#CECECE"/>
 					<rightPen lineWidth="2.0" lineColor="#8C735A"/>
 				</box>
 				<textElement verticalAlignment="Middle">
 					<font size="9"/>
-					<paragraph leftIndent="6"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{cancerDescription}]]></textFieldExpression>
 			</textField>
@@ -2058,8 +2195,16 @@
 				</textElement>
 				<text><![CDATA[是]]></text>
 			</staticText>
+			<staticText>
+				<reportElement stretchType="RelativeToBandHeight" x="255" y="0" width="7" height="25" uuid="c9a3d750-4b6b-41b2-8a46-89236de2dc96"/>
+				<box>
+					<pen lineColor="#CECECE"/>
+					<bottomPen lineWidth="1.0" lineColor="#CECECE"/>
+				</box>
+				<text><![CDATA[]]></text>
+			</staticText>
 		</band>
-		<band height="25">
+		<band height="25" splitType="Prevent">
 			<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 			<staticText>
 				<reportElement stretchType="RelativeToBandHeight" mode="Opaque" x="34" y="0" width="148" height="25" backcolor="#F7DE94" uuid="cfb8cced-9035-450c-9135-6fa3124baf4a">
@@ -2078,19 +2223,18 @@
 				<text><![CDATA[其它疾病]]></text>
 			</staticText>
 			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
-				<reportElement x="255" y="0" width="267" height="25" uuid="4c710860-8ae4-43da-862a-31e92f42be7a">
+				<reportElement x="261" y="0" width="261" height="25" uuid="4c710860-8ae4-43da-862a-31e92f42be7a">
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
 				</reportElement>
 				<box>
 					<topPen lineWidth="1.0" lineColor="#CECECE"/>
-					<leftPen lineWidth="1.0" lineColor="#CECECE"/>
+					<leftPen lineWidth="0.0" lineColor="#CECECE"/>
 					<bottomPen lineWidth="1.0" lineColor="#CECECE"/>
 					<rightPen lineWidth="2.0" lineColor="#8C735A"/>
 				</box>
 				<textElement verticalAlignment="Middle">
 					<font size="9"/>
-					<paragraph leftIndent="6"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{otherDiseaseDescription}]]></textFieldExpression>
 			</textField>
@@ -2132,8 +2276,16 @@
 				</textElement>
 				<text><![CDATA[是]]></text>
 			</staticText>
+			<staticText>
+				<reportElement stretchType="RelativeToBandHeight" x="255" y="0" width="7" height="25" uuid="a49c0847-d3b6-411e-9bf8-56908b5f3472"/>
+				<box>
+					<pen lineColor="#CECECE"/>
+					<bottomPen lineWidth="1.0" lineColor="#CECECE"/>
+				</box>
+				<text><![CDATA[]]></text>
+			</staticText>
 		</band>
-		<band height="25">
+		<band height="25" splitType="Prevent">
 			<staticText>
 				<reportElement stretchType="RelativeToBandHeight" mode="Opaque" x="34" y="0" width="148" height="25" backcolor="#F7DE94" uuid="9bad62f5-1e9f-4c20-8ff7-197d4029c561">
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
@@ -2151,19 +2303,18 @@
 				<text><![CDATA[手术史]]></text>
 			</staticText>
 			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
-				<reportElement x="255" y="0" width="267" height="25" uuid="0e6c7c5a-6a10-412b-8aaa-d1ea75e141d8">
+				<reportElement x="261" y="0" width="261" height="25" uuid="0e6c7c5a-6a10-412b-8aaa-d1ea75e141d8">
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
 				</reportElement>
 				<box>
 					<topPen lineWidth="1.0" lineColor="#CECECE"/>
-					<leftPen lineWidth="1.0" lineColor="#CECECE"/>
+					<leftPen lineWidth="0.0" lineColor="#CECECE"/>
 					<bottomPen lineWidth="2.0" lineColor="#8C735A"/>
 					<rightPen lineWidth="2.0" lineColor="#8C735A"/>
 				</box>
 				<textElement verticalAlignment="Middle">
 					<font size="9"/>
-					<paragraph leftIndent="6"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{surgeryDescription}]]></textFieldExpression>
 			</textField>
@@ -2204,6 +2355,14 @@
 					<font size="9"/>
 				</textElement>
 				<text><![CDATA[是]]></text>
+			</staticText>
+			<staticText>
+				<reportElement stretchType="RelativeToBandHeight" x="255" y="0" width="7" height="25" uuid="7233ca89-b5ba-4058-83b2-e4a3eadfe235"/>
+				<box>
+					<pen lineColor="#CECECE"/>
+					<bottomPen lineWidth="2.0" lineColor="#8C735A"/>
+				</box>
+				<text><![CDATA[]]></text>
 			</staticText>
 		</band>
 	</detail>
