@@ -183,19 +183,19 @@ public class SaperReportController {
 //            return resultMap;
         }catch (Exception e){
             e.printStackTrace();
-//            JSONObject object = new JSONObject();
-//            response.setStatus(400);
-//            object.put("status",400);
-//            object.put("error",e.toString());
-//            response.setHeader("content-type", "application/json");
-////            response.setCharacterEncoding("UTF-8");
-//            try {
-//                Writer writer = response.getWriter();
-//                writer.write(object.toJSONString());
-//                writer.close();
-//            } catch (IOException e1) {
-//                e1.printStackTrace();
-//            }
+            JSONObject object = new JSONObject();
+            response.setStatus(400);
+            object.put("status",400);
+            object.put("error",e.toString());
+            response.setHeader("content-type", "application/json");
+//            response.setCharacterEncoding("UTF-8");
+            try {
+                Writer writer = response.getWriter();
+                writer.write(object.toJSONString());
+                writer.close();
+            } catch (IOException e1) {
+                e1.printStackTrace();
+            }
 
 //
         }finally {

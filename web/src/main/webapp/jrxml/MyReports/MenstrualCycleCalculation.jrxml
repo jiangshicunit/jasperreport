@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
-<!-- 2017-06-16T09:41:21 -->
+<!-- 2017-07-05T17:23:21 -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="FemaleHormonalBalanceAdviceAndFunctionalMedicineTest" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="0" bottomMargin="0" uuid="b9efc687-b655-46ee-9974-742cdbafe74b">
 	<property name="com.jaspersoft.studio.unit." value="pixel"/>
 	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="New Data Adapter (2)"/>
@@ -27,7 +27,7 @@
 				<textElement verticalAlignment="Middle">
 					<font size="12"/>
 				</textElement>
-				<text><![CDATA[ 依据女性月经周期中黄体期为14天左右之准则,参考您提供的月经天数与最后来经日(LMP),]]></text>
+				<text><![CDATA[依据女性月经周期中黄体期为14天左右之准则,参考您提供的月经天数与最后来经日(LMP),]]></text>
 			</staticText>
 		</band>
 		<band height="21" splitType="Stretch">
@@ -36,7 +36,7 @@
 				<textElement verticalAlignment="Middle">
 					<font size="12"/>
 				</textElement>
-				<text><![CDATA[ 可预估下次月经日前14天为黄体期,此次月经起始日至预估黄体期间
+				<text><![CDATA[可预估下次月经日前14天为黄体期,此次月经起始日至预估黄体期间
 为滤泡期,依此原则换算成]]></text>
 			</staticText>
 		</band>
@@ -46,7 +46,7 @@
 				<textElement verticalAlignment="Middle">
 					<font size="12"/>
 				</textElement>
-				<text><![CDATA[ 28天月经周期。]]></text>
+				<text><![CDATA[28天月经周期。]]></text>
 			</staticText>
 		</band>
 	</detail>
