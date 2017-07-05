@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
-<!-- 2017-06-21T14:58:36 -->
+<!-- 2017-07-05T16:54:38 -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="FemaleHormonalBalanceAdviceAndFunctionalMedicineTest" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="0" bottomMargin="0" uuid="b9efc687-b655-46ee-9974-742cdbafe74b">
 	<property name="com.jaspersoft.studio.unit." value="pixel"/>
 	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="New Data Adapter (2)"/>
@@ -17,6 +17,7 @@
 				<reportElement x="30" y="0" width="500" height="21" uuid="b0ac373c-682c-4f2e-b562-8d9aea16115c"/>
 				<textElement verticalAlignment="Middle">
 					<font size="12"/>
+					<paragraph lineSpacing="1_1_2" lineSpacingSize="1.0" spacingBefore="0"/>
 				</textElement>
 				<text><![CDATA[ 压力一直是人生命中不可避免的一部分。无论是正面还是负面，压力即是身体对生理、精神、]]></text>
 			</staticText>
@@ -228,9 +229,12 @@
 				<text><![CDATA[ （corticosterone）;与内层网状区（zona reticularis）负责分泌性激素， 如脱氢表雄酮]]></text>
 			</staticText>
 		</band>
-		<band height="330" splitType="Prevent">
+		<band height="327" splitType="Prevent">
+			<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 			<staticText>
-				<reportElement x="35" y="0" width="260" height="330" uuid="5d96d265-f95b-4121-87b2-1f7ee8ae6ed9"/>
+				<reportElement x="35" y="0" width="260" height="327" uuid="5d96d265-f95b-4121-87b2-1f7ee8ae6ed9">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
 				<textElement rotation="None" markup="none">
 					<font size="12"/>
 					<paragraph lineSpacing="1_1_2" lineSpacingSize="1.0" spacingBefore="0"/>
@@ -252,13 +256,15 @@
 正肾上腺素（norepinephrine）的主要来源。]]></text>
 			</staticText>
 			<image>
-				<reportElement x="295" y="0" width="270" height="320" uuid="b037af92-3348-4ecb-bca3-1b541255fb2e"/>
+				<reportElement x="295" y="0" width="240" height="315" uuid="b037af92-3348-4ecb-bca3-1b541255fb2e">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
 				<imageExpression><![CDATA["images/ydxs.jpg"]]></imageExpression>
 			</image>
 		</band>
 		<band height="21" splitType="Stretch">
 			<staticText>
-				<reportElement x="30" y="0" width="500" height="21" uuid="b0ac373c-682c-4f2e-b562-8d9aea16115c"/>
+				<reportElement x="30" y="-2" width="500" height="21" uuid="b0ac373c-682c-4f2e-b562-8d9aea16115c"/>
 				<textElement verticalAlignment="Middle">
 					<font size="12"/>
 				</textElement>
@@ -267,7 +273,9 @@
 		</band>
 		<band height="21" splitType="Stretch">
 			<staticText>
-				<reportElement x="30" y="0" width="500" height="21" uuid="b0ac373c-682c-4f2e-b562-8d9aea16115c"/>
+				<reportElement x="30" y="-2" width="500" height="21" uuid="b0ac373c-682c-4f2e-b562-8d9aea16115c">
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
 				<textElement verticalAlignment="Middle">
 					<font size="12"/>
 				</textElement>
@@ -276,7 +284,9 @@
 		</band>
 		<band height="21" splitType="Stretch">
 			<staticText>
-				<reportElement x="30" y="0" width="500" height="21" uuid="b0ac373c-682c-4f2e-b562-8d9aea16115c"/>
+				<reportElement x="30" y="-2" width="500" height="21" uuid="b0ac373c-682c-4f2e-b562-8d9aea16115c">
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
 				<textElement verticalAlignment="Middle">
 					<font size="12"/>
 				</textElement>
