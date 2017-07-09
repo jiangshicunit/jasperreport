@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
-<!-- 2017-07-05T18:40:22 -->
+<!-- 2017-07-09T14:48:31 -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="SuggestionReport" pageWidth="595" pageHeight="662" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="0" bottomMargin="0" uuid="c726b838-19d4-43c7-bd32-a5896ccaec1a">
 	<property name="com.jaspersoft.studio.unit." value="pixel"/>
 	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
@@ -11,6 +11,7 @@
 	<property name="com.jaspersoft.studio.unit.rightMargin" value="pixel"/>
 	<property name="com.jaspersoft.studio.unit.columnWidth" value="pixel"/>
 	<property name="com.jaspersoft.studio.unit.columnSpacing" value="pixel"/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
 	<style name="myStyle" isDefault="true" fontName="微软雅黑" isBold="true" pdfFontName="MSYH.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
 	<queryString>
 		<![CDATA[]]>
@@ -21,22 +22,36 @@
 		<band splitType="Stretch"/>
 	</background>
 	<detail>
-		<band height="610" splitType="Stretch">
-			<textField isBlankWhenNull="true">
-				<reportElement x="20" y="10" width="520" height="25" forecolor="#BE995E" uuid="707b6d8b-1696-4746-a854-5d8c52cd2d2d"/>
-				<textElement textAlignment="Center">
-					<font fontName="微软雅黑" size="20" isBold="false"/>
-				</textElement>
-				<textFieldExpression><![CDATA[$F{title}]]></textFieldExpression>
-			</textField>
+		<band height="618">
+			<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
-				<reportElement positionType="Float" mode="Opaque" x="30" y="40" width="480" height="570" uuid="4c14d7cf-8e61-476e-a196-4839669ac3c5"/>
+				<reportElement positionType="Float" mode="Transparent" x="30" y="30" width="480" height="588" backcolor="#FFFFFF" uuid="4c14d7cf-8e61-476e-a196-4839669ac3c5">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
 				<textElement markup="html">
 					<font size="12" isBold="false"/>
 					<paragraph lineSpacing="Single" lineSpacingSize="1.0"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{text}]]></textFieldExpression>
 			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="20" y="0" width="520" height="25" forecolor="#BE995E" uuid="707b6d8b-1696-4746-a854-5d8c52cd2d2d"/>
+				<textElement textAlignment="Center">
+					<font fontName="微软雅黑" size="20" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{title}]]></textFieldExpression>
+			</textField>
 		</band>
 	</detail>
+	<summary>
+		<band height="30">
+			<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+			<staticText>
+				<reportElement mode="Transparent" x="-8" y="0" width="553" height="30" backcolor="#FFFFFF" uuid="c7835efe-e638-42f8-92d3-f21270ccc2e9">
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+		</band>
+	</summary>
 </jasperReport>
