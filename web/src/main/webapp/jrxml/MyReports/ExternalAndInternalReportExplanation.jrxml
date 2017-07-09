@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
-<!-- 2017-06-07T17:44:11 -->
+<!-- 2017-07-09T17:17:43 -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="ExternalAndInternalReportExplanation" pageWidth="595" pageHeight="662" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="0" bottomMargin="0" uuid="d8691c40-f7e0-4182-adbb-3116e3facf95">
 	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
 	<property name="com.jaspersoft.studio.unit." value="pixel"/>
@@ -20,7 +20,7 @@
 		<band splitType="Stretch"/>
 	</background>
 	<detail>
-		<band height="561" splitType="Stretch">
+		<band height="575" splitType="Stretch">
 			<textField>
 				<reportElement x="-20" y="0" width="595" height="46" forecolor="#BE995E" uuid="29253233-4344-4dab-835c-d25124f09656"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
@@ -46,7 +46,7 @@
 ]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="25" y="371" width="530" height="140" uuid="d34eed0b-e279-49e5-a095-bf2809539134"/>
+				<reportElement x="25" y="371" width="530" height="200" uuid="d34eed0b-e279-49e5-a095-bf2809539134"/>
 				<textElement>
 					<font size="12" isBold="false"/>
 					<paragraph lineSpacing="1_1_2" lineSpacingSize="1.0"/>
