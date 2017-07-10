@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
-<!-- 2017-07-09T14:48:31 -->
+<!-- 2017-07-10T00:35:20 -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="SuggestionReport" pageWidth="595" pageHeight="662" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="0" bottomMargin="0" uuid="c726b838-19d4-43c7-bd32-a5896ccaec1a">
 	<property name="com.jaspersoft.studio.unit." value="pixel"/>
 	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
@@ -24,16 +24,6 @@
 	<detail>
 		<band height="618">
 			<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
-			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
-				<reportElement positionType="Float" mode="Transparent" x="30" y="30" width="480" height="588" backcolor="#FFFFFF" uuid="4c14d7cf-8e61-476e-a196-4839669ac3c5">
-					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
-				</reportElement>
-				<textElement markup="html">
-					<font size="12" isBold="false"/>
-					<paragraph lineSpacing="Single" lineSpacingSize="1.0"/>
-				</textElement>
-				<textFieldExpression><![CDATA[$F{text}]]></textFieldExpression>
-			</textField>
 			<textField isBlankWhenNull="true">
 				<reportElement x="20" y="0" width="520" height="25" forecolor="#BE995E" uuid="707b6d8b-1696-4746-a854-5d8c52cd2d2d"/>
 				<textElement textAlignment="Center">
@@ -41,17 +31,15 @@
 				</textElement>
 				<textFieldExpression><![CDATA[$F{title}]]></textFieldExpression>
 			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement mode="Transparent" x="30" y="30" width="480" height="588" backcolor="#FFFFFF" uuid="3c64e463-c3fe-4930-8f67-f96cce043238">
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<textElement markup="html"/>
+				<textFieldExpression><![CDATA[$F{text}]]></textFieldExpression>
+			</textField>
 		</band>
 	</detail>
-	<summary>
-		<band height="30">
-			<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
-			<staticText>
-				<reportElement mode="Transparent" x="-8" y="0" width="553" height="30" backcolor="#FFFFFF" uuid="c7835efe-e638-42f8-92d3-f21270ccc2e9">
-					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
-				</reportElement>
-				<text><![CDATA[]]></text>
-			</staticText>
-		</band>
-	</summary>
 </jasperReport>
