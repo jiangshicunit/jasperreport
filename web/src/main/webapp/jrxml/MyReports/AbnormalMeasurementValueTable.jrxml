@@ -27,6 +27,7 @@
 	<field name="unit" class="java.lang.String"/>
 	<field name="isTop" class="java.lang.String"/>
 	<field name="isBottom" class="java.lang.String"/>
+	<field name="image" class="java.lang.String"/>
 	<background>
 		<band splitType="Stretch"/>
 	</background>
@@ -69,7 +70,7 @@
 					<textElement textAlignment="Center">
 						<font size="12" isBold="false"/>
 					</textElement>
-					<textFieldExpression><![CDATA[($F{standardMinValue}==null||$F{standardMinValue}.equals("")?("<"+$F{standardMaxValue}):($F{standardMaxValue}==null||$F{standardMaxValue}.equals("")?(">"+$F{standardMinValue}):($F{standardMinValue}+"-"+$F{standardMaxValue}) ) )+ $F{unit}]]></textFieldExpression>
+					<textFieldExpression><![CDATA[ ($F{standardMinValue}==null||$F{standardMinValue}.equals(""))&&($F{standardMaxValue}==null||$F{standardMaxValue}.equals("")) ?" "+$F{unit}: ( ($F{standardMinValue}==null||$F{standardMinValue}.equals("")||$F{standardMinValue}.equals("null")?("<"+$F{standardMaxValue}):($F{standardMaxValue}==null||$F{standardMaxValue}.equals("")||$F{standardMaxValue}.equals("null")?(">"+$F{standardMinValue}):($F{standardMinValue}+"-"+$F{standardMaxValue}) ) ) )+ " "+$F{unit}]]></textFieldExpression>
 				</textField>
 				<textField isBlankWhenNull="true">
 					<reportElement x="387" y="22" width="118" height="69" uuid="33b4d3f2-3713-4713-9e2b-2a1e758ce36d">
@@ -78,8 +79,9 @@
 					<textElement textAlignment="Center">
 						<font size="12" isBold="false"/>
 					</textElement>
-					<textFieldExpression><![CDATA[""]]></textFieldExpression>
+					<textFieldExpression><![CDATA[$F{pathologicalChanges}]]></textFieldExpression>
 				</textField>
+
 				<staticText>
 					<reportElement x="192" y="5" width="43" height="17" uuid="309e1afa-cdd1-4b1d-b564-d7b9b51e4a0e">
 						<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
@@ -131,7 +133,7 @@
 				</line>
 				<image>
 					<reportElement x="250" y="24" width="26" height="17" uuid="6ceeba4d-d62c-4b2a-a059-db5a02219be0"/>
-					<imageExpression><![CDATA["./p"+$F{pathologicalChanges}+".png"]]></imageExpression>
+					<imageExpression><![CDATA["./p"+ ($F{image}.equals("0")?"0.png":($F{image}.equals("1")?"1.png":"2.jpeg") )]]></imageExpression>
 				</image>
 			</frame>
 		</band>

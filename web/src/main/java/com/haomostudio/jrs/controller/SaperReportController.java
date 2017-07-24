@@ -2,6 +2,7 @@ package com.haomostudio.jrs.controller;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONArray;
+import com.alibaba.fastjson.JSONException;
 import com.alibaba.fastjson.JSONObject;
 import com.haomostudio.jrs.*;
 import com.haomostudio.jrs.common.PropertyConfigurer;
@@ -13,6 +14,7 @@ import net.sf.jasperreports.engine.util.JRLoader;
 import net.sf.jasperreports.engine.util.LocalJasperReportsContext;
 import net.sf.jasperreports.engine.util.SimpleFileResolver;
 import net.sf.jasperreports.engine.xml.JRXmlLoader;
+import org.apache.http.HttpResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.util.StringUtils;
@@ -86,9 +88,9 @@ public class SaperReportController {
             map.put("name",mainReport.getCustomerID()==null?"":mainReport.getCustomerID());
             map.put("birth",mainReport.getCustomerBirthDate()==null?"":mainReport.getCustomerBirthDate());
             map.put(JRParameter.REPORT_FILE_RESOLVER, new SimpleFileResolver(reportsDir));
-            JasperReport jReportMain= (JasperReport) JRLoader.loadObject(new File(xml_save_path+"/MainReports.jasper"));
-//            JasperDesign jDesignMain = JRXmlLoader.load(new File(xml_save_path+"/MainReports.jrxml"));
-//            JasperReport jReportMain = JasperCompileManager.compileReport(jDesignMain);
+//            JasperReport jReportMain= (JasperReport) JRLoader.loadObject(new File(xml_save_path+"/MainReports.jasper"));
+            JasperDesign jDesignMain = JRXmlLoader.load(new File(xml_save_path+"/MainReports.jrxml"));
+            JasperReport jReportMain = JasperCompileManager.compileReport(jDesignMain);
             //jasper数据
             JasperDesign jDesign = null;
             JasperReport jReport = null;
@@ -111,6 +113,8 @@ public class SaperReportController {
                             PredefinedContentConvergence(xml_save_path,submap,mainList);
                         }else if (submap!=null && !StringUtils.isEmpty(submap.get("subReportName"))&& submap.get("subReportName").toString().trim().equals("AbnormalMeasurementValueEvaluation")){
                             AbnormalMeasurementValueEvaluation(xml_save_path,submap,mainList);
+                        }else if (submap!=null && submap.get("subReportName")!=null){
+                            otherList.add(submap.get("subReportName").toString());
                         }
 
                     }else {
@@ -137,10 +141,10 @@ public class SaperReportController {
                                 submap.get("subReportName").toString().trim().equals("MaleHormonalBalanceAdviceAndFunctionalMedicineTest")
 
                         )){
-//                            jDesign = JRXmlLoader.load(new File(xml_save_path+"/"+submap.get("subReportName")+".jrxml"));
-//                            jReport = JasperCompileManager.compileReport(jDesign);
-                            File jasperFile=new File(xml_save_path+"/"+submap.get("subReportName")+".jasper");
-                            jReport= (JasperReport) JRLoader.loadObject(jasperFile);
+                            jDesign = JRXmlLoader.load(new File(xml_save_path+"/"+submap.get("subReportName")+".jrxml"));
+                            jReport = JasperCompileManager.compileReport(jDesign);
+//                            File jasperFile=new File(xml_save_path+"/"+submap.get("subReportName")+".jasper");
+//                            jReport= (JasperReport) JRLoader.loadObject(jasperFile);
                             mainList.add(new MainReports(jReport, jReport ,
                                     new JRBeanCollectionDataSource(Arrays.asList(""))));
                         }else if (submap!=null && (submap.get("subReportName").toString().trim().equals("IndicatorRiskLevel"))){
@@ -160,11 +164,18 @@ public class SaperReportController {
                 }
             }
             if (otherList.size()>0){
-//                resultMap.put("status",404);
+                JSONObject object = new JSONObject();
                 response.setStatus(404);
-                resultMap.put("userMessage","cannot find those templates");
-                resultMap.put("templateNames",otherList);
-                return resultMap;
+                object.put("userMessage","cannot find those templates");
+                object.put("templateNames",otherList);
+                try {
+                    Writer writer = response.getWriter();
+                    writer.write(object.toJSONString());
+                    writer.close();
+                    return object;
+                } catch (IOException e1) {
+                    e1.printStackTrace();
+                }
 
             }
             JasperPrint jasperPrint = fillManager.fillReport(jReportMain, map, new JRBeanCollectionDataSource(mainList));
@@ -181,21 +192,29 @@ public class SaperReportController {
             resultMap.put("pdfName",pdfName);
             resultMap.put("fileFolderPath",pdf_export_path);
 //            return resultMap;
-        }catch (Exception e){
+        }catch (NullPointerException nullException){
+            nullException.printStackTrace();
+            dealException(response,nullException,"存在必填项为空，导致异常。");
+        }catch (IndexOutOfBoundsException indexException){
+            indexException.printStackTrace();
+            dealException(response,indexException,"items和values或者values和column的包含的列数量不一致。");
+        } catch (JRException jreException){
+            jreException.printStackTrace();
+            dealException(response,jreException,"riskLevel中定义的值为1，2，3，4，5，6，传入的值存在不在范围内的，不符合定义。");
+        } catch (JSONException jsonException){
+            jsonException.printStackTrace();
+            dealException(response,jsonException,"传入json数据不能正常解析，不符合json格式。");
+        } catch (JRRuntimeException runException){
+            runException.printStackTrace();
+            dealException(response,runException,"LaboratoryTestTable模板中必须存在MaxReferValue（最大值）或MinReferValue（最小值）中的任意一个。");
+        }
+//        catch (JRRuntimeException runException){
+//            runException.printStackTrace();
+//            dealException(response,runException,"LaboratoryTestTable模板中缺少MaxReferValue（最大值）或MinReferValue（最小值）中的任意一个。");
+//        }
+        catch (Exception e){
             e.printStackTrace();
-            JSONObject object = new JSONObject();
-            response.setStatus(400);
-            object.put("status",400);
-            object.put("error",e.toString());
-            response.setHeader("content-type", "application/json");
-//            response.setCharacterEncoding("UTF-8");
-            try {
-                Writer writer = response.getWriter();
-                writer.write(object.toJSONString());
-                writer.close();
-            } catch (IOException e1) {
-                e1.printStackTrace();
-            }
+            dealException(response,e,"存在生成pdf时的错误未能捕获。");
 
 //
         }finally {
@@ -204,17 +223,34 @@ public class SaperReportController {
         return resultMap;
     }
 
+    //处理异常返回信息
+    private void dealException(HttpServletResponse response,Exception e,String message){
+        JSONObject object = new JSONObject();
+        response.setStatus(400);
+        object.put("status",400);
+        object.put("error",e.toString());
+        object.put("errMessage",message);
+        response.setHeader("content-type", "application/json");
+//            response.setCharacterEncoding("UTF-8");
+        try {
+            Writer writer = response.getWriter();
+            writer.write(object.toJSONString());
+            writer.close();
+        } catch (IOException e1) {
+            e1.printStackTrace();
+        }
+    }
 
     //针对异常检测值评估：AbnormalMeasurementValueEvaluation进行处理
     private void AbnormalMeasurementValueEvaluation(String xml_save_path,Map<String,Object> submap,List<MainReports> mainList) throws JRException {
         //主模板
-        JasperReport jReport= (JasperReport) JRLoader.loadObject(new File(xml_save_path + "/AbnormalMeasurementValueEvaluation.jasper"));
-//        JasperDesign jDesign = JRXmlLoader.load(new File(xml_save_path + "/AbnormalMeasurementValueEvaluation.jrxml"));
-//        JasperReport jReport = JasperCompileManager.compileReport(jDesign);
+//        JasperReport jReport= (JasperReport) JRLoader.loadObject(new File(xml_save_path + "/AbnormalMeasurementValueEvaluation.jasper"));
+        JasperDesign jDesign = JRXmlLoader.load(new File(xml_save_path + "/AbnormalMeasurementValueEvaluation.jrxml"));
+        JasperReport jReport = JasperCompileManager.compileReport(jDesign);
         //子模板
-        JasperReport jReportde = (JasperReport) JRLoader.loadObject(new File(xml_save_path + "/AbnormalMeasurementValueTable.jasper"));
-//        JasperDesign jDesignde = JRXmlLoader.load(new File(xml_save_path + "/AbnormalMeasurementValueTable.jrxml"));
-//        JasperReport jReportde = JasperCompileManager.compileReport(jDesignde);
+//        JasperReport jReportde = (JasperReport) JRLoader.loadObject(new File(xml_save_path + "/AbnormalMeasurementValueTable.jasper"));
+        JasperDesign jDesignde = JRXmlLoader.load(new File(xml_save_path + "/AbnormalMeasurementValueTable.jrxml"));
+        JasperReport jReportde = JasperCompileManager.compileReport(jDesignde);
 
         List<AbnormalMeasurementValueTable> detailList = new ArrayList<>();
         List<AbnormalMeasurementValueEvaluation> reportList = new ArrayList<>();
@@ -251,22 +287,56 @@ public class SaperReportController {
                                 String unit = contentMap.get("unit");
                                 String isTop = "false";
                                 String isBottom = "true";
+                                String image = "2";
                                 if (subNum == contentArray.size()) {
                                     isBottom = "false";
                                 }
                                 if (mainNum > 1 && subNum == 1) {
                                     isTop = "true";
                                 }
+                                if (subNum > 1){
+                                    dataTitle = "";
+                                }
+                                try {
+                                    Double min = 0D;
+                                    Double max = 0D;
+                                    Double val = 0D;
+                                    if (!StringUtils.isEmpty(standardMinValue) && !StringUtils.isEmpty(standardMaxValue) && !StringUtils.isEmpty(value) ){
+                                        min = Double.valueOf(standardMinValue);
+                                        max = Double.valueOf(standardMaxValue);
+                                        val = Double.valueOf(value);
+                                        if (val<min){
+                                            image = "1";
+                                        }else if (val > max){
+                                            image = "0";
+                                        }
+                                    }else if (!StringUtils.isEmpty(standardMinValue) && !StringUtils.isEmpty(value)){
+                                        min = Double.valueOf(standardMinValue);
+                                        val = Double.valueOf(value);
+                                        if (val < min){
+                                            image = "1";
+                                        }
+                                    }else if (!StringUtils.isEmpty(standardMaxValue) && !StringUtils.isEmpty(value)){
+                                        max = Double.valueOf(standardMaxValue);
+                                        val = Double.valueOf(value);
+                                        if (val > max){
+                                            image = "0";
+                                        }
+                                    }
+                                }catch (Exception e){
+                                    image = "2";
+                                }
+
                                 AbnormalMeasurementValueTable valueTable =
-                                        new AbnormalMeasurementValueTable(detailTitle, measurementTitle, value, standardMinValue,
-                                                standardMaxValue, pathologicalChanges, unit, isTop, isBottom);
+                                        new AbnormalMeasurementValueTable(dataTitle, measurementTitle, value, standardMinValue,
+                                                standardMaxValue, pathologicalChanges, unit, isTop, isBottom,image);
                                 detailList.add(valueTable);
                                 subNum++;
                             }
                         }
 
                     }
-                    AbnormalMeasurementValueEvaluation report = new AbnormalMeasurementValueEvaluation(dataTitle,new JRBeanCollectionDataSource(detailList), jReportde);
+                    AbnormalMeasurementValueEvaluation report = new AbnormalMeasurementValueEvaluation(detailTitle,new JRBeanCollectionDataSource(detailList), jReportde);
                     reportList.add(report);
                 }
                 mainNum++;
@@ -280,9 +350,9 @@ public class SaperReportController {
     //针对预定义内容汇聚：PredefinedContentConvergence进行处理
     private void PredefinedContentConvergence(String xml_save_path,Map<String,Object> submap,List<MainReports> mainList) throws JRException {
         //主模板
-        JasperReport jReport = (JasperReport) JRLoader.loadObject(new File(xml_save_path + "/PredefinedContentConvergence.jasper"));
-//        JasperDesign jDesign = JRXmlLoader.load(new File(xml_save_path+"/PredefinedContentConvergence.jrxml"));
-//        JasperReport jReport = JasperCompileManager.compileReport(jDesign);
+//        JasperReport jReport = (JasperReport) JRLoader.loadObject(new File(xml_save_path + "/PredefinedContentConvergence.jasper"));
+        JasperDesign jDesign = JRXmlLoader.load(new File(xml_save_path+"/PredefinedContentConvergence.jrxml"));
+        JasperReport jReport = JasperCompileManager.compileReport(jDesign);
         //子模板
         JasperDesign jDesignde ;
         JasperReport jReportde ;
@@ -316,9 +386,9 @@ public class SaperReportController {
                                         detailMap.get("subReportName").toString().trim().equals("test")
 
                         ) ){
-                    JasperReport jReportstatic = (JasperReport) JRLoader.loadObject(new File(xml_save_path+"/"+detailMap.get("subReportName").toString().trim()+".jasper"));
-//                    JasperDesign jDesignstatic = JRXmlLoader.load(new File(xml_save_path+"/"+detailMap.get("subReportName").toString().trim()+".jrxml"));
-//                    JasperReport jReportstatic = JasperCompileManager.compileReport(jDesignstatic);
+//                    JasperReport jReportstatic = (JasperReport) JRLoader.loadObject(new File(xml_save_path+"/"+detailMap.get("subReportName").toString().trim()+".jasper"));
+                    JasperDesign jDesignstatic = JRXmlLoader.load(new File(xml_save_path+"/"+detailMap.get("subReportName").toString().trim()+".jrxml"));
+                    JasperReport jReportstatic = JasperCompileManager.compileReport(jDesignstatic);
                     PredefinedContentConvergence report = new PredefinedContentConvergence(detailTitle,new JRBeanCollectionDataSource(Arrays.asList(new AllergyAnalysis())),jReportstatic);
                     reportList.add(report);
                 }
@@ -333,9 +403,9 @@ public class SaperReportController {
     private  void  evaluationDetail(String xml_save_path,Map<String,Object> detailMap,
                                     String detailTitle,List<PredefinedContentConvergence> reportList) throws JRException {
         //子模板
-        JasperReport jReportde = (JasperReport) JRLoader.loadObject(new File(xml_save_path+"/EvaluationDetail.jasper"));
-//        JasperDesign jDesignde = JRXmlLoader.load(new File(xml_save_path+"/EvaluationDetail.jrxml"));
-//        JasperReport jReportde = JasperCompileManager.compileReport(jDesignde);
+//        JasperReport jReportde = (JasperReport) JRLoader.loadObject(new File(xml_save_path+"/EvaluationDetail.jasper"));
+        JasperDesign jDesignde = JRXmlLoader.load(new File(xml_save_path+"/EvaluationDetail.jrxml"));
+        JasperReport jReportde = JasperCompileManager.compileReport(jDesignde);
         List<EvaluationDetail> detailList = new ArrayList<>();
         if (!StringUtils.isEmpty( detailMap.get("data") ) ){
             JSONObject dataObject = JSONObject.parseObject( detailMap.get("data").toString() );
@@ -360,9 +430,9 @@ public class SaperReportController {
     private  void  foodSourceExplanation(String xml_save_path,Map<String,Object> detailMap,
                                          String detailTitle,List<PredefinedContentConvergence> reportList) throws JRException {
         //子模板
-        JasperReport jReportde = (JasperReport) JRLoader.loadObject(new File(xml_save_path+"/FoodSourceExplanation.jasper"));
-//        JasperDesign jDesignde = JRXmlLoader.load(new File(xml_save_path+"/FoodSourceExplanation.jrxml"));
-//        JasperReport jReportde = JasperCompileManager.compileReport(jDesignde);
+//        JasperReport jReportde = (JasperReport) JRLoader.loadObject(new File(xml_save_path+"/FoodSourceExplanation.jasper"));
+        JasperDesign jDesignde = JRXmlLoader.load(new File(xml_save_path+"/FoodSourceExplanation.jrxml"));
+        JasperReport jReportde = JasperCompileManager.compileReport(jDesignde);
         List<FoodSourceExplanation> detailList = new ArrayList<>();
         if (!StringUtils.isEmpty( detailMap.get("data") ) ){
             JSONObject dataObject = JSONObject.parseObject( detailMap.get("data").toString() );
@@ -387,18 +457,16 @@ public class SaperReportController {
     private  void  labTestItemExplanation(String xml_save_path,Map<String,Object> detailMap,
                                           String detailTitle,List<PredefinedContentConvergence> reportList) throws JRException {
         //子模板
-        JasperReport jReportde = (JasperReport) JRLoader.loadObject(new File(xml_save_path+"/LabTestItemExplanation.jasper"));
-//        JasperDesign jDesignde = JRXmlLoader.load(new File(xml_save_path+"/LabTestItemExplanation.jrxml"));
-//        JasperReport jReportde = JasperCompileManager.compileReport(jDesignde);
+        JasperDesign jDesignde = JRXmlLoader.load(new File(xml_save_path+"/LabTestItemExplanation.jrxml"));
+        JasperReport jReportde = JasperCompileManager.compileReport(jDesignde);
         List<LabTestItemExplanation> detailList = new ArrayList<>();
         if (!StringUtils.isEmpty( detailMap.get("data") ) ){
             JSONObject dataObject = JSONObject.parseObject( detailMap.get("data").toString() );
             String dataTitle = dataObject.get("title")==null?"":dataObject.get("title").toString();
             String dataContent = dataObject.get("content")==null?"":dataObject.get("content").toString();
             if(StringUtils.isEmpty(dataContent)){
-                jReportde = (JasperReport) JRLoader.loadObject(new File(xml_save_path+"/LabTestItemExplanation1.jasper"));
-//                jDesignde = JRXmlLoader.load(new File(xml_save_path+"/LabTestItemExplanation1.jrxml"));
-//                jReportde = JasperCompileManager.compileReport(jDesignde);
+                jDesignde = JRXmlLoader.load(new File(xml_save_path+"/LabTestItemExplanation1.jrxml"));
+                jReportde = JasperCompileManager.compileReport(jDesignde);
             }
             if (!StringUtils.isEmpty( dataObject.get("items") ) ){
                 JSONArray contentArray = JSON.parseArray(dataObject.get("items").toString());
@@ -422,13 +490,11 @@ public class SaperReportController {
 
     private  void  AllergyAnalysis(String xml_save_path,Map<String,Object> submap,List<MainReports> mainList) throws JRException, FileNotFoundException {
         List<AllergyAnalysis> data = new ArrayList();
-        JasperReport jReport = (JasperReport) JRLoader.loadObject(new File(xml_save_path+"/AllergyAnalysis.jasper"));
-//        JasperDesign jDesign =  JRXmlLoader.load(new File(xml_save_path+"/AllergyAnalysis.jrxml"));
-//        JasperReport jReport = JasperCompileManager.compileReport(jDesign);
+        JasperDesign jDesign =  JRXmlLoader.load(new File(xml_save_path+"/AllergyAnalysis.jrxml"));
+        JasperReport jReport = JasperCompileManager.compileReport(jDesign);
 
-        JasperReport jReport2 = (JasperReport) JRLoader.loadObject(new File(xml_save_path+"/AllergyAnalysisTable.jasper"));
-//        JasperDesign jDesign2 = JRXmlLoader.load(new File(xml_save_path+"/AllergyAnalysisTable.jrxml"));
-//        JasperReport jReport2 = JasperCompileManager.compileReport(jDesign2);
+        JasperDesign jDesign2 = JRXmlLoader.load(new File(xml_save_path+"/AllergyAnalysisTable.jrxml"));
+        JasperReport jReport2 = JasperCompileManager.compileReport(jDesign2);
         List<Map<String,Object>> slist = (List<Map<String, Object>>) submap.get("subReports");
         int num = 0 ;
         List<List<DataBean>>  sunBeanList = new ArrayList<>();
@@ -444,22 +510,19 @@ public class SaperReportController {
                     dataBean = new DataBean();
                     dataBean.setName(items.get(i));
                     dataBean.setCountry(values.get(i)+"");
-                    dataBean.setTitle(((Map<String,Object>)smap.get("data")).get("title").toString());
+                    dataBean.setTitle(((Map<String,Object>)smap.get("data")).get("title")==null?"":((Map<String,Object>)smap.get("data")).get("title").toString());
                     dataBean.setDate(((Map<String,Object>)smap.get("data")).get("date").toString());
                     dataBeanList.add(dataBean);
                 }
             }
             sunBeanList.add(dataBeanList);
         }
-        JasperReport jasperReport1 = (JasperReport) JRLoader.loadObject(new File(xml_save_path+"/AllergyAnalysisTable1.jasper"));
-//        JasperDesign jasperDesign1 = JRXmlLoader.load(new FileInputStream(xml_save_path+"/AllergyAnalysisTable1.jrxml"));
-//        JasperReport jasperReport1 = JasperCompileManager.compileReport(jasperDesign1);
-        JasperReport jasperReport2 = (JasperReport) JRLoader.loadObject(new File(xml_save_path+"/AllergyAnalysisTable2.jasper"));
-//        JasperDesign jasperDesign2 = JRXmlLoader.load(new FileInputStream(xml_save_path+"/AllergyAnalysisTable2.jrxml"));
-//        JasperReport jasperReport2 = JasperCompileManager.compileReport(jasperDesign2);
-        JasperReport jasperReport3 = (JasperReport) JRLoader.loadObject(new File(xml_save_path+"/AllergyAnalysisTable.jasper"));
-//        JasperDesign jasperDesign3 = JRXmlLoader.load(new FileInputStream(xml_save_path+"/AllergyAnalysisTable.jrxml"));
-//        JasperReport jasperReport3 = JasperCompileManager.compileReport(jasperDesign3);
+        JasperDesign jasperDesign1 = JRXmlLoader.load(new FileInputStream(xml_save_path+"/AllergyAnalysisTable1.jrxml"));
+        JasperReport jasperReport1 = JasperCompileManager.compileReport(jasperDesign1);
+        JasperDesign jasperDesign2 = JRXmlLoader.load(new FileInputStream(xml_save_path+"/AllergyAnalysisTable2.jrxml"));
+        JasperReport jasperReport2 = JasperCompileManager.compileReport(jasperDesign2);
+        JasperDesign jasperDesign3 = JRXmlLoader.load(new FileInputStream(xml_save_path+"/AllergyAnalysisTable.jrxml"));
+        JasperReport jasperReport3 = JasperCompileManager.compileReport(jasperDesign3);
         jasperReport3.setWhenNoDataType(WhenNoDataTypeEnum.NO_PAGES);
         List<AllergyAnalysis1> county1List = new ArrayList<>();
         List<AllergyAnalysis1> county2List = new ArrayList<>();
@@ -481,16 +544,13 @@ public class SaperReportController {
     private  void  LaboratoryTest(String xml_save_path,Map<String,Object> submap,List<MainReports> mainList) throws JRException, FileNotFoundException {
         List<LaboratoryTest> laboratoryTests = new ArrayList<>();
         List<LaboratoryTest> laboratoryTests1 = new ArrayList<>();
-//        JasperReport labjasperReport = (JasperReport) JRLoader.loadObject(new File(xml_save_path+"/LaboratotyTestTable.jasper"));
         JasperDesign labJasperDesign = JRXmlLoader.load(new FileInputStream(xml_save_path+"/LaboratotyTestTable.jrxml"));
         JasperReport labjasperReport = JasperCompileManager.compileReport(labJasperDesign);
-        JasperReport jasperReport1 = (JasperReport) JRLoader.loadObject(new File(xml_save_path+"/LaboratoryTest.jasper"));
-//        JasperDesign jasperDesign1 = JRXmlLoader.load(xml_save_path+"/LaboratoryTest.jrxml");
-//        JasperReport jasperReport1 = JasperCompileManager.compileReport(jasperDesign1);
+        JasperDesign jasperDesign1 = JRXmlLoader.load(xml_save_path+"/LaboratoryTest.jrxml");
+        JasperReport jasperReport1 = JasperCompileManager.compileReport(jasperDesign1);
 
-        JasperReport jasperReport2 = (JasperReport) JRLoader.loadObject(new File(xml_save_path+"/LaboratoryTest1.jasper"));
-//        JasperDesign jasperDesign2 = JRXmlLoader.load(xml_save_path+"/LaboratoryTest1.jrxml");
-//        JasperReport jasperReport2 = JasperCompileManager.compileReport(jasperDesign2);
+        JasperDesign jasperDesign2 = JRXmlLoader.load(xml_save_path+"/LaboratoryTest1.jrxml");
+        JasperReport jasperReport2 = JasperCompileManager.compileReport(jasperDesign2);
         if (!StringUtils.isEmpty(submap.get("subReports"))){
             JSONArray array1 = JSON.parseArray(submap.get("subReports").toString());
             for (Object  subReport : array1) {
@@ -530,9 +590,8 @@ public class SaperReportController {
 
 
     private  void  SectionHeader(String xml_save_path,Map<String,Object> submap,List<MainReports> mainList) throws JRException, FileNotFoundException {
-        JasperReport jReport = (JasperReport) JRLoader.loadObject(new File(xml_save_path+"/SectionHeader.jasper"));
-//        JasperDesign jDesign = JRXmlLoader.load(new File(xml_save_path+"/SectionHeader.jrxml"));
-//        JasperReport jReport = JasperCompileManager.compileReport(jDesign);
+        JasperDesign jDesign = JRXmlLoader.load(new File(xml_save_path+"/SectionHeader.jrxml"));
+        JasperReport jReport = JasperCompileManager.compileReport(jDesign);
         JSONObject allergyObject = JSONObject.parseObject(submap.get("data").toString());
         String title = allergyObject.get("title")==null?"":allergyObject.get("title").toString();
         String subTitle = allergyObject.get("subTitle")==null?"":allergyObject.get("subTitle").toString();
@@ -543,12 +602,10 @@ public class SaperReportController {
 
 
     private  void  DiseaseGeneticRiskTable(String xml_save_path,Map<String,Object> submap,List<MainReports> mainList) throws JRException, FileNotFoundException {
-        JasperReport jReport = (JasperReport) JRLoader.loadObject(new File(xml_save_path+"/DiseaseGeneticRiskTable.jasper"));
-//        JasperDesign jDesign = JRXmlLoader.load(new File(xml_save_path+"/DiseaseGeneticRiskTable.jrxml"));
-//        JasperReport jReport = JasperCompileManager.compileReport(jDesign);
-        JasperReport jReportdeSub = (JasperReport) JRLoader.loadObject(new File(xml_save_path+"/DiseaseGeneticRiskTable-sub.jasper"));
-//        JasperDesign jDesigndeSub = JRXmlLoader.load(new File(xml_save_path+"/DiseaseGeneticRiskTable-sub.jrxml"));
-//        JasperReport jReportdeSub = JasperCompileManager.compileReport(jDesigndeSub);
+        JasperDesign jDesign = JRXmlLoader.load(new File(xml_save_path+"/DiseaseGeneticRiskTable.jrxml"));
+        JasperReport jReport = JasperCompileManager.compileReport(jDesign);
+        JasperDesign jDesigndeSub = JRXmlLoader.load(new File(xml_save_path+"/DiseaseGeneticRiskTable-sub.jrxml"));
+        JasperReport jReportdeSub = JasperCompileManager.compileReport(jDesigndeSub);
         String name = "";
         String fx = "";
         List<String> itemList = new ArrayList<>();
@@ -590,9 +647,8 @@ public class SaperReportController {
 
 
     private  void  ExamSuggestionReport(String xml_save_path,Map<String,Object> submap,List<MainReports> mainList) throws JRException, FileNotFoundException {
-        JasperReport jReport = (JasperReport) JRLoader.loadObject(new File(xml_save_path+"/SuggestionReport.jasper"));
-//        JasperDesign jDesign = JRXmlLoader.load(new File(xml_save_path+"/SuggestionReport.jrxml"));
-//        JasperReport jReport = JasperCompileManager.compileReport(jDesign);
+        JasperDesign jDesign = JRXmlLoader.load(new File(xml_save_path+"/SuggestionReport.jrxml"));
+        JasperReport jReport = JasperCompileManager.compileReport(jDesign);
         JSONObject allergyObject = JSONObject.parseObject(submap.get("data").toString());
         String title = allergyObject.get("title")==null?"":allergyObject.get("title").toString();
         String text = allergyObject.get("text")==null?"":allergyObject.get("text").toString();
@@ -605,9 +661,8 @@ public class SaperReportController {
 
 
     private  void  IndicatorRiskLevel(String xml_save_path,Map<String,Object> submap,List<MainReports> mainList) throws JRException, FileNotFoundException {
-        JasperReport jReport = (JasperReport) JRLoader.loadObject(new File(xml_save_path+"/IndicatorRiskLevel.jasper"));
-//        JasperDesign jDesign = JRXmlLoader.load(new File(xml_save_path+"/IndicatorRiskLevel.jrxml"));
-//        JasperReport jReport = JasperCompileManager.compileReport(jDesign);
+        JasperDesign jDesign = JRXmlLoader.load(new File(xml_save_path+"/IndicatorRiskLevel.jrxml"));
+        JasperReport jReport = JasperCompileManager.compileReport(jDesign);
         JSONArray levelArray = JSONArray.parseArray(submap.get("data").toString());
         List<IndicatorRiskLevel> levelList = new ArrayList<>();
         for (Object levelObjct:levelArray){
@@ -625,7 +680,6 @@ public class SaperReportController {
     }
 
     private  void  basicInformation(String xml_save_path,Map<String,Object> submap,List<MainReports> mainList) throws JRException, FileNotFoundException {
-//        JasperReport jReport = (JasperReport) JRLoader.loadObject(new File(xml_save_path+"/BasicInformation.jasper"));
         JasperDesign jDesign = JRXmlLoader.load(new File(xml_save_path+"/BasicInformation.jrxml"));
         JasperReport jReport = JasperCompileManager.compileReport(jDesign);
         JSONObject allergyObject = JSONObject.parseObject(submap.get("data").toString());
@@ -640,7 +694,6 @@ public class SaperReportController {
 
     }
     private  void  healthExpectation(String xml_save_path,Map<String,Object> submap,List<MainReports> mainList) throws JRException, FileNotFoundException {
-//        JasperReport jReport = (JasperReport) JRLoader.loadObject(new File(xml_save_path+"/HealthExpectation.jasper"));
         JasperDesign jDesign = JRXmlLoader.load(new File(xml_save_path+"/HealthExpectation.jrxml"));
         JasperReport jReport = JasperCompileManager.compileReport(jDesign);
         JSONObject allergyObject = JSONObject.parseObject(submap.get("data").toString());
@@ -653,7 +706,6 @@ public class SaperReportController {
 
     }
     private  void  personalPastHistory(String xml_save_path,Map<String,Object> submap,List<MainReports> mainList) throws JRException, FileNotFoundException {
-//        JasperReport jReport = (JasperReport) JRLoader.loadObject(new File(xml_save_path+"/PersonalPastHistory.jasper"));
         JasperDesign jDesign = JRXmlLoader.load(new File(xml_save_path+"/PersonalPastHistory.jrxml"));
         JasperReport jReport = JasperCompileManager.compileReport(jDesign);
         JSONObject allergyObject = JSONObject.parseObject(submap.get("data").toString());

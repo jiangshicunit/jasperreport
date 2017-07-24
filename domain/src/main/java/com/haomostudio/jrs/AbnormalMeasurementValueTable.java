@@ -21,10 +21,14 @@ public class AbnormalMeasurementValueTable {
 
     private String isTop;
 
+
+
     private String isBottom;
 
+    private String image;
+
     public AbnormalMeasurementValueTable(String title, String measurementTitle, String value, String standardMinValue,
-                                         String standardMaxValue, String pathologicalChanges, String unit, String isTop, String isBottom) {
+                                         String standardMaxValue, String pathologicalChanges, String unit, String isTop, String isBottom,String image) {
         this.title = title;
         this.measurementTitle = measurementTitle;
         this.value = value;
@@ -34,6 +38,7 @@ public class AbnormalMeasurementValueTable {
         this.unit = unit;
         this.isTop = isTop;
         this.isBottom = isBottom;
+        this.image = image;
     }
 
     public String getTitle() {
@@ -106,5 +111,13 @@ public class AbnormalMeasurementValueTable {
 
     public void setIsBottom(String isBottom) {
         this.isBottom = isBottom;
+    }
+
+    public String getImage() {
+        return image;
+    }
+
+    public void setImage(String image) {
+        this.image = image;
     }
 }
