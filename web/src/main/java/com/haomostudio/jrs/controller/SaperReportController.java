@@ -52,6 +52,9 @@ public class SaperReportController {
                              @RequestParam(value = "pdfName",required = false) String pdfName
     ) throws JRException, IOException  {
 
+//        DefaultJasperReportsContext context = DefaultJasperReportsContext.getInstance();
+//        JRPropertiesUtil.getInstance(context).setProperty("net.sf.jasperreports.xpath.executer.factory",
+//                "net.sf.jasperreports.engine.util.xml.JaxenXPathExecuterFactory");
         String  realPath = request.getSession().getServletContext().getRealPath("");
         //XML文件保存的路径   以及  生成的pdf存放的路径
         String xml_save_path = propertyConfigurer.getProperty("xml_save_path");
