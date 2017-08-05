@@ -16,19 +16,25 @@
 	<queryString language="json">
 		<![CDATA[]]>
 	</queryString>
-	<field name="CD17" class="java.lang.String"/>
-	<field name="ZC28" class="java.lang.String"/>
 	<field name="WFNO" class="java.lang.String"/>
-	<field name="HT09" class="java.lang.String"/>
-	<field name="HT11" class="java.lang.String"/>
-	<field name="HT12" class="java.lang.String"/>
-	<field name="HT14" class="java.lang.String"/>
+	<field name="CD20" class="java.lang.String"/>
+	<field name="CD22" class="java.lang.String"/>
+	<field name="CD21" class="java.lang.String"/>
+	<field name="CD07" class="java.lang.String"/>
+	<field name="CD24" class="java.lang.String"/>
+	<field name="CD26" class="java.lang.String"/>
 	<field name="CD12" class="java.lang.String"/>
-	<field name="CD009" class="java.lang.String"/>
-	<field name="HT43" class="java.lang.String"/>
-	<field name="CD008" class="java.lang.String"/>
+
+	<field name="CD55" class="java.lang.String"/>
 	<field name="CD16" class="java.lang.String"/>
+	<field name="CD17" class="java.lang.String"/>
 	<field name="CD18" class="java.lang.String"/>
+
+	<field name="CD23" class="java.lang.String"/>
+	<field name="CD25" class="java.lang.String"/>
+	<field name="CD13" class="java.lang.String"/>
+
+
 	<background>
 		<band splitType="Stretch"/>
 	</background>
@@ -37,7 +43,7 @@
 			<image>
 				<reportElement x="40" y="10" width="140" height="20" uuid="dbba5aa1-9391-4f26-bff4-959de3e19cf6"/>
 				<!--<imageExpression><![CDATA["/Users/liuranran/work/jasperreportserver/web/src/main/webapp/jrxml/MyReports/honghe.png"]]></imageExpression>-->
-				<imageExpression><![CDATA["/home/haomo/work/project/var/www/html/pt/tomcat/webapps/jrs/jrxml/MyReports/honghe.png"]]></imageExpression>
+				<imageExpression><![CDATA["/opt/tomcat8/webapps/jrs/jrxml/MyReports/honghe.png"]]></imageExpression>
 			</image>
 			<line>
 				<reportElement x="40" y="0" width="463" height="1" forecolor="#848484" uuid="6d233e35-91e5-4a40-879f-6356b14cbf6f"/>
@@ -49,27 +55,27 @@
 				</textElement>
 				<text><![CDATA[材料采购合同]]></text>
 			</staticText>
-			<staticText>
+			<textField>
 				<reportElement x="40" y="50" width="200" height="14" uuid="6da31dc3-4fab-40e4-8235-1ff4d7aff748"/>
 				<textElement verticalAlignment="Middle">
 					<font fontName="宋体" size="8"/>
 				</textElement>
-				<text><![CDATA[需方（甲方）：深圳市鸿合创新信息技术有限责任公司				          ]]></text>
-			</staticText>
-			<staticText>
+				<textFieldExpression><![CDATA["需方（甲方）："+$F{CD20}	]]></textFieldExpression>
+			</textField>
+			<textField>
 				<reportElement x="40" y="78" width="298" height="14" uuid="f1d478b2-625a-454c-8d7a-997bf5402866"/>
 				<textElement>
 					<font fontName="宋体" size="8"/>
 				</textElement>
-				<text><![CDATA[联系地址：深圳市坪山大工业区青松西路与青兰一路交汇外华丰新材料示范基地1号厂房]]></text>
-			</staticText>
-			<staticText>
+				<textFieldExpression><![CDATA["联系地址："+$F{CD21}]]></textFieldExpression>
+			</textField>
+			<textField>
 				<reportElement x="380" y="64" width="79" height="14" uuid="b31a34c6-4479-45c3-976a-4a7b154de811"/>
 				<textElement>
 					<font fontName="宋体" size="8"/>
 				</textElement>
-				<text><![CDATA[传真：0755-21639994]]></text>
-			</staticText>
+				<textFieldExpression><![CDATA["传真："+$F{CD23}]]></textFieldExpression>
+			</textField>
 			<textField isBlankWhenNull="true">
 				<reportElement x="420" y="50" width="39" height="14" uuid="86f64d6f-8487-4d57-97bb-40e2baa274ec"/>
 				<textElement>
@@ -77,20 +83,20 @@
 				</textElement>
 				<textFieldExpression><![CDATA[$F{WFNO}]]></textFieldExpression>
 			</textField>
-			<staticText>
+			<textField>
 				<reportElement x="41" y="92" width="58" height="14" uuid="a95a54fa-a706-4f47-9e1e-9eb25b0eec36"/>
 				<textElement>
 					<font fontName="宋体" size="8"/>
 				</textElement>
-				<text><![CDATA[供方（乙方）：]]></text>
-			</staticText>
+				<textFieldExpression><![CDATA["供方（乙方）："+$F{CD07}]]></textFieldExpression>
+			</textField>
 			<textField isBlankWhenNull="true">
 				<reportElement x="100" y="92" width="38" height="13" uuid="ef8b4ce9-0fab-4f25-8868-ffa03e03061c"/>
 				<textElement>
 					<font fontName="宋体" size="8"/>
 					<paragraph lineSpacing="Proportional"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$F{HT09}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$F{CD07}]]></textFieldExpression>
 			</textField>
 			<staticText>
 				<reportElement x="40" y="106" width="60" height="13" uuid="3c87105b-f893-4db2-b5cf-0c1b3c315b5b"/>
@@ -104,7 +110,7 @@
 				<textElement>
 					<font fontName="宋体" size="8"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$F{HT11}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$F{CD24}]]></textFieldExpression>
 			</textField>
 			<staticText>
 				<reportElement x="40" y="120" width="60" height="14" uuid="e8e2a151-6c84-422b-b26e-64ef87c72ef4"/>
@@ -118,36 +124,36 @@
 				<textElement>
 					<font fontName="宋体" size="8"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$F{HT12}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$F{CD22}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
 				<reportElement x="410" y="120" width="49" height="14" uuid="6166a056-d747-4ed5-8115-74c1d208ee5b"/>
 				<textElement>
 					<font fontName="宋体" size="8"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$F{HT14}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$F{CD23}]]></textFieldExpression>
 			</textField>
-			<staticText>
+			<textField>
 				<reportElement x="40" y="64" width="199" height="12" uuid="2863e5d1-d3f8-4b19-bb31-4e25896115c7"/>
 				<textElement>
 					<font fontName="宋体" size="8"/>
 				</textElement>
-				<text><![CDATA[联系电话：0755-21639995]]></text>
-			</staticText>
-			<staticText>
+				<textFieldExpression><![CDATA["联系电话："+$F{CD22}]]></textFieldExpression>
+			</textField>
+			<textField>
 				<reportElement x="380" y="120" width="30" height="14" uuid="a8710e4f-0a89-47bd-8b59-1ac91b586b31"/>
 				<textElement>
 					<font fontName="宋体" size="8"/>
 				</textElement>
-				<text><![CDATA[传真：]]></text>
-			</staticText>
-			<staticText>
+				<textFieldExpression><![CDATA["传真："+$F{CD26}]]></textFieldExpression>
+			</textField>
+			<textField>
 				<reportElement x="380" y="51" width="40" height="13" uuid="374aa371-4df3-4b50-8ff4-9be55de8b956"/>
 				<textElement>
 					<font fontName="宋体" size="8"/>
 				</textElement>
-				<text><![CDATA[合同编号：]]></text>
-			</staticText>
+				<textFieldExpression><![CDATA["合同编号："+$F{WFNO}]]></textFieldExpression>
+			</textField>
 		</band>
 	</title>
 	<detail>
@@ -333,7 +339,7 @@
 				<textElement verticalAlignment="Middle">
 					<font fontName="宋体" size="8"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$F{CD008}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$F{CD12}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
 				<reportElement x="251" y="58" width="253" height="18" uuid="73403b6b-2ab3-4e19-99ef-4167dedb4d09"/>
@@ -344,7 +350,7 @@
 				<textElement verticalAlignment="Middle">
 					<font fontName="宋体" size="8"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$F{CD009}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$F{CD13}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
 				<reportElement x="128" y="76" width="73" height="18" uuid="5d1082d8-b609-49c6-a002-9e67f634c0e4"/>
@@ -355,7 +361,7 @@
 				<textElement verticalAlignment="Middle">
 					<font fontName="宋体" size="8"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$F{HT43}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$F{CD55}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="79" y="94" width="258" height="18" uuid="2f7155b6-f6f4-4c6b-a597-ac441d44139c"/>
@@ -427,7 +433,7 @@
 				<textElement verticalAlignment="Middle">
 					<font fontName="宋体" size="8"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$F{ZC28}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$F{CD16}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
 				<reportElement x="330" y="167" width="36" height="18" uuid="b0582440-03d5-4e86-9a1c-6680283595e8"/>
@@ -493,13 +499,13 @@
 				</textElement>
 				<text><![CDATA[八、交货期：]]></text>
 			</staticText>
-			<staticText>
+			<textField>
 				<reportElement x="39" y="352" width="40" height="14" uuid="3a1cfcac-d0ae-493c-a42f-cd863f264985"/>
 				<textElement>
 					<font fontName="宋体" size="8"/>
 				</textElement>
-				<text><![CDATA[甲方名称：]]></text>
-			</staticText>
+				<textFieldExpression><![CDATA["甲方名称："+$F{CD20}]]></textFieldExpression>
+			</textField>
 			<staticText>
 				<reportElement x="39" y="366" width="40" height="14" uuid="a60836d0-ab70-4d88-8098-2037bef8b1ce"/>
 				<textElement>
@@ -521,13 +527,13 @@
 				</textElement>
 				<text><![CDATA[代表签字：]]></text>
 			</staticText>
-			<staticText>
+			<textField>
 				<reportElement x="290" y="352" width="40" height="14" uuid="ac130caf-c399-4083-8d71-6f967d6d5883"/>
 				<textElement>
 					<font fontName="宋体" size="8"/>
 				</textElement>
-				<text><![CDATA[乙方名称：]]></text>
-			</staticText>
+				<textFieldExpression><![CDATA["乙方名称："+$F{CD07}]]></textFieldExpression>
+			</textField>
 			<textField>
 				<reportElement x="79" y="380" width="10" height="13" uuid="e091bf7a-ce47-499e-a708-8f81aa15b890"/>
 				<box>
@@ -602,7 +608,7 @@
 				</textElement>
 				<textFieldExpression><![CDATA[""]]></textFieldExpression>
 			</textField>
-			<staticText>
+			<textField>
 				<reportElement x="80" y="58" width="48" height="18" uuid="19b587ed-f1c2-4b6c-a6ae-c5e5da50667d"/>
 				<box>
 					<topPen lineWidth="1.0"/>
@@ -612,8 +618,8 @@
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="宋体" size="8"/>
 				</textElement>
-				<text><![CDATA[未税金额：]]></text>
-			</staticText>
+				<textFieldExpression><![CDATA["未税金额："+$F{CD12}]]></textFieldExpression>
+			</textField>
 			<staticText>
 				<reportElement x="201" y="58" width="50" height="18" uuid="825bbc68-c690-42f3-a73a-5554df70c72d"/>
 				<box>
