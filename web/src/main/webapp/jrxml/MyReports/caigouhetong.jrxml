@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
-<!-- 2017-06-18T22:57:45 -->
+<!-- 2017-08-05T15:45:00 -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="IndicatorRiskLevel" pageWidth="595" pageHeight="662" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="0" bottomMargin="0" uuid="c865af7f-23c5-4289-97ca-824c7f662124">
 	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="New Data Adapter (2)"/>
 	<property name="com.jaspersoft.studio.unit." value="pixel"/>
@@ -24,17 +24,13 @@
 	<field name="CD24" class="java.lang.String"/>
 	<field name="CD26" class="java.lang.String"/>
 	<field name="CD12" class="java.lang.String"/>
-
 	<field name="CD55" class="java.lang.String"/>
 	<field name="CD16" class="java.lang.String"/>
 	<field name="CD17" class="java.lang.String"/>
 	<field name="CD18" class="java.lang.String"/>
-
 	<field name="CD23" class="java.lang.String"/>
 	<field name="CD25" class="java.lang.String"/>
 	<field name="CD13" class="java.lang.String"/>
-
-
 	<background>
 		<band splitType="Stretch"/>
 	</background>
@@ -42,7 +38,6 @@
 		<band height="134" splitType="Stretch">
 			<image>
 				<reportElement x="40" y="10" width="140" height="20" uuid="dbba5aa1-9391-4f26-bff4-959de3e19cf6"/>
-				<!--<imageExpression><![CDATA["/Users/liuranran/work/jasperreportserver/web/src/main/webapp/jrxml/MyReports/honghe.png"]]></imageExpression>-->
 				<imageExpression><![CDATA["/opt/tomcat8/webapps/jrs/jrxml/MyReports/honghe.png"]]></imageExpression>
 			</image>
 			<line>
@@ -60,7 +55,7 @@
 				<textElement verticalAlignment="Middle">
 					<font fontName="宋体" size="8"/>
 				</textElement>
-				<textFieldExpression><![CDATA["需方（甲方）："+$F{CD20}	]]></textFieldExpression>
+				<textFieldExpression><![CDATA["需方（甲方）："+$F{CD20}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="40" y="78" width="298" height="14" uuid="f1d478b2-625a-454c-8d7a-997bf5402866"/>
@@ -70,7 +65,7 @@
 				<textFieldExpression><![CDATA["联系地址："+$F{CD21}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="380" y="64" width="79" height="14" uuid="b31a34c6-4479-45c3-976a-4a7b154de811"/>
+				<reportElement x="380" y="64" width="140" height="14" uuid="b31a34c6-4479-45c3-976a-4a7b154de811"/>
 				<textElement>
 					<font fontName="宋体" size="8"/>
 				</textElement>
@@ -106,7 +101,7 @@
 				<text><![CDATA[联 系 地 址：]]></text>
 			</staticText>
 			<textField isBlankWhenNull="true">
-				<reportElement x="100" y="105" width="52" height="14" uuid="206ebc42-825d-4301-8edb-b533053a30c0"/>
+				<reportElement x="100" y="105" width="236" height="14" uuid="206ebc42-825d-4301-8edb-b533053a30c0"/>
 				<textElement>
 					<font fontName="宋体" size="8"/>
 				</textElement>
@@ -120,14 +115,14 @@
 				<text><![CDATA[联 系 电 话：]]></text>
 			</staticText>
 			<textField isBlankWhenNull="true">
-				<reportElement x="100" y="120" width="52" height="14" uuid="7a468103-da44-4433-9c9e-92ce15a6e608"/>
+				<reportElement x="100" y="120" width="182" height="14" uuid="7a468103-da44-4433-9c9e-92ce15a6e608"/>
 				<textElement>
 					<font fontName="宋体" size="8"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{CD22}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement x="410" y="120" width="49" height="14" uuid="6166a056-d747-4ed5-8115-74c1d208ee5b"/>
+				<reportElement x="410" y="120" width="110" height="14" uuid="6166a056-d747-4ed5-8115-74c1d208ee5b"/>
 				<textElement>
 					<font fontName="宋体" size="8"/>
 				</textElement>
