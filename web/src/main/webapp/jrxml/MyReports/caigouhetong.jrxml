@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
-<!-- 2017-08-05T15:45:00 -->
+<!-- 2017-08-25T13:53:56 -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="IndicatorRiskLevel" pageWidth="595" pageHeight="662" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="0" bottomMargin="0" uuid="c865af7f-23c5-4289-97ca-824c7f662124">
-	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="New Data Adapter (2)"/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
 	<property name="com.jaspersoft.studio.unit." value="pixel"/>
 	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
 	<property name="com.jaspersoft.studio.unit.pageWidth" value="pixel"/>
@@ -31,62 +31,72 @@
 	<field name="CD23" class="java.lang.String"/>
 	<field name="CD25" class="java.lang.String"/>
 	<field name="CD13" class="java.lang.String"/>
+	<field name="CDCOUNT" class="java.lang.String"/>
+	<field name="CD001" class="java.lang.String"/>
+	<field name="CD002" class="java.lang.String"/>
+	<field name="CD005" class="java.lang.String"/>
+	<field name="CD003" class="java.lang.String"/>
+	<field name="CD004" class="java.lang.String"/>
+	<field name="CD006" class="java.lang.String"/>
+	<field name="CD008" class="java.lang.String"/>
+	<field name="CD009" class="java.lang.String"/>
+	<field name="CD011" class="java.lang.String"/>
+	<field name="MK" class="java.lang.String"/>
+	<field name="REMARKS" class="java.lang.String"/>
 	<background>
 		<band splitType="Stretch"/>
 	</background>
 	<title>
-		<band height="134" splitType="Stretch">
-			<image>
-				<reportElement x="40" y="10" width="140" height="20" uuid="dbba5aa1-9391-4f26-bff4-959de3e19cf6"/>
-				<imageExpression><![CDATA["/opt/tomcat8/webapps/jrs/jrxml/MyReports/honghe.png"]]></imageExpression>
-			</image>
+		<band height="192">
 			<line>
-				<reportElement x="40" y="0" width="463" height="1" forecolor="#848484" uuid="6d233e35-91e5-4a40-879f-6356b14cbf6f"/>
+				<reportElement x="40" y="0" width="463" height="1" forecolor="#848484" uuid="a587196b-8f43-4313-a912-74d88650407b"/>
 			</line>
 			<staticText>
-				<reportElement x="230" y="26" width="110" height="30" uuid="1cab7377-f9a8-4b5f-9afd-901a4a6d240f"/>
+				<reportElement x="230" y="26" width="110" height="30" uuid="9c5d2856-68a3-43a1-9d59-f2d97175f2c3"/>
 				<textElement>
 					<font fontName="宋体" size="16" isBold="true"/>
 				</textElement>
 				<text><![CDATA[材料采购合同]]></text>
 			</staticText>
 			<textField>
-				<reportElement x="40" y="50" width="200" height="14" uuid="6da31dc3-4fab-40e4-8235-1ff4d7aff748"/>
+				<reportElement x="40" y="50" width="200" height="14" uuid="235eb548-bf1f-4c26-b400-f2d5f4c0c6d7"/>
 				<textElement verticalAlignment="Middle">
 					<font fontName="宋体" size="8"/>
 				</textElement>
 				<textFieldExpression><![CDATA["需方（甲方）："+$F{CD20}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="40" y="78" width="298" height="14" uuid="f1d478b2-625a-454c-8d7a-997bf5402866"/>
+				<reportElement x="40" y="78" width="480" height="14" uuid="4ee514d1-33a4-453f-9390-43dcfddb54c4"/>
 				<textElement>
 					<font fontName="宋体" size="8"/>
 				</textElement>
 				<textFieldExpression><![CDATA["联系地址："+$F{CD21}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="380" y="64" width="140" height="14" uuid="b31a34c6-4479-45c3-976a-4a7b154de811"/>
+				<reportElement x="380" y="64" width="140" height="14" uuid="478c8684-7052-40a3-9d55-899cff16bd64"/>
 				<textElement>
 					<font fontName="宋体" size="8"/>
 				</textElement>
 				<textFieldExpression><![CDATA["传真："+$F{CD23}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement x="420" y="50" width="39" height="14" uuid="86f64d6f-8487-4d57-97bb-40e2baa274ec"/>
+				<reportElement x="420" y="50" width="39" height="14" uuid="8a04e755-3285-4640-aa01-f402a658f17f"/>
 				<textElement>
 					<font fontName="宋体" size="8"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{WFNO}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="41" y="92" width="58" height="14" uuid="a95a54fa-a706-4f47-9e1e-9eb25b0eec36"/>
+				<reportElement x="40" y="92" width="58" height="14" uuid="d5a8041a-d0f3-403d-8e62-069341e21005">
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+				</reportElement>
 				<textElement>
 					<font fontName="宋体" size="8"/>
 				</textElement>
 				<textFieldExpression><![CDATA["供方（乙方）："+$F{CD07}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement x="100" y="92" width="38" height="13" uuid="ef8b4ce9-0fab-4f25-8868-ffa03e03061c"/>
+				<reportElement x="100" y="92" width="420" height="13" uuid="4180f8ec-5118-42dc-9d32-36375a7a46dd"/>
 				<textElement>
 					<font fontName="宋体" size="8"/>
 					<paragraph lineSpacing="Proportional"/>
@@ -94,67 +104,115 @@
 				<textFieldExpression><![CDATA[$F{CD07}]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement x="40" y="106" width="60" height="13" uuid="3c87105b-f893-4db2-b5cf-0c1b3c315b5b"/>
+				<reportElement x="40" y="106" width="60" height="13" uuid="5b5767d5-60ca-44ac-a9b6-88fff72efd35"/>
 				<textElement>
 					<font fontName="宋体" size="8"/>
 				</textElement>
 				<text><![CDATA[联 系 地 址：]]></text>
 			</staticText>
 			<textField isBlankWhenNull="true">
-				<reportElement x="100" y="105" width="236" height="14" uuid="206ebc42-825d-4301-8edb-b533053a30c0"/>
+				<reportElement x="100" y="105" width="420" height="14" uuid="d102c946-85b2-4b3b-a68c-bcccb08268b2"/>
 				<textElement>
 					<font fontName="宋体" size="8"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{CD24}]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement x="40" y="120" width="60" height="14" uuid="e8e2a151-6c84-422b-b26e-64ef87c72ef4"/>
+				<reportElement x="40" y="120" width="60" height="14" uuid="70002664-b0cc-4d34-b9dd-ddcee87c7efd"/>
 				<textElement>
 					<font fontName="宋体" size="8"/>
 				</textElement>
 				<text><![CDATA[联 系 电 话：]]></text>
 			</staticText>
 			<textField isBlankWhenNull="true">
-				<reportElement x="100" y="120" width="182" height="14" uuid="7a468103-da44-4433-9c9e-92ce15a6e608"/>
+				<reportElement x="100" y="120" width="182" height="14" uuid="c965b1b4-4559-4236-b7c4-60e48f74daa1"/>
 				<textElement>
 					<font fontName="宋体" size="8"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{CD22}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement x="410" y="120" width="110" height="14" uuid="6166a056-d747-4ed5-8115-74c1d208ee5b"/>
+				<reportElement x="410" y="120" width="110" height="14" uuid="46c84de8-30e3-4d6f-beb5-3d75bffd4630"/>
 				<textElement>
 					<font fontName="宋体" size="8"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{CD23}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="40" y="64" width="199" height="12" uuid="2863e5d1-d3f8-4b19-bb31-4e25896115c7"/>
+				<reportElement x="40" y="64" width="199" height="12" uuid="7b1ae47d-61db-4146-b9be-9020a56cbd06"/>
 				<textElement>
 					<font fontName="宋体" size="8"/>
 				</textElement>
 				<textFieldExpression><![CDATA["联系电话："+$F{CD22}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="380" y="120" width="30" height="14" uuid="a8710e4f-0a89-47bd-8b59-1ac91b586b31"/>
+				<reportElement x="380" y="120" width="30" height="14" uuid="825bc8f3-d1a9-4919-8bb9-ca8d0bec4187"/>
 				<textElement>
 					<font fontName="宋体" size="8"/>
 				</textElement>
 				<textFieldExpression><![CDATA["传真："+$F{CD26}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="380" y="51" width="40" height="13" uuid="374aa371-4df3-4b50-8ff4-9be55de8b956"/>
+				<reportElement x="380" y="51" width="40" height="13" uuid="3a7dadaa-e72c-4f29-b32e-c25be3cc81b5"/>
 				<textElement>
 					<font fontName="宋体" size="8"/>
 				</textElement>
 				<textFieldExpression><![CDATA["合同编号："+$F{WFNO}]]></textFieldExpression>
 			</textField>
-		</band>
-	</title>
-	<detail>
-		<band height="397" splitType="Stretch">
 			<staticText>
-				<reportElement x="40" y="40" width="40" height="18" uuid="c2578b11-a066-4f9d-b8e3-399843c91ec5"/>
+				<reportElement x="40" y="153" width="279" height="18" uuid="0a0cad7f-23cf-4543-9df8-8d2603dd35c7"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="宋体" size="8"/>
+				</textElement>
+				<text><![CDATA[一、货品名称、数量、价格：]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="40" y="134" width="279" height="18" uuid="4da9bdc5-390e-4a25-8ff9-942e562f399c">
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="宋体" size="8"/>
+				</textElement>
+				<text><![CDATA[甲乙双方本着互惠互利的原则，经双方商定达成本合同。]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="471" y="174" width="33" height="18" uuid="b6d3cd4f-51e9-4a3e-b036-4d3bfb54daf7"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="宋体" size="8"/>
+				</textElement>
+				<text><![CDATA[备注]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="201" y="174" width="52" height="18" uuid="0e523006-fe47-4b12-b4a7-ecd7e3986d07"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="宋体" size="8"/>
+				</textElement>
+				<text><![CDATA[货品名称]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="282" y="174" width="39" height="18" uuid="e9f9be3c-847d-4209-9395-a7e86a67a68a"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="宋体" size="8"/>
+				</textElement>
+				<text><![CDATA[单位]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="40" y="174" width="40" height="18" uuid="d38b453c-da95-4f37-9fcc-700d9fb9e6d4"/>
 				<box>
 					<topPen lineWidth="1.0"/>
 					<leftPen lineWidth="1.0"/>
@@ -167,91 +225,7 @@
 				<text><![CDATA[序号]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="80" y="40" width="39" height="18" uuid="c177953f-1c07-4210-b07b-58a99c0a474f"/>
-				<box>
-					<topPen lineWidth="1.0"/>
-					<bottomPen lineWidth="1.0"/>
-					<rightPen lineWidth="1.0"/>
-				</box>
-				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="宋体" size="8"/>
-				</textElement>
-				<text><![CDATA[订单号]]></text>
-			</staticText>
-			<staticText>
-				<reportElement x="119" y="40" width="34" height="18" uuid="6151575f-5525-4372-a0e8-1a105024f041"/>
-				<box>
-					<topPen lineWidth="1.0"/>
-					<bottomPen lineWidth="1.0"/>
-					<rightPen lineWidth="1.0"/>
-				</box>
-				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="宋体" size="8"/>
-				</textElement>
-				<text><![CDATA[项目]]></text>
-			</staticText>
-			<staticText>
-				<reportElement x="153" y="40" width="48" height="18" uuid="a5d7d7b1-aba9-4554-9af2-946eecc17930"/>
-				<box>
-					<topPen lineWidth="1.0"/>
-					<bottomPen lineWidth="1.0"/>
-					<rightPen lineWidth="1.0"/>
-				</box>
-				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="宋体" size="8"/>
-				</textElement>
-				<text><![CDATA[货品编码]]></text>
-			</staticText>
-			<staticText>
-				<reportElement x="201" y="40" width="52" height="18" uuid="57f72165-87c9-4ca0-9b87-4f10da4f0680"/>
-				<box>
-					<topPen lineWidth="1.0"/>
-					<bottomPen lineWidth="1.0"/>
-					<rightPen lineWidth="1.0"/>
-				</box>
-				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="宋体" size="8"/>
-				</textElement>
-				<text><![CDATA[货品名称]]></text>
-			</staticText>
-			<staticText>
-				<reportElement x="253" y="40" width="29" height="18" uuid="b80b1d9f-38a9-4fb9-9903-2219a513b029"/>
-				<box>
-					<topPen lineWidth="1.0"/>
-					<bottomPen lineWidth="1.0"/>
-					<rightPen lineWidth="1.0"/>
-				</box>
-				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="宋体" size="8"/>
-				</textElement>
-				<text><![CDATA[数量]]></text>
-			</staticText>
-			<staticText>
-				<reportElement x="282" y="40" width="39" height="18" uuid="212d0333-3203-4260-9bbe-5ebc1a5c4c2d"/>
-				<box>
-					<topPen lineWidth="1.0"/>
-					<bottomPen lineWidth="1.0"/>
-					<rightPen lineWidth="1.0"/>
-				</box>
-				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="宋体" size="8"/>
-				</textElement>
-				<text><![CDATA[单位]]></text>
-			</staticText>
-			<staticText>
-				<reportElement x="321" y="40" width="50" height="18" uuid="6803ca48-b16f-41fd-853d-f3727666adca"/>
-				<box>
-					<topPen lineWidth="1.0"/>
-					<bottomPen lineWidth="1.0"/>
-					<rightPen lineWidth="1.0"/>
-				</box>
-				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="宋体" size="8"/>
-				</textElement>
-				<text><![CDATA[含税单价]]></text>
-			</staticText>
-			<staticText>
-				<reportElement x="371" y="40" width="51" height="18" uuid="711550d6-6984-45d8-8a34-a4e51adb5e02"/>
+				<reportElement x="371" y="174" width="51" height="18" uuid="4da32011-2703-4149-a61e-2d1cf267ab8d"/>
 				<box>
 					<topPen lineWidth="1.0"/>
 					<bottomPen lineWidth="1.0"/>
@@ -263,7 +237,7 @@
 				<text><![CDATA[含税金额]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="422" y="40" width="49" height="18" uuid="10fe9be4-989e-47de-b61b-8acc45c8c21a"/>
+				<reportElement x="422" y="174" width="49" height="18" uuid="601c3272-8aef-457f-a237-d0d0ca0cf65e"/>
 				<box>
 					<topPen lineWidth="1.0"/>
 					<bottomPen lineWidth="1.0"/>
@@ -275,7 +249,7 @@
 				<text><![CDATA[价格单位]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="471" y="40" width="33" height="18" uuid="819aace8-0001-4612-a3ac-1544155abdf7"/>
+				<reportElement x="153" y="174" width="48" height="18" uuid="6c474106-291c-4fd6-ae54-4939f49cf77d"/>
 				<box>
 					<topPen lineWidth="1.0"/>
 					<bottomPen lineWidth="1.0"/>
@@ -284,50 +258,213 @@
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="宋体" size="8"/>
 				</textElement>
-				<text><![CDATA[备注]]></text>
+				<text><![CDATA[货品编码]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="40" y="58" width="40" height="18" uuid="1b203c5b-f1c1-4f79-8bca-c11b2f06363e"/>
+				<reportElement x="119" y="174" width="34" height="18" uuid="5e35e773-f012-44ba-a3c3-c6c9bcebbe9d"/>
 				<box>
 					<topPen lineWidth="1.0"/>
-					<leftPen lineWidth="1.0"/>
 					<bottomPen lineWidth="1.0"/>
 					<rightPen lineWidth="1.0"/>
 				</box>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="宋体" size="8"/>
 				</textElement>
-				<text><![CDATA[合计]]></text>
+				<text><![CDATA[项目]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="40" y="76" width="40" height="18" uuid="97b50819-d7de-4a19-bf54-627d5fc7dc16"/>
+				<reportElement x="80" y="174" width="39" height="18" uuid="c0308ca6-0963-4e27-b2d1-98a2310fbf04"/>
 				<box>
 					<topPen lineWidth="1.0"/>
-					<leftPen lineWidth="1.0"/>
 					<bottomPen lineWidth="1.0"/>
 					<rightPen lineWidth="1.0"/>
 				</box>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="宋体" size="8"/>
 				</textElement>
-				<text><![CDATA[合计]]></text>
+				<text><![CDATA[订单号]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="40" y="94" width="40" height="18" uuid="e013849a-e874-45a3-8398-3b158413e145"/>
+				<reportElement x="253" y="174" width="29" height="18" uuid="134710a9-b06e-45d7-a6f0-44f248ff3234"/>
 				<box>
 					<topPen lineWidth="1.0"/>
-					<leftPen lineWidth="1.0"/>
 					<bottomPen lineWidth="1.0"/>
 					<rightPen lineWidth="1.0"/>
 				</box>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="宋体" size="8"/>
 				</textElement>
-				<text><![CDATA[备注]]></text>
+				<text><![CDATA[数量]]></text>
 			</staticText>
+			<staticText>
+				<reportElement x="321" y="174" width="50" height="18" uuid="a741ae40-2bc2-4945-b09c-8fa3ae95760d"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="宋体" size="8"/>
+				</textElement>
+				<text><![CDATA[含税单价]]></text>
+			</staticText>
+			<image>
+				<reportElement x="40" y="10" width="140" height="20" uuid="6bdb5664-2c10-408e-aae9-77d35e528ed4"/>
+				<imageExpression><![CDATA["/opt/tomcat8/webapps/jrs/jrxml/MyReports/honghe.png"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<detail>
+		<band height="19">
 			<textField isBlankWhenNull="true">
-				<reportElement x="128" y="58" width="73" height="18" uuid="a8ade6ae-cee4-4509-a19a-6b8465b6c995"/>
+				<reportElement x="40" y="0" width="40" height="19" uuid="8c3e0b5c-571c-4159-a315-27e679a099a6">
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
 				<box>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="宋体" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{CDCOUNT}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="80" y="0" width="39" height="19" uuid="f1516b6a-b27f-4572-a057-6613d839188b"/>
+				<box>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="宋体" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{CD001}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="119" y="0" width="34" height="19" uuid="614f43e8-b1bf-421a-a338-afbb4d175835"/>
+				<box>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="宋体" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{CD002}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="253" y="0" width="29" height="19" uuid="b838b26f-81f1-4765-b573-b58c05ccc26a"/>
+				<box>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="宋体" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{CD005}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="153" y="0" width="48" height="19" uuid="3374ed80-ba0c-4d24-b709-357de826268a"/>
+				<box>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="宋体" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{CD003}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="201" y="0" width="52" height="19" uuid="3d7830e5-54e2-4676-957e-db7e3cf6e7ed"/>
+				<box>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="宋体" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{CD004}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="282" y="0" width="39" height="19" uuid="8b133b8c-2d5b-41b3-b3a4-2da0890dfe19"/>
+				<box>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="宋体" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{CD006}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="321" y="0" width="50" height="19" uuid="6421a494-7f57-4b44-a6b6-de0e314f4072"/>
+				<box>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="宋体" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{CD009}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="371" y="0" width="51" height="19" uuid="997d71aa-9d9a-4b41-a778-ce565b61fa44"/>
+				<box>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="宋体" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{CD008}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="422" y="0" width="49" height="19" uuid="c5c43b76-bb3d-4cd8-870c-d6be3539fa06"/>
+				<box>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="宋体" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{CD011}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="471" y="0" width="33" height="19" uuid="0c721e6f-ea56-4b71-bfc4-0dd22d431eab"/>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="宋体" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{REMARKS}]]></textFieldExpression>
+			</textField>
+		</band>
+		<band height="18">
+			<printWhenExpression><![CDATA[!$F{MK}.equals( null )||!$F{MK}.equals( "" )]]></printWhenExpression>
+			<textField isBlankWhenNull="true">
+				<reportElement x="128" y="0" width="73" height="18" uuid="c75c6cee-ca1f-4429-a369-db49fa40b5a5"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
 					<bottomPen lineWidth="1.0"/>
 					<rightPen lineWidth="1.0"/>
 				</box>
@@ -336,287 +473,8 @@
 				</textElement>
 				<textFieldExpression><![CDATA[$F{CD12}]]></textFieldExpression>
 			</textField>
-			<textField isBlankWhenNull="true">
-				<reportElement x="251" y="58" width="253" height="18" uuid="73403b6b-2ab3-4e19-99ef-4167dedb4d09"/>
-				<box>
-					<bottomPen lineWidth="1.0"/>
-					<rightPen lineWidth="1.0"/>
-				</box>
-				<textElement verticalAlignment="Middle">
-					<font fontName="宋体" size="8"/>
-				</textElement>
-				<textFieldExpression><![CDATA[$F{CD13}]]></textFieldExpression>
-			</textField>
-			<textField isBlankWhenNull="true">
-				<reportElement x="128" y="76" width="73" height="18" uuid="5d1082d8-b609-49c6-a002-9e67f634c0e4"/>
-				<box>
-					<bottomPen lineWidth="1.0"/>
-					<rightPen lineWidth="1.0"/>
-				</box>
-				<textElement verticalAlignment="Middle">
-					<font fontName="宋体" size="8"/>
-				</textElement>
-				<textFieldExpression><![CDATA[$F{CD55}]]></textFieldExpression>
-			</textField>
-			<textField>
-				<reportElement x="79" y="94" width="258" height="18" uuid="2f7155b6-f6f4-4c6b-a597-ac441d44139c"/>
-				<box>
-					<bottomPen lineWidth="1.0"/>
-					<rightPen lineWidth="1.0"/>
-				</box>
-				<textElement verticalAlignment="Middle">
-					<font fontName="宋体" size="8"/>
-				</textElement>
-				<textFieldExpression><![CDATA["请在送货单上写上我司名称与物料编码"]]></textFieldExpression>
-			</textField>
-			<textField>
-				<reportElement x="201" y="76" width="303" height="18" uuid="e77e9f43-87c1-4acf-9c5c-eccaec7617ac"/>
-				<box>
-					<bottomPen lineWidth="1.0"/>
-					<rightPen lineWidth="1.0"/>
-				</box>
-				<textElement>
-					<font fontName="宋体" size="8"/>
-				</textElement>
-				<textFieldExpression><![CDATA[""]]></textFieldExpression>
-			</textField>
-			<textField isBlankWhenNull="true">
-				<reportElement x="385" y="94" width="33" height="18" uuid="9ec30ff2-a95c-4895-b3be-ee9c5aff8f4b"/>
-				<box>
-					<bottomPen lineWidth="0.0"/>
-					<rightPen lineWidth="0.0"/>
-				</box>
-				<textElement textAlignment="Left" verticalAlignment="Middle">
-					<font fontName="宋体" size="8"/>
-				</textElement>
-				<textFieldExpression><![CDATA[$F{CD12}]]></textFieldExpression>
-			</textField>
 			<staticText>
-				<reportElement x="40" y="113" width="464" height="18" uuid="5abb8245-b6d9-49ea-814c-84bb7309a709"/>
-				<textElement textAlignment="Left" verticalAlignment="Middle">
-					<font fontName="宋体" size="8"/>
-				</textElement>
-				<text><![CDATA[二、技术要求：按我公司确认的样品和图纸，所供应产品需满足我司HHSS-OP-5-06  附录一：有害物质限定值要求。]]></text>
-			</staticText>
-			<staticText>
-				<reportElement x="40" y="131" width="59" height="18" uuid="c780fce6-1a09-434a-86d8-33df2e3c7438"/>
-				<textElement textAlignment="Left" verticalAlignment="Middle">
-					<font fontName="宋体" size="8"/>
-				</textElement>
-				<text><![CDATA[三、付款方式：]]></text>
-			</staticText>
-			<staticText>
-				<reportElement x="40" y="149" width="96" height="18" uuid="20c8e147-460a-477f-a8cc-857fce9c6a41"/>
-				<textElement textAlignment="Left" verticalAlignment="Middle">
-					<font fontName="宋体" size="8"/>
-				</textElement>
-				<text><![CDATA[四、合同履约和违约处罚]]></text>
-			</staticText>
-			<staticText>
-				<reportElement x="50" y="168" width="279" height="18" uuid="33c20608-7816-433e-bbc6-ad0e4f9cbbe0"/>
-				<textElement textAlignment="Left" verticalAlignment="Middle">
-					<font fontName="宋体" size="8"/>
-				</textElement>
-				<text><![CDATA[1、自合同签订之日起，供方如未能按期交货，每愈期一天，需扣除货款总值的]]></text>
-			</staticText>
-			<textField isBlankWhenNull="true">
-				<reportElement x="99" y="131" width="36" height="18" uuid="ced01575-1413-445d-95b2-97421919bfa3"/>
-				<box>
-					<bottomPen lineWidth="1.0" lineStyle="Dashed"/>
-					<rightPen lineWidth="0.0" lineStyle="Solid"/>
-				</box>
-				<textElement verticalAlignment="Middle">
-					<font fontName="宋体" size="8"/>
-				</textElement>
-				<textFieldExpression><![CDATA[$F{CD16}]]></textFieldExpression>
-			</textField>
-			<textField isBlankWhenNull="true">
-				<reportElement x="330" y="167" width="36" height="18" uuid="b0582440-03d5-4e86-9a1c-6680283595e8"/>
-				<box>
-					<bottomPen lineWidth="1.0" lineStyle="Dashed"/>
-					<rightPen lineWidth="0.0" lineStyle="Solid"/>
-				</box>
-				<textElement verticalAlignment="Middle">
-					<font fontName="宋体" size="8"/>
-				</textElement>
-				<textFieldExpression><![CDATA[$F{CD16}]]></textFieldExpression>
-			</textField>
-			<staticText>
-				<reportElement x="50" y="186" width="283" height="18" uuid="9a36793d-6075-4ee8-8c34-f47112c48aa8"/>
-				<textElement textAlignment="Left" verticalAlignment="Middle">
-					<font fontName="宋体" size="8"/>
-				</textElement>
-				<text><![CDATA[2、如存在质量问题，由供方负责解决,需方有权因质量造成的损失要求供方进行调换或索赔。]]></text>
-			</staticText>
-			<staticText>
-				<reportElement x="50" y="204" width="283" height="18" uuid="a5b41f5c-d343-4135-b27f-39a7f87bb6ce"/>
-				<textElement textAlignment="Left" verticalAlignment="Middle">
-					<font fontName="宋体" size="8"/>
-				</textElement>
-				<text><![CDATA[3、因本批材料ROHS符合性造成的需方产品损失（或索赔），由供方承担。]]></text>
-			</staticText>
-			<staticText>
-				<reportElement x="41" y="222" width="456" height="18" uuid="ca73e73f-03d3-4654-99a1-37b7237fa07b"/>
-				<textElement textAlignment="Left" verticalAlignment="Middle">
-					<font fontName="宋体" size="8"/>
-				</textElement>
-				<text><![CDATA[五、争议的解决办法：本合同发生的一切争议，双方应本着互谅互让的原则，友好协商解决，如协商解决不成，交人民法院裁决。]]></text>
-			</staticText>
-			<staticText>
-				<reportElement x="41" y="240" width="286" height="18" uuid="f8b232d2-8910-4172-9b90-d6041e95d12c"/>
-				<textElement textAlignment="Left" verticalAlignment="Middle">
-					<font fontName="宋体" size="8"/>
-				</textElement>
-				<text><![CDATA[六、本合同一式两份，双方各执一份，经签字盖章后生效，具有同等法律效力。]]></text>
-			</staticText>
-			<staticText>
-				<reportElement x="41" y="259" width="57" height="18" uuid="f00c8bab-9444-48b4-9fd1-aa5df1caccb6"/>
-				<textElement textAlignment="Left" verticalAlignment="Middle">
-					<font fontName="宋体" size="8"/>
-				</textElement>
-				<text><![CDATA[七、供货方式：]]></text>
-			</staticText>
-			<textField isBlankWhenNull="true">
-				<reportElement x="96" y="258" width="39" height="18" uuid="2288b8d3-53e2-46d8-9ebc-8b3c85ce5f1b"/>
-				<box>
-					<bottomPen lineWidth="1.0" lineStyle="Dashed"/>
-					<rightPen lineWidth="0.0" lineStyle="Solid"/>
-				</box>
-				<textElement verticalAlignment="Middle">
-					<font fontName="宋体" size="8"/>
-				</textElement>
-				<textFieldExpression><![CDATA[$F{CD17}]]></textFieldExpression>
-			</textField>
-			<staticText>
-				<reportElement x="41" y="278" width="48" height="18" uuid="55e526d4-77a3-485b-9abd-0dd810534259"/>
-				<textElement textAlignment="Left" verticalAlignment="Middle">
-					<font fontName="宋体" size="8"/>
-				</textElement>
-				<text><![CDATA[八、交货期：]]></text>
-			</staticText>
-			<textField>
-				<reportElement x="39" y="352" width="40" height="14" uuid="3a1cfcac-d0ae-493c-a42f-cd863f264985"/>
-				<textElement>
-					<font fontName="宋体" size="8"/>
-				</textElement>
-				<textFieldExpression><![CDATA["甲方名称："+$F{CD20}]]></textFieldExpression>
-			</textField>
-			<staticText>
-				<reportElement x="39" y="366" width="40" height="14" uuid="a60836d0-ab70-4d88-8098-2037bef8b1ce"/>
-				<textElement>
-					<font fontName="宋体" size="8"/>
-				</textElement>
-				<text><![CDATA[代表签字：]]></text>
-			</staticText>
-			<staticText>
-				<reportElement x="39" y="380" width="40" height="14" uuid="8d1488de-3379-4290-ba3f-5b336c9f1a92"/>
-				<textElement>
-					<font fontName="宋体" size="8"/>
-				</textElement>
-				<text><![CDATA[日    期：]]></text>
-			</staticText>
-			<staticText>
-				<reportElement x="290" y="366" width="40" height="14" uuid="16272b17-d595-4c43-938e-b86df98c8f89"/>
-				<textElement>
-					<font fontName="宋体" size="8"/>
-				</textElement>
-				<text><![CDATA[代表签字：]]></text>
-			</staticText>
-			<textField>
-				<reportElement x="290" y="352" width="40" height="14" uuid="ac130caf-c399-4083-8d71-6f967d6d5883"/>
-				<textElement>
-					<font fontName="宋体" size="8"/>
-				</textElement>
-				<textFieldExpression><![CDATA["乙方名称："+$F{CD07}]]></textFieldExpression>
-			</textField>
-			<textField>
-				<reportElement x="79" y="380" width="10" height="13" uuid="e091bf7a-ce47-499e-a708-8f81aa15b890"/>
-				<box>
-					<bottomPen lineWidth="1.0"/>
-				</box>
-				<textElement>
-					<font fontName="宋体" size="8"/>
-				</textElement>
-				<textFieldExpression><![CDATA[""]]></textFieldExpression>
-			</textField>
-			<textField>
-				<reportElement x="98" y="381" width="10" height="12" uuid="0f68a625-41f3-4d66-90e0-dbf03dba7527"/>
-				<box>
-					<bottomPen lineWidth="1.0"/>
-				</box>
-				<textElement>
-					<font fontName="宋体" size="8"/>
-				</textElement>
-				<textFieldExpression><![CDATA[""]]></textFieldExpression>
-			</textField>
-			<textField>
-				<reportElement x="118" y="381" width="10" height="12" uuid="a03d7dde-2bdf-4c71-aa82-8b5c1d3f5b33"/>
-				<box>
-					<bottomPen lineWidth="1.0"/>
-				</box>
-				<textElement>
-					<font fontName="宋体" size="8"/>
-				</textElement>
-				<textFieldExpression><![CDATA[""]]></textFieldExpression>
-			</textField>
-			<staticText>
-				<reportElement x="79" y="381" width="81" height="13" uuid="589640bf-45bf-468f-b361-11f900b9cdee"/>
-				<textElement>
-					<font fontName="宋体" size="8"/>
-				</textElement>
-				<text><![CDATA[    年     月     日]]></text>
-			</staticText>
-			<staticText>
-				<reportElement x="290" y="380" width="40" height="14" uuid="582f7122-7a5f-4719-af74-9ce89fe4d45c"/>
-				<textElement>
-					<font fontName="宋体" size="8"/>
-				</textElement>
-				<text><![CDATA[日    期：]]></text>
-			</staticText>
-			<textField>
-				<reportElement x="330" y="380" width="10" height="13" uuid="ba12fc18-144b-46b3-bfb4-b52e8b0f7b7c"/>
-				<box>
-					<bottomPen lineWidth="1.0"/>
-				</box>
-				<textElement>
-					<font fontName="宋体" size="8"/>
-				</textElement>
-				<textFieldExpression><![CDATA[""]]></textFieldExpression>
-			</textField>
-			<textField>
-				<reportElement x="349" y="381" width="10" height="12" uuid="9b637762-8cad-4fd3-a5b4-75da3617e2d2"/>
-				<box>
-					<bottomPen lineWidth="1.0"/>
-				</box>
-				<textElement>
-					<font fontName="宋体" size="8"/>
-				</textElement>
-				<textFieldExpression><![CDATA[""]]></textFieldExpression>
-			</textField>
-			<textField>
-				<reportElement x="369" y="381" width="10" height="12" uuid="3c2bca69-095c-4c7e-9739-4a358f5102c4"/>
-				<box>
-					<bottomPen lineWidth="1.0"/>
-				</box>
-				<textElement>
-					<font fontName="宋体" size="8"/>
-				</textElement>
-				<textFieldExpression><![CDATA[""]]></textFieldExpression>
-			</textField>
-			<textField>
-				<reportElement x="80" y="58" width="48" height="18" uuid="19b587ed-f1c2-4b6c-a6ae-c5e5da50667d"/>
-				<box>
-					<topPen lineWidth="1.0"/>
-					<bottomPen lineWidth="1.0"/>
-					<rightPen lineWidth="0.0"/>
-				</box>
-				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="宋体" size="8"/>
-				</textElement>
-				<textFieldExpression><![CDATA["未税金额："+$F{CD12}]]></textFieldExpression>
-			</textField>
-			<staticText>
-				<reportElement x="201" y="58" width="50" height="18" uuid="825bbc68-c690-42f3-a73a-5554df70c72d"/>
+				<reportElement x="201" y="0" width="52" height="18" uuid="c5413250-d118-407f-a2a0-3fa72e14441b"/>
 				<box>
 					<topPen lineWidth="1.0"/>
 					<bottomPen lineWidth="1.0"/>
@@ -627,20 +485,64 @@
 				</textElement>
 				<text><![CDATA[含税金额：]]></text>
 			</staticText>
-			<staticText>
-				<reportElement x="337" y="94" width="167" height="18" uuid="03b4bcba-19ac-4fc6-b4c4-fb43d8d932e2"/>
+			<textField>
+				<reportElement x="80" y="0" width="48" height="18" uuid="d2ec34d8-02ad-44eb-ae9b-201a7f9c5bb7"/>
 				<box>
 					<topPen lineWidth="1.0"/>
 					<bottomPen lineWidth="1.0"/>
-					<rightPen lineWidth="1.0"/>
+					<rightPen lineWidth="0.0"/>
 				</box>
-				<textElement textAlignment="Left" verticalAlignment="Middle">
+				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="宋体" size="8"/>
 				</textElement>
-				<text><![CDATA[  以上价格含	增值税]]></text>
+				<textFieldExpression><![CDATA["未税金额："+$F{CD12}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="253" y="0" width="251" height="18" uuid="9072646f-c5bd-46a3-b06e-3600c81b954a">
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="宋体" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{CD13}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="40" y="0" width="40" height="18" uuid="d790e516-e3b2-4fa8-a43a-0809c83aae96"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="宋体" size="8"/>
+				</textElement>
+				<text><![CDATA[合计]]></text>
+			</staticText>
+		</band>
+		<band height="18">
+			<printWhenExpression><![CDATA[!$F{MK}.equals( null )||!$F{MK}.equals( "" )]]></printWhenExpression>
+			<staticText>
+				<reportElement x="40" y="0" width="40" height="18" uuid="01eb23ec-67ec-4376-a502-b5888d579cf0"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="宋体" size="8"/>
+				</textElement>
+				<text><![CDATA[合计]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="80" y="76" width="48" height="18" uuid="862e9af5-11d5-4131-a0e1-bc9264374ea0"/>
+				<reportElement x="80" y="0" width="48" height="18" uuid="7028b470-7bea-4f70-b3cb-79cac280e927"/>
 				<box>
 					<topPen lineWidth="1.0"/>
 					<bottomPen lineWidth="1.0"/>
@@ -651,8 +553,195 @@
 				</textElement>
 				<text><![CDATA[大写（USD)：]]></text>
 			</staticText>
+			<textField>
+				<reportElement x="201" y="0" width="303" height="18" uuid="575dcbb6-1ae8-41db-86d4-407d568b496d"/>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font fontName="宋体" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[""]]></textFieldExpression>
+			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement x="89" y="277" width="36" height="18" uuid="3b54e8d9-083e-420a-8bd1-0147f08ff2e5"/>
+				<reportElement x="128" y="0" width="73" height="18" uuid="d511e638-b166-4c7c-aabb-49937da390fa"/>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="宋体" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{CD55}]]></textFieldExpression>
+			</textField>
+		</band>
+		<band height="18">
+			<printWhenExpression><![CDATA[!$F{MK}.equals( null )||!$F{MK}.equals( "" )]]></printWhenExpression>
+			<staticText>
+				<reportElement x="40" y="0" width="40" height="18" uuid="493a6a96-0d20-4b23-8309-539d142cf3e9"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="宋体" size="8"/>
+				</textElement>
+				<text><![CDATA[备注]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="337" y="0" width="167" height="18" uuid="40d880a3-4f61-4c4f-b557-413dfed46291"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="宋体" size="8"/>
+				</textElement>
+				<text><![CDATA[  以上价格含	增值税]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="385" y="0" width="33" height="18" uuid="39c63b08-7cd8-463e-a342-426501e98d0f"/>
+				<box>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="宋体" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{CD12}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="80" y="0" width="257" height="18" uuid="cdd61c13-b881-4853-8f26-b5d5e2c35088"/>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="宋体" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA["请在送货单上写上我司名称与物料编码"]]></textFieldExpression>
+			</textField>
+		</band>
+		<band height="18">
+			<printWhenExpression><![CDATA[!$F{MK}.equals( null )||!$F{MK}.equals( "" )]]></printWhenExpression>
+			<staticText>
+				<reportElement x="40" y="0" width="464" height="18" uuid="a6225757-4c05-4bad-a1f9-8d5c039538f4"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="宋体" size="8"/>
+				</textElement>
+				<text><![CDATA[二、技术要求：按我公司确认的样品和图纸，所供应产品需满足我司HHSS-OP-5-06  附录一：有害物质限定值要求。]]></text>
+			</staticText>
+		</band>
+		<band height="18">
+			<printWhenExpression><![CDATA[!$F{MK}.equals( null )||!$F{MK}.equals( "" )]]></printWhenExpression>
+			<textField isBlankWhenNull="true">
+				<reportElement x="99" y="0" width="81" height="18" uuid="e1ae8080-bfcf-4cda-8ade-29e792903e81"/>
+				<box>
+					<bottomPen lineWidth="1.0" lineStyle="Dashed"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="宋体" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{CD16}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="40" y="0" width="59" height="18" uuid="85f28a7a-1c68-41f5-acc3-a3b6cf8d3ffc"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="宋体" size="8"/>
+				</textElement>
+				<text><![CDATA[三、付款方式：]]></text>
+			</staticText>
+		</band>
+		<band height="18">
+			<printWhenExpression><![CDATA[!$F{MK}.equals( null )||!$F{MK}.equals( "" )]]></printWhenExpression>
+			<staticText>
+				<reportElement x="40" y="0" width="96" height="18" uuid="827eeebb-e35a-460a-954d-8a63d4f943ba"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="宋体" size="8"/>
+				</textElement>
+				<text><![CDATA[四、合同履约和违约处罚]]></text>
+			</staticText>
+		</band>
+		<band height="18">
+			<printWhenExpression><![CDATA[!$F{MK}.equals( null )||!$F{MK}.equals( "" )]]></printWhenExpression>
+			<staticText>
+				<reportElement x="50" y="0" width="279" height="18" uuid="2acb088a-01a3-47f6-b0c2-92ef599cea1f"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="宋体" size="8"/>
+				</textElement>
+				<text><![CDATA[1、自合同签订之日起，供方如未能按期交货，每愈期一天，需扣除货款总值的]]></text>
+			</staticText>
+		</band>
+		<band height="18">
+			<printWhenExpression><![CDATA[!$F{MK}.equals( null )||!$F{MK}.equals( "" )]]></printWhenExpression>
+			<staticText>
+				<reportElement x="50" y="0" width="283" height="18" uuid="36295982-36bf-4460-be82-3c0bcca6de86"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="宋体" size="8"/>
+				</textElement>
+				<text><![CDATA[2、如存在质量问题，由供方负责解决,需方有权因质量造成的损失要求供方进行调换或索赔。]]></text>
+			</staticText>
+		</band>
+		<band height="18">
+			<printWhenExpression><![CDATA[!$F{MK}.equals( null )||!$F{MK}.equals( "" )]]></printWhenExpression>
+			<staticText>
+				<reportElement x="50" y="0" width="283" height="18" uuid="b0270ecf-cbd0-46e2-b532-c072a01753c0"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="宋体" size="8"/>
+				</textElement>
+				<text><![CDATA[3、因本批材料ROHS符合性造成的需方产品损失（或索赔），由供方承担。]]></text>
+			</staticText>
+		</band>
+		<band height="18">
+			<printWhenExpression><![CDATA[!$F{MK}.equals( null )||!$F{MK}.equals( "" )]]></printWhenExpression>
+			<staticText>
+				<reportElement x="41" y="0" width="456" height="18" uuid="28a45dcf-87e2-4f66-a84e-9d85dcd14679"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="宋体" size="8"/>
+				</textElement>
+				<text><![CDATA[五、争议的解决办法：本合同发生的一切争议，双方应本着互谅互让的原则，友好协商解决，如协商解决不成，交人民法院裁决。]]></text>
+			</staticText>
+		</band>
+		<band height="18">
+			<printWhenExpression><![CDATA[!$F{MK}.equals( null )||!$F{MK}.equals( "" )]]></printWhenExpression>
+			<staticText>
+				<reportElement x="41" y="0" width="286" height="18" uuid="640b19fe-3a69-497a-8962-c7d33a4d18b0"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="宋体" size="8"/>
+				</textElement>
+				<text><![CDATA[六、本合同一式两份，双方各执一份，经签字盖章后生效，具有同等法律效力。]]></text>
+			</staticText>
+		</band>
+		<band height="18">
+			<printWhenExpression><![CDATA[!$F{MK}.equals( null )||!$F{MK}.equals( "" )]]></printWhenExpression>
+			<staticText>
+				<reportElement x="41" y="0" width="57" height="18" uuid="3f9fc38c-76ac-454c-87b6-aee2f77c51ac"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="宋体" size="8"/>
+				</textElement>
+				<text><![CDATA[七、供货方式：]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="96" y="0" width="94" height="18" uuid="08592298-82c3-449c-a554-6c4062cfbe9b"/>
+				<box>
+					<bottomPen lineWidth="1.0" lineStyle="Dashed"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="宋体" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{CD17}]]></textFieldExpression>
+			</textField>
+		</band>
+		<band height="18">
+			<printWhenExpression><![CDATA[!$F{MK}.equals( null )||!$F{MK}.equals( "" )]]></printWhenExpression>
+			<textField isBlankWhenNull="true">
+				<reportElement x="89" y="0" width="101" height="18" uuid="3c4c31a0-696f-44db-b550-24129cb68054"/>
 				<box>
 					<bottomPen lineWidth="1.0" lineStyle="Dashed"/>
 					<rightPen lineWidth="0.0" lineStyle="Solid"/>
@@ -663,51 +752,158 @@
 				<textFieldExpression><![CDATA[$F{CD18}]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement x="330" y="381" width="88" height="13" uuid="16a98b45-6dfa-4d29-9149-92b88e54250e"/>
+				<reportElement x="41" y="0" width="48" height="18" uuid="f3ef838a-be24-4948-85cf-aae037992911"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="宋体" size="8"/>
+				</textElement>
+				<text><![CDATA[八、交货期：]]></text>
+			</staticText>
+		</band>
+		<band height="18">
+			<printWhenExpression><![CDATA[!$F{MK}.equals( null )||!$F{MK}.equals( "" )]]></printWhenExpression>
+			<staticText>
+				<reportElement x="42" y="0" width="286" height="18" uuid="24b85584-5fd9-4f43-92f8-5e53b9bb69b0"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="宋体" size="8"/>
+				</textElement>
+				<text><![CDATA[九、确认后请签名盖章回传，该订单电子档回执具有同等法律效力。]]></text>
+			</staticText>
+		</band>
+		<band height="18">
+			<printWhenExpression><![CDATA[!$F{MK}.equals( null )||!$F{MK}.equals( "" )]]></printWhenExpression>
+			<staticText>
+				<reportElement x="42" y="0" width="286" height="18" uuid="1651aa1c-d4aa-4e37-b45c-a18c40b133eb"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="宋体" size="8"/>
+				</textElement>
+				<text><![CDATA[十、账期从甲方收到发票并审核无误后开始计算。]]></text>
+			</staticText>
+		</band>
+		<band height="88">
+			<printWhenExpression><![CDATA[!$F{MK}.equals( null )||!$F{MK}.equals( "" )]]></printWhenExpression>
+			<staticText>
+				<reportElement x="40" y="34" width="40" height="14" uuid="c34853b1-350b-413b-aa3b-17a076840c98"/>
+				<textElement>
+					<font fontName="宋体" size="8"/>
+				</textElement>
+				<text><![CDATA[代表签字：]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="99" y="49" width="10" height="12" uuid="8e41a913-60fb-4131-95e5-0ea825ecc2f6"/>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font fontName="宋体" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[""]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="291" y="34" width="40" height="14" uuid="8371cbde-4362-4de9-b1e7-602dc3a79e18"/>
+				<textElement>
+					<font fontName="宋体" size="8"/>
+				</textElement>
+				<text><![CDATA[代表签字：]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="80" y="48" width="10" height="13" uuid="9d70336d-0b63-4979-8244-e3b1f317694d"/>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font fontName="宋体" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="119" y="49" width="10" height="12" uuid="09d08f8e-6586-4297-bb92-005ff4c421d6"/>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font fontName="宋体" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="350" y="49" width="10" height="12" uuid="ce7b2ee7-aed9-4ace-a428-35afa573159c"/>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font fontName="宋体" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="291" y="20" width="40" height="14" uuid="b947b01e-17a8-4b4b-a51e-38122294c605"/>
+				<textElement>
+					<font fontName="宋体" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA["乙方名称："+$F{CD07}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="40" y="20" width="40" height="14" uuid="49c2e286-9cc4-42cc-8b32-7a389d5f31fe"/>
+				<textElement>
+					<font fontName="宋体" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA["甲方名称："+$F{CD20}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="370" y="49" width="10" height="12" uuid="0a23cca7-40ae-4b7b-a983-2082ec7d11bd"/>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font fontName="宋体" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[""]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="291" y="48" width="40" height="14" uuid="33768872-0f64-4a11-a11a-1288b4683218"/>
+				<textElement>
+					<font fontName="宋体" size="8"/>
+				</textElement>
+				<text><![CDATA[日    期：]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="40" y="48" width="40" height="14" uuid="317169cf-cadf-4c0f-9e74-3f49a6198143"/>
+				<textElement>
+					<font fontName="宋体" size="8"/>
+				</textElement>
+				<text><![CDATA[日    期：]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="331" y="49" width="88" height="13" uuid="204f2d05-1d9b-4bf8-9726-e87156f63cb5"/>
 				<textElement>
 					<font fontName="宋体" size="8"/>
 				</textElement>
 				<text><![CDATA[    年     月     日]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="42" y="297" width="286" height="18" uuid="e0f849b9-eef5-4d1b-8b0e-0c0cbdf1b193"/>
-				<textElement textAlignment="Left" verticalAlignment="Middle">
+				<reportElement x="80" y="49" width="81" height="13" uuid="fd40c44c-a230-457f-9a19-ff84dae24477"/>
+				<textElement>
 					<font fontName="宋体" size="8"/>
 				</textElement>
-				<text><![CDATA[九、确认后请签名盖章回传，该订单电子档回执具有同等法律效力。]]></text>
+				<text><![CDATA[    年     月     日]]></text>
 			</staticText>
-			<staticText>
-				<reportElement x="42" y="315" width="286" height="18" uuid="64856160-02d7-4c41-831c-106b911f19d9"/>
-				<textElement textAlignment="Left" verticalAlignment="Middle">
+			<textField>
+				<reportElement x="331" y="48" width="10" height="13" uuid="6e05737a-20d3-41f7-8eab-20426b0d361e"/>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement>
 					<font fontName="宋体" size="8"/>
 				</textElement>
-				<text><![CDATA[十、账期从甲方收到发票并审核无误后开始计算。]]></text>
-			</staticText>
+				<textFieldExpression><![CDATA[""]]></textFieldExpression>
+			</textField>
 			<staticText>
-				<reportElement x="40" y="1" width="279" height="18" uuid="5d90129f-60dd-43a3-9122-e9889da80475"/>
-				<textElement textAlignment="Left" verticalAlignment="Middle">
-					<font fontName="宋体" size="8"/>
-				</textElement>
-				<text><![CDATA[甲乙双方本着互惠互利的原则，经双方商定达成本合同。]]></text>
-			</staticText>
-			<staticText>
-				<reportElement x="40" y="20" width="279" height="18" uuid="595a8f6e-d2f4-42ea-b2f4-03b2367154c3"/>
-				<textElement textAlignment="Left" verticalAlignment="Middle">
-					<font fontName="宋体" size="8"/>
-				</textElement>
-				<text><![CDATA[一、货品名称、数量、价格：]]></text>
-			</staticText>
-		</band>
-	</detail>
-	<pageFooter>
-		<band height="18" splitType="Stretch">
-			<staticText>
-				<reportElement x="211" y="0" width="138" height="18" uuid="530415ac-f154-47b4-a8f8-4a3d0ac0b2d6"/>
+				<reportElement x="180" y="70" width="138" height="18" uuid="0c3d93fe-e230-45eb-b7d1-8c5a199d5031"/>
 				<textElement>
 					<font fontName="宋体" size="8"/>
 				</textElement>
 				<text><![CDATA[机密文件，未经授权不得公开和转发！]]></text>
 			</staticText>
 		</band>
-	</pageFooter>
+	</detail>
 </jasperReport>
