@@ -1,0 +1,5 @@
+{"json":[
+  {"imageNumber":"12345432","name":"长坂坡","reservePrice":"12345432343","hammerPrice":"54323452343232","showLine":true},
+  {"imageNumber":"12345432","name":"长坂坡","reservePrice":"12345432343","hammerPrice":"54323452343232"},
+  {"imageNumber":"12345432","name":"长坂坡","reservePrice":"12345432343","hammerPrice":"54323452343232","showLine":"true"}
+]}
