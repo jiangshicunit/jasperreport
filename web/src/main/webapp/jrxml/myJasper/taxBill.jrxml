@@ -1,0 +1,592 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
+<!-- 2017-08-26T15:58:00 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="taxBill" pageWidth="595" pageHeight="842" columnWidth="595" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="9c8d4738-117f-4dd8-8291-f5d9bbe1f3b6">
+	<property name="com.jaspersoft.studio.unit." value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.topMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.bottomMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.leftMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.rightMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnSpacing" value="pixel"/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="taxBill"/>
+	<queryString language="JSON">
+		<![CDATA[json]]>
+	</queryString>
+	<field name="taxes" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="taxes"/>
+		<fieldDescription><![CDATA[taxes]]></fieldDescription>
+	</field>
+	<field name="itemName" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="itemName"/>
+		<fieldDescription><![CDATA[itemName]]></fieldDescription>
+	</field>
+	<field name="taxationNumber" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="taxationNumber"/>
+		<fieldDescription><![CDATA[taxationNumber]]></fieldDescription>
+	</field>
+	<field name="taxMoney" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="taxMoney"/>
+		<fieldDescription><![CDATA[taxMoney]]></fieldDescription>
+	</field>
+	<field name="taxUnit" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="taxUnit"/>
+		<fieldDescription><![CDATA[taxUnit]]></fieldDescription>
+	</field>
+	<field name="deduction" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="deduction"/>
+		<fieldDescription><![CDATA[deduction]]></fieldDescription>
+	</field>
+	<field name="actualMoney" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="actualMoney"/>
+		<fieldDescription><![CDATA[actualMoney]]></fieldDescription>
+	</field>
+	<field name="fillInDate" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="fillInDate"/>
+		<fieldDescription><![CDATA[fillInDate]]></fieldDescription>
+	</field>
+	<field name="taxAuthorities" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="taxAuthorities"/>
+		<fieldDescription><![CDATA[taxAuthorities]]></fieldDescription>
+	</field>
+	<field name="nIdentifier" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="nIdentifier"/>
+		<fieldDescription><![CDATA[nIdentifier]]></fieldDescription>
+	</field>
+	<field name="nName" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="nName"/>
+		<fieldDescription><![CDATA[nName]]></fieldDescription>
+	</field>
+	<field name="nType" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="nType"/>
+		<fieldDescription><![CDATA[nType]]></fieldDescription>
+	</field>
+	<field name="kIdentifier" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="kIdentifier"/>
+		<fieldDescription><![CDATA[kIdentifier]]></fieldDescription>
+	</field>
+	<field name="kName" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="kName"/>
+		<fieldDescription><![CDATA[kName]]></fieldDescription>
+	</field>
+	<field name="sDate" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="sDate"/>
+		<fieldDescription><![CDATA[sDate]]></fieldDescription>
+	</field>
+	<field name="sumMax" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="sumMax"/>
+		<fieldDescription><![CDATA[sumMax]]></fieldDescription>
+	</field>
+	<field name="sumMin" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="sumMin"/>
+		<fieldDescription><![CDATA[sumMin]]></fieldDescription>
+	</field>
+	<field name="taxBillNumber" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="taxBillNumber"/>
+		<fieldDescription><![CDATA[taxBillNumber]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="124" splitType="Stretch">
+			<textField>
+				<reportElement x="20" y="20" width="50" height="26" uuid="d12590f0-ca98-45f6-b50a-50bf7420fb9a">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA["填发日期"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="70" y="20" width="200" height="26" uuid="ef3d220b-830b-40e5-a931-deb8d66ef968">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{fillInDate}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="270" y="20" width="100" height="26" uuid="2f2de998-111f-451a-af35-e2dc932b3883">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA["税务机关"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="370" y="20" width="210" height="26" uuid="7025d0db-5c3b-4603-b9fc-d899853a6dfa">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{taxAuthorities}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="20" y="46" width="50" height="78" uuid="cca11ae9-8404-4264-aba1-4b238b4d9cf9">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA["纳税人"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="70" y="46" width="60" height="26" uuid="500afd4e-3406-4dbb-b8a0-221870db2176">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA["识别号"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="130" y="46" width="140" height="26" uuid="bd56c822-5c0a-484b-90b5-8832972a9fb2">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{nIdentifier}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="270" y="46" width="58" height="52" uuid="7f83b25b-2c42-4742-81ed-0b4f346bdad9">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA["扣缴义务人"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="328" y="46" width="42" height="26" uuid="c9d0ec24-2528-4d6f-b15c-db3040feeea7">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA["识别号"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="370" y="46" width="210" height="26" uuid="6007d153-3569-4221-aa2a-21c0e98017f3">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{kIdentifier}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="328" y="72" width="42" height="26" uuid="7a15787f-ebf5-4e97-9980-31640c97effe">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA["名称"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="370" y="72" width="210" height="26" uuid="6209026e-93e1-40d7-b0b8-cd1907bfbc17">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{kName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="270" y="98" width="100" height="26" uuid="c11c299c-82a9-42f0-8d73-ca5335e19451">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA["税款所属日期"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="370" y="98" width="210" height="26" uuid="7c725c43-9dcf-41ad-b353-c2cbd7aadc58">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{sDate}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="70" y="72" width="60" height="26" uuid="069cbe10-04e1-4e35-82dd-8ca20d3d60ab">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA["名称"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="70" y="98" width="60" height="26" uuid="e9591961-71cc-4fc8-82c0-57c1a20ae41e">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA["注册类型"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="130" y="72" width="140" height="26" uuid="9fcd839d-2463-467e-b6b5-374253abb1ad">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{nName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="130" y="98" width="140" height="26" uuid="5f8b05b7-a816-435e-91ff-bb036d1354f9">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{nType}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="26" splitType="Stretch">
+			<textField>
+				<reportElement x="20" y="0" width="79" height="26" uuid="59ade410-b267-4f7c-99cc-4bf3eed9202b">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA["税种"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="99" y="0" width="79" height="26" uuid="8b3e34bd-39d3-4d99-b521-7f91a98610ca">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA["品目名称"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="178" y="0" width="79" height="26" uuid="3032319c-9ed6-419f-bfde-93abbeee01d8">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA["课税数量"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="257" y="0" width="79" height="26" uuid="f852df11-2216-4d8d-b9d3-b047fea532e8">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA["计税金额"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="336" y="0" width="79" height="26" uuid="e9ab8542-6380-451a-9f4b-d8025b22526a">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA["税率或单位税额"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="494" y="0" width="86" height="26" uuid="7d879535-20ea-44fd-9432-87c7e769f1e0">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA["实缴金额"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="415" y="0" width="79" height="26" uuid="637615e1-34fc-43b6-bd06-1b93033f8d2d">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA["扣除额"]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<detail>
+		<band height="26" splitType="Stretch">
+			<textField>
+				<reportElement x="99" y="0" width="79" height="26" uuid="f9d2680b-7c80-43a9-a445-497ec79721f8">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{itemName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="257" y="0" width="79" height="26" uuid="77a7b031-7989-4743-9feb-e2c10de0c12f">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{taxMoney}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="336" y="0" width="79" height="26" uuid="ac725302-8f97-45b4-a125-52b66243287b">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{taxUnit}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="494" y="0" width="86" height="26" uuid="72f17084-9900-4be6-a8df-0c3818987519">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{actualMoney}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="20" y="0" width="79" height="26" uuid="0fe56504-5bb1-447f-af9d-4ba070db4054">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{taxes}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="178" y="0" width="79" height="26" uuid="afbcfa04-dae0-4507-b034-392b29552b9d">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{taxationNumber}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="415" y="0" width="79" height="26" uuid="f0a00e7e-a3ae-4f8f-be05-b38e285632c1">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{deduction}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<summary>
+		<band height="82" splitType="Stretch">
+			<textField>
+				<reportElement x="20" y="0" width="79" height="26" uuid="0abd071b-2630-4813-be6d-7265bc87e5e3">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA["金额合计(大写)"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="99" y="0" width="395" height="26" uuid="5e215308-4f98-4f03-8b95-69c39a85b999">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{sumMax}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="494" y="0" width="86" height="26" uuid="e6c64c6a-599c-4b3e-94f9-7805f9be4d72">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{sumMin}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="20" y="30" width="60" height="21" uuid="81437a48-80b9-4e85-836b-19aa792112c5"/>
+				<textFieldExpression><![CDATA["税单号码："]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="80" y="30" width="60" height="21" uuid="ddaf6455-0064-432c-9d98-dbdcfb2338b3"/>
+				<textFieldExpression><![CDATA[$F{taxBillNumber}]]></textFieldExpression>
+			</textField>
+		</band>
+	</summary>
+</jasperReport>

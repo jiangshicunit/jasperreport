@@ -1,0 +1,5 @@
+{"json":[
+  {"taxes":"个人所得税","itemName":"拍卖所得","taxationNumber":"1","taxMoney":"42134423","taxUnit":"3","deduction":"200","actualMoney":"1312312.00","fillInDate":"2017年08月26日","taxAuthorities":"北京市朝阳区税务局第二税务所","nIdentifier":"12334124495821x","nName":"长坂坡","nType":"公司注册","kIdentifier":"134231231231223123","kName":"北京诚轩拍卖有限公司","sDate":"2017年08月26日15:38:29"},
+  {"taxes":"个人所得税2","itemName":"拍卖所得","taxationNumber":"1","taxMoney":"42134423","taxUnit":"3","deduction":"200","actualMoney":"1312312.00"},
+  {"taxes":"个人所得税3","itemName":"拍卖所得","taxationNumber":"1","taxMoney":"42134423","taxUnit":"3","deduction":"200","actualMoney":"1312312.00","sumMax":"贰佰玖拾贰万柒仟玖佰","sumMin":"1231232222","taxBillNumber":"12345435323"}
+]}
