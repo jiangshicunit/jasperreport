@@ -15,3 +15,18 @@
 -    backSign.jrxml
 
 
+
+### 税单打印
+
+##### 税单打印的测试json
+
+-   taxBill.json
+
+##### 税单打印的字段定义说明
+
+-   税单打印字段定义.docx
+
+#####   税单打印报表文件名称
+
+-   taxBill.jrxml
+
