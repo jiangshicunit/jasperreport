@@ -13,81 +13,27 @@
 	<property name="com.jaspersoft.studio.unit.columnSpacing" value="pixel"/>
 	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="taxBill"/>
 	<style name="myStyle" isDefault="true" fontName="微软雅黑" pdfFontName="MSYH.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
-	<queryString language="JSON">
-		<![CDATA[json]]>
+	<queryString language="json">
+		<![CDATA[]]>
 	</queryString>
-	<field name="taxes" class="java.lang.String">
-		<property name="net.sf.jasperreports.json.field.expression" value="taxes"/>
-		<fieldDescription><![CDATA[taxes]]></fieldDescription>
-	</field>
-	<field name="itemName" class="java.lang.String">
-		<property name="net.sf.jasperreports.json.field.expression" value="itemName"/>
-		<fieldDescription><![CDATA[itemName]]></fieldDescription>
-	</field>
-	<field name="taxationNumber" class="java.lang.String">
-		<property name="net.sf.jasperreports.json.field.expression" value="taxationNumber"/>
-		<fieldDescription><![CDATA[taxationNumber]]></fieldDescription>
-	</field>
-	<field name="taxMoney" class="java.lang.String">
-		<property name="net.sf.jasperreports.json.field.expression" value="taxMoney"/>
-		<fieldDescription><![CDATA[taxMoney]]></fieldDescription>
-	</field>
-	<field name="taxUnit" class="java.lang.String">
-		<property name="net.sf.jasperreports.json.field.expression" value="taxUnit"/>
-		<fieldDescription><![CDATA[taxUnit]]></fieldDescription>
-	</field>
-	<field name="deduction" class="java.lang.String">
-		<property name="net.sf.jasperreports.json.field.expression" value="deduction"/>
-		<fieldDescription><![CDATA[deduction]]></fieldDescription>
-	</field>
-	<field name="actualMoney" class="java.lang.String">
-		<property name="net.sf.jasperreports.json.field.expression" value="actualMoney"/>
-		<fieldDescription><![CDATA[actualMoney]]></fieldDescription>
-	</field>
-	<field name="fillInDate" class="java.lang.String">
-		<property name="net.sf.jasperreports.json.field.expression" value="fillInDate"/>
-		<fieldDescription><![CDATA[fillInDate]]></fieldDescription>
-	</field>
-	<field name="taxAuthorities" class="java.lang.String">
-		<property name="net.sf.jasperreports.json.field.expression" value="taxAuthorities"/>
-		<fieldDescription><![CDATA[taxAuthorities]]></fieldDescription>
-	</field>
-	<field name="nIdentifier" class="java.lang.String">
-		<property name="net.sf.jasperreports.json.field.expression" value="nIdentifier"/>
-		<fieldDescription><![CDATA[nIdentifier]]></fieldDescription>
-	</field>
-	<field name="nName" class="java.lang.String">
-		<property name="net.sf.jasperreports.json.field.expression" value="nName"/>
-		<fieldDescription><![CDATA[nName]]></fieldDescription>
-	</field>
-	<field name="nType" class="java.lang.String">
-		<property name="net.sf.jasperreports.json.field.expression" value="nType"/>
-		<fieldDescription><![CDATA[nType]]></fieldDescription>
-	</field>
-	<field name="kIdentifier" class="java.lang.String">
-		<property name="net.sf.jasperreports.json.field.expression" value="kIdentifier"/>
-		<fieldDescription><![CDATA[kIdentifier]]></fieldDescription>
-	</field>
-	<field name="kName" class="java.lang.String">
-		<property name="net.sf.jasperreports.json.field.expression" value="kName"/>
-		<fieldDescription><![CDATA[kName]]></fieldDescription>
-	</field>
-	<field name="sDate" class="java.lang.String">
-		<property name="net.sf.jasperreports.json.field.expression" value="sDate"/>
-		<fieldDescription><![CDATA[sDate]]></fieldDescription>
-	</field>
-	<field name="sumMax" class="java.lang.String">
-		<property name="net.sf.jasperreports.json.field.expression" value="sumMax"/>
-		<fieldDescription><![CDATA[sumMax]]></fieldDescription>
-	</field>
-	<field name="sumMin" class="java.lang.String">
-		<property name="net.sf.jasperreports.json.field.expression" value="sumMin"/>
-		<fieldDescription><![CDATA[sumMin]]></fieldDescription>
-	</field>
-	<field name="taxBillNumber" class="java.lang.String">
-		<property name="net.sf.jasperreports.json.field.expression" value="taxBillNumber"/>
-		<fieldDescription><![CDATA[taxBillNumber]]></fieldDescription>
-	</field>
+	<field name="taxes" class="java.lang.String" />
+	<field name="itemName" class="java.lang.String" />
+	<field name="taxationNumber" class="java.lang.String" />
+	<field name="taxMoney" class="java.lang.String" />
+	<field name="taxUnit" class="java.lang.String" />
+	<field name="deduction" class="java.lang.String" />
+	<field name="actualMoney" class="java.lang.String" />
+	<field name="fillInDate" class="java.lang.String" />
+	<field name="taxAuthorities" class="java.lang.String" />
+	<field name="nIdentifier" class="java.lang.String" />
+	<field name="nName" class="java.lang.String" />
+	<field name="nType" class="java.lang.String" />
+	<field name="kIdentifier" class="java.lang.String" />
+	<field name="kName" class="java.lang.String" />
+	<field name="sDate" class="java.lang.String" />
+	<field name="sumMax" class="java.lang.String" />
+	<field name="sumMin" class="java.lang.String" />
+	<field name="taxBillNumber" class="java.lang.String" />
 	<background>
 		<band splitType="Stretch"/>
 	</background>

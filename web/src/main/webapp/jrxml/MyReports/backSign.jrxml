@@ -6,60 +6,21 @@
 	<property name="com.jaspersoft.studio.unit." value="pixel"/>
 	<style name="myStyle" isDefault="true" fontName="微软雅黑" pdfFontName="MSYH.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
 	<queryString language="JSON">
-		<![CDATA[json]]>
+		<![CDATA[]]>
 	</queryString>
-	<field name="artist" class="java.lang.String">
-		<property name="net.sf.jasperreports.json.field.expression" value="artist"/>
-		<fieldDescription><![CDATA[artist]]></fieldDescription>
-	</field>
-	<field name="title" class="java.lang.String">
-		<property name="net.sf.jasperreports.json.field.expression" value="title"/>
-		<fieldDescription><![CDATA[title]]></fieldDescription>
-	</field>
-	<field name="material" class="java.lang.String">
-		<property name="net.sf.jasperreports.json.field.expression" value="material"/>
-		<fieldDescription><![CDATA[material]]></fieldDescription>
-	</field>
-	<field name="year" class="java.lang.String">
-		<property name="net.sf.jasperreports.json.field.expression" value="year"/>
-		<fieldDescription><![CDATA[year]]></fieldDescription>
-	</field>
-	<field name="size" class="java.lang.String">
-		<property name="net.sf.jasperreports.json.field.expression" value="size"/>
-		<fieldDescription><![CDATA[size]]></fieldDescription>
-	</field>
-	<field name="lowPrice" class="java.lang.String">
-		<property name="net.sf.jasperreports.json.field.expression" value="lowPrice"/>
-		<fieldDescription><![CDATA[lowPrice]]></fieldDescription>
-	</field>
-	<field name="commissioned" class="java.lang.String">
-		<property name="net.sf.jasperreports.json.field.expression" value="commissioned"/>
-		<fieldDescription><![CDATA[commissioned]]></fieldDescription>
-	</field>
-	<field name="number" class="java.lang.String">
-		<property name="net.sf.jasperreports.json.field.expression" value="number"/>
-		<fieldDescription><![CDATA[number]]></fieldDescription>
-	</field>
-	<field name="signature" class="java.lang.String">
-		<property name="net.sf.jasperreports.json.field.expression" value="signature"/>
-		<fieldDescription><![CDATA[signature]]></fieldDescription>
-	</field>
-	<field name="bells" class="java.lang.String">
-		<property name="net.sf.jasperreports.json.field.expression" value="bells"/>
-		<fieldDescription><![CDATA[bells]]></fieldDescription>
-	</field>
-	<field name="sign" class="java.lang.String">
-		<property name="net.sf.jasperreports.json.field.expression" value="sign"/>
-		<fieldDescription><![CDATA[sign]]></fieldDescription>
-	</field>
-	<field name="remark" class="java.lang.String">
-		<property name="net.sf.jasperreports.json.field.expression" value="remark"/>
-		<fieldDescription><![CDATA[remark]]></fieldDescription>
-	</field>
-	<field name="imageNumber" class="java.lang.String">
-		<property name="net.sf.jasperreports.json.field.expression" value="imageNumber"/>
-		<fieldDescription><![CDATA[imageNumber]]></fieldDescription>
-	</field>
+	<field name="artist" class="java.lang.String" />
+	<field name="title" class="java.lang.String" />
+	<field name="material" class="java.lang.String" />
+	<field name="year" class="java.lang.String" />
+	<field name="size" class="java.lang.String" />
+	<field name="lowPrice" class="java.lang.String" />
+	<field name="commissioned" class="java.lang.String" />
+	<field name="number" class="java.lang.String" />
+	<field name="signature" class="java.lang.String" />
+	<field name="bells" class="java.lang.String" />
+	<field name="sign" class="java.lang.String" />
+	<field name="remark" class="java.lang.String" />
+	<field name="imageNumber" class="java.lang.String" />
 	<detail>
 		<band height="280" splitType="Stretch">
 			<textField>

@@ -104,12 +104,13 @@ public class ReportController {
     }
 
 
-    @RequestMapping(value = "/srm",
+    @RequestMapping(value = "/jspYD",
             method = { RequestMethod.GET, RequestMethod.POST },
             produces = "application/json;charset=UTF-8")
     @ResponseBody
     public void groupVoid11(HttpServletResponse response,HttpServletRequest request,
-                            @RequestBody String body
+                            @RequestParam(value = "body") String body,
+                            @RequestParam(value = "nameYD") String nameYD
 
 //                           @RequestBody() String json
     ) throws JRException, IOException  {
@@ -132,7 +133,7 @@ public class ReportController {
             }
 
             //get *.jrxml
-            JasperDesign jDesignMain = JRXmlLoader.load(new File(xml_save_path+"caigouhetong.jrxml"));
+            JasperDesign jDesignMain = JRXmlLoader.load(new File(xml_save_path+nameYD+".jrxml"));
 
             //get *.jasper
             JasperReport jReportMain = JasperCompileManager.compileReport(jDesignMain);
