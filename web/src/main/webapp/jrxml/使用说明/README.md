@@ -30,3 +30,19 @@
 
 -   taxBill.jrxml
 
+
+
+### 拍卖师报价表
+
+##### 拍卖师报价表的测试json
+
+-   priceList.json
+
+##### 拍卖师报价表的字段定义说明
+
+-   拍卖师报价表字段定义.docx
+
+#####   拍卖师报价表文件名称
+
+-   priceList.jrxml
+
