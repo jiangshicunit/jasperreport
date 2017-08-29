@@ -46,3 +46,18 @@
 
 -   priceList.jrxml
 
+
+### 拍卖会付款通知单
+
+##### 拍卖会付款通知单的测试json
+
+-   paymentNotice.json
+
+##### 拍卖会付款通知单的字段定义说明
+
+-   拍卖会付款通知单字段定义.docx
+
+#####   拍卖会付款通知单文件名称
+
+-   paymentNotice.jrxml
+
