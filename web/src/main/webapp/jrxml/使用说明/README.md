@@ -61,3 +61,18 @@
 
 -   paymentNotice.jrxml
 
+
+### 拍卖会结算账单竖版
+
+##### 拍卖会结算账单竖版的测试json
+
+-   settlementBillBY.json
+
+##### 拍卖会结算账单竖版的字段定义说明
+
+-   拍拍卖会结算账单竖版字段定义.docx
+
+#####   拍卖会结算账单竖版文件名称
+
+-   settlementBillBY.jrxml
+
