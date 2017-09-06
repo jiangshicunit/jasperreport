@@ -76,3 +76,32 @@
 
 -   settlementBillBY.jrxml
 
+
+### 拍卖会付款结算账单横版
+
+##### 拍卖会付款结算账单横版的测试json
+
+-   settlementBillBX.json
+
+##### 拍卖会付款结算账单横版的字段定义说明
+
+-   拍卖会收款通知书 横版.docx
+
+#####   拍卖会付款结算账单横版文件名称
+
+-   settlementBillBX.jrxml
+
+
+### 拍卖会收款通知书(横版)
+
+##### 拍卖会收款通知书(横版)的测试json
+
+-   receiptInformX.json
+
+##### 拍卖会收款通知书(横版)的字段定义说明
+
+-   拍卖会收款通知书 横版.docx
+
+#####   拍卖会收款通知书(横版)文件名称
+
+-   receiptInformX.jrxml
