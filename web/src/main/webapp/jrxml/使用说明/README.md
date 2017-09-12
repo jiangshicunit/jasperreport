@@ -105,3 +105,18 @@
 #####   拍卖会收款通知书(横版)文件名称
 
 -   receiptInformX.jrxml
+
+
+### 竞买协议
+
+##### 竞买协议的测试json
+
+-   bidAgreement.json
+
+##### 竞买协议的字段定义说明
+
+-   竞买协议.docx
+
+#####   竞买协议文件名称
+
+-   bidAgreement.jrxml
