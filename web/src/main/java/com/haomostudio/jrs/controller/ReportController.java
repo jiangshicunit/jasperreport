@@ -34,9 +34,19 @@ import java.util.*;
 
 @Controller
 public class ReportController {
+    private String  date = "";
 
     @Autowired
     PropertyConfigurer propertyConfigurer;
+
+    @RequestMapping(value = "/injection",
+            method = {RequestMethod.POST },
+            produces = "application/json;charset=UTF-8")
+    @ResponseBody
+    public void injection(HttpServletResponse response,HttpServletRequest request,@RequestBody() String body){
+        date = body;
+    }
+
     /**
      * 测试用例，生成简单的pdf
      * @param response
@@ -105,18 +115,15 @@ public class ReportController {
 
 
     @RequestMapping(value = "/jspYD",
-            method = { RequestMethod.GET, RequestMethod.POST },
+            method = {RequestMethod.GET},
             produces = "application/json;charset=UTF-8")
     @ResponseBody
-    public void groupVoid11(HttpServletResponse response,HttpServletRequest request,
-                            @RequestParam(value = "body") String body,
-                            @RequestParam(value = "nameYD") String nameYD
-
-//                           @RequestBody() String json
+    public void groupVoid11(HttpServletResponse response,HttpServletRequest request
     ) throws JRException, IOException  {
-        JSONObject object = JSON.parseObject(body);
+        JSONObject object = JSON.parseObject(date);
         String json = object.getString("json");
         String name = object.getString("name");
+        String nameYD = object.getString("fileName");
         try {
             String  realPath = request.getSession().getServletContext().getRealPath("");
             String pdfName ="";
@@ -232,6 +239,8 @@ public class ReportController {
 
         } catch (JRException e) {
             e.printStackTrace();
+        }finally {
+            date = "";
         }
     }
 

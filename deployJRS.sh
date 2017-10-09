@@ -1,0 +1,1 @@
+rsync -avz -e "ssh -p12322"  ./web/target/jrs.war haomo@haomo-studio.com:/opt/tomcat8/webapps/jrs.war
