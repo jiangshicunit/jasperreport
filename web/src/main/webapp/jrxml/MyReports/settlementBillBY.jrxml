@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
-<!-- 2017-08-31T18:29:10 -->
+<!-- 2017-10-10T14:26:17 -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="paymentNotice" pageWidth="595" pageHeight="842" columnWidth="595" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="e092b7ad-97e6-4d00-9cf3-ded30bd4fee0">
 	<property name="com.jaspersoft.studio.unit." value="pixel"/>
 	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
@@ -25,11 +25,11 @@
 	<field name="bidNumber" class="java.lang.String"/>
 	<field name="name" class="java.lang.String"/>
 	<field name="sHammerPrice" class="java.lang.String"/>
-	<field name="RMBAccount" class="java.lang.String"/>
 	<field name="sRemuneration" class="java.lang.String"/>
 	<field name="sOther" class="java.lang.String"/>
 	<field name="sSubtotal" class="java.lang.String"/>
 	<field name="RMB" class="java.lang.String"/>
+	<field name="RMBAccount" class="java.lang.String"/>
 	<field name="accountName" class="java.lang.String"/>
 	<field name="companyAccount" class="java.lang.String"/>
 	<field name="bankName" class="java.lang.String"/>
@@ -412,7 +412,7 @@
 				<textFieldExpression><![CDATA["中环世贸中心C座26层 邮政编码：100022"]]></textFieldExpression>
 			</textField>
 			<textField evaluationTime="Report">
-				<reportElement x="519" y="200" width="60" height="13" uuid="ec9f40c4-307d-4b15-9cfb-57c06ac053e8"/>
+				<reportElement x="490" y="200" width="89" height="13" uuid="ec9f40c4-307d-4b15-9cfb-57c06ac053e8"/>
 				<textElement textAlignment="Right"/>
 				<textFieldExpression><![CDATA["第一联 财务留存"]]></textFieldExpression>
 			</textField>
