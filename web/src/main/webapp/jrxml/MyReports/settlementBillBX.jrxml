@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
-<!-- 2017-10-10T14:26:17 -->
+<!-- 2017-10-13T00:47:26 -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="settlementBillBX" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="842" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="4af6dafe-f40e-4cb9-b755-4bd56f569f96">
 	<property name="com.jaspersoft.studio.unit." value="pixel"/>
 	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
@@ -45,6 +45,7 @@
 	<field name="payment" class="java.lang.String"/>
 	<field name="name" class="java.lang.String"/>
 	<field name="date" class="java.lang.String"/>
+	<field name="titlea" class="java.lang.String"/>
 	<background>
 		<band splitType="Stretch"/>
 	</background>
@@ -55,7 +56,7 @@
 				<textElement textAlignment="Right">
 					<font size="14" isBold="true"/>
 				</textElement>
-				<textFieldExpression><![CDATA["北京2016年秋季拍卖会付款结算账单"]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$F{titlea}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="580" y="40" width="241" height="20" uuid="ac766e3e-9167-4f5b-b123-98c1afb84999">
