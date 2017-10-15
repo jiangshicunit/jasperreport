@@ -114,17 +114,18 @@ public class ReportController {
         exportManager.exportToPdfStream(jasperPrint, outStream);
     }
 
-
     @RequestMapping(value = "/jspYD",
             method = {RequestMethod.GET},
             produces = "application/json;charset=UTF-8")
     @ResponseBody
-    public void groupVoid11(HttpServletResponse response,HttpServletRequest request
+    public void groupVoid11(HttpServletResponse response,HttpServletRequest request,
+                            @RequestParam(value = "nameYD") String nameYD,
+                            @RequestParam(value = "date") String date
     ) throws JRException, IOException  {
         JSONObject object = JSON.parseObject(date);
         String json = object.getString("json");
         String name = object.getString("name");
-        String nameYD = object.getString("fileName");
+//        String nameYD = object.getString("fileName");
         try {
             String  realPath = request.getSession().getServletContext().getRealPath("");
             String pdfName ="";
