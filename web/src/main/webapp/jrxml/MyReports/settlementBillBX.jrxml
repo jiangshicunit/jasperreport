@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
-<!-- 2017-10-13T00:47:26 -->
+<!-- 2017-10-16T23:53:37 -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="settlementBillBX" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="842" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="4af6dafe-f40e-4cb9-b755-4bd56f569f96">
 	<property name="com.jaspersoft.studio.unit." value="pixel"/>
 	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
@@ -11,6 +11,7 @@
 	<property name="com.jaspersoft.studio.unit.rightMargin" value="pixel"/>
 	<property name="com.jaspersoft.studio.unit.columnWidth" value="pixel"/>
 	<property name="com.jaspersoft.studio.unit.columnSpacing" value="pixel"/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="New Data Adapter "/>
 	<style name="myStyle" isDefault="true" fontName="微软雅黑" pdfFontName="MSYH.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
 	<queryString language="JSON">
 		<![CDATA[]]>
@@ -46,50 +47,35 @@
 	<field name="name" class="java.lang.String"/>
 	<field name="date" class="java.lang.String"/>
 	<field name="titlea" class="java.lang.String"/>
+	<field name="retained" class="java.lang.String"/>
 	<background>
 		<band splitType="Stretch"/>
 	</background>
 	<pageHeader>
-		<band height="147" splitType="Stretch">
-			<textField>
+		<band height="148" splitType="Stretch">
+			<textField isBlankWhenNull="true">
 				<reportElement x="582" y="20" width="241" height="20" uuid="3977d549-94e4-434b-8f31-f5dfa0083cb2"/>
+				<box>
+					<rightPen lineWidth="2.0"/>
+				</box>
 				<textElement textAlignment="Right">
 					<font size="14" isBold="true"/>
+					<paragraph rightIndent="2"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{titlea}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="580" y="40" width="241" height="20" uuid="ac766e3e-9167-4f5b-b123-98c1afb84999">
+				<reportElement x="582" y="40" width="241" height="20" uuid="ac766e3e-9167-4f5b-b123-98c1afb84999">
 					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
 				</reportElement>
+				<box>
+					<rightPen lineWidth="2.0"/>
+				</box>
 				<textElement textAlignment="Right">
-					<font size="12" isBold="false"/>
+					<font size="12" isBold="true"/>
+					<paragraph rightIndent="2"/>
 				</textElement>
-				<textFieldExpression><![CDATA["NOTICE"]]></textFieldExpression>
-			</textField>
-			<image>
-				<reportElement x="10" y="0" width="110" height="80" uuid="2618de4b-86a4-49d9-96e3-e277e1924a52"/>
-				<imageExpression><![CDATA["/data/jasperImages/cxlogo.jpg"]]></imageExpression>
-			</image>
-			<textField>
-				<reportElement x="110" y="20" width="181" height="20" uuid="ff753727-9b56-45ae-9026-a93d2d95ba2f"/>
-				<textElement>
-					<font size="14"/>
-				</textElement>
-				<textFieldExpression><![CDATA["北京诚轩拍卖有限公司"]]></textFieldExpression>
-			</textField>
-			<textField>
-				<reportElement x="110" y="40" width="201" height="21" uuid="6bdf2448-9431-4114-b5ff-3985d57601b9"/>
-				<textFieldExpression><![CDATA["BeiJing ChengXuan Auctions Go. Ltd."]]></textFieldExpression>
-			</textField>
-			<textField>
-				<reportElement x="30" y="74" width="160" height="20" uuid="d8fa864b-fbe0-4036-9f5a-7cdc580207b8">
-					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
-				</reportElement>
-				<textElement>
-					<font size="14"/>
-				</textElement>
-				<textFieldExpression><![CDATA["委托方姓名(Consignor):"]]></textFieldExpression>
+				<textFieldExpression><![CDATA["INVOICE"]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="190" y="74" width="170" height="20" uuid="6b1d7cef-00d9-427d-b300-77bcb021c12d"/>
@@ -99,7 +85,7 @@
 				<textFieldExpression><![CDATA[$F{name}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="560" y="74" width="160" height="20" uuid="3d70575f-14cf-4c29-9a81-269a660dc708">
+				<reportElement x="640" y="74" width="100" height="20" uuid="3d70575f-14cf-4c29-9a81-269a660dc708">
 					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
 				</reportElement>
 				<textElement textAlignment="Right" verticalAlignment="Middle">
@@ -108,8 +94,8 @@
 				<textFieldExpression><![CDATA["结算日期(Date):"]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="720" y="74" width="101" height="20" uuid="b325562b-c1dc-4beb-b3fc-a0b5a5fcab91"/>
-				<textElement textAlignment="Right" verticalAlignment="Middle">
+				<reportElement x="740" y="74" width="90" height="20" uuid="b325562b-c1dc-4beb-b3fc-a0b5a5fcab91"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
 					<font size="11"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{date}]]></textFieldExpression>
@@ -224,6 +210,87 @@
 				</textElement>
 				<textFieldExpression><![CDATA["小计"]]></textFieldExpression>
 			</textField>
+			<staticText>
+				<reportElement x="30" y="132" width="45" height="16" uuid="148f5913-5d01-48a0-96ec-a7342572d378">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
+				<textElement verticalAlignment="Top"/>
+				<text><![CDATA[Lot No.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="88" y="132" width="100" height="16" uuid="8c067fd8-145e-40f5-bfc6-c35b89cb9f78"/>
+				<text><![CDATA[Description]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="330" y="132" width="70" height="16" uuid="ac88e07d-e2ae-44cb-939c-3f8653fff906">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<text><![CDATA[Hammer Price]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="410" y="132" width="63" height="16" uuid="14dc2dee-7a85-4d6b-ae64-51fcb4a6c54b">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<text><![CDATA[Commission]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="480" y="132" width="50" height="16" uuid="55568c8e-819e-4bce-a0be-fcb124d431cc">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<text><![CDATA[Insurance]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="544" y="132" width="40" height="16" uuid="02a1fa32-53d5-4cf2-8798-d686eae99c67">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<text><![CDATA[Catalog]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="650" y="132" width="40" height="16" uuid="f016dc9c-99dd-44d0-898e-1cff0fa6c3a5">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
+				<text><![CDATA[Others]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="721" y="132" width="19" height="16" uuid="22e5276d-da27-4208-88cf-b04d16259fe9">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+				</reportElement>
+				<text><![CDATA[IIT]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="780" y="132" width="41" height="16" uuid="a919e7df-7b80-4587-aa06-0143534e8270">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<text><![CDATA[Subtotal]]></text>
+			</staticText>
+			<image>
+				<reportElement x="10" y="0" width="110" height="80" uuid="4e1fe316-0610-4f92-a0c9-4388dc2cf944"/>
+				<imageExpression><![CDATA["/data/jasperImages/cxlogo.jpg"]]></imageExpression>
+			</image>
+			<textField>
+				<reportElement x="110" y="20" width="181" height="20" uuid="a47f14f7-cc0d-4b52-bcf5-47db968e4c9c"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA["北京诚轩拍卖有限公司"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="110" y="40" width="201" height="21" uuid="94d9187c-24fa-494e-93e4-6f50fe539d32"/>
+				<textFieldExpression><![CDATA["BeiJing ChengXuan Auctions Go. Ltd."]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="30" y="74" width="160" height="20" uuid="398d756e-b5b3-4422-8c33-17cfba82fac4">
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA["委托方姓名(Consignor):"]]></textFieldExpression>
+			</textField>
 		</band>
 	</pageHeader>
 	<detail>
@@ -325,9 +392,8 @@
 				</box>
 				<textElement textAlignment="Left" verticalAlignment="Top">
 					<font size="14"/>
-					<paragraph leftIndent="8" spacingBefore="6" spacingAfter="0"/>
+					<paragraph leftIndent="0" spacingBefore="6" spacingAfter="0"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$F{auctionName}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
 				<reportElement x="677" y="0" width="63" height="39" uuid="0611a4cb-0de8-4cbc-85be-c975cae21651"/>
@@ -350,23 +416,42 @@
 				</textElement>
 				<textFieldExpression><![CDATA[$F{mRemarks}]]></textFieldExpression>
 			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="88" y="6" width="232" height="33" uuid="fe8cc16a-46eb-4ecd-a286-b96212603939">
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
+				<box>
+					<bottomPen lineWidth="0.0" lineStyle="Dashed"/>
+					<rightPen lineWidth="0.0" lineStyle="Dashed"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Top">
+					<font size="14" isBold="false"/>
+					<paragraph leftIndent="0" spacingBefore="0" spacingAfter="0"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{auctionName}]]></textFieldExpression>
+			</textField>
 		</band>
 	</detail>
 	<pageFooter>
 		<band height="130" splitType="Stretch">
 			<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 			<textField>
-				<reportElement x="20" y="104" width="40" height="13" uuid="3751dfaf-7c45-42af-bd19-6c19b30918ef"/>
+				<reportElement x="20" y="104" width="40" height="15" uuid="3751dfaf-7c45-42af-bd19-6c19b30918ef">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
 				<textFieldExpression><![CDATA["第"+$V{PAGE_NUMBER}+"页"]]></textFieldExpression>
 			</textField>
 			<textField evaluationTime="Report">
-				<reportElement x="50" y="104" width="60" height="13" uuid="a0b92f61-dfee-4a98-a609-a15fcd484bcf">
+				<reportElement x="50" y="104" width="60" height="15" uuid="a0b92f61-dfee-4a98-a609-a15fcd484bcf">
 					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 				</reportElement>
 				<textFieldExpression><![CDATA["共"+$V{PAGE_NUMBER}+"页"]]></textFieldExpression>
 			</textField>
 			<textField evaluationTime="Report">
-				<reportElement x="740" y="104" width="79" height="13" uuid="a5241726-ec43-46c8-add6-f676173f1218"/>
+				<reportElement x="740" y="104" width="79" height="15" uuid="a5241726-ec43-46c8-add6-f676173f1218">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
 				<textElement textAlignment="Right"/>
 				<textFieldExpression><![CDATA["第一联 财务留存"]]></textFieldExpression>
 			</textField>
@@ -630,19 +715,21 @@
 				<textFieldExpression><![CDATA["*以上内容的确定均以本公司《拍卖合同》为依据 。 * The sale is subject to the Auction Contract"]]></textFieldExpression>
 			</textField>
 			<textField evaluationTime="Report">
-				<reportElement x="50" y="110" width="60" height="13" uuid="701b30ee-39a9-4e83-9abb-d09fad355383"/>
+				<reportElement x="50" y="110" width="60" height="15" uuid="701b30ee-39a9-4e83-9abb-d09fad355383"/>
 				<textFieldExpression><![CDATA["共"+$V{PAGE_NUMBER}+"页"]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="20" y="110" width="40" height="13" uuid="b5723e03-5192-4dbb-a03c-063c18f4a229"/>
+				<reportElement x="20" y="110" width="40" height="15" uuid="b5723e03-5192-4dbb-a03c-063c18f4a229">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
 				<textFieldExpression><![CDATA["第"+$V{PAGE_NUMBER}+"页"]]></textFieldExpression>
 			</textField>
 			<textField evaluationTime="Report">
-				<reportElement x="740" y="110" width="79" height="13" uuid="0d6fe78b-bb35-47e8-976e-28a82d3d3a41">
+				<reportElement x="740" y="110" width="79" height="15" uuid="0d6fe78b-bb35-47e8-976e-28a82d3d3a41">
 					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
 				</reportElement>
 				<textElement textAlignment="Right"/>
-				<textFieldExpression><![CDATA["第一联 财务留存"]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$F{retained}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="20" y="70" width="780" height="20" uuid="304df587-c26a-4e27-ba5c-309698ee275c">
