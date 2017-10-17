@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
-<!-- 2017-10-17T00:49:51 -->
+<!-- 2017-10-17T12:50:43 -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="ReturnOrderForContemporaryArt" pageWidth="595" pageHeight="842" columnWidth="595" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="bf2de0d5-83e7-408e-bdaf-264c29fc3fee">
 	<property name="com.jaspersoft.studio.unit." value="pixel"/>
 	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
@@ -11,7 +11,7 @@
 	<property name="com.jaspersoft.studio.unit.rightMargin" value="pixel"/>
 	<property name="com.jaspersoft.studio.unit.columnWidth" value="pixel"/>
 	<property name="com.jaspersoft.studio.unit.columnSpacing" value="pixel"/>
-	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="1"/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="New Data Adapter "/>
 	<style name="myStyle" isDefault="true" fontName="微软雅黑" pdfFontName="MSYH.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
 	<queryString language="JSON">
 		<![CDATA[]]>
@@ -25,6 +25,7 @@
 	<field name="size" class="java.lang.String"/>
 	<field name="principalName" class="java.lang.String"/>
 	<field name="frequency" class="java.lang.String"/>
+	<field name="year" class="java.lang.String"/>
 	<background>
 		<band splitType="Stretch"/>
 	</background>
@@ -79,7 +80,6 @@
 				</box>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font isBold="true"/>
-					<paragraph leftIndent="2" rightIndent="2"/>
 				</textElement>
 				<text><![CDATA[序号]]></text>
 			</staticText>
@@ -257,20 +257,13 @@
 		</band>
 	</detail>
 	<lastPageFooter>
-		<band height="172">
+		<band height="173">
 			<staticText>
 				<reportElement x="400" y="40" width="40" height="20" uuid="b2b83f73-1a79-447e-82d0-f02cdc1d3a41"/>
 				<textElement verticalAlignment="Middle">
 					<font size="12"/>
 				</textElement>
 				<text><![CDATA[接收人:]]></text>
-			</staticText>
-			<staticText>
-				<reportElement x="440" y="70" width="120" height="20" uuid="e45408b6-a749-4582-95e4-7e01cb56e63d"/>
-				<textElement>
-					<font size="12"/>
-				</textElement>
-				<text><![CDATA[年        月         日]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="60" y="125" width="260" height="15" uuid="d7128e00-db19-44fb-8b4f-7b22447c2d69">
@@ -289,6 +282,20 @@
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 				</reportElement>
 				<text><![CDATA[Tel:(85-10)5887-0808]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="400" y="79" width="40" height="21" uuid="c83bc615-19f0-4409-96fe-81ac95f90fac"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{year}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="440" y="80" width="120" height="20" uuid="4934e879-2e63-4f11-a816-77c26f9d2160"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[年        月         日]]></text>
 			</staticText>
 		</band>
 	</lastPageFooter>

@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
-<!-- 2017-10-17T00:48:34 -->
+<!-- 2017-10-17T12:44:24 -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="ReturnOrderForPorcelain" pageWidth="595" pageHeight="842" columnWidth="595" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="f4d82ce1-c263-432d-911b-3d0284a0b909">
-	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="3"/>
 	<property name="com.jaspersoft.studio.unit." value="pixel"/>
 	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
 	<property name="com.jaspersoft.studio.unit.pageWidth" value="pixel"/>
@@ -12,6 +11,7 @@
 	<property name="com.jaspersoft.studio.unit.rightMargin" value="pixel"/>
 	<property name="com.jaspersoft.studio.unit.columnWidth" value="pixel"/>
 	<property name="com.jaspersoft.studio.unit.columnSpacing" value="pixel"/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="New Data Adapter "/>
 	<style name="myStyle" isDefault="true" fontName="微软雅黑" pdfFontName="MSYH.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
 	<queryString language="JSON">
 		<![CDATA[]]>
@@ -23,6 +23,7 @@
 	<field name="catalogueNo" class="java.lang.String"/>
 	<field name="goodsName" class="java.lang.String"/>
 	<field name="yearType" class="java.lang.String"/>
+	<field name="year" class="java.lang.String"/>
 	<background>
 		<band splitType="Stretch"/>
 	</background>
@@ -225,6 +226,13 @@
 				</textElement>
 				<text><![CDATA[年        月         日]]></text>
 			</staticText>
+			<textField>
+				<reportElement x="400" y="114" width="40" height="21" uuid="42eb8435-80ad-4fe3-9453-a27c86c9836a"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{year}]]></textFieldExpression>
+			</textField>
 		</band>
 	</lastPageFooter>
 </jasperReport>

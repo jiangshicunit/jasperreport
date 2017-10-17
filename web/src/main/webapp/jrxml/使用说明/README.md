@@ -32,6 +32,38 @@
 
 
 
+### 成交确认书
+#####   成交确认书文件名称
+
+-   confirmation.jrxml
+
+
+### 证书
+#####   证书文件名称
+
+-   certificateOfAuctionPurchase.jrxml
+
+
+
+### 拍卖师报价表2
+
+##### 拍卖师报价表的测试json
+
+-   quotationSheet.json
+
+##### 拍卖师报价表的字段定义说明
+
+-   拍卖师报价表字段定义.docx
+
+#####   拍卖师报价表文件名称
+
+-   quotationSheet.jrxml
+
+
+
+
+
+
 ### 拍卖师报价表
 
 ##### 拍卖师报价表的测试json

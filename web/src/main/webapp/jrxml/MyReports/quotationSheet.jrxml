@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
-<!-- 2017-10-14T12:05:30 -->
+<!-- 2017-10-17T17:54:05 -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="quotationSheet" pageWidth="595" pageHeight="842" columnWidth="595" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="edb3ff8f-188f-4502-9dc9-234858d2e8e6">
 	<property name="com.jaspersoft.studio.unit." value="pixel"/>
 	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
@@ -19,31 +19,24 @@
 	<field name="pNode" class="java.lang.String"/>
 	<field name="pName" class="java.lang.String"/>
 	<field name="valuation" class="java.lang.String"/>
-	<field name="lowPrice" class="java.lang.String"/>
+	<field name="floorPrice" class="java.lang.String"/>
 	<field name="startingPrice" class="java.lang.String"/>
-	<field name="okPrice" class="java.lang.String"/>
+	<field name="surePrice" class="java.lang.String"/>
 	<field name="hammerPrice" class="java.lang.String"/>
 	<background>
 		<band splitType="Stretch"/>
 	</background>
-	<detail>
-		<band height="842" splitType="Stretch">
+	<title>
+		<band height="841">
 			<staticText>
-				<reportElement x="141" y="50" width="313" height="70" uuid="fb005104-a188-44ae-a434-952c142cefba"/>
+				<reportElement x="141" y="50" width="313" height="70" uuid="9ff6f736-8d85-4758-bad0-4bb21a9285ee"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font size="24" isBold="true"/>
 				</textElement>
 				<text><![CDATA[拍  卖  师  报  价  表]]></text>
 			</staticText>
-			<staticText>
-				<reportElement x="40" y="160" width="101" height="30" uuid="2a2fdca1-9a17-4b0f-8558-a56ee7cb91c2"/>
-				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font size="20" isBold="false"/>
-				</textElement>
-				<text><![CDATA[拍品编号：]]></text>
-			</staticText>
 			<textField isBlankWhenNull="true">
-				<reportElement x="141" y="160" width="189" height="30" uuid="7b8e074d-8873-463f-b381-8634f9fa4d48"/>
+				<reportElement x="380" y="410" width="170" height="30" uuid="4c853b55-cff3-4ddd-a3dc-24380605d3b9"/>
 				<box>
 					<bottomPen lineWidth="1.0"/>
 				</box>
@@ -51,17 +44,38 @@
 					<font size="20"/>
 					<paragraph firstLineIndent="10"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$F{pNode}+"asdasd"]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$F{surePrice}]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement x="40" y="240" width="101" height="30" uuid="63407d4a-db41-4e43-a1bb-85f0066f6fff"/>
+				<reportElement x="40" y="330" width="60" height="30" uuid="0eb6394b-c320-4cf2-bdf5-a3c5e39db82a"/>
 				<textElement verticalAlignment="Middle">
 					<font size="20" isBold="false"/>
 				</textElement>
-				<text><![CDATA[拍品名称：]]></text>
+				<text><![CDATA[估价：]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="300" y="330" width="60" height="30" uuid="bbd73111-8659-499d-8579-161b04be9b46"/>
+				<textElement verticalAlignment="Middle">
+					<font size="20" isBold="false"/>
+				</textElement>
+				<text><![CDATA[底价：]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="310" y="720" width="80" height="30" uuid="df1c2570-fcfd-4a67-9892-501ba1175006"/>
+				<textElement verticalAlignment="Middle">
+					<font size="20" isBold="false"/>
+				</textElement>
+				<text><![CDATA[落槌价：]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="300" y="410" width="80" height="30" uuid="c7a1597b-d5ad-4799-aae6-ab40105e32d2"/>
+				<textElement verticalAlignment="Middle">
+					<font size="20" isBold="false"/>
+				</textElement>
+				<text><![CDATA[可拍价：]]></text>
 			</staticText>
 			<textField isBlankWhenNull="true">
-				<reportElement x="140" y="240" width="410" height="30" uuid="bdb4981a-6ccf-4621-9bb1-19f4d90adb96"/>
+				<reportElement x="140" y="240" width="410" height="30" uuid="835ed646-2a1c-44cc-89f0-ab03a3fc8a7d"/>
 				<box>
 					<bottomPen lineWidth="1.0"/>
 				</box>
@@ -71,22 +85,8 @@
 				</textElement>
 				<textFieldExpression><![CDATA[$F{pName}]]></textFieldExpression>
 			</textField>
-			<staticText>
-				<reportElement x="40" y="330" width="60" height="30" uuid="45a746b0-f0e5-4303-941d-15260af0a41f"/>
-				<textElement verticalAlignment="Middle">
-					<font size="20" isBold="false"/>
-				</textElement>
-				<text><![CDATA[估价：]]></text>
-			</staticText>
-			<staticText>
-				<reportElement x="300" y="330" width="60" height="30" uuid="3b54a5cc-a110-4488-adbe-4589ce06a8df"/>
-				<textElement verticalAlignment="Middle">
-					<font size="20" isBold="false"/>
-				</textElement>
-				<text><![CDATA[底价：]]></text>
-			</staticText>
 			<textField isBlankWhenNull="true">
-				<reportElement x="100" y="330" width="170" height="30" uuid="15ef064e-9cb7-4e0b-a264-4af717dd518e"/>
+				<reportElement x="100" y="330" width="170" height="30" uuid="a915d687-40f9-451a-abe8-f4f82e0d01cb"/>
 				<box>
 					<bottomPen lineWidth="1.0"/>
 				</box>
@@ -96,33 +96,15 @@
 				</textElement>
 				<textFieldExpression><![CDATA[$F{valuation}]]></textFieldExpression>
 			</textField>
-			<textField isBlankWhenNull="true">
-				<reportElement x="360" y="330" width="190" height="30" uuid="b69d1b5c-e043-408d-b510-95f085d5c9dd"/>
-				<box>
-					<bottomPen lineWidth="1.0"/>
-				</box>
-				<textElement textAlignment="Left" verticalAlignment="Middle">
-					<font size="20"/>
-					<paragraph firstLineIndent="10"/>
-				</textElement>
-				<textFieldExpression><![CDATA[$F{lowPrice}]]></textFieldExpression>
-			</textField>
 			<staticText>
-				<reportElement x="40" y="410" width="80" height="30" uuid="812ea3fc-b057-4ef8-8f78-dda04e3c12f7"/>
+				<reportElement x="40" y="410" width="80" height="30" uuid="c3352c56-ecb5-4de4-90f1-934674580c58"/>
 				<textElement verticalAlignment="Middle">
 					<font size="20" isBold="false"/>
 				</textElement>
 				<text><![CDATA[起拍价：]]></text>
 			</staticText>
-			<staticText>
-				<reportElement x="300" y="410" width="80" height="30" uuid="d5d763db-8ef6-4979-9fcf-18be955c4f2a"/>
-				<textElement verticalAlignment="Middle">
-					<font size="20" isBold="false"/>
-				</textElement>
-				<text><![CDATA[可拍价：]]></text>
-			</staticText>
 			<textField isBlankWhenNull="true">
-				<reportElement x="120" y="410" width="170" height="30" uuid="5a7c73d3-005b-481d-934e-19b6ccd5a14c"/>
+				<reportElement x="120" y="410" width="170" height="30" uuid="8687b841-07e2-4c66-be84-a2fe96067ac8"/>
 				<box>
 					<bottomPen lineWidth="1.0"/>
 				</box>
@@ -133,7 +115,7 @@
 				<textFieldExpression><![CDATA[$F{startingPrice}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement x="380" y="410" width="170" height="30" uuid="df826249-52fd-4637-a338-d02d9aa62306"/>
+				<reportElement x="360" y="330" width="190" height="30" uuid="b891447f-1d95-47e2-aff6-c5291de7b5a6"/>
 				<box>
 					<bottomPen lineWidth="1.0"/>
 				</box>
@@ -141,17 +123,10 @@
 					<font size="20"/>
 					<paragraph firstLineIndent="10"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$F{pNode}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$F{floorPrice}]]></textFieldExpression>
 			</textField>
-			<staticText>
-				<reportElement x="310" y="720" width="80" height="30" uuid="d6f60c79-2e52-4a53-bbd6-75285c918b6c"/>
-				<textElement verticalAlignment="Middle">
-					<font size="20" isBold="false"/>
-				</textElement>
-				<text><![CDATA[落槌价：]]></text>
-			</staticText>
 			<textField isBlankWhenNull="true">
-				<reportElement x="390" y="720" width="170" height="30" uuid="9c36cf2f-ab38-4c28-b7d2-e8cc76a80270"/>
+				<reportElement x="390" y="720" width="170" height="30" uuid="d02bfed7-fbe7-4701-bf25-c1992be3e856"/>
 				<box>
 					<bottomPen lineWidth="1.0"/>
 				</box>
@@ -161,6 +136,31 @@
 				</textElement>
 				<textFieldExpression><![CDATA[$F{hammerPrice}]]></textFieldExpression>
 			</textField>
+			<staticText>
+				<reportElement x="40" y="240" width="101" height="30" uuid="4f445d56-8757-4d77-88c4-1cf8b26bec74"/>
+				<textElement verticalAlignment="Middle">
+					<font size="20" isBold="false"/>
+				</textElement>
+				<text><![CDATA[拍品名称：]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="40" y="160" width="101" height="30" uuid="924394b2-f9f6-4ada-990a-923522e47d4d"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="20" isBold="false"/>
+				</textElement>
+				<text><![CDATA[拍品编号：]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="141" y="160" width="189" height="30" uuid="114a850b-5565-472b-8681-35134db0a613"/>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="20"/>
+					<paragraph firstLineIndent="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{pNode}]]></textFieldExpression>
+			</textField>
 		</band>
-	</detail>
+	</title>
 </jasperReport>

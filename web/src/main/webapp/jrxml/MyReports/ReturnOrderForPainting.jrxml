@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
-<!-- 2017-10-17T00:49:24 -->
+<!-- 2017-10-17T12:47:20 -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="ReturnOrderForPainting" pageWidth="595" pageHeight="842" columnWidth="595" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="ffabd247-5080-41a4-802a-8b4fda7ecdc8">
 	<property name="com.jaspersoft.studio.unit." value="pixel"/>
 	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
@@ -26,6 +26,7 @@
 	<field name="category" class="java.lang.String"/>
 	<field name="principalName" class="java.lang.String"/>
 	<field name="frequency" class="java.lang.String"/>
+	<field name="year" class="java.lang.String"/>
 	<background>
 		<band splitType="Stretch"/>
 	</background>
@@ -461,19 +462,26 @@
 				<text><![CDATA[www.chengxuan.com]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="440" y="149" width="120" height="20" uuid="20ec0f8f-22b9-42b7-a1dd-dd4fe873f2a9"/>
-				<textElement>
-					<font size="12"/>
-				</textElement>
-				<text><![CDATA[年        月         日]]></text>
-			</staticText>
-			<staticText>
 				<reportElement x="400" y="85" width="40" height="20" uuid="34e765f6-67ca-484f-b023-2aa836b000c8"/>
 				<textElement verticalAlignment="Middle">
 					<font size="12"/>
 				</textElement>
 				<text><![CDATA[接收人:]]></text>
 			</staticText>
+			<staticText>
+				<reportElement x="440" y="160" width="120" height="20" uuid="bf910670-a367-4a35-bf8c-d0f3aa7a3699"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[年        月         日]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="400" y="159" width="40" height="21" uuid="ced25dc1-543a-4620-ab58-73f76044571c"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{year}]]></textFieldExpression>
+			</textField>
 		</band>
 	</lastPageFooter>
 </jasperReport>
