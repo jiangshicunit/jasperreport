@@ -1,10 +1,8 @@
 package com.haomostudio.jrs.controller;
 
 import com.alibaba.fastjson.JSON;
-import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
-import com.haomostudio.jrs.*;
-import com.haomostudio.jrs.common.PropertyConfigurer;
+import com.haomostudio.jrs.common.*;
 import net.sf.jasperreports.engine.*;
 import net.sf.jasperreports.engine.data.JRBeanCollectionDataSource;
 import net.sf.jasperreports.engine.design.*;
@@ -34,7 +32,7 @@ import java.util.*;
 
 @Controller
 public class ReportController {
-    private String  date = "";
+    private Map<String,String> jsonMp = new HashMap<>();
 
     @Autowired
     PropertyConfigurer propertyConfigurer;
@@ -43,9 +41,10 @@ public class ReportController {
             method = {RequestMethod.POST },
             produces = "application/json;charset=UTF-8")
     @ResponseBody
-    public void injection(HttpServletResponse response,HttpServletRequest request,@RequestBody() String body){
-        date = "";
-        date = body;
+    public Object injection(HttpServletResponse response, HttpServletRequest request, @RequestBody() String body){
+        String key = "key"+Tools.getUUID();
+        jsonMp.put(key,body);
+        return Resp.succ(key);
     }
 
     /**
@@ -118,9 +117,10 @@ public class ReportController {
             method = {RequestMethod.GET},
             produces = "application/json;charset=UTF-8")
     @ResponseBody
-    public void groupVoid11(HttpServletResponse response,HttpServletRequest request
+    public void groupVoid11(HttpServletResponse response,HttpServletRequest request,
+                            @RequestParam(value = "key") String key
     ) throws JRException, IOException  {
-        JSONObject object = JSON.parseObject(date);
+        JSONObject object = JSON.parseObject(jsonMp.get(key));
         String json = object.getString("json");
         String name = object.getString("name");
         String nameYD = object.getString("fileName");
@@ -240,7 +240,7 @@ public class ReportController {
         } catch (JRException e) {
             e.printStackTrace();
         }finally {
-            date = "";
+            jsonMp.remove(key);
         }
     }
 }
