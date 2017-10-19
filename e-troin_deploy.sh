@@ -1,2 +1,2 @@
 #!/bin/bash
-rsync -avz  "-e ssh -i ~/.ssh/prod"  web/target/jrs.war     ubuntu@www.e-troin.cn:/data/Tomcat8/webapps/jrs.war
+rsync -avz web/target/jrs.war e-troin@192.168.1.200:/data/Tomcat8/webapps/jrs.war
