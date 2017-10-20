@@ -1,5 +1,23 @@
 
 
+## 定位
+
+###境外汇款申请书
+
+##### jasper文件名称：ApplicationForRemittanceAbroad
+
+##### 字段定义说明：境外汇款申请书变量说明.docx
+
+
+### 证书
+
+#####   jasper文件名称：certificateOfAuctionPurchase
+
+##### 字段定义说明：证书变量说明.docx
+
+
+## 定位结束
+
 ### 背签卡片
 
 ##### 背签卡片的测试json
@@ -38,10 +56,6 @@
 -   confirmation.jrxml
 
 
-### 证书
-#####   证书文件名称
-
--   certificateOfAuctionPurchase.jrxml
 
 
 

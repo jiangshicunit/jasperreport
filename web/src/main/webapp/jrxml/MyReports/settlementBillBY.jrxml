@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
-<!-- 2017-10-19T12:12:18 -->
+<!-- 2017-10-19T21:41:15 -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="paymentNotice" pageWidth="595" pageHeight="842" columnWidth="595" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="e092b7ad-97e6-4d00-9cf3-ded30bd4fee0">
 	<property name="com.jaspersoft.studio.unit." value="pixel"/>
 	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
@@ -169,13 +169,13 @@
 				<text><![CDATA[Description]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="312" y="149" width="70" height="16" uuid="97789b29-5d58-4f2f-99ac-b56a20d4ce29">
+				<reportElement x="312" y="149" width="80" height="16" uuid="97789b29-5d58-4f2f-99ac-b56a20d4ce29">
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 				</reportElement>
 				<text><![CDATA[Hammer Price]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="392" y="149" width="63" height="16" uuid="41301849-feec-4a05-8dc9-03fa808eb938">
+				<reportElement x="392" y="149" width="72" height="16" uuid="41301849-feec-4a05-8dc9-03fa808eb938">
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
@@ -192,8 +192,9 @@
 				<text><![CDATA[Others]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="530" y="149" width="41" height="16" uuid="b437ce28-9e72-4277-a982-9eadbc3d0717">
+				<reportElement x="534" y="149" width="45" height="16" uuid="b437ce28-9e72-4277-a982-9eadbc3d0717">
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
 				</reportElement>
 				<text><![CDATA[Subtotal]]></text>
 			</staticText>
@@ -257,12 +258,12 @@
 				<textElement textAlignment="Left">
 					<font size="15"/>
 				</textElement>
-				<textFieldExpression><![CDATA["竞投牌号(Paddle Noe.):"]]></textFieldExpression>
+				<textFieldExpression><![CDATA["竞投牌号(Paddle No.):"]]></textFieldExpression>
 			</textField>
 		</band>
 	</pageHeader>
 	<detail>
-		<band height="64" splitType="Stretch">
+		<band height="54" splitType="Stretch">
 			<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.FreeLayout"/>
 			<textField isBlankWhenNull="true">
 				<reportElement x="300" y="0" width="70" height="54" uuid="a1b6a013-1f1e-4997-90c5-db323c964def"/>
@@ -317,7 +318,7 @@
 					<topPen lineWidth="0.0" lineStyle="Dashed"/>
 					<bottomPen lineWidth="0.0" lineStyle="Dashed"/>
 				</box>
-				<textElement textAlignment="Center" verticalAlignment="Top">
+				<textElement textAlignment="Right" verticalAlignment="Top">
 					<font size="14"/>
 					<paragraph spacingBefore="6"/>
 				</textElement>
@@ -356,7 +357,7 @@
 		</band>
 	</detail>
 	<pageFooter>
-		<band height="228" splitType="Stretch">
+		<band height="242" splitType="Stretch">
 			<textField isBlankWhenNull="true">
 				<reportElement x="440" y="0" width="60" height="30" uuid="2a05d9d1-932d-4e93-9b1a-6fa86ea5d2c4"/>
 				<box>
@@ -462,65 +463,65 @@
 				<textFieldExpression><![CDATA["Capital in RMB"]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="350" y="117" width="60" height="16" uuid="59b329e6-90ae-4d42-8e84-7368bf67ffa7">
+				<reportElement x="351" y="127" width="60" height="16" uuid="59b329e6-90ae-4d42-8e84-7368bf67ffa7">
 					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
 				</reportElement>
 				<textFieldExpression><![CDATA["人民币账号:"]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="350" y="130" width="50" height="16" uuid="a8a691e6-0f33-4f16-8c5f-92df44974869">
+				<reportElement x="351" y="140" width="50" height="16" uuid="a8a691e6-0f33-4f16-8c5f-92df44974869">
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 				</reportElement>
 				<textFieldExpression><![CDATA["开户名称:"]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="350" y="143" width="50" height="16" uuid="5a075dee-7084-41b7-b6b2-0d36851f25bd">
+				<reportElement x="351" y="153" width="50" height="16" uuid="5a075dee-7084-41b7-b6b2-0d36851f25bd">
 					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
 				</reportElement>
 				<textFieldExpression><![CDATA["公司账号:"]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="350" y="156" width="50" height="16" uuid="70a6ae71-30c7-4a81-a0d7-3bcc6359732f"/>
+				<reportElement x="351" y="166" width="50" height="16" uuid="70a6ae71-30c7-4a81-a0d7-3bcc6359732f"/>
 				<textFieldExpression><![CDATA["银行名称:"]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement x="410" y="117" width="169" height="16" uuid="1d37d3f3-d032-46b3-8498-6311ea9b0870">
+				<reportElement x="411" y="127" width="169" height="16" uuid="1d37d3f3-d032-46b3-8498-6311ea9b0870">
 					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
 				</reportElement>
 				<textFieldExpression><![CDATA[$F{RMBAccount}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="400" y="129" width="179" height="16" uuid="0a40e034-7142-42d2-98e5-c58799e3e1d9"/>
+				<reportElement x="401" y="139" width="179" height="16" uuid="0a40e034-7142-42d2-98e5-c58799e3e1d9"/>
 				<textFieldExpression><![CDATA["北京诚轩拍卖有限公司"]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="400" y="156" width="179" height="16" uuid="668bd5b3-2f8c-4b1b-9a90-c967ff6bdde5"/>
+				<reportElement x="401" y="166" width="179" height="16" uuid="668bd5b3-2f8c-4b1b-9a90-c967ff6bdde5"/>
 				<textFieldExpression><![CDATA["中国工商银行北京建国路支行"]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="400" y="143" width="179" height="16" uuid="e38db2ee-1502-4502-8798-d42f0051ab83">
+				<reportElement x="401" y="153" width="179" height="16" uuid="e38db2ee-1502-4502-8798-d42f0051ab83">
 					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
 				</reportElement>
 				<textFieldExpression><![CDATA["0200041909200040804"]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="20" y="200" width="40" height="13" uuid="a52529f9-20b9-4a75-9611-3be5fb81b6b9"/>
+				<reportElement x="21" y="210" width="40" height="13" uuid="a52529f9-20b9-4a75-9611-3be5fb81b6b9"/>
 				<textFieldExpression><![CDATA["第"+$V{PAGE_NUMBER}+"页"]]></textFieldExpression>
 			</textField>
 			<textField evaluationTime="Report">
-				<reportElement x="50" y="200" width="60" height="13" uuid="6abeec78-19f1-4560-8aba-2786df70f40b"/>
+				<reportElement x="51" y="210" width="60" height="13" uuid="6abeec78-19f1-4560-8aba-2786df70f40b"/>
 				<textFieldExpression><![CDATA["共"+$V{PAGE_NUMBER}+"页"]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="20" y="130" width="230" height="12" uuid="9a34ce29-b9dc-494c-b743-a57bdc36cdd5">
+				<reportElement x="21" y="140" width="230" height="12" uuid="9a34ce29-b9dc-494c-b743-a57bdc36cdd5">
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 				</reportElement>
 				<textFieldExpression><![CDATA["中环世贸中心C座26层 邮政编码：100022"]]></textFieldExpression>
 			</textField>
 			<textField evaluationTime="Report" isBlankWhenNull="true">
-				<reportElement x="490" y="200" width="89" height="13" uuid="ec9f40c4-307d-4b15-9cfb-57c06ac053e8"/>
+				<reportElement x="491" y="210" width="89" height="13" uuid="ec9f40c4-307d-4b15-9cfb-57c06ac053e8"/>
 				<textElement textAlignment="Right"/>
 				<textFieldExpression><![CDATA[$F{retained}]]></textFieldExpression>
 			</textField>
@@ -534,31 +535,31 @@
 				<textFieldExpression><![CDATA["单位盖章:"]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="20" y="143" width="280" height="12" uuid="ec6a70bd-bfac-4190-b4c5-1aee5978c562">
+				<reportElement x="21" y="153" width="280" height="12" uuid="ec6a70bd-bfac-4190-b4c5-1aee5978c562">
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 				</reportElement>
 				<textFieldExpression><![CDATA["26/F, Tower C, Central International Trade Center, No.6A,"]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="20" y="168" width="280" height="12" uuid="5479e9d0-d87c-431a-b0a1-0cd8b738654a">
+				<reportElement x="21" y="178" width="280" height="12" uuid="5479e9d0-d87c-431a-b0a1-0cd8b738654a">
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 				</reportElement>
 				<textFieldExpression><![CDATA["电话:(86-10)5887.8080  传真:(86-10)5887.0909"]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="20" y="155" width="280" height="12" uuid="1fe203d7-f73e-49f9-ab76-456e89c35317">
+				<reportElement x="21" y="165" width="280" height="12" uuid="1fe203d7-f73e-49f9-ab76-456e89c35317">
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 				</reportElement>
 				<textFieldExpression><![CDATA["Jianguomen Wai Avenue,Chaoyang District, Beijing 100022 P.R.C"]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="20" y="180" width="280" height="12" uuid="1f10fc8b-50bb-4180-aeb0-34f368cb8d60">
+				<reportElement x="21" y="190" width="280" height="12" uuid="1f10fc8b-50bb-4180-aeb0-34f368cb8d60">
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 				</reportElement>
 				<textFieldExpression><![CDATA["E-mail: info@chengxuan.com"]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="20" y="117" width="230" height="12" uuid="8e4bd847-cbce-40c4-b2f0-8d773a0e4d0f">
+				<reportElement x="21" y="127" width="230" height="12" uuid="8e4bd847-cbce-40c4-b2f0-8d773a0e4d0f">
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 				</reportElement>
 				<textFieldExpression><![CDATA["北京市朝阳区建国门外大街甲6号"]]></textFieldExpression>

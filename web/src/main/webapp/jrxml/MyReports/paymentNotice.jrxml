@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
-<!-- 2017-10-16T22:56:08 -->
+<!-- 2017-10-19T21:40:04 -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="paymentNotice" pageWidth="595" pageHeight="842" columnWidth="595" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="e092b7ad-97e6-4d00-9cf3-ded30bd4fee0">
 	<property name="com.jaspersoft.studio.unit." value="pixel"/>
 	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
@@ -44,7 +44,7 @@
 				<textElement textAlignment="Left">
 					<font size="14"/>
 				</textElement>
-				<textFieldExpression><![CDATA["竞投牌号(Paddle Noe.):"]]></textFieldExpression>
+				<textFieldExpression><![CDATA["竞投牌号(Paddle No.):"]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="170" y="90" width="60" height="21" uuid="a28e9fd1-c6f9-4623-9189-a1b0764335a6"/>
@@ -183,9 +183,10 @@
 				<text><![CDATA[Lot No.]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="538" y="164" width="41" height="16" uuid="41c01a24-0102-4070-9e13-52f095ec1fef">
+				<reportElement x="530" y="164" width="49" height="16" uuid="41c01a24-0102-4070-9e13-52f095ec1fef">
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 				</reportElement>
+				<textElement textAlignment="Right"/>
 				<text><![CDATA[Subtotal]]></text>
 			</staticText>
 			<staticText>
@@ -197,7 +198,7 @@
 				<text><![CDATA[Remuneration]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="310" y="164" width="70" height="16" uuid="4ef9da08-e1af-4415-b333-b70a199a5775">
+				<reportElement x="291" y="164" width="89" height="16" uuid="4ef9da08-e1af-4415-b333-b70a199a5775">
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 				</reportElement>
 				<text><![CDATA[Hammer Price]]></text>
@@ -377,7 +378,7 @@
 				<textFieldExpression><![CDATA["总计"]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="20" y="30" width="90" height="40" uuid="bba3d0b0-5bdc-4d41-885d-f356594c3960"/>
+				<reportElement x="20" y="30" width="100" height="40" uuid="bba3d0b0-5bdc-4d41-885d-f356594c3960"/>
 				<box>
 					<topPen lineWidth="1.0" lineStyle="Dashed"/>
 					<bottomPen lineWidth="1.0" lineStyle="Dashed"/>
@@ -426,28 +427,30 @@
 				<reportElement x="20" y="168" width="50" height="16" uuid="70a6ae71-30c7-4a81-a0d7-3bcc6359732f"/>
 				<textFieldExpression><![CDATA["银行名称:"]]></textFieldExpression>
 			</textField>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="80" y="120" width="210" height="16" uuid="1d37d3f3-d032-46b3-8498-6311ea9b0870"/>
-				<textFieldExpression><![CDATA[$F{RMBAccount}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[""]]></textFieldExpression>
 			</textField>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="70" y="135" width="210" height="16" uuid="0a40e034-7142-42d2-98e5-c58799e3e1d9"/>
-				<textFieldExpression><![CDATA[$F{accountName}]]></textFieldExpression>
+				<textFieldExpression><![CDATA["北京诚轩拍卖有限公司"]]></textFieldExpression>
 			</textField>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="70" y="168" width="210" height="16" uuid="668bd5b3-2f8c-4b1b-9a90-c967ff6bdde5"/>
-				<textFieldExpression><![CDATA[$F{bankName}]]></textFieldExpression>
+				<textFieldExpression><![CDATA["中国工商银行北京建国路支行"]]></textFieldExpression>
 			</textField>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="70" y="152" width="210" height="16" uuid="e38db2ee-1502-4502-8798-d42f0051ab83"/>
-				<textFieldExpression><![CDATA[$F{companyAccount}]]></textFieldExpression>
+				<textFieldExpression><![CDATA["0200041909200040804"]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="450" y="194" width="50" height="13" uuid="a52529f9-20b9-4a75-9611-3be5fb81b6b9"/>
+				<reportElement x="485" y="200" width="50" height="13" uuid="a52529f9-20b9-4a75-9611-3be5fb81b6b9">
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+				</reportElement>
 				<textFieldExpression><![CDATA["第"+$V{PAGE_NUMBER}+"页"]]></textFieldExpression>
 			</textField>
 			<textField evaluationTime="Report">
-				<reportElement x="500" y="194" width="60" height="13" uuid="6abeec78-19f1-4560-8aba-2786df70f40b"/>
+				<reportElement x="521" y="200" width="60" height="13" uuid="6abeec78-19f1-4560-8aba-2786df70f40b"/>
 				<textFieldExpression><![CDATA["共"+$V{PAGE_NUMBER}+"页"]]></textFieldExpression>
 			</textField>
 		</band>
