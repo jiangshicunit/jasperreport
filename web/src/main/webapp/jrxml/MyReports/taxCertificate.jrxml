@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
+<!-- 2017-10-27T11:57:19 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="taxCertificate" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="842" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="0a99d0bc-627c-4b39-8280-e0b2cc26d432">
+	<property name="com.jaspersoft.studio.unit." value="pixel"/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="New Data Adapter "/>
+	<style name="myStyle" isDefault="true" fontName="微软雅黑" pdfFontName="MSYH.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+	<queryString language="json">
+		<![CDATA[]]>
+	</queryString>
+	<field name="year" class="java.lang.String"/>
+	<field name="month" class="java.lang.String"/>
+	<field name="day" class="java.lang.String"/>
+	<field name="nIdentifier" class="java.lang.String"/>
+	<field name="nName" class="java.lang.String"/>
+	<field name="nRegistrationType" class="java.lang.String"/>
+	<field name="kIdentifier" class="java.lang.String"/>
+	<field name="kName" class="java.lang.String"/>
+	<field name="taxablePeriod" class="java.lang.String"/>
+	<field name="taxes" class="java.lang.String"/>
+	<field name="itemName" class="java.lang.String"/>
+	<field name="taxableQuantity" class="java.lang.String"/>
+	<field name="taxAmount" class="java.lang.String"/>
+	<field name="taxRateUnitTax" class="java.lang.String"/>
+	<field name="deductions" class="java.lang.String"/>
+	<field name="theAmountPaid" class="java.lang.String"/>
+	<field name="sumMaxl" class="java.lang.String"/>
+	<field name="fillers" class="java.lang.String"/>
+	<field name="remarks" class="java.lang.String"/>
+	<title>
+		<band height="595" splitType="Stretch">
+			<textField>
+				<reportElement x="140" y="120" width="261" height="21" uuid="509adcc0-7694-494f-9cd8-3114bf770d6c"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{nIdentifier}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="140" y="140" width="261" height="21" uuid="64717476-ee3b-4cc3-9f42-e78125ac9adb"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{nName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="350" y="100" width="51" height="21" uuid="c15fea49-5e1d-48ed-9310-4ea14b51c76a"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{year}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="420" y="100" width="51" height="21" uuid="854edf6f-2f6f-4589-96c9-1fa8d83fe812"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{month}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="490" y="100" width="51" height="21" uuid="0a2af708-248d-4a04-9deb-556a900f9c0c"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{day}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="140" y="160" width="261" height="21" uuid="d0955c8c-0144-4546-a3d6-add8bcd5b92e"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{nRegistrationType}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="40" y="210" width="130" height="170" uuid="60c571a9-dfcc-4a3f-b0a2-584171785e0c"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{taxes}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="180" y="212" width="90" height="170" uuid="22429886-3ccf-4b91-a5b2-8891fd777f67"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{itemName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="280" y="212" width="90" height="170" uuid="a7765584-159f-4af5-855d-870f8b4aaa61"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{taxableQuantity}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="380" y="212" width="90" height="170" uuid="8af90052-84cc-4679-8160-010529151999"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{taxAmount}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="480" y="212" width="61" height="170" uuid="69f773e2-c0da-4c93-b862-686831a8047d"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{taxRateUnitTax}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="550" y="212" width="90" height="170" uuid="d5adb9fe-6a1e-4b0a-9cb0-52574d34ccda"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{deductions}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="650" y="212" width="90" height="170" uuid="ec02a1f3-90c9-4cf2-b1a4-3260fc92feeb"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{theAmountPaid}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="100" y="400" width="401" height="21" uuid="96d2b51c-8fdf-4ff7-8477-ffbf5f172cc6"/>
+				<textFieldExpression><![CDATA[$F{sumMaxl}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="290" y="460" width="90" height="40" uuid="55c1e4e2-b0c8-4a17-aa25-79583447092c"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{fillers}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="400" y="460" width="340" height="60" uuid="62289d28-61fc-4adf-a228-814adff10830"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{remarks}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="490" y="140" width="261" height="21" uuid="c9718885-385b-4d52-941f-2a490ffc51fa"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{kName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="490" y="120" width="261" height="21" uuid="84cdc946-1b04-4cfa-be5c-27fda18d97b1"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{kIdentifier}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="490" y="160" width="261" height="21" uuid="aa1d6bc9-8c11-4b02-9a09-fa7c5efc661e"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{taxablePeriod}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+</jasperReport>

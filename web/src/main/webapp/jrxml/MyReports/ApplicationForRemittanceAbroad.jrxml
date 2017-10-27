@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
+<!-- 2017-10-27T11:19:26 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="ApplicationForRemittanceAbroad" pageWidth="595" pageHeight="842" columnWidth="595" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="f2d47d79-0544-4915-8903-174ec943a2ab">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="Jasper模板项目测试"/>
+	<property name="com.jaspersoft.studio.unit." value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.topMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.bottomMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.leftMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.rightMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnSpacing" value="pixel"/>
+	<style name="myStyle" isDefault="true" fontName="微软雅黑" pdfFontName="MSYH.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+	<queryString language="json">
+		<![CDATA[]]>
+	</queryString>
+	<field name="moneyTransferName" class="java.lang.String"/>
+	<field name="moneyTransferAddress" class="java.lang.String"/>
+	<field name="organizationCode" class="java.lang.String"/>
+	<field name="payeeBankName" class="java.lang.String"/>
+	<field name="payeeBankAddress" class="java.lang.String"/>
+	<field name="beneficiaryAccount" class="java.lang.String"/>
+	<field name="beneficiaryName" class="java.lang.String"/>
+	<field name="beneficiaryAddress" class="java.lang.String"/>
+	<field name="remittancePostscript" class="java.lang.String"/>
+	<field name="transactionCode" class="java.lang.String"/>
+	<field name="transactionPostscript" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="842" splitType="Stretch">
+			<textField>
+				<reportElement x="136" y="240" width="100" height="32" uuid="f877784a-cf6a-4987-9c48-677feb31912a"/>
+				<textFieldExpression><![CDATA[$F{moneyTransferName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="310" y="240" width="249" height="29" uuid="0159f143-1e2b-4fbb-b8ad-56a0b2985b8a"/>
+				<textFieldExpression><![CDATA[$F{moneyTransferAddress}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="130" y="290" width="130" height="30" uuid="2f8c71f6-0090-44a3-ada8-69ba05f53aa1"/>
+				<textFieldExpression><![CDATA[$F{organizationCode}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="130" y="400" width="429" height="19" uuid="234efc64-3e14-4750-a57e-8087f2ae18a8"/>
+				<textFieldExpression><![CDATA[$F{payeeBankName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="130" y="419" width="429" height="19" uuid="458c54e7-1eb8-4d1f-865b-ccd7f4da93e6"/>
+				<textFieldExpression><![CDATA[$F{payeeBankAddress}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="270" y="440" width="289" height="19" uuid="a7e0a353-a521-493a-828a-618c01e1bada"/>
+				<textFieldExpression><![CDATA[$F{beneficiaryAccount}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="130" y="480" width="429" height="19" uuid="3c07eebf-c1c9-4305-b440-8f6898725d17"/>
+				<textFieldExpression><![CDATA[$F{beneficiaryAddress}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="130" y="461" width="429" height="19" uuid="6c95b622-ad01-447b-be50-0b87ebd0292e"/>
+				<textFieldExpression><![CDATA[$F{beneficiaryName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="130" y="520" width="270" height="50" uuid="e5ffcccf-478e-4938-b9b4-2f13c6ea9f2a"/>
+				<textFieldExpression><![CDATA[$F{remittancePostscript}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="60" y="630" width="110" height="19" uuid="816e130a-143f-495a-9b23-81eb33dd3dfb"/>
+				<textFieldExpression><![CDATA[$F{transactionCode}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="430" y="630" width="127" height="19" uuid="bc874504-ff09-456d-a87d-961ce4f66fb2"/>
+				<textFieldExpression><![CDATA[$F{transactionPostscript}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+</jasperReport>
