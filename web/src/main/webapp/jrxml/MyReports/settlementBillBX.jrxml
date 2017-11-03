@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
-<!-- 2017-10-18T11:05:30 -->
+<!-- 2017-11-03T21:50:41 -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="settlementBillBX" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="842" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="4af6dafe-f40e-4cb9-b755-4bd56f569f96">
 	<property name="com.jaspersoft.studio.unit." value="pixel"/>
 	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
@@ -51,6 +51,8 @@
 	<field name="showDetail" class="java.lang.String"/>
 	<field name="showName" class="java.lang.String"/>
 	<field name="details" class="java.lang.String"/>
+	<field name="sbkcl" class="java.lang.String"/>
+	<field name="sbc" class="java.lang.String"/>
 	<background>
 		<band splitType="Stretch"/>
 	</background>
@@ -489,25 +491,12 @@
 	<pageFooter>
 		<band height="120" splitType="Stretch">
 			<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
-			<textField>
-				<reportElement x="20" y="104" width="40" height="15" uuid="3751dfaf-7c45-42af-bd19-6c19b30918ef">
-					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
-				</reportElement>
-				<textFieldExpression><![CDATA["第"+$V{PAGE_NUMBER}+"页"]]></textFieldExpression>
-			</textField>
 			<textField evaluationTime="Report">
-				<reportElement x="50" y="104" width="60" height="15" uuid="a0b92f61-dfee-4a98-a609-a15fcd484bcf">
+				<reportElement x="20" y="104" width="100" height="15" uuid="a0b92f61-dfee-4a98-a609-a15fcd484bcf">
 					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 				</reportElement>
-				<textFieldExpression><![CDATA["共"+$V{PAGE_NUMBER}+"页"]]></textFieldExpression>
-			</textField>
-			<textField evaluationTime="Report">
-				<reportElement x="700" y="104" width="119" height="15" uuid="a5241726-ec43-46c8-add6-f676173f1218">
-					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
-				</reportElement>
-				<textElement textAlignment="Right"/>
-				<textFieldExpression><![CDATA[$F{retained}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$F{sbc}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="20" y="44" width="780" height="20" uuid="9d4b6d20-9cd7-4081-8070-9565aa20dc9c">
@@ -655,6 +644,10 @@
 				</textElement>
 				<textFieldExpression><![CDATA[$F{tSubtotal}]]></textFieldExpression>
 			</textField>
+			<textField>
+				<reportElement x="740" y="99" width="81" height="21" uuid="38c3b782-0b9a-48ce-8529-12988f30d743"/>
+				<textFieldExpression><![CDATA[$F{sbkcl}]]></textFieldExpression>
+			</textField>
 		</band>
 	</pageFooter>
 	<lastPageFooter>
@@ -795,21 +788,8 @@
 				<textFieldExpression><![CDATA["*以上内容的确定均以本公司《拍卖合同》为依据 。 * The sale is subject to the Auction Contract"]]></textFieldExpression>
 			</textField>
 			<textField evaluationTime="Report">
-				<reportElement x="50" y="110" width="60" height="15" uuid="701b30ee-39a9-4e83-9abb-d09fad355383"/>
-				<textFieldExpression><![CDATA["共"+$V{PAGE_NUMBER}+"页"]]></textFieldExpression>
-			</textField>
-			<textField>
-				<reportElement x="20" y="110" width="40" height="15" uuid="b5723e03-5192-4dbb-a03c-063c18f4a229">
-					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
-				</reportElement>
-				<textFieldExpression><![CDATA["第"+$V{PAGE_NUMBER}+"页"]]></textFieldExpression>
-			</textField>
-			<textField evaluationTime="Report">
-				<reportElement x="700" y="110" width="119" height="15" uuid="0d6fe78b-bb35-47e8-976e-28a82d3d3a41">
-					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
-				</reportElement>
-				<textElement textAlignment="Right"/>
-				<textFieldExpression><![CDATA[$F{retained}]]></textFieldExpression>
+				<reportElement x="20" y="110" width="100" height="15" uuid="701b30ee-39a9-4e83-9abb-d09fad355383"/>
+				<textFieldExpression><![CDATA[$F{sbc}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="20" y="70" width="780" height="20" uuid="304df587-c26a-4e27-ba5c-309698ee275c">
@@ -949,6 +929,10 @@
 					<paragraph spacingBefore="2" spacingAfter="0"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{tHammerPrice}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="740" y="104" width="81" height="21" uuid="11144dda-9ac4-45d8-b5e7-f9081b8f551f"/>
+				<textFieldExpression><![CDATA[$F{sbkcl}]]></textFieldExpression>
 			</textField>
 		</band>
 	</lastPageFooter>
