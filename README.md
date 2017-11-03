@@ -12,3 +12,8 @@
     https://stackoverflow.com/questions/15875199/jasperreports-fillreport-too-slow-and-resource-consuming?lq=1
 
 ## 参考
+
+
+# 部署项目
+
+需要上传一个logo图片到服务器/data/jasperImages/cxlogo.jpg
