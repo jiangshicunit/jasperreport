@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
-<!-- 2017-10-19T21:41:15 -->
+<!-- 2017-11-06T15:45:13 -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="paymentNotice" pageWidth="595" pageHeight="842" columnWidth="595" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="e092b7ad-97e6-4d00-9cf3-ded30bd4fee0">
 	<property name="com.jaspersoft.studio.unit." value="pixel"/>
 	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
@@ -39,6 +39,8 @@
 	<field name="titlea" class="java.lang.String"/>
 	<field name="date" class="java.lang.String"/>
 	<field name="retained" class="java.lang.String"/>
+	<field name="sbc" class="java.lang.String"/>
+	<field name="sbkcl" class="java.lang.String"/>
 	<background>
 		<band splitType="Stretch"/>
 	</background>
@@ -507,23 +509,10 @@
 				<textFieldExpression><![CDATA["0200041909200040804"]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="21" y="210" width="40" height="13" uuid="a52529f9-20b9-4a75-9611-3be5fb81b6b9"/>
-				<textFieldExpression><![CDATA["第"+$V{PAGE_NUMBER}+"页"]]></textFieldExpression>
-			</textField>
-			<textField evaluationTime="Report">
-				<reportElement x="51" y="210" width="60" height="13" uuid="6abeec78-19f1-4560-8aba-2786df70f40b"/>
-				<textFieldExpression><![CDATA["共"+$V{PAGE_NUMBER}+"页"]]></textFieldExpression>
-			</textField>
-			<textField>
 				<reportElement x="21" y="140" width="230" height="12" uuid="9a34ce29-b9dc-494c-b743-a57bdc36cdd5">
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 				</reportElement>
 				<textFieldExpression><![CDATA["中环世贸中心C座26层 邮政编码：100022"]]></textFieldExpression>
-			</textField>
-			<textField evaluationTime="Report" isBlankWhenNull="true">
-				<reportElement x="491" y="210" width="89" height="13" uuid="ec9f40c4-307d-4b15-9cfb-57c06ac053e8"/>
-				<textElement textAlignment="Right"/>
-				<textFieldExpression><![CDATA[$F{retained}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="20" y="73" width="70" height="30" uuid="6c530890-16a2-4e17-b0e7-d239e5fe2151">
@@ -609,6 +598,24 @@
 					<font size="14"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{pickUpPerson}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="21" y="210" width="80" height="13" uuid="fa7e3b7a-5e1e-43ed-abbf-a343d796a276">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{sbc}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="500" y="210" width="80" height="13" uuid="48e66ca0-da4e-44e6-b8ae-4283296ed50d">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA[$F{sbkcl}]]></textFieldExpression>
 			</textField>
 		</band>
 	</pageFooter>
