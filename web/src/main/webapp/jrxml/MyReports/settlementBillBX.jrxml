@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
-<!-- 2017-11-03T21:50:41 -->
+<!-- 2017-11-06T12:53:27 -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="settlementBillBX" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="842" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="4af6dafe-f40e-4cb9-b755-4bd56f569f96">
 	<property name="com.jaspersoft.studio.unit." value="pixel"/>
 	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
@@ -53,6 +53,8 @@
 	<field name="details" class="java.lang.String"/>
 	<field name="sbkcl" class="java.lang.String"/>
 	<field name="sbc" class="java.lang.String"/>
+	<field name="showPage" class="java.lang.String"/>
+	<field name="showLast" class="java.lang.String"/>
 	<background>
 		<band splitType="Stretch"/>
 	</background>
@@ -489,172 +491,11 @@
 		</band>
 	</detail>
 	<pageFooter>
-		<band height="120" splitType="Stretch">
-			<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
-			<textField evaluationTime="Report">
-				<reportElement x="20" y="104" width="100" height="15" uuid="a0b92f61-dfee-4a98-a609-a15fcd484bcf">
-					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
-					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
-				</reportElement>
-				<textFieldExpression><![CDATA[$F{sbc}]]></textFieldExpression>
-			</textField>
-			<textField>
-				<reportElement x="20" y="44" width="780" height="20" uuid="9d4b6d20-9cd7-4081-8070-9565aa20dc9c">
-					<printWhenExpression><![CDATA[String.valueOf($V{PAGE_NUMBER}).equals("1")&&$F{showDetail}.equals("true")]]></printWhenExpression>
-				</reportElement>
-				<textElement>
-					<font size="14"/>
-				</textElement>
-				<textFieldExpression><![CDATA[$F{details}]]></textFieldExpression>
-			</textField>
-			<textField>
-				<reportElement x="20" y="74" width="731" height="20" uuid="34addef4-c526-4e01-ab92-4c524c5a5e0a"/>
-				<textElement>
-					<font size="10"/>
-				</textElement>
-				<textFieldExpression><![CDATA["*以上内容的确定均以本公司《拍卖合同》为依据 。 * The sale is subject to the Auction Contract"]]></textFieldExpression>
-			</textField>
-			<textField>
-				<reportElement x="20" y="0" width="60" height="33" uuid="f5d9bfd0-c91c-42ad-88f3-43a0f580f6f6"/>
-				<box>
-					<topPen lineWidth="1.0" lineStyle="Dashed"/>
-					<bottomPen lineWidth="1.0" lineStyle="Dashed"/>
-					<rightPen lineWidth="1.0" lineStyle="Dashed"/>
-				</box>
-				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font size="14"/>
-					<paragraph spacingBefore="2" spacingAfter="0"/>
-				</textElement>
-				<textFieldExpression><![CDATA["本页合计"]]></textFieldExpression>
-			</textField>
-			<textField>
-				<reportElement x="470" y="0" width="80" height="33" uuid="994abcfb-0f04-48e7-8871-b93ec74a3188">
-					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
-					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
-				</reportElement>
-				<box>
-					<topPen lineWidth="1.0" lineStyle="Dashed"/>
-					<bottomPen lineWidth="1.0" lineStyle="Dashed"/>
-					<rightPen lineWidth="0.0" lineStyle="Dashed"/>
-				</box>
-				<textElement textAlignment="Right" verticalAlignment="Middle">
-					<font size="14"/>
-					<paragraph rightIndent="5" spacingBefore="2" spacingAfter="0"/>
-				</textElement>
-				<textFieldExpression><![CDATA[$F{tInsurance}]]></textFieldExpression>
-			</textField>
-			<textField>
-				<reportElement x="622" y="0" width="55" height="33" uuid="e4fd8369-626c-423a-a169-ad4b5750d12f">
-					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
-					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
-				</reportElement>
-				<box>
-					<topPen lineWidth="1.0" lineStyle="Dashed"/>
-					<bottomPen lineWidth="1.0" lineStyle="Dashed"/>
-					<rightPen lineWidth="0.0" lineStyle="Dashed"/>
-				</box>
-				<textElement textAlignment="Right" verticalAlignment="Middle">
-					<font size="14"/>
-					<paragraph rightIndent="5" spacingBefore="2" spacingAfter="0"/>
-				</textElement>
-				<textFieldExpression><![CDATA[$F{tMiscellaneousFess}]]></textFieldExpression>
-			</textField>
-			<textField isBlankWhenNull="true">
-				<reportElement x="80" y="0" width="240" height="33" uuid="523121ab-1062-4355-bc51-7724ca50058f"/>
-				<box>
-					<topPen lineWidth="1.0" lineStyle="Dashed"/>
-					<bottomPen lineWidth="1.0" lineStyle="Dashed"/>
-					<rightPen lineWidth="0.0" lineStyle="Dashed"/>
-				</box>
-				<textElement textAlignment="Left" verticalAlignment="Middle">
-					<font size="14"/>
-					<paragraph leftIndent="8" spacingBefore="2" spacingAfter="0"/>
-				</textElement>
-			</textField>
-			<textField>
-				<reportElement x="410" y="0" width="60" height="33" uuid="303e1299-5764-4881-91e7-90167337af90">
-					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
-					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
-				</reportElement>
-				<box>
-					<topPen lineWidth="1.0" lineStyle="Dashed"/>
-					<bottomPen lineWidth="1.0" lineStyle="Dashed"/>
-					<rightPen lineWidth="0.0" lineStyle="Dashed"/>
-				</box>
-				<textElement textAlignment="Right" verticalAlignment="Middle">
-					<font size="14"/>
-					<paragraph spacingBefore="2" spacingAfter="0"/>
-				</textElement>
-				<textFieldExpression><![CDATA[$F{tCommission}]]></textFieldExpression>
-			</textField>
-			<textField>
-				<reportElement x="550" y="0" width="72" height="33" uuid="b83ea5cb-dcc9-40dc-87cf-b4c2108ecddf">
-					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
-					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
-				</reportElement>
-				<box>
-					<topPen lineWidth="1.0" lineStyle="Dashed"/>
-					<bottomPen lineWidth="1.0" lineStyle="Dashed"/>
-					<rightPen lineWidth="0.0" lineStyle="Dashed"/>
-				</box>
-				<textElement textAlignment="Right" verticalAlignment="Middle">
-					<font size="14"/>
-					<paragraph spacingBefore="2" spacingAfter="0"/>
-				</textElement>
-				<textFieldExpression><![CDATA[$F{tImageFees}]]></textFieldExpression>
-			</textField>
-			<textField>
-				<reportElement x="320" y="0" width="90" height="33" uuid="00b95ff4-b84b-4f1a-9138-9e6f2f495e04">
-					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
-				</reportElement>
-				<box>
-					<topPen lineWidth="1.0" lineStyle="Dashed"/>
-					<bottomPen lineWidth="1.0" lineStyle="Dashed"/>
-					<rightPen lineWidth="0.0" lineStyle="Dashed"/>
-				</box>
-				<textElement textAlignment="Right" verticalAlignment="Middle">
-					<font size="14"/>
-					<paragraph spacingBefore="2" spacingAfter="0"/>
-				</textElement>
-				<textFieldExpression><![CDATA[$F{tHammerPrice}]]></textFieldExpression>
-			</textField>
-			<textField>
-				<reportElement x="677" y="0" width="63" height="33" uuid="97e7c911-2826-4cfb-9dd8-f2b9bf334b0e"/>
-				<box>
-					<topPen lineWidth="1.0" lineStyle="Dashed"/>
-					<bottomPen lineWidth="1.0" lineStyle="Dashed"/>
-					<rightPen lineWidth="0.0" lineStyle="Dashed"/>
-				</box>
-				<textElement textAlignment="Right" verticalAlignment="Middle">
-					<font size="14"/>
-					<paragraph spacingBefore="2" spacingAfter="0"/>
-				</textElement>
-				<textFieldExpression><![CDATA[$F{tAtax}]]></textFieldExpression>
-			</textField>
-			<textField>
-				<reportElement x="740" y="0" width="79" height="33" uuid="1ca8c516-7919-4d8d-a3b6-15876d4471d9"/>
-				<box>
-					<topPen lineWidth="1.0" lineStyle="Dashed"/>
-					<bottomPen lineWidth="1.0" lineStyle="Dashed"/>
-					<rightPen lineWidth="0.0" lineStyle="Dashed"/>
-				</box>
-				<textElement textAlignment="Right" verticalAlignment="Middle">
-					<font size="14"/>
-					<paragraph spacingBefore="2" spacingAfter="0"/>
-				</textElement>
-				<textFieldExpression><![CDATA[$F{tSubtotal}]]></textFieldExpression>
-			</textField>
-			<textField>
-				<reportElement x="740" y="99" width="81" height="21" uuid="38c3b782-0b9a-48ce-8529-12988f30d743"/>
-				<textFieldExpression><![CDATA[$F{sbkcl}]]></textFieldExpression>
-			</textField>
-		</band>
-	</pageFooter>
-	<lastPageFooter>
-		<band height="127">
+		<band height="129">
 			<textField>
 				<reportElement x="410" y="33" width="60" height="33" uuid="ad1b6da4-a057-45a9-9241-9c4f0da00c6b">
 					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<printWhenExpression><![CDATA[$F{showLast}.equals( "true" )]]></printWhenExpression>
 				</reportElement>
 				<box>
 					<topPen lineWidth="1.0" lineStyle="Dashed"/>
@@ -668,7 +509,9 @@
 				<textFieldExpression><![CDATA[$F{zCommission}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="20" y="33" width="60" height="33" uuid="607598eb-5d33-4566-953f-c37fbe8e3774"/>
+				<reportElement x="20" y="33" width="60" height="33" uuid="607598eb-5d33-4566-953f-c37fbe8e3774">
+					<printWhenExpression><![CDATA[$F{showLast}.equals( "true" )]]></printWhenExpression>
+				</reportElement>
 				<box>
 					<topPen lineWidth="1.0" lineStyle="Dashed"/>
 					<bottomPen lineWidth="1.0" lineStyle="Dashed"/>
@@ -684,6 +527,7 @@
 				<reportElement x="470" y="33" width="80" height="33" uuid="1ffcf140-24bd-4bb7-8c99-4da1c6822343">
 					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<printWhenExpression><![CDATA[$F{showLast}.equals( "true" )]]></printWhenExpression>
 				</reportElement>
 				<box>
 					<topPen lineWidth="1.0" lineStyle="Dashed"/>
@@ -699,6 +543,7 @@
 			<textField>
 				<reportElement x="320" y="33" width="90" height="33" uuid="e2c74d1d-76d2-4886-8460-acc46374b4a7">
 					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<printWhenExpression><![CDATA[$F{showLast}.equals( "true" )]]></printWhenExpression>
 				</reportElement>
 				<box>
 					<topPen lineWidth="1.0" lineStyle="Dashed"/>
@@ -715,6 +560,7 @@
 				<reportElement x="550" y="33" width="72" height="33" uuid="017b0040-e7e2-4289-a601-6840ca30072c">
 					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<printWhenExpression><![CDATA[$F{showLast}.equals( "true" )]]></printWhenExpression>
 				</reportElement>
 				<box>
 					<topPen lineWidth="1.0" lineStyle="Dashed"/>
@@ -728,7 +574,9 @@
 				<textFieldExpression><![CDATA[$F{zImageFees}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="677" y="33" width="63" height="33" uuid="465b746d-fc43-4787-8b65-48945183b47a"/>
+				<reportElement x="677" y="33" width="63" height="33" uuid="465b746d-fc43-4787-8b65-48945183b47a">
+					<printWhenExpression><![CDATA[$F{showLast}.equals( "true" )]]></printWhenExpression>
+				</reportElement>
 				<box>
 					<topPen lineWidth="1.0" lineStyle="Dashed"/>
 					<bottomPen lineWidth="1.0" lineStyle="Dashed"/>
@@ -741,7 +589,9 @@
 				<textFieldExpression><![CDATA[$F{zAtax}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement x="80" y="33" width="240" height="33" uuid="827443ea-04cd-4419-a250-8bc360b2688c"/>
+				<reportElement x="80" y="33" width="240" height="33" uuid="827443ea-04cd-4419-a250-8bc360b2688c">
+					<printWhenExpression><![CDATA[$F{showLast}.equals( "true" )]]></printWhenExpression>
+				</reportElement>
 				<box>
 					<topPen lineWidth="1.0" lineStyle="Dashed"/>
 					<bottomPen lineWidth="1.0" lineStyle="Dashed"/>
@@ -753,7 +603,9 @@
 				</textElement>
 			</textField>
 			<textField>
-				<reportElement x="582" y="33" width="95" height="33" uuid="6b9e17da-229c-4876-a262-d01ca5e5031b"/>
+				<reportElement x="622" y="33" width="55" height="33" uuid="6b9e17da-229c-4876-a262-d01ca5e5031b">
+					<printWhenExpression><![CDATA[$F{showLast}.equals( "true" )]]></printWhenExpression>
+				</reportElement>
 				<box>
 					<topPen lineWidth="1.0" lineStyle="Dashed"/>
 					<bottomPen lineWidth="1.0" lineStyle="Dashed"/>
@@ -766,7 +618,9 @@
 				<textFieldExpression><![CDATA[$F{zMiscellaneousFess}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="740" y="33" width="79" height="33" uuid="2745a053-711c-49c7-8047-516dad50eeeb"/>
+				<reportElement x="740" y="33" width="79" height="33" uuid="2745a053-711c-49c7-8047-516dad50eeeb">
+					<printWhenExpression><![CDATA[$F{showLast}.equals( "true" )]]></printWhenExpression>
+				</reportElement>
 				<box>
 					<topPen lineWidth="1.0" lineStyle="Dashed"/>
 					<bottomPen lineWidth="1.0" lineStyle="Dashed"/>
@@ -786,10 +640,6 @@
 					<font size="10"/>
 				</textElement>
 				<textFieldExpression><![CDATA["*以上内容的确定均以本公司《拍卖合同》为依据 。 * The sale is subject to the Auction Contract"]]></textFieldExpression>
-			</textField>
-			<textField evaluationTime="Report">
-				<reportElement x="20" y="110" width="100" height="15" uuid="701b30ee-39a9-4e83-9abb-d09fad355383"/>
-				<textFieldExpression><![CDATA[$F{sbc}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="20" y="70" width="780" height="20" uuid="304df587-c26a-4e27-ba5c-309698ee275c">
@@ -934,6 +784,10 @@
 				<reportElement x="740" y="104" width="81" height="21" uuid="11144dda-9ac4-45d8-b5e7-f9081b8f551f"/>
 				<textFieldExpression><![CDATA[$F{sbkcl}]]></textFieldExpression>
 			</textField>
+			<textField>
+				<reportElement x="20" y="104" width="81" height="21" uuid="1903e208-02f6-434c-aad9-1126ac6a09ec"/>
+				<textFieldExpression><![CDATA[$F{sbc}]]></textFieldExpression>
+			</textField>
 		</band>
-	</lastPageFooter>
+	</pageFooter>
 </jasperReport>
