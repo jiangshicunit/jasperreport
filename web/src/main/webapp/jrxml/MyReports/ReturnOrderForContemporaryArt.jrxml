@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
-<!-- 2017-10-26T15:21:48 -->
+<!-- 2017-11-07T19:31:36 -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="ReturnOrderForContemporaryArt" pageWidth="595" pageHeight="842" columnWidth="595" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="bf2de0d5-83e7-408e-bdaf-264c29fc3fee">
 	<property name="com.jaspersoft.studio.unit." value="pixel"/>
 	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
@@ -43,14 +43,14 @@
 				<imageExpression><![CDATA["/data/jasperImages/cxlogo.jpg"]]></imageExpression>
 			</image>
 			<textField>
-				<reportElement x="140" y="40" width="181" height="20" uuid="595126d2-0584-4ddb-955b-dc06d37be6a6"/>
+				<reportElement x="160" y="40" width="181" height="20" uuid="595126d2-0584-4ddb-955b-dc06d37be6a6"/>
 				<textElement>
 					<font size="14"/>
 				</textElement>
 				<textFieldExpression><![CDATA["北京诚轩拍卖有限公司"]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="140" y="60" width="201" height="21" uuid="d6eeec64-2d45-49a0-8589-9230fb11507a"/>
+				<reportElement x="160" y="60" width="201" height="21" uuid="d6eeec64-2d45-49a0-8589-9230fb11507a"/>
 				<textFieldExpression><![CDATA["BeiJing ChengXuan Auctions Go. Ltd."]]></textFieldExpression>
 			</textField>
 		</band>
