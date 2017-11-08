@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
-<!-- 2017-11-07T19:35:02 -->
+<!-- 2017-11-07T19:50:34 -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="ReturnOrderForPainting" pageWidth="595" pageHeight="842" columnWidth="595" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="ffabd247-5080-41a4-802a-8b4fda7ecdc8">
 	<property name="com.jaspersoft.studio.unit." value="pixel"/>
 	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
@@ -430,14 +430,14 @@
 	<lastPageFooter>
 		<band height="319">
 			<staticText>
-				<reportElement x="50" y="145" width="40" height="20" uuid="91616bf1-bff2-4079-9836-6ec46ed719ed"/>
+				<reportElement x="50" y="145" width="60" height="20" uuid="91616bf1-bff2-4079-9836-6ec46ed719ed"/>
 				<textElement verticalAlignment="Middle">
 					<font size="12"/>
 				</textElement>
 				<text><![CDATA[经办人:]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="50" y="175" width="40" height="20" uuid="0b27aa3c-12ae-447b-a400-5f337fdc1768"/>
+				<reportElement x="50" y="175" width="60" height="20" uuid="0b27aa3c-12ae-447b-a400-5f337fdc1768"/>
 				<textElement verticalAlignment="Middle">
 					<font size="12"/>
 				</textElement>
@@ -462,7 +462,7 @@
 				<text><![CDATA[www.chengxuan.com]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="400" y="85" width="40" height="20" uuid="34e765f6-67ca-484f-b023-2aa836b000c8"/>
+				<reportElement x="400" y="85" width="49" height="20" uuid="34e765f6-67ca-484f-b023-2aa836b000c8"/>
 				<textElement verticalAlignment="Middle">
 					<font size="12"/>
 				</textElement>
@@ -476,7 +476,9 @@
 				<text><![CDATA[年        月         日]]></text>
 			</staticText>
 			<textField isBlankWhenNull="true">
-				<reportElement x="400" y="159" width="40" height="21" uuid="ced25dc1-543a-4620-ab58-73f76044571c"/>
+				<reportElement x="400" y="160" width="40" height="20" uuid="ced25dc1-543a-4620-ab58-73f76044571c">
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
 				<textElement>
 					<font size="12"/>
 				</textElement>

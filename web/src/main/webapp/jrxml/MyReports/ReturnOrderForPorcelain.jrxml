@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
-<!-- 2017-11-07T19:35:24 -->
+<!-- 2017-11-07T19:49:49 -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="ReturnOrderForPorcelain" pageWidth="595" pageHeight="842" columnWidth="595" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="f4d82ce1-c263-432d-911b-3d0284a0b909">
 	<property name="com.jaspersoft.studio.unit." value="pixel"/>
 	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
@@ -213,7 +213,7 @@
 				<text><![CDATA[Tel:(85-10)5887-0808]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="370" y="40" width="40" height="20" uuid="9434000f-5e4e-4692-bf51-05542fba738d"/>
+				<reportElement x="370" y="40" width="60" height="20" uuid="9434000f-5e4e-4692-bf51-05542fba738d"/>
 				<textElement>
 					<font size="12"/>
 				</textElement>
@@ -227,7 +227,10 @@
 				<text><![CDATA[年        月         日]]></text>
 			</staticText>
 			<textField>
-				<reportElement x="400" y="114" width="40" height="21" uuid="42eb8435-80ad-4fe3-9453-a27c86c9836a"/>
+				<reportElement x="400" y="115" width="40" height="20" uuid="42eb8435-80ad-4fe3-9453-a27c86c9836a">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
 				<textElement>
 					<font size="12"/>
 				</textElement>
