@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
-<!-- 2017-11-07T12:07:36 -->
+<!-- 2017-11-13T11:21:43 -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="settlementBillBX" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="842" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="4af6dafe-f40e-4cb9-b755-4bd56f569f96">
 	<property name="com.jaspersoft.studio.unit." value="pixel"/>
 	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
@@ -11,7 +11,7 @@
 	<property name="com.jaspersoft.studio.unit.rightMargin" value="pixel"/>
 	<property name="com.jaspersoft.studio.unit.columnWidth" value="pixel"/>
 	<property name="com.jaspersoft.studio.unit.columnSpacing" value="pixel"/>
-	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="New Data Adapter "/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
 	<style name="myStyle" isDefault="true" fontName="微软雅黑" pdfFontName="MSYH.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
 	<queryString language="JSON">
 		<![CDATA[]]>
@@ -215,7 +215,9 @@
 				<textFieldExpression><![CDATA["个税"]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="740" y="114" width="79" height="33" uuid="80f298c4-5582-4be5-b54c-43a7408168eb"/>
+				<reportElement x="740" y="114" width="90" height="33" uuid="80f298c4-5582-4be5-b54c-43a7408168eb">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
 				<box>
 					<bottomPen lineWidth="1.0" lineStyle="Dashed"/>
 					<rightPen lineWidth="0.0" lineStyle="Dashed"/>
@@ -289,10 +291,6 @@
 				<textElement textAlignment="Right"/>
 				<text><![CDATA[Subtotal]]></text>
 			</staticText>
-			<image>
-				<reportElement x="10" y="0" width="110" height="80" uuid="4e1fe316-0610-4f92-a0c9-4388dc2cf944"/>
-				<imageExpression><![CDATA["/data/jasperImages/cxlogo.jpg"]]></imageExpression>
-			</image>
 			<textField>
 				<reportElement x="110" y="20" width="181" height="20" uuid="a47f14f7-cc0d-4b52-bcf5-47db968e4c9c"/>
 				<textElement>
@@ -337,13 +335,17 @@
 					<pen lineWidth="2.0"/>
 				</graphicElement>
 			</line>
+			<image>
+				<reportElement x="10" y="0" width="110" height="80" uuid="5989cd27-ffe1-4e7b-9132-13030eab2c89"/>
+				<imageExpression><![CDATA["/data/jasperImages/cxlogo.jpg"]]></imageExpression>
+			</image>
 		</band>
 	</pageHeader>
 	<detail>
 		<band height="39" splitType="Stretch">
 			<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 			<textField isBlankWhenNull="true">
-				<reportElement x="740" y="0" width="79" height="39" uuid="486b28d2-3806-4c70-a6ef-45ddda8aca4b"/>
+				<reportElement x="740" y="0" width="90" height="39" uuid="486b28d2-3806-4c70-a6ef-45ddda8aca4b"/>
 				<box>
 					<bottomPen lineWidth="0.0" lineStyle="Dashed"/>
 					<rightPen lineWidth="0.0" lineStyle="Dashed"/>
@@ -618,7 +620,7 @@
 				<textFieldExpression><![CDATA[$F{zMiscellaneousFess}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="740" y="33" width="79" height="33" uuid="2745a053-711c-49c7-8047-516dad50eeeb">
+				<reportElement x="740" y="33" width="90" height="33" uuid="2745a053-711c-49c7-8047-516dad50eeeb">
 					<printWhenExpression><![CDATA[$F{showLast}.equals( "true" )]]></printWhenExpression>
 				</reportElement>
 				<box>
@@ -740,7 +742,7 @@
 				<textFieldExpression><![CDATA[$F{tMiscellaneousFess}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="740" y="0" width="79" height="33" uuid="af1d2d10-d493-4945-8913-94c0604f00c6"/>
+				<reportElement x="740" y="0" width="90" height="33" uuid="af1d2d10-d493-4945-8913-94c0604f00c6"/>
 				<box>
 					<topPen lineWidth="1.0" lineStyle="Dashed"/>
 					<bottomPen lineWidth="1.0" lineStyle="Dashed"/>
