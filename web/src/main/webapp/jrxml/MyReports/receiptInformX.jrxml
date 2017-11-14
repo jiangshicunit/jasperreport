@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
-<!-- 2017-11-14T20:34:20 -->
+<!-- 2017-11-14T20:57:45 -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="receiptInformX" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="842" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="4af6dafe-f40e-4cb9-b755-4bd56f569f96">
 	<property name="com.jaspersoft.studio.unit." value="pixel"/>
 	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
@@ -790,7 +790,7 @@
 				<textFieldExpression><![CDATA["以上内容仅供参考，所有数据均以本公司正式账单为准。"]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="10" y="50" width="780" height="20" uuid="f9db612e-f94a-482b-9bdf-f0e36e2ab81d">
+				<reportElement x="10" y="50" width="811" height="20" uuid="f9db612e-f94a-482b-9bdf-f0e36e2ab81d">
 					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
 					<printWhenExpression><![CDATA[String.valueOf($V{PAGE_NUMBER}).equals("1")&&$F{showDetail}.equals("true")]]></printWhenExpression>
 				</reportElement>
@@ -936,16 +936,14 @@
 				<textFieldExpression><![CDATA["以上内容仅供参考，所有数据均以本公司正式账单为准。"]]></textFieldExpression>
 			</textField>
 			<textField evaluationTime="Report">
-				<reportElement x="780" y="108" width="40" height="15" uuid="701b30ee-39a9-4e83-9abb-d09fad355383">
+				<reportElement x="780" y="113" width="40" height="15" uuid="701b30ee-39a9-4e83-9abb-d09fad355383">
 					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 				</reportElement>
 				<textFieldExpression><![CDATA["共"+$V{PAGE_NUMBER}+"页"]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="750" y="108" width="40" height="15" uuid="b5723e03-5192-4dbb-a03c-063c18f4a229">
-					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
-				</reportElement>
+				<reportElement x="750" y="113" width="40" height="15" uuid="b5723e03-5192-4dbb-a03c-063c18f4a229"/>
 				<textFieldExpression><![CDATA["第"+$V{PAGE_NUMBER}+"页"]]></textFieldExpression>
 			</textField>
 			<textField>
@@ -1067,14 +1065,25 @@
 				<textFieldExpression><![CDATA[$F{tHammerPrice}]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement x="10" y="85" width="100" height="25" uuid="48f7a750-7cca-4877-b2b9-e6d63e6bd52c">
+				<reportElement x="10" y="90" width="100" height="25" uuid="48f7a750-7cca-4877-b2b9-e6d63e6bd52c">
 					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
 				</reportElement>
 				<textElement>
 					<font size="15" isBold="true"/>
 				</textElement>
 				<text><![CDATA[主管签字：]]></text>
 			</staticText>
+			<textField>
+				<reportElement x="10" y="70" width="811" height="20" uuid="3fb6dbb8-bad1-4b14-9cdc-74ccfd8f052d">
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					<printWhenExpression><![CDATA[String.valueOf($V{PAGE_NUMBER}).equals("1")&&$F{showDetail}.equals("true")]]></printWhenExpression>
+				</reportElement>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{details}]]></textFieldExpression>
+			</textField>
 		</band>
 	</lastPageFooter>
 </jasperReport>
