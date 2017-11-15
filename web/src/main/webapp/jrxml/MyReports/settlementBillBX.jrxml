@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
-<!-- 2017-11-14T20:37:48 -->
+<!-- 2017-11-15T19:14:12 -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="settlementBillBX" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="842" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="4af6dafe-f40e-4cb9-b755-4bd56f569f96">
 	<property name="com.jaspersoft.studio.unit." value="pixel"/>
 	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
@@ -66,7 +66,7 @@
 					<rightPen lineWidth="0.0"/>
 				</box>
 				<textElement textAlignment="Right">
-					<font size="14" isBold="true"/>
+					<font size="12" isBold="true"/>
 					<paragraph rightIndent="0"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{titlea}]]></textFieldExpression>
@@ -85,9 +85,9 @@
 				<textFieldExpression><![CDATA["INVOICE"]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement x="190" y="74" width="170" height="20" uuid="6b1d7cef-00d9-427d-b300-77bcb021c12d"/>
+				<reportElement x="170" y="74" width="170" height="20" uuid="6b1d7cef-00d9-427d-b300-77bcb021c12d"/>
 				<textElement>
-					<font size="14"/>
+					<font size="12"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{name}]]></textFieldExpression>
 			</textField>
@@ -116,7 +116,7 @@
 					<rightPen lineWidth="1.0" lineStyle="Dashed"/>
 				</box>
 				<textElement textAlignment="Center" verticalAlignment="Top">
-					<font size="14"/>
+					<font size="12"/>
 					<paragraph spacingBefore="2" spacingAfter="0"/>
 				</textElement>
 				<textFieldExpression><![CDATA["图录号"]]></textFieldExpression>
@@ -141,7 +141,7 @@
 					<rightPen lineWidth="0.0" lineStyle="Dashed"/>
 				</box>
 				<textElement textAlignment="Center" verticalAlignment="Top">
-					<font size="14"/>
+					<font size="12"/>
 					<paragraph spacingBefore="2" spacingAfter="0"/>
 				</textElement>
 				<textFieldExpression><![CDATA["落槌价"]]></textFieldExpression>
@@ -156,7 +156,7 @@
 					<rightPen lineWidth="0.0" lineStyle="Dashed"/>
 				</box>
 				<textElement textAlignment="Right" verticalAlignment="Top">
-					<font size="14"/>
+					<font size="12"/>
 					<paragraph spacingBefore="2" spacingAfter="0"/>
 				</textElement>
 				<textFieldExpression><![CDATA["佣金"]]></textFieldExpression>
@@ -171,7 +171,7 @@
 					<rightPen lineWidth="0.0" lineStyle="Dashed"/>
 				</box>
 				<textElement textAlignment="Right" verticalAlignment="Top">
-					<font size="14"/>
+					<font size="12"/>
 					<paragraph spacingBefore="2" spacingAfter="0"/>
 				</textElement>
 				<textFieldExpression><![CDATA["保险费"]]></textFieldExpression>
@@ -185,7 +185,7 @@
 					<rightPen lineWidth="0.0" lineStyle="Dashed"/>
 				</box>
 				<textElement textAlignment="Right" verticalAlignment="Top">
-					<font size="14"/>
+					<font size="12"/>
 					<paragraph spacingBefore="2" spacingAfter="0"/>
 				</textElement>
 				<textFieldExpression><![CDATA["图录费"]]></textFieldExpression>
@@ -199,7 +199,7 @@
 					<rightPen lineWidth="0.0" lineStyle="Dashed"/>
 				</box>
 				<textElement textAlignment="Right" verticalAlignment="Top">
-					<font size="14"/>
+					<font size="12"/>
 					<paragraph spacingBefore="2" spacingAfter="0"/>
 				</textElement>
 				<textFieldExpression><![CDATA["杂费"]]></textFieldExpression>
@@ -211,7 +211,7 @@
 					<rightPen lineWidth="0.0" lineStyle="Dashed"/>
 				</box>
 				<textElement textAlignment="Right" verticalAlignment="Top">
-					<font size="14"/>
+					<font size="12"/>
 					<paragraph spacingBefore="2" spacingAfter="0"/>
 				</textElement>
 				<textFieldExpression><![CDATA["个税"]]></textFieldExpression>
@@ -225,7 +225,7 @@
 					<rightPen lineWidth="0.0" lineStyle="Dashed"/>
 				</box>
 				<textElement textAlignment="Right" verticalAlignment="Top">
-					<font size="14"/>
+					<font size="12"/>
 					<paragraph spacingBefore="2" spacingAfter="0"/>
 				</textElement>
 				<textFieldExpression><![CDATA["小计"]]></textFieldExpression>
@@ -310,12 +310,12 @@
 				<textFieldExpression><![CDATA["BeiJing ChengXuan Auctions Go. Ltd."]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="30" y="74" width="160" height="20" uuid="398d756e-b5b3-4422-8c33-17cfba82fac4">
+				<reportElement x="10" y="74" width="160" height="20" uuid="398d756e-b5b3-4422-8c33-17cfba82fac4">
 					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
 					<printWhenExpression><![CDATA[$F{showName}.equals("true")]]></printWhenExpression>
 				</reportElement>
 				<textElement>
-					<font size="14"/>
+					<font size="12"/>
 				</textElement>
 				<textFieldExpression><![CDATA["委托方姓名(Consignor):"]]></textFieldExpression>
 			</textField>
@@ -329,7 +329,7 @@
 					<rightPen lineWidth="0.0" lineStyle="Dashed"/>
 				</box>
 				<textElement textAlignment="Left" verticalAlignment="Top">
-					<font size="14"/>
+					<font size="12"/>
 					<paragraph spacingAfter="0"/>
 				</textElement>
 				<textFieldExpression><![CDATA["拍品名称"]]></textFieldExpression>
@@ -354,7 +354,7 @@
 					<rightPen lineWidth="0.0" lineStyle="Dashed"/>
 				</box>
 				<textElement textAlignment="Right" verticalAlignment="Top">
-					<font size="14"/>
+					<font size="12"/>
 					<paragraph spacingBefore="6" spacingAfter="0"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{subtotal}]]></textFieldExpression>
@@ -368,7 +368,7 @@
 					<rightPen lineWidth="1.0" lineStyle="Dashed"/>
 				</box>
 				<textElement textAlignment="Center" verticalAlignment="Top">
-					<font size="14"/>
+					<font size="12"/>
 					<paragraph spacingBefore="6" spacingAfter="0"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{imageNumber}]]></textFieldExpression>
@@ -383,7 +383,7 @@
 					<rightPen lineWidth="0.0" lineStyle="Dashed"/>
 				</box>
 				<textElement textAlignment="Right" verticalAlignment="Top">
-					<font size="14"/>
+					<font size="12"/>
 					<paragraph spacingBefore="6" spacingAfter="0"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{insurance}]]></textFieldExpression>
@@ -397,7 +397,7 @@
 					<rightPen lineWidth="0.0" lineStyle="Dashed"/>
 				</box>
 				<textElement textAlignment="Right" verticalAlignment="Top">
-					<font size="14"/>
+					<font size="12"/>
 					<paragraph spacingBefore="6" spacingAfter="0"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{commission}]]></textFieldExpression>
@@ -413,7 +413,7 @@
 					<rightPen lineWidth="0.0" lineStyle="Dashed"/>
 				</box>
 				<textElement textAlignment="Right" verticalAlignment="Top">
-					<font size="14"/>
+					<font size="12"/>
 					<paragraph spacingBefore="6" spacingAfter="0"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{imageFees}]]></textFieldExpression>
@@ -427,7 +427,7 @@
 					<rightPen lineWidth="0.0" lineStyle="Dashed"/>
 				</box>
 				<textElement textAlignment="Center" verticalAlignment="Top">
-					<font size="14"/>
+					<font size="12"/>
 					<paragraph spacingBefore="6" spacingAfter="0"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{hammerPrice}]]></textFieldExpression>
@@ -442,7 +442,7 @@
 					<rightPen lineWidth="0.0" lineStyle="Dashed"/>
 				</box>
 				<textElement textAlignment="Right" verticalAlignment="Top">
-					<font size="14"/>
+					<font size="12"/>
 					<paragraph spacingBefore="6" spacingAfter="0"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{miscellaneousFess}]]></textFieldExpression>
@@ -465,7 +465,7 @@
 					<rightPen lineWidth="0.0" lineStyle="Dashed"/>
 				</box>
 				<textElement textAlignment="Right" verticalAlignment="Top">
-					<font size="14"/>
+					<font size="12"/>
 					<paragraph spacingBefore="6" spacingAfter="0"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{atax}]]></textFieldExpression>
@@ -489,7 +489,7 @@
 					<rightPen lineWidth="0.0" lineStyle="Dashed"/>
 				</box>
 				<textElement textAlignment="Left" verticalAlignment="Top">
-					<font size="14" isBold="false"/>
+					<font size="12" isBold="false"/>
 					<paragraph leftIndent="0" spacingBefore="0" spacingAfter="0"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{auctionName}]]></textFieldExpression>
@@ -498,7 +498,7 @@
 	</detail>
 	<pageFooter>
 		<band height="129">
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="410" y="33" width="60" height="33" uuid="ad1b6da4-a057-45a9-9241-9c4f0da00c6b">
 					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
 					<printWhenExpression><![CDATA[$F{showLast}.equals( "true" )]]></printWhenExpression>
@@ -509,7 +509,7 @@
 					<rightPen lineWidth="0.0" lineStyle="Dashed"/>
 				</box>
 				<textElement textAlignment="Right" verticalAlignment="Middle">
-					<font size="14" isBold="true"/>
+					<font size="12" isBold="true"/>
 					<paragraph spacingBefore="2" spacingAfter="0"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{zCommission}]]></textFieldExpression>
@@ -524,12 +524,12 @@
 					<rightPen lineWidth="1.0" lineStyle="Dashed"/>
 				</box>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font size="14" isBold="true"/>
+					<font size="12" isBold="true"/>
 					<paragraph spacingBefore="2" spacingAfter="0"/>
 				</textElement>
 				<textFieldExpression><![CDATA["账单总计"]]></textFieldExpression>
 			</textField>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="470" y="33" width="80" height="33" uuid="1ffcf140-24bd-4bb7-8c99-4da1c6822343">
 					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
@@ -541,12 +541,12 @@
 					<rightPen lineWidth="0.0" lineStyle="Dashed"/>
 				</box>
 				<textElement textAlignment="Right" verticalAlignment="Middle">
-					<font size="14" isBold="true"/>
+					<font size="12" isBold="true"/>
 					<paragraph rightIndent="5" spacingBefore="2" spacingAfter="0"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{zInsurance}]]></textFieldExpression>
 			</textField>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="310" y="33" width="100" height="33" uuid="e2c74d1d-76d2-4886-8460-acc46374b4a7">
 					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
 					<printWhenExpression><![CDATA[$F{showLast}.equals( "true" )]]></printWhenExpression>
@@ -557,12 +557,12 @@
 					<rightPen lineWidth="0.0" lineStyle="Dashed"/>
 				</box>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font size="14" isBold="true"/>
+					<font size="12" isBold="true"/>
 					<paragraph spacingBefore="2" spacingAfter="0"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{zHammerPrice}]]></textFieldExpression>
 			</textField>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="550" y="33" width="72" height="33" uuid="017b0040-e7e2-4289-a601-6840ca30072c">
 					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
@@ -574,12 +574,12 @@
 					<rightPen lineWidth="0.0" lineStyle="Dashed"/>
 				</box>
 				<textElement textAlignment="Right" verticalAlignment="Middle">
-					<font size="14" isBold="true"/>
+					<font size="12" isBold="true"/>
 					<paragraph spacingBefore="2" spacingAfter="0"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{zImageFees}]]></textFieldExpression>
 			</textField>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="677" y="33" width="63" height="33" uuid="465b746d-fc43-4787-8b65-48945183b47a">
 					<printWhenExpression><![CDATA[$F{showLast}.equals( "true" )]]></printWhenExpression>
 				</reportElement>
@@ -589,7 +589,7 @@
 					<rightPen lineWidth="0.0" lineStyle="Dashed"/>
 				</box>
 				<textElement textAlignment="Right" verticalAlignment="Middle">
-					<font size="14" isBold="true"/>
+					<font size="12" isBold="true"/>
 					<paragraph spacingBefore="2" spacingAfter="0"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{zAtax}]]></textFieldExpression>
@@ -609,7 +609,7 @@
 					<paragraph leftIndent="8" spacingBefore="2" spacingAfter="0"/>
 				</textElement>
 			</textField>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="622" y="33" width="55" height="33" uuid="6b9e17da-229c-4876-a262-d01ca5e5031b">
 					<printWhenExpression><![CDATA[$F{showLast}.equals( "true" )]]></printWhenExpression>
 				</reportElement>
@@ -619,12 +619,12 @@
 					<rightPen lineWidth="0.0" lineStyle="Dashed"/>
 				</box>
 				<textElement textAlignment="Right" verticalAlignment="Middle">
-					<font size="14" isBold="true"/>
+					<font size="12" isBold="true"/>
 					<paragraph rightIndent="5" spacingBefore="2" spacingAfter="0"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{zMiscellaneousFess}]]></textFieldExpression>
 			</textField>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="740" y="33" width="89" height="33" uuid="2745a053-711c-49c7-8047-516dad50eeeb">
 					<printWhenExpression><![CDATA[$F{showLast}.equals( "true" )]]></printWhenExpression>
 				</reportElement>
@@ -634,7 +634,7 @@
 					<rightPen lineWidth="0.0" lineStyle="Dashed"/>
 				</box>
 				<textElement textAlignment="Right" verticalAlignment="Middle">
-					<font size="14" isBold="true"/>
+					<font size="12" isBold="true"/>
 					<paragraph spacingBefore="2" spacingAfter="0"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{zSubtotal}]]></textFieldExpression>
@@ -658,7 +658,7 @@
 				</textElement>
 				<textFieldExpression><![CDATA[$F{details}]]></textFieldExpression>
 			</textField>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="677" y="0" width="63" height="33" uuid="522f2ede-0c85-43bd-839e-27c4355a562c"/>
 				<box>
 					<topPen lineWidth="1.0" lineStyle="Dashed"/>
@@ -666,12 +666,12 @@
 					<rightPen lineWidth="0.0" lineStyle="Dashed"/>
 				</box>
 				<textElement textAlignment="Right" verticalAlignment="Middle">
-					<font size="14"/>
+					<font size="12"/>
 					<paragraph spacingBefore="2" spacingAfter="0"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{tAtax}]]></textFieldExpression>
 			</textField>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="470" y="0" width="80" height="33" uuid="b35302fe-c843-4da2-9b43-d3de2c79f75c">
 					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
@@ -682,12 +682,12 @@
 					<rightPen lineWidth="0.0" lineStyle="Dashed"/>
 				</box>
 				<textElement textAlignment="Right" verticalAlignment="Middle">
-					<font size="14"/>
+					<font size="12"/>
 					<paragraph rightIndent="5" spacingBefore="2" spacingAfter="0"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{tInsurance}]]></textFieldExpression>
 			</textField>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="550" y="0" width="72" height="33" uuid="db4a7193-6fdf-43de-876d-f1cd9a7728f2">
 					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
 				</reportElement>
@@ -697,12 +697,12 @@
 					<rightPen lineWidth="0.0" lineStyle="Dashed"/>
 				</box>
 				<textElement textAlignment="Right" verticalAlignment="Middle">
-					<font size="14"/>
+					<font size="12"/>
 					<paragraph spacingBefore="2" spacingAfter="0"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{tImageFees}]]></textFieldExpression>
 			</textField>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="410" y="0" width="60" height="33" uuid="ca9423b1-581f-42cf-a143-93512722069f">
 					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
@@ -713,7 +713,7 @@
 					<rightPen lineWidth="0.0" lineStyle="Dashed"/>
 				</box>
 				<textElement textAlignment="Right" verticalAlignment="Middle">
-					<font size="14"/>
+					<font size="12"/>
 					<paragraph spacingBefore="2" spacingAfter="0"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{tCommission}]]></textFieldExpression>
@@ -730,7 +730,7 @@
 					<paragraph leftIndent="8" spacingBefore="2" spacingAfter="0"/>
 				</textElement>
 			</textField>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="622" y="0" width="55" height="33" uuid="1e599ca8-c830-4b3a-b4c3-3acee073c994">
 					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
@@ -741,12 +741,12 @@
 					<rightPen lineWidth="0.0" lineStyle="Dashed"/>
 				</box>
 				<textElement textAlignment="Right" verticalAlignment="Middle">
-					<font size="14"/>
+					<font size="12"/>
 					<paragraph rightIndent="5" spacingBefore="2" spacingAfter="0"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{tMiscellaneousFess}]]></textFieldExpression>
 			</textField>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="740" y="0" width="89" height="33" uuid="af1d2d10-d493-4945-8913-94c0604f00c6"/>
 				<box>
 					<topPen lineWidth="1.0" lineStyle="Dashed"/>
@@ -754,7 +754,7 @@
 					<rightPen lineWidth="0.0" lineStyle="Dashed"/>
 				</box>
 				<textElement textAlignment="Right" verticalAlignment="Middle">
-					<font size="14"/>
+					<font size="12"/>
 					<paragraph spacingBefore="2" spacingAfter="0"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{tSubtotal}]]></textFieldExpression>
@@ -767,12 +767,12 @@
 					<rightPen lineWidth="1.0" lineStyle="Dashed"/>
 				</box>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font size="14"/>
+					<font size="12"/>
 					<paragraph spacingBefore="2" spacingAfter="0"/>
 				</textElement>
 				<textFieldExpression><![CDATA["本页合计"]]></textFieldExpression>
 			</textField>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="310" y="0" width="100" height="33" uuid="18c68e4c-605d-4301-8b71-c676a46327ba">
 					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
 				</reportElement>
@@ -782,16 +782,16 @@
 					<rightPen lineWidth="0.0" lineStyle="Dashed"/>
 				</box>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font size="14"/>
+					<font size="12"/>
 					<paragraph spacingBefore="2" spacingAfter="0"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{tHammerPrice}]]></textFieldExpression>
 			</textField>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="740" y="104" width="81" height="21" uuid="11144dda-9ac4-45d8-b5e7-f9081b8f551f"/>
 				<textFieldExpression><![CDATA[$F{sbkcl}]]></textFieldExpression>
 			</textField>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="10" y="104" width="81" height="21" uuid="1903e208-02f6-434c-aad9-1126ac6a09ec"/>
 				<textFieldExpression><![CDATA[$F{sbc}]]></textFieldExpression>
 			</textField>
