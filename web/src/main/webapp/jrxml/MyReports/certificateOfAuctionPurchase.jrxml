@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
-<!-- 2017-11-16T11:48:53 -->
+<!-- 2017-11-16T12:13:29 -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="certificateOfAuctionPurchase" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="842" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="65843578-1766-4a24-a016-8e0412ab5804">
 	<property name="com.jaspersoft.studio.unit." value="pixel"/>
 	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
@@ -35,8 +35,9 @@
 	<detail>
 		<band height="595" splitType="Stretch">
 			<textField>
-				<reportElement x="86" y="202" width="52" height="20" uuid="ee94efcd-0666-4842-8687-2071d9ce6efa">
+				<reportElement x="84" y="202" width="52" height="20" uuid="ee94efcd-0666-4842-8687-2071d9ce6efa">
 					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
 				</reportElement>
 				<textElement>
 					<font size="14"/>
@@ -76,22 +77,26 @@
 				<textFieldExpression><![CDATA[$F{companyName}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="140" y="280" width="270" height="40" uuid="905ffa73-004e-446d-8d14-6c6329eaeb98"/>
-				<textElement>
+				<reportElement x="140" y="277" width="270" height="40" uuid="905ffa73-004e-446d-8d14-6c6329eaeb98">
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
+				<textElement textAlignment="Center">
 					<font size="12"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{worksName}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="140" y="331" width="270" height="30" uuid="b7a01e19-a150-4bf7-bec9-e79b0418755d"/>
-				<textElement>
+				<reportElement x="140" y="330" width="270" height="30" uuid="b7a01e19-a150-4bf7-bec9-e79b0418755d">
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
+				<textElement textAlignment="Center">
 					<font size="12"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{turnoverMoney}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="140" y="366" width="270" height="30" uuid="e8bd0eac-c6f3-4254-8f93-75bc8c7fc52c"/>
-				<textElement>
+				<textElement textAlignment="Center">
 					<font size="12"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{geologicalForm}]]></textFieldExpression>
@@ -100,7 +105,7 @@
 				<reportElement x="140" y="407" width="270" height="30" uuid="d4bd3bef-ccce-4849-9325-f956379fe6e8">
 					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
 				</reportElement>
-				<textElement>
+				<textElement textAlignment="Center">
 					<font size="12"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{specificationSize}]]></textFieldExpression>
