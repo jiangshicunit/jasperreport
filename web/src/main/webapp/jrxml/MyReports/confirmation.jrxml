@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
-<!-- 2017-11-16T19:05:17 -->
+<!-- 2017-11-16T19:24:34 -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="confirmationOfTransaction" pageWidth="396" pageHeight="572" columnWidth="396" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="a74414d5-6969-4f04-a7b8-c4dbbe163430">
 	<property name="com.jaspersoft.studio.unit." value="pixel"/>
 	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
@@ -62,7 +62,9 @@
 				<textFieldExpression><![CDATA[$F{lotNo}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="165" y="190" width="172" height="40" uuid="9b8aa460-915d-47f5-ae93-4ee12f0261fc"/>
+				<reportElement x="170" y="190" width="172" height="40" uuid="9b8aa460-915d-47f5-ae93-4ee12f0261fc">
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+				</reportElement>
 				<textElement>
 					<font size="12"/>
 				</textElement>
