@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
-<!-- 2017-10-16T14:57:51 -->
+<!-- 2017-11-16T11:36:16 -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="bidAgreement" pageWidth="595" pageHeight="842" columnWidth="595" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="f8ee36b6-2822-4fbe-a575-5d90970af3ce">
 	<property name="com.jaspersoft.studio.unit." value="pixel"/>
 	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
@@ -29,8 +29,7 @@
 	<field name="mobilePhone" class="java.lang.String"/>
 	<field name="nameOfConsignee" class="java.lang.String"/>
 	<field name="email" class="java.lang.String"/>
-	<field name="downPayment" class="java.lang.String"/>
-	<field name="amountInFigures" class="java.lang.String"/>
+	<field name="symbol" class="java.lang.String"/>
 	<field name="year" class="java.lang.String"/>
 	<field name="month" class="java.lang.String"/>
 	<field name="day" class="java.lang.String"/>
@@ -156,33 +155,14 @@
 				<textFieldExpression><![CDATA[$F{email}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="205" y="202" width="115" height="15" uuid="15b4fbac-46e7-4b22-9070-4af6b018e83e">
-					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
-				</reportElement>
-				<textElement>
-					<font size="10"/>
-				</textElement>
-				<textFieldExpression><![CDATA[$F{downPayment}]]></textFieldExpression>
-			</textField>
-			<textField>
-				<reportElement x="495" y="202" width="80" height="15" uuid="b71c0b36-b3d3-4ea2-af28-eb804b112697">
-					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
-				</reportElement>
-				<textElement textAlignment="Left">
-					<font size="10"/>
-					<paragraph leftIndent="2"/>
-				</textElement>
-				<textFieldExpression><![CDATA[$F{amountInFigures}]]></textFieldExpression>
-			</textField>
-			<textField>
-				<reportElement x="360" y="810" width="40" height="21" uuid="aeda115d-3f17-4a54-ad9a-d2ee9ebc3778"/>
+				<reportElement x="360" y="800" width="40" height="21" uuid="aeda115d-3f17-4a54-ad9a-d2ee9ebc3778"/>
 				<textElement>
 					<font size="12" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{year}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="430" y="810" width="40" height="21" uuid="78985320-dec6-402b-b0b2-9e3e28016f66">
+				<reportElement x="430" y="800" width="40" height="21" uuid="78985320-dec6-402b-b0b2-9e3e28016f66">
 					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
 				</reportElement>
 				<textElement textAlignment="Center">
@@ -191,7 +171,7 @@
 				<textFieldExpression><![CDATA[$F{month}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="510" y="810" width="40" height="21" uuid="ad8ce0f2-49de-4ee0-8ad7-21fc38b1751b">
+				<reportElement x="510" y="800" width="40" height="21" uuid="ad8ce0f2-49de-4ee0-8ad7-21fc38b1751b">
 					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
 				</reportElement>
 				<textElement textAlignment="Center">
@@ -205,6 +185,22 @@
 					<font size="16" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{paddleNo}]]></textFieldExpression>
+			</textField>
+			<textField pattern="">
+				<reportElement x="60" y="40" width="30" height="25" uuid="b1d06153-9e8f-438c-b558-b646b6093dfe"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA["*"]]></textFieldExpression>
+				<patternExpression><![CDATA[$F{symbol}.equals( "1" )]]></patternExpression>
+			</textField>
+			<textField pattern="">
+				<reportElement x="100" y="40" width="30" height="25" uuid="437e00a6-2b9d-43b9-9dd7-dad19e3d599f"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA["^"]]></textFieldExpression>
+				<patternExpression><![CDATA[$F{symbol}.equals( "2" )]]></patternExpression>
 			</textField>
 		</band>
 	</title>
