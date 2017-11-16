@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
-<!-- 2017-11-16T18:31:25 -->
+<!-- 2017-11-16T18:49:42 -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="confirmationOfTransaction" pageWidth="560" pageHeight="575" columnWidth="560" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="a74414d5-6969-4f04-a7b8-c4dbbe163430">
 	<property name="com.jaspersoft.studio.unit." value="pixel"/>
 	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
@@ -55,9 +55,9 @@
 				<textFieldExpression><![CDATA[$F{day}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="160" y="140" width="160" height="30" uuid="e85e9ada-d0b6-4734-bb1f-1c6d6ec13495"/>
+				<reportElement x="160" y="60" width="350" height="110" uuid="e85e9ada-d0b6-4734-bb1f-1c6d6ec13495"/>
 				<textElement textAlignment="Center">
-					<font size="20" isBold="true"/>
+					<font size="50" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{lotNo}]]></textFieldExpression>
 			</textField>
