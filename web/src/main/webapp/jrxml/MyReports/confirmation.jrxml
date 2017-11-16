@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
-<!-- 2017-11-16T14:31:50 -->
+<!-- 2017-11-16T14:53:54 -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="confirmationOfTransaction" pageWidth="595" pageHeight="842" columnWidth="595" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="a74414d5-6969-4f04-a7b8-c4dbbe163430">
 	<property name="com.jaspersoft.studio.unit." value="pixel"/>
 	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
@@ -32,21 +32,21 @@
 	<detail>
 		<band height="842" splitType="Stretch">
 			<textField>
-				<reportElement x="369" y="240" width="42" height="22" uuid="45df70b2-2b83-41b7-b431-11f09a13ca3b"/>
+				<reportElement x="217" y="110" width="42" height="22" uuid="45df70b2-2b83-41b7-b431-11f09a13ca3b"/>
 				<textElement>
 					<font size="12"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{year}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="435" y="240" width="20" height="22" uuid="590156b5-5e03-4f71-9696-6efb4f37e660"/>
+				<reportElement x="297" y="110" width="20" height="22" uuid="590156b5-5e03-4f71-9696-6efb4f37e660"/>
 				<textElement>
 					<font size="12"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{month}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="480" y="240" width="20" height="22" uuid="e46a750e-823f-4eeb-9631-b58d51faeee8">
+				<reportElement x="347" y="110" width="20" height="22" uuid="e46a750e-823f-4eeb-9631-b58d51faeee8">
 					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
 				</reportElement>
@@ -56,49 +56,51 @@
 				<textFieldExpression><![CDATA[$F{day}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="230" y="280" width="210" height="40" uuid="e85e9ada-d0b6-4734-bb1f-1c6d6ec13495"/>
+				<reportElement x="140" y="150" width="210" height="40" uuid="e85e9ada-d0b6-4734-bb1f-1c6d6ec13495"/>
 				<textElement>
 					<font size="12"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{lotNo}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="300" y="330" width="200" height="40" uuid="9b8aa460-915d-47f5-ae93-4ee12f0261fc"/>
+				<reportElement x="110" y="200" width="200" height="40" uuid="9b8aa460-915d-47f5-ae93-4ee12f0261fc"/>
 				<textElement>
 					<font size="12"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{description}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="350" y="380" width="205" height="40" uuid="2f93506b-721f-488b-ae72-c7ffa79337c2"/>
+				<reportElement x="110" y="250" width="205" height="40" uuid="2f93506b-721f-488b-ae72-c7ffa79337c2"/>
 				<textElement>
 					<font size="12"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{paddleNo}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="230" y="430" width="205" height="40" uuid="296bd313-4ebe-4194-ae11-c67ebc0a9851"/>
+				<reportElement x="110" y="300" width="205" height="40" uuid="296bd313-4ebe-4194-ae11-c67ebc0a9851"/>
 				<textElement>
 					<font size="12"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{hammerPrice}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="295" y="480" width="205" height="40" uuid="3b4c57c8-ca5d-4097-89ac-2f831b09e255"/>
+				<reportElement x="110" y="350" width="205" height="40" uuid="3b4c57c8-ca5d-4097-89ac-2f831b09e255"/>
 				<textElement>
 					<font size="12"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{remuneration}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="343" y="540" width="205" height="40" uuid="588cd00b-77bd-4afe-a878-874f6130257a"/>
+				<reportElement x="112" y="400" width="205" height="40" uuid="588cd00b-77bd-4afe-a878-874f6130257a">
+					<property name="com.jaspersoft.studio.unit.y" value="cm"/>
+				</reportElement>
 				<textElement>
 					<font size="12"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{buyersSignature}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="220" y="680" width="47" height="22" uuid="33ce767c-ab97-404c-a252-5287a1c1b3db">
+				<reportElement x="60" y="520" width="47" height="22" uuid="33ce767c-ab97-404c-a252-5287a1c1b3db">
 					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
 				</reportElement>
@@ -108,7 +110,7 @@
 				<textFieldExpression><![CDATA[$F{auctioneer}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="460" y="680" width="47" height="22" uuid="06c729f4-e10d-4084-835f-9ba939710c13">
+				<reportElement x="230" y="520" width="47" height="22" uuid="06c729f4-e10d-4084-835f-9ba939710c13">
 					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
 				</reportElement>
 				<textElement>
