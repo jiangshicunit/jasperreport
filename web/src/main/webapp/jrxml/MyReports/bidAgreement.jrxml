@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
-<!-- 2017-11-17T16:54:59 -->
+<!-- 2017-11-17T17:03:59 -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="bidAgreement" pageWidth="595" pageHeight="842" columnWidth="595" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="f8ee36b6-2822-4fbe-a575-5d90970af3ce">
 	<property name="com.jaspersoft.studio.unit." value="pixel"/>
 	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
@@ -39,8 +39,9 @@
 	<title>
 		<band height="842" splitType="Stretch">
 			<textField>
-				<reportElement x="117" y="120" width="110" height="15" uuid="c0daf36c-8921-4d5f-a888-81a73011c8f2">
+				<reportElement x="117" y="121" width="110" height="15" uuid="c0daf36c-8921-4d5f-a888-81a73011c8f2">
 					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
 				</reportElement>
 				<textElement>
 					<font size="10"/>
@@ -48,33 +49,33 @@
 				<textFieldExpression><![CDATA[$F{bidder}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="295" y="120" width="273" height="15" uuid="59153144-de34-42af-8b96-b02109bc404b"/>
+				<reportElement x="295" y="121" width="273" height="15" uuid="59153144-de34-42af-8b96-b02109bc404b">
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
 				<textElement>
 					<font size="10"/>
 				</textElement>
-				<textFieldExpression><![CDATA["啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊阿"]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$F{company}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="135" y="145" width="87" height="15" uuid="a1b328a5-531a-4436-87d9-ad7b677b30b3">
-					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
-				</reportElement>
+				<reportElement x="135" y="146" width="87" height="15" uuid="a1b328a5-531a-4436-87d9-ad7b677b30b3"/>
 				<textFieldExpression><![CDATA[$F{idType}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="312" y="145" width="185" height="15" uuid="bd5111cc-f9d7-4d9d-8c0c-081a8769265c">
+				<reportElement x="312" y="146" width="185" height="15" uuid="bd5111cc-f9d7-4d9d-8c0c-081a8769265c"/>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{number}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="140" y="171" width="247" height="15" uuid="d42db739-1642-4a01-b044-3000a1b2d1c9">
 					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
 				</reportElement>
 				<textElement>
 					<font size="10"/>
 				</textElement>
-				<textFieldExpression><![CDATA["啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊阿"]]></textFieldExpression>
-			</textField>
-			<textField isBlankWhenNull="true">
-				<reportElement x="140" y="170" width="247" height="15" uuid="d42db739-1642-4a01-b044-3000a1b2d1c9"/>
-				<textElement>
-					<font size="10"/>
-				</textElement>
-				<textFieldExpression><![CDATA["啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊阿"]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$F{homeAddress}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="479" y="172" width="85" height="15" uuid="26e97e24-9c8b-4ff0-b924-c795497a90f2">
@@ -83,16 +84,17 @@
 				<textElement>
 					<font size="10"/>
 				</textElement>
-				<textFieldExpression><![CDATA["1236985"]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$F{postCode1}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="93" y="221" width="120" height="15" uuid="0be10f79-9f2e-4420-a7ff-cc841e21075b">
+				<reportElement x="93" y="222" width="120" height="15" uuid="0be10f79-9f2e-4420-a7ff-cc841e21075b">
 					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
 				</reportElement>
 				<textElement>
 					<font size="10"/>
 				</textElement>
-				<textFieldExpression><![CDATA["123698569"]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$F{tel}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="272" y="222" width="105" height="15" uuid="2bad8603-1ae8-4163-b446-ced474fe62e4">
@@ -102,7 +104,7 @@
 				<textElement>
 					<font size="10"/>
 				</textElement>
-				<textFieldExpression><![CDATA["32698564125sas"]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$F{fax}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="478" y="222" width="85" height="15" uuid="5af06033-705c-442b-8d35-d63d8fa65bbc">
@@ -112,7 +114,7 @@
 					<font size="10"/>
 					<paragraph leftIndent="2"/>
 				</textElement>
-				<textFieldExpression><![CDATA["12369658512"]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$F{mobilePhone}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="437" y="246" width="131" height="15" uuid="caf44af4-140b-4b90-82e4-f16f64f42cfc">
@@ -122,7 +124,7 @@
 					<font size="10"/>
 					<paragraph leftIndent="2"/>
 				</textElement>
-				<textFieldExpression><![CDATA["啊啊啊啊啊啊啊啊啊啊啊阿"]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$F{email}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="352" y="778" width="40" height="21" uuid="aeda115d-3f17-4a54-ad9a-d2ee9ebc3778">
@@ -189,13 +191,11 @@
 				<textFieldExpression><![CDATA[""]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="230" y="269" width="160" height="15" uuid="91d99768-0f65-4049-8eda-2b008291b5a1">
-					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
-				</reportElement>
+				<reportElement x="230" y="270" width="160" height="15" uuid="91d99768-0f65-4049-8eda-2b008291b5a1"/>
 				<textElement>
 					<font size="10"/>
 				</textElement>
-				<textFieldExpression><![CDATA["叁佰万元整啊啊啊啊啊啊啊啊"]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$F{downPayment}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="497" y="271" width="74" height="15" uuid="88d1fde5-1b9e-4e97-bd4a-d9558e170552"/>
@@ -203,7 +203,7 @@
 					<font size="10"/>
 					<paragraph leftIndent="2"/>
 				</textElement>
-				<textFieldExpression><![CDATA["300000"]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$F{AmountInFigures}]]></textFieldExpression>
 			</textField>
 		</band>
 	</title>
