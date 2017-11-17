@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
-<!-- 2017-11-17T15:42:30 -->
+<!-- 2017-11-17T16:08:50 -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="confirmationOfTransaction" pageWidth="396" pageHeight="572" columnWidth="396" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="a74414d5-6969-4f04-a7b8-c4dbbe163430">
 	<property name="com.jaspersoft.studio.unit." value="pixel"/>
 	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
@@ -58,15 +58,18 @@
 				<textFieldExpression><![CDATA[$F{day}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="160" y="150" width="160" height="30" uuid="e85e9ada-d0b6-4734-bb1f-1c6d6ec13495"/>
+				<reportElement x="160" y="154" width="160" height="30" uuid="e85e9ada-d0b6-4734-bb1f-1c6d6ec13495">
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
 				<textElement textAlignment="Center">
 					<font size="20" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{lotNo}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="170" y="190" width="172" height="40" uuid="9b8aa460-915d-47f5-ae93-4ee12f0261fc">
+				<reportElement x="170" y="194" width="172" height="40" uuid="9b8aa460-915d-47f5-ae93-4ee12f0261fc">
 					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
 				</reportElement>
 				<textElement>
 					<font size="12"/>
@@ -74,7 +77,9 @@
 				<textFieldExpression><![CDATA[$F{description}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="158" y="320" width="160" height="30" uuid="3b4c57c8-ca5d-4097-89ac-2f831b09e255"/>
+				<reportElement x="158" y="325" width="160" height="30" uuid="3b4c57c8-ca5d-4097-89ac-2f831b09e255">
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
 				<textElement textAlignment="Center">
 					<font size="16"/>
 				</textElement>
