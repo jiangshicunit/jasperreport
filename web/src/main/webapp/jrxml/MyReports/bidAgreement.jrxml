@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
-<!-- 2017-11-16T21:18:41 -->
+<!-- 2017-11-17T14:41:30 -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="bidAgreement" pageWidth="595" pageHeight="842" columnWidth="595" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="f8ee36b6-2822-4fbe-a575-5d90970af3ce">
 	<property name="com.jaspersoft.studio.unit." value="pixel"/>
 	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
@@ -34,6 +34,8 @@
 	<field name="month" class="java.lang.String"/>
 	<field name="day" class="java.lang.String"/>
 	<field name="paddleNo" class="java.lang.String"/>
+	<field name="downPayment" class="java.lang.String"/>
+	<field name="AmountInFigures" class="java.lang.String"/>
 	<background>
 		<band splitType="Stretch"/>
 	</background>
@@ -214,6 +216,21 @@
 					<font size="18"/>
 				</textElement>
 				<textFieldExpression><![CDATA[""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="230" y="266" width="160" height="15" uuid="91d99768-0f65-4049-8eda-2b008291b5a1"/>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA["叁佰万元整啊啊啊啊啊啊啊啊"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="510" y="266" width="74" height="15" uuid="88d1fde5-1b9e-4e97-bd4a-d9558e170552"/>
+				<textElement textAlignment="Left">
+					<font size="10"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<textFieldExpression><![CDATA["300000"]]></textFieldExpression>
 			</textField>
 		</band>
 	</title>
