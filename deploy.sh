@@ -1,2 +1,2 @@
 #!/bin/bash
-TOMCAT_HOME=/home/worker/local/apache-tomcat-7.0.52
+rsync -avz  "-e ssh -i ~/.ssh/prod" web/target/jrs.war ubuntu@wwww.e-troin.cn:/data/Tomcat8/webapps/jrs.war
