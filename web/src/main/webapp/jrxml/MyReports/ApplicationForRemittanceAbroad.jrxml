@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
-<!-- 2017-11-20T16:15:37 -->
+<!-- 2017-11-20T17:05:31 -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="ApplicationForRemittanceAbroad" pageWidth="595" pageHeight="842" columnWidth="595" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="f2d47d79-0544-4915-8903-174ec943a2ab">
 	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
 	<property name="com.jaspersoft.studio.unit." value="pixel"/>
@@ -39,7 +39,7 @@
 				<textElement>
 					<font size="9"/>
 				</textElement>
-				<textFieldExpression><![CDATA["BEIJING CHENGXUAN AUCTIONS CO.,LTD."]]></textFieldExpression>
+				<textFieldExpression><![CDATA["BEIJING CHENGXUAN AUCTIONS CO., LTD."]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="304" y="228" width="249" height="29" uuid="0159f143-1e2b-4fbb-b8ad-56a0b2985b8a">
@@ -48,7 +48,7 @@
 				<textElement>
 					<font size="9"/>
 				</textElement>
-				<textFieldExpression><![CDATA["26/F, Tower C,NO. 6A Jianguomen Wai Avenue, Chaoyang District, Beijing 100022 P.R.C"]]></textFieldExpression>
+				<textFieldExpression><![CDATA["26/F, Tower C, CITC, NO. 6A Jianguomen Wai Avenue, Chaoyang District, Beijing 100022 P.R.C"]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="150" y="264" width="150" height="20" uuid="2f8c71f6-0090-44a3-ada8-69ba05f53aa1">
@@ -81,7 +81,7 @@
 				<textFieldExpression><![CDATA["SUITE 4706 47/F CENTRAL PLAZA 18 HARBOUR ROAD WANCHAI HONG KONG"]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="240" y="363" width="289" height="19" uuid="a7e0a353-a521-493a-828a-618c01e1bada">
+				<reportElement x="240" y="355" width="289" height="19" uuid="a7e0a353-a521-493a-828a-618c01e1bada">
 					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
 				</reportElement>
 				<textFieldExpression><![CDATA["093 12-501976-3"]]></textFieldExpression>
