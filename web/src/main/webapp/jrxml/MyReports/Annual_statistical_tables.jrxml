@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
-<!-- 2017-11-02T11:38:36 -->
+<!-- 2017-11-24T17:29:16 -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Annual_statistical_tables" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="842" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="3da14c9b-20c9-4624-8e15-53a825f63390">
 	<property name="com.jaspersoft.studio.unit." value="pixel"/>
 	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
@@ -141,7 +141,7 @@
 	<background>
 		<band splitType="Stretch"/>
 	</background>
-	<detail>
+	<title>
 		<band height="595" splitType="Stretch">
 			<staticText>
 				<reportElement x="50" y="40" width="140" height="80" uuid="7ab82838-dfbf-41bb-81c3-7a6eed62bbbb"/>
@@ -2004,5 +2004,5 @@
 				<textFieldExpression><![CDATA[$F{total_commission_ancient_books}]]></textFieldExpression>
 			</textField>
 		</band>
-	</detail>
+	</title>
 </jasperReport>
