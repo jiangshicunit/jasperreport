@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
-<!-- 2017-11-08T13:41:37 -->
+<!-- 2017-11-29T13:18:24 -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="quotationSheet" pageWidth="595" pageHeight="842" columnWidth="595" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="edb3ff8f-188f-4502-9dc9-234858d2e8e6">
 	<property name="com.jaspersoft.studio.unit." value="pixel"/>
 	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
@@ -11,7 +11,7 @@
 	<property name="com.jaspersoft.studio.unit.rightMargin" value="pixel"/>
 	<property name="com.jaspersoft.studio.unit.columnWidth" value="pixel"/>
 	<property name="com.jaspersoft.studio.unit.columnSpacing" value="pixel"/>
-	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="New Data Adapter "/>
 	<style name="myStyle" isDefault="true" fontName="微软雅黑" pdfFontName="MSYH.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
 	<queryString language="JSON">
 		<![CDATA[]]>
@@ -42,9 +42,8 @@
 				</box>
 				<textElement textAlignment="Left" verticalAlignment="Middle">
 					<font size="20"/>
-					<paragraph firstLineIndent="10"/>
+					<paragraph firstLineIndent="0"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$F{surePrice}]]></textFieldExpression>
 			</textField>
 			<staticText>
 				<reportElement x="40" y="330" width="60" height="30" uuid="0eb6394b-c320-4cf2-bdf5-a3c5e39db82a"/>
@@ -81,9 +80,8 @@
 				</box>
 				<textElement textAlignment="Left" verticalAlignment="Middle">
 					<font size="20" isBold="false"/>
-					<paragraph firstLineIndent="10"/>
+					<paragraph firstLineIndent="0"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$F{pName}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
 				<reportElement x="100" y="330" width="170" height="30" uuid="a915d687-40f9-451a-abe8-f4f82e0d01cb"/>
@@ -92,9 +90,8 @@
 				</box>
 				<textElement textAlignment="Left" verticalAlignment="Middle">
 					<font size="20"/>
-					<paragraph firstLineIndent="10"/>
+					<paragraph firstLineIndent="0"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$F{valuation}]]></textFieldExpression>
 			</textField>
 			<staticText>
 				<reportElement x="40" y="410" width="80" height="30" uuid="c3352c56-ecb5-4de4-90f1-934674580c58"/>
@@ -110,9 +107,8 @@
 				</box>
 				<textElement textAlignment="Left" verticalAlignment="Middle">
 					<font size="20"/>
-					<paragraph firstLineIndent="10"/>
+					<paragraph firstLineIndent="0"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$F{startingPrice}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
 				<reportElement x="360" y="330" width="190" height="30" uuid="b891447f-1d95-47e2-aff6-c5291de7b5a6"/>
@@ -121,9 +117,8 @@
 				</box>
 				<textElement textAlignment="Left" verticalAlignment="Middle">
 					<font size="20"/>
-					<paragraph firstLineIndent="10"/>
+					<paragraph firstLineIndent="0"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$F{floorPrice}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
 				<reportElement x="390" y="720" width="170" height="30" uuid="d02bfed7-fbe7-4701-bf25-c1992be3e856"/>
@@ -151,15 +146,99 @@
 				<text><![CDATA[拍品编号：]]></text>
 			</staticText>
 			<textField isBlankWhenNull="true">
-				<reportElement x="141" y="160" width="189" height="30" uuid="114a850b-5565-472b-8681-35134db0a613"/>
+				<reportElement x="140" y="160" width="189" height="30" uuid="114a850b-5565-472b-8681-35134db0a613">
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+				</reportElement>
 				<box>
 					<bottomPen lineWidth="1.0"/>
 				</box>
 				<textElement textAlignment="Left" verticalAlignment="Middle">
 					<font size="20"/>
-					<paragraph firstLineIndent="10"/>
+					<paragraph firstLineIndent="0"/>
+				</textElement>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="150" y="240" width="400" height="30" uuid="4ce803ce-e19c-434d-8b12-7d2b65bc9602">
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="20" isBold="false"/>
+					<paragraph firstLineIndent="0"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{pName}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="150" y="160" width="179" height="30" uuid="4c2eaf86-0401-4c07-b19e-19c1a2c63d08">
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+				</reportElement>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="20"/>
+					<paragraph firstLineIndent="0"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{pNode}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="110" y="330" width="160" height="30" uuid="c893527f-6828-4c38-9932-c3fe765f63e9">
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="20"/>
+					<paragraph firstLineIndent="0"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{valuation}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="370" y="330" width="180" height="30" uuid="6a3cb04f-41a5-46ca-b34b-f13dbd22cf2d">
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+				</reportElement>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="20"/>
+					<paragraph firstLineIndent="0"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{floorPrice}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="130" y="410" width="160" height="30" uuid="b764766d-ec69-40f0-9840-23a86f6b999c">
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="20"/>
+					<paragraph firstLineIndent="0"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{startingPrice}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="390" y="410" width="160" height="30" uuid="8633f68e-1d61-495d-9594-42c2ce588cac">
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="20"/>
+					<paragraph firstLineIndent="0"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{surePrice}]]></textFieldExpression>
 			</textField>
 		</band>
 	</detail>

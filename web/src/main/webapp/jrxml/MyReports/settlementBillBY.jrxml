@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
-<!-- 2017-11-28T13:40:48 -->
+<!-- 2017-11-28T19:03:40 -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="paymentNotice" pageWidth="595" pageHeight="842" columnWidth="595" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="e092b7ad-97e6-4d00-9cf3-ded30bd4fee0">
 	<property name="com.jaspersoft.studio.unit." value="pixel"/>
 	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
@@ -71,7 +71,7 @@
 				<textFieldExpression><![CDATA[$F{name}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="21" y="125" width="52" height="40" uuid="42daa441-9c07-4b01-8063-165b39f3773d">
+				<reportElement x="21" y="119" width="52" height="40" uuid="42daa441-9c07-4b01-8063-165b39f3773d">
 					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
 				</reportElement>
@@ -86,7 +86,7 @@
 				<textFieldExpression><![CDATA["图录号"]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement x="73" y="125" width="198" height="40" uuid="e04d5ac1-f9cb-4d62-ab68-167d976e67e4">
+				<reportElement x="73" y="119" width="198" height="40" uuid="e04d5ac1-f9cb-4d62-ab68-167d976e67e4">
 					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
 				</reportElement>
 				<box>
@@ -97,7 +97,7 @@
 				</textElement>
 			</textField>
 			<textField>
-				<reportElement x="340" y="125" width="82" height="40" uuid="3c8c0583-4e0a-48f2-bb4f-806e92abb299"/>
+				<reportElement x="340" y="119" width="82" height="40" uuid="3c8c0583-4e0a-48f2-bb4f-806e92abb299"/>
 				<box>
 					<bottomPen lineWidth="1.0" lineStyle="Dashed"/>
 				</box>
@@ -108,7 +108,7 @@
 				<textFieldExpression><![CDATA["酬金"]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="272" y="125" width="68" height="40" uuid="4e5464d6-eed2-472d-8374-59b1b69a0bed">
+				<reportElement x="272" y="119" width="68" height="40" uuid="4e5464d6-eed2-472d-8374-59b1b69a0bed">
 					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
 				</reportElement>
@@ -122,7 +122,7 @@
 				<textFieldExpression><![CDATA["落槌价"]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="422" y="125" width="60" height="40" uuid="579068f7-d5f9-4b24-89dc-16f757cc38f8"/>
+				<reportElement x="422" y="119" width="60" height="40" uuid="579068f7-d5f9-4b24-89dc-16f757cc38f8"/>
 				<box>
 					<bottomPen lineWidth="1.0" lineStyle="Dashed"/>
 				</box>
@@ -133,7 +133,7 @@
 				<textFieldExpression><![CDATA["其他"]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="482" y="125" width="89" height="40" uuid="1288a47b-39bb-46b1-92bd-17b4a5bf28d4"/>
+				<reportElement x="482" y="119" width="89" height="40" uuid="1288a47b-39bb-46b1-92bd-17b4a5bf28d4"/>
 				<box>
 					<bottomPen lineWidth="1.0" lineStyle="Dashed"/>
 				</box>
@@ -166,7 +166,7 @@
 				<textFieldExpression><![CDATA["INVOICE"]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement x="23" y="147" width="50" height="16" uuid="de5e2830-9e79-4c6c-b873-312c8c2ccf65">
+				<reportElement x="23" y="141" width="50" height="16" uuid="de5e2830-9e79-4c6c-b873-312c8c2ccf65">
 					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
 				</reportElement>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
@@ -175,7 +175,7 @@
 				<text><![CDATA[Lot No.]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="83" y="149" width="88" height="16" uuid="b07e54aa-6aae-4e6a-86f0-025ab86d063d">
+				<reportElement x="83" y="143" width="88" height="16" uuid="b07e54aa-6aae-4e6a-86f0-025ab86d063d">
 					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
 				</reportElement>
@@ -185,7 +185,7 @@
 				<text><![CDATA[Description]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="290" y="149" width="66" height="16" uuid="97789b29-5d58-4f2f-99ac-b56a20d4ce29">
+				<reportElement x="290" y="143" width="66" height="16" uuid="97789b29-5d58-4f2f-99ac-b56a20d4ce29">
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 				</reportElement>
 				<textElement>
@@ -194,7 +194,7 @@
 				<text><![CDATA[Hammer Price]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="377" y="149" width="72" height="16" uuid="41301849-feec-4a05-8dc9-03fa808eb938">
+				<reportElement x="377" y="143" width="72" height="16" uuid="41301849-feec-4a05-8dc9-03fa808eb938">
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
 				</reportElement>
@@ -204,7 +204,7 @@
 				<text><![CDATA[Remuneration]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="443" y="149" width="40" height="16" uuid="0f3a7d7a-c52a-432e-99fc-ebce6ce1b758">
+				<reportElement x="443" y="143" width="40" height="16" uuid="0f3a7d7a-c52a-432e-99fc-ebce6ce1b758">
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
@@ -215,7 +215,7 @@
 				<text><![CDATA[Others]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="526" y="149" width="45" height="16" uuid="b437ce28-9e72-4277-a982-9eadbc3d0717">
+				<reportElement x="526" y="143" width="45" height="16" uuid="b437ce28-9e72-4277-a982-9eadbc3d0717">
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
@@ -260,7 +260,7 @@
 				<textFieldExpression><![CDATA["BeiJing ChengXuan Auctions Go. Ltd."]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="81" y="129" width="190" height="36" uuid="5f39f44b-a6e3-4b53-988f-0aac97c44918">
+				<reportElement x="81" y="123" width="190" height="36" uuid="5f39f44b-a6e3-4b53-988f-0aac97c44918">
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
 				</reportElement>
@@ -288,15 +288,22 @@
 				</textElement>
 				<textFieldExpression><![CDATA["竞投牌号(Paddle No.):"]]></textFieldExpression>
 			</textField>
+			<line>
+				<reportElement x="73" y="159" width="1" height="5" uuid="8824b528-0c6d-44dc-8c35-ca3d70615463"/>
+				<graphicElement>
+					<pen lineStyle="Dashed"/>
+				</graphicElement>
+			</line>
 		</band>
 	</pageHeader>
 	<detail>
-		<band height="39" splitType="Stretch">
+		<band height="43" splitType="Stretch">
 			<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.FreeLayout"/>
 			<textField isBlankWhenNull="true">
-				<reportElement x="272" y="0" width="68" height="39" uuid="a1b6a013-1f1e-4997-90c5-db323c964def">
+				<reportElement x="272" y="0" width="68" height="43" uuid="a1b6a013-1f1e-4997-90c5-db323c964def">
 					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 				</reportElement>
 				<box>
 					<topPen lineWidth="0.0" lineStyle="Dashed"/>
@@ -304,24 +311,24 @@
 				</box>
 				<textElement textAlignment="Right" verticalAlignment="Top">
 					<font size="12"/>
-					<paragraph spacingBefore="6"/>
+					<paragraph spacingBefore="0"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{hammerPrice}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement x="340" y="0" width="82" height="39" uuid="c93f6ecf-67f6-4c0c-89dc-f91428f11a0f"/>
+				<reportElement x="340" y="0" width="82" height="43" uuid="c93f6ecf-67f6-4c0c-89dc-f91428f11a0f"/>
 				<box>
 					<topPen lineWidth="0.0" lineStyle="Dashed"/>
 					<bottomPen lineWidth="0.0" lineStyle="Dashed"/>
 				</box>
 				<textElement textAlignment="Right" verticalAlignment="Top">
 					<font size="12"/>
-					<paragraph spacingBefore="6"/>
+					<paragraph spacingBefore="0"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{remuneration}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement x="482" y="0" width="89" height="39" uuid="41e89012-15b7-45e6-a5e3-c5889a6980b0">
+				<reportElement x="482" y="0" width="89" height="43" uuid="41e89012-15b7-45e6-a5e3-c5889a6980b0">
 					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
 				</reportElement>
 				<box>
@@ -330,12 +337,12 @@
 				</box>
 				<textElement textAlignment="Right" verticalAlignment="Top">
 					<font size="12"/>
-					<paragraph spacingBefore="6"/>
+					<paragraph spacingBefore="0"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{subtotal}]]></textFieldExpression>
 			</textField>
 			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
-				<reportElement x="73" y="0" width="198" height="39" uuid="cdc61596-0146-4080-b677-be61ae092abd"/>
+				<reportElement x="73" y="0" width="198" height="43" uuid="cdc61596-0146-4080-b677-be61ae092abd"/>
 				<box>
 					<pen lineWidth="0.0" lineStyle="Dashed"/>
 					<leftPen lineWidth="0.0" lineStyle="Dashed"/>
@@ -346,19 +353,19 @@
 				</textElement>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement x="422" y="0" width="60" height="39" uuid="e6e45977-af3c-45bb-9749-a51a44646a2f"/>
+				<reportElement x="422" y="0" width="60" height="43" uuid="e6e45977-af3c-45bb-9749-a51a44646a2f"/>
 				<box>
 					<topPen lineWidth="0.0" lineStyle="Dashed"/>
 					<bottomPen lineWidth="0.0" lineStyle="Dashed"/>
 				</box>
 				<textElement textAlignment="Right" verticalAlignment="Top">
 					<font size="12"/>
-					<paragraph spacingBefore="6"/>
+					<paragraph spacingBefore="0"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{other}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement stretchType="RelativeToBandHeight" x="21" y="0" width="52" height="39" uuid="97f3b3a9-da08-4b1a-8f14-08ff10f96a9b">
+				<reportElement stretchType="RelativeToBandHeight" x="21" y="0" width="52" height="43" uuid="97f3b3a9-da08-4b1a-8f14-08ff10f96a9b">
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 				</reportElement>
 				<box>
@@ -368,12 +375,12 @@
 				</box>
 				<textElement textAlignment="Center" verticalAlignment="Top">
 					<font size="12"/>
-					<paragraph spacingBefore="6"/>
+					<paragraph spacingBefore="0"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{iamgeNumber}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement x="81" y="6" width="190" height="33" uuid="81d08496-31ba-45ec-81ca-d36008e6d0b8">
+				<reportElement x="81" y="0" width="190" height="43" uuid="81d08496-31ba-45ec-81ca-d36008e6d0b8">
 					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>

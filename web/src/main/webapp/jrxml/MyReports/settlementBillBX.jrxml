@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
-<!-- 2017-11-15T19:14:12 -->
+<!-- 2017-11-28T19:29:24 -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="settlementBillBX" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="842" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="4af6dafe-f40e-4cb9-b755-4bd56f569f96">
 	<property name="com.jaspersoft.studio.unit." value="pixel"/>
 	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
@@ -342,6 +342,14 @@
 					<pen lineWidth="2.0"/>
 				</graphicElement>
 			</line>
+			<line>
+				<reportElement x="530" y="0" width="1" height="6" uuid="10c3ed8c-78cf-41a9-8219-f4a3b43d177d">
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
+				<graphicElement>
+					<pen lineStyle="Solid" lineColor="#A8A8A8"/>
+				</graphicElement>
+			</line>
 		</band>
 	</pageHeader>
 	<detail>
@@ -471,8 +479,9 @@
 				<textFieldExpression><![CDATA[$F{atax}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement x="574" y="27" width="245" height="11" uuid="84c6f550-3fde-4a60-b320-87833597413a">
+				<reportElement x="599" y="27" width="231" height="11" uuid="84c6f550-3fde-4a60-b320-87833597413a">
 					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
 				</reportElement>
 				<textElement textAlignment="Left">
 					<font size="8"/>
