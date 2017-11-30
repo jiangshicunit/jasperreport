@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
-<!-- 2017-11-17T18:21:37 -->
+<!-- 2017-11-30T16:00:59 -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="certificateOfAuctionPurchase" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="842" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="65843578-1766-4a24-a016-8e0412ab5804">
 	<property name="com.jaspersoft.studio.unit." value="pixel"/>
 	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
@@ -44,7 +44,7 @@
 				<textFieldExpression><![CDATA[$F{name}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="229" y="209" width="65" height="18" uuid="e69448ab-4f40-4af6-aebd-8bea303223f3">
+				<reportElement x="227" y="209" width="65" height="18" uuid="e69448ab-4f40-4af6-aebd-8bea303223f3">
 					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
 				</reportElement>
 				<textElement>
@@ -53,7 +53,7 @@
 				<textFieldExpression><![CDATA[$F{pyear}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="301" y="209" width="40" height="18" uuid="00f216ca-64f9-4d21-99e5-3c10277bed40">
+				<reportElement x="300" y="209" width="40" height="18" uuid="00f216ca-64f9-4d21-99e5-3c10277bed40">
 					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
 				</reportElement>
@@ -63,7 +63,7 @@
 				<textFieldExpression><![CDATA[$F{pmonth}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="351" y="209" width="40" height="18" uuid="be5bc93c-510d-4150-a13c-374d7e52fc37">
+				<reportElement x="345" y="209" width="40" height="18" uuid="be5bc93c-510d-4150-a13c-374d7e52fc37">
 					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
 				</reportElement>
