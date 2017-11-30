@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
-<!-- 2017-11-28T19:29:24 -->
+<!-- 2017-11-30T19:50:33 -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="settlementBillBX" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="842" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="4af6dafe-f40e-4cb9-b755-4bd56f569f96">
 	<property name="com.jaspersoft.studio.unit." value="pixel"/>
 	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
@@ -112,8 +112,8 @@
 					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
 				</reportElement>
 				<box>
-					<bottomPen lineWidth="1.0" lineStyle="Dashed"/>
-					<rightPen lineWidth="1.0" lineStyle="Dashed"/>
+					<bottomPen lineWidth="1.0" lineStyle="Dotted"/>
+					<rightPen lineWidth="1.0" lineStyle="Dotted"/>
 				</box>
 				<textElement textAlignment="Center" verticalAlignment="Top">
 					<font size="12"/>
@@ -124,8 +124,11 @@
 			<textField isBlankWhenNull="true">
 				<reportElement x="70" y="114" width="240" height="33" uuid="98d19c1a-94b0-4419-ba7d-8b736cdad839"/>
 				<box>
-					<bottomPen lineWidth="1.0" lineStyle="Dashed"/>
-					<rightPen lineWidth="0.0" lineStyle="Dashed"/>
+					<pen lineWidth="1.0" lineStyle="Dotted"/>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="1.0" lineStyle="Dotted"/>
+					<rightPen lineWidth="0.0"/>
 				</box>
 				<textElement textAlignment="Left" verticalAlignment="Top">
 					<font size="14"/>
@@ -137,7 +140,7 @@
 					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
 				</reportElement>
 				<box>
-					<bottomPen lineWidth="1.0" lineStyle="Dashed"/>
+					<bottomPen lineWidth="1.0" lineStyle="Dotted"/>
 					<rightPen lineWidth="0.0" lineStyle="Dashed"/>
 				</box>
 				<textElement textAlignment="Center" verticalAlignment="Top">
@@ -152,7 +155,7 @@
 					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
 				</reportElement>
 				<box>
-					<bottomPen lineWidth="1.0" lineStyle="Dashed"/>
+					<bottomPen lineWidth="1.0" lineStyle="Dotted"/>
 					<rightPen lineWidth="0.0" lineStyle="Dashed"/>
 				</box>
 				<textElement textAlignment="Right" verticalAlignment="Top">
@@ -167,7 +170,7 @@
 					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
 				</reportElement>
 				<box>
-					<bottomPen lineWidth="1.0" lineStyle="Dashed"/>
+					<bottomPen lineWidth="1.0" lineStyle="Dotted"/>
 					<rightPen lineWidth="0.0" lineStyle="Dashed"/>
 				</box>
 				<textElement textAlignment="Right" verticalAlignment="Top">
@@ -181,7 +184,7 @@
 					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
 				</reportElement>
 				<box>
-					<bottomPen lineWidth="1.0" lineStyle="Dashed"/>
+					<bottomPen lineWidth="1.0" lineStyle="Dotted"/>
 					<rightPen lineWidth="0.0" lineStyle="Dashed"/>
 				</box>
 				<textElement textAlignment="Right" verticalAlignment="Top">
@@ -195,7 +198,7 @@
 					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
 				</reportElement>
 				<box>
-					<bottomPen lineWidth="1.0" lineStyle="Dashed"/>
+					<bottomPen lineWidth="1.0" lineStyle="Dotted"/>
 					<rightPen lineWidth="0.0" lineStyle="Dashed"/>
 				</box>
 				<textElement textAlignment="Right" verticalAlignment="Top">
@@ -207,7 +210,7 @@
 			<textField>
 				<reportElement x="677" y="114" width="63" height="33" uuid="17265c73-c221-438b-898e-2210f4933b43"/>
 				<box>
-					<bottomPen lineWidth="1.0" lineStyle="Dashed"/>
+					<bottomPen lineWidth="1.0" lineStyle="Dotted"/>
 					<rightPen lineWidth="0.0" lineStyle="Dashed"/>
 				</box>
 				<textElement textAlignment="Right" verticalAlignment="Top">
@@ -221,7 +224,7 @@
 					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
 				</reportElement>
 				<box>
-					<bottomPen lineWidth="1.0" lineStyle="Dashed"/>
+					<bottomPen lineWidth="1.0" lineStyle="Dotted"/>
 					<rightPen lineWidth="0.0" lineStyle="Dashed"/>
 				</box>
 				<textElement textAlignment="Right" verticalAlignment="Top">
@@ -325,7 +328,7 @@
 					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
 				</reportElement>
 				<box>
-					<bottomPen lineWidth="1.0" lineStyle="Dashed"/>
+					<bottomPen lineWidth="0.0" lineStyle="Dashed"/>
 					<rightPen lineWidth="0.0" lineStyle="Dashed"/>
 				</box>
 				<textElement textAlignment="Left" verticalAlignment="Top">
@@ -373,7 +376,7 @@
 				</reportElement>
 				<box>
 					<bottomPen lineWidth="0.0" lineStyle="Dashed"/>
-					<rightPen lineWidth="1.0" lineStyle="Dashed"/>
+					<rightPen lineWidth="1.0" lineStyle="Dotted"/>
 				</box>
 				<textElement textAlignment="Center" verticalAlignment="Top">
 					<font size="12"/>
@@ -506,15 +509,15 @@
 		</band>
 	</detail>
 	<pageFooter>
-		<band height="129">
+		<band height="133">
 			<textField isBlankWhenNull="true">
 				<reportElement x="410" y="33" width="60" height="33" uuid="ad1b6da4-a057-45a9-9241-9c4f0da00c6b">
 					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
 					<printWhenExpression><![CDATA[$F{showLast}.equals( "true" )]]></printWhenExpression>
 				</reportElement>
 				<box>
-					<topPen lineWidth="1.0" lineStyle="Dashed"/>
-					<bottomPen lineWidth="1.0" lineStyle="Dashed"/>
+					<topPen lineWidth="1.0" lineStyle="Dotted"/>
+					<bottomPen lineWidth="1.0" lineStyle="Dotted"/>
 					<rightPen lineWidth="0.0" lineStyle="Dashed"/>
 				</box>
 				<textElement textAlignment="Right" verticalAlignment="Middle">
@@ -528,9 +531,9 @@
 					<printWhenExpression><![CDATA[$F{showLast}.equals( "true" )]]></printWhenExpression>
 				</reportElement>
 				<box>
-					<topPen lineWidth="1.0" lineStyle="Dashed"/>
-					<bottomPen lineWidth="1.0" lineStyle="Dashed"/>
-					<rightPen lineWidth="1.0" lineStyle="Dashed"/>
+					<topPen lineWidth="1.0" lineStyle="Dotted"/>
+					<bottomPen lineWidth="1.0" lineStyle="Dotted"/>
+					<rightPen lineWidth="1.0" lineStyle="Dotted"/>
 				</box>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font size="12" isBold="true"/>
@@ -545,8 +548,8 @@
 					<printWhenExpression><![CDATA[$F{showLast}.equals( "true" )]]></printWhenExpression>
 				</reportElement>
 				<box>
-					<topPen lineWidth="1.0" lineStyle="Dashed"/>
-					<bottomPen lineWidth="1.0" lineStyle="Dashed"/>
+					<topPen lineWidth="1.0" lineStyle="Dotted"/>
+					<bottomPen lineWidth="1.0" lineStyle="Dotted"/>
 					<rightPen lineWidth="0.0" lineStyle="Dashed"/>
 				</box>
 				<textElement textAlignment="Right" verticalAlignment="Middle">
@@ -561,8 +564,8 @@
 					<printWhenExpression><![CDATA[$F{showLast}.equals( "true" )]]></printWhenExpression>
 				</reportElement>
 				<box>
-					<topPen lineWidth="1.0" lineStyle="Dashed"/>
-					<bottomPen lineWidth="1.0" lineStyle="Dashed"/>
+					<topPen lineWidth="1.0" lineStyle="Dotted"/>
+					<bottomPen lineWidth="1.0" lineStyle="Dotted"/>
 					<rightPen lineWidth="0.0" lineStyle="Dashed"/>
 				</box>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
@@ -578,8 +581,8 @@
 					<printWhenExpression><![CDATA[$F{showLast}.equals( "true" )]]></printWhenExpression>
 				</reportElement>
 				<box>
-					<topPen lineWidth="1.0" lineStyle="Dashed"/>
-					<bottomPen lineWidth="1.0" lineStyle="Dashed"/>
+					<topPen lineWidth="1.0" lineStyle="Dotted"/>
+					<bottomPen lineWidth="1.0" lineStyle="Dotted"/>
 					<rightPen lineWidth="0.0" lineStyle="Dashed"/>
 				</box>
 				<textElement textAlignment="Right" verticalAlignment="Middle">
@@ -593,8 +596,8 @@
 					<printWhenExpression><![CDATA[$F{showLast}.equals( "true" )]]></printWhenExpression>
 				</reportElement>
 				<box>
-					<topPen lineWidth="1.0" lineStyle="Dashed"/>
-					<bottomPen lineWidth="1.0" lineStyle="Dashed"/>
+					<topPen lineWidth="1.0" lineStyle="Dotted"/>
+					<bottomPen lineWidth="1.0" lineStyle="Dotted"/>
 					<rightPen lineWidth="0.0" lineStyle="Dashed"/>
 				</box>
 				<textElement textAlignment="Right" verticalAlignment="Middle">
@@ -609,8 +612,8 @@
 					<printWhenExpression><![CDATA[$F{showLast}.equals( "true" )]]></printWhenExpression>
 				</reportElement>
 				<box>
-					<topPen lineWidth="1.0" lineStyle="Dashed"/>
-					<bottomPen lineWidth="1.0" lineStyle="Dashed"/>
+					<topPen lineWidth="1.0" lineStyle="Dotted"/>
+					<bottomPen lineWidth="1.0" lineStyle="Dotted"/>
 					<rightPen lineWidth="0.0" lineStyle="Dashed"/>
 				</box>
 				<textElement textAlignment="Left" verticalAlignment="Middle">
@@ -623,8 +626,8 @@
 					<printWhenExpression><![CDATA[$F{showLast}.equals( "true" )]]></printWhenExpression>
 				</reportElement>
 				<box>
-					<topPen lineWidth="1.0" lineStyle="Dashed"/>
-					<bottomPen lineWidth="1.0" lineStyle="Dashed"/>
+					<topPen lineWidth="1.0" lineStyle="Dotted"/>
+					<bottomPen lineWidth="1.0" lineStyle="Dotted"/>
 					<rightPen lineWidth="0.0" lineStyle="Dashed"/>
 				</box>
 				<textElement textAlignment="Right" verticalAlignment="Middle">
@@ -638,8 +641,8 @@
 					<printWhenExpression><![CDATA[$F{showLast}.equals( "true" )]]></printWhenExpression>
 				</reportElement>
 				<box>
-					<topPen lineWidth="1.0" lineStyle="Dashed"/>
-					<bottomPen lineWidth="1.0" lineStyle="Dashed"/>
+					<topPen lineWidth="1.0" lineStyle="Dotted"/>
+					<bottomPen lineWidth="1.0" lineStyle="Dotted"/>
 					<rightPen lineWidth="0.0" lineStyle="Dashed"/>
 				</box>
 				<textElement textAlignment="Right" verticalAlignment="Middle">
@@ -670,8 +673,8 @@
 			<textField isBlankWhenNull="true">
 				<reportElement x="677" y="0" width="63" height="33" uuid="522f2ede-0c85-43bd-839e-27c4355a562c"/>
 				<box>
-					<topPen lineWidth="1.0" lineStyle="Dashed"/>
-					<bottomPen lineWidth="1.0" lineStyle="Dashed"/>
+					<topPen lineWidth="1.0" lineStyle="Dotted"/>
+					<bottomPen lineWidth="1.0" lineStyle="Dotted"/>
 					<rightPen lineWidth="0.0" lineStyle="Dashed"/>
 				</box>
 				<textElement textAlignment="Right" verticalAlignment="Middle">
@@ -686,8 +689,8 @@
 					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
 				</reportElement>
 				<box>
-					<topPen lineWidth="1.0" lineStyle="Dashed"/>
-					<bottomPen lineWidth="1.0" lineStyle="Dashed"/>
+					<topPen lineWidth="1.0" lineStyle="Dotted"/>
+					<bottomPen lineWidth="1.0" lineStyle="Dotted"/>
 					<rightPen lineWidth="0.0" lineStyle="Dashed"/>
 				</box>
 				<textElement textAlignment="Right" verticalAlignment="Middle">
@@ -701,8 +704,8 @@
 					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
 				</reportElement>
 				<box>
-					<topPen lineWidth="1.0" lineStyle="Dashed"/>
-					<bottomPen lineWidth="1.0" lineStyle="Dashed"/>
+					<topPen lineWidth="1.0" lineStyle="Dotted"/>
+					<bottomPen lineWidth="1.0" lineStyle="Dotted"/>
 					<rightPen lineWidth="0.0" lineStyle="Dashed"/>
 				</box>
 				<textElement textAlignment="Right" verticalAlignment="Middle">
@@ -717,8 +720,8 @@
 					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
 				</reportElement>
 				<box>
-					<topPen lineWidth="1.0" lineStyle="Dashed"/>
-					<bottomPen lineWidth="1.0" lineStyle="Dashed"/>
+					<topPen lineWidth="1.0" lineStyle="Dotted"/>
+					<bottomPen lineWidth="1.0" lineStyle="Dotted"/>
 					<rightPen lineWidth="0.0" lineStyle="Dashed"/>
 				</box>
 				<textElement textAlignment="Right" verticalAlignment="Middle">
@@ -730,8 +733,8 @@
 			<textField isBlankWhenNull="true">
 				<reportElement x="70" y="0" width="240" height="33" uuid="ba301c61-b03b-4b52-8656-74b8d88c2f7b"/>
 				<box>
-					<topPen lineWidth="1.0" lineStyle="Dashed"/>
-					<bottomPen lineWidth="1.0" lineStyle="Dashed"/>
+					<topPen lineWidth="1.0" lineStyle="Dotted"/>
+					<bottomPen lineWidth="1.0" lineStyle="Dotted"/>
 					<rightPen lineWidth="0.0" lineStyle="Dashed"/>
 				</box>
 				<textElement textAlignment="Left" verticalAlignment="Middle">
@@ -745,8 +748,8 @@
 					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
 				</reportElement>
 				<box>
-					<topPen lineWidth="1.0" lineStyle="Dashed"/>
-					<bottomPen lineWidth="1.0" lineStyle="Dashed"/>
+					<topPen lineWidth="1.0" lineStyle="Dotted"/>
+					<bottomPen lineWidth="1.0" lineStyle="Dotted"/>
 					<rightPen lineWidth="0.0" lineStyle="Dashed"/>
 				</box>
 				<textElement textAlignment="Right" verticalAlignment="Middle">
@@ -758,8 +761,8 @@
 			<textField isBlankWhenNull="true">
 				<reportElement x="740" y="0" width="89" height="33" uuid="af1d2d10-d493-4945-8913-94c0604f00c6"/>
 				<box>
-					<topPen lineWidth="1.0" lineStyle="Dashed"/>
-					<bottomPen lineWidth="1.0" lineStyle="Dashed"/>
+					<topPen lineWidth="1.0" lineStyle="Dotted"/>
+					<bottomPen lineWidth="1.0" lineStyle="Dotted"/>
 					<rightPen lineWidth="0.0" lineStyle="Dashed"/>
 				</box>
 				<textElement textAlignment="Right" verticalAlignment="Middle">
@@ -771,9 +774,9 @@
 			<textField>
 				<reportElement x="10" y="0" width="60" height="33" uuid="dfe25481-9a57-4963-b884-af829a298d52"/>
 				<box>
-					<topPen lineWidth="1.0" lineStyle="Dashed"/>
-					<bottomPen lineWidth="1.0" lineStyle="Dashed"/>
-					<rightPen lineWidth="1.0" lineStyle="Dashed"/>
+					<topPen lineWidth="1.0" lineStyle="Dotted"/>
+					<bottomPen lineWidth="1.0" lineStyle="Dotted"/>
+					<rightPen lineWidth="1.0" lineStyle="Dotted"/>
 				</box>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font size="12"/>
@@ -786,8 +789,8 @@
 					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
 				</reportElement>
 				<box>
-					<topPen lineWidth="1.0" lineStyle="Dashed"/>
-					<bottomPen lineWidth="1.0" lineStyle="Dashed"/>
+					<topPen lineWidth="1.0" lineStyle="Dotted"/>
+					<bottomPen lineWidth="1.0" lineStyle="Dotted"/>
 					<rightPen lineWidth="0.0" lineStyle="Dashed"/>
 				</box>
 				<textElement textAlignment="Center" verticalAlignment="Middle">

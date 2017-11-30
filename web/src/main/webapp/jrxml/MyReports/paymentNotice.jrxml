@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
-<!-- 2017-11-30T17:30:45 -->
+<!-- 2017-11-30T18:44:16 -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="paymentNotice" pageWidth="595" pageHeight="842" columnWidth="595" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="e092b7ad-97e6-4d00-9cf3-ded30bd4fee0">
 	<property name="com.jaspersoft.studio.unit." value="pixel"/>
 	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
@@ -90,8 +90,8 @@
 					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
 				</reportElement>
 				<box>
-					<bottomPen lineWidth="1.0" lineStyle="Dashed"/>
-					<rightPen lineWidth="1.0" lineStyle="Dashed"/>
+					<bottomPen lineWidth="1.0" lineStyle="Dotted"/>
+					<rightPen lineWidth="1.0" lineStyle="Dotted"/>
 				</box>
 				<textElement textAlignment="Center">
 					<font size="12"/>
@@ -102,7 +102,7 @@
 			<textField isBlankWhenNull="true">
 				<reportElement x="81" y="130" width="199" height="40" uuid="e04d5ac1-f9cb-4d62-ab68-167d976e67e4"/>
 				<box>
-					<bottomPen lineWidth="1.0" lineStyle="Dashed"/>
+					<bottomPen lineWidth="1.0" lineStyle="Dotted"/>
 				</box>
 				<textElement textAlignment="Left">
 					<font size="14"/>
@@ -110,9 +110,11 @@
 				</textElement>
 			</textField>
 			<textField>
-				<reportElement x="351" y="130" width="70" height="40" uuid="3c8c0583-4e0a-48f2-bb4f-806e92abb299"/>
+				<reportElement x="350" y="130" width="70" height="40" uuid="3c8c0583-4e0a-48f2-bb4f-806e92abb299">
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+				</reportElement>
 				<box>
-					<bottomPen lineWidth="1.0" lineStyle="Dashed"/>
+					<bottomPen lineWidth="1.0" lineStyle="Dotted"/>
 				</box>
 				<textElement textAlignment="Right">
 					<font size="12"/>
@@ -123,9 +125,10 @@
 			<textField>
 				<reportElement x="280" y="130" width="70" height="40" uuid="4e5464d6-eed2-472d-8374-59b1b69a0bed">
 					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
 				</reportElement>
 				<box>
-					<bottomPen lineWidth="1.0" lineStyle="Dashed"/>
+					<bottomPen lineWidth="1.0" lineStyle="Dotted"/>
 				</box>
 				<textElement textAlignment="Right">
 					<font size="12"/>
@@ -134,9 +137,12 @@
 				<textFieldExpression><![CDATA["落槌价"]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="421" y="130" width="60" height="40" uuid="579068f7-d5f9-4b24-89dc-16f757cc38f8"/>
+				<reportElement x="420" y="130" width="61" height="40" uuid="579068f7-d5f9-4b24-89dc-16f757cc38f8">
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
 				<box>
-					<bottomPen lineWidth="1.0" lineStyle="Dashed"/>
+					<bottomPen lineWidth="1.0" lineStyle="Dotted"/>
 				</box>
 				<textElement textAlignment="Right">
 					<font size="12"/>
@@ -145,11 +151,11 @@
 				<textFieldExpression><![CDATA["其他"]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="481" y="130" width="89" height="40" uuid="1288a47b-39bb-46b1-92bd-17b4a5bf28d4">
+				<reportElement x="481" y="130" width="90" height="40" uuid="1288a47b-39bb-46b1-92bd-17b4a5bf28d4">
 					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
 				</reportElement>
 				<box>
-					<bottomPen lineWidth="1.0" lineStyle="Dashed"/>
+					<bottomPen lineWidth="1.0" lineStyle="Dotted"/>
 				</box>
 				<textElement textAlignment="Right">
 					<font size="12"/>
@@ -241,12 +247,21 @@
 					<pen lineWidth="1.5"/>
 				</graphicElement>
 			</line>
-			<line>
-				<reportElement x="80" y="172" width="1" height="8" uuid="523551db-6af5-4ed7-9b7b-f755c61ab882"/>
-				<graphicElement>
-					<pen lineStyle="Dashed"/>
-				</graphicElement>
-			</line>
+			<textField>
+				<reportElement x="20" y="170" width="60" height="10" uuid="ad0fed97-e7ae-4281-888f-f790ebab86ed">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+				</reportElement>
+				<box>
+					<bottomPen lineWidth="0.0" lineStyle="Dotted"/>
+					<rightPen lineWidth="1.0" lineStyle="Dotted"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+					<paragraph spacingBefore="4"/>
+				</textElement>
+				<textFieldExpression><![CDATA["图录号"]]></textFieldExpression>
+			</textField>
 		</band>
 	</pageHeader>
 	<detail>
@@ -320,7 +335,7 @@
 				<box>
 					<topPen lineWidth="0.0" lineStyle="Dashed"/>
 					<bottomPen lineWidth="0.0" lineStyle="Dashed"/>
-					<rightPen lineWidth="1.0" lineStyle="Dashed"/>
+					<rightPen lineWidth="1.0" lineStyle="Dotted"/>
 				</box>
 				<textElement textAlignment="Center" verticalAlignment="Top">
 					<font size="12"/>
@@ -347,12 +362,13 @@
 		</band>
 	</detail>
 	<pageFooter>
-		<band height="228" splitType="Stretch">
+		<band height="230" splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 			<textField isBlankWhenNull="true">
 				<reportElement x="421" y="0" width="60" height="30" uuid="2a05d9d1-932d-4e93-9b1a-6fa86ea5d2c4"/>
 				<box>
-					<topPen lineWidth="1.0" lineStyle="Dashed"/>
-					<bottomPen lineWidth="1.0" lineStyle="Dashed"/>
+					<topPen lineWidth="1.0" lineStyle="Dotted"/>
+					<bottomPen lineWidth="1.0" lineStyle="Dotted"/>
 				</box>
 				<textElement textAlignment="Right">
 					<font size="12"/>
@@ -365,8 +381,8 @@
 					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
 				</reportElement>
 				<box>
-					<topPen lineWidth="1.0" lineStyle="Dashed"/>
-					<bottomPen lineWidth="1.0" lineStyle="Dashed"/>
+					<topPen lineWidth="1.0" lineStyle="Dotted"/>
+					<bottomPen lineWidth="1.0" lineStyle="Dotted"/>
 				</box>
 				<textElement textAlignment="Left">
 					<font size="14"/>
@@ -379,8 +395,8 @@
 					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
 				</reportElement>
 				<box>
-					<topPen lineWidth="1.0" lineStyle="Dashed"/>
-					<bottomPen lineWidth="1.0" lineStyle="Dashed"/>
+					<topPen lineWidth="1.0" lineStyle="Dotted"/>
+					<bottomPen lineWidth="1.0" lineStyle="Dotted"/>
 				</box>
 				<textElement textAlignment="Right">
 					<font size="12"/>
@@ -391,8 +407,8 @@
 			<textField isBlankWhenNull="true">
 				<reportElement x="351" y="0" width="70" height="30" uuid="6a453c13-6604-4fb0-b789-811c47de3670"/>
 				<box>
-					<topPen lineWidth="1.0" lineStyle="Dashed"/>
-					<bottomPen lineWidth="1.0" lineStyle="Dashed"/>
+					<topPen lineWidth="1.0" lineStyle="Dotted"/>
+					<bottomPen lineWidth="1.0" lineStyle="Dotted"/>
 				</box>
 				<textElement textAlignment="Right">
 					<font size="12"/>
@@ -403,8 +419,8 @@
 			<textField isBlankWhenNull="true">
 				<reportElement x="481" y="0" width="89" height="30" uuid="095d4d97-2467-4372-bf12-f5e396f7aa86"/>
 				<box>
-					<topPen lineWidth="1.0" lineStyle="Dashed"/>
-					<bottomPen lineWidth="1.0" lineStyle="Dashed"/>
+					<topPen lineWidth="1.0" lineStyle="Dotted"/>
+					<bottomPen lineWidth="1.0" lineStyle="Dotted"/>
 				</box>
 				<textElement textAlignment="Right">
 					<font size="12"/>
@@ -415,9 +431,9 @@
 			<textField>
 				<reportElement x="20" y="0" width="60" height="30" uuid="3f350503-61be-4351-8d0a-a4e205208893"/>
 				<box>
-					<topPen lineWidth="1.0" lineStyle="Dashed"/>
-					<bottomPen lineWidth="1.0" lineStyle="Dashed"/>
-					<rightPen lineWidth="1.0" lineStyle="Dashed"/>
+					<topPen lineWidth="1.0" lineStyle="Dotted"/>
+					<bottomPen lineWidth="1.0" lineStyle="Dotted"/>
+					<rightPen lineWidth="1.0" lineStyle="Dotted"/>
 				</box>
 				<textElement textAlignment="Center">
 					<font size="12"/>
@@ -429,7 +445,7 @@
 				<reportElement x="20" y="30" width="100" height="40" uuid="bba3d0b0-5bdc-4d41-885d-f356594c3960"/>
 				<box>
 					<topPen lineWidth="0.0" lineStyle="Dashed"/>
-					<bottomPen lineWidth="1.0" lineStyle="Dashed"/>
+					<bottomPen lineWidth="1.0" lineStyle="Dotted"/>
 					<rightPen lineWidth="0.0" lineStyle="Dashed"/>
 				</box>
 				<textElement textAlignment="Left">
@@ -444,7 +460,7 @@
 				</reportElement>
 				<box>
 					<topPen lineWidth="0.0" lineStyle="Dashed"/>
-					<bottomPen lineWidth="1.0" lineStyle="Dashed"/>
+					<bottomPen lineWidth="1.0" lineStyle="Dotted"/>
 				</box>
 				<textElement textAlignment="Left" verticalAlignment="Middle">
 					<font size="12"/>
@@ -506,7 +522,7 @@
 				<textFieldExpression><![CDATA["共"+$V{PAGE_NUMBER}+"页"]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement x="20" y="90" width="559" height="21" forecolor="#4D4D4D" uuid="d7520a67-66cd-43b0-bef8-a6ff0755ee2c">
+				<reportElement x="20" y="90" width="559" height="21" forecolor="#BE0300" uuid="d7520a67-66cd-43b0-bef8-a6ff0755ee2c">
 					<printWhenExpression><![CDATA[$F{showTis}.equals("true")]]></printWhenExpression>
 				</reportElement>
 				<textElement textAlignment="Left" verticalAlignment="Middle">
