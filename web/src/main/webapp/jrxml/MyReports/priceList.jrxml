@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
-<!-- 2017-08-26T18:35:27 -->
+<!-- 2017-11-30T18:04:57 -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="priceList" pageWidth="595" pageHeight="842" columnWidth="595" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="3b8244d0-8b01-49dd-8c39-ef36087684a9">
 	<property name="com.jaspersoft.studio.unit." value="pixel"/>
 	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
@@ -11,7 +11,7 @@
 	<property name="com.jaspersoft.studio.unit.rightMargin" value="pixel"/>
 	<property name="com.jaspersoft.studio.unit.columnWidth" value="pixel"/>
 	<property name="com.jaspersoft.studio.unit.columnSpacing" value="pixel"/>
-	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="priceList"/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="New Data Adapter "/>
 	<style name="myStyle" isDefault="true" fontName="微软雅黑" pdfFontName="MSYH.TTF" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
 	<queryString language="JSON">
 		<![CDATA[]]>
@@ -42,13 +42,13 @@
 				<textFieldExpression><![CDATA["图录号:"]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="39" y="140" width="101" height="30" uuid="a2478ed4-87df-4185-848f-7db9a2e0344f">
+				<reportElement x="87" y="140" width="50" height="30" uuid="a2478ed4-87df-4185-848f-7db9a2e0344f">
 					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
 				</reportElement>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font size="22"/>
 				</textElement>
-				<textFieldExpression><![CDATA["名	 称:"]]></textFieldExpression>
+				<textFieldExpression><![CDATA["称:"]]></textFieldExpression>
 			</textField>
 			<line>
 				<reportElement x="0" y="420" width="595" height="1" uuid="c30f850d-e946-424c-ad18-1ba11cf86c86">
@@ -59,15 +59,6 @@
 					<pen lineWidth="1.0" lineStyle="Dashed"/>
 				</graphicElement>
 			</line>
-			<textField>
-				<reportElement x="40" y="230" width="101" height="30" uuid="a9d07f17-7e87-473c-a7ec-c46424a58a2b">
-					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
-				</reportElement>
-				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font size="22"/>
-				</textElement>
-				<textFieldExpression><![CDATA["底	 价:"]]></textFieldExpression>
-			</textField>
 			<textField>
 				<reportElement x="40" y="340" width="101" height="30" uuid="e7d01919-a390-4d8c-90c5-65048b28bf1f">
 					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
@@ -116,6 +107,29 @@
 					<font size="22"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="40" y="140" width="50" height="30" uuid="e84c5d62-3245-41f6-ba14-d8f0025c3379">
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="22"/>
+				</textElement>
+				<textFieldExpression><![CDATA["名"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="40" y="230" width="50" height="30" uuid="e2fea5ee-a3e2-44db-92b9-cd61a9ce83a0"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="22"/>
+				</textElement>
+				<textFieldExpression><![CDATA["底"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="87" y="230" width="50" height="30" uuid="c3a72af6-87c8-4ae3-808e-95e452d1cf32"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="22"/>
+				</textElement>
+				<textFieldExpression><![CDATA["价:"]]></textFieldExpression>
 			</textField>
 		</band>
 	</detail>
