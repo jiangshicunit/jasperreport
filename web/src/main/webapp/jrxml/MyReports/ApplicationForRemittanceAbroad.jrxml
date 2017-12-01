@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
-<!-- 2017-11-20T18:17:10 -->
+<!-- 2017-12-01T15:33:22 -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="ApplicationForRemittanceAbroad" pageWidth="595" pageHeight="842" columnWidth="595" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="f2d47d79-0544-4915-8903-174ec943a2ab">
 	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
 	<property name="com.jaspersoft.studio.unit." value="pixel"/>
@@ -33,14 +33,16 @@
 	<title>
 		<band height="842" splitType="Stretch">
 			<textField>
-				<reportElement x="165" y="228" width="114" height="32" uuid="f877784a-cf6a-4987-9c48-677feb31912a"/>
+				<reportElement x="188" y="228" width="114" height="32" uuid="f877784a-cf6a-4987-9c48-677feb31912a">
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+				</reportElement>
 				<textElement>
 					<font size="9"/>
 				</textElement>
 				<textFieldExpression><![CDATA["BEIJING CHENGXUAN AUCTIONS CO., LTD."]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="300" y="225" width="249" height="29" uuid="0159f143-1e2b-4fbb-b8ad-56a0b2985b8a">
+				<reportElement x="310" y="228" width="249" height="29" uuid="0159f143-1e2b-4fbb-b8ad-56a0b2985b8a">
 					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
 				</reportElement>
 				<textElement>
@@ -49,14 +51,16 @@
 				<textFieldExpression><![CDATA["26/F, Tower C, CITC, NO. 6A Jianguomen Wai Avenue, Chaoyang District, Beijing 100022 P.R.C"]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="154" y="259" width="150" height="20" uuid="2f8c71f6-0090-44a3-ada8-69ba05f53aa1"/>
+				<reportElement x="178" y="263" width="150" height="20" uuid="2f8c71f6-0090-44a3-ada8-69ba05f53aa1">
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+				</reportElement>
 				<textElement>
 					<font size="9"/>
 				</textElement>
 				<textFieldExpression><![CDATA["7  6   9   3   8   0   6   3      9"]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="154" y="331" width="429" height="15" uuid="234efc64-3e14-4750-a57e-8087f2ae18a8">
+				<reportElement x="170" y="339" width="420" height="15" uuid="234efc64-3e14-4750-a57e-8087f2ae18a8">
 					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 				</reportElement>
@@ -66,7 +70,7 @@
 				<textFieldExpression><![CDATA["CATHAY UNITED  BANK HONGKONG BRANCH"]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="154" y="343" width="429" height="15" uuid="458c54e7-1eb8-4d1f-865b-ccd7f4da93e6">
+				<reportElement x="170" y="351" width="420" height="15" uuid="458c54e7-1eb8-4d1f-865b-ccd7f4da93e6">
 					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 				</reportElement>
@@ -76,14 +80,14 @@
 				<textFieldExpression><![CDATA["SUITE 4706 47/F CENTRAL PLAZA 18 HARBOUR ROAD WANCHAI HONG KONG"]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="245" y="354" width="289" height="15" uuid="a7e0a353-a521-493a-828a-618c01e1bada">
+				<reportElement x="267" y="362" width="289" height="15" uuid="a7e0a353-a521-493a-828a-618c01e1bada">
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
 				</reportElement>
 				<textFieldExpression><![CDATA["093 12-501976-3"]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="154" y="378" width="429" height="15" uuid="3c07eebf-c1c9-4305-b440-8f6898725d17">
+				<reportElement x="170" y="386" width="421" height="15" uuid="3c07eebf-c1c9-4305-b440-8f6898725d17">
 					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
@@ -94,7 +98,7 @@
 				<textFieldExpression><![CDATA["SUITE 4706 47/F CENTRAL PLAZA 18 HARBOUR ROAD WANCHAI HONG KONG"]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="154" y="365" width="429" height="15" uuid="6c95b622-ad01-447b-be50-0b87ebd0292e">
+				<reportElement x="170" y="373" width="420" height="15" uuid="6c95b622-ad01-447b-be50-0b87ebd0292e">
 					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
@@ -105,7 +109,7 @@
 				<textFieldExpression><![CDATA["LIN CHIN FU"]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="154" y="408" width="236" height="40" uuid="e5ffcccf-478e-4938-b9b4-2f13c6ea9f2a">
+				<reportElement x="170" y="416" width="236" height="40" uuid="e5ffcccf-478e-4938-b9b4-2f13c6ea9f2a">
 					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
 				</reportElement>
@@ -115,7 +119,7 @@
 				<textFieldExpression><![CDATA["PAYMENT FROM BEIJING CHENGXUAN AUCTIONS SWIFT:UWCBHKHH"]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="85" y="482" width="150" height="19" uuid="816e130a-143f-495a-9b23-81eb33dd3dfb">
+				<reportElement x="105" y="490" width="150" height="19" uuid="816e130a-143f-495a-9b23-81eb33dd3dfb">
 					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
 				</reportElement>
@@ -125,7 +129,7 @@
 				<textFieldExpression><![CDATA["1   2   1   0   1   0"]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="406" y="484" width="157" height="19" uuid="bc874504-ff09-456d-a87d-961ce4f66fb2">
+				<reportElement x="436" y="488" width="154" height="32" uuid="bc874504-ff09-456d-a87d-961ce4f66fb2">
 					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
 				</reportElement>
