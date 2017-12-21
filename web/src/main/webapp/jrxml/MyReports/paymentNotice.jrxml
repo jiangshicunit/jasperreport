@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
-<!-- 2017-12-14T16:00:19 -->
+<!-- 2017-12-21T14:09:09 -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="paymentNotice" pageWidth="595" pageHeight="842" columnWidth="595" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="e092b7ad-97e6-4d00-9cf3-ded30bd4fee0">
 	<property name="com.jaspersoft.studio.unit." value="pixel"/>
 	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
@@ -176,7 +176,7 @@
 			</textField>
 			<textField>
 				<reportElement x="110" y="40" width="201" height="21" uuid="05b74732-3323-4fda-ae6c-04ec62ccb81e"/>
-				<textFieldExpression><![CDATA["BeiJing ChengXuan Auctions Go. Ltd."]]></textFieldExpression>
+				<textFieldExpression><![CDATA["Beijing ChengXuan Auctions CO., Ltd."]]></textFieldExpression>
 			</textField>
 			<staticText>
 				<reportElement x="89" y="154" width="100" height="16" uuid="7511277b-8c1a-4ad9-aea8-17f7789f0412">

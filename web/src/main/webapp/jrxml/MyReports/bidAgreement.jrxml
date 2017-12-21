@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
-<!-- 2017-11-17T17:03:59 -->
+<!-- 2017-12-15T14:14:45 -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="bidAgreement" pageWidth="595" pageHeight="842" columnWidth="595" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="f8ee36b6-2822-4fbe-a575-5d90970af3ce">
 	<property name="com.jaspersoft.studio.unit." value="pixel"/>
 	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
@@ -39,8 +39,7 @@
 	<title>
 		<band height="842" splitType="Stretch">
 			<textField>
-				<reportElement x="117" y="121" width="110" height="15" uuid="c0daf36c-8921-4d5f-a888-81a73011c8f2">
-					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+				<reportElement x="115" y="121" width="185" height="15" uuid="c0daf36c-8921-4d5f-a888-81a73011c8f2">
 					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
 				</reportElement>
 				<textElement>

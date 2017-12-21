@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
-<!-- 2017-11-24T14:36:21 -->
+<!-- 2017-12-21T14:13:59 -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="ReturnOrderForPorcelain" pageWidth="595" pageHeight="842" columnWidth="595" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="f4d82ce1-c263-432d-911b-3d0284a0b909">
 	<property name="com.jaspersoft.studio.unit." value="pixel"/>
 	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
@@ -47,7 +47,7 @@
 			</image>
 			<textField>
 				<reportElement x="160" y="60" width="201" height="21" uuid="51d1c252-031f-4690-8df2-9cc7e7c4c5e3"/>
-				<textFieldExpression><![CDATA["BeiJing ChengXuan Auctions Go. Ltd."]]></textFieldExpression>
+				<textFieldExpression><![CDATA["Beijing ChengXuan Auctions CO., Ltd."]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="160" y="40" width="181" height="20" uuid="9cb425a4-c7c7-4420-b3cc-f614604e98b5"/>
