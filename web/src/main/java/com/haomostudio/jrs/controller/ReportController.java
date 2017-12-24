@@ -3,6 +3,7 @@ package com.haomostudio.jrs.controller;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 import com.haomostudio.jrs.common.*;
+import com.sun.xml.internal.messaging.saaj.packaging.mime.internet.MimeUtility;
 import net.sf.jasperreports.engine.*;
 import net.sf.jasperreports.engine.data.JRBeanCollectionDataSource;
 import net.sf.jasperreports.engine.design.*;
@@ -47,8 +48,7 @@ public class ReportController {
         return Resp.succ(key);
     }
     @RequestMapping(value = "/jspYD",
-            method = {RequestMethod.GET},
-            produces = "application/json;charset=UTF-8")
+            method = {RequestMethod.GET})
     @ResponseBody
     public void groupVoid11(HttpServletResponse response,HttpServletRequest request,
                             @RequestParam(value = "key") String key
@@ -161,7 +161,8 @@ public class ReportController {
             }else  if (!StringUtils.isEmpty( name ) && name.substring(name.lastIndexOf(".")+1).equals("pdf")){
                 final OutputStream outStream = response.getOutputStream();
 //                String fileName = "test.pdf";
-                response.addHeader("Content-Disposition", "filename=" + name);
+                response.setContentType("application/pdf");
+                response.setHeader("Content-Disposition", "inline; filename="+ MimeUtility.encodeText(name,MimeUtility.mimeCharset("gb2312"), null));
                 exportManager.exportToPdfStream(print, outStream);
             }else {
                 final OutputStream outStream = response.getOutputStream();
