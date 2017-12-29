@@ -243,7 +243,7 @@
 			</textField>
 			<textField>
 				<reportElement x="110" y="40" width="201" height="21" uuid="642174a4-f244-4517-b2b1-a517e07ab544"/>
-				<textFieldExpression><![CDATA["Beijing ChengXuan Auctions CO., Ltd."]]></textFieldExpression>
+				<textFieldExpression><![CDATA["Beijing ChengXuan Auctions Co.,Ltd."]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="10" y="74" width="150" height="20" uuid="504dfcc7-0f42-4104-ac94-d76ff63b97d8">

@@ -47,7 +47,7 @@
 			</image>
 			<textField>
 				<reportElement x="160" y="60" width="201" height="21" uuid="51d1c252-031f-4690-8df2-9cc7e7c4c5e3"/>
-				<textFieldExpression><![CDATA["Beijing ChengXuan Auctions CO., Ltd."]]></textFieldExpression>
+				<textFieldExpression><![CDATA["Beijing ChengXuan Auctions Co.,Ltd."]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="160" y="40" width="181" height="20" uuid="9cb425a4-c7c7-4420-b3cc-f614604e98b5"/>

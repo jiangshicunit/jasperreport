@@ -39,7 +39,7 @@
 				<textElement>
 					<font size="9"/>
 				</textElement>
-				<textFieldExpression><![CDATA["BEIJING CHENGXUAN AUCTIONS CO., LTD."]]></textFieldExpression>
+				<textFieldExpression><![CDATA["BEIJING CHENGXUAN AUCTIONS Co.,Ltd."]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="310" y="228" width="249" height="29" uuid="0159f143-1e2b-4fbb-b8ad-56a0b2985b8a">
