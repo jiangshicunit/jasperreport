@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
-<!-- 2018-01-16T17:09:40 -->
+<!-- 2018-01-16T20:23:59 -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="ReturnOrderForContemporaryArt" pageWidth="515" pageHeight="728" columnWidth="515" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="bf2de0d5-83e7-408e-bdaf-264c29fc3fee">
 	<property name="com.jaspersoft.studio.unit." value="pixel"/>
 	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
@@ -31,28 +31,28 @@
 	</background>
 	<title>
 		<band height="131" splitType="Stretch">
+			<staticText>
+				<reportElement x="14" y="91" width="281" height="30" uuid="0b9987d0-1890-4d9a-8bf4-46746ce730fe"/>
+				<textElement verticalAlignment="Middle">
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[现当代艺术部退货单]]></text>
+			</staticText>
 			<image>
-				<reportElement x="3" y="20" width="110" height="80" uuid="ce932c4c-bbb6-4675-b516-e1e682bfec10"/>
+				<reportElement x="5" y="23" width="96" height="67" uuid="eec220a1-b018-4ec1-915d-2767c9c329e5"/>
 				<imageExpression><![CDATA["/data/jasperImages/cxlogo.jpg"]]></imageExpression>
 			</image>
 			<textField>
-				<reportElement x="107" y="40" width="181" height="20" uuid="595126d2-0584-4ddb-955b-dc06d37be6a6"/>
+				<reportElement x="104" y="36" width="181" height="20" uuid="0ebf073a-23a8-4255-8552-b98cb3b90dd9"/>
 				<textElement>
 					<font size="14"/>
 				</textElement>
 				<textFieldExpression><![CDATA["北京诚轩拍卖有限公司"]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="107" y="60" width="201" height="21" uuid="d6eeec64-2d45-49a0-8589-9230fb11507a"/>
+				<reportElement x="104" y="56" width="201" height="21" uuid="87d7ee4e-81af-445b-9b42-67fd7cf8041d"/>
 				<textFieldExpression><![CDATA["Beijing ChengXuan Auctions Co.,Ltd."]]></textFieldExpression>
 			</textField>
-			<staticText>
-				<reportElement x="18" y="86" width="281" height="30" uuid="0b9987d0-1890-4d9a-8bf4-46746ce730fe"/>
-				<textElement verticalAlignment="Middle">
-					<font size="16" isBold="true"/>
-				</textElement>
-				<text><![CDATA[现当代艺术部退货单]]></text>
-			</staticText>
 		</band>
 	</title>
 	<pageHeader>

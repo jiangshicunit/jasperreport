@@ -117,7 +117,7 @@ public class ReportController {
                 exporter.setExporterOutput(exporterOutput);
 //                String fileName = "test.docx";
                 response.setContentType("application/vnd.ms-excel");
-                response.setHeader("Content-disposition", "attachment; filename="+name);
+                response.setHeader("Content-disposition", "attachment; filename="+ MimeUtility.encodeText(name,MimeUtility.mimeCharset("gb2312"), null));
 
 
                 exporter.exportReport();
