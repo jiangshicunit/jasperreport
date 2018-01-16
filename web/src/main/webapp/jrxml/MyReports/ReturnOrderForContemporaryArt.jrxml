@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
-<!-- 2017-12-21T14:11:13 -->
-<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="ReturnOrderForContemporaryArt" pageWidth="595" pageHeight="842" columnWidth="595" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="bf2de0d5-83e7-408e-bdaf-264c29fc3fee">
+<!-- 2018-01-16T17:09:40 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="ReturnOrderForContemporaryArt" pageWidth="515" pageHeight="728" columnWidth="515" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="bf2de0d5-83e7-408e-bdaf-264c29fc3fee">
 	<property name="com.jaspersoft.studio.unit." value="pixel"/>
 	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
 	<property name="com.jaspersoft.studio.unit.pageWidth" value="pixel"/>
@@ -30,29 +30,29 @@
 		<band splitType="Stretch"/>
 	</background>
 	<title>
-		<band height="156" splitType="Stretch">
-			<staticText>
-				<reportElement x="60" y="120" width="281" height="30" uuid="dab660fe-eff3-4dd4-8a07-64a9f658676d"/>
-				<textElement verticalAlignment="Middle">
-					<font size="16" isBold="true"/>
-				</textElement>
-				<text><![CDATA[现当代艺术部退货单]]></text>
-			</staticText>
+		<band height="131" splitType="Stretch">
 			<image>
-				<reportElement x="40" y="20" width="110" height="80" uuid="ce932c4c-bbb6-4675-b516-e1e682bfec10"/>
+				<reportElement x="3" y="20" width="110" height="80" uuid="ce932c4c-bbb6-4675-b516-e1e682bfec10"/>
 				<imageExpression><![CDATA["/data/jasperImages/cxlogo.jpg"]]></imageExpression>
 			</image>
 			<textField>
-				<reportElement x="160" y="40" width="181" height="20" uuid="595126d2-0584-4ddb-955b-dc06d37be6a6"/>
+				<reportElement x="107" y="40" width="181" height="20" uuid="595126d2-0584-4ddb-955b-dc06d37be6a6"/>
 				<textElement>
 					<font size="14"/>
 				</textElement>
 				<textFieldExpression><![CDATA["北京诚轩拍卖有限公司"]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="160" y="60" width="201" height="21" uuid="d6eeec64-2d45-49a0-8589-9230fb11507a"/>
+				<reportElement x="107" y="60" width="201" height="21" uuid="d6eeec64-2d45-49a0-8589-9230fb11507a"/>
 				<textFieldExpression><![CDATA["Beijing ChengXuan Auctions Co.,Ltd."]]></textFieldExpression>
 			</textField>
+			<staticText>
+				<reportElement x="18" y="86" width="281" height="30" uuid="0b9987d0-1890-4d9a-8bf4-46746ce730fe"/>
+				<textElement verticalAlignment="Middle">
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[现当代艺术部退货单]]></text>
+			</staticText>
 		</band>
 	</title>
 	<pageHeader>
@@ -64,14 +64,14 @@
 		<band height="90" splitType="Stretch">
 			<printWhenExpression><![CDATA[$F{frequency}.equals( "1" )]]></printWhenExpression>
 			<textField isBlankWhenNull="true">
-				<reportElement x="60" y="20" width="510" height="20" uuid="660d448f-4471-42f4-a408-2a79e6045c56"/>
+				<reportElement x="12" y="20" width="489" height="20" uuid="660d448f-4471-42f4-a408-2a79e6045c56"/>
 				<textElement>
 					<font size="12"/>
 				</textElement>
 				<textFieldExpression><![CDATA["今退回"+$F{commodityOverview}+"如下:"]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement x="129" y="50" width="25" height="40" uuid="a6f24687-0025-46f7-bc12-6d7212f4e883"/>
+				<reportElement x="81" y="50" width="25" height="40" uuid="a6f24687-0025-46f7-bc12-6d7212f4e883"/>
 				<box>
 					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
 					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
@@ -84,7 +84,7 @@
 				<text><![CDATA[序号]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="60" y="50" width="69" height="40" uuid="3f951105-2f74-4a03-99b2-945b475242a9"/>
+				<reportElement x="12" y="50" width="69" height="40" uuid="3f951105-2f74-4a03-99b2-945b475242a9"/>
 				<box>
 					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
 					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
@@ -97,7 +97,7 @@
 				<text><![CDATA[原合同编号]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="154" y="50" width="56" height="40" uuid="0f9bcd35-4f62-4aa4-b197-3542e8fb4438"/>
+				<reportElement x="106" y="50" width="56" height="40" uuid="0f9bcd35-4f62-4aa4-b197-3542e8fb4438"/>
 				<box>
 					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
 					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
@@ -110,7 +110,7 @@
 				<text><![CDATA[作者]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="210" y="50" width="90" height="40" uuid="01d66310-22c7-487a-a68c-c3c69ae3c210"/>
+				<reportElement x="162" y="50" width="90" height="40" uuid="01d66310-22c7-487a-a68c-c3c69ae3c210"/>
 				<box>
 					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
 					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
@@ -123,7 +123,7 @@
 				<text><![CDATA[名称]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="300" y="50" width="80" height="40" uuid="75e51da2-11aa-4a99-ab26-96c858720d2f"/>
+				<reportElement x="252" y="50" width="80" height="40" uuid="75e51da2-11aa-4a99-ab26-96c858720d2f"/>
 				<box>
 					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
 					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
@@ -136,7 +136,7 @@
 				<text><![CDATA[尺寸（cm）]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="380" y="50" width="60" height="40" uuid="5ce8e553-f20b-4bbf-ac5b-f41e0a7b2c16"/>
+				<reportElement x="332" y="50" width="60" height="40" uuid="5ce8e553-f20b-4bbf-ac5b-f41e0a7b2c16"/>
 				<box>
 					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
 					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
@@ -149,7 +149,7 @@
 				<text><![CDATA[底价（RMB）]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="440" y="50" width="109" height="40" uuid="6572d5d8-888a-44e5-99d0-62b3e2436c4a"/>
+				<reportElement x="392" y="50" width="109" height="40" uuid="6572d5d8-888a-44e5-99d0-62b3e2436c4a"/>
 				<box>
 					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
 					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
@@ -164,7 +164,7 @@
 		</band>
 		<band height="30">
 			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
-				<reportElement stretchType="RelativeToBandHeight" x="60" y="0" width="69" height="30" uuid="b7c6f7d1-44fa-4acf-b7c7-bf07f6bfaae4"/>
+				<reportElement stretchType="RelativeToBandHeight" x="12" y="0" width="69" height="30" uuid="b7c6f7d1-44fa-4acf-b7c7-bf07f6bfaae4"/>
 				<box>
 					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
 					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
@@ -177,7 +177,7 @@
 				<textFieldExpression><![CDATA[$F{contractNumber}]]></textFieldExpression>
 			</textField>
 			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
-				<reportElement stretchType="RelativeToBandHeight" x="129" y="0" width="25" height="30" uuid="51ffae34-e02c-4789-97ce-9e8a841886b5"/>
+				<reportElement stretchType="RelativeToBandHeight" x="81" y="0" width="25" height="30" uuid="51ffae34-e02c-4789-97ce-9e8a841886b5"/>
 				<box>
 					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
 					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
@@ -190,7 +190,7 @@
 				<textFieldExpression><![CDATA[$F{serialNumber}]]></textFieldExpression>
 			</textField>
 			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
-				<reportElement stretchType="RelativeToBandHeight" x="154" y="0" width="56" height="30" uuid="ca053e9e-12ec-4097-a47b-02a171f8675b"/>
+				<reportElement stretchType="RelativeToBandHeight" x="106" y="0" width="56" height="30" uuid="ca053e9e-12ec-4097-a47b-02a171f8675b"/>
 				<box>
 					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
 					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
@@ -203,7 +203,7 @@
 				<textFieldExpression><![CDATA[$F{author}]]></textFieldExpression>
 			</textField>
 			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
-				<reportElement stretchType="RelativeToBandHeight" x="210" y="0" width="90" height="30" uuid="515c69f2-6780-4956-999a-65633f70aa1a"/>
+				<reportElement stretchType="RelativeToBandHeight" x="162" y="0" width="90" height="30" uuid="515c69f2-6780-4956-999a-65633f70aa1a"/>
 				<box>
 					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
 					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
@@ -216,7 +216,7 @@
 				<textFieldExpression><![CDATA[$F{goodsName}]]></textFieldExpression>
 			</textField>
 			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
-				<reportElement stretchType="RelativeToBandHeight" x="300" y="0" width="80" height="30" uuid="a45bde49-cb32-4b23-9128-058a3dfd7702"/>
+				<reportElement stretchType="RelativeToBandHeight" x="252" y="0" width="80" height="30" uuid="a45bde49-cb32-4b23-9128-058a3dfd7702"/>
 				<box>
 					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
 					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
@@ -229,7 +229,7 @@
 				<textFieldExpression><![CDATA[$F{size}]]></textFieldExpression>
 			</textField>
 			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
-				<reportElement stretchType="RelativeToBandHeight" x="380" y="0" width="60" height="30" uuid="2d81fb90-8c20-42fc-999c-7cea8367847d"/>
+				<reportElement stretchType="RelativeToBandHeight" x="332" y="0" width="60" height="30" uuid="2d81fb90-8c20-42fc-999c-7cea8367847d"/>
 				<box>
 					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
 					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
@@ -242,7 +242,7 @@
 				<textFieldExpression><![CDATA[$F{floorPrice}]]></textFieldExpression>
 			</textField>
 			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
-				<reportElement stretchType="RelativeToBandHeight" x="440" y="0" width="109" height="30" uuid="6003af18-a119-45f9-8b95-6031a5f4e82e"/>
+				<reportElement stretchType="RelativeToBandHeight" x="392" y="0" width="109" height="30" uuid="6003af18-a119-45f9-8b95-6031a5f4e82e"/>
 				<box>
 					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
 					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
@@ -259,32 +259,32 @@
 	<lastPageFooter>
 		<band height="173">
 			<staticText>
-				<reportElement x="400" y="40" width="50" height="20" uuid="b2b83f73-1a79-447e-82d0-f02cdc1d3a41"/>
+				<reportElement x="352" y="40" width="50" height="20" uuid="b2b83f73-1a79-447e-82d0-f02cdc1d3a41"/>
 				<textElement verticalAlignment="Middle">
 					<font size="12"/>
 				</textElement>
 				<text><![CDATA[接收人:]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="60" y="125" width="260" height="15" uuid="d7128e00-db19-44fb-8b4f-7b22447c2d69">
+				<reportElement x="12" y="125" width="260" height="15" uuid="d7128e00-db19-44fb-8b4f-7b22447c2d69">
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 				</reportElement>
-				<text><![CDATA[Fax:(85-10)5887-0909]]></text>
+				<text><![CDATA[Fax:(86-10)5887-0909]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="60" y="140" width="260" height="15" uuid="4f11ae45-ac7b-427a-bad0-169c54f79a8b">
+				<reportElement x="12" y="140" width="260" height="15" uuid="4f11ae45-ac7b-427a-bad0-169c54f79a8b">
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 				</reportElement>
 				<text><![CDATA[www.chengxuan.com]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="60" y="110" width="260" height="15" uuid="af094d89-c200-475f-ac0d-6dd00805e5a1">
+				<reportElement x="12" y="110" width="260" height="15" uuid="af094d89-c200-475f-ac0d-6dd00805e5a1">
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 				</reportElement>
-				<text><![CDATA[Tel:(85-10)5887-0808]]></text>
+				<text><![CDATA[Tel:(86-10)5887-0808]]></text>
 			</staticText>
 			<textField isBlankWhenNull="true">
-				<reportElement x="400" y="80" width="40" height="20" uuid="c83bc615-19f0-4409-96fe-81ac95f90fac">
+				<reportElement x="352" y="80" width="40" height="20" uuid="c83bc615-19f0-4409-96fe-81ac95f90fac">
 					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 				</reportElement>
@@ -294,7 +294,7 @@
 				<textFieldExpression><![CDATA[$F{year}]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement x="440" y="80" width="120" height="20" uuid="4934e879-2e63-4f11-a816-77c26f9d2160"/>
+				<reportElement x="392" y="80" width="120" height="20" uuid="4934e879-2e63-4f11-a816-77c26f9d2160"/>
 				<textElement>
 					<font size="12"/>
 				</textElement>
